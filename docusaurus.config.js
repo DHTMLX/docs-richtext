@@ -172,4 +172,12 @@ module.exports = {
             },
         ],
     ],
+    plugins:[
+        [
+            require.resolve('docusaurus-gtm-plugin'),
+            {
+              id: 'GTM-5M5RCSJ',
+            }     
+        ]
+    ]
 };
