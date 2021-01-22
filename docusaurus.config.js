@@ -1,26 +1,17 @@
 module.exports = {
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
-    url: 'https://docs.webix.com/richtext/',
+    url: 'https://docs.dhtmlx.com/richtext/',
     baseUrl: '/richtext/',
-    onBrokenLinks: 'ignore',
+    onBrokenLinks: 'throw',
     favicon: 'img/favicon.ico',
-    organizationName: 'labirintami', // Usually your GitHub org/user name.
-    projectName: 'doc', // Usually your repo name.
+    organizationName: 'DHTMLX',
+    projectName: 'docs-richtext',
     themeConfig: {
         colorMode: {
-            // "light" | "dark"
             defaultMode: 'light',
-
-            // Hides the switch in the navbar
-            // Useful if you want to support a single color mode
             disableSwitch: false,
-
-            // Should we use the prefers-color-scheme media-query,
-            // using user system preferences, instead of the hardcoded defaultMode
-            respectPrefersColorScheme: true,
-
-            // Dark/light switch icon options
+            respectPrefersColorScheme: false,
             switchConfig: {
                 darkIcon: '🌙',
                 darkIconStyle: {
@@ -51,14 +42,15 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'RichText Documenation',
+            title: 'RichText Documentation',
             logo: {
-                alt: 'DHTMLX RichText Documenation',
+                alt: 'DHTMLX RichText Documentation',
                 src: 'img/dhtmlx_logo.svg',
                 href: 'https://docs.dhtmlx.com/',
 
             },
-            items: [{
+            items: [
+                {
                     label: 'Examples',
                     href: 'https://docs.dhtmlx.com/richtext/samples/',
                     position: 'right',
@@ -82,9 +74,11 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            links: [{
+            links: [
+                {
                     title: 'Development center',
-                    items: [{
+                    items: [
+                        {
                             label: 'Download RichText',
                             href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
                             position: 'right',
@@ -107,7 +101,8 @@ module.exports = {
                 },
                 {
                     title: 'Community',
-                    items: [{
+                    items: [
+                        {
                             label: 'GitHub',
                             href: 'https://github.com/DHTMLX',
                         },
@@ -133,7 +128,8 @@ module.exports = {
                 },
                 {
                     title: 'Company',
-                    items: [{
+                    items: [
+                        {
                             label: 'About us',
                             href: 'https://dhtmlx.com/docs/company.shtml',
                         },
@@ -158,7 +154,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/Labirintami/doc/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {
