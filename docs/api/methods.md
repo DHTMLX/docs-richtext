@@ -121,7 +121,8 @@ var chars = richtext.getStats().charsExlSpace;
 ```
 
 ### Getting custom statistics
-It is also possible to display custom statistics via the `customStats` configuration option for any other text items, e.g. the number of sentences:
+
+It is also possible to get custom statistics set via the `customStats` configuration option for any other text items, e.g. the number of sentences:
 
 ```js 
 var richtext = new dhx.Richtext("rich", {
@@ -148,6 +149,8 @@ var richtext = new dhx.Richtext("rich", {
     ],
     toolbarBlocks: ["default", "stats"]
 });
+
+var sentences = richtext.getStats().sentences;
 ```
 
 ___
@@ -175,6 +178,9 @@ Returns the content of the RichText editor in the chosen format
 // getting content in the markdown format
 var content = richtext.getValue("markdown");
 ```
+
+**Related samples:** [Get Value](https://snippet.dhtmlx.com/ujx3c71j)
+
 ___
 
 ## `paint`
@@ -208,6 +214,8 @@ var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
 richtext.setValue(htmlText);
 ```
 
+**Related samples:** [Setting HTML content](https://snippet.dhtmlx.com/57v7n2kp)
+
 #### Details
 
 An example of adding Markdown content is given below:
@@ -221,6 +229,9 @@ This demo will show you a customizable **JavaScript rich text editor**.
  
 richtext.setValue(mdText,"markdown");
 ```
+
+**Related samples:** [Setting Markdown Value](https://snippet.dhtmlx.com/9jf91qn9)
+
 
 :::note
 Note, that for a text in the Markdown format you need to define paragraphs by empty lines.

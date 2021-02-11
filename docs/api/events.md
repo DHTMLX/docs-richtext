@@ -22,7 +22,7 @@ Fires on any action in the editor
 
 ```js 
 richtext.events.on("Action", function(action){
-    // your code here
+     console.log("The " + action + " action is implemented");
 });
 ```
 
@@ -57,7 +57,7 @@ Fires on any change in the editor
 
 ```js 
 richtext.events.on("Change", function(action){
-    // your code here
+    console.log("The data have been changed by the following action: "+ action);;
 });
 ```
 
@@ -91,7 +91,7 @@ Fires on change of text selection made by a user
 
 ```js 
 richtext.events.on("selectionChange", function(state){
-    // your code here
+    console.log(state);
 });
 ```
 
