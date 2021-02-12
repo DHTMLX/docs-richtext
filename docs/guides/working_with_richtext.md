@@ -51,7 +51,7 @@ You can also get each field of statistical data separately, as it described belo
 
 #### Characters
 
-To return the count of characters typed into the editor, use the `chars` property:  
+To return the count of characters typed into the editor, use the `chars` property of the `getStats()` method:  
 
 ~~~js
 var chars = richtext.getStats().chars;
@@ -59,7 +59,7 @@ var chars = richtext.getStats().chars;
 
 #### Words
 
-To return the count of words typed into the editor, use the `words` property:  
+To return the count of words typed into the editor, use the `words` property of the `getStats()` method:  
 
 ~~~js
 var words = richtext.getStats().words;
@@ -67,44 +67,20 @@ var words = richtext.getStats().words;
 
 #### Characters without spaces
 
-To return the count of characters typed into the editor excluding the number of spaces, use the `charsExlSpace` property:  
+To return the count of characters typed into the editor excluding the number of spaces, use the `charsExlSpace` property of the `getStats()` method:  
 
 ~~~js
 var chars = richtext.getStats().charsExlSpace;
 ~~~
 
-### How to display statistics
+#### Custom statistics 
 
-Using the [getStats()](api/methods.md#getstats) method you can display info on the number of entered characters in any part of your application. For example, in a separate container by a click on a button:
+It is also possible to return a value of the custom statistical parameter set via the [customStats](api/properties.md#customstats) configuration option, e.g. the number of sentences. For that, use the name of the custom property as a property of the `getStats()` method:
 
-~~~js
-<button onclick="calc()" class="dhx_btn dhx_btn--flat">Characters Count</button>
-
-<div>
-	The count of characters: <span id="characters-amount"></span>
-</div>
-        
-function calc() {
-   document.getElementById('characters-amount').innerText = richtext.getStats().chars;
-}
-~~~
-
-**Related sample:** [Get Stats](https://snippet.dhtmlx.com/3qdbktwo)
-
-### Custom statistics 
-
-Besides the default statistical data, you can display any custom data via the [customStats](api/properties.md#customstats) configuration option. Set an array with necessary statistical parameters as a value of this option. 
-Each parameter represents an object with two properties:
-
-- `name` - (*string*) the name of the field that should be displayed
-- `callback` - (*function*) a function that implements the logic of counting entries of the specified field
-
-In the example below the editor shows the number of sentences together with the count of characters and words: 
-
-~~~js
-var richtext = new dhx.Richtext("richtext_container", {
-	customStats: [
-    	{
+```js 
+var richtext = new dhx.Richtext("rich", {
+    customStats: [ 
+        {
            name: "chars"
         },
         {
@@ -126,13 +102,28 @@ var richtext = new dhx.Richtext("richtext_container", {
     ],
     toolbarBlocks: ["default", "stats"]
 });
+
+// return the number of sentences typed into the editor
+var sentences = richtext.getStats().sentences; 
+```
+
+### How to display statistics
+
+Using the [getStats()](api/methods.md#getstats) method you can display info on the number of entered characters in any part of your application. For example, in a separate container by a click on a button:
+
+~~~js
+<button onclick="calc()" class="dhx_btn dhx_btn--flat">Characters Count</button>
+
+<div>
+	The count of characters: <span id="characters-amount"></span>
+</div>
+        
+function calc() {
+   document.getElementById('characters-amount').innerText = richtext.getStats().chars;
+}
 ~~~
 
-<!-- ![Custom statistics](custom_stats.png) -->
-<img alt="" src={require('./../assets/custom_stats.png').default} />
-
-**Related sample:** [Custom Stats](https://snippet.dhtmlx.com/u1734epz)
-
+**Related sample:** [Get Stats](https://snippet.dhtmlx.com/3qdbktwo)
 
 Full screen mode
 -------------------

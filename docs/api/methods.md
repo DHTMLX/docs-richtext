@@ -122,7 +122,7 @@ var chars = richtext.getStats().charsExlSpace;
 
 ### Getting custom statistics
 
-It is also possible to get custom statistics set via the `customStats` configuration option for any other text items, e.g. the number of sentences:
+It is also possible to return a value of the custom statistical parameter set via the `customStats` configuration option, e.g. the number of sentences. For that, use the name of the custom property as a property of the `getStats()` method:
 
 ```js 
 var richtext = new dhx.Richtext("rich", {
@@ -150,7 +150,8 @@ var richtext = new dhx.Richtext("rich", {
     toolbarBlocks: ["default", "stats"]
 });
 
-var sentences = richtext.getStats().sentences;
+// return the number of sentences typed into the editor
+var sentences = richtext.getStats().sentences; 
 ```
 
 ___
