@@ -3,28 +3,6 @@ sidebar_label: API Overview
 title: API Overview
 ---
 
-### Constructor
-
-
-~~~js
-var richtext = new dhx.Richtext("richtext_container", {
-	mode:"document"
-});
-~~~
-
-Parameters:
-
-- an HTML container (or the ID of an HTML container)
-- an object with configuration properties (check below)
-
-
-### Objects
-
-- [config](api/properties.md)
-- [events](api/events.md)
-- [EditorAPI](api/editor_api_methods.md)
-- toolbar
-
 ### Methods
 
 
@@ -40,7 +18,7 @@ Parameters:
 | [setValue](api/methods.md#setvalue)       | sets the provided content into the RichText editor |                          
                                  
 
-#### Events Bus
+### Events Bus Methods
 
 | Name                        | Description                                                                     |
 |-----------------------------|---------------------------------------------------------------------------------|
@@ -68,3 +46,20 @@ Parameters:
 | [mode](api/properties.md#mode)          | the working mode of the RichText editor                                |
 | [toolbarBlocks](api/properties.md#toolbarblocks) | specifies blocks of buttons that will be shown in the Richtext toolbar |
 
+
+### Editor API Methods
+
+```
+var EditorAPI = richtext.getEditorAPI();
+```
+
+| Name                               | Description                                                            |
+|------------------------------------|------------------------------------------------------------------------|
+| [add](api/editor_api_methods.md#add)   | adds a new text into the editor          |
+| [getModel](api/editor_api_methods.md#getmodel) | returns the data model of the entered text in the JSON format |
+| [getPosition](api/editor_api_methods.md#getposition) | returns the position of text selection relative to the browser window |
+| [getSelection](api/editor_api_methods.md#getselection) | returns the position of text selection relative to all other text |
+| [remove](api/editor_api_methods.md#remove) | removes a selected text |
+| [setModel](api/editor_api_methods.md#setmodel) | sets a structured text with styles (a data model as JSON) for the editor |
+| [setSelection](api/editor_api_methods.md#setselection) | applies selection to the specified text position |
+| [update](api/editor_api_methods.md#update) | modifies the entered text |

@@ -16,7 +16,7 @@ Detaches a handler from an event (which was attached before by the `on()` method
 | `context` | `any`    | a context marker            |
 
 ```js 
-richtext.events.on("Change", function(action,canUndo,canRedo){
+richtext.events.on("Change", function(action, canUndo, canRedo){
   // your code here
 });
  
@@ -41,7 +41,7 @@ ___
 
 Triggers an inner even
 
-`boolean fire(string name,array params);`
+`boolean fire(string name, array params);`
 
 | Parameter | Type     | Description                        |
 |-----------|----------|------------------------------------|
@@ -70,7 +70,7 @@ ___
 
 Attaches a handler to an inner event of RichText
 
-`void on(string name,function handler, [any context] );`
+`void on(string name, function handler, [any context]);`
 
 | Parameter | Type      | Description                                                        |
 |-----------|-----------|--------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Attaches a handler to an inner event of RichText
 | `context` | `any`     | the value will be accessible as "this" inside of the event handler |
 
 ```js 
-richtext.events.on("Change", function(action,canUndo,canRedo){
+richtext.events.on("Change", function(action, canUndo, canRedo){
   // your code here
 });
 ```

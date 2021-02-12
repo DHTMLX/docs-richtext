@@ -11,7 +11,7 @@ Check **Related samples** [RichText Events](https://snippet.dhtmlx.com/sb5qipjz)
 
 Fires on any action in the editor
 
-`void Action(string action, [any data,boolean restoreFocus] ){ ... };`
+`void Action(string action, [any data, boolean restoreFocus]){ ... };`
 
 | Parameter      | Type      | Description                                         |
 |----------------|-----------|-----------------------------------------------------|
@@ -46,7 +46,7 @@ ___
 
 Fires on any change in the editor
 
-`void Change(string action,boolean canUndo,boolean canRedo){ ... };`
+`void Change(string action, boolean canUndo, boolean canRedo){ ... };`
 
 | Parameter | Type      | Description                                  |
 |-----------|-----------|----------------------------------------------|
@@ -91,7 +91,7 @@ Fires on change of text selection made by a user
 
 ```js 
 richtext.events.on("selectionChange", function(state){
-    console.log(state);
+    console.log("The current selection state is ", state);
 });
 ```
 
