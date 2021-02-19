@@ -47,8 +47,8 @@ Returns an object with editor API methods
 
 **Returns:** 
 
-| Type     | Description                        |
-|----------|------------------------------------|
+| Type     | Description                              |
+| -------- | ---------------------------------------- |
 | `object` | an object with API methods of the editor |
 
 
@@ -79,7 +79,7 @@ Returns statistics about the entered content
 **Returns:**
 
 | Type     | Description                                                 |
-|----------|-------------------------------------------------------------|
+| -------- | ----------------------------------------------------------- |
 | `object` | an object with available statistical data about edited text |
 
 
@@ -163,14 +163,14 @@ Returns the content of the RichText editor in the chosen format
 `string getValue( [string mode] );`
 
 
-| Parameter | Type     | Description                                                           |
-|-----------|----------|-----------------------------------------------------------------------|
+| Parameter | Type     | Description                                                                 |
+| --------- | -------- | --------------------------------------------------------------------------- |
 | `mode`    | `string` | the format of returned content:`"html"` (default), `"markdown"` or `"text"` |
 
 **Returns:**
 
 | Type     | Description                        |
-|----------|------------------------------------|
+| -------- | ---------------------------------- |
 | `string` | the content of the RichText editor |
 
 
@@ -202,9 +202,9 @@ Adds content into the RichText editor
 `void setValue(string value,string mode);`
 
 | Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
+| --------- | -------- | ----------------------------------------------------------------------------- |
 | `value`   | `string` | the context you want to add into the editor in either HTML or Markdown format |
-| `mode`    | `string` | optional, the format of text parsing: `"html"` or `"markdown"`                   |
+| `mode`    | `string` | optional, the format of text parsing: `"html"` or `"markdown"`                |
 
 ```js 
 var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +

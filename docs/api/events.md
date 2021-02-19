@@ -13,10 +13,10 @@ Fires on any action in the editor
 
 `void Action(string action, [any data, boolean restoreFocus]){ ... };`
 
-| Parameter      | Type      | Description                                         |
-|----------------|-----------|-----------------------------------------------------|
-| `action`       | `string`  | the name of an action                               |
-| `data`         | `any`     | optional, the edited data                           |
+| Parameter      | Type      | Description                                        |
+| -------------- | --------- | -------------------------------------------------- |
+| `action`       | `string`  | the name of an action                              |
+| `data`         | `any`     | optional, the edited data                          |
 | `restoreFocus` | `boolean` | optional, defines whether focus should be restored |
 
 
@@ -49,7 +49,7 @@ Fires on any change in the editor
 `void Change(string action, boolean canUndo, boolean canRedo){ ... };`
 
 | Parameter | Type      | Description                                  |
-|-----------|-----------|----------------------------------------------|
+| --------- | --------- | -------------------------------------------- |
 | `action`  | `string`  | the name of an action                        |
 | `canUndo` | `boolean` | defines whether the change can be reverted   |
 | `canRedo` | `boolean` | defines whether the change can be re-applied |
@@ -85,7 +85,7 @@ Fires on change of text selection made by a user
 `void selectionChange(object state){ ... };`
 
 | Parameter | Type     | Description            |
-|-----------|----------|------------------------|
+| --------- | -------- | ---------------------- |
 | `state`   | `object` | the state of selection |
 
 
