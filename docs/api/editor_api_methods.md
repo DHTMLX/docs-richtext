@@ -1,6 +1,6 @@
 ---
-sidebar_label: Editor API
-title: Editor API
+sidebar_label: Editor API Methods
+title: Editor API Methods
 ---
 
 ## `add`
@@ -9,9 +9,9 @@ Adds a new text into the editor
 
 `void add(string|object config, [object selection] );`
 
-| Parameter   | Type            | Description                                                                           |
-| ----------- | --------------- | ------------------------------------------------------------------------------------- |
-| `config`    | `string,object` | a string with a text or a text block as an object. Check the details                  |
+| Parameter   | Type            | Description        |
+| ----------- | --------------- | --------------------------------------|
+| `config`    | `string,object` | a string with a text or a text block as an object. Check the details    |
 | `selection` | `object`        | optional, text selection (its position relative to all other text). Check the details |
 
 

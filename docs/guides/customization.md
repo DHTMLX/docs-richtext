@@ -141,7 +141,7 @@ For a custom button:
 
 ~~~js
 richtext.toolbar.data.add({
-	type: "customButton", 
+	type: "customHTML", 
     id: "htmlbutton-id",
     value: "Some value",
     icon: "icon-name"

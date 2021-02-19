@@ -18,6 +18,8 @@ module.exports = {
                 "api/events",
                 "api/properties",
                 "api/editor_api_methods",
+                "api/toolbar_methods",
+                "api/toolbar_controls",
             ],
         },
         {
