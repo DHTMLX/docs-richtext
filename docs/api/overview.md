@@ -84,7 +84,7 @@ var EditorAPI = richtext.getEditorAPI();
 
 | Name                                    | Description                                  |
 |-----------------------------------------|----------------------------------------------|
-| [add](api/toolbar_methods#add)       | adds a new control to the toolbar            |
+| [add](api/toolbar_methods.md#add)       | adds a new control to the toolbar            |
 | [remove](api/toolbar_methods.md#remove) | removes a control from the toolbar           |
 | [update](api/toolbar_methods.md#update) | updates configuration options of the control |
 
