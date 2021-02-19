@@ -67,6 +67,6 @@ This demo will show you a customizable **JavaScript rich text editor**.
 richtext.setValue(mdText,"markdown");
 ~~~
 
-**Related sample:** [Set Markdown Value](https://snippet.dhtmlx.com/9jf91qn9)
+**Related sample:** [Setting Markdown Value](https://snippet.dhtmlx.com/9jf91qn9)
 
 

@@ -110,5 +110,52 @@ var richtext = new dhx.Richtext(document.body, {
 
 **Related sample:** [Toolbar Blocks](https://snippet.dhtmlx.com/yp7en22d)
 
+### Custom statistics in the toolbar 
+
+The default statistics shown in the toolbar includes the following data about the text: the count of words, characters and characters excluding spaces.
+
+<img alt="" src={require('./../assets/default_stats.png').default} />
+
+But you can display any custom data via the [customStats](api/properties.md#customstats) configuration option. Set an array with necessary statistical parameters as a value of this option. 
+Each parameter represents an object with two properties:
+
+- `name` - (*string*) the name of the field that should be displayed
+- `callback` - (*function*) a function that implements the logic of counting entries of the specified field
+
+In the example below the editor shows the number of sentences together with the count of characters and words: 
+
+~~~js
+var richtext = new dhx.Richtext("richtext_container", {
+	customStats: [
+    	{
+           name: "chars"
+        },
+        {
+           name: "words"
+        },
+        {
+           name: "sentences",
+           cb: function(text) {
+               var rawSentences = text.split(/[.?!]+/);
+               var count = 0;
+               for (var i=0; i<rawSentences.length; i++) {
+                   if (rawSentences[i].length > 0) {
+                       count += 1;
+                   }
+               }
+               return count;
+           }
+        }
+    ],
+    toolbarBlocks: ["default", "stats"]
+});
+~~~
+
+<!-- ![Custom statistics](custom_stats.png) -->
+<img alt="" src={require('./../assets/custom_stats.png').default} />
+
+**Related sample:** [Custom Stats](https://snippet.dhtmlx.com/u1734epz)
+
+
 Toolbar is [highly customizable](customization.md). You can add new controls, change the icons of controls and apply the desired icon pack. 
 

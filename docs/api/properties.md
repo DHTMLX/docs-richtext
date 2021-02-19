@@ -84,7 +84,7 @@ var richtext = new dhx.RichText("richtext_container", {
 
 **Default value**: ["undo", "style", "decoration", "colors", "align", "link"]
 
-**Related samples:** [RichText. initialization](https://snippet.dhtmlx.com/32jtemtm)
+**Related samples:** [RichText. Initialization](https://snippet.dhtmlx.com/32jtemtm)
 
 
 #### Details

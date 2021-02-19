@@ -34,8 +34,8 @@ Including source files
 
 To create dhtmlxRichText, you need to include 2 source files on your page:
 
-- richtext.js
-- richtext.css
+- **richtext.js**
+- **richtext.css**
 
 Make sure that you set correct relative paths to these files:
 
@@ -65,8 +65,8 @@ Initializing RichText
 
 Initialize RichText with the `dhx.Richtext` object constructor. The constructor has two parameters:
 
-- the HTML container for RichText,
-- an object with configuration properties. See the full list below.
+- the HTML container for RichText. The one we have created at the previous step.
+- an object with configuration properties. [See the full list below](#configuration-properties).
 
 
 ~~~js title="index.html"
@@ -82,6 +82,7 @@ This is a list of properties that you can specify in the Richtext configuration 
 
 - [**mode**](configuration.md#working-modes) - (string) the working mode of RichText. Can be either `default` or `document`.
 - [**toolbarBlocks**](configuration.md#toolbar) - (array) specifies blocks of buttons that will be shown in the Richtext toolbar
+- [**customStats**](configuration.md#custom-statistics-in-the-toolbar) - (array) defines the logic of displaying custom statistics
 
 You can set configuration options during initialization as the second parameter of the constructor:
 

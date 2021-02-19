@@ -8,7 +8,7 @@ title: Event Handling
 You can attach event listeners with the [richtext.events.on()](api/events_bus.md#on) method:
 
 ~~~js
-richtext.events.on("Change", function(action,canUndo,canRedo){
+richtext.events.on("Change", function(action, canUndo, canRedo){
     // your code here
 });
 ~~~
@@ -24,7 +24,7 @@ The names of events are case-insensitive.
 To detach events, use [richtext.events.detach()](api/events_bus.md#detach):
 
 ~~~js
-var change = richtext.events.on("Change", function(action,canUndo,canRedo){
+var change = richtext.events.on("Change", function(action, canUndo, canRedo){
      // your code here
 });
 richtext.events.detach(change);
@@ -35,7 +35,7 @@ richtext.events.detach(change);
 To call events, use [richtext.events.fire()](api/events_bus.md#fire):
 
 ~~~js
-richtext.events.fire("name",args);
+richtext.events.fire("name", args);
 // where args is an array of arguments
 ~~~
 

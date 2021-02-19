@@ -9,9 +9,9 @@ Adds a new text into the editor
 
 `void add(string|object config, [object selection] );`
 
-| Parameter   | Type            | Description                                                           |
-|-------------|-----------------|-----------------------------------------------------------------------|
-| `config`    | `string,object` | a string with a text or a text block as an object. Check the details |
+| Parameter   | Type            | Description                                                                           |
+| ----------- | --------------- | ------------------------------------------------------------------------------------- |
+| `config`    | `string,object` | a string with a text or a text block as an object. Check the details                  |
 | `selection` | `object`        | optional, text selection (its position relative to all other text). Check the details |
 
 
@@ -143,8 +143,8 @@ Returns the data model of the entered text in the JSON format
 
 **Returns:**
 
-| Type     | Description                        |
-|----------|------------------------------------|
+| Type    | Description                        |
+| ------- | ---------------------------------- |
 | `array` | the data model of the entered text |
 
 
@@ -198,9 +198,9 @@ Returns the position of text selection relative to the browser window
 
 **Returns:**
 
-| Type     | Description                                                 |
-|----------|-------------------------------------------------------------|
-| `object` | the position of text selection relative to the browser window|
+| Type     | Description                                                   |
+| -------- | ------------------------------------------------------------- |
+| `object` | the position of text selection relative to the browser window |
 
 
 ```js 
@@ -238,9 +238,9 @@ Returns the position of text selection relative to all other text
 
 **Returns:**
 
-| Type     | Description                                                 |
-|----------|-------------------------------------------------------------|
-| `object` | the position of text selection relative to all other text     |
+| Type     | Description                                               |
+| -------- | --------------------------------------------------------- |
+| `object` | the position of text selection relative to all other text |
 
 
 ```js 
@@ -301,9 +301,9 @@ Removes a selected text
 
 `void remove( [object selection] );`
 
-| Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
-| `selection`   | `object` | optional, text selection (its position relative to all other text). Check the details |
+| Parameter   | Type     | Description                                                                           |
+| ----------- | -------- | ------------------------------------------------------------------------------------- |
+| `selection` | `object` | optional, text selection (its position relative to all other text). Check the details |
 
 
 ```js 
@@ -354,10 +354,10 @@ Sets a structured text with styles (a data model as JSON) for the editor
 
 `void setModel(array structure, [object selection] );`
 
-| Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
-| `structure`   | `array` | an array of objects with styles and text nodes. Check the details |
-| `selection`   | `object` | optional, text selection (its position relative to all other text). Check the details |
+| Parameter   | Type     | Description                                                                           |
+| ----------- | -------- | ------------------------------------------------------------------------------------- |
+| `structure` | `array`  | an array of objects with styles and text nodes. Check the details                     |
+| `selection` | `object` | optional, text selection (its position relative to all other text). Check the details |
 
 
 ```js 
@@ -438,9 +438,9 @@ Applies selection to the specified text position
 
 `void setSelection(object selection);`
 
-| Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
-| `selection`   | `object` | the position of text selection relative to all other text                  |
+| Parameter   | Type     | Description                                               |
+| ----------- | -------- | --------------------------------------------------------- |
+| `selection` | `object` | the position of text selection relative to all other text |
 
 
 ~~~js
@@ -501,10 +501,10 @@ Modifies the entered text
 
 `void update(object config, [object selection] );`
 
-| Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
-| `config`   | `object` | an object with details of updating. Check the details                         |
-| `selection`   | `object` | optional, text selection (its position relative to all other text). Check the details |
+| Parameter   | Type     | Description                                                                           |
+| ----------- | -------- | ------------------------------------------------------------------------------------- |
+| `config`    | `object` | an object with details of updating. Check the details                                 |
+| `selection` | `object` | optional, text selection (its position relative to all other text). Check the details |
 
 
 ```js 

@@ -11,12 +11,12 @@ Detaches a handler from an event (which was attached before by the `on()` method
 `void detach(string name, [any context] );`
 
 | Parameter | Type     | Description                 |
-|-----------|----------|-----------------------------|
+| --------- | -------- | --------------------------- |
 | `name`    | `string` | the name of event to detach |
 | `context` | `any`    | a context marker            |
 
 ```js 
-richtext.events.on("Change", function(action,canUndo,canRedo){
+richtext.events.on("Change", function(action, canUndo, canRedo){
   // your code here
 });
  
@@ -41,17 +41,17 @@ ___
 
 Triggers an inner even
 
-`boolean fire(string name,array params);`
+`boolean fire(string name, array params);`
 
 | Parameter | Type     | Description                        |
-|-----------|----------|------------------------------------|
+| --------- | -------- | ---------------------------------- |
 | `name`    | `string` | the event's name, case-insensitive |
 | `params`  | `array`  | an array of the event-related data |
 
 **Returns**
 
-| Type | Description                                                               |
-|-----------|--------------------------------------------------------------------|
+| Type      | Description                                                              |
+| --------- | ------------------------------------------------------------------------ |
 | `boolean` | *false*, if some of the event handlers return *false*. Otherwise, *true* |
 
 ```js 
@@ -70,16 +70,16 @@ ___
 
 Attaches a handler to an inner event of RichText
 
-`void on(string name,function handler, [any context] );`
+`void on(string name, function handler, [any context]);`
 
 | Parameter | Type      | Description                                                        |
-|-----------|-----------|--------------------------------------------------------------------|
+| --------- | --------- | ------------------------------------------------------------------ |
 | `name`    | `string`  | the event's name, case-insensitive                                 |
 | `handler` | `handler` | the handler function                                               |
 | `context` | `any`     | the value will be accessible as "this" inside of the event handler |
 
 ```js 
-richtext.events.on("Change", function(action,canUndo,canRedo){
+richtext.events.on("Change", function(action, canUndo, canRedo){
   // your code here
 });
 ```

@@ -47,8 +47,8 @@ Returns an object with editor API methods
 
 **Returns:** 
 
-| Type     | Description                        |
-|----------|------------------------------------|
+| Type     | Description                              |
+| -------- | ---------------------------------------- |
 | `object` | an object with API methods of the editor |
 
 
@@ -79,7 +79,7 @@ Returns statistics about the entered content
 **Returns:**
 
 | Type     | Description                                                 |
-|----------|-------------------------------------------------------------|
+| -------- | ----------------------------------------------------------- |
 | `object` | an object with available statistical data about edited text |
 
 
@@ -121,7 +121,8 @@ var chars = richtext.getStats().charsExlSpace;
 ```
 
 ### Getting custom statistics
-It is also possible to display custom statistics via the `customStats` configuration option for any other text items, e.g. the number of sentences:
+
+It is also possible to return a value of the custom statistical parameter set via the `customStats` configuration option, e.g. the number of sentences. For that, use the name of the custom property as a property of the `getStats()` method:
 
 ```js 
 var richtext = new dhx.Richtext("rich", {
@@ -148,6 +149,9 @@ var richtext = new dhx.Richtext("rich", {
     ],
     toolbarBlocks: ["default", "stats"]
 });
+
+// return the number of sentences typed into the editor
+var sentences = richtext.getStats().sentences; 
 ```
 
 ___
@@ -159,14 +163,14 @@ Returns the content of the RichText editor in the chosen format
 `string getValue( [string mode] );`
 
 
-| Parameter | Type     | Description                                                           |
-|-----------|----------|-----------------------------------------------------------------------|
+| Parameter | Type     | Description                                                                 |
+| --------- | -------- | --------------------------------------------------------------------------- |
 | `mode`    | `string` | the format of returned content:`"html"` (default), `"markdown"` or `"text"` |
 
 **Returns:**
 
 | Type     | Description                        |
-|----------|------------------------------------|
+| -------- | ---------------------------------- |
 | `string` | the content of the RichText editor |
 
 
@@ -175,6 +179,9 @@ Returns the content of the RichText editor in the chosen format
 // getting content in the markdown format
 var content = richtext.getValue("markdown");
 ```
+
+**Related samples:** [Get Value](https://snippet.dhtmlx.com/ujx3c71j)
+
 ___
 
 ## `paint`
@@ -195,9 +202,9 @@ Adds content into the RichText editor
 `void setValue(string value,string mode);`
 
 | Parameter | Type     | Description                                                                   |
-|-----------|----------|-------------------------------------------------------------------------------|
+| --------- | -------- | ----------------------------------------------------------------------------- |
 | `value`   | `string` | the context you want to add into the editor in either HTML or Markdown format |
-| `mode`    | `string` | optional, the format of text parsing: `"html"` or `"markdown"`                   |
+| `mode`    | `string` | optional, the format of text parsing: `"html"` or `"markdown"`                |
 
 ```js 
 var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
@@ -207,6 +214,8 @@ var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
 // adding HTML content
 richtext.setValue(htmlText);
 ```
+
+**Related samples:** [Setting HTML content](https://snippet.dhtmlx.com/57v7n2kp)
 
 #### Details
 
@@ -221,6 +230,9 @@ This demo will show you a customizable **JavaScript rich text editor**.
  
 richtext.setValue(mdText,"markdown");
 ```
+
+**Related samples:** [Setting Markdown Value](https://snippet.dhtmlx.com/9jf91qn9)
+
 
 :::note
 Note, that for a text in the Markdown format you need to define paragraphs by empty lines.
