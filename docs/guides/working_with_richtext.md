@@ -1,6 +1,7 @@
 ---
 sidebar_label: Working with RichText
 title: Working with RichText
+description: This guide covers the main aspects of working with DHTMLX Rich Text Editor such as saving the edited text, displaying statistics, enabling/disabling the fullscreen mode, and the editor API. 
 ---
 
 The API of dhtmlxRichText includes a basic set of methods that let you perform operations on the component. You can serialize edited text into either HTML or Markdown formats, get the number of the typed characters and enter/exit the full screen mode of the editor on the fly.

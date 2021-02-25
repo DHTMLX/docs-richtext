@@ -1,6 +1,7 @@
 ---
 sidebar_label: Setting Content
 title: Setting Content
+description: This guide sheds light on how to add content in the DHTMLX Rich Text Editor and display it in HTML and Markdown.
 ---
 
 dhtmlxRichText editor allows loading content in the HTML and Markdown formats. Thus, besides entering text right into the editor, you can load ready content in the supported format and edit it with the help of the RichText 

@@ -1,6 +1,7 @@
 ---
 sidebar_label: Integration with Angular
 title: Integration with Angular
+description: This guide provides explanations on possible ways of adding and initializing DHTMLX Rich Text Editor in Angular-based web apps.
 ---
 
 You can use dhtmlxRichText in an application created with the [Angular](https://angular.io/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).

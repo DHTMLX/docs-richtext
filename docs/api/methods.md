@@ -1,6 +1,7 @@
 ---
 sidebar_label: Methods
 title: Methods
+description: Explore the list of methods that can be utilized for performing various manipulations with the configuration of DHTMLX Rich Text Editor.
 ---
 
 

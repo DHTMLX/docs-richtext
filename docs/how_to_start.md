@@ -1,17 +1,9 @@
 ---
 sidebar_label: How to Start
 title: How to Start
+description: Learn how to quickly create DHTMLX Rich Text Editor on a page and set up its basic configuration in four simple steps. 
 slug: /
 ---
-
-import { CustomHeader } from '@site/src/components';
-
-<CustomHeader
-    meta={[
-        { name: 'description', content: 'Learn how to quickly create DHTMLX Rich Text Editor on a page and set up its basic configuration in four simple steps.',},
-    ]}
-    title='How to Start with Rich Text Editor | DHTMLX Documentation'
-/>
 
 RichText editor will make text editing quick and comfortable due to the inbuilt set of handy formatting tools.
 Follow this comprehensive and easy-to-reproduce tutorial to create RichText editor on a page and start working with it.

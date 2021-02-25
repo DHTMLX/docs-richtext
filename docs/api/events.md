@@ -1,6 +1,7 @@
 ---
 sidebar_label: Events 
 title: Events
+description: Examine the list of events triggered by user actions that can take place in DHTMLX Rich Text Editor.
 ---
 
 :::info

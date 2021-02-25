@@ -1,6 +1,7 @@
 ---
 sidebar_label: Event Handling
 title: Event Handling
+description: This guide includes brief instructions on how to work with event listeners and call events in DHTMLX Rich Text Editor.
 ---
 
 ## Attaching Event Listeners

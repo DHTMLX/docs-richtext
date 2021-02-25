@@ -1,6 +1,7 @@
 ---
 sidebar_label: Configuration
 title: Configuration
+description: This guide helps to configure the DHTMLX Rich Text Editor according to your requirements, enable the required working mode in the editor, and define its toolbar structure.
 ---
 
 With RichText configuration options, you can make your work with text even more comfortable. It is possible to define the desired working mode and set the blocks of toolbar buttons you need in the order you want.

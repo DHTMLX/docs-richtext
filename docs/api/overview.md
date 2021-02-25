@@ -1,6 +1,7 @@
 ---
 sidebar_label: API Overview
 title: API Overview
+description: Become familiar with a range of objects, methods, and events available in the DHTMLX Rich Text Editor API for working with configuration and behavior.
 ---
 
 

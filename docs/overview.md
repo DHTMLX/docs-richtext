@@ -1,8 +1,8 @@
 ---
 sidebar_label: RichText Overview
 title: RichText Overview
+description: Get a general idea of DHTMLX Rich Text Editor, its purpose, toolbar structure, editing modes, supported text formats, and available integrations with JavaScript frameworks.
 ---
-
 
 dhtmlxRichText is a JavaScript client-side tool for fast and handy editing of content. It provides a compact set of formatting controls, two editing modes for comfy work with text and an easily adjustable toolbar.
 

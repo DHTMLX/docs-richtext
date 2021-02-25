@@ -1,6 +1,7 @@
 ---
 sidebar_label: Localization
 title: Localization
+description: This guide provides instructions on how to apply any custom locales for the DHTMLX Rich Text Editor's interface.
 ---
 
 You have a possibility to present the interface of the RichText editor in any language you wish. You just need to translate the corresponding strings for labels and tooltips and apply a ready locale to the component.

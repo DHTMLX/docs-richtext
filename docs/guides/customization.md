@@ -1,6 +1,7 @@
 ---
 sidebar_label: Customization
 title: Customization
+description: This guide explains how to customize the DHTMLX Rich Text Editor's toolbar, reconfigure controls, and replace default icons used in the editor with custom ones.
 ---
 
 You can customize the appearance and structure of toolbar, change the settings of controls and use any icon pack instead of the default one.

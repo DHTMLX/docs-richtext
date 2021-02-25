@@ -1,6 +1,7 @@
 ---
 sidebar_label: Integration with Vue.js
 title: Integration with Vue.js
+description: This guide provides explanations on possible ways of adding and initializing DHTMLX Rich Text Editor in Vue-based web apps.
 ---
 
 You can use dhtmlxRichText in an application created with the [Vue.js](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/vuejs-widgets).

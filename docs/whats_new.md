@@ -1,6 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's new
+description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
 Version 1.1.2
