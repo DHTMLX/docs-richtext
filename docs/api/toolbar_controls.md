@@ -1,6 +1,7 @@
 ---
 sidebar_label: Toolbar Controls
 title: Toolbar Controls
+description: Learn how to add custom toolbar controls and configure them to your requirements using the available API properties of DHTMLX Rich Text Editor.
 ---
 
 Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the toolbar by adding the following controls:
