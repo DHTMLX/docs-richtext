@@ -1,9 +1,9 @@
 module.exports = {
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
-    url: 'https://docs.dhtmlx.com/richtext/',
+    url: 'https://docs.dhtmlx.com/',
     baseUrl: '/richtext/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
@@ -144,7 +144,7 @@ module.exports = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} DHTMLX, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} XB Software Ltd.`,
         },
     },
     presets: [
