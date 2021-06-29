@@ -1,7 +1,7 @@
 module.exports = {
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
-    url: 'https://docs.dhtmlx.com/',
+    url: 'https://docs.dhtmlx.com',
     baseUrl: '/richtext/',
     onBrokenLinks: 'warn',
     favicon: 'img/favicon.ico',
