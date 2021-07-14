@@ -14,21 +14,18 @@ Format of content
 
 Rich Text supports standard HTML format, so you can use all habitual formatting tags. The image below presents the result of parsing a text in the HTML format into the Rich Text editor:
 
-<!-- ![HTML format](html_format.png) -->
-<img alt="" src={require('./../assets/html_format.png').default} />
+![HTML format](./../assets/html_format.png)
 
 ### Markdown format
 
 For parsing of a Markdown-formatted text, dhtmlxRichtext uses the [Marked.js](https://github.com/markedjs/marked) markdown parser.
 For now the component supports basic formatting elements of the Markdown syntax. Check the cheat sheet below:
 
-<!-- ![Markdown cheat sheet](markdown_cheatsheet.png) -->
-<img alt="" src={require('./../assets/markdown_cheatsheet.png').default} />
+![Markdown cheat sheet](./../assets/markdown_cheatsheet.png)
 
 The following image demonstrates the result of parsing a text in the Markdown format into the Rich Text editor:
 
-<!-- ![Markdown format](markdown_format.png) -->
-<img alt="" src={require('./../assets/markdown_format.png').default} />
+![Markdown format](./../assets/markdown_format.png)
 
 Adding content into editor
 ------------------

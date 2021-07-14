@@ -13,11 +13,11 @@ There are two modes of RichText editor between which you can select to get the b
 
 - "classic"
 
- <img alt="" src={require('./../assets/classic_mode.png').default} />
+![Classic Mode](./../assets/classic_mode.png)
 
 - "document"
 
- <img alt="" src={require('./../assets/doc_mode.png').default} />
+![Doc Mode](./../assets/doc_mode.png)
 
 To specify the desired mode, you need to define it in the [mode](../api/properties.md#mode) option of the Richtext configuration object during initialization of the component:
 
@@ -55,7 +55,7 @@ var richtext = new dhx.Richtext(document.body, {
 });
 ~~~
 
- <img alt="" src={require('./../assets/default_toolbar.png').default} />
+![Default Toolbar](./../assets/default_toolbar.png)
 
 **Related sample:** [Initialization](https://snippet.dhtmlx.com/32jtemtm)
 
@@ -75,7 +75,7 @@ var richtext = new dhx.Richtext(document.body, {
 });
 ~~~
 
- <img alt="" src={require('./../assets/full_toolbar.png').default} />
+![Full Toolbar](./../assets/full_toolbar.png)
 
 
 **Related sample:** [Full Toolbar](https://snippet.dhtmlx.com/5yga5ce1)
@@ -106,8 +106,7 @@ var richtext = new dhx.Richtext(document.body, {
 });
 ~~~
 
-<!-- ![Custom toolbar](custom_toolbar.png) -->
- <img alt="" src={require('./../assets/custom_toolbar.png').default} />
+![Custom toolbar](./../assets/custom_toolbar.png)
 
 **Related sample:** [Toolbar Blocks](https://snippet.dhtmlx.com/yp7en22d)
 
@@ -115,7 +114,7 @@ var richtext = new dhx.Richtext(document.body, {
 
 The default statistics shown in the toolbar includes the following data about the text: the count of words, characters and characters excluding spaces.
 
-<img alt="" src={require('./../assets/default_stats.png').default} />
+![Default stats](./../assets/default_stats.png)
 
 But you can display any custom data via the [customStats](api/properties.md#customstats) configuration option. Set an array with necessary statistical parameters as a value of this option. 
 Each parameter represents an object with two properties:
@@ -152,8 +151,7 @@ var richtext = new dhx.Richtext("richtext_container", {
 });
 ~~~
 
-<!-- ![Custom statistics](custom_stats.png) -->
-<img alt="" src={require('./../assets/custom_stats.png').default} />
+![Custom statistics](./../assets/custom_stats.png)
 
 **Related sample:** [Custom Stats](https://snippet.dhtmlx.com/u1734epz)
 

@@ -19,15 +19,13 @@ The toolbar of Richtext is [easily configurable](guides/configuration.md#toolbar
 
 The **default toolbar** includes 6 blocks of controls. They are: "undo", "style", "decoration", "colors", "align" and "link":
 
-<!-- ![Default toolbar](default_toolbar.png) -->
- <img alt="" src={require('./assets/default_toolbar.png').default} />
+![Default toolbar](./assets/default_toolbar.png)
 
 
 
 The **full toolbar** includes all the default blocks and additional "clear", "stats" and "fullscreen" blocks:
 
-<!-- ![Full toolbar](full_toolbar.png) -->
- <img alt="" src={require('./assets/full_toolbar.png').default} />
+![Full toolbar](./assets/full_toolbar.png)
 
 You can [adjust the look and feel of the toolbar](guides/customization.md) to meet your requirements.
 
@@ -39,13 +37,11 @@ dhtmlxRichText can work with content in [two modes](guides/configuration.md). Yo
 
 - "classic"
 
-<!-- ![Classic mode](classic_mode.png) -->
- <img alt="" src={require('./assets/classic_mode.png').default} />
+![Classic mode](./assets/classic_mode.png)
 
 - "document"
 
-<!-- ![Document mode](doc_mode.png) -->
- <img alt="" src={require('./assets/doc_mode.png').default} />
+![Document mode](./assets/doc_mode.png)
 
 [Read more](guides/configuration.md#working-modes) about setting the mode you like best.
 
@@ -57,13 +53,11 @@ The RichText editor supports [parsing](guides/loading_data.md#adding-content-int
 
 - HTML format
 
-<!-- ![HTML format](html_format.png) -->
- <img alt="" src={require('./assets/html_format.png').default} />
+![HTML format](./assets/html_format.png)
 
 - Markdown format
 
-<!-- ![Markdown format](markdown_format.png) -->
- <img alt="" src={require('./assets/markdown_format.png').default} />
+![Markdown format](./assets/markdown_format.png)
 
 Integration
 -------------

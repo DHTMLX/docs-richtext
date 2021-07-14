@@ -11,8 +11,8 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.64",
-    "@docusaurus/preset-classic": "2.0.0-alpha.64",
+    "@docusaurus/core": "^2.0.0-beta.3",
+    "@docusaurus/preset-classic": "^2.0.0-beta.3",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
@@ -30,5 +30,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
+    "docusaurus-plugin-sass": "^0.1.11"
   }
 }

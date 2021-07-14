@@ -29,8 +29,7 @@ Statistics
 
 RichText editor allows you to show statistics about the edited text. There is the **Statistics** control in the toolbar that serves for this purpose:
 
-<!-- ![Statistics control](stats_control.png) -->
-<img alt="" src={require('./../assets/stats_control.png').default} />
+![Statistics control](./../assets/stats_control.png)
 
 ### Getting statistics
 

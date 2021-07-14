@@ -225,8 +225,7 @@ It is also possible to add the blocks enumerated below to get the full toolbar:
 
 In the example below a new button named **Count Characters** is added into the toolbar:
 
-<!-- ![Custom Toolbar Button](custom_toolbar_button.png) -->
-<img alt="" src={require('./../assets/custom_toolbar_button.png').default} />
+![Custom Toolbar Button](./../assets/custom_toolbar_button.png)
 
 ~~~js
 richtext.toolbar.data.add({
@@ -244,9 +243,7 @@ richtext.toolbar.data.add({
 
 In the example below the default icons of the buttons of the **Decoration** block are changed to Font Awesome ones:
 
-<!-- ![Custom Toolbar Icons](custom_toolbar_icons.png) -->
-<img alt="" src={require('./../assets/custom_toolbar_icons.png').default} />
-
+![Custom Toolbar Icons](./../assets/custom_toolbar_icons.png)
 
 ~~~js
 var icons = [

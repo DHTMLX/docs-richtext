@@ -6,8 +6,7 @@ description: This guide provides instructions on how to apply any custom locales
 
 You have a possibility to present the interface of the RichText editor in any language you wish. You just need to translate the corresponding strings for labels and tooltips and apply a ready locale to the component.
 
-<!-- ![Localized RichText](richtext_locale.png) -->
- <img alt="" src={require('./../assets/richtext_locale.png').default} />
+![Localized RichText](./../assets/richtext_locale.png)
 
 Default locale
 -----------------
