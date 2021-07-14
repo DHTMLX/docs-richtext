@@ -133,6 +133,7 @@ module.exports = {
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
+    trailingSlash: true,
     themeConfig: {
         colorMode: {
             defaultMode: 'light',
