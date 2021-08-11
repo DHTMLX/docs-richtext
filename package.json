@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "node --max_old_space_size=16000 node_modules/@docusaurus/core/bin/docusaurus start",
+    "build": "node --max_old_space_size=16000 node_modules/@docusaurus/core/bin/docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve"
@@ -16,8 +16,8 @@
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "browserslist": {
     "production": [
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
-    "docusaurus-plugin-sass": "^0.1.11"
+    "docusaurus-plugin-sass": "^0.1.11",
+    "webpack-cli": "^4.4.0"
   }
 }

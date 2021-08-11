@@ -130,6 +130,7 @@ module.exports = {
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/richtext/',
     onBrokenLinks: 'warn',
+    onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
