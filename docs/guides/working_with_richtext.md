@@ -9,7 +9,7 @@ The API of dhtmlxRichText includes a basic set of methods that let you perform o
 Getting content from editor
 -------------------
 
-After you've entered the necessary text into the editor and formatted it to your taste, you can save the result in any of [supported formats](loading_data.md#formatofcontent).
+After you've entered the necessary text into the editor and formatted it to your taste, you can save the result in any of [supported formats](guides/loading_data.md#format-of-content).
 
 To save the edited text, make use of the [getValue()](api/methods.md#getvalue) method. The method takes an only parameter:
 
@@ -22,7 +22,7 @@ var content = richtext.getValue("markdown");
 
 **Related sample:** [Get Value](https://snippet.dhtmlx.com/ujx3c71j)
 
-If you are in two minds about how to add content into the RichText editor, there is the [Setting Content](loading_data.md) article.
+If you are in two minds about how to add content into the RichText editor, there is the [Setting Content](guides/loading_data.md) article.
 
 Statistics
 ---------------------
@@ -128,7 +128,7 @@ function calc() {
 Full screen mode
 -------------------
 
-You can enter/exit the full screen mode for the Rich text editor with the help of the corresponding API methods: [fullScreen()](../api/methods.md#fullscreen) and [exitFullScreen()](api/methods.md#exitfullscreen):
+You can enter/exit the full screen mode for the Rich text editor with the help of the corresponding API methods: [fullScreen()](api/methods.md#fullscreen) and [exitFullScreen()](api/methods.md#exitfullscreen):
 
 ~~~js
 // enter full screen

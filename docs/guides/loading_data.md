@@ -30,7 +30,7 @@ The following image demonstrates the result of parsing a text in the Markdown fo
 Adding content into editor
 ------------------
 
-In order to add some text content into the RichText, make use of the [setValue()](../api/methods.md#setvalue) method. The method takes two parameters:
+In order to add some text content into the RichText, make use of the [setValue()](api/methods.md#setvalue) method. The method takes two parameters:
 
 - `value` - (*string*) a string with the content you want to add into the editor in either HTML or Markdown format
 - `mode` - (*string*) optional, the format of text parsing: `"html"` (default) or `"markdown"`

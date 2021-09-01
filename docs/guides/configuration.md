@@ -19,7 +19,7 @@ There are two modes of RichText editor between which you can select to get the b
 
 ![Doc Mode](./../assets/doc_mode.png)
 
-To specify the desired mode, you need to define it in the [mode](../api/properties.md#mode) option of the Richtext configuration object during initialization of the component:
+To specify the desired mode, you need to define it in the [mode](api/properties.md#mode) option of the Richtext configuration object during initialization of the component:
 
 ~~~js
 var richtext = new dhx.Richtext("richtext_container", {
@@ -43,7 +43,7 @@ The RichText toolbar consists of several blocks of controls that can be changed 
 - `"align"` - to adjust the alignment of the text on a page
 - `"link"` - to add a link into the text
 
-The structure of toolbar is defined via the [toolbarBlocks](../api/properties.md#toolbarblocks) configuration option of the component, which is an array with strings presenting the names of controls.
+The structure of toolbar is defined via the [toolbarBlocks](api/properties.md#toolbarblocks) configuration option of the component, which is an array with strings presenting the names of controls.
 
 ~~~js
 var richtext = new dhx.Richtext(document.body, {
@@ -156,5 +156,5 @@ var richtext = new dhx.Richtext("richtext_container", {
 **Related sample:** [Custom Stats](https://snippet.dhtmlx.com/u1734epz)
 
 
-Toolbar is [highly customizable](customization.md). You can add new controls, change the icons of controls and apply the desired icon pack. 
+Toolbar is [highly customizable](guides/customization.md). You can add new controls, change the icons of controls and apply the desired icon pack. 
 

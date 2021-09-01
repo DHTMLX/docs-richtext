@@ -47,7 +47,7 @@ The `button` object has the following properties:
 - `tooltip` - (string) the tooltip of a button
 - `count` - (*number*) the counter of a button
 - `countColor` - (*string*) the color of a badge with number: "danger" | "secondary" | "primary" | "success"
-- `items` - (*array*) an array of nested controls. You can find the full list of all available controls [here](https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html). If the type of a nested control is not specified, the *menuItem* type will be applied by default.
+- `items` - (*array*) an array of nested controls. You can find the full list of all available controls [here](https://docs.dhtmlx.com/suite/menu/configuring_menu_items/). If the type of a nested control is not specified, the *menuItem* type will be applied by default.
 - `group` - (*string*) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive
 - `multiClick` - (*boolean*) defines the behavior of the Undo/Redo buttons: 
     - *true* - all the actions are reverted/re-applied one by one when the Undo/Redo button is clicked and held
@@ -94,7 +94,7 @@ The `selectButton` object has the following properties:
 - `value` - (*string*) a value of the button
 - `css` - (*string|string[]*) adds style classes to a button
 - `icon` - (*string*) the name of an icon from the used icon font
-- `items` - (*array*) an array of nested controls. You can find the full list of all available controls [here](https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html). If the type of a nested control is not specified, the *menuItem* type will be applied by default.
+- `items` - (*array*) an array of nested controls. You can find the full list of all available controls [here](https://docs.dhtmlx.com/suite/menu/configuring_menu_items/). If the type of a nested control is not specified, the *menuItem* type will be applied by default.
 - `tooltip` - (*string*) a tooltip for the control
 - `count` - (*number*) a badge with a number
 - `countColor` - (*string*) the color of a badge with number: "danger" | "secondary" | "primary" | "success"

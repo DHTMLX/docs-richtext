@@ -81,9 +81,9 @@ var richtext = new dhx.Richtext("richtext_container", {
 
 This is a list of properties that you can specify in the Richtext configuration object:
 
-- [**mode**](configuration.md#working-modes) - (string) the working mode of RichText. Can be either `default` or `document`.
-- [**toolbarBlocks**](configuration.md#toolbar) - (array) specifies blocks of buttons that will be shown in the Richtext toolbar
-- [**customStats**](configuration.md#custom-statistics-in-the-toolbar) - (array) defines the logic of displaying custom statistics
+- [**mode**](guides/configuration.md#working-modes) - (string) the working mode of RichText. Can be either `default` or `document`.
+- [**toolbarBlocks**](guides/configuration.md#toolbar) - (array) specifies blocks of buttons that will be shown in the Richtext toolbar
+- [**customStats**](guides/configuration.md#custom-statistics-in-the-toolbar) - (array) defines the logic of displaying custom statistics
 
 You can set configuration options during initialization as the second parameter of the constructor:
 
