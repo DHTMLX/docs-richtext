@@ -125,7 +125,7 @@ Check the detailed description of parameters:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
@@ -287,7 +287,7 @@ where:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
@@ -338,7 +338,7 @@ Check the detailed description of the parameter:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
@@ -422,7 +422,7 @@ Check the detailed description of parameters:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
@@ -485,7 +485,7 @@ Check the detailed description of the parameter:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
@@ -555,7 +555,7 @@ Check the detailed description of parameters:
 						<ul>
 							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
 							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://richtext-doc.netlify.app/docs/api/editor_api_methods#getselection">getSelection</a> method instead of passing the second parameter.</li>
+							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
 						</ul>
 					</li>
 				</ul>
