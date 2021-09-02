@@ -210,7 +210,7 @@ Adds content into the RichText editor
 ```js 
 var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
 `<p>This demo will show you a customizable JavaScript rich text editor.</p>` +
-`<p><i>To learn more, read </i><a href="http://docs"><i>documentation</i></a></p>.`
+`<p><i>To learn more, read </i><a href="https://docs.dhtmlx.com/richtext/overview/"><i>documentation</i></a></p>.`
  
 // adding HTML content
 richtext.setValue(htmlText);
@@ -227,7 +227,7 @@ var mdText = `# Meet DHTMLX Rich Text Editor!
  
 This demo will show you a customizable **JavaScript rich text editor**.
  
-*To learn more, read [documentation](http://docs)*.`
+*To learn more, read [documentation](https://docs.dhtmlx.com/richtext/overview/)*.`
  
 richtext.setValue(mdText,"markdown");
 ```
