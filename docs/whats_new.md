@@ -4,10 +4,22 @@ title: What's new
 description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
+Version 1.1.3
+--------------
+
+Released on October 11, 2021
+
+### Fixes
+
+- Fix the issue with serialization of the content which is in the "Markdown" format. Now the spaces are removed before and after the stylized string.
+- Fix the issue with styles of Richtext when using it together with Suite
+- Now it is possible to localize the *text* and *link* input labels of the **Link** button of the toolbar
+
+
 Version 1.1.2
 ---------------
 
-<span class="rel_date">released on February 13, 2020</span>
+Released on February 13, 2020
 
 ### Fixes
 
@@ -16,7 +28,7 @@ Version 1.1.2
 Version 1.1.1
 ---------------
 
-<span class="rel_date">released on March 6, 2019</span>
+Released on March 6, 2019
 
 ### Fixes
 
@@ -27,7 +39,7 @@ Version 1.1.1
 Version 1.1
 -------------
 
-<span class="rel_date">released on February 27, 2019</span>
+Released on February 27, 2019
 
 ### New functionality
 
@@ -49,7 +61,7 @@ Version 1.1
 Version 1.0.1 
 ----------------
 
-<span class="rel_date">released on December 19, 2018</span>
+Released on December 19, 2018
 
 ### Fixes
 
@@ -61,7 +73,7 @@ Version 1.0.1
 Version 1.0 
 ----------------
 
-<span class="rel_date">released on December 13, 2018</span>
+Released on December 13, 2018
 
 ### Initial functionality
 

@@ -46,7 +46,9 @@ var en = {
     stats: "Statistics",
 	chars: "chars",
 	charsExlSpace: "charsExlSpace",
-	words: "words" 
+	words: "words",
+	text: "Text",
+	link: "Link"
 }; 
 ~~~
 
@@ -90,7 +92,9 @@ var de = {
     stats: "Statistiken",
     chars: "Zeichen",  
 	charsExlSpace: "Zeichen ohne Leerzeichen", 
-	words: "Wörter"    
+	words: "Wörter",
+	text: "Text",     
+	link: "Verknüpfung"
 };
 ~~~
 
