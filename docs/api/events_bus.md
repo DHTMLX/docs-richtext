@@ -1,7 +1,7 @@
 ---
-sidebar_label: Events Bus
-title: Events Bus
-description: Learn how to use events bus for handling various events in DHTMLX Rich Text Editor.
+sidebar_label: Event Bus methods
+title: Event Bus methods
+description: Learn how to use event bus for handling various events in DHTMLX Rich Text Editor.
 ---
 
 

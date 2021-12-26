@@ -1,6 +1,6 @@
 ---
-sidebar_label: How to Start
-title: How to Start
+sidebar_label: How to start
+title: How to start
 description: Learn how to quickly create DHTMLX Rich Text Editor on a page and set up its basic configuration in four simple steps. 
 slug: /
 ---
@@ -64,7 +64,7 @@ At this step you can add RichText on a page. There are two easy steps:
 </html>
 ~~~
 
-Step 3. RichText Configuration
+Step 3. Configure RichText 
 ------------------------------
 
 Now it's time to define the desired configuration options to make RichText meet you needs.
@@ -81,7 +81,7 @@ var rich = new dhx.Richtext("richtext_container", {
 
 There is a [detailed description of available RichText configuration settings](guides/configuration.md). 
 
-Step 4. Setting content (optional)
+Step 4. Set content (optional)
 -------------------------
 
 If necessary, you can parse some text in the HTML or Markdown format on the RichText initialization. Read more about this feature in the [related article](guides/loading_data.md).

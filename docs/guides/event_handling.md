@@ -1,10 +1,10 @@
 ---
-sidebar_label: Event Handling
-title: Event Handling
+sidebar_label: Event handling
+title: Event handling
 description: This guide includes brief instructions on how to work with event listeners and call events in DHTMLX Rich Text Editor.
 ---
 
-## Attaching Event Listeners
+## Attaching event listeners
 
 You can attach event listeners with the [richtext.events.on()](api/events_bus.md#on) method:
 
@@ -20,7 +20,7 @@ richtext.events.on("Change", function(action, canUndo, canRedo){
 The names of events are case-insensitive.
 :::
 
-## Detaching Event Listeners
+## Detaching event listeners
 
 To detach events, use [richtext.events.detach()](api/events_bus.md#detach):
 
@@ -31,7 +31,7 @@ var change = richtext.events.on("Change", function(action, canUndo, canRedo){
 richtext.events.detach(change);
 ~~~
 
-## Calling Events
+## Calling events
 
 To call events, use [richtext.events.fire()](api/events_bus.md#fire):
 

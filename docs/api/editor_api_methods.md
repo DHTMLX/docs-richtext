@@ -1,6 +1,6 @@
 ---
-sidebar_label: Editor API Methods
-title: Editor API Methods
+sidebar_label: Editor API methods
+title: Editor API methods
 description: Become acquainted with DHTMLX Rich Text Editor API parameters, types, and their detailed descriptions.
 ---
 

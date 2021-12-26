@@ -1,6 +1,6 @@
 ---
-sidebar_label: RichText Overview
-title: RichText Overview
+sidebar_label: RichText overview
+title: RichText overview
 description: Get a general idea of DHTMLX Rich Text Editor, its purpose, toolbar structure, editing modes, supported text formats, and available integrations with JavaScript frameworks.
 ---
 

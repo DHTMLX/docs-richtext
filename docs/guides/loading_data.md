@@ -1,6 +1,6 @@
 ---
-sidebar_label: Setting Content
-title: Setting Content
+sidebar_label: Setting content
+title: Setting content
 description: This guide sheds light on how to add content in the DHTMLX Rich Text Editor and display it in HTML and Markdown.
 ---
 

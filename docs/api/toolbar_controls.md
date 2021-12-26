@@ -1,6 +1,6 @@
 ---
-sidebar_label: Toolbar Controls
-title: Toolbar Controls
+sidebar_label: Toolbar controls
+title: Toolbar controls
 description: Learn how to add custom toolbar controls and configure them to your requirements using the available API properties of DHTMLX Rich Text Editor.
 ---
 
@@ -164,4 +164,3 @@ richtext.toolbar.data.add({
 	type:"spacer"
 }, 4);
 ```
-
