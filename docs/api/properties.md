@@ -1,5 +1,5 @@
 ---
-sidebar_label: Poperties
+sidebar_label: Properties
 title: Properties
 description: Get insight into configuration properties utilized for working with text statistics, setting editor mode, and customizing the toolbar in DHTMLX Rich Text Editor.
 ---
