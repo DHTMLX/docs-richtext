@@ -154,7 +154,8 @@ module.exports = {
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
-            apiKey: '421aa9b07cc441097c4db7f264b63a6b',
+            appId: 'PJG180YLDH',
+            apiKey: '83de34cb4df8e71e814b989e48259185',
             indexName: 'richtext',
 
             // Optional: see doc section bellow
