@@ -1,31 +1,51 @@
-## DHTMLX RichText Documentation
+<h1 align="center"><a href="https://docs.dhtmlx.com/richtext/">DHTMLX RichText Documentation</a></h1>
 
-### Installation
+RichText editor is an effective tool to make text editing quick and comfortable due to the inbuilt set of handy formatting tools.
+
+## Explore documentation locally
+
+To run the RichText documentation locally, take the following steps:
+
+#### 1. Clone the documentation to the locale folder
+
+```
+$ git clone git@github.com:DHTMLX/docs-richtext.git
+$ cd docs-richtext
+```
+
+#### 2. Install dependencies
 
 ```
 $ yarn
 ```
 
-### Local Development
+#### 3. Run the documentation on the local server and explore it
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+## Related sources
 
-### Build
+[Download DHTMLX RichText](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml)
 
-```
-$ yarn build
-```
+[Live demos](https://docs.dhtmlx.com/richtext/samples/)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+[Blog](https://dhtmlx.com/blog/tag/richtext/)
 
-### Deployment
+[Forum](https://forum.dhtmlx.com/c/widgets/richtext/)
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+## Follow us
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Star our GitHub repo :star:
+
+Watch our tutorials on [YouTube](https://www.youtube.com/user/dhtmlx/videos) :eyes:
+
+Read us on [Medium](https://medium.com/@dhtmlx) :newspaper:
+
+Follow us on [Twitter](https://twitter.com/dhtmlx) :feet:
+
+Like our page on [Facebook](https://www.facebook.com/dhtmlx/) :thumbsup:
+
+See our news on [Linkedin](https://www.linkedin.com/groups/3345009/) :mega:
+
