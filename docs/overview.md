@@ -4,7 +4,7 @@ title: RichText overview
 description: Get a general idea of DHTMLX Rich Text Editor, its purpose, toolbar structure, editing modes, supported text formats, and available integrations with JavaScript frameworks.
 ---
 
-dhtmlxRichText is a JavaScript client-side tool for fast and handy editing of content. It provides a compact set of formatting controls, two editing modes for comfy work with text and an easily adjustable toolbar.
+DHTMLX RichText is a JavaScript client-side tool for fast and handy editing of content. It provides a compact set of formatting controls, two editing modes for comfy work with text and an easily adjustable toolbar.
 
 This component supports parsing and serialization of data in the HTML and JSON formats and allows using any icon fonts and adding custom controls. Besides, there are ready-made solutions for integration with
 such popular JavaScript frameworks as Angular, React and Vue.js.
@@ -33,7 +33,7 @@ You can [adjust the look and feel of the toolbar](guides/customization.md) to me
 Two working modes 
 ---------------------
 
-dhtmlxRichText can work with content in [two modes](guides/configuration.md). You can choose the most suitable mode to feel comfortable while editing text. The modes are:
+DHTMLX Richtext can work with content in [two modes](guides/configuration.md). You can choose the most suitable mode to feel comfortable while editing text. The modes are:
 
 - "classic"
 

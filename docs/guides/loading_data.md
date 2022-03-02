@@ -4,7 +4,7 @@ title: Setting content
 description: This guide sheds light on how to add content in the DHTMLX Rich Text Editor and display it in HTML and Markdown.
 ---
 
-dhtmlxRichText editor allows loading content in the HTML and Markdown formats. Thus, besides entering text right into the editor, you can load ready content in the supported format and edit it with the help of the RichText 
+DHTMLX Richtext editor allows loading content in the HTML and Markdown formats. Thus, besides entering text right into the editor, you can load ready content in the supported format and edit it with the help of the RichText 
 set of controls.
 
 Format of content
@@ -18,7 +18,7 @@ Rich Text supports standard HTML format, so you can use all habitual formatting 
 
 ### Markdown format
 
-For parsing of a Markdown-formatted text, dhtmlxRichtext uses the [Marked.js](https://github.com/markedjs/marked) markdown parser.
+For parsing of a Markdown-formatted text, DHTMLX Richtext uses the [Marked.js](https://github.com/markedjs/marked) markdown parser.
 For now the component supports basic formatting elements of the Markdown syntax. Check the cheat sheet below:
 
 ![Markdown cheat sheet](./../assets/markdown_cheatsheet.png)

@@ -14,14 +14,14 @@ The current article will guide you through simple steps you need to take in orde
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with dhtmlxRichText</title>			
+		<title>How to Start with DHTMLX Richtext</title>			
 		<script type="text/javascript" src="../../codebase/richtext.js"></script>
 		<link rel="stylesheet" href="../../codebase/richtext.css">
 	</head>
 	<body>
 		<div id="richtext_container"></div>
 		<script>
-        	// creating dhtmlxRichText 
+        	// creating DHTMLX Richtext 
         	var richtext = new dhx.Richtext("richtext_container");
 		</script>
 	</body>
@@ -71,7 +71,7 @@ Initialize RichText with the `dhx.Richtext` object constructor. The constructor 
 
 
 ~~~js title="index.html"
-// creating dhtmlxRichText
+// creating RichText
 var richtext = new dhx.Richtext("richtext_container", {
 	// config options
 });
