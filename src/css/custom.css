@@ -59,7 +59,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 /* h3 */
 
 .markdown>h3 {
-    --ifm-h3-font-size: 1.2rem;
+    --ifm-h3-font-size: 1.3rem;
 }
 
 
