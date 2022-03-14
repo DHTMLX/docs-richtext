@@ -1,12 +1,10 @@
 ---
-sidebar_label: API Overview
-title: API Overview
+sidebar_label: API overview
+title: API overview
 description: Become familiar with a range of objects, methods, and events available in the DHTMLX Rich Text Editor API for working with configuration and behavior.
 ---
 
-
 ### Constructor
-
 
 ~~~js
 var richtext = new dhx.Richtext("richtext_container", {
@@ -21,7 +19,6 @@ var richtext = new dhx.Richtext("richtext_container", {
 
 ### Methods
 
-
 | Name                                            | Description                                        |
 | ----------------------------------------------- | -------------------------------------------------- |
 | [destructor](api/methods.md#destructor)         | releases occupied resources                        |
@@ -32,16 +29,14 @@ var richtext = new dhx.Richtext("richtext_container", {
 | [getStats](api/methods.md#getstats)             | returns statistics on the entered content          |
 | [paint](api/methods.md#paint)                   | repaints RichText                                  |
 | [setValue](api/methods.md#setvalue)             | sets the provided content into the RichText editor |
-                                 
 
-### Events Bus Methods
+### Event Bus methods
 
 | Name                               | Description             |
 | ---------------------------------- | -------------------------------|
 | [detach](api/events_bus.md#detach) | detaches a handler from an event (which was attached before by the `on()` method) |
 | [fire](api/events_bus.md#fire)     | triggers an inner event  |
 | [on](api/events_bus.md#on)         | attaches a handler to an inner event of Vault   |
-
 
 ### Events
 
@@ -52,8 +47,6 @@ var richtext = new dhx.Richtext("richtext_container", {
 | [selectionChange](api/events.md#selectionchange)   | fires on change of selection by a user                 |
 | [selectionRefresh](api/events.md#selectionrefresh) | fires on automatic returning of cursor into the editor |
 
-
-
 ### Properties
 
 | Name                                             | Description       |
@@ -62,10 +55,9 @@ var richtext = new dhx.Richtext("richtext_container", {
 | [mode](api/properties.md#mode)                   | the working mode of the RichText editor  |
 | [toolbarBlocks](api/properties.md#toolbarblocks) | specifies blocks of buttons that will be shown in the Richtext toolbar |
 
+### Editor API methods
 
-### Editor API Methods
-
-```
+```js
 var EditorAPI = richtext.getEditorAPI();
 ```
 
@@ -80,8 +72,7 @@ var EditorAPI = richtext.getEditorAPI();
 | [setSelection](api/editor_api_methods.md#setselection) | applies selection to the specified text position  |
 | [update](api/editor_api_methods.md#update)             | modifies the entered text   |
 
-
-### Toolbar Methods
+### Toolbar methods
 
 | Name                                    | Description                                  |
 |-----------------------------------------|----------------------------------------------|
@@ -89,7 +80,7 @@ var EditorAPI = richtext.getEditorAPI();
 | [remove](api/toolbar_methods.md#remove) | removes a control from the toolbar           |
 | [update](api/toolbar_methods.md#update) | updates configuration options of the control |
 
-### Toolbar Controls
+### Toolbar controls
 
 Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the toolbar by adding the following controls:
 

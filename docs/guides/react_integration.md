@@ -4,10 +4,10 @@ title: Integration with React
 description: This guide provides explanations on possible ways of adding and initializing DHTMLX Rich Text Editor in React-based web apps.
 ---
 
-You can use dhtmlxRichText in an application created with the [React](https://reactjs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/react-widgets).
+You can use DHTMLX Richtext in an application created with the [React](https://reactjs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/react-widgets).
 
 :::note
-Note, that the implementation provided below is not the only way to use dhtmlxRichText in a React-based application. It gives you initial schema of the integration and implies further 
+Note, that the implementation provided below is not the only way to use DHTMLX Richtext in a React-based application. It gives you initial schema of the integration and implies further 
 extension of the app functionality depending on your goals.
 :::
 

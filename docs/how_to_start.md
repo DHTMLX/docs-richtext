@@ -1,6 +1,6 @@
 ---
-sidebar_label: How to Start
-title: How to Start
+sidebar_label: How to start
+title: How to start
 description: Learn how to quickly create DHTMLX Rich Text Editor on a page and set up its basic configuration in four simple steps. 
 slug: /
 ---
@@ -13,19 +13,19 @@ Follow this comprehensive and easy-to-reproduce tutorial to create RichText edit
 Step 1. Include source files
 --------------------------
 
-First create an HTML file with the name `index.html`. Then include the source files of dhtmlxRichText into this file. 
+First create an HTML file with the name `index.html`. Then include the source files of DHTMLX Richtext into this file. 
 [Have a look at the structure of RichText package](guides/initialization.md#including-source-files).
 
 You need to include the following two files:
 
-- the JS file of dhtmlxRichText
-- the CSS file of dhtmlxRichText
+- the JS file of DHTMLX Richtext
+- the CSS file of DHTMLX Richtext
 
 ~~~html title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with dhtmlxRichText</title>
+		<title>How to Start with DHTMLX Richtext</title>
 		<script type="text/javascript" src="../../codebase/richtext.js"></script>
 		<link rel="stylesheet" href="../../codebase/richtext.css">
 	</head>
@@ -43,13 +43,13 @@ Step 2. Create RichText
 At this step you can add RichText on a page. There are two easy steps:
 
 - Open the `index.html` file and create a DIV container in it.
-- Initialize dhtmlxRichText in the container with the help of the `dhx.Richtext` constructor. As parameters of the constructor function, pass the container you've created above and the configuration object of RichText:
+- Initialize DHTMLX Richtext in the container with the help of the `dhx.Richtext` constructor. As parameters of the constructor function, pass the container you've created above and the configuration object of RichText:
 
 ~~~html title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with dhtmlxRichText</title>
+		<title>How to Start with DHTMLX Richtext</title>
 		<script type="text/javascript" src="../../codebase/richtext.js"></script>
 		<link rel="stylesheet" href="../../codebase/richtext.css">
 	</head>
@@ -64,7 +64,7 @@ At this step you can add RichText on a page. There are two easy steps:
 </html>
 ~~~
 
-Step 3. RichText Configuration
+Step 3. Configure RichText 
 ------------------------------
 
 Now it's time to define the desired configuration options to make RichText meet you needs.
@@ -81,7 +81,7 @@ var rich = new dhx.Richtext("richtext_container", {
 
 There is a [detailed description of available RichText configuration settings](guides/configuration.md). 
 
-Step 4. Setting content (optional)
+Step 4. Set content (optional)
 -------------------------
 
 If necessary, you can parse some text in the HTML or Markdown format on the RichText initialization. Read more about this feature in the [related article](guides/loading_data.md).
