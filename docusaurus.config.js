@@ -136,7 +136,7 @@ module.exports = {
     projectName: 'docs-richtext',
     trailingSlash: true,
     themeConfig: {
-        colorMode: {
+        /*colorMode: {
             defaultMode: 'light',
             disableSwitch: false,
             respectPrefersColorScheme: false,
@@ -150,7 +150,7 @@ module.exports = {
                     marginLeft: '0px',
                 },
             },
-        },
+        },*/
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
