@@ -1,11 +1,16 @@
 module.exports = {
-    docs: [{
+    docs: [
+        {
+            type: "doc",
+            id: "overview",
+        },
+        {
             type: "doc",
             id: "how_to_start",
         },
         {
             type: "doc",
-            id: "overview",
+            id: "whats_new",
         },
         {
             type: "category",
@@ -24,10 +29,6 @@ module.exports = {
                 "api/toolbar_methods",
                 "api/toolbar_controls",
             ],
-        },
-        {
-            type: "doc",
-            id: "whats_new",
         },
         {
             type: "category",
