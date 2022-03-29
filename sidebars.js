@@ -1,18 +1,26 @@
 module.exports = {
-    docs: [{
-            type: "doc",
-            id: "how_to_start",
-        },
+    docs: [
         {
             type: "doc",
             id: "overview",
         },
         {
+            type: "doc",
+            id: "how_to_start",
+        },
+        {
+            type: "doc",
+            id: "whats_new",
+        },
+        {
             type: "category",
             label: "API",
             collapsed: false,
+            link: {
+				type: 'doc',
+				id: 'api/overview'
+			},
             items: [
-                "api/overview",
                 "api/methods",
                 "api/events_bus",
                 "api/events",
@@ -23,13 +31,17 @@ module.exports = {
             ],
         },
         {
-            type: "doc",
-            id: "whats_new",
-        },
-        {
             type: "category",
             label: "Guides",
             collapsed: false,
+            link: {
+                type: 'generated-index',
+                title: 'Guides',
+                //description: '',
+                //slug: '/category/docusaurus-guides',
+                keywords: ['guides'],
+                image: '/img/docusaurus.png',
+        },
             items: [
                 "guides/initialization",
                 "guides/configuration",

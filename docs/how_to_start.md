@@ -2,7 +2,6 @@
 sidebar_label: How to start
 title: How to start
 description: Learn how to quickly create DHTMLX Rich Text Editor on a page and set up its basic configuration in four simple steps. 
-slug: /
 ---
 
 RichText editor will make text editing quick and comfortable due to the inbuilt set of handy formatting tools.
