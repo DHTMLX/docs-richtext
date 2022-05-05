@@ -113,8 +113,15 @@ table th:last-child {
     margin-bottom: var(--ifm-leading);
 }
 
-
 /* end indent for imgs */
+
+/* icons styles */
+
+.iconExternalLink_I5OW { /* hides the link icon */
+    display: none;
+}
+
+/* end icons styles */
 
 
 /* Change the appearance of mobile navigation */
@@ -141,3 +148,4 @@ table th:last-child {
 }
 
 /* end styles for block of code */
+
