@@ -115,13 +115,14 @@ table th:last-child {
 
 /* end indent for imgs */
 
-/* icons styles */
-
-.iconExternalLink_I5OW { /* hides the link icon */
-    display: none;
+/* Link icons */
+ 
+.iconExternalLink_lCJq,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module {
+    display: none; /* hides the link icon */
 }
-
-/* end icons styles */
+ 
+/* end Link icons */
 
 
 /* Change the appearance of mobile navigation */
