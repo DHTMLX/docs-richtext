@@ -60,7 +60,7 @@ var mdText = `# Meet DHTMLX Rich Text Editor!
 
 This demo will show you a customizable **JavaScript rich text editor**.
 
-*To learn more, read [documentation](https://docs.dhtmlx.com/richtext/overview/)*.`
+*To learn more, read [documentation](https://docs.dhtmlx.com/richtext/)*.`
 
 richtext.setValue(mdText,"markdown");
 ~~~
