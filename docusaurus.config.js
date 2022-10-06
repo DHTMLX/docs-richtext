@@ -186,7 +186,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/richtext',
+                    href: 'https://forum.dhtmlx.com/c/richtext/',
                     position: 'right'
                 },
                 {
@@ -223,7 +223,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/richtext',
+                            href: 'https://forum.dhtmlx.com/c/richtext/',
                             position: 'right'
                         },
                     ],
