@@ -4,6 +4,24 @@ title: What's new
 description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
+Version 1.1.6
+--------------
+
+Released on February 13, 2022
+
+### Fixes
+
+- Fix the issue with special characters
+
+Version 1.1.5
+--------------
+
+Released on February 13, 2022
+
+### Fixes
+
+- Fix the issue with the [`fullScreen()`](api/methods.md#fullscreen) method
+
 Version 1.1.4
 --------------
 
