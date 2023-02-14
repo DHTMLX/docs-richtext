@@ -33,7 +33,7 @@ $ yarn start
 
 [Blog](https://dhtmlx.com/blog/tag/richtext/)
 
-[Forum](https://forum.dhtmlx.com/c/widgets/richtext/)
+[Forum](https://forum.dhtmlx.com/c/richtext/)
 
 ## Follow us
 

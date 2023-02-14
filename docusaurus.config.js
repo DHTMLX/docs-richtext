@@ -186,7 +186,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/richtext',
+                    href: 'https://forum.dhtmlx.com/c/richtext/',
                     position: 'right'
                 },
                 {
@@ -223,7 +223,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/richtext',
+                            href: 'https://forum.dhtmlx.com/c/richtext/',
                             position: 'right'
                         },
                     ],
@@ -282,7 +282,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    //editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {

@@ -178,7 +178,7 @@ Toolbar
 
 ### Default controls
 
-The [default toolbar](overview.md#toolbar-structure) contains the following blocks of controls:
+The [default toolbar](../../#toolbar-structure) contains the following blocks of controls:
 
 - the **Undo** block 
     - the *Undo* button (id:"undo")

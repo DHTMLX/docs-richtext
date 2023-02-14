@@ -113,8 +113,18 @@ table th:last-child {
     margin-bottom: var(--ifm-leading);
 }
 
-
 /* end indent for imgs */
+
+/* Link icons */
+
+.iconExternalLink_lCJq,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module,
+.iconExternalLink_nPIU,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+  display: none; /* hides the link icon */
+}
+
+/* end Link icons */
 
 
 /* Change the appearance of mobile navigation */
@@ -133,3 +143,12 @@ table th:last-child {
 
 
 /* end change the appearance of mobile navigation */
+
+/* styles for block of code */
+
+.token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
+    background-color: rgb(156 159 166 / 30%);
+}
+
+/* end styles for block of code */
+
