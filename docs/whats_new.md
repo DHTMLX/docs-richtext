@@ -4,6 +4,15 @@ title: What's new
 description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
+Version 1.1.7 
+--------------
+
+Released on August 31, 2023
+
+### Fixes
+
+- Now you can select several text fragments with different fonts and sizes and set the desired font and size for them
+
 Version 1.1.6
 --------------
 
