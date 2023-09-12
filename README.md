@@ -29,7 +29,7 @@ $ yarn start
 
 [Download DHTMLX RichText](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml)
 
-[Live demos](https://docs.dhtmlx.com/richtext/samples/)
+[Live demos](https://snippet.dhtmlx.com/pdh5buvg?tag=richtext)
 
 [Blog](https://dhtmlx.com/blog/tag/richtext/)
 

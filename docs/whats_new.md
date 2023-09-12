@@ -38,7 +38,7 @@ Released on January 17, 2022
 
 ### Fixes
 
-- Fix links to documentation in the [RichText samples](https://docs.dhtmlx.com/richtext/samples/)
+- Fix links to documentation in the [RichText samples](https://snippet.dhtmlx.com/pdh5buvg?tag=richtext)
 
 Version 1.1.3
 --------------
