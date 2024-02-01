@@ -4,6 +4,16 @@ title: What's new
 description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
+Version 1.1.8 
+--------------
+
+Released on February 1, 2024
+
+### Fixes
+
+- The appearance of the "link" control settings
+- The conversion of color formats. Now colors are converted from HEX to RGB during HTML serialization
+
 Version 1.1.7 
 --------------
 
