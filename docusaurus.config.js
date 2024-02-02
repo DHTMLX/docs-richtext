@@ -181,7 +181,7 @@ module.exports = {
             items: [
                 {
                     label: 'Examples',
-                    href: 'https://docs.dhtmlx.com/richtext/samples/',
+                    href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
                     position: 'right',
                 },
                 {
@@ -214,7 +214,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://docs.dhtmlx.com/richtext/samples/',
+                            href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
                             position: 'right',
                         },
                         {
