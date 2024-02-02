@@ -84,52 +84,12 @@ Check the detailed description of parameters:
 		<tr>
 			<td><code>config</code></td>
 			<td><code>string|object</code></td>
-			<td>a <code>string</code> with a text or a text block as an <code>object</code>.
-			If set as an <code>object</code>, the parameter includes:
-				<ul>
-					<li><code>type</code> - (<i>string</i>) the type of a text block: "text" (a string) | "textnode" (a text node) | "full" (a data model);</li>
-					<li><code>data</code> - (<i>string|object|array</i>) the content of a text block. It can be:
-						<ul>
-							<li>a simple <code>string</code> with text;</li>
-							<li>a text node as an <code>object</code> that includes:
-								<ul>
-									<li>a text as a <code>string</code>;</li>
-									<li>an <code>object</code> with style properties.</li>
-								</ul>
-							</li>
-							<li>a data model as an <code>array</code>. It contains objects with styles and text nodes. Each text node includes:
-								<ul>
-									<li>an <code>array</code> with text nodes objects (each of them contains two <i>key:value</i> values for a text string and an object with style settings, as described above)</li>
-									<li>a style <code>object</code></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>a <code>string</code> with a text or a text block as an <code>object</code>.If set as an <code>object</code>, the parameter includes:<ul><li><code>type</code> - (<i>string</i>) the type of a text block: "text" (a string) | "textnode" (a text node) | "full" (a data model);</li><li><code>data</code> - (<i>string|object|array</i>) the content of a text block. It can be:<ul><li>a simple <code>string</code> with text;</li><li>a text node as an <code>object</code> that includes:<ul><li>a text as a <code>string</code>;</li><li>an <code>object</code> with style properties.</li></ul></li><li>a data model as an <code>array</code>. It contains objects with styles and text nodes. Each text node includes:<ul><li>an <code>array</code> with text nodes objects (each of them contains two <i>key:value</i> values for a text string and an object with style settings, as described above)</li><li>a style <code>object</code></li></ul></li></ul></li></ul></td>
 		</tr>
 		<tr>
 			<td><code>selection</code></td>
 			<td><code>object</code></td>
-			<td>optional, text selection (its position relative to all other text). Includes the following attributes:
-				<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>optional, text selection (its position relative to all other text). Includes the following attributes:<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul></td>
 		</tr>
 	</tbody>
 </table>
@@ -203,7 +163,6 @@ Returns the position of text selection relative to the browser window
 | -------- | ------------------------------------------------------------- |
 | `object` | the position of text selection relative to the browser window |
 
-
 ```js 
 var position = richtext.getEditorAPI().getPosition();
 ```
@@ -274,23 +233,7 @@ where:
 
 <table>
 	<tbody>
-			<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
+			<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul>
 	</tbody>
 </table>
 
@@ -324,25 +267,7 @@ Check the detailed description of the parameter:
 		<tr>
 			<td><code>selection</code></td>
 			<td><code>object</code></td>
-			<td>optional, text selection (its position relative to all other text). Includes the following attributes:
-				<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>optional, text selection (its position relative to all other text). Includes the following attributes:<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul></td>
 		</tr>
 	</tbody>
 </table>
@@ -398,35 +323,12 @@ Check the detailed description of parameters:
 		<tr>
 			<td><code>structure</code></td>
 			<td><code>array</code></td>
-			<td>an array of objects with styles and text nodes. Each text node includes:
-				<ul>
-					<li>an <code>array</code> with text nodes objects (each of them contains two <i>key:value</i> pairs for a text string and an object with style settings)</li>
-					<li>a style <code>object</code></li>
-				</ul>
-			</td>
+			<td>an array of objects with styles and text nodes. Each text node includes:<ul><li>an <code>array</code> with text nodes objects (each of them contains two <i>key:value</i> pairs for a text string and an object with style settings)</li><li>a style <code>object</code></li></ul></td>
 		</tr>
 		<tr>
 			<td><code>selection</code></td>
 			<td><code>object</code></td>
-			<td>optional, text selection (its position relative to all other text). Includes the following attributes:
-				<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>optional, text selection (its position relative to all other text). Includes the following attributes:<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul></td>
 		</tr>
 	</tbody>
 </table>
@@ -471,25 +373,7 @@ Check the detailed description of the parameter:
 		<tr>
 			<td><code>selection</code></td>
 			<td><code>object</code></td>
-			<td>the position of text selection relative to all other text. Includes the following attributes:
-				<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>the position of text selection relative to all other text. Includes the following attributes:<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul></td>
 		</tr>
 	</tbody>
 </table>
@@ -531,35 +415,12 @@ Check the detailed description of parameters:
 		<tr>
 			<td><code>config</code></td>
 			<td><code>object</code></td>
-			<td>an object with details of updating. It contains two parameters:
-				<ul>
-					<li><code>modifier</code> - (<i>object</i>) an object with a set of styling options that will be updated;</li>
-					<li><code>value</code> - (<i>any</i>) the value of the modifier.</li>
-				</ul>
-			</td>
+			<td>an object with details of updating. It contains two parameters:<ul><li><code>modifier</code> - (<i>object</i>) an object with a set of styling options that will be updated;</li><li><code>value</code> - (<i>any</i>) the value of the modifier.</li></ul></td>
 		</tr>
 		<tr>
 			<td><code>selection</code></td>
 			<td><code>object</code></td>
-			<td>optional, text selection (its position relative to all other text). Includes the following attributes:
-				<ul>
-					<li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li>
-					<li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li>
-						</ul>
-					</li>
-					<li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:
-						<ul>
-							<li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li>
-							<li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li>
-							<li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li>
-						</ul>
-					</li>
-				</ul>
-			</td>
+			<td>optional, text selection (its position relative to all other text). Includes the following attributes:<ul><li><code>range</code> - (<i>boolean</i>) defines whether the selection includes one character (<i>false</i>), or a range of them (<i>true</i>).</li><li><code>left</code> - (<i>object</i>) the left coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the first character within a text node in the selection.</li></ul></li><li><code>right</code> - (<i>object</i>) the right coordinate of selection, contains the following properties:<ul><li><code>blockIndex</code> - (<i>number</i>) the index of a text block (a text line), enumeration starts from 0;</li><li><code>textIndex</code> - (<i>number</i>) the index of a text node (a text with common styling), enumeration starts from 0;</li><li><code>offset</code> - (<i>number</i>) the number of the last character within a text node in the selection. You can also call the <a href="https://docs.dhtmlx.com/richtext/api/editor_api_methods/#getselection">getSelection</a> method instead of passing the second parameter.</li></ul></li></ul></td>
 		</tr>
 	</tbody>
 </table>
