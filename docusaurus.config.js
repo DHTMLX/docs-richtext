@@ -131,26 +131,12 @@ module.exports = {
     baseUrl: '/richtext/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
     trailingSlash: true,
     themeConfig: {
-        /*colorMode: {
-            defaultMode: 'light',
-            disableSwitch: false,
-            respectPrefersColorScheme: false,
-            switchConfig: {
-                darkIcon: '🌙',
-                darkIconStyle: {
-                    marginLeft: '0px',
-                },
-                lightIcon: '☀️',
-                lightIconStyle: {
-                    marginLeft: '0px',
-                },
-            },
-        },*/
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
@@ -175,14 +161,13 @@ module.exports = {
             logo: {
                 alt: 'DHTMLX RichText Documentation',
                 src: 'img/dhtmlx_logo.svg',
-                href: 'https://docs.dhtmlx.com/',
-
+                href: 'https://docs.dhtmlx.com/'
             },
             items: [
                 {
                     label: 'Examples',
                     href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
-                    position: 'right',
+                    position: 'right'
                 },
                 {
                     label: 'Forum',
@@ -192,14 +177,14 @@ module.exports = {
                 {
                     label: 'Support',
                     href: 'https://dhtmlx.com/docs/technical-support.shtml',
-                    position: 'right',
+                    position: 'right'
                 },
                 {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
-                    position: 'right',
-                },
-            ],
+                    position: 'right'
+                }
+            ]
         },
         footer: {
             style: 'dark',
@@ -210,70 +195,68 @@ module.exports = {
                         {
                             label: 'Download RichText',
                             href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
-                            position: 'right',
+                            position: 'right'
                         },
                         {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
-                            position: 'right',
+                            position: 'right'
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/tag/richtext/',
+                            href: 'https://dhtmlx.com/blog/tag/richtext/'
                         },
                         {
                             label: 'Forum',
                             href: 'https://forum.dhtmlx.com/c/richtext/',
                             position: 'right'
-                        },
-                    ],
+                        }
+                    ]
                 },
                 {
                     title: 'Community',
                     items: [
                         {
                             label: 'GitHub',
-                            href: 'https://github.com/DHTMLX',
+                            href: 'https://github.com/DHTMLX'
                         },
-
                         {
                             label: 'Youtube',
-                            href: 'https://www.youtube.com/user/dhtmlx',
+                            href: 'https://www.youtube.com/user/dhtmlx'
                         },
                         {
                             label: 'Facebook',
-                            href: 'https://www.facebook.com/dhtmlx',
+                            href: 'https://www.facebook.com/dhtmlx'
                         },
                         {
                             label: 'Twitter',
-                            href: 'https://twitter.com/dhtmlx',
+                            href: 'https://twitter.com/dhtmlx'
                         },
                         {
                             label: 'Linkedin',
-                            href: 'https://www.linkedin.com/groups/3345009/',
-                        },
-
-                    ],
+                            href: 'https://www.linkedin.com/groups/3345009/'
+                        }
+                    ]
                 },
                 {
                     title: 'Company',
                     items: [
                         {
                             label: 'About us',
-                            href: 'https://dhtmlx.com/docs/company.shtml',
+                            href: 'https://dhtmlx.com/docs/company.shtml'
                         },
                         {
                             label: 'Contact us',
-                            href: 'https://dhtmlx.com/docs/contact.shtml',
+                            href: 'https://dhtmlx.com/docs/contact.shtml'
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/#editions-licenses',
-                        },
-                    ],
-                },
-            ],
-        },
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/#editions-licenses'
+                        }
+                    ]
+                }
+            ]
+        }
     },
     presets: [
         [
@@ -285,16 +268,11 @@ module.exports = {
                     editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
                     routeBasePath: '/',
                 },
-                // blog: {
-                //     showReadingTime: true,
-                //     // Please change this to your repo.
-                //     editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
-                },
-            },
-        ],
+                    customCss: require.resolve('./src/css/custom.css')
+                }
+            }
+        ]
     ],
     plugins:[
         'docusaurus-plugin-sass',
@@ -311,7 +289,7 @@ module.exports = {
         [
             require.resolve('docusaurus-gtm-plugin'),
             {
-              id: 'GTM-5M5RCSJ',
+              id: 'GTM-5M5RCSJ'
             }
         ]
     ]
