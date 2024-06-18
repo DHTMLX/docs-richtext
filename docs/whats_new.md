@@ -15,7 +15,6 @@ Released on June 18, 2024
 ### Fixes
 
 - Add cross widget localization
-- Add scripts to deploy npm-pro and npm trial packages
 - Incorrect HTML parsing
 - Retyping the text that contains a link invokes an error
 - When changing the font, the previous character appears before the text

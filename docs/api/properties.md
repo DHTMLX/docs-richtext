@@ -57,15 +57,8 @@ Defines default values of the toolbar selection controls
 ~~~jsx {2-12}
 var richtext = new dhx.Richtext("richtext_container", {
     defaultStyles: {
-        paragraph: {
-            "font-size": "14px"
-        },
-        h1: {
-            "font-size": "20px"
-        },
-        "*": { // styles that apply to all types of blocks
-            "font-family":"Tahoma"
-        }
+        "font-size": "14px"
+        "font-family":"Tahoma"
     }
 });
 ~~~
@@ -87,8 +80,6 @@ var defaultStyles = {
     "align": false
 };
 ~~~
-
-**Related sample:** [Default styles](https://snippet.dhtmlx.com/vewoiptc)
 
 ____
 
