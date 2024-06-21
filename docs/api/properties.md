@@ -54,11 +54,11 @@ Defines default values of the toolbar selection controls
 
 `defaultStyles?: object;`
 
-~~~jsx {2-12}
+~~~jsx {2-5}
 var richtext = new dhx.Richtext("richtext_container", {
     defaultStyles: {
         "font-size": "14px"
-        "font-family":"Tahoma"
+        "font-family": "Tahoma"
     }
 });
 ~~~
@@ -75,12 +75,11 @@ var defaultStyles = {
     "italic": false,
     "strike": false,
     "underline": false,
-    "style": "p",
-    "blockquote": false,
-    "align": false
+    "align": false, // "left" | "center" | "right" | false
 };
 ~~~
 
+**Related sample:** [RichText. Default styles](https://snippet.dhtmlx.com/pqqq1e5d)
 ____
 
 ## `mode`
