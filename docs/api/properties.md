@@ -75,7 +75,7 @@ var defaultStyles = {
     "italic": false,
     "strike": false,
     "underline": false,
-    "align": false, // "left" | "center" | "right" | false
+    "align": "left", // "left" | "center" | "right" | false
 };
 ~~~
 

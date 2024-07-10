@@ -6,7 +6,7 @@ description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its 
 
 ## Version 1.2
 
-Released on June 21, 2024
+Released on July 10, 2024
 
 ### New functionality
 
