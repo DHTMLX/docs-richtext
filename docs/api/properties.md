@@ -4,14 +4,13 @@ title: Properties
 description: Get insight into configuration properties utilized for working with text statistics, setting editor mode, and customizing the toolbar in DHTMLX Rich Text Editor.
 ---
 
-
 ## `customStats`
 
 Defines the logic of displaying custom statistics
 
-`array customStats;`
+`customStats?: array;`
 
-```js 
+~~~jsx
 var richtext = new dhx.Richtext("richtext_container", {
     customStats: [
         {
@@ -36,9 +35,9 @@ var richtext = new dhx.Richtext("richtext_container", {
     ],
     toolbarBlocks: ["default", "stats"]
 });
-```
+~~~
 
-**Related samples:** [Custom stats](https://snippet.dhtmlx.com/u1734epz)
+**Related sample:** [Custom stats](https://snippet.dhtmlx.com/u1734epz)
 
 #### Details
 
@@ -46,47 +45,79 @@ Each field of statistical data represents an object with two properties:
 
 - `name` - (*string*) the name of the field that should be displayed
 - `callback` - (*function*) a function that implements the logic of counting entries of the specified field
-___
+
+____
+
+## `defaultStyles`
+
+Defines default values of the toolbar selection controls
+
+`defaultStyles?: object;`
+
+~~~jsx {2-5}
+var richtext = new dhx.Richtext("richtext_container", {
+    defaultStyles: {
+        "font-size": "14px"
+        "font-family": "Tahoma"
+    }
+});
+~~~
+
+**Default value**:
+
+~~~jsx
+var defaultStyles = {
+    "font-family": "Roboto",
+    "font-size": "14px",
+    "color": "#4D4D4D",
+    "background": "#FFFFFF",
+    "bold": false,
+    "italic": false,
+    "strike": false,
+    "underline": false,
+    "align": "left", // "left" | "center" | "right" | false
+};
+~~~
+
+**Related sample:** [RichText. Default styles](https://snippet.dhtmlx.com/pqqq1e5d)
+____
 
 ## `mode`
 
 The working mode of the RichText editor
 
-`string mode;`
+`mode?: string;`
 
-**Values**: "default","document" 
+**Values**: "default", "document"
 
-
-```js 
+~~~jsx
 var richtext = new dhx.RichText("richtext_container", { 
-    mode:"document"
+    mode: "document"
 });
-```
+~~~
 
 **Default value**: "default"
 
-**Related samples:** [RichText. Modes](https://snippet.dhtmlx.com/pdh5buvg)
-___
+**Related sample:** [RichText. Modes](https://snippet.dhtmlx.com/pdh5buvg)
+
+____
 
 ## `toolbarBlocks`
 
 Specifies blocks of buttons that will be shown in the Richtext toolbar
 
-`array toolbarBlocks;`
+`toolbarBlocks?: array;`
 
-
-```js 
+~~~jsx
 // default toolbar blocks
 var richtext = new dhx.RichText("richtext_container", { 
-    toolbarBlocks:["undo", "style", "decoration", "colors", 
-        "align", "link"]
+    toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
-```
+~~~
 
-**Default value**: ["undo", "style", "decoration", "colors", "align", "link"]
+**Default value**: `["undo", "style", "decoration", "colors", "align", "link"]`
 
-**Related samples:** [RichText. Initialization](https://snippet.dhtmlx.com/32jtemtm)
-
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/32jtemtm)
 
 #### Details
 
@@ -94,7 +125,7 @@ var richtext = new dhx.RichText("richtext_container", {
 
 The full toolbar contains several more blocks: `"clear"`, `"fullscreen"`, and `"stats"`:
 
-~~~js
+~~~jsx
 var richtext = new dhx.RichText(document.body, {
     // full toolbar
     toolbarBlocks: [
@@ -104,13 +135,13 @@ var richtext = new dhx.RichText(document.body, {
 });
 ~~~
 
-**Related samples:** [RichText. Full Toolbar](https://snippet.dhtmlx.com/5yga5ce1)
+**Related sample:** [RichText. Full Toolbar](https://snippet.dhtmlx.com/5yga5ce1)
 
 ### Short toolbar definition
 
 The default set of buttons can be specified via the `"default"` definition in the `toolbarBlocks` array, like this:
 
-~~~js
+~~~jsx
 var richtext = new dhx.RichText(document.body, {
     // full toolbar
     toolbarBlocks: ["default", "clear", "stats", "fullscreen"]
@@ -121,10 +152,10 @@ var richtext = new dhx.RichText(document.body, {
 
 It is also possible to create a custom toolbar by setting desired blocks in the random order:
 
-~~~js
+~~~jsx
 var richtext = new dhx.RichText(document.body, {
-    toolbarBlocks: ["clear", "colors", "align","decoration", 
-        "undo", "fullscreen","link"
+    toolbarBlocks: ["clear", "colors", "align", "decoration", 
+        "undo", "fullscreen", "link"
     ]
 });
 ~~~
