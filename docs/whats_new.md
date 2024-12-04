@@ -4,6 +4,14 @@ title: What's new
 description: "Get a full picture of the DHTMLX Rich Text Editor versioning: its updates and patch versions, providing the information on implemented functionalities, improvements, and bug fixes."
 ---
 
+## Version 1.2.3
+
+Released on December 5, 2024
+
+### Fixes
+
+- The issue with the local trial package during import to frameworks
+
 ## Version 1.2
 
 Released on July 10, 2024
