@@ -4,17 +4,19 @@ title: Event handling
 description: This guide includes brief instructions on how to work with event listeners and call events in DHTMLX Rich Text Editor.
 ---
 
+# Event handling
+
 ## Attaching event listeners
 
-You can attach event listeners with the [richtext.events.on()](api/events_bus.md#on) method:
+You can attach event listeners with the [`richtext.events.on()`](api/events_bus.md#on) method:
 
-~~~js
+~~~jsx
 richtext.events.on("Change", function(action, canUndo, canRedo){
     // your code here
 });
 ~~~
 
-**Related sample:** [RichText. Events](https://snippet.dhtmlx.com/sb5qipjz)
+**Related sample:** [RichText Events](https://snippet.dhtmlx.com/sb5qipjz)
 
 :::note
 The names of events are case-insensitive.
@@ -22,9 +24,9 @@ The names of events are case-insensitive.
 
 ## Detaching event listeners
 
-To detach events, use [richtext.events.detach()](api/events_bus.md#detach):
+To detach events, use [`richtext.events.detach()`](api/events_bus.md#detach):
 
-~~~js
+~~~jsx
 var change = richtext.events.on("Change", function(action, canUndo, canRedo){
      // your code here
 });
@@ -33,12 +35,11 @@ richtext.events.detach(change);
 
 ## Calling events
 
-To call events, use [richtext.events.fire()](api/events_bus.md#fire):
+To call events, use [`richtext.events.fire()`](api/events_bus.md#fire):
 
-~~~js
+~~~jsx
 richtext.events.fire("name", args);
 // where args is an array of arguments
 ~~~
 
 The list of events is available in the [API section](api/events.md).
-

@@ -8,7 +8,7 @@ description: Become familiar with a range of objects, methods, and events availa
 
 ~~~js
 var richtext = new dhx.Richtext("richtext_container", {
-	mode:"document"
+    mode:"document"
 });
 ~~~
 
@@ -53,7 +53,7 @@ var richtext = new dhx.Richtext("richtext_container", {
 | ------------------------------------------------ | ---------------- |
 | [customStats](api/properties.md#customstats)     | defines the logic of displaying custom statistics |
 | [mode](api/properties.md#mode)                   | the working mode of the RichText editor  |
-| [toolbarBlocks](api/properties.md#toolbarblocks) | specifies blocks of buttons that will be shown in the Richtext toolbar |
+| [toolbarBlocks](api/properties.md#toolbarblocks) | specifies blocks of buttons that will be shown in the RichText Toolbar |
 
 ### Editor API methods
 
@@ -76,13 +76,13 @@ var EditorAPI = richtext.getEditorAPI();
 
 | Name                                    | Description                                  |
 |-----------------------------------------|----------------------------------------------|
-| [add](api/toolbar_methods.md#add)       | adds a new control to the toolbar            |
-| [remove](api/toolbar_methods.md#remove) | removes a control from the toolbar           |
+| [add](api/toolbar_methods.md#add)       | adds a new control to the Toolbar            |
+| [remove](api/toolbar_methods.md#remove) | removes a control from the Toolbar           |
 | [update](api/toolbar_methods.md#update) | updates configuration options of the control |
 
 ### Toolbar controls
 
-Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the toolbar by adding the following controls:
+Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the Toolbar by adding the following controls:
 
 | Name                                                 | Description        |
 |------------------------------------------------------|--------------------------------------------------------------|
@@ -90,5 +90,5 @@ Besides using the [default](guides/customization.md#default-controls) controls o
 | [Custom HTML](api/toolbar_controls.md#custom-html)   | an item that contains any custom HTML content (for example, an image, icon or other element)     |
 | [ImageButton](api/toolbar_controls.md#imagebutton)   | a button with an image   |
 | [SelectButton](api/toolbar_controls.md#selectbutton) | a button that contains a drop-down list of options    |
-| [Separator](api/toolbar_controls.md#separator)       | a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other |
-| [Spacer](api/toolbar_controls.md#spacer)             | the item takes space on the toolbar and is used for aligning controls   |
+| [Separator](api/toolbar_controls.md#separator)       | a horizontal (between menu options) or vertical (between Toolbar controls) line separating items/groups of items from each other |
+| [Spacer](api/toolbar_controls.md#spacer)             | the item takes space on the Toolbar and is used for aligning controls   |

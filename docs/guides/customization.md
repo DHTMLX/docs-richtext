@@ -4,21 +4,22 @@ title: Customization
 description: This guide explains how to customize the DHTMLX Rich Text Editor's toolbar, reconfigure controls, and replace default icons used in the editor with custom ones.
 ---
 
+# Customization
+
 You can customize the appearance and structure of toolbar, change the settings of controls and use any icon pack instead of the default one.
 
-Icons
-----------
+## Icons
 
-DHTMLX Richtext uses the [Material Design](https://pictogrammers.com/library/mdi/?welcome)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Toolbar controls.
+DHTMLX RichText uses the [Material Design](https://pictogrammers.com/library/mdi/?welcome)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Toolbar controls.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX Richtext as follows:
+For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX RichText as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/richtext.js"></script>
 <link rel="stylesheet" href="../../codebase/richtext.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
-	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
     crossorigin="anonymous">
 ~~~
 
@@ -26,8 +27,7 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
 
 Then you can use the name of the icon as the value of the `icon` property in the object with the control parameters for toolbar. See details below.
 
-Controls
--------------
+## Controls
 
 ### Types
 
@@ -65,7 +65,7 @@ The `customHTML` object has the following properties:
 - `type` - (*string*) the item type, set it to "customHTML"
 - `id` - (*string*) the id of a an item, auto-generated if not set
 - `html` - (*string*) a string with HTML that should be inserted into the item
-- `css`	- (*string|string[]*) adds style classes
+- `css`    - (*string|string[]*) adds style classes
 - `hidden` - (*boolean*) defines whether an item is hidden
 
 #### ImageButton
@@ -127,9 +127,9 @@ To add a new control, apply the `richtext.{name}.data.add()` method. It takes th
 
 For a button:
 
-~~~js
+~~~jsx
 richtext.toolbar.data.add({
-	type: "button", 
+    type: "button", 
     id: "button-id",
     value: "Some value",
     icon: "icon-name"
@@ -138,9 +138,9 @@ richtext.toolbar.data.add({
 
 For a custom button:
 
-~~~js
+~~~jsx
 richtext.toolbar.data.add({
-	type: "customHTML", 
+    type: "customHTML", 
     id: "htmlbutton-id",
     value: "Some value",
     icon: "icon-name"
@@ -149,13 +149,12 @@ richtext.toolbar.data.add({
 
 #### Updating controls
 
-You can change the icon of the control and its other config options via the   
-`richtext.{name}.data.update()` method. It takes two parameters:
+You can change the icon of the control and its other config options via the `richtext.{name}.data.update()` method. It takes two parameters:
 
 - the id of the control
 - an object with new configuration of the control
 
-~~~js
+~~~jsx
 richtext.toolbar.data.update("add", { 
     icon: "icon_name" 
 });
@@ -165,22 +164,21 @@ richtext.toolbar.data.update("add", {
 
 To remove a control, make use of the `richtext.{name}.data.remove()` method. Pass the id of the control that should be removed to the method:
 
-~~~js
+~~~jsx
 richtext.toolbar.data.remove("control-id");
 ~~~
 
 Below you will find detailed examples.
 
-Toolbar 
----------
+## Toolbar
 
 ### Default controls
 
 The [default toolbar](../../#toolbar-structure) contains the following blocks of controls:
 
-- the **Undo** block 
+- the **Undo** block
     - the *Undo* button (id:"undo")
-    - the *Redo* button (id:"redo")    
+    - the *Redo* button (id:"redo")
 - the **Style** block
     - the *Font family* button (id:"font-family")
     - the *Font size* button (id:"font-size")
@@ -191,15 +189,15 @@ The [default toolbar](../../#toolbar-structure) contains the following blocks of
         - the *Heading 3* option (id:"style-h3")
         - the *Heading 4* option (id:"style-h4")
         - the *Heading 5* option (id:"style-h5")
-        - the *Heading 6* option (id:"style-h6")     
+        - the *Heading 6* option (id:"style-h6")
     - the *Block quote* button (id:"blockquote")
-- the **Decoration** block 
+- the **Decoration** block
     - the *Bold* button (id:"bold")
     - the *Italic* button (id:"italic")
     - the *Strike* button (id:"strike")
     - the *Underline* button (id:"underline")
 - the **Colors** block
-    - the *Text color* button (id:"color") 
+    - the *Text color* button (id:"color")
     - the *Background color* button (id:"background")
 - the **Align** block
     - the *Align left* button (id: "align-left")
@@ -208,26 +206,24 @@ The [default toolbar](../../#toolbar-structure) contains the following blocks of
 - the **Link** block
     - the *Link* button (id:"link")
 
-    
 It is also possible to add the blocks enumerated below to get the full toolbar:
 
 - the **Clear format** block
-	- the *Clear format* button (id:"clear-style")
+    - the *Clear format* button (id:"clear-style")
 - the **Full screen** block
-	- the *Fullscreen* button (id:"fullscreen")
+    - the *Fullscreen* button (id:"fullscreen")
 - the **Statistics** block
-	- the **Statistics** button (id:"stats")
-        
-    
+    - the **Statistics** button (id:"stats")
+
 ### Adding controls
 
 In the example below a new button named **Count Characters** is added into the toolbar:
 
 ![Custom Toolbar Button](./../assets/custom_toolbar_button.png)
 
-~~~js
+~~~jsx
 richtext.toolbar.data.add({
-	type: "button",
+    type: "button",
     value: "Count Characters",
     id: "calc"
 }, 24);
@@ -235,9 +231,7 @@ richtext.toolbar.data.add({
 
 **Related sample:** [Custom Button](https://snippet.dhtmlx.com/xlpa1tj7)
 
-
 ### Updating controls
-
 
 In the example below the default icons of the buttons of the **Decoration** block are changed to Font Awesome ones:
 
@@ -245,7 +239,7 @@ In the example below the default icons of the buttons of the **Decoration** bloc
 
 ~~~js
 var icons = [
-	["bold", "fas fa-bold"],
+    ["bold", "fas fa-bold"],
     ["underline", "fas fa-underline"],
     ["italic", "fas fa-italic"],
     ["strike", "fas fa-strikethrough"]
@@ -264,7 +258,6 @@ for (var i=0; i<icons.length; i++) {
 
 In the example below the Undo button is removed from the toolbar:
 
-~~~js
+~~~jsx
 richtext.toolbar.data.remove("undo");
 ~~~
-

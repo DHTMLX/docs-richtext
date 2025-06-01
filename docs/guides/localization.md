@@ -4,106 +4,105 @@ title: Localization
 description: This guide provides instructions on how to apply any custom locales for the DHTMLX Rich Text Editor's interface.
 ---
 
+# Localization
+
 You have a possibility to present the interface of the RichText editor in any language you wish. You just need to translate the corresponding strings for labels and tooltips and apply a ready locale to the component.
 
 ![Localized RichText](./../assets/richtext_locale.png)
 
-Default locale
------------------
+## Default locale
 
 The default English locale looks like this:
 
-~~~js
+~~~jsx
 var en = {
-	apply: "Apply",
-	undo: "Undo",
-	redo: "Redo",
-	selectFontFamily: "Font",
-	selectFontSize: "Font size",
-	selectFormat: "Style",
-	selectTextColor: "Text color",
-	selectTextBackground: "Background color",
-	markBold: "Bold",
-	markItalic: "Italic",
-	markStrike: "Strike",
-	markUnderline: "Underline",
-	alignLeft: "Align left",
-	alignCenter: "Align center",
-	alignRight: "Align right",
-	addLink: "Add link",
-	clearFormat: "Clear formatting",
-	fullscreen: "Fullscreen",
-	removeLink: "Remove link",
-	edit: "Edit",
-	h1: "Heading 1",
-	h2: "Heading 2",
-	h3: "Heading 3",
-	h4: "Heading 4",
-	h5: "Heading 5",
-	h6: "Heading 6",
-	p: "Normal text",
-	blockquote: "Block quote",
+    apply: "Apply",
+    undo: "Undo",
+    redo: "Redo",
+    selectFontFamily: "Font",
+    selectFontSize: "Font size",
+    selectFormat: "Style",
+    selectTextColor: "Text color",
+    selectTextBackground: "Background color",
+    markBold: "Bold",
+    markItalic: "Italic",
+    markStrike: "Strike",
+    markUnderline: "Underline",
+    alignLeft: "Align left",
+    alignCenter: "Align center",
+    alignRight: "Align right",
+    addLink: "Add link",
+    clearFormat: "Clear formatting",
+    fullscreen: "Fullscreen",
+    removeLink: "Remove link",
+    edit: "Edit",
+    h1: "Heading 1",
+    h2: "Heading 2",
+    h3: "Heading 3",
+    h4: "Heading 4",
+    h5: "Heading 5",
+    h6: "Heading 6",
+    p: "Normal text",
+    blockquote: "Block quote",
     stats: "Statistics",
-	chars: "chars",
-	charsExlSpace: "charsExlSpace",
-	words: "words",
-	text: "Text",
-	link: "Link"
+    chars: "chars",
+    charsExlSpace: "charsExlSpace",
+    words: "words",
+    text: "Text",
+    link: "Link"
 }; 
 ~~~
 
-Custom locale
-------------------
+## Custom locale
 
 To use a different locale, your steps should be:
 
 - provide translation for all text labels in RichText, e.g. take a look at the German locale:
 
-~~~js
+~~~jsx
 var de = {
-	apply: "Anwenden",
-	undo: "Rückgängig machen",
-	redo: "Wiederholen",
-	selectFontFamily: "Schriftfamilie",
-	selectFontSize: "Schriftgröße",
-	selectFormat: "Textstil",
-	selectTextColor: "Textfarbe",
-	selectTextBackground: "Texthintergrund",
-	markBold: "Fett",
-	markItalic: "Kursiv",
-	markStrike: "Durchgestrichen",
-	markUnderline: "Unterstrichen",
-	alignLeft: "Links ausrichten",
-	alignCenter: "Mittens ausrichten",
-	alignRight: "Rechts ausrichten",
-	addLink: "Einen Link hinzufügen",
-	clearFormat: "Format entfernen",
-	fullscreen: "Vollbildschirm",
-	unlink: "Einen Link löschen",
-	edit: "Redigieren",
-	h1: "Überschrift 1",
-	h2: "Überschrift 2",
-	h3: "Überschrift 3",
-	h4: "Überschrift 4",
-	h5: "Überschrift 5",
-	h6: "Überschrift 6",
-	p: "Normaler Text",
+    apply: "Anwenden",
+    undo: "Rückgängig machen",
+    redo: "Wiederholen",
+    selectFontFamily: "Schriftfamilie",
+    selectFontSize: "Schriftgröße",
+    selectFormat: "Textstil",
+    selectTextColor: "Textfarbe",
+    selectTextBackground: "Texthintergrund",
+    markBold: "Fett",
+    markItalic: "Kursiv",
+    markStrike: "Durchgestrichen",
+    markUnderline: "Unterstrichen",
+    alignLeft: "Links ausrichten",
+    alignCenter: "Mittens ausrichten",
+    alignRight: "Rechts ausrichten",
+    addLink: "Einen Link hinzufügen",
+    clearFormat: "Format entfernen",
+    fullscreen: "Vollbildschirm",
+    unlink: "Einen Link löschen",
+    edit: "Redigieren",
+    h1: "Überschrift 1",
+    h2: "Überschrift 2",
+    h3: "Überschrift 3",
+    h4: "Überschrift 4",
+    h5: "Überschrift 5",
+    h6: "Überschrift 6",
+    p: "Normaler Text",
     blockquote: "Blockzitat",
     stats: "Statistiken",
     chars: "Zeichen",  
-	charsExlSpace: "Zeichen ohne Leerzeichen", 
-	words: "Wörter",
-	text: "Text",     
-	link: "Verknüpfung"
+    charsExlSpace: "Zeichen ohne Leerzeichen", 
+    words: "Wörter",
+    text: "Text",     
+    link: "Verknüpfung"
 };
 ~~~
 
 - apply the new locale by calling the `dhx.i18n.setLocale()` method before initializing RichText:
 
-~~~js
+~~~jsx
 dhx.i18n.setLocale("richtext", de);
 var richtext = new dhx.Richtext("richtext_container");
 ~~~
 
 **Related sample:** [Localization](https://snippet.dhtmlx.com/vhvl57zj)
-

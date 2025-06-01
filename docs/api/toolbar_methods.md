@@ -1,7 +1,7 @@
 ---
 sidebar_label: Toolbar methods
 title: Toolbar methods
-description: Check the list of API methods of DHTMLX Rich Text Editor enabling you to add and remove toolbar controls as well as update their configuration.
+description: Check the list of API methods of DHTMLX Rich Text Editor enabling you to add and remove Toolbar controls as well as update their configuration.
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 sidebar_label: Toolbar controls
 title: Toolbar controls
-description: Learn how to add custom toolbar controls and configure them to your requirements using the available API properties of DHTMLX Rich Text Editor.
+description: Learn how to add custom Toolbar controls and configure them to your requirements using the available API properties of DHTMLX Rich Text Editor.
 ---
 
-Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the toolbar by adding the following controls:
+Besides using the [default](guides/customization.md#default-controls) controls of the toolbar, you can customize the Toolbar by adding the following controls:
 
 ## `Button`
 
@@ -56,7 +56,7 @@ An item that contains any custom HTML content (for example, an image, icon or ot
 
 ```js
 richtext.toolbar.data.add({
-	type: "customHTML", 
+    type: "customHTML", 
     id: "htmlbutton-id",
     value: "Some value",
     icon: "icon-name"
@@ -84,7 +84,7 @@ A button with an image
 
 ```js
 richtext.toolbar.data.add({
-	type: "imageButton",
+    type: "imageButton",
     count: 10,
     src: "../img/avatar.png"
 }, 3);
@@ -113,7 +113,7 @@ A button that contains a drop-down list of options
 
 ```js
 richtext.toolbar.data.add({
-	id: "select_button",
+    id: "select_button",
     type: "selectButton",
     value: "1",
     items: [
@@ -135,7 +135,7 @@ richtext.toolbar.data.add({
 
 ## `Separator`
 
-A horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other
+A horizontal (between menu options) or vertical (between Toolbar controls) line separating items/groups of items from each other
 
 
 | Properties | Type     | Description                                    |
@@ -145,13 +145,13 @@ A horizontal (between menu options) or vertical (between toolbar controls) line 
 
 ```js
 richtext.toolbar.data.add({
-	type:"separator"
+    type:"separator"
 }, 4);
 ```
 
 ## `Spacer`
 
-The item takes space on the toolbar and is used for aligning controls
+The item takes space on the Toolbar and is used for aligning controls
 
 
 | Properties | Type     | Description                                    |
@@ -161,6 +161,6 @@ The item takes space on the toolbar and is used for aligning controls
 
 ```js
 richtext.toolbar.data.add({
-	type:"spacer"
+    type:"spacer"
 }, 4);
 ```

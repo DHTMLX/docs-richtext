@@ -1,7 +1,7 @@
 ---
 sidebar_label: Properties
 title: Properties
-description: Get insight into configuration properties utilized for working with text statistics, setting editor mode, and customizing the toolbar in DHTMLX Rich Text Editor.
+description: Get insight into configuration properties utilized for working with text statistics, setting editor mode, and customizing the Toolbar in DHTMLX Rich Text Editor.
 ---
 
 ## `customStats`
@@ -50,7 +50,7 @@ ____
 
 ## `defaultStyles`
 
-Defines default values of the toolbar selection controls
+Defines default values of the Toolbar selection controls
 
 `defaultStyles?: object;`
 
@@ -91,7 +91,7 @@ The working mode of the RichText editor
 **Values**: "default", "document"
 
 ~~~jsx
-var richtext = new dhx.RichText("richtext_container", { 
+var richtext = new dhx.Richtext("richtext_container", { 
     mode: "document"
 });
 ~~~
@@ -104,13 +104,13 @@ ____
 
 ## `toolbarBlocks`
 
-Specifies blocks of buttons that will be shown in the Richtext toolbar
+Specifies blocks of buttons that will be shown in the RichText toolbar
 
 `toolbarBlocks?: array;`
 
 ~~~jsx
-// default toolbar blocks
-var richtext = new dhx.RichText("richtext_container", { 
+// default Toolbar blocks
+var richtext = new dhx.Richtext("richtext_container", { 
     toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ~~~
@@ -123,10 +123,10 @@ var richtext = new dhx.RichText("richtext_container", {
 
 ### Full toolbar
 
-The full toolbar contains several more blocks: `"clear"`, `"fullscreen"`, and `"stats"`:
+The full Toolbar contains several more blocks: `"clear"`, `"fullscreen"`, and `"stats"`:
 
 ~~~jsx
-var richtext = new dhx.RichText(document.body, {
+var richtext = new dhx.Richtext(document.body, {
     // full toolbar
     toolbarBlocks: [
         "undo", "style", "decoration", "colors", "align", 
@@ -137,12 +137,12 @@ var richtext = new dhx.RichText(document.body, {
 
 **Related sample:** [RichText. Full Toolbar](https://snippet.dhtmlx.com/5yga5ce1)
 
-### Short toolbar definition
+### Short Toolbar definition
 
 The default set of buttons can be specified via the `"default"` definition in the `toolbarBlocks` array, like this:
 
 ~~~jsx
-var richtext = new dhx.RichText(document.body, {
+var richtext = new dhx.Richtext(document.body, {
     // full toolbar
     toolbarBlocks: ["default", "clear", "stats", "fullscreen"]
 });
@@ -150,10 +150,10 @@ var richtext = new dhx.RichText(document.body, {
 
 ### Custom toolbar
 
-It is also possible to create a custom toolbar by setting desired blocks in the random order:
+It is also possible to create a custom Toolbar by setting desired blocks in the random order:
 
 ~~~jsx
-var richtext = new dhx.RichText(document.body, {
+var richtext = new dhx.Richtext(document.body, {
     toolbarBlocks: ["clear", "colors", "align", "decoration", 
         "undo", "fullscreen", "link"
     ]

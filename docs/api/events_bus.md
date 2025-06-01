@@ -87,6 +87,6 @@ richtext.events.on("Change", function(action, canUndo, canRedo){
 
 #### Details
 
-[See the list of Richtext events](api/events.md). 
+[See the list of RichText events](api/events.md). 
 
 You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.

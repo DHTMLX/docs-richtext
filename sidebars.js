@@ -17,9 +17,9 @@ module.exports = {
             label: "API",
             collapsed: false,
             link: {
-				type: 'doc',
-				id: 'api/overview'
-			},
+                type: 'doc',
+                id: 'api/overview'
+            },
             items: [
                 "api/methods",
                 "api/events_bus",

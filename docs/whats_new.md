@@ -18,7 +18,7 @@ Released on July 10, 2024
 
 ### New functionality
 
-- The [`defaultStyles`](api/properties.md#defaultstyles) property allows you to change the default values of the toolbar selection controls
+- The [`defaultStyles`](api/properties.md#defaultstyles) property allows you to change the default values of the Toolbar selection controls
 
 ### Fixes
 
@@ -75,8 +75,8 @@ Released on October 11, 2021
 ### Fixes
 
 - Fix the issue with serialization of the content which is in the "Markdown" format. Now the spaces are removed before and after the stylized string.
-- Fix the issue with styles of Richtext when using it together with Suite
-- Now it is possible to localize the *text* and *link* input labels of the **Link** button of the toolbar
+- Fix the issue with styles of RichText when using it together with Suite
+- Now it is possible to localize the *text* and *link* input labels of the **Link** button of the Toolbar
 
 ## Version 1.1.2
 
@@ -104,11 +104,11 @@ Released on February 27, 2019
 - [API for working with text in the editor](guides/working_with_richtext.md#editor-api) 
 - [Advanced statistics](guides/working_with_richtext.md#statistics)
 - Ability to show [custom statistics](guides/working_with_richtext.md#custom-statistics)
-- Block quote and Statistics [toolbar controls](guides/configuration.md#toolbar) 
+- Block quote and Statistics [Toolbar controls](guides/configuration.md#toolbar)
 
 ### Updates
 
-- Ability to [return content in the plain "text" format](api/methods.md#getvalue) 
+- Ability to [return content in the plain "text" format](api/methods.md#getvalue)
 
 ### Fixes
 
@@ -122,9 +122,9 @@ Released on December 19, 2018
 
 ### Fixes
 
-- Incorrect undo behavior with the setValue method
-- Issue with the link background on switching between links 
-- Issue with toolbar modifiers after removing a letter
+- Incorrect undo behavior with the `setValue` method
+- Issue with the link background on switching between links
+- Issue with Toolbar modifiers after removing a letter
 
 ## Version 1.0
 
@@ -132,7 +132,7 @@ Released on December 13, 2018
 
 ### Initial functionality
 
-- Basic operations for real-time text editing 
+- Basic operations for real-time text editing
 - Two [working modes](guides/configuration.md#working-modes): "classic" and "document"
 - Data [parsing](guides/loading_data.md) and [serialization](guides/working_with_richtext.md#getting-content-from-editor) in HTML and Markdown formats
 - [Full screen mode](guides/working_with_richtext.md#full-screen-mode)

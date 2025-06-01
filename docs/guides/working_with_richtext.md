@@ -4,10 +4,11 @@ title: Working with RichText
 description: This guide covers the main aspects of working with DHTMLX Rich Text Editor such as saving the edited text, displaying statistics, enabling/disabling the fullscreen mode, and the editor API. 
 ---
 
-The API of DHTMLX Richtext includes a basic set of methods that let you perform operations on the component. You can serialize edited text into either HTML or Markdown formats, get the number of the typed characters and enter/exit the full screen mode of the editor on the fly.
+# Working with RichText
 
-Getting content from editor
--------------------
+The API of DHTMLX RichText includes a basic set of methods that let you perform operations on the component. You can serialize edited text into either HTML or Markdown formats, get the number of the typed characters and enter/exit the full screen mode of the editor on the fly.
+
+## Getting content from editor
 
 After you've entered the necessary text into the editor and formatted it to your taste, you can save the result in any of [supported formats](guides/loading_data.md#format-of-content).
 
@@ -15,7 +16,7 @@ To save the edited text, make use of the [getValue()](api/methods.md#getvalue) m
 
 - `mode` - (*string*) the format the text should be saved in: `"html"`, `"markdown"` or `"text"` (for a plain text); `"html"` is used by default
 
-~~~js
+~~~jsx
 // getting content in the Markdown format
 var content = richtext.getValue("markdown");
 ~~~
@@ -24,10 +25,9 @@ var content = richtext.getValue("markdown");
 
 If you are in two minds about how to add content into the RichText editor, there is the [Setting Content](guides/loading_data.md) article.
 
-Statistics
----------------------
+## Statistics
 
-RichText editor allows you to show statistics about the edited text. There is the **Statistics** control in the toolbar that serves for this purpose:
+RichText editor allows you to show statistics about the edited text. There is the **Statistics** control in the Toolbar that serves for this purpose:
 
 ![Statistics control](./../assets/stats_control.png)
 
@@ -115,7 +115,7 @@ Using the [getStats()](api/methods.md#getstats) method you can display info on t
 <button onclick="calc()" class="dhx_btn dhx_btn--flat">Characters Count</button>
 
 <div>
-	The count of characters: <span id="characters-amount"></span>
+    The count of characters: <span id="characters-amount"></span>
 </div>
         
 function calc() {
