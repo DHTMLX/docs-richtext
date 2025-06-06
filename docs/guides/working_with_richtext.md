@@ -18,7 +18,7 @@ To save the edited text, make use of the [getValue()](api/methods.md#getvalue) m
 
 ~~~jsx
 // getting content in the Markdown format
-var content = richtext.getValue("markdown");
+const content = richtext.getValue("markdown");
 ~~~
 
 **Related sample:** [Get Value](https://snippet.dhtmlx.com/ujx3c71j)
@@ -36,7 +36,7 @@ RichText editor allows you to show statistics about the edited text. There is th
 You can provide users with information about the number of characters, words and characters excluding spaces with the help of the [getStats()](api/methods.md#getstats) method. 
 
 ~~~js
-var stats = richtext.getStats();
+const stats = richtext.getStats();
 ~~~
 
 The method returns an object with available statistical data about the text edited in the RichText editor. For example:
@@ -54,7 +54,7 @@ You can also get each field of statistical data separately, as it described belo
 To return the count of characters typed into the editor, use the `chars` property of the `getStats()` method:  
 
 ~~~js
-var chars = richtext.getStats().chars;
+const chars = richtext.getStats().chars;
 ~~~
 
 #### Words
@@ -62,7 +62,7 @@ var chars = richtext.getStats().chars;
 To return the count of words typed into the editor, use the `words` property of the `getStats()` method:  
 
 ~~~js
-var words = richtext.getStats().words;
+const words = richtext.getStats().words;
 ~~~
 
 #### Characters without spaces
@@ -70,7 +70,7 @@ var words = richtext.getStats().words;
 To return the count of characters typed into the editor excluding the number of spaces, use the `charsExlSpace` property of the `getStats()` method:  
 
 ~~~js
-var chars = richtext.getStats().charsExlSpace;
+const chars = richtext.getStats().charsExlSpace;
 ~~~
 
 #### Custom statistics 
@@ -78,7 +78,7 @@ var chars = richtext.getStats().charsExlSpace;
 It is also possible to return a value of the custom statistical parameter set via the [customStats](api/properties.md#customstats) configuration option, e.g. the number of sentences. For that, use the name of the custom property as a property of the `getStats()` method:
 
 ```js 
-var richtext = new dhx.Richtext("rich", {
+const editor = new richtext.Richtext("rich", {
     customStats: [ 
         {
            name: "chars"
@@ -89,9 +89,9 @@ var richtext = new dhx.Richtext("rich", {
         {
            name: "sentences",
            cb: function(text) {
-               var rawSentences = text.split(/[.?!]+/);
-               var count = 0;
-               for (var i=0; i<rawSentences.length; i++) {
+               const rawSentences = text.split(/[.?!]+/);
+               const count = 0;
+               for (const i=0; i<rawSentences.length; i++) {
                    if (rawSentences[i].length > 0) {
                        count += 1;
                    }
@@ -104,7 +104,7 @@ var richtext = new dhx.Richtext("rich", {
 });
 
 // return the number of sentences typed into the editor
-var sentences = richtext.getStats().sentences; 
+const sentences = richtext.getStats().sentences; 
 ```
 
 ### How to display statistics
@@ -145,7 +145,7 @@ The editor of RichText contains a set of methods that make it easy to work with 
 It returns an object with all available methods.
 
 ~~~js
-var EditorAPI = richtext.getEditorAPI();
+const EditorAPI = richtext.getEditorAPI();
 ~~~
 
 The list of methods included into the object returned by the `getEditorAPI()` method is the following:

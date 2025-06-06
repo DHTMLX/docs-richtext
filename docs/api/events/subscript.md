@@ -1,0 +1,40 @@
+---
+sidebar_label: subscript
+title: subscript Event
+description: You can learn about the subscript event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+---
+
+# subscript
+
+### Description
+
+@short: Fires when ...
+
+### Usage
+
+~~~jsx {}
+"subscript": ...;
+~~~
+
+### Parameters
+
+The callback of the **subscript** event can take an object with the following parameters:
+
+...
+
+:::info
+For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+:::
+
+### Example
+
+~~~jsx {7-9}
+// create RichText
+const editor = new richtext.Richtext("#root", {
+    ...
+});
+// subscribe on the "subscript" event
+editor.api.on("subscript", (obj) => {
+    console.log(obj);
+});
+~~~

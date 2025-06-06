@@ -110,7 +110,7 @@ Returns the data model of the entered text in the JSON format
 
 
 ```js 
-var model = richtext.getEditorAPI().getModel();
+const model = richtext.getEditorAPI().getModel();
 ```
 
 **Related samples:**  [RichText. Get Model](https://snippet.dhtmlx.com/ef6uolvq)
@@ -164,7 +164,7 @@ Returns the position of text selection relative to the browser window
 | `object` | the position of text selection relative to the browser window |
 
 ```js 
-var position = richtext.getEditorAPI().getPosition();
+const position = richtext.getEditorAPI().getPosition();
 ```
 
 **Related samples:** [RichText. Get Position](https://snippet.dhtmlx.com/nv42vsjg)
@@ -204,7 +204,7 @@ Returns the position of text selection relative to all other text
 
 
 ```js 
-var selection = richtext.getEditorAPI().getSelection();
+const selection = richtext.getEditorAPI().getSelection();
 ```
 
 **Related samples:** [RichText. Get Selection](https://snippet.dhtmlx.com/se4p4vin)
@@ -251,7 +251,7 @@ Removes a selected text
 
 
 ```js 
-var api = richtext.getEditorAPI();
+const api = richtext.getEditorAPI();
  
 richtext.getEditorAPI().remove(api.getSelection());
 ```
@@ -393,7 +393,7 @@ Modifies the entered text
 
 
 ```js 
-var api = richtext.getEditorAPI();
+const api = richtext.getEditorAPI();
  
 richtext.getEditorAPI().update(
     {

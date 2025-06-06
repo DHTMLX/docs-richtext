@@ -60,16 +60,16 @@ Updates configuration options of the control
 
 
 ```js 
-var icons = [
+const icons = [
     ["bold", "fas fa-bold"],
     ["underline", "fas fa-underline"],
     ["italic", "fas fa-italic"],
     ["strike", "fas fa-strikethrough"]
 ];
 
-for (var i=0; i<icons.length; i++) {
-   var toolbarId = icons[i][0];
-   var iconName = icons[i][1];
+for (const i=0; i<icons.length; i++) {
+   const toolbarId = icons[i][0];
+   const iconName = icons[i][1];
    richtext.toolbar.data.update(toolbarId, {icon: iconName});
 }
 ```

@@ -15,8 +15,8 @@ DHTMLX RichText uses the [Material Design](https://pictogrammers.com/library/mdi
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX RichText as follows:
 
 ~~~html
-<script type="text/javascript" src="../../codebase/richtext.js"></script>
-<link rel="stylesheet" href="../../codebase/richtext.css">
+<script type="text/javascript" src="./codebase/richtext.js"></script>
+<link rel="stylesheet" href="./codebase/richtext.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
@@ -238,16 +238,16 @@ In the example below the default icons of the buttons of the **Decoration** bloc
 ![Custom Toolbar Icons](./../assets/custom_toolbar_icons.png)
 
 ~~~js
-var icons = [
+const icons = [
     ["bold", "fas fa-bold"],
     ["underline", "fas fa-underline"],
     ["italic", "fas fa-italic"],
     ["strike", "fas fa-strikethrough"]
 ];
 
-for (var i=0; i<icons.length; i++) {
-   var toolbarId = icons[i][0];
-   var iconName = icons[i][1];
+for (const i=0; i<icons.length; i++) {
+   const toolbarId = icons[i][0];
+   const iconName = icons[i][1];
    richtext.toolbar.data.update(toolbarId, {icon: iconName});
 }
 ~~~

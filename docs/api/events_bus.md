@@ -29,7 +29,7 @@ richtext.events.detach("Change");
 By default `detach()` removes all event handlers from the target event. You can detach particular event handlers by using the context marker.
 
 ```js 
-var marker = "any"; // you can use any string|object value
+const marker = "any"; // you can use any string|object value
  
 richtext.events.on("Change", handler1);
 richtext.events.on("Change", handler2, marker);
@@ -60,7 +60,7 @@ richtext.events.on("CustomEvent", function(param1, param2){
     return true;
 });
  
-var res = richtext.events.fire("CustomEvent", [12, "abc"]);
+const res = richtext.events.fire("CustomEvent", [12, "abc"]);
 ```
 
 #### Details

@@ -11,7 +11,7 @@ Defines the logic of displaying custom statistics
 `customStats?: array;`
 
 ~~~jsx
-var richtext = new dhx.Richtext("richtext_container", {
+const editor = new richtext.Richtext("#root", {
     customStats: [
         {
             name: "chars"
@@ -22,9 +22,9 @@ var richtext = new dhx.Richtext("richtext_container", {
         {
             name: "sentences",
             cb: function(text) {
-                var rawSentences = text.split(/[.?!]+/);
-                var count = 0;
-                for (var i=0; i<rawSentences.length; i++) {
+                const rawSentences = text.split(/[.?!]+/);
+                const count = 0;
+                for (const i=0; i<rawSentences.length; i++) {
                     if (rawSentences[i].length > 0) {
                         count += 1;
                     }
@@ -55,7 +55,7 @@ Defines default values of the Toolbar selection controls
 `defaultStyles?: object;`
 
 ~~~jsx {2-5}
-var richtext = new dhx.Richtext("richtext_container", {
+const editor = new richtext.Richtext("#root", {
     defaultStyles: {
         "font-size": "14px"
         "font-family": "Tahoma"
@@ -66,7 +66,7 @@ var richtext = new dhx.Richtext("richtext_container", {
 **Default value**:
 
 ~~~jsx
-var defaultStyles = {
+const defaultStyles = {
     "font-family": "Roboto",
     "font-size": "14px",
     "color": "#4D4D4D",
@@ -91,7 +91,7 @@ The working mode of the RichText editor
 **Values**: "default", "document"
 
 ~~~jsx
-var richtext = new dhx.Richtext("richtext_container", { 
+const editor = new richtext.Richtext("#root", { 
     mode: "document"
 });
 ~~~
@@ -110,7 +110,7 @@ Specifies blocks of buttons that will be shown in the RichText toolbar
 
 ~~~jsx
 // default Toolbar blocks
-var richtext = new dhx.Richtext("richtext_container", { 
+const editor = new richtext.Richtext("#root", { 
     toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ~~~
@@ -126,7 +126,7 @@ var richtext = new dhx.Richtext("richtext_container", {
 The full Toolbar contains several more blocks: `"clear"`, `"fullscreen"`, and `"stats"`:
 
 ~~~jsx
-var richtext = new dhx.Richtext(document.body, {
+const editor = new richtext.Richtext("#root", {
     // full toolbar
     toolbarBlocks: [
         "undo", "style", "decoration", "colors", "align", 
@@ -142,7 +142,7 @@ var richtext = new dhx.Richtext(document.body, {
 The default set of buttons can be specified via the `"default"` definition in the `toolbarBlocks` array, like this:
 
 ~~~jsx
-var richtext = new dhx.Richtext(document.body, {
+const editor = new richtext.Richtext("#root", {
     // full toolbar
     toolbarBlocks: ["default", "clear", "stats", "fullscreen"]
 });
@@ -153,7 +153,7 @@ var richtext = new dhx.Richtext(document.body, {
 It is also possible to create a custom Toolbar by setting desired blocks in the random order:
 
 ~~~jsx
-var richtext = new dhx.Richtext(document.body, {
+const editor = new richtext.Richtext("#root", {
     toolbarBlocks: ["clear", "colors", "align", "decoration", 
         "undo", "fullscreen", "link"
     ]

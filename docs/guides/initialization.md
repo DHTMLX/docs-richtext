@@ -17,14 +17,14 @@ The current article will guide you through simple steps you need to take in orde
 <html>
     <head>
         <title>How to Start with DHTMLX RichText</title>            
-        <script type="text/javascript" src="../../codebase/richtext.js"></script>
-        <link rel="stylesheet" href="../../codebase/richtext.css">
+        <script type="text/javascript" src="./codebase/richtext.js"></script>
+        <link rel="stylesheet" href="./codebase/richtext.css">
     </head>
     <body>
-        <div id="richtext_container"></div>
+        <div id="root"></div>
         <script>
             // creating DHTMLX RichText 
-            var richtext = new dhx.Richtext("richtext_container");
+            const editor = new richtext.Richtext("#root");
         </script>
     </body>
 </html>
@@ -36,14 +36,14 @@ The current article will guide you through simple steps you need to take in orde
 
 To create dhtmlxRichText, you need to include 2 source files on your page:
 
-- ***richtext.js***
-- ***richtext.css***
+- *richtext.js*
+- *richtext.css*
 
 Make sure that you set correct relative paths to these files:
 
 ~~~html title="index.html"
-<script type="text/javascript" src="codebase/richtext.js"></script>  
-<link rel="stylesheet" href="codebase/richtext.css">
+<script type="text/javascript" src="./codebase/richtext.js"></script>  
+<link rel="stylesheet" href="./codebase/richtext.css">
 ~~~
 
 The structure of the RichText package is the following:
@@ -54,22 +54,22 @@ The structure of the RichText package is the following:
 
 ## Creating container
 
-Add a container for RichText and give it an id, for example "richtext_container":
+Add a container for RichText and give it an id, for example "root":
 
 ~~~html title="index.html"
-<div id="richtext_container"></div>
+<div id="root"></div>
 ~~~
 
 ## Initializing RichText
 
-Initialize RichText with the `dhx.Richtext` object constructor. The constructor has two parameters:
+Initialize RichText with the `richtext.Richtext` object constructor. The constructor has two parameters:
 
 - the HTML container for RichText. The one we have created at the previous step.
 - an object with configuration properties. [See the full list below](#configuration-properties).
 
 ~~~jsx title="index.html"
 // creating RichText
-var richtext = new dhx.Richtext("richtext_container", {
+const editor = new richtext.Richtext("#root", {
     // configuration properties  
 });
 ~~~
@@ -85,7 +85,7 @@ This is a list of properties that you can specify in the RichText configuration 
 You can set configuration properties during initialization as the second parameter of the constructor:
 
 ~~~jsx
-var richtext = new dhx.Richtext("richtext_container", { 
+const editor = new richtext.Richtext("#root", { 
     mode:"document"
 });
 ~~~

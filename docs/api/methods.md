@@ -54,7 +54,7 @@ Returns an object with editor API methods
 
 
 ```js 
-var EditorAPI = richtext.getEditorAPI();
+const EditorAPI = richtext.getEditorAPI();
 ```
 
 #### Details
@@ -85,7 +85,7 @@ Returns statistics about the entered content
 
 
 ```js 
-var chars = richtext.getStats(); 
+const chars = richtext.getStats(); 
 // -> {chars: 467, words: 80, charsExlSpace: 393}
 ```
 
@@ -102,7 +102,7 @@ You can get each field of statistical data separately, as it's described below.
 To return the count of characters typed into the editor, use the `chars` property of the `getStats()` method.
 
 ```js 
-var chars = richtext.getStats().chars;
+const chars = richtext.getStats().chars;
 ```
 
 **Words**
@@ -110,7 +110,7 @@ var chars = richtext.getStats().chars;
 To return the count of words typed into the editor, use the `words` property of the `getStats()` method.
 
 ```js 
-var words = richtext.getStats().words;
+const words = richtext.getStats().words;
 ```
 
 **Characters without spaces**
@@ -118,7 +118,7 @@ var words = richtext.getStats().words;
 To return the count of characters typed into the editor excluding the number of spaces, use the `charsExlSpace` property of the `getStats()` method.
 
 ```js 
-var chars = richtext.getStats().charsExlSpace;
+const chars = richtext.getStats().charsExlSpace;
 ```
 
 ### Getting custom statistics
@@ -126,7 +126,7 @@ var chars = richtext.getStats().charsExlSpace;
 It is also possible to return a value of the custom statistical parameter set via the `customStats` configuration option, e.g. the number of sentences. For that, use the name of the custom property as a property of the `getStats()` method:
 
 ```js 
-var richtext = new dhx.Richtext("rich", {
+const editor = new richtext.Richtext("rich", {
     customStats: [ 
         {
            name: "chars"
@@ -137,9 +137,9 @@ var richtext = new dhx.Richtext("rich", {
         {
            name: "sentences",
            cb: function(text) {
-               var rawSentences = text.split(/[.?!]+/);
-               var count = 0;
-               for (var i=0; i<rawSentences.length; i++) {
+               const rawSentences = text.split(/[.?!]+/);
+               const count = 0;
+               for (const i=0; i<rawSentences.length; i++) {
                    if (rawSentences[i].length > 0) {
                        count += 1;
                    }
@@ -152,7 +152,7 @@ var richtext = new dhx.Richtext("rich", {
 });
 
 // return the number of sentences typed into the editor
-var sentences = richtext.getStats().sentences; 
+const sentences = richtext.getStats().sentences; 
 ```
 
 ___
@@ -178,7 +178,7 @@ Returns the content of the RichText editor in the chosen format
 
 ```js 
 // getting content in the markdown format
-var content = richtext.getValue("markdown");
+const content = richtext.getValue("markdown");
 ```
 
 **Related samples:** [Get Value](https://snippet.dhtmlx.com/ujx3c71j)
@@ -208,7 +208,7 @@ Adds content into the RichText editor
 | `mode`    | `string` | optional, the format of text parsing: `"html"` or `"markdown"`                |
 
 ```js 
-var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
+const htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
 `<p>This demo will show you a customizable JavaScript rich text editor.</p>` +
 `<p><i>To learn more, read </i><a href="https://docs.dhtmlx.com/richtext/"><i>documentation</i></a></p>.`
  
@@ -223,7 +223,7 @@ richtext.setValue(htmlText);
 An example of adding Markdown content is given below:
 
 ```js 
-var mdText = `# Meet DHTMLX Rich Text Editor!
+const mdText = `# Meet DHTMLX Rich Text Editor!
  
 This demo will show you a customizable **JavaScript rich text editor**.
  

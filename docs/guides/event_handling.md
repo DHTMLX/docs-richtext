@@ -27,7 +27,7 @@ The names of events are case-insensitive.
 To detach events, use [`richtext.events.detach()`](api/events_bus.md#detach):
 
 ~~~jsx
-var change = richtext.events.on("Change", function(action, canUndo, canRedo){
+const change = richtext.events.on("Change", function(action, canUndo, canRedo){
      // your code here
 });
 richtext.events.detach(change);

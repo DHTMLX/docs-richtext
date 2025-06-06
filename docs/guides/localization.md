@@ -15,7 +15,7 @@ You have a possibility to present the interface of the RichText editor in any la
 The default English locale looks like this:
 
 ~~~jsx
-var en = {
+const en = {
     apply: "Apply",
     undo: "Undo",
     redo: "Redo",
@@ -60,7 +60,7 @@ To use a different locale, your steps should be:
 - provide translation for all text labels in RichText, e.g. take a look at the German locale:
 
 ~~~jsx
-var de = {
+const de = {
     apply: "Anwenden",
     undo: "Rückgängig machen",
     redo: "Wiederholen",
@@ -98,11 +98,11 @@ var de = {
 };
 ~~~
 
-- apply the new locale by calling the `dhx.i18n.setLocale()` method before initializing RichText:
+- apply the new locale by calling the `richtext.i18n.setLocale()` method before initializing RichText:
 
 ~~~jsx
-dhx.i18n.setLocale("richtext", de);
-var richtext = new dhx.Richtext("richtext_container");
+richtext.i18n.setLocale("richtext", de);
+const editor = new richtext.Richtext("#root");
 ~~~
 
 **Related sample:** [Localization](https://snippet.dhtmlx.com/vhvl57zj)

@@ -19,9 +19,13 @@ The Toolbar of RichText is [easily configurable](guides/configuration.md#toolbar
 - default Toolbar
 - full Toolbar
 
+### Default Toolbar
+
 The **default Toolbar** includes 6 blocks of controls. They are: "undo", "style", "decoration", "colors", "align" and "link":
 
 ![Default Toolbar](./assets/default_toolbar.png)
+
+### Full Toolbar
 
 The **full Toolbar** includes all the default blocks and additional "clear", "stats" and "fullscreen" blocks:
 
@@ -54,11 +58,3 @@ The RichText editor supports [parsing](guides/loading_data.md#adding-content-int
 - Markdown format
 
 ![Markdown format](./assets/markdown_format.png)
-
-## Integration
-
-RichText can be integrated with other JavaScript frameworks. There are related guides and demos available for:
-
-- [Integration with Angular](guides/angular_integration.md)
-- [Integration with React](guides/react_integration.md)
-- [Integration with Vue.js](guides/vuejs_integration.md)

@@ -40,7 +40,7 @@ Below you can find examples of loading text in both available formats:
 - adding HTML content
 
 ~~~jsx
-var htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
+const htmlText = `<h1>Meet DHTMLX Rich Text Editor!</h1>` +
 `<p>This demo will show you a customizable JavaScript rich text editor.</p>` +
 `<p><i>Read more in</i><a href="https://docs.dhtmlx.com"><i>documentation</i></a></p>.`
 
@@ -56,7 +56,7 @@ Note, that for a text in the Markdown format you need to define paragraphs by em
 :::
 
 ~~~jsx
-var mdText = `# Meet DHTMLX Rich Text Editor!
+const mdText = `# Meet DHTMLX Rich Text Editor!
 
 This demo will show you a customizable **JavaScript rich text editor**.
 

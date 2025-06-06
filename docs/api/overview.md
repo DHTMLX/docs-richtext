@@ -7,7 +7,7 @@ description: Become familiar with a range of objects, methods, and events availa
 ### Constructor
 
 ~~~js
-var richtext = new dhx.Richtext("richtext_container", {
+const editor = new richtext.Richtext("#root", {
     mode:"document"
 });
 ~~~
@@ -58,7 +58,7 @@ var richtext = new dhx.Richtext("richtext_container", {
 ### Editor API methods
 
 ```js
-var EditorAPI = richtext.getEditorAPI();
+const EditorAPI = richtext.getEditorAPI();
 ```
 
 | Name                                                   | Description              |
