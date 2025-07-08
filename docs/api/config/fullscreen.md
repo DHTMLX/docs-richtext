@@ -8,25 +8,31 @@ description: You can learn about the fullscreen config in the documentation of t
 
 ### Description
 
-@short: Optional. ...
+@short: Optional. Enables the editor fullscreen mode
 
 ### Usage
 
 ~~~jsx {}
-fullscreen?: ...; 
+fullscreen?: boolean; 
+~~~
+
+### Default config
+
+~~~jsx
+fullscreen: false
 ~~~
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {2}
 new richtext.Richtext("#root", {
-    fullscreen: ...
+    fullscreen: true
     // other parameters
 });
 ~~~
 
 **Change log:** The property was added in v2.0
 
-**Related articles:** [Configuration](../../../guides/configuration)
+**Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [Richtext. Lazy rendering and column scroll](https://snippet.dhtmlx.com/...)
+**Related sample:** [RichText. Full toolbar](https://snippet.dhtmlx.com/ziynafp7)

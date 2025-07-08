@@ -8,25 +8,29 @@ description: You can learn about the value config in the documentation of the DH
 
 ### Description
 
-@short: Optional. ...
+@short: Optional. Specifies the initial value (content) displayed within the editor area using the HTML format (default format)
+
+:::tip
+If you want to set the value (content) using another format, use the built-in [`setValue()`](api/methods/set-value.md) method.
+:::
 
 ### Usage
 
 ~~~jsx {}
-value?: ...; 
+value?: string; 
 ~~~
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {2}
 new richtext.Richtext("#root", {
-    value: ...
+    value: "<h1>some value</h1>" // sets the default value (HTML format)
     // other parameters
 });
 ~~~
 
 **Change log:** The property was added in v2.0
 
-**Related articles:** [Configuration](../../../guides/configuration)
+**Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [Richtext. Lazy rendering and column scroll](https://snippet.dhtmlx.com/...)
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy)

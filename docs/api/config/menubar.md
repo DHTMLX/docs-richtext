@@ -8,25 +8,25 @@ description: You can learn about the menubar config in the documentation of the 
 
 ### Description
 
-@short: Optional. ...
+@short: Optional. Enables the top menubar
 
 ### Usage
 
 ~~~jsx {}
-menubar?: ...; 
+menubar?: boolean; 
 ~~~
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {2}
 new richtext.Richtext("#root", {
-    menubar: ...
+    menubar: true
     // other parameters
 });
 ~~~
 
 **Change log:** The property was added in v2.0
 
-**Related articles:** [Configuration](../../../guides/configuration)
+**Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [Richtext. Lazy rendering and column scroll](https://snippet.dhtmlx.com/...)
+**Related sample:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7)

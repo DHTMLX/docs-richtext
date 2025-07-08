@@ -8,25 +8,25 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 ### Description
 
-@short: Optional. ...
+@short: Optional. Specifies the URL which will be used for image upload
 
 ### Usage
 
 ~~~jsx {}
-imageUploadUrl?: ...; 
+imageUploadUrl?: string;
 ~~~
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {2}
 new richtext.Richtext("#root", {
-    imageUploadUrl: ...
+    imageUploadUrl: "some URL"
     // other parameters
 });
 ~~~
 
 **Change log:** The property was added in v2.0
 
-**Related articles:** [Configuration](../../../guides/configuration)
+**Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [Richtext. Lazy rendering and column scroll](https://snippet.dhtmlx.com/...)
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy)

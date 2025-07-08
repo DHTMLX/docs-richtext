@@ -8,25 +8,33 @@ description: You can learn about the layoutMode config in the documentation of t
 
 ### Description
 
-@short: Optional. ...
+@short: Optional. Specifies the layout mode for the main editor area
 
 ### Usage
 
 ~~~jsx {}
-layoutMode?: ...; 
+layoutMode: "classic" | "document";
+~~~
+
+The `"classic"` mode represents the edit area that fits the entire page. The `"document"` mode closely represent the real document sizes (sizes used: A4, A5, A6, A7).
+
+### Default config
+
+~~~jsx
+layoutMode: "classic"
 ~~~
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {2}
 new richtext.Richtext("#root", {
-    layoutMode: ...
+    layoutMode: "document"  // initializes richtext with "document" mode by default
     // other parameters
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** The property was added in v2.0 instead of the deprecated `mode` property
 
 **Related articles:** [Configuration](../../../guides/configuration)
 
-**Related sample:** [Richtext. Lazy rendering and column scroll](https://snippet.dhtmlx.com/...)
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy)
