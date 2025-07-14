@@ -1,41 +1,38 @@
 ---
 sidebar_label: setConfig()
-title: setNext Method
-description: You can learn about the setNext method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: setConfig Method
+description: You can learn about the setConfig method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
 # setConfig()
 
 ### Description
 
-@short: ...
+@short: Sets new configuration parameters
 
 ### Usage
 
 ~~~jsx {}
-setConfig(next: any): void;
+setConfig(config: { [key:any]: any }): void;
 ~~~
 
 ### Parameters
 
-- `next` - (required) the action to be included into the **Event Bus** order  
+- `config` - (required) the object of Richtext configuration parameters. See the full list of properties [here](/category/richtext-properties/)
+
+:::note
+The `setConfig()` method preserves all the previously set parameters that are not explicitly provided in the `setConfig()` method call.
+:::
 
 ### Example
 
-~~~jsx {15}
-const url = "https://some_backend_url";
-const restProvider = new richtext.RestDataProvider(url);
+~~~jsx {6-8}
+const editor = new richtext.Richtext("#root", {
+    value: "<h1>Some text</h1>",
+    // other configuration parameters
+});
 
-Promise.all([
-    ...
-]).then(([cards, columns, rows]) => {
-    const editor = new richtext.Richtext("#root", {
-        ...
-    });
-    editor.setConfig(restProvider);
+editor.setConfig({
+    layoutMode: "document"
 });
 ~~~
-
-:::info
-You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding**, **deleting** etc) and send the corresponding requests to the server
-:::

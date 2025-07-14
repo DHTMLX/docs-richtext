@@ -37,11 +37,9 @@ module.exports = {
                         image: "/img/docusaurus.png"
                     },
                     items: [
-                        // A
-                        "api/methods/get-uploader",
                         "api/methods/get-value",
-                        "api/methods/set-config",
-                        "api/methods/set-value"
+                        "api/methods/set-value",
+                        "api/methods/set-config"
                     ]
                 },
                 // JS RichText internal methods
