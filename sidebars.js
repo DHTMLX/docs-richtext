@@ -37,9 +37,12 @@ module.exports = {
                         image: "/img/docusaurus.png"
                     },
                     items: [
+                        "api/methods/destructor",
                         "api/methods/get-value",
                         "api/methods/set-value",
-                        "api/methods/set-config"
+                        "api/methods/set-config",
+                        "api/methods/set-locale"
+                        
                     ]
                 },
                 // JS RichText internal methods
@@ -67,7 +70,7 @@ module.exports = {
                                 image: "/img/docusaurus.png"
                             },
                             items: [
-                                "api/internal/detach",
+                                //"api/internal/detach",
                                 "api/internal/exec",
                                 "api/internal/intercept",
                                 "api/internal/on",
@@ -153,6 +156,7 @@ module.exports = {
                         "api/config/fullscreen",
                         "api/config/image-upload-url",
                         "api/config/layout-mode",
+                        "api/config/locale",
                         "api/config/menubar",
                         "api/config/toolbar",
                         "api/config/value"  

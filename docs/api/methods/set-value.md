@@ -8,7 +8,7 @@ description: You can learn about the setValue method in the documentation of the
 
 ### Description
 
-@short: Sets the editor value
+@short: Applies a new value to RichText
 
 ### Usage
 
@@ -18,8 +18,8 @@ setValue: (value: string, encoder?: any): void;
 
 ### Parameters
 
-- `value` - (required) a value to be inserted into the editor
-- `encoder` - (optional) a custom parser used to encode the editor's content into a custom format. The following formats are available: `html` (default) and `text`
+- `value` - (required) a value to be inserted into the RichText
+- `encoder` - (optional) a custom parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
 
 You can get the required encoder in the following way:
 

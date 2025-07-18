@@ -8,7 +8,7 @@ description: You can learn about the setConfig method in the documentation of th
 
 ### Description
 
-@short: Sets new configuration parameters
+@short: Applies new configuration parameters to RichText
 
 ### Usage
 
@@ -18,7 +18,7 @@ setConfig(config: { [key:any]: any }): void;
 
 ### Parameters
 
-- `config` - (required) the object of Richtext configuration parameters. See the full list of properties [here](/category/richtext-properties/)
+- `config` - (required) the object of RichText configuration parameters. See the full list of properties [here](/category/richtext-properties/)
 
 :::note
 The `setConfig()` method preserves all the previously set parameters that are not explicitly provided in the `setConfig()` method call.
