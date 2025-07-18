@@ -32,15 +32,17 @@ The full list of the RichText internal events can be found [**here**](api/overvi
 
 ### Example
 
-~~~jsx {7-11}
+~~~jsx {5-10}
 // create RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
-// forbid moving cards to the column with the "done" ID
-editor.api.intercept("move-card", ({ id, columnId }) => {
-    if(columnId !== "done" ){
+// forbid changing the font size
+editor.api.intercept("set-font-size", (obj) => {
+    if(obj.fontSize !== "36px" ){
         return false;
     }
 });
 ~~~
+
+**Change log:** The method was added in v2.0

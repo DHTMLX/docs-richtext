@@ -28,7 +28,7 @@ const restProvider = new richtext.RestDataProvider(url);
 
 Promise.all([
     ...
-]).then(([cards, columns, rows]) => {
+]).then(([value]) => {
     const editor = new richtext.Richtext("#root", {
         ...
     });

@@ -8,7 +8,7 @@ description: You can learn about the exec method in the documentation of the DHT
 
 ### Description
 
-@short: Allows triggering the inner events
+@short: Allows triggering inner events
 
 ### Usage
 
@@ -21,30 +21,26 @@ api.exec(
 
 ### Parameters
 
-- `event` - (required) an event to be fired 
+- `event` - (required) an event to be fired
 - `config` - (required) the config object with parameters (see the event to be fired)
 
 ### Events
 
 :::info
-The full list of the RichText internal events can be found [**here**](api/overview/main_overview.md/#richtext-events)
+The full list of the RichText internal events can be found [**here**](/category/richtext-events/)
 :::
 
 ### Example
 
-~~~jsx {7,9-12}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    columns,
-    cards
+    // configuration parameters
 });
-// select the card with the 1 ID
-editor.api.exec("select-card", { id: 1 });
-// add new card without sending changes to the server
-editor.api.exec("add-card", { 
-    columnId: "backlog",
-    skipProvider: true, 
-});
+// set the text font size
+editor.api.exec("set-font-size", {
+    fontSize: "16px"
+}); 
 ~~~
 
-**Related sample:** [RichText. Preserve sorting](https://snippet.dhtmlx.com/74nyuv14?tag=richtext)
+**Change log:** The method was added in v2.0

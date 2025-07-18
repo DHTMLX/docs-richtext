@@ -22,19 +22,27 @@ The method returns an object with the following parameters:
 
 ~~~jsx {}
 {
-    ...
+    cursorState: { subscribe: any },
+    defaultStyles {...},
+    document {...},
+    fullscreen {...},
+    history {...},
+    layoutMode {...},
+    popup {...},
+    selection {...}
 }
 ~~~  
 
 ### Example
 
-~~~jsx {7-37}
-// create RichText
+~~~jsx {5-7}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // get the Reactive State of RichText
-const state = editor.api.getReactiveState();
+const reactive_state = editor.api.getReactiveState();
+console.log(reactive_state)
 ~~~
 
-**Change log:**
+**Change log:** The method was added in v2.0

@@ -21,21 +21,28 @@ api.getState(): object;
 The method returns an object with the following parameters:
 
 ~~~jsx {}
-{    
-    ...
+{     
+    cursorState: {},
+    defaultStyles: {},
+    document: {},
+    fullscreen: boolean,
+    history: []
+    layoutMode: string,
+    popup: any,
+    selection: {}
 }
+~~~
 
 ### Example
 
-~~~jsx {7-12}
-// create RichText
+~~~jsx {5-7}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // get the State of RichText
 const state = editor.api.getState();
-console.log(...); // ...
-//...
+console.log(state);
 ~~~
 
-**Change log:**
+**Change log:** The method was added in v2.0

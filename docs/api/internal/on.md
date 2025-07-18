@@ -27,18 +27,18 @@ api.on(
 ### Events
 
 :::info
-The full list of the RichText internal events can be found [**here**](api/overview/main_overview.md/#richtext-events)
+The full list of the RichText internal events can be found [**here**](/category/richtext-events/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
-// ...
-editor.api.on("move-card", ({ id, columnId }) => {
-    console.log({ id, columnId });
+// subscribe on the "set-font-size" event
+editor.api.on("set-font-size", (obj) => {
+    console.log(obj.fontSize);
 });
 ~~~
