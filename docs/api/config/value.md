@@ -8,10 +8,10 @@ description: You can learn about the value config in the documentation of the DH
 
 ### Description
 
-@short: Optional. Specifies the initial value (content) displayed within the editor area using the HTML format (default format)
+@short: Optional. Specifies the initial value (content) displayed within the editor area of RichText
 
 :::tip
-If you want to set the value (content) using another format, use the built-in [`setValue()`](api/methods/set-value.md) method.
+If you want to set the value (content) using custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
 :::
 
 ### Usage

@@ -21,20 +21,21 @@ The `"classic"` mode represents the edit area that fits the entire page. The `"d
 ### Default config
 
 ~~~jsx
-layoutMode: "classic"
+layoutMode: "classic";
 ~~~
 
 ### Example
 
-~~~jsx {2}
+~~~jsx {3}
+// initialize RichText
 new richtext.Richtext("#root", {
-    layoutMode: "document"  // initializes richtext with "document" mode by default
+    layoutMode: "document"  // initializes RichText with "document" mode by default
     // other parameters
 });
 ~~~
 
 **Change log:** The property was added in v2.0 instead of the deprecated `mode` property
 
-**Related articles:** [Configuration](../../../guides/configuration)
+**Related articles:** [Configuration](guides/configuration.md)
 
 **Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy)

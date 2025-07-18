@@ -8,7 +8,7 @@ description: You can learn about the toolbar config in the documentation of the 
 
 ### Description
 
-@short: Optional. Shows or hides Toolbar and specifies buttons visible within Toolbar
+@short: Optional. Enables toolbar and specifies buttons displayed within Toolbar
 
 ### Usage
 
@@ -18,7 +18,7 @@ toolbar?: boolean | Array<string | { id: string, type: string, label?: string, t
 
 #### Available buttons within Toolbar
 
-You can specify the following buttons in the Richtext Toolbar:
+You can specify the following buttons in the RichText toolbar:
 
 | Button              | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -50,9 +50,9 @@ You can specify the following buttons in the Richtext Toolbar:
 | `fullscreen`        | Toggles fullscreen mode.                                                    |
 | `mode`              | Switches between different view modes (e.g., visual, HTML, Markdown).       |
 | `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
-| `separator`         | Adds a visual separator between Toolbar groups.                             |
+| `separator`         | Adds a visual separator between toolbar groups.                             |
 
-You can use this strings to configure Toolbar buttons as follow:
+You can use this strings to configure toolbar buttons as follow:
 
 ~~~jsx {2-7}
 new richtext.Richtext("#root", {
@@ -77,7 +77,7 @@ You can specify custom buttons as objects with the following parameters:
 - `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
 - `handler` - (optional) a callback function that executes when the button is clicked
 
-You can specify custom buttons within a Toolbar as follow:
+You can specify custom buttons within a toolbar as follow:
 
 ~~~jsx {6-14}
 new richtext.Richtext("#root", {
@@ -102,7 +102,7 @@ new richtext.Richtext("#root", {
 
 #### Hide Toolbar
 
-If you need to hide Toolbar, set the `toolbar` property to `false` as follows:
+If you need to hide toolbar, set the `toolbar` property to `false` as follows:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -152,7 +152,8 @@ const defaultToolbarButtons = {
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {3-18}
+// initialize RichText
 new richtext.Richtext("#root", {
     toolbar: [
         "bold",

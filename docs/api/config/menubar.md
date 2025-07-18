@@ -8,7 +8,7 @@ description: You can learn about the menubar config in the documentation of the 
 
 ### Description
 
-@short: Optional. Enables the top menubar
+@short: Optional. Enables the top menubar of RichText
 
 ### Usage
 
@@ -18,7 +18,8 @@ menubar?: boolean;
 
 ### Example
 
-~~~jsx {2}
+~~~jsx {3}
+// initialize RichText
 new richtext.Richtext("#root", {
     menubar: true
     // other parameters

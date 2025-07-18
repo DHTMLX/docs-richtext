@@ -117,7 +117,8 @@ const defaultStyles = {
 
 ### Example
 
-~~~jsx {2-12}
+~~~jsx {3-13}
+// initialize RichText
 new richtext.Richtext("#root", {
     defaultStyles: {
         h4: {

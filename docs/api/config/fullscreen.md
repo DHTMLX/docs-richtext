@@ -8,7 +8,7 @@ description: You can learn about the fullscreen config in the documentation of t
 
 ### Description
 
-@short: Optional. Enables the editor fullscreen mode
+@short: Optional. Enables the RichText fullscreen mode
 
 ### Usage
 
@@ -19,12 +19,13 @@ fullscreen?: boolean;
 ### Default config
 
 ~~~jsx
-fullscreen: false
+fullscreen: false;
 ~~~
 
 ### Example
 
-~~~jsx {2}
+~~~jsx {3}
+// initialize RichText
 new richtext.Richtext("#root", {
     fullscreen: true
     // other parameters

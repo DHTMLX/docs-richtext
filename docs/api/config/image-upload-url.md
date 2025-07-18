@@ -18,7 +18,8 @@ imageUploadUrl?: string;
 
 ### Example
 
-~~~jsx {2}
+~~~jsx {3}
+// initialize RichText
 new richtext.Richtext("#root", {
     imageUploadUrl: "some URL"
     // other parameters
