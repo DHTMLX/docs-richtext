@@ -70,7 +70,7 @@ module.exports = {
                                 image: "/img/docusaurus.png"
                             },
                             items: [
-                                //"api/internal/detach",
+                                "api/internal/detach",
                                 "api/internal/exec",
                                 "api/internal/intercept",
                                 "api/internal/on",

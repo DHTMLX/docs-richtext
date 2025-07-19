@@ -27,7 +27,7 @@ api.intercept(
 ### Events
 
 :::info
-The full list of the RichText internal events can be found [**here**](api/overview/main_overview.md/#richtext-events)
+The full list of RichText internal events can be found [**here**](/category/richtext-events/)
 :::
 
 ### Example
