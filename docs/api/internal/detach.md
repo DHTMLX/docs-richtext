@@ -47,3 +47,5 @@ editor.api.exec("set-font-size", {
 // detach the "set-font-size" event
 editor.api.detach("set-font-size");
 ~~~
+
+**Change log:** The method was updated in v2.0. The `name` and `context` parameters were deprecated

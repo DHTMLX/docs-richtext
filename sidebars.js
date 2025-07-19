@@ -20,7 +20,7 @@ module.exports = {
             link: {
                 type: "generated-index",
                 title: "RichText API",
-                keywords: ['api', 'methods', 'properties', 'events'],
+                keywords: ["api", "methods", "properties", "events"],
                 image: "/img/docusaurus.png"
             },
             items: [
@@ -33,7 +33,7 @@ module.exports = {
                     link: {
                         type: "generated-index",
                         title: "RichText methods",
-                        keywords: ['methods'],
+                        keywords: ["methods"],
                         image: "/img/docusaurus.png"
                     },
                     items: [
@@ -42,7 +42,6 @@ module.exports = {
                         "api/methods/set-value",
                         "api/methods/set-config",
                         "api/methods/set-locale"
-                        
                     ]
                 },
                 // JS RichText internal methods
@@ -53,8 +52,8 @@ module.exports = {
                     collapsed: true,
                     link: {
                         type: "generated-index",
-                        title: 'Internal API overview',
-                        keywords: ['internal api'],
+                        title: "Internal API overview",
+                        keywords: ["internal api"],
                         image: "/img/docusaurus.png"
                     },
                     items: [
@@ -65,8 +64,8 @@ module.exports = {
                             collapsed: true,
                             link: {
                                 type: "generated-index",
-                                title: 'Event Bus methods',
-                                keywords: ['internal api'],
+                                title: "Event Bus methods",
+                                keywords: ["internal api"],
                                 image: "/img/docusaurus.png"
                             },
                             items: [
@@ -84,8 +83,8 @@ module.exports = {
                             collapsed: true,
                             link: {
                                 type: "generated-index",
-                                title: 'State methods',
-                                keywords: ['internal api'],
+                                title: "State methods",
+                                keywords: ["internal api"],
                                 image: "/img/docusaurus.png"
                             },
                             items: [
@@ -102,8 +101,8 @@ module.exports = {
                     collapsed: true,
                     link: {
                         type: "generated-index",
-                        title: 'RichText events',
-                        keywords: ['internal api'],
+                        title: "RichText events",
+                        keywords: ["internal api"],
                         image: "/img/docusaurus.png"
                     },
                     items: [
@@ -146,12 +145,11 @@ module.exports = {
                     link: {
                         type: "generated-index",
                         title: "RichText properties",
-                        keywords: ['properties'],
+                        keywords: ["properties"],
                         image: "/img/docusaurus.png"
                     },
                     items: [
                         // JS RichText
-                        // C
                         "api/config/default-styles",
                         "api/config/fullscreen",
                         "api/config/image-upload-url",
@@ -170,8 +168,8 @@ module.exports = {
             label: "API",
             collapsed: false,
             link: {
-                type: 'doc',
-                id: 'api/overview'
+                type: "doc",
+                id: "api/overview"
             },
             items: [
                 "api/methods",
@@ -189,11 +187,11 @@ module.exports = {
             label: "Guides",
             collapsed: false,
             link: {
-                type: 'generated-index',
-                title: 'Guides',
-                keywords: ['guides'],
-                image: '/img/docusaurus.png',
-        },
+                type: "generated-index",
+                title: "Guides",
+                keywords: ["guides"],
+                image: "/img/docusaurus.png"
+            },
             items: [
                 "guides/initialization",
                 "guides/configuration",
@@ -204,7 +202,8 @@ module.exports = {
                 "guides/event_handling",
                 //"guides/angular_integration",
                 //"guides/react_integration",
-                //"guides/vuejs_integration"
+                //"guides/vue_integration"
+                //"guides/svelte_integration"
             ]
         }
     ]

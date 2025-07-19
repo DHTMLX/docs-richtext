@@ -42,3 +42,5 @@ editor.api.on("set-font-size", (obj) => {
     console.log(obj.fontSize);
 });
 ~~~
+
+**Change log:** The method was updated in v2.0. The `context` parameter were deprecated
