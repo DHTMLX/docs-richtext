@@ -8,33 +8,51 @@ description: You can learn about the set-text-format event in the documentation 
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when setting a text format
 
 ### Usage
 
 ~~~jsx {}
-"set-text-format": ...;
+"set-text-format": (ITextFormat) => boolean | void;
+
+interface ITextFormat {
+    bold?: boolean;
+    italic?: boolean;
+    strike?: boolean;
+    underline?: boolean;
+}
 ~~~
+
+:::info
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+:::
 
 ### Parameters
 
 The callback of the **set-text-format** event can take an object with the following parameters:
 
-...
-
-:::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
-:::
+- `bold` - a bold text format
+- `italic` - an italic text format
+- `strike` - a strike text format
+- `underline` - an underline text format
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-14}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "set-text-format" event
 editor.api.on("set-text-format", (obj) => {
     console.log(obj);
+    console.log("The text format was changed");
+});
+// apply the "italic" and bold text format
+editor.api.exec("set-text-format", {
+    italic: true, 
+    bold: true
 });
 ~~~
+
+**Change log:** The event was added in v2.0

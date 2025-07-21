@@ -8,33 +8,42 @@ description: You can learn about the set-text-style event in the documentation o
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when setting a text style
 
 ### Usage
 
 ~~~jsx {}
-"set-text-style": ...;
+"set-text-style": ({ tag: TBlockType }) => boolean | void;
+
+type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 ~~~
 
 ### Parameters
 
 The callback of the **set-text-style** event can take an object with the following parameters:
 
-...
+- `tag` - a text style
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-13}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "set-text-style" event
 editor.api.on("set-text-style", (obj) => {
-    console.log(obj);
+    console.log(obj.tag);
+    console.log("The text style was changed");
+});
+// apply new text style
+editor.api.exec("set-text-style", {
+    tag: "blockquote"
 });
 ~~~
+
+**Change log:** The event was added in v2.0

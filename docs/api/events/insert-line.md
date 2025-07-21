@@ -8,33 +8,29 @@ description: You can learn about the insert-line event in the documentation of t
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when inserting horizontal line
 
 ### Usage
 
 ~~~jsx {}
-"insert-line": ...;
+"insert-line": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **insert-line** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "insert-line" event
-editor.api.on("insert-line", (obj) => {
-    console.log(obj);
+editor.api.on("insert-line", () => {
+    console.log("The horizontal line was inserted");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

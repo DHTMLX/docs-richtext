@@ -8,33 +8,29 @@ description: You can learn about the cut event in the documentation of the DHTML
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when cutting selected text
 
 ### Usage
 
 ~~~jsx {}
-"cut": ...;
+"cut": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **cut** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "cut" event
-editor.api.on("cut", (obj) => {
-    console.log(obj);
+editor.api.on("cut", () => {
+    console.log("Selected text was cut");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

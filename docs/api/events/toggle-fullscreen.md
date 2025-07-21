@@ -8,33 +8,38 @@ description: You can learn about the toggle-fullscreen event in the documentatio
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when toggling the full screen mode
 
 ### Usage
 
 ~~~jsx {}
-"toggle-fullscreen": ...;
+"toggle-fullscreen": ({ mode?: boolean }) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the **toggle-fullscreen** event can take an object with the following parameters:
+The callback of the **toggle-fullscreen** event can take an object with the following parameter:
 
-...
+- `mode` - enables a fullscreen mode
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-9}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "toggle-fullscreen" event
 editor.api.on("toggle-fullscreen", (obj) => {
     console.log(obj);
+    console.log("The full screen mode was changed");
 });
+// enable the full screen mode
+editor.api.exec("toggle-fullscreen", { mode: true });
 ~~~
+
+**Change log:** The event was added in v2.0

@@ -8,33 +8,35 @@ description: You can learn about the subscript event in the documentation of the
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when pressing the "Subscript" button in the menubar/toolbar or via Event Bus methods
+
+:::info
+The **subscript** event will be applied at current cursor position.
+:::
 
 ### Usage
 
 ~~~jsx {}
-"subscript": ...;
+"subscript": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **subscript** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-10}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "subscript" event
-editor.api.on("subscript", (obj) => {
-    console.log(obj);
+editor.api.on("subscript", () => {
+    console.log("Subscript was applied");
 });
+// trigger the "subscript" event
+editor.api.exec("subscript", {});
 ~~~
+
+**Change log:** The event was added in v2.0

@@ -8,33 +8,37 @@ description: You can learn about the create-new event in the documentation of th
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when pressing the "New" option within the menubar or via Event Bus methods
 
 ### Usage
 
 ~~~jsx {}
-"create-new": ...;
+"create-new": ({ reset?: boolean }) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the **create-new** event can take an object with the following parameters:
+The callback of the **create-new** event can take an object with the following parameter:
 
-...
+- `reset` - resets the history when creating a new file
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-10}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "create-new" event
-editor.api.on("create-new", (obj) => {
-    console.log(obj);
+editor.api.on("create-new", ({ reset }) => {
+    console.log(`Document has been cleared. History has ${reset ? "" : "not"} been reset.`);
 });
+// create new file and reset the history
+editor.api.exec("create-new", { reset: true });
 ~~~
+
+**Change log:** The event was added in v2.0

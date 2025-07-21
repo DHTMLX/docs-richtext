@@ -8,33 +8,29 @@ description: You can learn about the update-link event in the documentation of t
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when updating link
 
 ### Usage
 
 ~~~jsx {}
-"update-link": ...;
+"update-link": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **update-link** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "update-link" event
-editor.api.on("update-link", (obj) => {
-    console.log(obj);
+editor.api.on("update-link", () => {
+    console.log("The link was updated");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

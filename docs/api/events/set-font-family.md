@@ -8,33 +8,40 @@ description: You can learn about the set-font-family event in the documentation 
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when setting a font family
 
 ### Usage
 
 ~~~jsx {}
-"set-font-family": ...;
+"set-font-family": ({ fontFamily: string }) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the **set-font-family** event can take an object with the following parameters:
+The callback of the **set-font-family** event can take an object with the following parameter:
 
-...
+- `fontFamily` - a font family to be applied. The following fonts are available: `"Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-13}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "set-font-family" event
 editor.api.on("set-font-family", (obj) => {
-    console.log(obj);
+    console.log(obj.fontFamily);
+    console.log("The font family was changed");
 });
+// apply new font family
+editor.api.exec("set-font-family", {
+    fontFamily: "Roboto"
+}); 
 ~~~
+
+**Change log:** The event was added in v2.0

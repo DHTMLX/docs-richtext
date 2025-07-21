@@ -8,33 +8,29 @@ description: You can learn about the print event in the documentation of the DHT
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when printing document
 
 ### Usage
 
 ~~~jsx {}
-"print": ...;
+"print": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **print** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+// configuration parameters
 });
 // subscribe on the "print" event
-editor.api.on("print", (obj) => {
-    console.log(obj);
+editor.api.on("print", () => {
+    console.log("The document is printing");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

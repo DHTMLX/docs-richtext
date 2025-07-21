@@ -8,33 +8,40 @@ description: You can learn about the insert-list event in the documentation of t
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when inserting list
 
 ### Usage
 
 ~~~jsx {}
-"insert-list": ...;
+"insert-list": ({ type: TListType }) => boolean | void;
+
+type TListType = "bulleted" | "numbered";
 ~~~
 
 ### Parameters
 
-The callback of the **insert-list** event can take an object with the following parameters:
+The callback of the **insert-list** event can take an object with the following parameter:
 
-...
+- `type` - the type of the inserted list. You can specify on the following values: 
+    - `"bulleted"` - bulleted list
+    - `"numbered"` - numbered list
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-9}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "insert-list" event
 editor.api.on("insert-list", (obj) => {
-    console.log(obj);
+    console.log(obj.type);
+    console.log("The list was inserted");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

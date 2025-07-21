@@ -8,33 +8,29 @@ description: You can learn about the undo event in the documentation of the DHTM
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when pressing the "Undo" button in the menubar/toolbar or via Event Bus methods
 
 ### Usage
 
 ~~~jsx {}
-"undo": ...;
+"undo": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **undo** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "undo" event
-editor.api.on("undo", (obj) => {
-    console.log(obj);
+editor.api.on("undo", () => {
+    console.log("Undo operation was performed");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

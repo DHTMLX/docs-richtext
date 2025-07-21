@@ -8,33 +8,40 @@ description: You can learn about the set-font-size event in the documentation of
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when setting a font size
 
 ### Usage
 
 ~~~jsx {}
-"set-font-size": ...;
+"set-font-size": ({ fontSize: string }) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the **set-font-size** event can take an object with the following parameters:
+The callback of the **set-font-size** event can take an object with the following parameter:
 
-...
+- `fontSize` - a font size to be applied
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-13}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "set-font-size" event
 editor.api.on("set-font-size", (obj) => {
-    console.log(obj);
+    console.log(obj.fontSize);
+    console.log("The font size was changed");
+});
+// apply new font size
+editor.api.exec("set-font-size", {
+    fontSize: "11px"
 });
 ~~~
+
+**Change log:** The event was added in v2.0

@@ -8,33 +8,36 @@ description: You can learn about the outdent event in the documentation of the D
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when an outdent was added
 
 ### Usage
 
 ~~~jsx {}
-"outdent": ...;
+"outdent": ({ step: number }) => boolean | void;
 ~~~
 
 ### Parameters
 
 The callback of the **outdent** event can take an object with the following parameters:
 
-...
+- `step` - the step of outdent was added
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-9}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "outdent" event
 editor.api.on("outdent", (obj) => {
     console.log(obj);
+    console.log("The outdent was added");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

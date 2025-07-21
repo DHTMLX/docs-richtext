@@ -8,33 +8,29 @@ description: You can learn about the insert-link event in the documentation of t
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when inserting link
 
 ### Usage
 
 ~~~jsx {}
-"insert-link": ...;
+"insert-link": () => boolean | void;
 ~~~
 
-### Parameters
-
-The callback of the **insert-link** event can take an object with the following parameters:
-
-...
-
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-8}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "insert-link" event
-editor.api.on("insert-link", (obj) => {
-    console.log(obj);
+editor.api.on("insert-link", () => {
+    console.log("The link was inserted");
 });
 ~~~
+
+**Change log:** The event was added in v2.0

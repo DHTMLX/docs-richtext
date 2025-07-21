@@ -8,33 +8,40 @@ description: You can learn about the set-line-height event in the documentation 
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when setting a line height
 
 ### Usage
 
 ~~~jsx {}
-"set-line-height": ...;
+"set-line-height": ({ lineHeight: string }) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the **set-line-height** event can take an object with the following parameters:
+The callback of the **set-line-height** event can take an object with the following parameter:
 
-...
+- `lineHeight` - a line height
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/main_overview.md/#event-bus-methods)
+For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {7-9}
-// create RichText
+~~~jsx {5-13}
+// initialize RichText
 const editor = new richtext.Richtext("#root", {
-    ...
+    // configuration parameters
 });
 // subscribe on the "set-line-height" event
 editor.api.on("set-line-height", (obj) => {
     console.log(obj);
+    console.log("The line height was changed");
+});
+// apply a new line height
+editor.api.exec("set-line-height", {
+   lineHeight: "15px"
 });
 ~~~
+
+**Change log:** The event was added in v2.0
