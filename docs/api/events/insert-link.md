@@ -16,20 +16,27 @@ description: You can learn about the insert-link event in the documentation of t
 "insert-link": () => boolean | void;
 ~~~
 
+### Parameters
+
+The callback of the **update-link** event can take an object with the following parameter:
+
+- `url` - the url to be inserted
+
 :::info
 For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
 :::
 
 ### Example
 
-~~~jsx {5-8}
+~~~jsx {5-9}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
     // configuration parameters
 });
 // subscribe on the "insert-link" event
-editor.api.on("insert-link", () => {
-    console.log("The link was inserted");
+editor.api.on("insert-link", (obj) => {
+    console.log(obj)
+    console.log("The following link was inserted: " + obj.url);
 });
 ~~~
 

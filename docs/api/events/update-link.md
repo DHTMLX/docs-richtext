@@ -13,8 +13,15 @@ description: You can learn about the update-link event in the documentation of t
 ### Usage
 
 ~~~jsx {}
-"update-link": () => boolean | void;
+"update-link": ({ id: number, url: string }) => boolean | void;
 ~~~
+
+### Parameters
+
+The callback of the **update-link** event can take an object with the following parameters:
+
+- `id` - the link ID
+- `url` - the modified url
 
 :::info
 For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
@@ -22,14 +29,15 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 
 ### Example
 
-~~~jsx {5-8}
+~~~jsx {5-9}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
     // configuration parameters
 });
 // subscribe on the "update-link" event
-editor.api.on("update-link", () => {
-    console.log("The link was updated");
+editor.api.on("update-link", (obj) => {
+    console.log(obj);
+    console.log("The following link was updated:" + obj.url);
 });
 ~~~
 
