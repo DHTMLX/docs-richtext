@@ -1,60 +1,72 @@
 ---
 sidebar_label: RichText overview
 title: RichText overview
-description: Get a general idea of DHTMLX Rich Text Editor, its purpose, Toolbar structure, editing modes, supported text formats, and available integrations with JavaScript frameworks.
 slug: /
+description: You can have an overview of DHTMLX JavaScript Kanban library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Kanban.
 ---
 
 # RichText overview
 
-DHTMLX RichText is a JavaScript client-side tool for fast and handy editing of content. It provides a compact set of formatting controls, two editing modes for comfy work with text and an easily adjustable Toolbar.
+**DHTMLX RichText** is a flexible and lightweight WYSIWYG editor built with JavaScript. Designed to provide a seamless editing experience in modern web applications, RichText offers a clean UI, rich formatting capabilities, and full control over content rendering. Whether you're building a CMS, an internal admin tool, or an embedded document editor, RichText can be easily integrated and customized to match your needs.
 
-This component supports parsing and serialization of data in the HTML and JSON formats and allows using any icon fonts and adding custom controls. Besides, there are ready-made solutions for integration with
-such popular JavaScript frameworks as Angular, React and Vue.js.
+**DHTMLX RichText** component includes the following features:
 
-## Toolbar structure
+- Multiple editing modes, including visual and source view
 
-The Toolbar of RichText is [easily configurable](guides/configuration.md#toolbar). It contains several blocks of controls and their number depends on the chosen type of Toolbar:
+- Content serialization to both HTML and JSON
 
-- default Toolbar
-- full Toolbar
+- A configurable **toolbar** and **menubar** with built-in and custom buttons
 
-### Default Toolbar
+- Image uploading, rich formatting, custom styling, and layout modes
 
-The **default Toolbar** includes 6 blocks of controls. They are: "undo", "style", "decoration", "colors", "align" and "link":
+- Full API access for event handling, content manipulation, and reactive state management
 
-![Default Toolbar](./assets/default_toolbar.png)
+RichText is framework-agnostic and provides official wrappers for React, Angular, Vue, and Svelte, making it suitable for a wide range of front-end ecosystems.
 
-### Full Toolbar
+This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, full API references, and best practices for embedding RichText into your application.
 
-The **full Toolbar** includes all the default blocks and additional "clear", "stats" and "fullscreen" blocks:
+## RichText structure
 
-![Full Toolbar](./assets/full_toolbar.png)
+### Toolbar
 
-You can [adjust the look and feel of the Toolbar](guides/customization.md) to meet your requirements.
+The RichText toolbar provides quick access to text formatting and structural editing features. By default, it is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, and list formatting.
 
-## Two working modes
+The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
 
-DHTMLX RichText can work with content in [two modes](guides/configuration.md). You can choose the most suitable mode to feel comfortable while editing text. The modes are:
+![Toolbar](./assets/richtext/toolbar.png)
 
-- "classic"
+### Menubar
 
-![Classic mode](./assets/classic_mode.png)
+The RichText menubar provides access to high-level editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
 
-- "document"
+Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
 
-![Document mode](./assets/doc_mode.png)
+![Menubar](./assets/richtext/menubar.png)
 
-[Read more](guides/configuration.md#working-modes) about setting the mode you like best.
+### Editor
 
-## Supported formats
+The RichText editor is the central area where users create and format content. You can control the editor’s appearance and behavior through configuration options such as [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), and [`defaultStyles`](api/config/default-styles.md). RichText also supports custom styling, image embedding, and responsive layout adjustments to match the needs of your application.
+
+### Two working modes
+
+DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
+
+- **"classic"**
+
+![Classic mode](./assets/richtext/classic_mode.png)
+
+- **"document"**
+
+![Document mode](./assets/richtext/document_mode.png)
+
+### Supported formats
 
 The RichText editor supports [parsing](guides/loading_data.md#adding-content-into-editor) and [serialization](guides/working_with_richtext.md#getting-content-from-editor) of content in the [HTML and Markdown formats](guides/loading_data.md#format-of-content).
 
-- HTML format
+#### HTML format
 
-![HTML format](./assets/html_format.png)
+![HTML format](./assets/richtext/html_format.png)
 
-- Markdown format
+#### Text format
 
-![Markdown format](./assets/markdown_format.png)
+![Text format](./assets/richtext/text_format.png)
