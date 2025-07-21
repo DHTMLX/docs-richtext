@@ -94,6 +94,7 @@ module.exports = {
                         }
                     ]
                 },
+                // JS RichText events
                 {
                     type: "category",
                     label: "RichText events",
@@ -112,6 +113,8 @@ module.exports = {
                         "api/events/create-new",
                         "api/events/cut",
                         "api/events/delete-link",
+                        "api/events/export",
+                        "api/events/import",
                         "api/events/indent",
                         "api/events/insert-image",
                         "api/events/insert-line",
@@ -124,19 +127,20 @@ module.exports = {
                         "api/events/resize-image",
                         "api/events/set-font-family",
                         "api/events/set-font-size",
-                        "api/events/set-layout-mode",
                         "api/events/set-line-height",
                         "api/events/set-text-color",
                         "api/events/set-text-format",
                         "api/events/set-text-style",
-                        "api/events/set-value",
                         "api/events/subscript",
                         "api/events/superscript",
                         "api/events/toggle-fullscreen",
+                        "api/events/toggle-layout-mode",
+                        "api/events/toggle-shortcut-info",
                         "api/events/undo",
                         "api/events/update-link"
                     ]
                 },
+                // JS RichText properties
                 {
                     type: "category",
                     label: "RichText properties",
@@ -149,7 +153,6 @@ module.exports = {
                         image: "/img/docusaurus.png"
                     },
                     items: [
-                        // JS RichText
                         "api/config/default-styles",
                         "api/config/fullscreen",
                         "api/config/image-upload-url",
@@ -162,26 +165,6 @@ module.exports = {
                 }
             ]
         },
-        /*
-        {
-            type: "category",
-            label: "API",
-            collapsed: false,
-            link: {
-                type: "doc",
-                id: "api/overview"
-            },
-            items: [
-                "api/methods",
-                "api/events_bus",
-                "api/events",
-                "api/properties",
-                "api/editor_api_methods",
-                "api/toolbar_methods",
-                "api/toolbar_controls",
-            ],
-        },
-        */
         {
             type: "category",
             label: "Guides",

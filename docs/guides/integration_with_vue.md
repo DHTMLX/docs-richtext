@@ -259,8 +259,8 @@ export default {
         this.editor = new Richtext(this.$refs.cont, {});
 
         this.editor.api.on("print", () => {
-        console.log("The document is printing");
-    });
+            console.log("The document is printing");
+        });
     },
 
     unmounted() {
