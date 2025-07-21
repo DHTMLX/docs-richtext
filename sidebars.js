@@ -165,6 +165,24 @@ module.exports = {
                 }
             ]
         },
+        //start framework integration
+        {
+            type: "category",
+            label: "Integration with frameworks",
+            link: {
+                type: "generated-index",
+                title: "BIntegration with frameworks",
+                keywords: ['frameworks integration'],
+                image: "/img/docusaurus.png"
+            },
+            items: [
+                "guides/integration_with_angular",
+                "guides/integration_with_react",
+                "guides/integration_with_vue",
+                "guides/integration_with_svelte",
+            ]
+        },
+        // end framework integration
         {
             type: "category",
             label: "Guides",

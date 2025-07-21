@@ -1,93 +1,63 @@
 ---
 sidebar_label: Initialization
 title: Initialization
-description: This guide offers an explanation for initializing DHTMLX Rich Text Editor in three simple steps.
+description: You can learn about the initialization in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
 # Initialization
 
-The current article will guide you through simple steps you need to take in order to insert a compact text editor into your application. All in all, you should complete just three steps:
+This guide will give you detailed instructions on how to create RichText on a page to enrich your application with features of the RichText editor. Take the following steps to get a ready-to-use component:
 
 1. [Include the RichText source files on a page](#including-source-files).
 2. [Create a container for RichText](#creating-container).
 3. [Initialize RichText with the object constructor](#initializing-richtext).
 
-~~~html
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>How to Start with DHTMLX RichText</title>            
-        <script type="text/javascript" src="./codebase/richtext.js"></script>
-        <link rel="stylesheet" href="./codebase/richtext.css">
-    </head>
-    <body>
-        <div id="root"></div>
-        <script>
-            // creating DHTMLX RichText 
-            const editor = new richtext.Richtext("#root");
-        </script>
-    </body>
-</html>
-~~~
-
 ## Including source files
 
 [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it into a folder of your project.
 
-To create dhtmlxRichText, you need to include 2 source files on your page:
+To create RichText, you need to include 2 source files on your page:
 
 - *richtext.js*
 - *richtext.css*
 
-Make sure that you set correct relative paths to these files:
+Make sure that you set correct relative paths to the source files:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./codebase/richtext.js"></script>  
 <link rel="stylesheet" href="./codebase/richtext.css">
 ~~~
 
-The structure of the RichText package is the following:
-
-- **sources** - the source code files of the library; they are easy-to-read and are mostly intended for debugging;
-- **codebase** - the obfuscated code files of the library; they are much smaller and intended for use in production. **Include these files in your apps when they are ready**;
-- **samples** - the code samples.
-
 ## Creating container
 
-Add a container for RichText and give it an id, for example "root":
+Add a container for RichText and give it an ID, for example *"root"*:
 
-~~~html title="index.html"
+~~~jsx title="index.html"
 <div id="root"></div>
 ~~~
 
 ## Initializing RichText
 
-Initialize RichText with the `richtext.Richtext` object constructor. The constructor has two parameters:
+Initialize RichText with the `richtext.Richtext` constructor. The constructor takes two parameters:
 
-- the HTML container for RichText. The one we have created at the previous step.
-- an object with configuration properties. [See the full list below](#configuration-properties).
+- an HTML container (the ID of the HTML container)
+- an object with configuration properties. [See the full list here](#configuration-properties)
 
 ~~~jsx title="index.html"
-// creating RichText
+// create RichText
 const editor = new richtext.Richtext("#root", {
     // configuration properties  
 });
 ~~~
 
-### <span id="config">Configuration properties</span>
+### Configuration properties
 
-This is a list of properties that you can specify in the RichText configuration object:
+:::note
+The full list of properties to configure **RichText** can be found [**here**](/category/richtext-properties/).
+:::
 
-- [**mode**](guides/configuration.md#working-modes) - (string) the working mode of RichText. Can be either `default` or `document`
-- [**toolbarBlocks**](guides/configuration.md#toolbar) - (array) specifies blocks of buttons that will be shown in the RichText toolbar
-- [**customStats**](guides/configuration.md#custom-statistics-in-the-toolbar) - (array) defines the logic of displaying custom statistics
+## Example
 
-You can set configuration properties during initialization as the second parameter of the constructor:
+In this snippet you can see how to initialize **RichText** with the initial data:
 
-~~~jsx
-const editor = new richtext.Richtext("#root", { 
-    mode:"document"
-});
-~~~
-
-**Related sample:** [Modes](https://snippet.dhtmlx.com/pdh5buvg)
+<iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
