@@ -28,22 +28,19 @@ The full list of RichText internal events can be found [**here**](/category/rich
 
 ### Example
 
-~~~jsx {16-17}
+~~~jsx {13-14}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
     // configuration parameters
 });
-
 // subscribe on the "set-font-size" event
 editor.api.on("set-font-size", (obj) => {
     console.log(obj.fontSize);
 });
-
 // set the text font size
 editor.api.exec("set-font-size", {
     fontSize: "36px"
 }); 
-
 // detach the "set-font-size" event
 editor.api.detach("set-font-size");
 ~~~
