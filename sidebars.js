@@ -131,6 +131,7 @@ module.exports = {
                         "api/events/set-text-color",
                         "api/events/set-text-format",
                         "api/events/set-text-style",
+                        "api/events/show-popup",
                         "api/events/subscript",
                         "api/events/superscript",
                         "api/events/toggle-fullscreen",
