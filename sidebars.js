@@ -198,13 +198,8 @@ module.exports = {
                 "guides/configuration",
                 "guides/localization",
                 "guides/loading_data",
-                "guides/working_with_richtext",
                 "guides/customization",
-                "guides/event_handling",
-                //"guides/angular_integration",
-                //"guides/react_integration",
-                //"guides/vue_integration"
-                //"guides/svelte_integration"
+                "guides/typescript_support"
             ]
         }
     ]
