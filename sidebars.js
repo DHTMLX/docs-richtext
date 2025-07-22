@@ -134,7 +134,7 @@ module.exports = {
                         "api/events/show-popup",
                         "api/events/subscript",
                         "api/events/superscript",
-                        "api/events/toggle-fullscreen",
+                        "api/events/toggle-fullscreen-mode",
                         "api/events/toggle-layout-mode",
                         "api/events/toggle-shortcut-info",
                         "api/events/undo",
@@ -155,7 +155,7 @@ module.exports = {
                     },
                     items: [
                         "api/config/default-styles",
-                        "api/config/fullscreen",
+                        "api/config/fullscreen-mode",
                         "api/config/image-upload-url",
                         "api/config/layout-mode",
                         "api/config/locale",

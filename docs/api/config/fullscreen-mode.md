@@ -1,10 +1,10 @@
 ---
-sidebar_label: fullscreen
-title: fullscreen Config
-description: You can learn about the fullscreen config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: fullscreenMode
+title: fullscreenMode Config
+description: You can learn about the fullscreenMode config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
-# fullscreen
+# fullscreenMode
 
 ### Description
 
@@ -13,13 +13,13 @@ description: You can learn about the fullscreen config in the documentation of t
 ### Usage
 
 ~~~jsx {}
-fullscreen?: boolean; 
+fullscreenMode?: boolean; 
 ~~~
 
 ### Default config
 
 ~~~jsx
-fullscreen: false;
+fullscreenMode: false;
 ~~~
 
 ### Example
@@ -27,7 +27,7 @@ fullscreen: false;
 ~~~jsx {3}
 // initialize RichText
 new richtext.Richtext("#root", {
-    fullscreen: true
+    fullscreenMode: true
     // other parameters
 });
 ~~~
