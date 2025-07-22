@@ -248,6 +248,8 @@ useEffect(() => {
 
 After that, you can start the app to see RichText loaded with data on a page.
 
-[TODO]
+<div className="img_border">
+![RichText initialization](../assets/trial_richtext.png)
+</div>
 
 Now you know how to integrate DHTMLX RichText with React. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/react-richtext-demo).

@@ -33,7 +33,9 @@ The RichText toolbar provides quick access to text formatting and structural edi
 
 The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
 
+<div className="img_border">
 ![Toolbar](./assets/richtext/toolbar.png)
+</div>
 
 ### Menubar
 
@@ -41,7 +43,9 @@ The RichText menubar provides access to high-level editing actions such as creat
 
 Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
 
+<div className="img_border">
 ![Menubar](./assets/richtext/menubar.png)
+</div>
 
 ### Editor
 
@@ -53,11 +57,15 @@ DHTMLX RichText can work with content in "classic" and "document" modes. You can
 
 - **"classic"**
 
+<div className="img_border">
 ![Classic mode](./assets/richtext/classic_mode.png)
+</div>
 
 - **"document"**
 
+<div className="img_border">
 ![Document mode](./assets/richtext/document_mode.png)
+</div>
 
 ### Supported formats
 
@@ -65,8 +73,12 @@ The RichText editor supports [parsing](guides/loading_data.md#adding-content-int
 
 #### HTML format
 
+<div className="img_border">
 ![HTML format](./assets/richtext/html_format.png)
+</div>
 
 #### Text format
 
+<div className="img_border">
 ![Text format](./assets/richtext/text_format.png)
+</div>
