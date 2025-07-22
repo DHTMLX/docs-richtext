@@ -41,7 +41,7 @@ The callback of the **set-text-format** event can take an object with the follow
 ~~~jsx {5-14}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "set-text-format" event
 editor.api.on("set-text-format", (obj) => {

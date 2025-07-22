@@ -38,7 +38,7 @@ The method returns an object with the following parameters:
 ~~~jsx {5-7}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // get the State of RichText
 const state = editor.api.getState();

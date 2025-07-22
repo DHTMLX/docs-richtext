@@ -74,7 +74,7 @@ defaultStyles?: boolean | {
 :::important
 The `defaultStyles` property DOES NOT set the actual CSS to the affected blocks. CSS styles have to be applied separately:
 
-```html{12-19}
+```jsx title="index.js"
 new richtext.Richtext("#root", {
     defaultStyles: {
         h2: { 
@@ -85,7 +85,9 @@ new richtext.Richtext("#root", {
         }
     }
 });
+```
 
+```css title="index.css"
 <style>
     #container h2 {
         font-family: Roboto;
@@ -130,8 +132,8 @@ new richtext.Richtext("#root", {
         h6: {
             "font-size": "13px"
         }
-    }
-    // other parameters
+    },
+    // other configuration properties
 });
 ~~~
 

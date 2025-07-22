@@ -62,7 +62,7 @@ new richtext.Richtext("#root", {
         "separator",
         // other buttons
     ],
-    // other parameters
+    // other configuration properties
 });
 ~~~
 
@@ -96,7 +96,7 @@ new richtext.Richtext("#root", {
         },
         // other custom buttons
     ],
-    // other parameters
+    // other configuration properties
 });
 ~~~
 
@@ -107,7 +107,7 @@ If you need to hide toolbar, set the `toolbar` property to `false` as follows:
 ~~~jsx {2}
 new richtext.Richtext("#root", {
     toolbar: false
-    // other parameters
+    // other configuration properties
 });
 ~~~
 
@@ -171,7 +171,7 @@ new richtext.Richtext("#root", {
             handler: () => ..., // custom logic attached to this button
         }
     ]
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

@@ -25,7 +25,7 @@ For handling the inner events you can use the [**Event Bus methods**](/category/
 ~~~jsx {5-8}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "insert-line" event
 editor.api.on("insert-line", () => {

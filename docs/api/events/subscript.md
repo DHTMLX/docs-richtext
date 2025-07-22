@@ -29,7 +29,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 ~~~jsx {5-10}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "subscript" event
 editor.api.on("subscript", () => {

@@ -31,7 +31,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 ~~~jsx {5-9}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "outdent" event
 editor.api.on("outdent", (obj) => {

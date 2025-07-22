@@ -96,7 +96,7 @@ In this tutorial you can see how to configure the **trial** version of RichText.
 
 To display Richtext on the page, you need to create a container for RichText and initialize the component using the corresponding constructor:
 
-~~~html {2,7-8,10-14} title="Richtext.vue"
+~~~html {} title="Richtext.vue"
 <script>
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/codebase/richtext.css";
@@ -150,7 +150,7 @@ body,
 
 To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx {2-6} title="data.ts"
+~~~jsx {} title="data.ts"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
@@ -162,7 +162,7 @@ export function getData() {
 
 Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<RichText/>` component as **props**:
 
-~~~html {3,8,10-12,19} title="App.vue"
+~~~html {} title="App.vue"
 <script>
 import RichText from "./components/Richtext.vue";
 import { getData } from "./data";
@@ -183,7 +183,7 @@ export default {
 
 Go to the ***Richtext.vue*** file and apply the passed **props** to the RichText configuration object:
 
-~~~html {6,10-12} title="Richtext.vue"
+~~~html {} title="Richtext.vue"
 <script>
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/codebase/richtext.css";
@@ -213,7 +213,7 @@ export default {
 
 You can also use the [`setValue()`](api/methods/set-value.md) method inside the `mounted()` method of Vue to load data into RichText:
 
-~~~html {6,22-26} title="Richtext.vue"
+~~~html {} title="Richtext.vue"
 <script>
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/codebase/richtext.css";
@@ -250,7 +250,7 @@ When a user makes some action in the RichText, it invokes an event. You can use 
 
 Open ***Richtext.vue*** and complete the `mounted()` method:
 
-~~~html {8-10} title="Richtext.vue"
+~~~html {} title="Richtext.vue"
 <script>
 // ...
 export default {

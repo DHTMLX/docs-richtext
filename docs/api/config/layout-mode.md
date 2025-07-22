@@ -30,7 +30,7 @@ layoutMode: "classic";
 // initialize RichText
 new richtext.Richtext("#root", {
     layoutMode: "document"  // initializes RichText with "document" mode by default
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

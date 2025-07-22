@@ -31,7 +31,7 @@ For handling the inner events you can use the [**Event Bus methods**](/category/
 ~~~jsx {5-9}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "toggle-fullscreen-mode" event
 editor.api.on("toggle-fullscreen-mode", (obj) => {

@@ -88,7 +88,7 @@ In this tutorial you can see how to configure the **trial** version of RichText.
 
 To display RichText on the page, you need to create container for RichText and initialize the component using the corresponding constructors:
 
-~~~jsx {2,6-7,10-11,13-17} title="Richtext.jsx"
+~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from '@dhx/trial-richtext';
 import '@dhx/trial-richtext/codebase/richtext.css'; // include RichText styles
@@ -141,7 +141,7 @@ body,
 
 To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx {2-6} title="data.js"
+~~~jsx {} title="data.js"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
@@ -167,7 +167,7 @@ export default App;
 
 Go to the ***Richtext.jsx*** file and apply the passed **props** to the RichText configuration object:
 
-~~~jsx {5,11-13} title="Richtext.jsx"
+~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/codebase/richtext.css";
@@ -194,7 +194,7 @@ export default function RichTextComponent(props) {
 
 You can also use the [`setValue()`](api/methods/set-value.md) method inside the `useEffect()` method of React to load data into RichText:
 
-~~~jsx {9-11,27} title="Richtext.jsx"
+~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/codebase/richtext.css";
@@ -230,7 +230,7 @@ When a user makes some action in the RichText, it invokes an event. You can use 
 
 Open ***Richtext.jsx*** and complete the `useEffect()` method in the following way:
 
-~~~jsx {5-7} title="Richtext.jsx"
+~~~jsx {} title="Richtext.jsx"
 // ...
 useEffect(() => {
     const editor = new Richtext(richtext_container.current, {});

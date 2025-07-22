@@ -38,7 +38,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 ~~~jsx {5-9}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "insert-image" event
 editor.api.on("insert-image", (obj) => {

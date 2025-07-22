@@ -100,7 +100,7 @@ In this tutorial you can see how to configure the **trial** version of RichText.
 
 To display RichText on the page, you need to create container for RichText, and initialize the component using the corresponding constructor:
 
-~~~html {3,6,10-11,13-17,27-28} title="Richtext.svelte"
+~~~html {} title="Richtext.svelte"
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext} from "@dhx/trial-richtext";
@@ -128,7 +128,7 @@ onDestroy(() => {
 
 To add data into the RichText, we need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx {2-6} title="data.ts"
+~~~jsx {} title="data.ts"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
@@ -140,7 +140,7 @@ export function getData() {
 
 Then open the ***App.svelte*** file, import data, and pass it into the new created `<RichText/>` components as **props**:
 
-~~~html {3,5,8} title="App.svelte"
+~~~html {} title="App.svelte"
 <script>
 import RichText from "./Richtext.svelte";
 import { getData } from "./data.js";
@@ -153,7 +153,7 @@ const { value } = getData();
 
 Go to the ***Richtext.svelte*** file and apply the passed **props** to the RichText configuration object:
 
-~~~html {6-8,15-17} title="Richtext.svelte"
+~~~html {} title="Richtext.svelte"
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext } from "@dhx/trial-richtext";
@@ -183,7 +183,7 @@ onDestroy(() => {
 
 You can also use the [`setValue()`](/api/methods/set-value.md) method inside the `onMount()` method of Svelte to load data into RichText:
 
-~~~html {6-8,27} title="Richtext.svelte"
+~~~html {} title="Richtext.svelte"
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext } from "@dhx/trial-richtext";
@@ -220,7 +220,7 @@ When a user makes some action in the RichText, it invokes an event. You can use 
 
 Open ***Richtext.svelte*** and complete the `onMount()` method in the following way:
 
-~~~html {8-10} title="Richtext.svelte"
+~~~html {} title="Richtext.svelte"
 <script>
 // ...
 let editor;

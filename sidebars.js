@@ -198,8 +198,6 @@ module.exports = {
                 "guides/initialization",
                 "guides/configuration",
                 "guides/localization",
-                "guides/loading_data",
-                "guides/customization",
                 "guides/typescript_support"
             ]
         }

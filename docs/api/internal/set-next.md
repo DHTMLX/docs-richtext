@@ -22,7 +22,7 @@ api.setNext(next: any): void;
 
 ### Example
 
-~~~jsx {15}
+~~~jsx {10}
 const url = "https://some_backend_url";
 const restProvider = new richtext.RestDataProvider(url);
 
@@ -37,5 +37,5 @@ Promise.all([
 ~~~
 
 :::info
-You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding**, **deleting** etc) and send the corresponding requests to the server
+You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding**, **deleting** etc) and send the corresponding requests to the server.
 :::

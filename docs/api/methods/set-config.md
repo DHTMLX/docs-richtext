@@ -29,7 +29,7 @@ The `setConfig()` method preserves all the previously set parameters that are no
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {
     value: "<h1>Some text</h1>",
-    // other configuration parameters
+    // other configuration properties
 });
 
 editor.setConfig({

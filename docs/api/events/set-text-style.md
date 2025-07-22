@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 ~~~jsx {5-13}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // subscribe on the "set-text-style" event
 editor.api.on("set-text-style", (obj) => {

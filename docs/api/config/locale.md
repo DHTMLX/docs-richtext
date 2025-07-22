@@ -36,7 +36,7 @@ const editor = new richtext.RichText("#root", {
     locale: richtext.locale.cn // the Chineese locale will be set initially
     // locale: richtext.locale.en // the English locale will be set initially
     // locale: richtext.locale.de // the Germany locale will be set initially
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

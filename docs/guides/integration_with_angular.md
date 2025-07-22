@@ -81,7 +81,7 @@ In this tutorial you can see how to configure the **trial** version of RichText.
 
 To display RichText on the page, you need to set a container for RichText, and initialize the component using the corresponding constructor:
 
-~~~jsx {1,8-11,15-18,24-31} title="Richtext.component.ts"
+~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
 
@@ -115,7 +115,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 To display RichText correctly, you need to provide the corresponding styles. For this purpose, you can create the **richtext.component.css** file in the **src/app/richtext/** directory and specify important styles for RichText and its container:
 
-~~~css title="Richtext.component.css"
+~~~css title="richtext.component.css"
 /* import RichText styles */
 @import "@dhx/trial-richtext/codebase/richtext.css";
 
@@ -143,7 +143,7 @@ body{
 
 To add data into RichText, you need to provide a data set. You can create the **data.ts** file in the **src/app/richtext/** directory and add some data into it:
 
-~~~jsx {2-6} title="data.ts"
+~~~jsx {} title="data.ts"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
@@ -155,7 +155,7 @@ export function getData() {
 
 Then open the ***richtext.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of RichText within the `ngOnInit()` method, as shown below:
 
-~~~jsx {2,23,25-27} title="Richtext.component.ts"
+~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
 import { getData } from "./data"; // import data
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
@@ -190,7 +190,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 You can also use the [`setValue()`](api/methods/set-value.md) method inside the `ngOnInit()` method of Angular to load data into RichText.
 
-~~~jsx {2,23,37-42} title="Richtext.component.ts"
+~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
 import { getData } from "./data"; // import data
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
@@ -233,7 +233,7 @@ When a user makes some action in the RichText, it invokes an event. You can use 
 
 Open the **richtext.component.ts** file and complete the `ngOnInit()` method in the following way:
 
-~~~jsx {5-7} title="Richtext.component.ts"
+~~~jsx {} title="richtext.component.ts"
 // ...
 ngOnInit() {
     this._editor = new Richtext(this.richtext_container.nativeElement, {});
@@ -252,7 +252,7 @@ ngOnDestroy(): void {
 
 To add the ***RichTextComponent*** component into your app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
 
-~~~jsx {5} title="app.component.ts"
+~~~jsx {} title="app.component.ts"
 import { Component } from "@angular/core";
 
 @Component({
@@ -266,7 +266,7 @@ export class AppComponent {
 
 Then create the ***app.module.ts*** file in the ***src/app/*** directory and specify the *RichTextComponent* as shown below:
 
-~~~jsx {4-5,8} title="app.module.ts"
+~~~jsx {} title="app.module.ts"
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 

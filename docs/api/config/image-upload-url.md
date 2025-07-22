@@ -22,7 +22,7 @@ imageUploadUrl?: string;
 // initialize RichText
 new richtext.Richtext("#root", {
     imageUploadUrl: "some URL"
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

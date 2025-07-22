@@ -22,7 +22,7 @@ menubar?: boolean;
 // initialize RichText
 new richtext.Richtext("#root", {
     menubar: true
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

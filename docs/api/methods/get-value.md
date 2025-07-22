@@ -32,7 +32,7 @@ const HTMLEncoder = richtext.text.toHTML; // html encoder
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {
     value: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." // sets the default value (HTML format)
-    // other parameters
+    // other configuration properties
 });
 
 const TextEncoder = richtext.text.toText;

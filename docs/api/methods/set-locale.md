@@ -27,10 +27,11 @@ Use the `setLocale()` method to apply a new locale to RichText. To reset RichTex
 
 ### Example
 
-~~~jsx {4-5}
+~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
+
 // apply the "de" locale to RichText
 editor.setLocale(de);
 ~~~

@@ -18,10 +18,11 @@ destructor(): void;
 
 ### Example
 
-~~~jsx {4-5}
+~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
+
 // remove RichText
 editor.destructor();
 ~~~

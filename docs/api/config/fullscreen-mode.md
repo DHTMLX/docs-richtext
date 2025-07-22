@@ -28,7 +28,7 @@ fullscreenMode: false;
 // initialize RichText
 new richtext.Richtext("#root", {
     fullscreenMode: true
-    // other parameters
+    // other configuration properties
 });
 ~~~
 

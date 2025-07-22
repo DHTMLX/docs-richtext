@@ -35,7 +35,7 @@ The full list of RichText internal events can be found [**here**](/category/rich
 ~~~jsx {5-10}
 // create RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration parameters
+    // configuration properties
 });
 // forbid changing the font size
 editor.api.intercept("set-font-size", (obj) => {

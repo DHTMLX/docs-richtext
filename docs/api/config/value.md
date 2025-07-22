@@ -25,7 +25,7 @@ value?: string;
 ~~~jsx {2}
 new richtext.Richtext("#root", {
     value: "<h1>some value</h1>" // sets the default value (HTML format)
-    // other parameters
+    // other configuration properties
 });
 ~~~
 
