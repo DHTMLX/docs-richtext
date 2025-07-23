@@ -9,7 +9,7 @@ description: You can explore what's new in DHTMLX RichTExt and its release histo
 Released on July 5, 2025
 
 :::note
-API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](./migration.md) for additional information.
+API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
 :::
 
 ### New functionality
