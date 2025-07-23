@@ -9,8 +9,21 @@ module.exports = {
             id: "how_to_start",
         },
         {
-            type: "doc",
-            id: "whats_new",
+            type: "category",
+            label: "What's new and migration",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: "generated-index",
+                title: "What's new and migration",
+                //slug: '/category/docusaurus-guides',
+                keywords: ['news'],
+                image: "/img/docusaurus.png"
+            },
+            items: [
+                'news/whats_new',
+                'news/migration'
+            ]
         },
         {
             type: "category",
