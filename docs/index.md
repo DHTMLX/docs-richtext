@@ -21,7 +21,7 @@ description: You can have an overview of DHTMLX JavaScript Kanban library in the
 
 - Image uploading, rich formatting, custom styling, and full screen mode
 
-- [Full API access](/category/api/) for [event handling](/event-bus-methods/), [content manipulation](/category/richtext-methods/), and [reactive state management](/category/state-methods/)
+- [Full API access](/category/api/) for [event handling](/category/event-bus-methods/), [content manipulation](/category/richtext-methods/), and [reactive state management](/category/state-methods/)
 
 RichText is framework-agnostic and provides official wrappers for [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md), making it suitable for a wide range of front-end ecosystems.
 

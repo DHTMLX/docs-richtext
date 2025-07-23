@@ -25,7 +25,7 @@ locale?: object;
 By default, RichText uses the **English** locale. You can set it to the custom locale as well.
 
 :::tip
-To change the current locale dynamically, you can use the [**setLocale()**](methods/set-locale.md) method of RichText
+To change the current locale dynamically, you can use the [**setLocale()**](api/methods/set-locale.md) method of RichText
 :::
 
 ### Example
