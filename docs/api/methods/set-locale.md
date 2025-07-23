@@ -36,4 +36,6 @@ const editor = new richtext.Richtext("#root", {
 editor.setLocale(de);
 ~~~
 
+**Change log:** The method was added in v2.0
+
 **Related articles:** [Localization](guides/localization.md)

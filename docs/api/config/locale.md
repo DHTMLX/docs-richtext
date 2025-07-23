@@ -40,6 +40,8 @@ const editor = new richtext.RichText("#root", {
 });
 ~~~
 
+**Change log:** The property was added in v2.0
+
 **Related articles:** [Localization](guides/localization.md)
 
 **Related sample:** [RichText. Localization](https://snippet.dhtmlx.com/zxjrin3i)

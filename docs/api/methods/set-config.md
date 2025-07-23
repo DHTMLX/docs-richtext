@@ -36,3 +36,5 @@ editor.setConfig({
     layoutMode: "document"
 });
 ~~~
+
+**Change log:** The method was added in v2.0
