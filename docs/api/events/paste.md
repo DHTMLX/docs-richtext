@@ -8,7 +8,7 @@ description: You can learn about the paste event in the documentation of the DHT
 
 ### Description
 
-@short: Fires when pasting text
+@short: Fires when pasting content
 
 ### Usage
 
@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "paste" event
+// subscribe to the "paste" event
 editor.api.on("paste", () => {
     console.log("Selected text was pasted");
 });

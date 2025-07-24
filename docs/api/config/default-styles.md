@@ -13,7 +13,7 @@ description: You can learn about the defaultStyles config in the documentation o
 ### Usage
 
 ~~~jsx {}
-defaultStyles?: boolean | {
+defaultStyles?: {
     "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
@@ -89,7 +89,7 @@ new richtext.Richtext("#root", {
 
 ```css title="index.css"
 <style>
-    #container h2 {
+    #root h2 {
         font-family: Roboto;
         font-size: 28px;
         color: purple;
@@ -124,13 +124,13 @@ const defaultStyles = {
 new richtext.Richtext("#root", {
     defaultStyles: {
         h4: {
-            "font-size": "17px"
+            "font-family": "Roboto"
         },
         h5: {
-            "font-size": "15px"
+            "font-family": "Roboto"
         },
         h6: {
-            "font-size": "13px"
+            "font-family": "Roboto"
         }
     },
     // other configuration properties

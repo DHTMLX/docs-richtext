@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's new
-description: You can explore what's new in DHTMLX RichTExt and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichTExt.
+description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
 ## Version 2.0

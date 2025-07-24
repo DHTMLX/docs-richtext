@@ -6,7 +6,7 @@ description: You can explore how to start working with DHTMLX RichText in the do
 
 # How to start
 
-This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a full-functional RichText on a page.
+This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a fully functional RichText on a page.
 
 <div className="img_border">
 ![DHTMLX RichText Classic Mode](./assets/richtext/classic_mode.png)
@@ -60,7 +60,7 @@ Now you are ready to add RichText to the page. First, let's create the `<div>` c
 - specify a DIV container in the *index.html* file
 - initialize RichText using the `richtext.Richtext` constructor
 
-As parameters, the constructor takes the ID of HTML container where the RichText will be placed into, as well as corresponding configuration objects.
+As parameters, the constructor takes any valid CSS selector of HTML container where the RichText will be placed into, as well as corresponding configuration objects.
 
 ~~~html {9,12-14} title="index.html"
 <!DOCTYPE html>
@@ -92,9 +92,9 @@ To start working with RichText, first you need to provide the initial data for e
 const editor = new richtext.Richtext("#root", {
     menubar: true,
     toolbar: false,
-    fullscreen: true,
+    fullscreenMode: true,
     layoutMode: "document",
-    locale: richtext.locale.cn
+    locale: richtext.locales.cn
     defaultStyles: {
         h4: {
             "font-size": "17px"

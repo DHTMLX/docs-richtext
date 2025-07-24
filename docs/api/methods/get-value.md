@@ -8,7 +8,7 @@ description: You can learn about the getValue method in the documentation of the
 
 ### Description
 
-@short: Gets the RichText value
+@short: Returns the RichText value
 
 ### Usage
 
@@ -23,8 +23,8 @@ getValue(encoder?: any): string;
 You can get the required encoder in the following way:
 
 ```jsx
-const TextEncoder = richtext.text.toText; // text encoder
-const HTMLEncoder = richtext.text.toHTML; // html encoder
+const toTextEncoder = richtext.text.toText; // text encoder
+const toHTMLEncoder = richtext.text.toHTML; // html encoder
 ```
 
 ### Example
@@ -35,8 +35,8 @@ const editor = new richtext.Richtext("#root", {
     // other configuration properties
 });
 
-const TextEncoder = richtext.text.toText;
-const editor_value = editor.getValue();
+const toTextEncoder = richtext.text.toText;
+const editor_value = editor.getValue(toTextEncoder);
 console.log(editor_value);
 ~~~
 

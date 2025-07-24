@@ -8,7 +8,7 @@ description: You can learn about the delete-link event in the documentation of t
 
 ### Description
 
-@short: Fires when deleting link
+@short: Fires when deleting a link
 
 ### Usage
 
@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "delete-link" event
+// subscribe to the "delete-link" event
 editor.api.on("delete-link", () => {
     console.log("The link was deleted");
 });

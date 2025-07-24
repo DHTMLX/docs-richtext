@@ -37,7 +37,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "insert-list" event
+// subscribe to the "insert-list" event
 editor.api.on("insert-list", (obj) => {
     console.log(obj.type);
     console.log("The list was inserted");

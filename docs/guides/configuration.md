@@ -263,6 +263,6 @@ const editor = new richtext.Richtext("#root", {
 }
 ```
 
-In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles assigned to `h2` blocks as well.
+In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles are assigned to `h2` blocks as well.
 
 **Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s)

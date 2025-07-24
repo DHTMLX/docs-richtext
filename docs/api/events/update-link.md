@@ -34,7 +34,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "update-link" event
+// subscribe to the "update-link" event
 editor.api.on("update-link", (obj) => {
     console.log(obj);
     console.log("The following link was updated:" + obj.url);

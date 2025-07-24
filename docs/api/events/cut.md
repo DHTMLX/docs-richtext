@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "cut" event
+// subscribe to the "cut" event
 editor.api.on("cut", () => {
     console.log("Selected text was cut");
 });

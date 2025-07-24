@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "copy" event
+// subscribe to the "copy" event
 editor.api.on("copy", () => {
     console.log("Selected text was copied");
 });

@@ -13,12 +13,12 @@ description: You can learn about the on method in the documentation of the DHTML
 ### Usage
 
 ~~~jsx {}
-api.detach( event: string ): void;
+api.detach( tag: string ): void;
 ~~~
 
 ### Parameters
 
-- `event` - (required) an event to be detached
+- `tag` - (required) the name of the action tag
 
 ### Events
 
@@ -28,21 +28,17 @@ The full list of RichText internal events can be found [**here**](/category/rich
 
 ### Example
 
-~~~jsx {13-14}
+~~~jsx {6-8,10}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-font-size" event
+
 editor.api.on("set-font-size", (obj) => {
     console.log(obj.fontSize);
-});
-// set the text font size
-editor.api.exec("set-font-size", {
-    fontSize: "36px"
-}); 
-// detach the "set-font-size" event
-editor.api.detach("set-font-size");
+}, { tag: "track" });
+
+editor.api.detach("track");
 ~~~
 
 **Change log:** The method was updated in v2.0. The `name` and `context` parameters were deprecated

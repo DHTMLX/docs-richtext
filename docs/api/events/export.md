@@ -27,9 +27,9 @@ interface IExportOptions {
 
 The callback of **export** event can take an object with the following parameters:
 
-- `format` - a text format
-- `url` - a path to the place the file to be exported
-- `download` - an ability to download a file
+- `format` - a file format
+- `url` - a base URL for file export
+- `download` - allows a user to specify if he wants to download the file after receiving the response back from the server. If the property is set to "false", the file will not download, but the user will instead be able to get blob data from the event object (see the `result` prop in the event definition)
 - `fileName` - a file name to be exported
 
 :::info
@@ -43,7 +43,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "export" event
+// subscribe to the "export" event
 editor.api.on("export", (obj) => {
     console.log(obj);
     console.log("The file was exported");

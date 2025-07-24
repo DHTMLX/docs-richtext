@@ -11,9 +11,9 @@ description: You can have an overview of DHTMLX JavaScript Kanban library in the
 
 **DHTMLX RichText** component includes the following features:
 
-- Multiple [**layout modes**](api/config/layout-mode.md), including visual and source view
+- Two [**layout modes**](api/config/layout-mode.md)
 
-- Content serialization to both HTML and JSON
+- Content serialization to both plain text and HTML
 
 - Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
 
@@ -23,7 +23,7 @@ description: You can have an overview of DHTMLX JavaScript Kanban library in the
 
 - [Full API access](/category/api/) for [event handling](/category/event-bus-methods/), [content manipulation](/category/richtext-methods/), and [reactive state management](/category/state-methods/)
 
-RichText is framework-agnostic and provides official wrappers for [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md), making it suitable for a wide range of front-end ecosystems.
+RichText is framework-agnostic and can be easyly integrated with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md) frameworks, making it suitable for a wide range of front-end ecosystems.
 
 This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](/category/api/), and best practices for embedding RichText into your application.
 
@@ -71,7 +71,7 @@ DHTMLX RichText can work with content in "classic" and "document" modes. You can
 
 ## Supported formats
 
-The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and **Markdown** formats.
+The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and plain text formats.
 
 #### HTML format
 

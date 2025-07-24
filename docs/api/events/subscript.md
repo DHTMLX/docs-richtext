@@ -10,10 +10,6 @@ description: You can learn about the subscript event in the documentation of the
 
 @short: Fires when pressing the "Subscript" button in the menubar/toolbar or via Event Bus methods
 
-:::info
-The **subscript** event will be applied at current cursor position.
-:::
-
 ### Usage
 
 ~~~jsx {}
@@ -31,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "subscript" event
+// subscribe to the "subscript" event
 editor.api.on("subscript", () => {
     console.log("Subscript was applied");
 });

@@ -8,7 +8,7 @@ description: You can learn about the outdent event in the documentation of the D
 
 ### Description
 
-@short: Fires when an outdent was added
+@short: Fires when decreasing indent
 
 ### Usage
 
@@ -20,7 +20,7 @@ description: You can learn about the outdent event in the documentation of the D
 
 The callback of the **outdent** event can take an object with the following parameters:
 
-- `step` - the step of outdent was added
+- `step` - the step by which indentation was decreased
 
 :::info
 For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "outdent" event
+// subscribe to the "outdent" event
 editor.api.on("outdent", (obj) => {
     console.log(obj);
     console.log("The outdent was added");

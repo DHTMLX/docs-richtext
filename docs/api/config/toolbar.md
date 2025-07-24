@@ -36,19 +36,19 @@ You can specify the following buttons in the RichText toolbar:
 | `text-color`        | Changes the text color.                                                     |
 | `background-color`  | Changes the background (highlight) color of the text.                       |
 | `align`             | Sets text alignment (left, center, right, justified).                       |
-| `indent`            | Increases paragraph indentation.                                            |
+| `indent`            | Increases text block indentation.                                           |
 | `outdent`           | Decreases paragraph indentation.                                            |
 | `line-height`       | Adjusts the line spacing (line height).                                     |
 | `quote`             | Formats the text as a blockquote.                                           |
 | `bulleted-list`     | Creates a bulleted list.                                                    |
 | `numbered-list`     | Creates a numbered list.                                                    |
-| `link`              | Inserts or edits a hyperlink.                                               |
+| `link`              | Inserts a hyperlink.                                                        |
 | `image`             | Inserts an image.                                                           |
 | `line`              | Inserts a horizontal line.                                                  |
 | `clear`             | Removes all formatting from the selected text.                              |
 | `print`             | Opens the print dialog.                                                     |
 | `fullscreen`        | Toggles fullscreen mode.                                                    |
-| `mode`              | Switches between different view modes (e.g., visual, HTML, Markdown).       |
+| `mode`              | switches between [layout modes](api/config/layout-mode.md) (classic/document)|
 | `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
 | `separator`         | Adds a visual separator between toolbar groups.                             |
 
@@ -70,8 +70,8 @@ new richtext.Richtext("#root", {
 
 You can specify custom buttons as objects with the following parameters:
 
-- `id` - (required) a custom button ID (cannot overlap with existing button ids if you want to apply custom logic)
-- `type` - (required) specifies the button type. Use `"button"` for a simple clickable button. Other types are unavailable at the moment
+- `id` - (optional) a custom button ID (cannot overlap with existing button ids if you want to apply custom logic). You can use the predefined button `id` to customaze the built-in button behavior
+- `type` - (optional) specifies the button type. Use `"button"` for a simple clickable button. Other types are unavailable at the moment
 - `label` - (optional) a button label (combines with icon)
 - `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
 - `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
@@ -79,22 +79,39 @@ You can specify custom buttons as objects with the following parameters:
 
 You can specify custom buttons within a toolbar as follow:
 
-~~~jsx {6-14}
+~~~jsx {6-32}
 new richtext.Richtext("#root", {
     toolbar: [
+        // buttons (strings represent buttons only)
         "bold",
         "italic",
-        "separator",
+        // predefined buttons (user cannot define any other options for these (no labels, tooltips, options, etc.), so only ({ type: "button", id: string })
         {
             type: "button",
-            id: "btn1",
-            icon: "wxo-help",
-            css: "rounded",
-            label: "Custom button", 
-            tooltip: "Some tooltip", 
-            handler: () => ..., 
+            id: "fullscreen",
         },
-        // other custom buttons
+        // user must specify the correct type if they want to use a predefined control (e.g. richselect/colorpicker)
+        // non-matching types will be ignored (not added to the toolbar)
+        {
+            type: "richselect", // type: "button" - incorrect, will be ignored
+            id: "mode",
+        },
+        // custom buttons (supported options are below)
+        // user can only define custom buttons (no richselect/colorpicker support atm)
+        {
+            type: "button",
+            id: "some",
+            label: "Some",
+            handler: () => showNotice({ text: "Button clicked 1" }),
+        },
+        {
+            type: "button",
+            id: "other",
+            icon: "wxo-help",
+            label: "Other",
+            tooltip: "Some tooltip",
+            handler: () => showNotice({ text: "Button clicked 2" }),
+        }
     ],
     // other configuration properties
 });

@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "undo" event
+// subscribe to the "undo" event
 editor.api.on("undo", () => {
     console.log("Undo operation was performed");
 });

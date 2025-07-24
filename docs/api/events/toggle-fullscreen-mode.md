@@ -33,7 +33,7 @@ For handling the inner events you can use the [**Event Bus methods**](/category/
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "toggle-fullscreen-mode" event
+// subscribe to the "toggle-fullscreen-mode" event
 editor.api.on("toggle-fullscreen-mode", (obj) => {
     console.log(obj);
     console.log("The full screen mode was changed");

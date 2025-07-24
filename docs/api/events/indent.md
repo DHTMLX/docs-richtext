@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "indent" event
+// subscribe to the "indent" event
 editor.api.on("indent", (obj) => {
     console.log(obj);
     console.log("The indent was added");

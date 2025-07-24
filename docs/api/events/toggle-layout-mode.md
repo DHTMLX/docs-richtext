@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "toggle-layout-mode" event
+// subscribe to the "toggle-layout-mode" event
 editor.api.on("toggle-layout-mode", (obj) => {
     console.log(obj);
     console.log("The layout mode was changed");

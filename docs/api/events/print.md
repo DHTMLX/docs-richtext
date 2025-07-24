@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
 // configuration properties
 });
-// subscribe on the "print" event
+// subscribe to the "print" event
 editor.api.on("print", () => {
     console.log("The document is printing");
 });

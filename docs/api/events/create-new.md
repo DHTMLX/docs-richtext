@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "create-new" event
+// subscribe to the "create-new" event
 editor.api.on("create-new", ({ reset }) => {
     console.log(`Document has been cleared. History has ${reset ? "" : "not"} been reset.`);
 });

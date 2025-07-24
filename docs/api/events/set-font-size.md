@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-font-size" event
+// subscribe to the "set-font-size" event
 editor.api.on("set-font-size", (obj) => {
     console.log(obj.fontSize);
     console.log("The font size was changed");

@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "superscript" event
+// subscribe to the "superscript" event
 editor.api.on("superscript", () => {
     console.log("Superscript was applied");
 });

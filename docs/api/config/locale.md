@@ -33,7 +33,7 @@ To change the current locale dynamically, you can use the [**setLocale()**](api/
 ~~~jsx {3}
 // initialize RichText
 const editor = new richtext.RichText("#root", {
-    locale: richtext.locale.cn // the Chineese locale will be set initially
+    locale: richtext.locales.cn // the Chineese locale will be set initially
     // locale: richtext.locale.en // the English locale will be set initially
     // locale: richtext.locale.de // the Germany locale will be set initially
     // other configuration properties

@@ -35,7 +35,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-text-style" event
+// subscribe to the "set-text-style" event
 editor.api.on("set-text-style", (obj) => {
     console.log(obj.tag);
     console.log("The text style was changed");

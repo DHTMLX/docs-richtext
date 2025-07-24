@@ -13,7 +13,7 @@ description: You can learn about the insert-link event in the documentation of t
 ### Usage
 
 ~~~jsx {}
-"insert-link": () => boolean | void;
+"insert-link": ({ url: string }) => boolean | void;
 ~~~
 
 ### Parameters
@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "insert-link" event
+// subscribe to the "insert-link" event
 editor.api.on("insert-link", (obj) => {
     console.log(obj)
     console.log("The following link was inserted: " + obj.url);

@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-line-height" event
+// subscribe to the "set-line-height" event
 editor.api.on("set-line-height", (obj) => {
     console.log(obj);
     console.log("The line height was changed");

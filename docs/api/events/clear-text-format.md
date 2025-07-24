@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "clear-text-format" event
+// subscribe to the "clear-text-format" event
 editor.api.on("clear-text-format", () => {
     console.log("Text format was cleared");
 });

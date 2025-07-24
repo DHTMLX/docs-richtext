@@ -35,7 +35,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "align" event
+// subscribe to the "align" event
 editor.api.on("align", (obj) => {
     console.log(`Align to: ${obj.align}`);
 });

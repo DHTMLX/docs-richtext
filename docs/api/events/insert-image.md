@@ -40,7 +40,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "insert-image" event
+// subscribe to the "insert-image" event
 editor.api.on("insert-image", (obj) => {
     console.log(obj);
     console.log("The image was inserted");

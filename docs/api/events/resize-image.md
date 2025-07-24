@@ -8,7 +8,7 @@ description: You can learn about the resize-image event in the documentation of 
 
 ### Description
 
-@short: Fires when ...
+@short: Fires when resizing image
 
 ### Usage
 
@@ -35,7 +35,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
 // configuration properties
 });
-// subscribe on the "resize-image" event
+// subscribe to the "resize-image" event
 editor.api.on("resize-image", (obj) => {
     console.log(obj);
     console.log("The image was resized")

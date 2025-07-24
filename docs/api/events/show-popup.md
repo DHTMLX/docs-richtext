@@ -26,7 +26,7 @@ interface IPopupConfig {
 The callback of the **show-popup** event can take an object with the following parameters:
 
 - `type` - a type of the popup
-- `image` - an image within the popup
+- `image` - provides access to additional context (is the current cursor pointing at an image or not)
 
 :::info
 For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
@@ -39,7 +39,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "show-popup" event
+// subscribe to the "show-popup" event
 editor.api.on("show-popup", (obj) => {
     console.log(obj);
     console.log("The popup was shown/hidden");

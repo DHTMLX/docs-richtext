@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "toggle-shortcut-info" event
+// subscribe to the "toggle-shortcut-info" event
 editor.api.on("toggle-shortcut-info", (obj) => {
     console.log(obj);
     console.log("The shortcut info was changed");

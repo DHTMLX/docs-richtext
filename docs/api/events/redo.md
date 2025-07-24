@@ -27,7 +27,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "redo" event
+// subscribe to the "redo" event
 editor.api.on("redo", () => {
     console.log("Redo operation was performed");
 });

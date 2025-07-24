@@ -22,16 +22,19 @@ api.setNext(next: any): void;
 
 ### Example
 
-~~~jsx {10}
-const url = "https://some_backend_url";
-const restProvider = new richtext.RestDataProvider(url);
+~~~jsx {12-13}
+const server = "https://some-backend-url";
+// Assume you have a custom server service class named someServerService
+const someServerService = new ServerDataService(server);
 
 Promise.all([
-    ...
-]).then(([value]) => {
+    fetch(server + "/data").then((res) => res.json()),
+]).then(([data, fields]) => {
     const editor = new richtext.Richtext("#root", {
         ...
     });
+
+    // Integrate the serverDataService into the Event Bus order of widget
     editor.api.setNext(restProvider);
 });
 ~~~
@@ -39,3 +42,5 @@ Promise.all([
 :::info
 You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding**, **deleting** etc) and send the corresponding requests to the server.
 :::
+
+**Change log:** The method was added in v2.0

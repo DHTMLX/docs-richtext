@@ -43,7 +43,7 @@ The callback of the **set-text-format** event can take an object with the follow
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-text-format" event
+// subscribe to the "set-text-format" event
 editor.api.on("set-text-format", (obj) => {
     console.log(obj);
     console.log("The text format was changed");

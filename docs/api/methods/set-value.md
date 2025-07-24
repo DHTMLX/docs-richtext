@@ -24,8 +24,8 @@ setValue: (value: string, encoder?: any): void;
 You can get the required encoder in the following way:
 
 ```jsx
-const TextEncoder = richtext.text.fromText; // text encoder
-const HTMLEncoder = richtext.text.fromHTML; // html encoder
+const toTextEncoder = richtext.text.fromText; // text encoder
+const toHTMLEncoder = richtext.text.fromHTML; // html encoder
 ```
 
 ### Example
@@ -37,8 +37,8 @@ const editor = new richtext.Richtext("#root", {
 
 const editor_value = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
 
-const TextEncoder = richtext.text.fromText;
-editor.setValue(editor_value, TextEncoder);
+const toTextEncoder = richtext.text.fromText;
+editor.setValue(editor_value, toTextEncoder);
 ~~~
 
 **Change log:** The method was updated in v2.0. The `mode` parameter was deprecated. The `encoder` parameter was added

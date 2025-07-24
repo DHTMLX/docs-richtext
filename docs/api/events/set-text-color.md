@@ -26,7 +26,7 @@ interface ITextColor {
 The callback of the **set-text-color** event can take an object with the following parameters:
 
 - `color` - a text color
-- `background` - a text backgroung color
+- `background` - a text background color
 
 :::info
 For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
@@ -39,7 +39,7 @@ For handling the inner events you can use the [**Event Bus methods**](/category/
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "set-text-color" event
+// subscribe to the "set-text-color" event
 editor.api.on("set-text-color", (obj) => {
     console.log(obj);
     console.log("The text color and background were changed");
