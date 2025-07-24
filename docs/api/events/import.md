@@ -33,7 +33,7 @@ For handling inner events you can use [**Event Bus methods**](/category/event-bu
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe on the "import" event
+// subscribe to the "import" event
 editor.api.on("import", (obj) => {
     console.log(obj.html);
     console.log("The new value was imported");

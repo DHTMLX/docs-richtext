@@ -18,10 +18,10 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 
 - New and improved text rendering engine
 - Granular toolbar configuration
-    - ability to define [individual toolbar controls](guides/configuration/#default-toolbar-controls) and their order
-    - ability to define [custom buttons](guides/configuration/#custom-toolbar-controls)
+    - ability to define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
+    - ability to define [custom buttons](guides/configuration.md/#custom-toolbar-controls)
 - Ability to show an optional [menubar](api/config/menubar.md)
-- Improved [document mode](guides/configuration/#layout-modes), added support for different document sizes
+- Improved [document mode](guides/configuration.md/#layout-modes), added support for different document sizes
 - Ability to insert images; [image upload](api/config/image-upload-url.md)
 - Ability to [resize images](api/events/resize-image.md)
 - Improved link [popup functionality](api/events/show-popup.md)
