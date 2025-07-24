@@ -6,7 +6,7 @@ description: You can explore what's new in DHTMLX RichText and its release histo
 
 ## Version 2.0
 
-Released on July 5, 2025
+Released on July 28, 2025
 
 :::note
 API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
@@ -14,7 +14,27 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 
 ### New functionality
 
-- ...
+### New functionality
+
+- New and improved text rendering engine
+- Granular toolbar configuration
+    - ability to define [individual toolbar controls](guides/configuration/#default-toolbar-controls) and their order
+    - ability to define [custom buttons](guides/configuration/#custom-toolbar-controls)
+- Ability to show an optional [menubar](api/config/menubar.md)
+- Improved [document mode](guides/configuration/#layout-modes), added support for different document sizes
+- Ability to insert images; [image upload](api/config/image-upload-url.md)
+- Ability to [resize images](api/events/resize-image.md)
+- Improved link [popup functionality](api/events/show-popup.md)
+- New alignment option: justify
+- Ability to insert [horizontal lines](api/events/insert-line.md)
+- Ability to [increase](api/events/indent.md) and [decrease](api/events/outdent.md) block indentation
+- Ability to set [line height](api/events/set-line-height.md) for content
+- Ability to [subscript](api/events/subscript.md) and [superscript](api/events/superscript.md) text
+- Ability to [insert lists](api/events/insert-list.md), work with lists
+- Ability to [import](api/events/import.md) DOCX files
+- Ability to [print](api/events/print.md) editor content
+- Ability to [export](api/events/export.md) editor content to DOCX/PDF
+- Added/improved support for common formatting/editing keyboard shortcuts
 
 ### New API
 
@@ -86,8 +106,3 @@ The full list of new events you can find [here](/category/richtext-events/)
 - `Change`
 - `selectionChange`
 - `selectionRefresh`
-
-### Fixes
-
-- ...
-- ...

@@ -8,7 +8,7 @@ description: You can learn about the outdent event in the documentation of the D
 
 ### Description
 
-@short: Fires when decreasing indent
+@short: Fires when decreasing block indention
 
 ### Usage
 

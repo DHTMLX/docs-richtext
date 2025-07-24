@@ -8,7 +8,7 @@ description: You can learn about the indent event in the documentation of the DH
 
 ### Description
 
-@short: Fires when adding the indent
+@short: Fires when increasing block indention
 
 ### Usage
 
