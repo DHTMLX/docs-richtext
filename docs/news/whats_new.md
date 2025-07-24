@@ -14,8 +14,6 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 
 ### New functionality
 
-### New functionality
-
 - New and improved text rendering engine
 - Granular toolbar configuration
     - ability to define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
