@@ -84,3 +84,43 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 <div className="img_border">
 ![Text format](./assets/richtext/text_format.png)
 </div>
+
+## Keyboard shortcuts
+
+The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows** (`Ctrl`) and **macOS** (`⌘`).
+
+### Text formatting
+
+| Action          | Windows         | macOS         |
+|-----------------|-----------------|---------------|
+| **Bold**        | `Ctrl+B`        | `⌘B`          |
+| *Italic*        | `Ctrl+I`        | `⌘I`          |
+| Underline       | `Ctrl+U`        | `⌘U`          |
+| Strikethrough   | `Ctrl+Shift+X`  | `⌘⇧X`         |
+
+### Editing
+
+| Action   | Windows                  | macOS         |
+|----------|--------------------------|---------------|
+| Undo     | `Ctrl+Z`                 | `⌘Z`          |
+| Redo     | `Ctrl+Y` / `Ctrl+Shift+Z`| `⌘Y` / `⌘⇧Z`  |
+| Cut      | `Ctrl+X`                 | `⌘X`          |
+| Copy     | `Ctrl+C`                 | `⌘C`          |
+| Paste    | `Ctrl+V`                 | `⌘V`          |
+
+### Special actions
+
+| Action       | Windows   | macOS   |
+|--------------|-----------|---------|
+| Insert link  | `Ctrl+K`  | `⌘K`    |
+| Print        | `Ctrl+P`  | `⌘P`    |
+
+:::info
+More shortcuts may be introduced in future updates.
+:::
+
+To get actual reference related to RichText keyboard shortcuts, press **Help** and select the **Keyboard shortcuts** option:
+
+<div className="img_border">
+![Keyboard shortcuts](./assets/richtext/shortcut_reference.png)
+</div>
