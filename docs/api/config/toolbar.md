@@ -168,7 +168,7 @@ const defaultToolbarButtons = {
 ~~~
 
 :::tip
-You can import default toolbar controls as follow:
+You can import default toolbar controls as follows:
 
 ```jsx
 richtext.defaultToolbarButtons

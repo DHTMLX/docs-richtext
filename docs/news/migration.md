@@ -30,7 +30,7 @@ const wordCount = content.split(/\s+/).length;
 
 ### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md)
 
-Before **2.0**, users was able to specify only blocks with controls
+Before **2.0**, users were able to specify only blocks with controls
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
   toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 
 ### - [`defaultStyles`](api/config/default-styles.md)
 
-Before **2.0**, users was able to define default values for toolbar selection controls
+Before **2.0**, users were able to define default values for toolbar selection controls
 ```jsx title="Before 2.0"
 defaultStyles: {
     "font-family": "Tahoma",
