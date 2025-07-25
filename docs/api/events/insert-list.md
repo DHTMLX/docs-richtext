@@ -22,7 +22,7 @@ type TListType = "bulleted" | "numbered";
 
 The callback of the **insert-list** event can take an object with the following parameter:
 
-- `type` - the type of the inserted list. You can specify on the following values: 
+- `type` - the type of the inserted list. You can specify the following values:
     - `"bulleted"` - bulleted list
     - `"numbered"` - numbered list
 

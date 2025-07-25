@@ -20,7 +20,7 @@ description: You can learn about the indent event in the documentation of the DH
 
 The callback of the **indent** event can take an object with the following parameters:
 
-- `step` - the step of indent was added
+- `step` - the step by which indentation was increased
 
 :::info
 For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)

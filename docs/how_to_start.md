@@ -97,7 +97,7 @@ const editor = new richtext.Richtext("#root", {
     locale: richtext.locales.cn
     defaultStyles: {
         h4: {
-            "font-size": "17px"
+            "font-family": "Roboto"
         },
         // other settings
     }

@@ -30,30 +30,34 @@ const wordCount = content.split(/\s+/).length;
 
 ### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md)
 
+Before **2.0**, users was able to specify only blocks with controls
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
   toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ```
 
+Starting from **2.0**, users can spefify separate controls
 ```jsx{2-4} title="From 2.0"
 new richtext.Richtext("#root", {
-  toolbar: [
-    "undo", "style", "bold", "italic", "underline", "text-color",
-    "align", "link"
-  ]
+    toolbar: [
+        "undo", "style", "bold", "italic", "underline", "text-color",
+        "align", "link"
+    ]
 });
 ```
 
 ### - [`defaultStyles`](api/config/default-styles.md)
 
+Before **2.0**, users was able to define default values for toolbar selection controls
 ```jsx title="Before 2.0"
 defaultStyles: {
-  "font-family": "Tahoma",
-  "font-size": "14px"
+    "font-family": "Tahoma",
+    "font-size": "14px"
 }
 ```
 
+Starting from **2.0**, users can specifies default style values for specific block types
 ```jsx title="From 2.0"
 defaultStyles: {
   "*": {
@@ -148,8 +152,6 @@ editor.api.on("set-font-size", (obj) => {
 
 editor.api.detach("track");
 ```
-
-Event names are the same, and context markers for `detach()` are still supported.
 
 ### - `fire()` → Use [`exec()`](api/internal/exec.md) and [`intercept()`](api/internal/intercept.md)
 

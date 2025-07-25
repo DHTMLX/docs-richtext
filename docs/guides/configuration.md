@@ -42,7 +42,7 @@ const editor = new richtext.Richtext("#root", {
 
 ## Toolbar
 
-The RichText toolbar consists of several blocks of controls that can be changed according to your needs. 
+The RichText toolbar consists of several blocks of controls that can be changed according to your needs.
 
 ### Default toolbar controls
 
@@ -50,35 +50,35 @@ You can specify the following buttons and controls in the RichText toolbar:
 
 | Button              | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
-| `undo`              | Reverts the most recent user action.                                        |
-| `redo`              | Reapplies the previously undone action.                                     |
-| `style`             | Allows selection of text styles (e.g., headings, paragraph, etc.).          |
-| `font-family`       | Changes the font of the selected text.                                      |
-| `font-size`         | Adjusts the size of the selected text.                                      |
-| `bold`              | Applies bold formatting to the selected text.                               |
-| `italic`            | Applies italic formatting to the selected text.                             |
-| `underline`         | Underlines the selected text.                                               |
-| `strike`            | Applies strikethrough formatting.                                           |
-| `subscript`         | Formats the text as subscript.                                              |
-| `superscript`       | Formats the text as superscript.                                            |
-| `text-color`        | Changes the text color.                                                     |
-| `background-color`  | Changes the background (highlight) color of the text.                       |
-| `align`             | Sets text alignment (left, center, right, justified).                       |
-| `indent`            | Increases paragraph indentation.                                            |
-| `outdent`           | Decreases paragraph indentation.                                            |
-| `line-height`       | Adjusts the line spacing (line height).                                     |
-| `quote`             | Formats the text as a blockquote.                                           |
-| `bulleted-list`     | Creates a bulleted list.                                                    |
-| `numbered-list`     | Creates a numbered list.                                                    |
-| `link`              | Inserts or edits a hyperlink.                                               |
-| `image`             | Inserts an image.                                                           |
-| `line`              | Inserts a horizontal line.                                                  |
-| `clear`             | Removes all formatting from the selected text.                              |
-| `print`             | Opens the print dialog.                                                     |
-| `fullscreen`        | Toggles fullscreen mode.                                                    |
-| `mode`              | Switches between different view modes (e.g., visual, HTML, Markdown).       |
-| `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
-| `separator`         | Adds a visual separator between toolbar groups.                             |
+| `undo`              | Reverts the most recent user action                                         |
+| `redo`              | Reapplies the previously undone action                                      |
+| `style`             | Allows selection of text styles (e.g., headings, paragraph, etc.)           |
+| `font-family`       | Changes the font of the selected text                                       |
+| `font-size`         | Adjusts the size of the selected text                                       |
+| `bold`              | Applies bold formatting to the selected text                                |
+| `italic`            | Applies italic formatting to the selected text                              |
+| `underline`         | Underlines the selected text                                                |
+| `strike`            | Applies strikethrough formatting                                            |
+| `subscript`         | Formats the text as subscript                                               |
+| `superscript`       | Formats the text as superscript                                             |
+| `text-color`        | Changes the text color                                                      |
+| `background-color`  | Changes the background (highlight) color of the text                        |
+| `align`             | Sets text alignment (left, center, right, justified)                        |
+| `indent`            | Increases paragraph indentation                                             |
+| `outdent`           | Decreases paragraph indentation                                             |
+| `line-height`       | Adjusts the line spacing (line height)                                      |
+| `quote`             | Formats the text as a blockquote                                            |
+| `bulleted-list`     | Creates a bulleted list                                                     |
+| `numbered-list`     | Creates a numbered list                                                     |
+| `link`              | Inserts or edits a hyperlink                                                |
+| `image`             | Inserts an image                                                            |
+| `line`              | Inserts a horizontal line                                                   |
+| `clear`             | Removes all formatting from the selected text                               |
+| `print`             | Opens the print dialog                                                      |
+| `fullscreen`        | Toggles fullscreen mode                                                     |
+| `mode`              | Switches between 2 view modes: Classic/ Document                            |
+| `shortcuts`         | Displays a list of available keyboard shortcuts                             |
+| `separator`         | Adds a visual separator between controls                                    |
 
 The toolbar structure is defined using the [`toolbar`](api/config/toolbar.md) property, which is an array with strings presenting the names of controls.
 

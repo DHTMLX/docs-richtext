@@ -110,10 +110,10 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 
 ### Special actions
 
-| Action       | Windows   | macOS   |
-|--------------|-----------|---------|
-| Insert link  | `Ctrl+K`  | `⌘K`    |
-| Print        | `Ctrl+P`  | `⌘P`    |
+| Action       | Windows/Linux | macOS |
+|--------------|---------------|-------|
+| Insert link  | `Ctrl+K`      | `⌘K`  |
+| Print        | `Ctrl+P`      | `⌘P`  |
 
 :::info
 More shortcuts may be introduced in future updates.

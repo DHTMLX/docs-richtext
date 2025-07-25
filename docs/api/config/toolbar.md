@@ -52,7 +52,7 @@ You can specify the following buttons in the RichText toolbar:
 | `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
 | `separator`         | Adds a visual separator between toolbar groups.                             |
 
-You can use this strings to configure toolbar buttons as follow:
+You can use these strings to configure toolbar buttons as follow:
 
 ~~~jsx {2-7}
 new richtext.Richtext("#root", {
@@ -70,8 +70,8 @@ new richtext.Richtext("#root", {
 
 You can specify custom buttons as objects with the following parameters:
 
-- `id` - (optional) a custom button ID (cannot overlap with existing button ids if you want to apply custom logic). You can use the predefined button `id` to customaze the built-in button behavior
-- `type` - (optional) specifies the button type. Use `"button"` for a simple clickable button. Other types are unavailable at the moment
+- `type` - (required) specifies a custom control type. The following types are available: `"button"`, `"richselect"`, `"colorpicker"`
+- `id` - (optional) a custom control ID (cannot overlap with existing control ID)
 - `label` - (optional) a button label (combines with icon)
 - `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
 - `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
@@ -102,7 +102,7 @@ new richtext.Richtext("#root", {
             type: "button",
             id: "some",
             label: "Some",
-            handler: () => showNotice({ text: "Button clicked 1" }),
+            handler: () => {/* custom logic */}
         },
         {
             type: "button",
@@ -110,7 +110,7 @@ new richtext.Richtext("#root", {
             icon: "wxo-help",
             label: "Other",
             tooltip: "Some tooltip",
-            handler: () => showNotice({ text: "Button clicked 2" }),
+            handler: () => {/* custom logic */}
         }
     ],
     // other configuration properties
@@ -166,6 +166,14 @@ const defaultToolbarButtons = {
     "mode"
 };
 ~~~
+
+:::tip
+You can import default toolbar controls as follow:
+
+```jsx
+richtext.defaultToolbarButtons
+```
+:::
 
 ### Example
 

@@ -41,7 +41,7 @@ const en = {
         "Insert horizontal line": "Insert horizontal line",
         "Clear formatting": "Clear formatting",
         Print: "Print",
-        Fullscreen: "Fullscreen",
+        "Fullscreen mode": "Fullscreen mode",
         "Layout mode": "Layout mode",
         "Classic mode": "Classic mode",
         "Document mode": "Document mode",
@@ -158,7 +158,7 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chineese*) ones.
+Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
 :::
 
 <details>
@@ -193,7 +193,7 @@ const de = {
         "Insert horizontal line": "Horizontale Linie einfügen",
         "Clear formatting": "Formatierung löschen",
         Print: "Drucken",
-        Fullscreen: "Vollbild",
+        "Fullscreen mode": "Vollbildmodus",
         "Layout mode": "Layout-Modus",
         "Classic mode": "Klassischer Modus",
         "Document mode": "Dokumentenmodus",
@@ -342,7 +342,7 @@ const cn = {
         "Insert horizontal line": "插入水平线",
         "Clear formatting": "清除格式",
         Print: "打印",
-        Fullscreen: "全屏",
+        "Fullscreen mode": "全屏模式",
         "Layout mode": "布局模式",
         "Classic mode": "经典模式",
         "Document mode": "文档模式",

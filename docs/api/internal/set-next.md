@@ -22,20 +22,18 @@ api.setNext(next: any): void;
 
 ### Example
 
-~~~jsx {12-13}
+~~~jsx {10-11}
 const server = "https://some-backend-url";
-// Assume you have a custom server service class named someServerService
+// Assume that you have a custom server service class named someServerService
 const someServerService = new ServerDataService(server);
 
-Promise.all([
-    fetch(server + "/data").then((res) => res.json()),
-]).then(([data, fields]) => {
+fetch(server + "/data").then((res) => res.json()).then((data) => {
     const editor = new richtext.Richtext("#root", {
-        ...
+        value: data
     });
 
-    // Integrate the serverDataService into the Event Bus order of widget
-    editor.api.setNext(restProvider);
+    // Integrate someServerService into the Event Bus order of widget
+    editor.api.setNext(someServerService);
 });
 ~~~
 
