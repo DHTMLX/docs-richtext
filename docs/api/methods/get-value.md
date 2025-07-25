@@ -24,7 +24,7 @@ You can get the required encoder in the following way:
 
 ```jsx
 const toTextEncoder = richtext.text.toText; // text encoder
-const toHTMLEncoder = richtext.text.toHTML; // html encoder
+const toHTMLEncoder = richtext.html.toHTML; // html encoder
 ```
 
 ### Example
