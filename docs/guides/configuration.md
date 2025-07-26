@@ -138,7 +138,7 @@ You can also specify custom controls as objects in the [`toolbar`](api/config/to
 
 You can specify custom buttons within a [toolbar](api/config/toolbar.md) as follows:
 
-~~~jsx {6-14}
+~~~jsx {6-16}
 new richtext.Richtext("#root", {
     toolbar: [
         "bold",
@@ -146,14 +146,16 @@ new richtext.Richtext("#root", {
         "separator",
         {
             type: "button",
-            id: "btn1",
-            icon: "wxo-help",
-            css: "rounded",
-            label: "Custom button", 
-            tooltip: "Some tooltip", 
-            handler: () => { /* some action here */ }
+            id: "custom",
+            css: "wx-primary",
+            label: "Count characters",
+            handler: () => {
+                const text = widget.getValue(richtext.text.toText);
+                const charCount = text.replace(/\s/g, "").length;
+                document.getElementById("count").innerText = charCount;
+            }
         },
-        // other custom buttons
+        // other custom controles
     ],
     // other configuration properties
 });

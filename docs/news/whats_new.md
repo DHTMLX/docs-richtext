@@ -100,16 +100,16 @@ A full list of new events is available [here](/category/richtext-events/)
 ## Deprecated API
 
 :::warning
-Do not use the deprecated API in your projects!
+Do not use the deprecated API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
 :::
 
-### ❌ Deprecated properties
+### [Deprecated properties](news/migration.md#properties-migration)
 
-- `customStats`  
-- `mode`  
-- `toolbarBlocks`
+- [`customStats`](news/migration.md#--customstats)  
+- [`mode`](news/migration.md#--mode--layoutmode)  
+- [`toolbarBlocks`](news/migration.md#--toolbarblocks--toolbar)
 
-### ❌ Deprecated methods
+### [Deprecated methods](news/migration.md#methods-migration)
 
 - `exitFullScreen()`  
 - `fullScreen()`  
@@ -117,11 +117,11 @@ Do not use the deprecated API in your projects!
 - `getStats()`  
 - `paint()`
 
-### ❌ Deprecated internal methods
+### Deprecated internal methods
 
-- `events.fire()`
+- [`events.fire()`](news/migration.md#--fire--use-exec-and-intercept)
 
-### ❌ Deprecated events
+### Deprecated events
 
 - `Action`  
 - `Change`  
