@@ -31,10 +31,8 @@ module.exports = {
             collapsible: true,
             collapsed: false,
             link: {
-                type: "generated-index",
-                title: "RichText API",
-                keywords: ["api", "methods", "properties", "events"],
-                image: "/img/docusaurus.png"
+                type: "doc",
+                id: "api/overview/main_overview"
             },
             items: [
                 // JS RichText methods
@@ -44,10 +42,8 @@ module.exports = {
                     collapsible: true,
                     collapsed: true,
                     link: {
-                        type: "generated-index",
-                        title: "RichText methods",
-                        keywords: ["methods"],
-                        image: "/img/docusaurus.png"
+                        type: "doc",
+                        id: "api/overview/methods_overview"
                     },
                     items: [
                         "api/methods/destructor",
@@ -76,10 +72,8 @@ module.exports = {
                             collapsible: true,
                             collapsed: true,
                             link: {
-                                type: "generated-index",
-                                title: "Event Bus methods",
-                                keywords: ["internal api"],
-                                image: "/img/docusaurus.png"
+                                type: "doc",
+                                id: "api/overview/event_bus_methods_overview"
                             },
                             items: [
                                 "api/internal/detach",
@@ -95,10 +89,8 @@ module.exports = {
                             collapsible: true,
                             collapsed: true,
                             link: {
-                                type: "generated-index",
-                                title: "State methods",
-                                keywords: ["internal api"],
-                                image: "/img/docusaurus.png"
+                                type: "doc",
+                                id: "api/overview/state_methods_overview"
                             },
                             items: [
                                 "api/internal/get-reactive-state",
@@ -114,10 +106,8 @@ module.exports = {
                     collapsible: true,
                     collapsed: true,
                     link: {
-                        type: "generated-index",
-                        title: "RichText events",
-                        keywords: ["internal api"],
-                        image: "/img/docusaurus.png"
+                        type: "doc",
+                        id: "api/overview/events_overview"
                     },
                     items: [
                         "api/events/align",
@@ -161,10 +151,8 @@ module.exports = {
                     collapsible: true,
                     collapsed: true,
                     link: {
-                        type: "generated-index",
-                        title: "RichText properties",
-                        keywords: ["properties"],
-                        image: "/img/docusaurus.png"
+                        type: "doc",
+                        id: "api/overview/properties_overview"
                     },
                     items: [
                         "api/config/default-styles",
