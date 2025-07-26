@@ -19,7 +19,7 @@ description: You can learn about the Migration to Newer Versions in the document
 
 ### - `customStats`
 
-The `customStats` property has been deprecated. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
+The `customStats` property has been removed. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
 
 If you still need to calculate text metrics, you can do so externally by accessing the editor content and processing it manually:
 

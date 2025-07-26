@@ -34,7 +34,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0 instead of the deprecated `mode` property
+**Change log:** The property was added in v2.0 instead of the removed `mode` property
 
 **Related articles:** [Configuration](guides/configuration.md)
 

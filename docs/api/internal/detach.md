@@ -41,4 +41,4 @@ editor.api.on("set-font-size", (obj) => {
 editor.api.detach("track");
 ~~~
 
-**Change log:** The method was updated in v2.0. The `name` and `context` parameters were deprecated
+**Change log:** The method was updated in v2.0. The `name` and `context` parameters were removed

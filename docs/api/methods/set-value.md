@@ -41,4 +41,4 @@ const fromTextEncoder = richtext.text.fromText;
 editor.setValue(editor_value, fromTextEncoder);
 ~~~
 
-**Change log:** The method was updated in v2.0. The `mode` parameter was deprecated. The `encoder` parameter was added
+**Change log:** The method was updated in v2.0. The `mode` parameter was removed. The `encoder` parameter was added

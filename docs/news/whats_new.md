@@ -97,19 +97,19 @@ A full list of new events is available [here](/category/richtext-events/)
 - [`api.detach()`](api/internal/detach.md)  
 - [`api.on()`](api/internal/on.md)
 
-## Deprecated API
+## Removed API
 
 :::warning
-Do not use the deprecated API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
+Do not use the removed API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
 :::
 
-### [Deprecated properties](news/migration.md#properties-migration)
+### [Removed properties](news/migration.md#properties-migration)
 
 - [`customStats`](news/migration.md#--customstats)  
 - [`mode`](news/migration.md#--mode--layoutmode)  
 - [`toolbarBlocks`](news/migration.md#--toolbarblocks--toolbar)
 
-### [Deprecated methods](news/migration.md#methods-migration)
+### [Removed methods](news/migration.md#methods-migration)
 
 - `exitFullScreen()`  
 - `fullScreen()`  
@@ -117,11 +117,11 @@ Do not use the deprecated API in your projects! <br/> Refer to the [Migration](n
 - `getStats()`  
 - `paint()`
 
-### Deprecated internal methods
+### Removed internal methods
 
 - [`events.fire()`](news/migration.md#--fire--use-exec-and-intercept)
 
-### Deprecated events
+### Removed events
 
 - `Action`  
 - `Change`  
