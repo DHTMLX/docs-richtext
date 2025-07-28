@@ -199,6 +199,7 @@ module.exports = {
                 "guides/initialization",
                 "guides/configuration",
                 "guides/localization",
+                "guides/stylization",
                 "guides/typescript_support"
             ]
         }
