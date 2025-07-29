@@ -17,15 +17,16 @@ RichText uses the following core classes to structure its UI:
 | Class name             | Description                                 |
 |------------------------|---------------------------------------------|
 | `.wx-richtext`         | Root container of the RichText widget       |
-| `.wx-richtext-menu`    | Toolbar and menu area                       |
-| `.wx-richtext-popup`   | Popup panels (e.g., color picker, font size)|
-| `.wx-richtext-editor`  | Main editable content area                  |
+| `.wx-richtext-menubar` | Container for menubar                       |
+| `.wx-richtext-menu`    | Container for menubar dropdown  menu        |
+| `.wx-richtext-toolbar` | Container for toolbar                       |
+| `.wx-editor-area`      | Container for main editable content area    |
 
 You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
 
 ## Overriding default styles
 
-You can override RichText's default colors by redefining CSS variables on the `#root` container or on specific sub-elements:
+You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
 
 ```html
 <div id="root" style="width: 100%; height: 100%;"></div>
@@ -63,20 +64,19 @@ These styles will apply a dark background, adjust button and icon colors, and im
 | Variable name                | Description                          |
 | ---------------------------- | ------------------------------------ |
 | `--wx-background`            | Background color of editor and popup |
-| `--wx-background-alt`        | Alternate background (menus and toolbar)|
-| `--wx-color-primary`         | Accent color for links               |
+| `--wx-background-alt`        | Alternate background for menubar     |
+| `--wx-color-primary`         | Accent color for links, blockquotes, and borders of resizing pictures |
 | `--wx-color-font`            | Main font color (for editor, menubar, and toolbar)|
 | `--wx-color-font-alt`        | Alternate font color                 |
 | `--wx-color-font-disabled`   | Disabled text color (for menubar and toolbar elements)|
 | `--wx-border`                | Border style used across the editor  |
 | `--wx-color-secondary-hover` | Hover state background for buttons within menubar and toolbar  |
 | `--wx-button-active`         | Active state background for buttons within menubar and toolbar |
-| `--wx-icon-color`            | Color used for toolbar icons         |
+| `--wx-icon-color`            | Color for toolbar arrow icons used for dropdown          |
 | `--wx-popup-border`          | Border for popup elements            |
 
 ## Best practices
 
-* Apply custom styles **after** the RichText component is initialized
 * Use `color-scheme: dark` to improve native input styling in dark mode
 * Avoid changing layout-related properties (like `display`, `position`) unless necessary
 
