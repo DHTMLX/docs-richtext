@@ -79,18 +79,16 @@ Open the ***Richtext.svelte*** file and import RichText source files. Note that:
 ~~~html title="Richtext.svelte"
 <script>
 import { Richtext} from 'dhx-richtext-package';
-import 'dhx-richtext-package/codebase/richtext.css';
+import 'dhx-richtext-package/dist/richtext.css';
 </script>
 ~~~
-
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **richtext.min.css**.
 
 - if you use the trial version of RichText, specify the following paths:
 
 ~~~html title="Richtext.svelte"
 <script>
 import { Richtext} from '@dhx/trial-richtext';
-import '@dhx/trial-richtext/codebase/richtext.css';
+import '@dhx/trial-richtext/dist/richtext.css';
 <script>
 ~~~
 
@@ -104,7 +102,7 @@ To display RichText on the page, you need to create container for RichText, and 
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext} from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 let richtext_container; // initialize container for RichText
 let editor;
@@ -157,7 +155,7 @@ Go to the ***Richtext.svelte*** file and apply the passed **props** to the RichT
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext } from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 export let value
 
@@ -187,7 +185,7 @@ You can also use the [`setValue()`](/api/methods/set-value.md) method inside the
 <script>
 import { onMount, onDestroy } from "svelte";
 import { Richtext } from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 export let value;
 

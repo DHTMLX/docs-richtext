@@ -117,7 +117,7 @@ To display RichText correctly, you need to provide the corresponding styles. For
 
 ~~~css title="richtext.component.css"
 /* import RichText styles */
-@import "@dhx/trial-richtext/codebase/richtext.css";
+@import "@dhx/trial-richtext/dist/richtext.css";
 
 /* specify styles for initial page */
 html,

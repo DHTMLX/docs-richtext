@@ -70,16 +70,14 @@ Open the ***Richtext.jsx*** file and import RichText source files. Note that:
 
 ~~~jsx title="Richtext.jsx"
 import { Richtext} from 'dhx-richtext-package';
-import 'dhx-richtext-package/codebase/richtext.css';
+import 'dhx-richtext-package/dist/richtext.css';
 ~~~
-
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as ***richtext.min.css***.
 
 - if you use the trial version of RichText, specify the following paths:
 
 ~~~jsx title="Richtext.jsx"
 import { Richtext} from '@dhx/trial-richtext';
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of RichText.
@@ -91,7 +89,7 @@ To display RichText on the page, you need to create container for RichText and i
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from '@dhx/trial-richtext';
-import '@dhx/trial-richtext/codebase/richtext.css'; // include RichText styles
+import '@dhx/trial-richtext/dist/richtext.css'; // include RichText styles
 
 export default function RichTextComponent(props) {
     let richtext_container = useRef(); // initialize container for RichText
@@ -170,7 +168,7 @@ Go to the ***Richtext.jsx*** file and apply the passed **props** to the RichText
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 export default function RichTextComponent(props) {
     let richtext_container = useRef();
@@ -197,7 +195,7 @@ You can also use the [`setValue()`](api/methods/set-value.md) method inside the 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from "@dhx/trial-richtext";
-import "@dhx/trial-richtext/codebase/richtext.css";
+import "@dhx/trial-richtext/dist/richtext.css";
 
 export default function RichTextComponent(props) {
     let richtext_container = useRef();
