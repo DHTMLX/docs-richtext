@@ -1,7 +1,7 @@
 ---
 sidebar_label: Events overview
 title: Events Overview
-description: You can have an Events overview of JavaScript Kanban in the documentation of the DHTMLX JavaScript Kanban library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Kanban.
+description: You can have an Events overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
 # Events overview

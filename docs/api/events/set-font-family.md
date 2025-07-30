@@ -23,7 +23,7 @@ The callback of the **set-font-family** event can take an object with the follow
 - `fontFamily` - a font family to be applied. The following fonts are available: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

@@ -8,7 +8,7 @@ description: You can learn about the toolbar config in the documentation of the 
 
 ### Description
 
-@short: Optional. Enables toolbar and specifies buttons displayed within Toolbar
+@short: Optional. Enables toolbar and allows users to specify/configure buttons displayed within toolbar
 
 ### Usage
 
@@ -52,7 +52,7 @@ You can specify the following buttons in the RichText toolbar:
 | `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
 | `separator`         | Adds a visual separator between toolbar groups.                             |
 
-You can use these strings to configure toolbar buttons as follow:
+You can use these strings to configure toolbar buttons as follows:
 
 ~~~jsx {2-7}
 new richtext.Richtext("#root", {
@@ -76,8 +76,6 @@ You can specify custom buttons as objects with the following parameters:
 - `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
 - `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
 - `handler` - (optional) a callback function that executes when the button is clicked
-
-You can specify custom buttons within a toolbar as follow:
 
 ~~~jsx {6-32}
 new richtext.Richtext("#root", {
@@ -168,10 +166,24 @@ const defaultToolbarButtons = {
 ~~~
 
 :::tip
-You can import default toolbar controls as follows:
+Default toolbar controls are exported by the RichText widget and can be accessed via `richtext.defaultToolbarButtons`.
 
-```jsx
-richtext.defaultToolbarButtons
+```jsx{4}
+// initialize RichText
+new richtext.Richtext("#root", {
+    toolbar: [
+        ...richtext.defaultToolbarButtons,
+        {
+            type: "button",
+            id: "btn1", // button id (cannot overlap with existing button ids if you want to apply custom logic)
+            icon: "wxo-help", // button icon (combines with label)
+            css: "rounded", // css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
+            label: "Custom button", // button label (combines with icon)
+            tooltip: "Some tooltip", // tooltip displayed on hover (if not specified, uses the value from "label")
+        }
+    ]
+    // other configuration properties
+});
 ```
 :::
 

@@ -33,7 +33,7 @@ The callback of **export** event can take an object with the following parameter
 - `fileName` - a file name to be exported
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

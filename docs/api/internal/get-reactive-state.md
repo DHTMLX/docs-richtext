@@ -8,7 +8,7 @@ description: You can learn about the getReactiveState method in the documentatio
 
 ### Description
 
-@short: Gets an object with the reactive properties of RichText
+@short: Returns an object with the reactive properties of RichText
 
 ### Usage
 

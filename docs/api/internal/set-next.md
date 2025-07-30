@@ -37,8 +37,4 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
 });
 ~~~
 
-:::info
-You need to include **RestDataProvider** into the **Event Bus** order to perform operations with data (**adding**, **deleting** etc) and send the corresponding requests to the server.
-:::
-
 **Change log:** The method was added in v2.0

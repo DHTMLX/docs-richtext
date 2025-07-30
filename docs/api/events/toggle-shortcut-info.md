@@ -20,10 +20,10 @@ description: You can learn about the toggle-shortcut-info event in the documenta
 
 The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
 
-- `mode` - enables a shortcut info
+- `mode` - enables a shortcut info; `true` to show shortcut info popup, `false` to hide shortcut info popup
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -36,7 +36,7 @@ const editor = new richtext.Richtext("#root", {
 // subscribe to the "toggle-shortcut-info" event
 editor.api.on("toggle-shortcut-info", (obj) => {
     console.log(obj);
-    console.log("The shortcut info was changed");
+    console.log("The shortcut info was shown");
 });
 // enable the shortcut info
 editor.api.exec("toggle-shortcut-info", { mode: true });

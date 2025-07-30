@@ -25,7 +25,7 @@ The callback of the **align** event can take an object with the following parame
 - `align` - a text alignment. You can specify one of the following values: `"left" | "center" | "right" | "justify"`
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

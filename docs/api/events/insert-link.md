@@ -23,7 +23,7 @@ The callback of the **update-link** event can take an object with the following 
 - `url` - the url to be inserted
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

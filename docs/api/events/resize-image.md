@@ -25,7 +25,7 @@ The callback of the **resize-image** event can take an object with the following
 - `height` - the image height
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

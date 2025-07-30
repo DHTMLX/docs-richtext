@@ -23,7 +23,7 @@ The callback of the **toggle-fullscreen-mode** event can take an object with the
 - `mode` - enables a fullscreen mode
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
+For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

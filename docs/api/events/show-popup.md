@@ -29,7 +29,7 @@ The callback of the **show-popup** event can take an object with the following p
 - `image` - provides access to additional context (is the current cursor pointing at an image or not)
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

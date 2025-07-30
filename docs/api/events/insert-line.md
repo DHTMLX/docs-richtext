@@ -17,7 +17,7 @@ description: You can learn about the insert-line event in the documentation of t
 ~~~
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
+For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

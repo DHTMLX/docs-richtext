@@ -8,7 +8,7 @@ description: You can learn about the set-text-color event in the documentation o
 
 ### Description
 
-@short: Fires when setting a text color
+@short: Fires when setting a text color and/or a background text color
 
 ### Usage
 
@@ -29,7 +29,7 @@ The callback of the **set-text-color** event can take an object with the followi
 - `background` - a text background color
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](/category/event-bus-methods/)
+For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -42,7 +42,7 @@ const editor = new richtext.Richtext("#root", {
 // subscribe to the "set-text-color" event
 editor.api.on("set-text-color", (obj) => {
     console.log(obj);
-    console.log("The text color and background were changed");
+    console.log("The text color and/or background text color were changed");
 });
 // apply text color and background
 editor.api.exec("set-text-color", {

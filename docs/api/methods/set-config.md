@@ -18,7 +18,7 @@ setConfig(config: { [key:any]: any }): void;
 
 ### Parameters
 
-- `config` - (required) the object of RichText configuration parameters. See the full list of properties [here](/category/richtext-properties/)
+- `config` - (required) the object of RichText configuration parameters. See the full list of properties [here](api/overview/properties_overview.md)
 
 :::note
 The `setConfig()` method preserves all the previously set parameters that are not explicitly provided in the `setConfig()` method call.

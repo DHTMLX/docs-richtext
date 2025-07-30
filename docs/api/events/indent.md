@@ -23,7 +23,7 @@ The callback of the **indent** event can take an object with the following param
 - `step` - the step by which indentation was increased
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -36,7 +36,7 @@ const editor = new richtext.Richtext("#root", {
 // subscribe to the "indent" event
 editor.api.on("indent", (obj) => {
     console.log(obj);
-    console.log("The indent was added");
+    console.log("The indention was increased");
 });
 ~~~
 

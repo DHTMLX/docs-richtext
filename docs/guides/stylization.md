@@ -1,10 +1,10 @@
 ---
-title: Stylization
-sidebar_label: Stylization
-description: You can learn about the stylization in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Styling
+sidebar_label: Styling
+description: You can learn about the styling in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
-# Stylization
+# Styling
 
 You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
 
@@ -86,4 +86,4 @@ In this snippet you can see how to apply a custom style to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Related articles:** [Customization](guides/customization.md)
+**Related articles:** [Customization](guides/configuration.md)

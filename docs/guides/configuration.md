@@ -129,33 +129,46 @@ new richtext.Richtext("#root", {
 
 You can also specify custom controls as objects in the [`toolbar`](api/config/toolbar.md) property with the following parameters:
 
-- `id` - (required) a custom button ID (cannot overlap with existing button ids if you want to apply custom logic)
-- `type` - (required) specifies the button type. Use `"button"` for a simple clickable button. Other types are unavailable at the moment
+- `type` - (required) specifies a custom control type. The following types are available: `"button"`, `"richselect"`, `"colorpicker"`
+- `id` - (optional) a custom control ID (cannot overlap with existing control ID)
 - `label` - (optional) a button label (combines with icon)
 - `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
 - `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
 - `handler` - (optional) a callback function that executes when the button is clicked
 
-You can specify custom buttons within a [toolbar](api/config/toolbar.md) as follows:
-
-~~~jsx {6-16}
+~~~jsx {6-32}
 new richtext.Richtext("#root", {
     toolbar: [
+        // buttons (strings represent buttons only)
         "bold",
         "italic",
-        "separator",
+        // predefined buttons (user cannot define any other options for these (no labels, tooltips, options, etc.), so only ({ type: "button", id: string })
         {
             type: "button",
-            id: "custom",
-            css: "wx-primary",
-            label: "Count characters",
-            handler: () => {
-                const text = widget.getValue(richtext.text.toText);
-                const charCount = text.replace(/\s/g, "").length;
-                document.getElementById("count").innerText = charCount;
-            }
+            id: "fullscreen",
         },
-        // other custom controles
+        // user must specify the correct type if they want to use a predefined control (e.g. richselect/colorpicker)
+        // non-matching types will be ignored (not added to the toolbar)
+        {
+            type: "richselect", // type: "button" - incorrect, will be ignored
+            id: "mode",
+        },
+        // custom buttons (supported options are below)
+        // user can only define custom buttons (no richselect/colorpicker support atm)
+        {
+            type: "button",
+            id: "some",
+            label: "Some",
+            handler: () => {/* custom logic */}
+        },
+        {
+            type: "button",
+            id: "other",
+            icon: "wxo-help",
+            label: "Other",
+            tooltip: "Some tooltip",
+            handler: () => {/* custom logic */}
+        }
     ],
     // other configuration properties
 });

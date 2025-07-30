@@ -23,7 +23,7 @@ The callback of the **create-new** event can take an object with the following p
 - `reset` - resets the history when creating a new file
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

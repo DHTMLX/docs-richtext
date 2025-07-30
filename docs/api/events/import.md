@@ -23,7 +23,7 @@ The callback of **import** event can take an object with the following parameter
 - `html` - a text value in the html format
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example

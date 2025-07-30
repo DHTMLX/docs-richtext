@@ -17,7 +17,7 @@ description: You can learn about the paste event in the documentation of the DHT
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](/category/event-bus-methods/)
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -29,7 +29,7 @@ const editor = new richtext.Richtext("#root", {
 });
 // subscribe to the "paste" event
 editor.api.on("paste", () => {
-    console.log("Selected text was pasted");
+    console.log("Content was pasted");
 });
 ~~~
 

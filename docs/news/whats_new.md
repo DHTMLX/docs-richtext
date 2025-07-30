@@ -6,7 +6,7 @@ description: You can explore what's new in DHTMLX RichText and its release histo
 
 ## Version 2.0
 
-Released on July 28, 2025
+Released on July 30, 2025
 
 :::note
 API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
@@ -79,7 +79,7 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 
 #### New events
 
-A full list of new events is available [here](/category/richtext-events/)
+A full list of new events is available [here](api/overview/events_overview.md)
 
 ### Updated API
 

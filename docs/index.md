@@ -2,7 +2,7 @@
 sidebar_label: RichText overview
 title: RichText overview
 slug: /
-description: You can have an overview of DHTMLX JavaScript Kanban library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Kanban.
+description: You can have an overview of DHTMLX JavaScript RichText library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
 # RichText overview
@@ -21,17 +21,17 @@ description: You can have an overview of DHTMLX JavaScript Kanban library in the
 
 - Image uploading, rich formatting, custom styling, and full screen mode
 
-- [Full API access](/category/api/) for [event handling](/category/event-bus-methods/), [content manipulation](/category/richtext-methods/), and [reactive state management](/category/state-methods/)
+- [Full API access](api/overview/main_overview.md) for [event handling](api/overview/event_bus_methods_overview.md), [content manipulation](api/overview/methods_overview.md), and [reactive state management](api/overview/state_methods_overview.md)
 
-RichText is framework-agnostic and can be easyly integrated with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md) frameworks, making it suitable for a wide range of front-end ecosystems.
+RichText is framework-agnostic and can be easily integrated with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md) frameworks, making it suitable for a wide range of front-end ecosystems.
 
-This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](/category/api/), and best practices for embedding RichText into your application.
+This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](api/overview/main_overview.md), and best practices for embedding RichText into your application.
 
 ## RichText structure
 
 ### Menubar
 
-The RichText menubar provides access to high-level editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
+The RichText menubar provides access to editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
 
 Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
 
@@ -41,7 +41,7 @@ Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. Wh
 
 ### Toolbar
 
-The RichText toolbar provides quick access to text formatting and structural editing features. By default, it is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, and list formatting.
+The RichText toolbar provides quick access to text formatting and structural editing features. By default, the [toolbar](api/config/toolbar.md#default-config) is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, list formatting, and more.
 
 The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
 
@@ -87,20 +87,20 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 
 ## Keyboard shortcuts
 
-The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows** (`Ctrl`) and **macOS** (`⌘`).
+The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
 
 ### Text formatting
 
-| Action          | Windows         | macOS         |
+| Action          | Windows/Linux   | macOS         |
 |-----------------|-----------------|---------------|
-| **Bold**        | `Ctrl+B`        | `⌘B`          |
-| *Italic*        | `Ctrl+I`        | `⌘I`          |
+| Bold*           | `Ctrl+B`        | `⌘B`          |
+| Italic          | `Ctrl+I`        | `⌘I`          |
 | Underline       | `Ctrl+U`        | `⌘U`          |
 | Strikethrough   | `Ctrl+Shift+X`  | `⌘⇧X`         |
 
 ### Editing
 
-| Action   | Windows                  | macOS         |
+| Action   | Windows/Linux            | macOS         |
 |----------|--------------------------|---------------|
 | Undo     | `Ctrl+Z`                 | `⌘Z`          |
 | Redo     | `Ctrl+Y` / `Ctrl+Shift+Z`| `⌘Y` / `⌘⇧Z`  |

@@ -53,7 +53,7 @@ const editor = new richtext.Richtext("#root", {
 ### Configuration properties
 
 :::note
-The full list of properties to configure **RichText** can be found [**here**](/category/richtext-properties/).
+The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
 :::
 
 ## Example

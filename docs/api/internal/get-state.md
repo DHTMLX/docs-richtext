@@ -8,7 +8,7 @@ description: You can learn about the getState method in the documentation of the
 
 ### Description
 
-@short: Gets an object with the StateStore properties of RichText
+@short: Returns an object with the StateStore properties of RichText
 
 ### Usage
 
