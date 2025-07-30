@@ -173,7 +173,7 @@ module.exports = {
             label: "Integration with frameworks",
             link: {
                 type: "generated-index",
-                title: "BIntegration with frameworks",
+                title: "Integration with frameworks",
                 keywords: ['frameworks integration'],
                 image: "/img/docusaurus.png"
             },
