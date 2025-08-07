@@ -4,6 +4,22 @@ title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
+## Version 2.0.2
+
+Released on August 4, 2025
+
+### Fixes
+
+- Updated package content
+
+## Version 2.0.1
+
+Released on July 30, 2025
+
+### Fixes
+
+- Update type definitions for the `defaultStyles` property
+
 ## Version 2.0
 
 Released on July 30, 2025
