@@ -36,4 +36,4 @@ new richtext.Richtext("#root", {
 
 **Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Full toolbar](https://snippet.dhtmlx.com/ziynafp7)
+**Related sample:** [RichText. Full toolbar](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)

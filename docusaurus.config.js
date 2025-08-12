@@ -224,7 +224,7 @@ const config = {
             items: [
                 {
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
+                    href: 'https://snippet.dhtmlx.com/t55alxiy?tag=richtext',
                     position: 'right'
                 },
                 {
@@ -257,7 +257,7 @@ const config = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/pdh5buvg?tag=richtext',
+                            href: 'https://snippet.dhtmlx.com/t55alxiy?tag=richtext',
                             position: 'right'
                         },
                         {

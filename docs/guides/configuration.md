@@ -123,7 +123,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih)
+**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
 ### Custom toolbar controls
 
@@ -174,7 +174,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih)
+**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
 ### Hide Toolbar
 
@@ -280,4 +280,4 @@ const editor = new richtext.Richtext("#root", {
 
 In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles are assigned to `h2` blocks as well.
 
-**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s)
+**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)

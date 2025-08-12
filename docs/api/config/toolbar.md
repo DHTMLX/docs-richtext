@@ -216,4 +216,4 @@ new richtext.Richtext("#root", {
 
 **Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih)
+**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)

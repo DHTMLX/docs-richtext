@@ -44,4 +44,4 @@ const editor = new richtext.RichText("#root", {
 
 **Related articles:** [Localization](guides/localization.md)
 
-**Related sample:** [RichText. Localization](https://snippet.dhtmlx.com/zxjrin3i)
+**Related sample:** [RichText. Localization](https://snippet.dhtmlx.com/zxjrin3i?tag=richtext)
