@@ -30,4 +30,4 @@ new richtext.Richtext("#root", {
 
 **Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7)
+**Related sample:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)

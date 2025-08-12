@@ -33,4 +33,4 @@ new richtext.Richtext("#root", {
 
 **Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy)
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

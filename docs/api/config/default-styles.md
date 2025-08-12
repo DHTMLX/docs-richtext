@@ -141,4 +141,4 @@ new richtext.Richtext("#root", {
 
 **Related articles:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s)
+**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)
