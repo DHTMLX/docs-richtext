@@ -134,13 +134,17 @@ const config = {
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/richtext/',
     onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
+    // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
     trailingSlash: true,
-
+    markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
     /*
     presets: [
         [
