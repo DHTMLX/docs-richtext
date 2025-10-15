@@ -4,6 +4,16 @@ title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
+## Version 2.0.4
+
+Released on October 15, 2025
+
+### Fixes
+
+- Incorrect range selection for paragraphs
+- Link popups are not displayed when adjacent to linked images
+- Initial toolbar values are not accurate relative to actual content
+
 ## Version 2.0.3
 
 Released on August 27, 2025
