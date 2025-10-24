@@ -28,11 +28,11 @@ ng new my-angular-richtext-app
 To keep things simple while following this guide, turn off Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating your Angular app!
 :::
 
-This command sets up everything needed, so there’s no need for any extra installation steps.
+This command sets up everything needed, so there's no need for any extra installation steps.
 
 ### Installation of dependencies
 
-Move into your new app’s directory:
+Move into your new app's directory:
 
 ~~~json
 cd my-angular-richtext-app
@@ -61,7 +61,7 @@ To add RichText to your app, create a new Angular component. Make a **richtext**
 
 #### Import source files
 
-Open **richtext.component.ts** and bring in the RichText source files. Here’s how the import path should look:
+Open **richtext.component.ts** and bring in the RichText source files. Here's how the import path should look:
 
 - For the PRO version installed from a local folder:
 
@@ -225,7 +225,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-At this point, the RichText component is set up and ready. When it’s added to the page, RichText will initialize with the provided data. You can also add any configuration options you need. For the full list of properties, check out the [RichText API docs](api/overview/main_overview.md).
+At this point, the RichText component is set up and ready. When it's added to the page, RichText will initialize with the provided data. You can also add any configuration options you need. For the full list of properties, check out the [RichText API docs](api/overview/main_overview.md).
 
 #### Handling events
 
@@ -296,9 +296,9 @@ Now you can start the app and see RichText loaded with data on the page.
 import trial_richtext from '@site/static/img/trial_richtext.png';
 
 <img
-    src={trial_richtext}
-    alt="Trial richtext"
-    className="img_border"
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
 />
 
 That's all it takes to get DHTMLX RichText working with Angular. Feel free to tailor the code to your own needs. A complete example can be found on [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo).

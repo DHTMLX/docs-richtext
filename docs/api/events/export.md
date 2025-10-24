@@ -29,7 +29,7 @@ The callback for the **export** event receives an object with these properties:
 
 - `format` - specifies the file format
 - `url` - the base URL used for exporting the file
-- `download` - indicates whether the file should be downloaded automatically after the server response. If set to "false", the file won’t download automatically, but the blob data can be accessed via the `result` property in the event object
+- `download` - indicates whether the file should be downloaded automatically after the server response. If set to "false", the file won't download automatically, but the blob data can be accessed via the `result` property in the event object
 - `fileName` - the name assigned to the exported file
 
 :::info

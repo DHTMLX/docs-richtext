@@ -6,7 +6,7 @@ description: Find a complete overview of events in the DHTMLX JavaScript RichTex
 
 # Events overview
 
-Here you'll find a list of all the events triggered by the DHTMLX RichText editor.  
+Here you'll find a list of all the events triggered by the DHTMLX RichText editor. 
 These events allow you to enhance functionality, monitor user actions, or initiate custom responses.
 
 | Name                                                   | Description                                   |

@@ -6,21 +6,21 @@ description: You can explore how to start working with DHTMLX RichText in the do
 
 # How to start
 
-Here’s a simple walkthrough for getting RichText up and running on a page.
+Here's a simple walkthrough for getting RichText up and running on a page.
 
 import classic_mode from '@site/static/img/richtext/classic_mode.png';
 
 <img
-    src={classic_mode}
-    alt="Classic mode"
-    className="img_border"
+  src={classic_mode}
+  alt="Classic mode"
+  className="img_border"
 />
 
 ## Step 1. Including source files
 
 First, create an HTML file named *index.html*. Add the RichText source files to this file.
 
-You’ll need two files:
+You'll need two files:
 
 - the JS file for RichText
 - the CSS file for RichText
@@ -54,12 +54,12 @@ To use the trial version of RichText, grab the [**trial RichText package**](http
 #### Installing PRO RichText via npm or yarn
 
 :::info
-To get the PRO version, head to the [Client's Area](https://dhtmlx.com/clients/) and generate your login and password for the DHTMLX private **npm**. There’s a detailed installation guide there too. Access to the private **npm** is available as long as your proprietary RichText license is active.
+To get the PRO version, head to the [Client's Area](https://dhtmlx.com/clients/) and generate your login and password for the DHTMLX private **npm**. There's a detailed installation guide there too. Access to the private **npm** is available as long as your proprietary RichText license is active.
 :::
 
 ## Step 2. Creating RichText
 
-Now it’s time to add RichText to the page. Start by creating a `<div>` container for RichText. Here’s what to do:
+Now it's time to add RichText to the page. Start by creating a `<div>` container for RichText. Here's what to do:
 
 - Add a DIV container in the *index.html* file
 - Initialize RichText using the `richtext.Richtext` constructor
@@ -88,7 +88,7 @@ The constructor takes any valid CSS selector for the HTML container where RichTe
 
 ## Step 3. Configuring RichText
 
-Now you can set up the configuration options you’d like RichText to use when it starts.
+Now you can set up the configuration options you'd like RichText to use when it starts.
 
 To get going, set the initial data for the editor with the [`value`](api/config/value.md) property. You can also turn on the [**menubar**](api/config/menubar.md), tweak the [**toolbar**](api/config/toolbar.md), set [**fullscreen**](api/config/fullscreen-mode.md) and [**layout**](api/config/layout-mode.md) modes, pick a new [**locale**](api/config/locale.md), and apply [**default styles**](api/config/default-styles.md).
 
@@ -110,4 +110,4 @@ const editor = new richtext.Richtext("#root", {
 
 ## What's next
 
-That’s it! With these three steps, RichText is ready for editing content. Feel free to start working or look around to see what else JavaScript RichText can do.
+That's it! With these three steps, RichText is ready for editing content. Feel free to start working or look around to see what else JavaScript RichText can do.

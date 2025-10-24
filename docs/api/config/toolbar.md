@@ -71,7 +71,7 @@ new richtext.Richtext("#root", {
 Custom buttons can be set up as objects with these options:
 
 - `type` - (required) defines the control type. Options are `"button"`, `"richselect"`, `"colorpicker"`.
-- `id` - (optional) a unique control ID (shouldn’t clash with existing IDs).
+- `id` - (optional) a unique control ID (shouldn't clash with existing IDs).
 - `label` - (optional) text label for the button (appears alongside the icon).
 - `tooltip` - (optional) text shown on hover (defaults to the label if not set).
 - `css` - (optional) CSS class for the control (default classes include wx-primary, wx-secondary).

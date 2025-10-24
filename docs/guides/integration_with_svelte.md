@@ -72,7 +72,7 @@ Now it's time to make a Svelte component for RichText. In the ***src/*** directo
 
 #### Importing source files
 
-In ***Richtext.svelte***, import the RichText source files. Here’s how the imports look depending on your version:
+In ***Richtext.svelte***, import the RichText source files. Here's how the imports look depending on your version:
 
 - For the PRO version installed locally, use these paths:
 
@@ -179,7 +179,7 @@ onDestroy(() => {
 </div>
 ~~~
 
-Alternatively, you can use the [`setValue()`](api/methods/set-value.md) method within Svelte’s `onMount()` to load the data:
+Alternatively, you can use the [`setValue()`](api/methods/set-value.md) method within Svelte's `onMount()` to load the data:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -254,14 +254,14 @@ To use the component in your app, open **App.svelte** and replace the default co
 <RichText value={value}  />
 ~~~
 
-Now, start up the app and you’ll see RichText loaded with your data on the page.
+Now, start up the app and you'll see RichText loaded with your data on the page.
 
 import trial_richtext from '@site/static/img/trial_richtext.png';
 
 <img
-    src={trial_richtext}
-    alt="Trial richtext"
-    className="img_border"
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
 />
 
-That’s all there is to integrating DHTMLX RichText with Svelte. Feel free to adjust the code to fit your needs. If you want to check out a more advanced example, it’s available on [**GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).
+That's all there is to integrating DHTMLX RichText with Svelte. Feel free to adjust the code to fit your needs. If you want to check out a more advanced example, it's available on [**GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).

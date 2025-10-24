@@ -19,7 +19,7 @@ description: You can learn about the Migration to Newer Versions in the document
 
 ### - `customStats`
 
-The `customStats` property isn’t part of the latest RichText version. This means built-in support for custom statistics like character, word, or sentence counts isn’t available anymore.
+The `customStats` property isn't part of the latest RichText version. This means built-in support for custom statistics like character, word, or sentence counts isn't available anymore.
 
 To handle text metrics, just grab the editor content and process it however you want:
 
@@ -132,7 +132,7 @@ editor.getValue(toTextEncoder);
 ```
 
 :::note
-It’s fine to call `getValue()` and `setValue()` without passing an encoder; HTML will be used by default.
+It's fine to call `getValue()` and `setValue()` without passing an encoder; HTML will be used by default.
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md)

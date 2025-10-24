@@ -6,7 +6,7 @@ description: Explore an overview of Internal State methods for JavaScript RichTe
 
 # State methods
 
-Here you'll find methods to access and manage the internal state of the DHTMLX RichText editor.  
+Here you'll find methods to access and manage the internal state of the DHTMLX RichText editor. 
 These methods come in handy for debugging, working with reactive frameworks, or creating advanced custom features.
 
 | Name                                                        | Description                                      |

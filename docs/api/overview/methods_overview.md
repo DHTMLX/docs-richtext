@@ -6,7 +6,7 @@ description: Find a summary of the JavaScript RichText methods in the DHTMLX lib
 
 # Methods overview
 
-Here’s a quick rundown of the main methods you’ll find in the DHTMLX RichText editor.  
+Here's a quick rundown of the main methods you'll find in the DHTMLX RichText editor. 
 This guide helps you get a clear idea of what each method does and points you to detailed descriptions and examples.
 
 | Name                                                   | Description                               |

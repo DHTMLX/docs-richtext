@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's new
-description: Check out the latest updates in DHTMLX RichText and see the release history right here in the documentation for the DHTMLX JavaScript UI library. You’ll find guides, API references, code examples, live demos, and a free 30-day trial download for DHTMLX RichText.
+description: Check out the latest updates in DHTMLX RichText and see the release history right here in the documentation for the DHTMLX JavaScript UI library. You'll find guides, API references, code examples, live demos, and a free 30-day trial download for DHTMLX RichText.
 ---
 
 ## Version 2.0.4
@@ -10,9 +10,9 @@ Released on October 15, 2025
 
 ### Fixes
 
-- Paragraph range selection didn’t always work right
-- Link popups wouldn’t show up if they were next to linked images
-- Toolbar values at startup didn’t always match the actual content
+- Paragraph range selection didn't always work right
+- Link popups wouldn't show up if they were next to linked images
+- Toolbar values at startup didn't always match the actual content
 
 ## Version 2.0.3
 
@@ -21,9 +21,9 @@ Released on August 27, 2025
 ### Fixes
 
 - Clicking a horizontal line could throw a script error
-- The default line height wasn’t set correctly
+- The default line height wasn't set correctly
 - Some content styles had duplicate selectors
-- Plain text blocks didn’t pick up style changes when parsing HTML
+- Plain text blocks didn't pick up style changes when parsing HTML
 - The parser skipped escaped font names in HTML
 - The parser ignored `margin-left` and `line-height` in HTML
 
@@ -48,7 +48,7 @@ Released on July 30, 2025
 Released on July 30, 2025
 
 :::note
-The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**](news/migration.md).
+The v1.2 API doesn't work with v2.0. For details, see the [**migration guide**](news/migration.md).
 :::
 
 ### New Functionality
@@ -57,7 +57,7 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
   The new engine brings smoother, faster, and more accurate text rendering
 
 - **Granular toolbar configuration**  
-  The toolbar is fully customizable now:  
+  The toolbar is fully customizable now: 
   - Choose [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and set their order
   - Add your own [custom controls](guides/configuration.md/#custom-toolbar-controls)
 
@@ -82,7 +82,7 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
   - Use [subscript](api/events/subscript.md) / [superscript](api/events/superscript.md)
 
 - **List management**  
-  It’s easy to [insert and manage lists](api/events/insert-list.md) now
+  It's easy to [insert and manage lists](api/events/insert-list.md) now
 
 - **Import/Export & Print**  
   - [Import DOCX](api/events/import.md) files
@@ -92,7 +92,7 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
 - **Keyboard shortcuts**  
   More common formatting and editing shortcuts are supported
 
-###  New API
+### New API
 
 #### New properties
 
@@ -104,10 +104,10 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
 - [`toolbar`](api/config/toolbar.md)  
 - [`value`](api/config/value.md)
 
-####  New methods
+#### New methods
 
-- [`setConfig()`](api/methods/set-config.md) — Update the configuration on the fly  
-- [`setLocale()`](api/methods/set-locale.md) — Change the locale instantly
+- [`setConfig()`](api/methods/set-config.md) - Update the configuration on the fly  
+- [`setLocale()`](api/methods/set-locale.md) - Change the locale instantly
 
 #### New internal methods
 
@@ -118,7 +118,7 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
 
 #### New events
 
-You’ll find a full list of new events [here](api/overview/events_overview.md)
+You'll find a full list of new events [here](api/overview/events_overview.md)
 
 ### Updated API
 
@@ -139,7 +139,7 @@ You’ll find a full list of new events [here](api/overview/events_overview.md)
 ## Removed API
 
 :::warning
-Don’t use the removed API in your projects! <br/> For more details, check out the [Migration](news/migration.md) topic.
+Don't use the removed API in your projects! <br/> For more details, check out the [Migration](news/migration.md) topic.
 :::
 
 ### [Removed properties](news/migration.md#properties-migration)

@@ -6,7 +6,7 @@ description: Explore the Properties overview for JavaScript RichText in the DHTM
 
 # Properties overview
 
-Here you'll find a list of all the configuration properties available when setting up the DHTMLX RichText editor.  
+Here you'll find a list of all the configuration properties available when setting up the DHTMLX RichText editor. 
 These options let you customize the layout, toolbar, content, localization, and more.
 
 | Name                                                    | Description                                  |

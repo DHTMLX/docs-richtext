@@ -7,7 +7,7 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 # RichText overview
 
-**DHTMLX RichText** is a lightweight and flexible WYSIWYG editor made with JavaScript. It’s designed to make editing easy in modern web apps, with a simple interface, plenty of formatting tools, and full control over how content is displayed. Whether it’s for a CMS, an admin dashboard, or an embedded doc editor, RichText can be added and adjusted to fit different projects.
+**DHTMLX RichText** is a lightweight and flexible WYSIWYG editor made with JavaScript. It's designed to make editing easy in modern web apps, with a simple interface, plenty of formatting tools, and full control over how content is displayed. Whether it's for a CMS, an admin dashboard, or an embedded doc editor, RichText can be added and adjusted to fit different projects.
 
 **DHTMLX RichText** comes with these features:
 
@@ -17,7 +17,7 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 - A [**toolbar**](api/config/toolbar.md) that can be configured with built-in and custom buttons
 
-- A [**menubar**](api/config/menubar.md) that’s static and can be shown or hidden
+- A [**menubar**](api/config/menubar.md) that's static and can be shown or hidden
 
 - Support for image uploads, rich formatting, custom styles, and fullscreen editing
 
@@ -31,30 +31,30 @@ This documentation covers installation, setup, usage, and how to tweak things. T
 
 ### Menubar
 
-The RichText menubar gives quick access to editing actions like making a new document, printing, importing or exporting, and more. By default, it’s hidden.
+The RichText menubar gives quick access to editing actions like making a new document, printing, importing or exporting, and more. By default, it's hidden.
 
-The [`menubar`](api/config/menubar.md) property controls if it’s visible or not. You can turn the menubar on or off, but right now, its items can’t be changed.
+The [`menubar`](api/config/menubar.md) property controls if it's visible or not. You can turn the menubar on or off, but right now, its items can't be changed.
 
 import menubar from '@site/static/img/richtext/menubar.png';
 
 <img
-    src={menubar}
-    alt="Menubar"
-    className="img_border"
+  src={menubar}
+  alt="Menubar"
+  className="img_border"
 />
 
 ### Toolbar
 
 The RichText toolbar lets users quickly format text and edit structure. By default, the [toolbar](api/config/toolbar.md#default-config) is on and shows a set of common controls like bold, italic, font settings, lists, and more.
 
-The [`toolbar`](api/config/toolbar.md) property lets you change which controls show up and how they’re arranged. You can turn the toolbar on or off, rearrange the default buttons, or create your own setup with built-in and custom buttons.
+The [`toolbar`](api/config/toolbar.md) property lets you change which controls show up and how they're arranged. You can turn the toolbar on or off, rearrange the default buttons, or create your own setup with built-in and custom buttons.
 
 import toolbar from '@site/static/img/richtext/toolbar.png';
 
 <img
-    src={toolbar}
-    alt="Toolbar"
-    className="img_border"
+  src={toolbar}
+  alt="Toolbar"
+  className="img_border"
 />
 
 ### Editor
@@ -70,9 +70,9 @@ DHTMLX RichText has two ways to show content: "classic" and "document" modes. Pi
 import classic_mode from '@site/static/img/richtext/classic_mode.png';
 
 <img
-    src={classic_mode}
-    alt="Classic mode"
-    className="img_border"
+  src={classic_mode}
+  alt="Classic mode"
+  className="img_border"
 />
 
 - **"document"**
@@ -80,9 +80,9 @@ import classic_mode from '@site/static/img/richtext/classic_mode.png';
 import document_mode from '@site/static/img/richtext/document_mode.png';
 
 <img
-    src={document_mode}
-    alt="Document mode"
-    className="img_border"
+  src={document_mode}
+  alt="Document mode"
+  className="img_border"
 />
 
 ## Supported formats
@@ -94,9 +94,9 @@ RichText can [read](api/methods/set-value.md) and [save](api/methods/get-value.m
 import html_format from '@site/static/img/richtext/html_format.png';
 
 <img
-    src={html_format}
-    alt="HTML format"
-    className="img_border"
+  src={html_format}
+  alt="HTML format"
+  className="img_border"
 />
 
 #### Text format
@@ -104,14 +104,14 @@ import html_format from '@site/static/img/richtext/html_format.png';
 import text_format from '@site/static/img/richtext/text_format.png';
 
 <img
-    src={text_format}
-    alt="Text format"
-    className="img_border"
+  src={text_format}
+  alt="Text format"
+  className="img_border"
 />
 
 ## Keyboard shortcuts
 
-RichText supports a bunch of standard keyboard shortcuts for faster editing and formatting. The shortcuts match what’s common on each platform and work on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
+RichText supports a bunch of standard keyboard shortcuts for faster editing and formatting. The shortcuts match what's common on each platform and work on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
 
 ### Text formatting
 
@@ -148,7 +148,7 @@ For a full list of RichText keyboard shortcuts, just click **Help** and choose *
 import shortcut_reference from '@site/static/img/richtext/shortcut_reference.png';
 
 <img
-    src={shortcut_reference}
-    alt="Shortcut reference"
-    className="img_border"
+  src={shortcut_reference}
+  alt="Shortcut reference"
+  className="img_border"
 />

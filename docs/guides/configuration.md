@@ -25,9 +25,9 @@ RichText editor comes with two layout modes to pick from, so you can work in the
 import classic_mode from '@site/static/img/richtext/classic_mode.png';
 
 <img
-    src={classic_mode}
-    alt="Classic mode"
-    className="img_border"
+  src={classic_mode}
+  alt="Classic mode"
+  className="img_border"
 />
 
 - **"document"**
@@ -35,9 +35,9 @@ import classic_mode from '@site/static/img/richtext/classic_mode.png';
 import document_mode from '@site/static/img/richtext/document_mode.png';
 
 <img
-    src={document_mode}
-    alt="Document mode"
-    className="img_border"
+  src={document_mode}
+  alt="Document mode"
+  className="img_border"
 />
 
 To pick a mode, just set the [`layoutMode`](api/config/layout-mode.md) property in the RichText config when you initialize the component:
@@ -138,7 +138,7 @@ new richtext.Richtext("#root", {
 If you want to add your own controls, you can include objects in the [`toolbar`](api/config/toolbar.md) property with these options:
 
 - `type` - (required) sets the custom control type. You can use: `"button"`, `"richselect"`, `"colorpicker"`
-- `id` - (optional) a custom control ID (shouldn’t clash with built-in control IDs)
+- `id` - (optional) a custom control ID (shouldn't clash with built-in control IDs)
 - `label` - (optional) a button label (can be used with an icon)
 - `tooltip` - (optional) a tooltip shown on hover (if not set, uses the "label" value)
 - `css` - (optional) a CSS class name for the control (default supported: wx-primary, wx-secondary)
@@ -258,7 +258,7 @@ defaultStyles?: boolean | {
 };
 ~~~
 
-The `defaultStyles` property doesn’t actually apply CSS to the blocks—it just sets up the style values. You’ll still need to add CSS styles separately:
+The `defaultStyles` property doesn't actually apply CSS to the blocks-it just sets up the style values. You'll still need to add CSS styles separately:
 
 ```html title="index.html"
 <div id="root"></div>

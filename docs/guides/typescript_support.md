@@ -9,7 +9,7 @@ description: You can learn about using typescript with the DHTMLX JavaScript Ric
 Since version 2.0, DHTMLX RichText comes with built-in TypeScript definitions, so TypeScript works right out of the box.
 
 :::note
-The <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext"  target="_blank">Snippet Tool</a> is available for trying things out.
+The <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a> is available for trying things out.
 :::
 
 ## Advantages of using TypeScript

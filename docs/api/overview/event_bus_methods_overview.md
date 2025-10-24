@@ -6,7 +6,7 @@ description: Here's an overview of the Internal Event Bus methods in the JavaScr
 
 # Event Bus methods
 
-This section lists the methods connected to the internal Event Bus within the DHTMLX RichText editor.  
+This section lists the methods connected to the internal Event Bus within the DHTMLX RichText editor. 
 These methods are intended for advanced use cases, enabling custom integrations and behaviors through the internal event system.
 
 | Name                                              | Description                                  |

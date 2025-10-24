@@ -8,7 +8,7 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 DHTMLX RichText can be styled to fit any look by using CSS variables or targeting specific widget parts with custom styles.
 
-Here’s a quick walkthrough for setting up a **dark theme** and using class names to style different parts of the editor, like the menubar, toolbar, popup, and content area.
+Here's a quick walkthrough for setting up a **dark theme** and using class names to style different parts of the editor, like the menubar, toolbar, popup, and content area.
 
 ## Default structure and class names
 
@@ -78,11 +78,11 @@ This setup gives the editor a dark background, updates button and icon colors, a
 ## Best practices
 
 * The `color-scheme: dark` property helps native inputs look right in dark mode
-* It’s best not to change layout-related CSS properties (like `display` or `position`) unless there’s a good reason
+* It’s best not to change layout-related CSS properties (like `display` or `position`) unless there's a good reason
 
 ## Live demo
 
-Here’s a quick example showing how custom styles can be added to RichText:
+Here's a quick example showing how custom styles can be added to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

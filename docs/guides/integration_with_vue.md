@@ -275,9 +275,9 @@ Now, start the app and you'll see RichText with your data on the page.
 import trial_richtext from '@site/static/img/trial_richtext.png';
 
 <img
-    src={trial_richtext}
-    alt="Trial richtext"
-    className="img_border"
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
 />
 
 That's how DHTMLX RichText can be integrated with Vue. Feel free to tweak the code to fit your needs. For a more advanced example, check out [**GitHub**](https://github.com/DHTMLX/vue-richtext-demo).
