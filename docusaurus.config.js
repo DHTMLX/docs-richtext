@@ -135,8 +135,9 @@ const config = {
 
     baseUrl: process.env.DOCUSAURUS_BASEURL || '/richtext/',
 	i18n: {
-		defaultLocale: 'en',
-		locales: ['en', 'de', 'ru', 'zh', 'ko'],
+		defaultLocale: 'ko',
+        locales: ['ko'],
+		//locales: ['en', 'de', 'ru', 'zh', 'ko'],
 		localeConfigs: {
 			zh: {
 				htmlLang: 'zh-CN',
@@ -237,7 +238,11 @@ const config = {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
                     position: 'right'
-                }
+                },
+                {
+					type: 'localeDropdown',
+					position: 'right',
+				}
             ]
         },
         footer: {
