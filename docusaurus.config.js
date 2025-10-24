@@ -135,9 +135,8 @@ const config = {
 
     baseUrl: process.env.DOCUSAURUS_BASEURL || '/richtext/',
 	i18n: {
-		defaultLocale: 'ko',
-        locales: ['ko'],
-		//locales: ['en', 'de', 'ru', 'zh', 'ko'],
+		defaultLocale: 'en',
+		locales: ['en', 'de', 'ru', 'zh', 'ko'],
 		localeConfigs: {
 			zh: {
 				htmlLang: 'zh-CN',
