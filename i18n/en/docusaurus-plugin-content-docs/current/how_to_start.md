@@ -8,9 +8,13 @@ description: You can explore how to start working with DHTMLX RichText in the do
 
 Here’s a simple walkthrough for getting RichText up and running on a page.
 
-<div className="img_border">
-![DHTMLX RichText Classic Mode](./assets/richtext/classic_mode.png)
-</div>
+import classic_mode from '@site/static/img/richtext/classic_mode.png';
+
+<img
+    src={classic_mode}
+    alt="Classic mode"
+    className="img_border"
+/>
 
 ## Step 1. Including source files
 

@@ -293,8 +293,12 @@ platformBrowserDynamic()
 
 Now you can start the app and see RichText loaded with data on the page.
 
-<div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
-</div>
+import trial_richtext from '@site/static/img/trial_richtext.png';
+
+<img
+    src={trial_richtext}
+    alt="Trial richtext"
+    className="img_border"
+/>
 
 That's all it takes to get DHTMLX RichText working with Angular. Feel free to tailor the code to your own needs. A complete example can be found on [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo).

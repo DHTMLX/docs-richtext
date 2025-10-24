@@ -256,8 +256,12 @@ To use the component in your app, open **App.svelte** and replace the default co
 
 Now, start up the app and you’ll see RichText loaded with your data on the page.
 
-<div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
-</div>
+import trial_richtext from '@site/static/img/trial_richtext.png';
+
+<img
+    src={trial_richtext}
+    alt="Trial richtext"
+    className="img_border"
+/>
 
 That’s all there is to integrating DHTMLX RichText with Svelte. Feel free to adjust the code to fit your needs. If you want to check out a more advanced example, it’s available on [**GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).

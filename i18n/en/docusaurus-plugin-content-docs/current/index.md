@@ -35,9 +35,13 @@ The RichText menubar gives quick access to editing actions like making a new doc
 
 The [`menubar`](api/config/menubar.md) property controls if it’s visible or not. You can turn the menubar on or off, but right now, its items can’t be changed.
 
-<div className="img_border">
-![Menubar](./assets/richtext/menubar.png)
-</div>
+import menubar from '@site/static/img/richtext/menubar.png';
+
+<img
+    src={menubar}
+    alt="Menubar"
+    className="img_border"
+/>
 
 ### Toolbar
 
@@ -45,9 +49,13 @@ The RichText toolbar lets users quickly format text and edit structure. By defau
 
 The [`toolbar`](api/config/toolbar.md) property lets you change which controls show up and how they’re arranged. You can turn the toolbar on or off, rearrange the default buttons, or create your own setup with built-in and custom buttons.
 
-<div className="img_border">
-![Toolbar](./assets/richtext/toolbar.png)
-</div>
+import toolbar from '@site/static/img/richtext/toolbar.png';
+
+<img
+    src={toolbar}
+    alt="Toolbar"
+    className="img_border"
+/>
 
 ### Editor
 
@@ -59,15 +67,23 @@ DHTMLX RichText has two ways to show content: "classic" and "document" modes. Pi
 
 - **"classic"**
 
-<div className="img_border">
-![Classic mode](./assets/richtext/classic_mode.png)
-</div>
+import classic_mode from '@site/static/img/richtext/classic_mode.png';
+
+<img
+    src={classic_mode}
+    alt="Classic mode"
+    className="img_border"
+/>
 
 - **"document"**
 
-<div className="img_border">
-![Document mode](./assets/richtext/document_mode.png)
-</div>
+import document_mode from '@site/static/img/richtext/document_mode.png';
+
+<img
+    src={document_mode}
+    alt="Document mode"
+    className="img_border"
+/>
 
 ## Supported formats
 
@@ -75,15 +91,23 @@ RichText can [read](api/methods/set-value.md) and [save](api/methods/get-value.m
 
 #### HTML format
 
-<div className="img_border">
-![HTML format](./assets/richtext/html_format.png)
-</div>
+import html_format from '@site/static/img/richtext/html_format.png';
+
+<img
+    src={html_format}
+    alt="HTML format"
+    className="img_border"
+/>
 
 #### Text format
 
-<div className="img_border">
-![Text format](./assets/richtext/text_format.png)
-</div>
+import text_format from '@site/static/img/richtext/text_format.png';
+
+<img
+    src={text_format}
+    alt="Text format"
+    className="img_border"
+/>
 
 ## Keyboard shortcuts
 
@@ -121,6 +145,10 @@ More shortcuts could be added in future updates.
 
 For a full list of RichText keyboard shortcuts, just click **Help** and choose **Keyboard shortcuts**:
 
-<div className="img_border">
-![Keyboard shortcuts](./assets/richtext/shortcut_reference.png)
-</div>
+import shortcut_reference from '@site/static/img/richtext/shortcut_reference.png';
+
+<img
+    src={shortcut_reference}
+    alt="Shortcut reference"
+    className="img_border"
+/>

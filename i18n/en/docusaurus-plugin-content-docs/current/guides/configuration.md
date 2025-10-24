@@ -22,15 +22,23 @@ RichText editor comes with two layout modes to pick from, so you can work in the
 
 - **"classic"**
 
-<div className="img_border">
-![Classic mode](./../assets/richtext/classic_mode.png)
-</div>
+import classic_mode from '@site/static/img/richtext/classic_mode.png';
+
+<img
+    src={classic_mode}
+    alt="Classic mode"
+    className="img_border"
+/>
 
 - **"document"**
 
-<div className="img_border">
-![Document mode](./../assets/richtext/document_mode.png)
-</div>
+import document_mode from '@site/static/img/richtext/document_mode.png';
+
+<img
+    src={document_mode}
+    alt="Document mode"
+    className="img_border"
+/>
 
 To pick a mode, just set the [`layoutMode`](api/config/layout-mode.md) property in the RichText config when you initialize the component:
 
