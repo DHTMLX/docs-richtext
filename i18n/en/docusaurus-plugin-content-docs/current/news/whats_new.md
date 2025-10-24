@@ -58,13 +58,13 @@ The v1.2 API doesn’t work with v2.0. For details, see the [**migration guide**
 
 - **Granular toolbar configuration**  
   The toolbar is fully customizable now:  
-  - Choose [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and set their order
-  - Add your own [custom controls](guides/configuration.md/#custom-toolbar-controls)
+  - Choose [individual toolbar controls](guides/configuration.md#default-toolbar-controls) and set their order
+  - Add your own [custom controls](guides/configuration.md#custom-toolbar-controls)
 
 - **Optional [menubar](api/config/menubar.md)**  
   You can add a classic menu-style interface at the top of the editor
 
-- **Enhanced [document mode](guides/configuration.md/#layout-modes)**  
+- **Enhanced [document mode](guides/configuration.md#layout-modes)**  
   Now supports different document sizes
 
 - **Image support**  
