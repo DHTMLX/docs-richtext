@@ -1,13 +1,13 @@
 ---
 sidebar_label: Properties overview
 title: Properties Overview
-description: You can have a Properties overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the Properties overview for JavaScript RichText in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, sample code, live demos, and get a free 30-day trial of DHTMLX RichText.
 ---
 
 # Properties overview
 
-This page lists all configuration properties that can be used when initializing the DHTMLX RichText editor.  
-They help you control layout, toolbar, value, localization, and other aspects of the editor.
+Here you'll find a list of all the configuration properties available when setting up the DHTMLX RichText editor. 
+These options let you customize the layout, toolbar, content, localization, and more.
 
 | Name                                                    | Description                                  |
 | --------------------------------------------------------|----------------------------------------------|

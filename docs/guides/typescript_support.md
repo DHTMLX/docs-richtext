@@ -6,16 +6,14 @@ description: You can learn about using typescript with the DHTMLX JavaScript Ric
 
 # TypeScript support
 
-Starting from v2.0, the library of DHTMLX RichText provides an ability to use TypeScript definitions. The built-in support of TypeScript works out of the box.
+Since version 2.0, DHTMLX RichText comes with built-in TypeScript definitions, so TypeScript works right out of the box.
 
 :::note
-You can try out the functionality right in our <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext"  target="_blank">Snippet Tool</a>.
+The <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a> is available for trying things out.
 :::
 
 ## Advantages of using TypeScript
 
-Why do you need to use DHTMLX RichText with TypeScript?
+Using DHTMLX RichText with TypeScript brings a few nice perks.
 
-The main benefit of TypeScript is that it allows you to significantly increase the efficiency of the development process.
-
-The way of building an application becomes more robust as checking the types together with autocompletion allow you to avoid potential mistakes. Besides, TypeScript provides you with information about types of data you should use while working with the API of the DHTMLX RichText library.
+TypeScript helps make the development process smoother and more reliable. Type checking and autocompletion help catch mistakes early and speed things up. Plus, TypeScript gives clear info about what data types to use when working with the DHTMLX RichText API.

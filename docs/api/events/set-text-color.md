@@ -1,14 +1,14 @@
 ---
 sidebar_label: set-text-color
 title: set-text-color Event
-description: You can learn about the set-text-color event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the set-text-color event in the DHTMLX JavaScript RichText library documentation. Find developer guides, API references, code samples, live demos, and get a free 30-day trial of DHTMLX RichText.
 ---
 
 # set-text-color
 
 ### Description
 
-@short: Fires when setting a text color and/or a background text color
+@short: Triggered when a text color and/or background color is applied
 
 ### Usage
 
@@ -23,13 +23,13 @@ interface ITextColor {
 
 ### Parameters
 
-The callback of the **set-text-color** event can take an object with the following parameters:
+The callback for the **set-text-color** event receives an object with these properties:
 
-- `color` - a text color
-- `background` - a text background color
+- `color` - the text color
+- `background` - the background color of the text
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -39,16 +39,16 @@ For handling the inner events you can use the [**Event Bus methods**](api/overvi
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "set-text-color" event
+// listen for the "set-text-color" event
 editor.api.on("set-text-color", (obj) => {
     console.log(obj);
-    console.log("The text color and/or background text color were changed");
+    console.log("Text color and/or background color have been updated");
 });
-// apply text color and background
+// set text color and background
 editor.api.exec("set-text-color", {
    color: "red",
    background: "blue"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

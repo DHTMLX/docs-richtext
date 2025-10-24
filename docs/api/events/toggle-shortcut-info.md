@@ -8,7 +8,7 @@ description: You can learn about the toggle-shortcut-info event in the documenta
 
 ### Description
 
-@short: Fires when toggling the shortcut info
+@short: Triggered when the shortcut info is toggled
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the toggle-shortcut-info event in the documenta
 
 ### Parameters
 
-The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
+The callback for the **toggle-shortcut-info** event receives an object with the following property:
 
-- `mode` - enables a shortcut info; `true` to show shortcut info popup, `false` to hide shortcut info popup
+- `mode` - controls the shortcut info display; `true` to show the shortcut info popup, `false` to hide it
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -42,4 +42,4 @@ editor.api.on("toggle-shortcut-info", (obj) => {
 editor.api.exec("toggle-shortcut-info", { mode: true });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

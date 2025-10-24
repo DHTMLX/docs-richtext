@@ -8,7 +8,7 @@ description: You can learn about the clear-text-format event in the documentatio
 
 ### Description
 
-@short: Fires when a text format is cleared via the menubar/toolbar or Event Bus methods
+@short: Triggered whenever a text format is removed using the menubar, toolbar, or Event Bus methods.
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the clear-text-format event in the documentatio
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can utilize the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -35,4 +35,4 @@ editor.api.on("clear-text-format", () => {
 editor.api.exec("clear-text-format", {});
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

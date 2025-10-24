@@ -8,7 +8,7 @@ description: You can learn about the setNext method in the documentation of the 
 
 ### Description
 
-@short: Allows adding some action into the Event Bus order
+@short: This method lets you add an action into the Event Bus sequence.
 
 ### Usage
 
@@ -18,7 +18,7 @@ api.setNext(next: any): void;
 
 ### Parameters
 
-- `next` - (required) the action to be included into the **Event Bus** order  
+- `next` - (required) the action to be added into the **Event Bus** sequence  
 
 ### Example
 
@@ -32,7 +32,7 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
         value: data
     });
 
-    // Integrate someServerService into the Event Bus order of widget
+    // Add someServerService into the Event Bus sequence of the widget
     editor.api.setNext(someServerService);
 });
 ~~~

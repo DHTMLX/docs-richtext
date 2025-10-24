@@ -8,7 +8,7 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 ### Description
 
-@short: Optional. Specifies the URL which will be used for image upload
+@short: Optional. Defines the URL that will be used to upload images
 
 ### Usage
 
@@ -26,7 +26,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** This property was introduced in version 2.0
 
 **Related articles:** [Configuration](guides/configuration.md)
 

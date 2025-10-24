@@ -1,14 +1,14 @@
 ---
 sidebar_label: indent
 title: indent Event
-description: You can learn about the indent event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the indent event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, code samples, live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # indent
 
 ### Description
 
-@short: Fires when increasing block indention
+@short: Triggered when the block indentation is increased
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the indent event in the documentation of the DH
 
 ### Parameters
 
-The callback of the **indent** event can take an object with the following parameters:
+The callback for the **indent** event receives an object containing the following property:
 
-- `step` - the step by which indentation was increased
+- `step` - the amount by which the indentation was increased
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -40,4 +40,4 @@ editor.api.on("indent", (obj) => {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in version 2.0

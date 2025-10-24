@@ -8,7 +8,7 @@ description: You can learn about the destructor method in the documentation of t
 
 ### Description
 
-@short: Removes all HTML elements of RichText, and detaches all related events
+@short: Clears all HTML elements of the RichText component and detaches all associated events.
 
 ### Usage
 

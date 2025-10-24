@@ -1,14 +1,14 @@
 ---
 sidebar_label: import
 title: import Event
-description: You can learn about the import event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Discover the import event in the DHTMLX JavaScript RichText library documentation. Explore developer guides, API references, try out code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # import
 
 ### Description
 
-@short: Fires after pressing the "Import" option in the menubar or via Event Bus methods
+@short: Triggered after selecting the "Import" option from the menubar or through Event Bus methods.
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the import event in the documentation of the DH
 
 ### Parameters
 
-The callback of **import** event can take an object with the following parameter:
+The callback for the **import** event accepts an object with the following parameter:
 
-- `html` - a text value in the html format
+- `html` - a string containing HTML content
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,15 +33,15 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "import" event
+// listen for the "import" event
 editor.api.on("import", (obj) => {
     console.log(obj.html);
     console.log("The new value was imported");
 });
-// import new value
+// perform an import
 editor.api.exec("import", {
-    html: "<h2>some value</h2>" // simply calls setValue
+    html: "<h2>some value</h2>" // internally calls setValue
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

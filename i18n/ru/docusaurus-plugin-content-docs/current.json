@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Следующий",
+    "description": "Метка для текущей версии"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "Новое и миграция",
+    "description": "Метка для категории 'Новое и миграция' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "Новое и миграция",
+    "description": "Заголовок страницы сгенерированного индекса для категории 'Новое и миграция' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "Метка для категории 'API' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.RichText methods": {
+    "message": "Методы RichText",
+    "description": "Метка для категории 'Методы RichText' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.RichText internal API": {
+    "message": "Внутренний API RichText",
+    "description": "Метка для категории 'Внутренний API RichText' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.RichText internal API.link.generated-index.title": {
+    "message": "Обзор внутреннего API",
+    "description": "Заголовок страницы сгенерированного индекса для категории 'Внутренний API RichText' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "Методы Event Bus",
+    "description": "Метка для категории 'Методы Event Bus' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "Методы состояния",
+    "description": "Метка для категории 'Методы состояния' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.RichText events": {
+    "message": "События RichText",
+    "description": "Метка для категории 'События RichText' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.RichText properties": {
+    "message": "Свойства RichText",
+    "description": "Метка для категории 'Свойства RichText' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.Integration with frameworks": {
+    "message": "Интеграция с фреймворками",
+    "description": "Метка для категории 'Интеграция с фреймворками' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.Integration with frameworks.link.generated-index.title": {
+    "message": "Интеграция с фреймворками",
+    "description": "Заголовок страницы сгенерированного индекса для категории 'Интеграция с фреймворками' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Руководства",
+    "description": "Метка для категории 'Руководства' в боковой панели 'документация'"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "Руководства",
+    "description": "Заголовок страницы сгенерированного индекса для категории 'Руководства' в боковой панели 'документация'"
+  }
+}

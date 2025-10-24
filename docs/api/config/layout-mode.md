@@ -1,14 +1,14 @@
 ---
 sidebar_label: layoutMode
 title: layoutMode Config
-description: You can learn about the layoutMode config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the layoutMode configuration in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, code samples, live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # layoutMode
 
 ### Description
 
-@short: Optional. Specifies the layout mode for the main editor area
+@short: Optional. Defines the layout style for the main editor area.
 
 ### Usage
 
@@ -16,7 +16,7 @@ description: You can learn about the layoutMode config in the documentation of t
 layoutMode: "classic" | "document";
 ~~~
 
-The `"classic"` mode represents the edit area that fits the entire page. The `"document"` mode closely represent the real document sizes (sizes used: A4, A5, A6, A7).
+The `"classic"` mode makes the editing area span the entire page. The `"document"` mode simulates actual document sizes, using formats like A4, A5, A6, and A7.
 
 ### Default config
 
@@ -29,12 +29,12 @@ layoutMode: "classic";
 ~~~jsx {3}
 // initialize RichText
 new richtext.Richtext("#root", {
-    layoutMode: "document"  // initializes RichText with "document" mode by default
+    layoutMode: "document"  // sets RichText to use "document" mode by default
     // other configuration properties
 });
 ~~~
 
-**Change log:** The property was added in v2.0 instead of the removed `mode` property
+**Change log:** This property was introduced in v2.0, replacing the older `mode` property.
 
 **Related articles:** [Configuration](guides/configuration.md)
 

@@ -19,9 +19,9 @@ description: You can learn about the Migration to Newer Versions in the document
 
 ### - `customStats`
 
-The `customStats` property has been removed. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
+The `customStats` property isn't part of the latest RichText version. This means built-in support for custom statistics like character, word, or sentence counts isn't available anymore.
 
-If you still need to calculate text metrics, you can do so externally by accessing the editor content and processing it manually:
+To handle text metrics, just grab the editor content and process it however you want:
 
 ```jsx
 const content = editor.getValue();
@@ -30,14 +30,14 @@ const wordCount = content.split(/\s+/).length;
 
 ### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md)
 
-Before **2.0**, users were able to specify only blocks with controls
+Before **2.0**, only blocks of controls could be set:
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
   toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ```
 
-Starting from **2.0**, users can spefify separate controls
+With **2.0** and later, individual controls can be listed as needed:
 ```jsx{2-4} title="From 2.0"
 new richtext.Richtext("#root", {
     toolbar: [
@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 
 ### - [`defaultStyles`](api/config/default-styles.md)
 
-Before **2.0**, users were able to define default values for toolbar selection controls
+Before **2.0**, default values for toolbar selection controls looked like this:
 ```jsx title="Before 2.0"
 defaultStyles: {
     "font-family": "Tahoma",
@@ -57,7 +57,7 @@ defaultStyles: {
 }
 ```
 
-Starting from **2.0**, users can specifies default style values for specific block types
+From **2.0** on, default style values can be set up for specific block types:
 ```jsx title="From 2.0"
 defaultStyles: {
   "*": {
@@ -72,7 +72,7 @@ defaultStyles: {
 ```
 
 :::note
-Use `*` to define base defaults for all blocks, then override specific elements (p, h1, blockquote, etc.).
+The `*` key sets base defaults for everything, and any specific element (like p, h1, or blockquote) can be customized on top.
 :::
 
 ### - `mode` → [`layoutMode`](api/config/layout-mode.md)
@@ -89,7 +89,7 @@ new Richtext("#root", {
 });
 ```
 
-The new [`layoutMode`](api/config/layout-mode.md) strictly supports `"classic"` and `"document"` values.
+Now, [`layoutMode`](api/config/layout-mode.md) only accepts `"classic"` or `"document"`.
 
 ### Methods migration
 
@@ -132,7 +132,7 @@ editor.getValue(toTextEncoder);
 ```
 
 :::note
-You can still call `getValue()` and `setValue()` without an encoder — HTML is used by default
+It's fine to call `getValue()` and `setValue()` without passing an encoder; HTML will be used by default.
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md)

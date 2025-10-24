@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "下一个",
+    "description": "版本当前的标签"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "新特性和迁移",
+    "description": "侧边栏 'docs' 中类别 '新特性和迁移' 的标签"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "新特性和迁移",
+    "description": "侧边栏 'docs' 中类别 '新特性和迁移' 的生成索引页面标题"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "侧边栏 'docs' 中类别 'API' 的标签"
+  },
+  "sidebar.docs.category.RichText methods": {
+    "message": "富文本方法",
+    "description": "侧边栏 'docs' 中类别 '富文本方法' 的标签"
+  },
+  "sidebar.docs.category.RichText internal API": {
+    "message": "富文本内部API",
+    "description": "侧边栏 'docs' 中类别 '富文本内部API' 的标签"
+  },
+  "sidebar.docs.category.RichText internal API.link.generated-index.title": {
+    "message": "内部API概述",
+    "description": "侧边栏 'docs' 中类别 '富文本内部API' 的生成索引页面标题"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "事件总线方法",
+    "description": "侧边栏 'docs' 中类别 '事件总线方法' 的标签"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "状态方法",
+    "description": "侧边栏 'docs' 中类别 '状态方法' 的标签"
+  },
+  "sidebar.docs.category.RichText events": {
+    "message": "富文本事件",
+    "description": "侧边栏 'docs' 中类别 '富文本事件' 的标签"
+  },
+  "sidebar.docs.category.RichText properties": {
+    "message": "富文本属性",
+    "description": "侧边栏 'docs' 中类别 '富文本属性' 的标签"
+  },
+  "sidebar.docs.category.Integration with frameworks": {
+    "message": "与框架集成",
+    "description": "侧边栏 'docs' 中类别 '与框架集成' 的标签"
+  },
+  "sidebar.docs.category.Integration with frameworks.link.generated-index.title": {
+    "message": "与框架集成",
+    "description": "侧边栏 'docs' 中类别 '与框架集成' 的生成索引页面标题"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "指南",
+    "description": "侧边栏 'docs' 中类别 '指南' 的标签"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "指南",
+    "description": "侧边栏 'docs' 中类别 '指南' 的生成索引页面标题"
+  }
+}

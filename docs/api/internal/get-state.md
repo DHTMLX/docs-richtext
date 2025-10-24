@@ -8,7 +8,7 @@ description: You can learn about the getState method in the documentation of the
 
 ### Description
 
-@short: Returns an object with the StateStore properties of RichText
+@short: Provides an object containing the current StateStore properties of RichText.
 
 ### Usage
 
@@ -18,7 +18,7 @@ api.getState(): object;
 
 ### Returns
 
-The method returns an object with the following parameters:
+This method returns an object with the following properties:
 
 ~~~jsx {}
 {     
@@ -40,7 +40,7 @@ The method returns an object with the following parameters:
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// get the State of RichText
+// retrieve the current state of RichText
 const state = editor.api.getState();
 console.log(state);
 ~~~

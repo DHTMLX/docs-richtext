@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's new
-description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Check out the latest updates in DHTMLX RichText and see the release history right here in the documentation for the DHTMLX JavaScript UI library. You'll find guides, API references, code examples, live demos, and a free 30-day trial download for DHTMLX RichText.
 ---
 
 ## Version 2.0.4
@@ -10,9 +10,9 @@ Released on October 15, 2025
 
 ### Fixes
 
-- Incorrect range selection for paragraphs
-- Link popups are not displayed when adjacent to linked images
-- Initial toolbar values are not accurate relative to actual content
+- Paragraph range selection didn't always work right
+- Link popups wouldn't show up if they were next to linked images
+- Toolbar values at startup didn't always match the actual content
 
 ## Version 2.0.3
 
@@ -20,12 +20,12 @@ Released on August 27, 2025
 
 ### Fixes
 
-- Clicking on a horizontal line causes a script error
-- The default line height is incorrect
-- Content styles include duplicate selectors
-- Plain text blocks ignore style changes when parsing HTML
-- The parser ignores escaped font names in HTML
-- The parser ignores `margin-left` and `line-height` properties in HTML
+- Clicking a horizontal line could throw a script error
+- The default line height wasn't set correctly
+- Some content styles had duplicate selectors
+- Plain text blocks didn't pick up style changes when parsing HTML
+- The parser skipped escaped font names in HTML
+- The parser ignored `margin-left` and `line-height` in HTML
 
 ## Version 2.0.2
 
@@ -33,7 +33,7 @@ Released on August 4, 2025
 
 ### Fixes
 
-- Updated package content
+- Package content got updated
 
 ## Version 2.0.1
 
@@ -41,58 +41,58 @@ Released on July 30, 2025
 
 ### Fixes
 
-- Update type definitions for the `defaultStyles` property
+- Type definitions for the `defaultStyles` property were updated
 
 ## Version 2.0
 
 Released on July 30, 2025
 
 :::note
-API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
+The v1.2 API doesn't work with v2.0. For details, see the [**migration guide**](news/migration.md).
 :::
 
 ### New Functionality
 
 - **Next-gen text rendering**  
-  Experience smoother, faster, and more accurate text rendering with our new engine
+  The new engine brings smoother, faster, and more accurate text rendering
 
 - **Granular toolbar configuration**  
-  Take full control of the toolbar:  
-  - Define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
-  - Add [custom controls](guides/configuration.md/#custom-toolbar-controls)
+  The toolbar is fully customizable now: 
+  - Choose [individual toolbar controls](guides/configuration.md#default-toolbar-controls) and set their order
+  - Add your own [custom controls](guides/configuration.md#custom-toolbar-controls)
 
 - **Optional [menubar](api/config/menubar.md)**  
-  Enable a classic menu-style interface on the top of the editor
+  You can add a classic menu-style interface at the top of the editor
 
-- **Enhanced [document mode](guides/configuration.md/#layout-modes)**  
-  Added support for different document sizes
+- **Enhanced [document mode](guides/configuration.md#layout-modes)**  
+  Now supports different document sizes
 
 - **Image support**  
-  - Insert images with [upload capabilities](api/config/image-upload-url.md).  
-  - [Resize images](api/events/resize-image.md) interactively  
+  - Insert images with [upload features](api/config/image-upload-url.md)  
+  - [Resize images](api/events/resize-image.md) right in the editor  
 
 - **Improved link experience**  
-  Redesigned [popup interactions](api/events/show-popup.md) for better usability
+  Link [popup interactions](api/events/show-popup.md) have been redesigned for easier use
 
 - **New formatting tools**  
   - Text alignment: **justify**  
   - Insert [horizontal lines](api/events/insert-line.md)  
   - [Indent](api/events/indent.md) / [Outdent](api/events/outdent.md)  
   - Set [line height](api/events/set-line-height.md)  
-  - Apply [subscript](api/events/subscript.md) / [superscript](api/events/superscript.md)
+  - Use [subscript](api/events/subscript.md) / [superscript](api/events/superscript.md)
 
 - **List management**  
-  Easily [insert and manage lists](api/events/insert-list.md) in your content
+  It's easy to [insert and manage lists](api/events/insert-list.md) now
 
 - **Import/Export & Print**  
   - [Import DOCX](api/events/import.md) files
-  - [Export](api/events/export.md) content to DOCX or PDF
-  - [Print](api/events/print.md) documents directly from the editor
+  - [Export](api/events/export.md) to DOCX or PDF
+  - [Print](api/events/print.md) right from the editor
 
 - **Keyboard shortcuts**  
-  Expanded support for common formatting and editing shortcuts
+  More common formatting and editing shortcuts are supported
 
-###  New API
+### New API
 
 #### New properties
 
@@ -104,10 +104,10 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 - [`toolbar`](api/config/toolbar.md)  
 - [`value`](api/config/value.md)
 
-####  New methods
+#### New methods
 
-- [`setConfig()`](api/methods/set-config.md) — Dynamically update configuration  
-- [`setLocale()`](api/methods/set-locale.md) — Change locale on the fly
+- [`setConfig()`](api/methods/set-config.md) - Update the configuration on the fly  
+- [`setLocale()`](api/methods/set-locale.md) - Change the locale instantly
 
 #### New internal methods
 
@@ -118,7 +118,7 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 
 #### New events
 
-A full list of new events is available [here](api/overview/events_overview.md)
+You'll find a full list of new events [here](api/overview/events_overview.md)
 
 ### Updated API
 
@@ -139,7 +139,7 @@ A full list of new events is available [here](api/overview/events_overview.md)
 ## Removed API
 
 :::warning
-Do not use the removed API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
+Don't use the removed API in your projects! <br/> For more details, check out the [Migration](news/migration.md) topic.
 :::
 
 ### [Removed properties](news/migration.md#properties-migration)

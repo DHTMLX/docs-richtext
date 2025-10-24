@@ -1,14 +1,14 @@
 ---
 sidebar_label: superscript
 title: superscript Event
-description: You can learn about the superscript event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the superscript event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # superscript
 
 ### Description
 
-@short: Fires when pressing the "Superscript" button in the menubar/toolbar or via Event Bus methods
+@short: This event triggers when the "Superscript" button is clicked in the menubar or toolbar, or when activated through Event Bus methods.
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the superscript event in the documentation of t
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md).
 :::
 
 ### Example
@@ -35,4 +35,4 @@ editor.api.on("superscript", () => {
 editor.api.exec("superscript", {});
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0
