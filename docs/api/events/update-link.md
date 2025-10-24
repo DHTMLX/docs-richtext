@@ -8,7 +8,7 @@ description: You can learn about the update-link event in the documentation of t
 
 ### Description
 
-@short: Fires when updating link
+@short: Triggered when a link is updated
 
 ### Usage
 
@@ -18,13 +18,13 @@ description: You can learn about the update-link event in the documentation of t
 
 ### Parameters
 
-The callback of the **update-link** event can take an object with the following parameters:
+The callback for the **update-link** event receives an object containing the following properties:
 
-- `id` - the link ID
-- `url` - the modified url
+- `id` - the identifier of the link
+- `url` - the updated URL
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -41,4 +41,4 @@ editor.api.on("update-link", (obj) => {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

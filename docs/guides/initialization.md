@@ -6,7 +6,7 @@ description: You can learn about the initialization in the documentation of the 
 
 # Initialization
 
-This guide will give you detailed instructions on how to create RichText on a page to enrich your application with features of the RichText editor. Take the following steps to get a ready-to-use component:
+Here's a simple walkthrough for setting up RichText on your page, so you can start using the RichText editor in your app. Just follow these steps to get things running:
 
 1. [Include the RichText source files on a page](#including-source-files).
 2. [Create a container for RichText](#creating-container).
@@ -14,14 +14,14 @@ This guide will give you detailed instructions on how to create RichText on a pa
 
 ## Including source files
 
-[Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it into a folder of your project.
+First, [download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it somewhere in your project folder.
 
-To create RichText, you need to include 2 source files on your page:
+To use RichText, add these two files to your page:
 
 - *richtext.js*
 - *richtext.css*
 
-Make sure that you set correct relative paths to the source files:
+Be sure to use the correct paths to where you placed these files:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./codebase/richtext.js"></script>  
@@ -30,7 +30,7 @@ Make sure that you set correct relative paths to the source files:
 
 ## Creating container
 
-Add a container for RichText and give it an ID, for example *"root"*:
+Next, set up a container for RichText. Give it an ID, like *"root"*:
 
 ~~~jsx title="index.html"
 <div id="root"></div>
@@ -38,10 +38,10 @@ Add a container for RichText and give it an ID, for example *"root"*:
 
 ## Initializing RichText
 
-Initialize RichText with the `richtext.Richtext` constructor. The constructor takes two parameters:
+Now, use the `richtext.Richtext` constructor to create RichText. This constructor needs two things:
 
-- an HTML container (the ID of the HTML container)
-- an object with configuration properties. [See the full list here](#configuration-properties)
+- the HTML container (use the ID you set)
+- an object with configuration options. [Check out the full list here](#configuration-properties)
 
 ~~~jsx title="index.html"
 // create RichText
@@ -53,11 +53,11 @@ const editor = new richtext.Richtext("#root", {
 ### Configuration properties
 
 :::note
-The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
+You can see all the available properties for **RichText** [**here**](api/overview/properties_overview.md).
 :::
 
 ## Example
 
-In this snippet you can see how to initialize **RichText** with the initial data:
+Here's a quick example showing how to set up **RichText** with some initial data:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

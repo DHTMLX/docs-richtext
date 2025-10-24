@@ -8,7 +8,7 @@ description: You can learn about the toggle-layout-mode event in the documentati
 
 ### Description
 
-@short: Fires when toggling the layout mode
+@short: Triggered whenever the layout mode is switched
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the toggle-layout-mode event in the documentati
 
 ### Parameters
 
-The callback of the **toggle-layout-mode** event can take an object with the following parameters:
+The callback for the **toggle-layout-mode** event receives an object with these parameters:
 
-- `mode` - the layout mode. The following modes are available: `"classic" | "document"`
+- `mode` - indicates the layout mode. Available options are: `"classic" | "document"`
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To handle internal events, you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -42,4 +42,4 @@ editor.api.on("toggle-layout-mode", (obj) => {
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

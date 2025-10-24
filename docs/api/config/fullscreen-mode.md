@@ -1,14 +1,14 @@
 ---
 sidebar_label: fullscreenMode
 title: fullscreenMode Config
-description: You can learn about the fullscreenMode config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the fullscreenMode config in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # fullscreenMode
 
 ### Description
 
-@short: Optional. Enables the RichText fullscreen mode
+@short: Optional. Turns on the RichText fullscreen mode
 
 ### Usage
 
@@ -32,7 +32,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** This property was introduced in v2.0
 
 **Related articles:** [Configuration](guides/configuration.md)
 

@@ -8,7 +8,7 @@ description: You can learn about the intercept method in the documentation of th
 
 ### Description
 
-@short: Allows intercepting and preventing the inner events
+@short: Provides a way to catch and block internal events before they proceed.
 
 ### Usage
 
@@ -21,13 +21,13 @@ api.intercept(
 
 ### Parameters
 
-- `event` - (required) an event to be fired
-- `callback` - (required) a callback to be performed (the callback arguments will depend on the event to be fired)
+- `event` - (required) the name of the event to intercept
+- `callback` - (required) a function to execute when the event occurs (arguments depend on the specific event)
 
 ### Events
 
 :::info
-The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
+You can find the complete list of RichText internal events [**here**](api/overview/events_overview.md)
 :::
 
 ### Example
@@ -37,7 +37,7 @@ The full list of RichText internal events can be found [**here**](api/overview/e
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// forbid changing the font size
+// prevent changing the font size except to "36px"
 editor.api.intercept("set-font-size", (obj) => {
     if(obj.fontSize !== "36px" ){
         return false;

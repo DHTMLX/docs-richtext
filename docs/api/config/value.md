@@ -1,17 +1,17 @@
 ---
 sidebar_label: value
 title: value Config
-description: You can learn about the value config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the value config in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # value
 
 ### Description
 
-@short: Optional. Specifies the initial value (content) displayed within the editor area of RichText
+@short: Optional. Defines the initial content shown inside the RichText editor area.
 
 :::tip
-If you want to set the value (content) using custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
+To set the content using a custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
 :::
 
 ### Usage
@@ -29,7 +29,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** This property was introduced in version 2.0
 
 **Related articles:** [Configuration](guides/configuration.md)
 

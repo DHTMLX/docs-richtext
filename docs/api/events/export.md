@@ -1,14 +1,14 @@
 ---
 sidebar_label: export
 title: export Event
-description: You can learn about the export event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: This section covers the export event in the DHTMLX JavaScript RichText library. It includes developer guides, API references, code examples, live demos, and a free 30-day trial of DHTMLX RichText.
 ---
 
 # export
 
 ### Description
 
-@short: Fires after pressing the "Export" option in the menubar or via Event Bus methods
+@short: Triggered after selecting the "Export" option from the menubar or through Event Bus methods.
 
 ### Usage
 
@@ -25,15 +25,15 @@ interface IExportOptions {
 
 ### Parameters
 
-The callback of **export** event can take an object with the following parameters:
+The callback for the **export** event receives an object with these properties:
 
-- `format` - a file format
-- `url` - a base URL for file export
-- `download` - allows a user to specify if he wants to download the file after receiving the response back from the server. If the property is set to "false", the file will not download, but the user will instead be able to get blob data from the event object (see the `result` prop in the event definition)
-- `fileName` - a file name to be exported
+- `format` - specifies the file format
+- `url` - the base URL used for exporting the file
+- `download` - indicates whether the file should be downloaded automatically after the server response. If set to "false", the file won’t download automatically, but the blob data can be accessed via the `result` property in the event object
+- `fileName` - the name assigned to the exported file
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+Inner events can be managed using [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -43,12 +43,12 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "export" event
+// listen for the "export" event
 editor.api.on("export", (obj) => {
     console.log(obj);
     console.log("The file was exported");
 });
-// export value as pdf file
+// export content as a pdf file
 editor.api.exec("export", {
     format: "pdf",
     download: false,
@@ -56,4 +56,4 @@ editor.api.exec("export", {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

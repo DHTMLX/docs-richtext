@@ -1,14 +1,14 @@
 ---
 sidebar_label: redo
 title: redo Event
-description: You can learn about the redo event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the redo event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, code samples, live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # redo
 
 ### Description
 
-@short: Fires when pressing the "Redo" button in the menubar/toolbar or via Event Bus methods
+@short: Triggered when the "Redo" button is clicked in the menubar/toolbar or activated through Event Bus methods.
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the redo event in the documentation of the DHTM
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,4 +33,4 @@ editor.api.on("redo", () => {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in version 2.0

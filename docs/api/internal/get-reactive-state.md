@@ -8,7 +8,7 @@ description: You can learn about the getReactiveState method in the documentatio
 
 ### Description
 
-@short: Returns an object with the reactive properties of RichText
+@short: Provides an object containing the reactive properties of RichText.
 
 ### Usage
 
@@ -18,7 +18,7 @@ api.getReactiveState(): object;
 
 ### Returns
 
-The method returns an object with the following parameters:
+This method returns an object with the following properties:
 
 ~~~jsx {}
 {
@@ -40,9 +40,9 @@ The method returns an object with the following parameters:
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// get the Reactive State of RichText
+// retrieve the Reactive State of RichText
 const reactive_state = editor.api.getReactiveState();
 console.log(reactive_state)
 ~~~
 
-**Change log:** The method was added in v2.0
+**Change log:** This method was introduced in version 2.0

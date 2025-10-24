@@ -8,7 +8,7 @@ description: You can learn about the menubar config in the documentation of the 
 
 ### Description
 
-@short: Optional. Enables the top menubar of RichText
+@short: Optional. Turns on the top menubar in RichText.
 
 ### Usage
 
@@ -26,7 +26,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** This property was introduced in v2.0
 
 **Related articles:** [Configuration](guides/configuration.md)
 

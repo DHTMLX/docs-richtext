@@ -6,11 +6,11 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
+All labels in the JavaScript RichText interface can be localized. To do this, it's possible to create a new locale or tweak an existing one, then set it for RichText.
 
 ## Default locale
 
-The **English** locale is used by default:
+By default, the interface uses the **English** locale:
 
 ~~~jsx
 const en = {
@@ -158,7 +158,7 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+Along with the default ***en*** locale (*English*), RichText also comes with built-in ***de*** (*German*) and ***cn*** (*Chinese*) locales.
 :::
 
 <details>
@@ -461,14 +461,14 @@ const cn = {
 
 ## Custom locale
 
-To apply a custom locale you need to:
+To use a custom locale:
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+- Make a custom locale (or update the default one) and add translations for all the labels you need (any language works)
 
-- apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
+- Set this locale for **RichText** using the [`locale`](api/config/locale.md) property or the [`setLocale()`](api/methods/set-locale.md) method
 
 ## Example
 
-In this snippet you can see how to switch through several locales:
+Here's a snippet that shows how to switch between different locales:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

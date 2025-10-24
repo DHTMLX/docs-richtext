@@ -1,14 +1,14 @@
 ---
 sidebar_label: undo
 title: undo Event
-description: You can learn about the undo event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the undo event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # undo
 
 ### Description
 
-@short: Fires when pressing the "Undo" button in the menubar/toolbar or via Event Bus methods
+@short: Triggered when the "Undo" button is clicked in the menubar/toolbar or activated through Event Bus methods.
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the undo event in the documentation of the DHTM
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+Inner events can be managed using [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -27,10 +27,10 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "undo" event
+// listen for the "undo" event
 editor.api.on("undo", () => {
     console.log("Undo operation was performed");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

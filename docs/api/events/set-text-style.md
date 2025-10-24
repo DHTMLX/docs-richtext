@@ -1,14 +1,14 @@
 ---
 sidebar_label: set-text-style
 title: set-text-style Event
-description: You can learn about the set-text-style event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the set-text-style event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # set-text-style
 
 ### Description
 
-@short: Fires when setting a text style
+@short: Triggered when a text style is applied
 
 ### Usage
 
@@ -20,12 +20,12 @@ type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 ### Parameters
 
-The callback of the **set-text-style** event can take an object with the following parameters:
+The callback for the **set-text-style** event receives an object with the following property:
 
-- `tag` - a text style
+- `tag` - specifies the text style being applied
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -35,15 +35,15 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "set-text-style" event
+// listen for the "set-text-style" event
 editor.api.on("set-text-style", (obj) => {
     console.log(obj.tag);
-    console.log("The text style was changed");
+    console.log("Text style has been updated");
 });
-// apply new text style
+// change the text style
 editor.api.exec("set-text-style", {
     tag: "blockquote"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

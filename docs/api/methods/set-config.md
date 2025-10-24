@@ -8,7 +8,7 @@ description: You can learn about the setConfig method in the documentation of th
 
 ### Description
 
-@short: Applies new configuration parameters to RichText
+@short: Updates the RichText editor with new configuration settings.
 
 ### Usage
 
@@ -18,10 +18,10 @@ setConfig(config: { [key:any]: any }): void;
 
 ### Parameters
 
-- `config` - (required) the object of RichText configuration parameters. See the full list of properties [here](api/overview/properties_overview.md)
+- `config` - (required) an object containing the RichText configuration options. Check out the complete list of properties [here](api/overview/properties_overview.md)
 
 :::note
-The `setConfig()` method preserves all the previously set parameters that are not explicitly provided in the `setConfig()` method call.
+When using the `setConfig()` method, any previously set parameters that are not included in the new call will stay unchanged.
 :::
 
 ### Example
@@ -37,4 +37,4 @@ editor.setConfig({
 });
 ~~~
 
-**Change log:** The method was added in v2.0
+**Change log:** The method was introduced in v2.0

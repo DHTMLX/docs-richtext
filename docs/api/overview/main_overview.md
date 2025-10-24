@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: API Overview
-description: You can have an API overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the JavaScript RichText API in the DHTMLX JavaScript RichText library documentation. Access developer guides, API references, try code examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # API overview
@@ -16,7 +16,7 @@ new richtext.RichText("#root", {
 
 **Parameters**:
 
-- an HTML container (e.g., CSS selector or DOM element)
+- an HTML container (such as a CSS selector or a DOM element)
 - a configuration object ([see properties](api/overview/properties_overview.md))
 
 ## RichText methods

@@ -1,14 +1,14 @@
 ---
 sidebar_label: show-popup
 title: show-popup Event
-description: You can learn about the show-popup event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the show-popup event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code examples, live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # show-popup
 
 ### Description
 
-@short: Fires when a popup is shown/hidden
+@short: Triggered when a popup is displayed or hidden
 
 ### Usage
 
@@ -23,13 +23,13 @@ interface IPopupConfig {
 
 ### Parameters
 
-The callback of the **show-popup** event can take an object with the following parameters:
+The callback for the **show-popup** event receives an object with these properties:
 
-- `type` - a type of the popup
-- `image` - provides access to additional context (is the current cursor pointing at an image or not)
+- `type` - specifies the popup type
+- `image` - indicates whether the current cursor is over an image or not
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage inner events, the [**Event Bus methods**](api/overview/event_bus_methods_overview.md) can be utilized
 :::
 
 ### Example
@@ -50,4 +50,4 @@ editor.api.exec("show-popup", {
 }); 
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

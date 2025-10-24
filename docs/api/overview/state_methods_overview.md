@@ -1,13 +1,13 @@
 ---
 sidebar_label: State methods
 title: State Methods
-description: You can have an Internal State methods overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore an overview of Internal State methods for JavaScript RichText in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # State methods
 
-This page lists methods for accessing and working with the internal state of the DHTMLX RichText editor.  
-These methods are useful for debugging, integrating with reactive systems, or implementing advanced custom logic.
+Here you'll find methods to access and manage the internal state of the DHTMLX RichText editor.  
+These methods come in handy for debugging, working with reactive frameworks, or creating advanced custom features.
 
 | Name                                                        | Description                                      |
 | ----------------------------------------------------------- | ------------------------------------------------ |

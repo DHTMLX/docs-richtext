@@ -7,87 +7,111 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 # RichText overview
 
-**DHTMLX RichText** is a flexible and lightweight WYSIWYG editor built with JavaScript. Designed to provide a seamless editing experience in modern web applications, RichText offers a clean UI, rich formatting capabilities, and full control over content rendering. Whether you're building a CMS, an internal admin tool, or an embedded document editor, RichText can be easily integrated and customized to match your needs.
+**DHTMLX RichText** is a lightweight and flexible WYSIWYG editor made with JavaScript. It’s designed to make editing easy in modern web apps, with a simple interface, plenty of formatting tools, and full control over how content is displayed. Whether it’s for a CMS, an admin dashboard, or an embedded doc editor, RichText can be added and adjusted to fit different projects.
 
-**DHTMLX RichText** component includes the following features:
+**DHTMLX RichText** comes with these features:
 
 - Two [**layout modes**](api/config/layout-mode.md)
 
-- Content serialization to both plain text and HTML
+- Content can be saved as plain text or HTML
 
-- Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
+- A [**toolbar**](api/config/toolbar.md) that can be configured with built-in and custom buttons
 
-- Static [**menubar**](api/config/menubar.md) that can be shown or hidden
+- A [**menubar**](api/config/menubar.md) that’s static and can be shown or hidden
 
-- Image uploading, rich formatting, custom styling, and full screen mode
+- Support for image uploads, rich formatting, custom styles, and fullscreen editing
 
-- [Full API access](api/overview/main_overview.md) for [event handling](api/overview/event_bus_methods_overview.md), [content manipulation](api/overview/methods_overview.md), and [reactive state management](api/overview/state_methods_overview.md)
+- [Full API access](api/overview/main_overview.md) for [event handling](api/overview/event_bus_methods_overview.md), [content changes](api/overview/methods_overview.md), and [reactive state management](api/overview/state_methods_overview.md)
 
-RichText is framework-agnostic and can be easily integrated with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md) frameworks, making it suitable for a wide range of front-end ecosystems.
+RichText works with any framework and can be used with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), or [Svelte](guides/integration_with_svelte.md), so it fits into all sorts of front-end setups.
 
-This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](api/overview/main_overview.md), and best practices for embedding RichText into your application.
+This documentation covers installation, setup, usage, and how to tweak things. There are examples for common tasks, [full API docs](api/overview/main_overview.md), and tips for adding RichText to different apps.
 
 ## RichText structure
 
 ### Menubar
 
-The RichText menubar provides access to editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
+The RichText menubar gives quick access to editing actions like making a new document, printing, importing or exporting, and more. By default, it’s hidden.
 
-Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
+The [`menubar`](api/config/menubar.md) property controls if it’s visible or not. You can turn the menubar on or off, but right now, its items can’t be changed.
 
-<div className="img_border">
-![Menubar](./assets/richtext/menubar.png)
-</div>
+import menubar from '@site/static/img/richtext/menubar.png';
+
+<img
+    src={menubar}
+    alt="Menubar"
+    className="img_border"
+/>
 
 ### Toolbar
 
-The RichText toolbar provides quick access to text formatting and structural editing features. By default, the [toolbar](api/config/toolbar.md#default-config) is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, list formatting, and more.
+The RichText toolbar lets users quickly format text and edit structure. By default, the [toolbar](api/config/toolbar.md#default-config) is on and shows a set of common controls like bold, italic, font settings, lists, and more.
 
-The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
+The [`toolbar`](api/config/toolbar.md) property lets you change which controls show up and how they’re arranged. You can turn the toolbar on or off, rearrange the default buttons, or create your own setup with built-in and custom buttons.
 
-<div className="img_border">
-![Toolbar](./assets/richtext/toolbar.png)
-</div>
+import toolbar from '@site/static/img/richtext/toolbar.png';
+
+<img
+    src={toolbar}
+    alt="Toolbar"
+    className="img_border"
+/>
 
 ### Editor
 
-The RichText editor is the central area where users create and format content. You can control the editor’s appearance and behavior through configuration options such as [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), and [`defaultStyles`](api/config/default-styles.md). RichText also supports custom styling, image embedding, and responsive layout adjustments to match the needs of your application.
+The main part of RichText is the editor, where all content is created and formatted. You can change how the editor looks and works using options like [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), and [`defaultStyles`](api/config/default-styles.md). RichText allows for custom styles, adding images, and making the layout adjust to different screens and needs.
 
 #### Two working modes
 
-DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
+DHTMLX RichText has two ways to show content: "classic" and "document" modes. Pick the one that feels best for your editing style. Switch between them using the [`layoutMode`](api/config/layout-mode.md) property.
 
 - **"classic"**
 
-<div className="img_border">
-![Classic mode](./assets/richtext/classic_mode.png)
-</div>
+import classic_mode from '@site/static/img/richtext/classic_mode.png';
+
+<img
+    src={classic_mode}
+    alt="Classic mode"
+    className="img_border"
+/>
 
 - **"document"**
 
-<div className="img_border">
-![Document mode](./assets/richtext/document_mode.png)
-</div>
+import document_mode from '@site/static/img/richtext/document_mode.png';
+
+<img
+    src={document_mode}
+    alt="Document mode"
+    className="img_border"
+/>
 
 ## Supported formats
 
-The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and plain text formats.
+RichText can [read](api/methods/set-value.md) and [save](api/methods/get-value.md) content as either **HTML** or plain text.
 
 #### HTML format
 
-<div className="img_border">
-![HTML format](./assets/richtext/html_format.png)
-</div>
+import html_format from '@site/static/img/richtext/html_format.png';
+
+<img
+    src={html_format}
+    alt="HTML format"
+    className="img_border"
+/>
 
 #### Text format
 
-<div className="img_border">
-![Text format](./assets/richtext/text_format.png)
-</div>
+import text_format from '@site/static/img/richtext/text_format.png';
+
+<img
+    src={text_format}
+    alt="Text format"
+    className="img_border"
+/>
 
 ## Keyboard shortcuts
 
-The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
+RichText supports a bunch of standard keyboard shortcuts for faster editing and formatting. The shortcuts match what’s common on each platform and work on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
 
 ### Text formatting
 
@@ -116,11 +140,15 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 | Print        | `Ctrl+P`      | `⌘P`  |
 
 :::info
-More shortcuts may be introduced in future updates.
+More shortcuts could be added in future updates.
 :::
 
-To get actual reference related to RichText keyboard shortcuts, press **Help** and select the **Keyboard shortcuts** option:
+For a full list of RichText keyboard shortcuts, just click **Help** and choose **Keyboard shortcuts**:
 
-<div className="img_border">
-![Keyboard shortcuts](./assets/richtext/shortcut_reference.png)
-</div>
+import shortcut_reference from '@site/static/img/richtext/shortcut_reference.png';
+
+<img
+    src={shortcut_reference}
+    alt="Shortcut reference"
+    className="img_border"
+/>

@@ -1,14 +1,14 @@
 ---
 sidebar_label: insert-line
 title: insert-line Event
-description: You can learn about the insert-line event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Find details about the insert-line event in the DHTMLX JavaScript RichText library documentation. Explore developer guides, API references, try out examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # insert-line
 
 ### Description
 
-@short: Fires when inserting horizontal line
+@short: Triggered when a horizontal line is inserted
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the insert-line event in the documentation of t
 ~~~
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To work with internal events, you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -27,10 +27,10 @@ For handling the inner events you can use the [**Event Bus methods**](api/overvi
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "insert-line" event
+// listen for the "insert-line" event
 editor.api.on("insert-line", () => {
     console.log("The horizontal line was inserted");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

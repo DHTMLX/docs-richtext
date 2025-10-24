@@ -8,7 +8,7 @@ description: You can learn about the toggle-fullscreen-mode event in the documen
 
 ### Description
 
-@short: Fires when toggling the full screen mode
+@short: Triggered when switching the full screen mode on or off
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the toggle-fullscreen-mode event in the documen
 
 ### Parameters
 
-The callback of the **toggle-fullscreen-mode** event can take an object with the following parameter:
+The callback for the **toggle-fullscreen-mode** event accepts an object with the following property:
 
-- `mode` - enables a fullscreen mode
+- `mode` - indicates whether fullscreen mode is enabled
 
 :::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -42,4 +42,4 @@ editor.api.on("toggle-fullscreen-mode", (obj) => {
 editor.api.exec("toggle-fullscreen-mode", { mode: true });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

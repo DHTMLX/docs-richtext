@@ -1,13 +1,13 @@
 ---
 sidebar_label: Event Bus methods
 title: Event Bus Methods 
-description: You can have an Internal Event Bus methods overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Here's an overview of the Internal Event Bus methods in the JavaScript RichText documentation for the DHTMLX JavaScript RichText library. Explore developer guides, API references, try code examples and live demos, and get a free 30-day trial of DHTMLX RichText.
 ---
 
 # Event Bus methods
 
-This page provides a list of methods related to the internal Event Bus used by the DHTMLX RichText editor.  
-These methods are designed for advanced integrations and custom behavior based on the internal event system.
+This section lists the methods connected to the internal Event Bus within the DHTMLX RichText editor.  
+These methods are intended for advanced use cases, enabling custom integrations and behaviors through the internal event system.
 
 | Name                                              | Description                                  |
 | ------------------------------------------------- | -------------------------------------------- |

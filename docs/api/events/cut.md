@@ -1,14 +1,14 @@
 ---
 sidebar_label: cut
 title: cut Event
-description: You can learn about the cut event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the cut event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # cut
 
 ### Description
 
-@short: Fires when cutting selected text
+@short: Triggered when selected text is cut
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the cut event in the documentation of the DHTML
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, the [**Event Bus methods**](api/overview/event_bus_methods_overview.md) can be used.
 :::
 
 ### Example
@@ -33,4 +33,4 @@ editor.api.on("cut", () => {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

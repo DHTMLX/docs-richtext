@@ -8,7 +8,7 @@ description: You can learn about the resize-image event in the documentation of 
 
 ### Description
 
-@short: Fires when resizing image
+@short: Triggered when an image is resized
 
 ### Usage
 
@@ -18,14 +18,14 @@ description: You can learn about the resize-image event in the documentation of 
 
 ### Parameters
 
-The callback of the **resize-image** event can take an object with the following parameters:
+The callback for the **resize-image** event receives an object with these properties:
 
-- `id` - the image ID
-- `width` - the image width
-- `height` - the image height
+- `id` - the image's unique identifier
+- `width` - the new width of the image
+- `height` - the new height of the image
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To work with internal events, you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -35,11 +35,11 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
 // configuration properties
 });
-// subscribe to the "resize-image" event
+// listen for the "resize-image" event
 editor.api.on("resize-image", (obj) => {
     console.log(obj);
     console.log("The image was resized")
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

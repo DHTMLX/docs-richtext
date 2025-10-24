@@ -8,7 +8,7 @@ description: You can learn about the set-text-format event in the documentation 
 
 ### Description
 
-@short: Fires when setting a text format
+@short: Triggered when a text format is being applied
 
 ### Usage
 
@@ -24,17 +24,17 @@ interface ITextFormat {
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Parameters
 
-The callback of the **set-text-format** event can take an object with the following parameters:
+The callback for the **set-text-format** event receives an object with these optional properties:
 
-- `bold` - a bold text format
-- `italic` - an italic text format
-- `strike` - a strike text format
-- `underline` - an underline text format
+- `bold` - indicates bold text formatting
+- `italic` - indicates italic text formatting
+- `strike` - indicates strikethrough text formatting
+- `underline` - indicates underline text formatting
 
 ### Example
 
@@ -43,16 +43,16 @@ The callback of the **set-text-format** event can take an object with the follow
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "set-text-format" event
+// listen for the "set-text-format" event
 editor.api.on("set-text-format", (obj) => {
     console.log(obj);
     console.log("The text format was changed");
 });
-// apply the "italic" and bold text format
+// apply italic and bold formatting to the text
 editor.api.exec("set-text-format", {
     italic: true, 
     bold: true
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in version 2.0

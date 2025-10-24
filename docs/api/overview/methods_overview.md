@@ -1,13 +1,13 @@
 ---
 sidebar_label: Methods overview
 title: Methods Overview
-description: You can have a Methods overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Find a summary of the JavaScript RichText methods in the DHTMLX library documentation. Explore developer guides, API references, try code examples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # Methods overview
 
-This page provides a summary of the core methods available in the DHTMLX RichText editor.  
-Use this reference to quickly navigate to detailed descriptions of each method, understand their purpose, and see usage examples.
+Here’s a quick rundown of the main methods you’ll find in the DHTMLX RichText editor.  
+This guide helps you get a clear idea of what each method does and points you to detailed descriptions and examples.
 
 | Name                                                   | Description                               |
 | ------------------------------------------------------ | ----------------------------------------- |

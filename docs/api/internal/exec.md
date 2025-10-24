@@ -8,7 +8,7 @@ description: You can learn about the exec method in the documentation of the DHT
 
 ### Description
 
-@short: Allows triggering inner events
+@short: This method enables triggering internal events within the editor.
 
 ### Usage
 
@@ -21,13 +21,13 @@ api.exec(
 
 ### Parameters
 
-- `event` - (required) an event to be fired
-- `config` - (required) the config object with parameters (see the event to be fired)
+- `event` - (required) the name of the event to trigger
+- `config` - (required) an object containing parameters for the event being fired
 
 ### Events
 
 :::info
-The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
+You can find the complete list of internal RichText events [**here**](api/overview/events_overview.md)
 :::
 
 ### Example
@@ -37,10 +37,10 @@ The full list of RichText internal events can be found [**here**](api/overview/e
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// set the text font size
+// apply font size to the text
 editor.api.exec("set-font-size", {
     fontSize: "16px"
 }); 
 ~~~
 
-**Change log:** The method was added in v2.0
+**Change log:** This method was introduced in v2.0
