@@ -56,7 +56,7 @@ Now you should get the DHTMLX RichText source code. First of all, stop the app a
 
 ### Step 1. Package installation
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
+Download the [**trial RichText package**](how_to_start.md/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
 
 ### Step 2. Component creation
 
