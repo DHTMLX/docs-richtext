@@ -132,7 +132,18 @@ const config = {
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/richtext/',
+
+    baseUrl: process.env.DOCUSAURUS_BASEURL || '/richtext/',
+	i18n: {
+		defaultLocale: 'en',
+		locales: ['en', 'de', 'ru', 'zh', 'ko'],
+		localeConfigs: {
+			zh: {
+				htmlLang: 'zh-CN',
+				label: '中文'
+			},
+		}
+	},
     onBrokenLinks: 'warn',
     // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
@@ -145,24 +156,6 @@ const config = {
 			onBrokenMarkdownLinks: 'warn',
 		}
 	},
-    /*
-    presets: [
-        [
-            '@docusaurus/preset-classic',
-            {
-                docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
-                    routeBasePath: '/',
-                },
-                theme: {
-                    customCss: require.resolve('./src/css/custom.css')
-                }
-            }
-        ]
-    ],
-    */
     scripts:[
 		{
 			src: 'https://dhtmlx.com/gtag/docs.js',
@@ -172,7 +165,6 @@ const config = {
 	stylesheets: [
 		{ href:'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css' },
 	],
-
     presets: [
 		[
 			'@docusaurus/preset-classic',
