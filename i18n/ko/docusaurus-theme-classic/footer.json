@@ -1,0 +1,62 @@
+{
+  "link.title.Development center": {
+    "message": "개발 센터",
+    "description": "푸터에서 title=Development center인 링크 열의 제목"
+  },
+  "link.title.Community": {
+    "message": "커뮤니티",
+    "description": "푸터에서 title=Community인 링크 열의 제목"
+  },
+  "link.title.Company": {
+    "message": "회사",
+    "description": "푸터에서 title=Company인 링크 열의 제목"
+  },
+  "link.item.label.Download RichText": {
+    "message": "RichText 다운로드",
+    "description": "https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml 에 연결된 label=Download RichText인 푸터 링크의 라벨"
+  },
+  "link.item.label.Examples": {
+    "message": "예제",
+    "description": "https://snippet.dhtmlx.com/t55alxiy?tag=richtext 에 연결된 label=Examples인 푸터 링크의 라벨"
+  },
+  "link.item.label.Blog": {
+    "message": "블로그",
+    "description": "https://dhtmlx.com/blog/tag/richtext/ 에 연결된 label=Blog인 푸터 링크의 라벨"
+  },
+  "link.item.label.Forum": {
+    "message": "포럼",
+    "description": "https://forum.dhtmlx.com/c/richtext/ 에 연결된 label=Forum인 푸터 링크의 라벨"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "https://github.com/DHTMLX 에 연결된 label=GitHub인 푸터 링크의 라벨"
+  },
+  "link.item.label.Youtube": {
+    "message": "유튜브",
+    "description": "https://www.youtube.com/user/dhtmlx 에 연결된 label=Youtube인 푸터 링크의 라벨"
+  },
+  "link.item.label.Facebook": {
+    "message": "페이스북",
+    "description": "https://www.facebook.com/dhtmlx 에 연결된 label=Facebook인 푸터 링크의 라벨"
+  },
+  "link.item.label.Twitter": {
+    "message": "트위터",
+    "description": "https://twitter.com/dhtmlx 에 연결된 label=Twitter인 푸터 링크의 라벨"
+  },
+  "link.item.label.Linkedin": {
+    "message": "링크드인",
+    "description": "https://www.linkedin.com/groups/3345009/ 에 연결된 label=Linkedin인 푸터 링크의 라벨"
+  },
+  "link.item.label.About us": {
+    "message": "회사 소개",
+    "description": "https://dhtmlx.com/docs/company.shtml 에 연결된 label=About us인 푸터 링크의 라벨"
+  },
+  "link.item.label.Contact us": {
+    "message": "문의하기",
+    "description": "https://dhtmlx.com/docs/contact.shtml 에 연결된 label=Contact us인 푸터 링크의 라벨"
+  },
+  "link.item.label.Licensing": {
+    "message": "라이선스",
+    "description": "https://dhtmlx.com/docs/products/dhtmlxRichText/#editions-licenses 에 연결된 label=Licensing인 푸터 링크의 라벨"
+  }
+}

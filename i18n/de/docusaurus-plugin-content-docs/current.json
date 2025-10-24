@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Nächste",
+    "description": "Die Bezeichnung für die aktuelle Version"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "Neuigkeiten und Migration",
+    "description": "Die Bezeichnung für die Kategorie 'Neuigkeiten und Migration' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "Neuigkeiten und Migration",
+    "description": "Der Titel der generierten Indexseite für die Kategorie 'Neuigkeiten und Migration' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "Die Bezeichnung für die Kategorie 'API' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.RichText methods": {
+    "message": "RichText-Methoden",
+    "description": "Die Bezeichnung für die Kategorie 'RichText-Methoden' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.RichText internal API": {
+    "message": "Interne RichText-API",
+    "description": "Die Bezeichnung für die Kategorie 'Interne RichText-API' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.RichText internal API.link.generated-index.title": {
+    "message": "Übersicht der internen API",
+    "description": "Der Titel der generierten Indexseite für die Kategorie 'Interne RichText-API' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "Event Bus-Methoden",
+    "description": "Die Bezeichnung für die Kategorie 'Event Bus-Methoden' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "State-Methoden",
+    "description": "Die Bezeichnung für die Kategorie 'State-Methoden' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.RichText events": {
+    "message": "RichText-Ereignisse",
+    "description": "Die Bezeichnung für die Kategorie 'RichText-Ereignisse' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.RichText properties": {
+    "message": "RichText-Eigenschaften",
+    "description": "Die Bezeichnung für die Kategorie 'RichText-Eigenschaften' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.Integration with frameworks": {
+    "message": "Integration mit Frameworks",
+    "description": "Die Bezeichnung für die Kategorie 'Integration mit Frameworks' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.Integration with frameworks.link.generated-index.title": {
+    "message": "Integration mit Frameworks",
+    "description": "Der Titel der generierten Indexseite für die Kategorie 'Integration mit Frameworks' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Anleitungen",
+    "description": "Die Bezeichnung für die Kategorie 'Anleitungen' in der Seitenleiste 'docs'"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "Anleitungen",
+    "description": "Der Titel der generierten Indexseite für die Kategorie 'Anleitungen' in der Seitenleiste 'docs'"
+  }
+}

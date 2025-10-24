@@ -1,0 +1,62 @@
+{
+  "link.title.Development center": {
+    "message": "Entwicklungszentrum",
+    "description": "Der Titel der Fußzeilen-Linkspalte mit dem Titel=Entwicklungszentrum in der Fußzeile"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "Der Titel der Fußzeilen-Linkspalte mit dem Titel=Community in der Fußzeile"
+  },
+  "link.title.Company": {
+    "message": "Unternehmen",
+    "description": "Der Titel der Fußzeilen-Linkspalte mit dem Titel=Unternehmen in der Fußzeile"
+  },
+  "link.item.label.Download RichText": {
+    "message": "RichText herunterladen",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Download RichText, der auf https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml verweist"
+  },
+  "link.item.label.Examples": {
+    "message": "Beispiele",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Beispiele, der auf https://snippet.dhtmlx.com/t55alxiy?tag=richtext verweist"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Blog, der auf https://dhtmlx.com/blog/tag/richtext/ verweist"
+  },
+  "link.item.label.Forum": {
+    "message": "Forum",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Forum, der auf https://forum.dhtmlx.com/c/richtext/ verweist"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=GitHub, der auf https://github.com/DHTMLX verweist"
+  },
+  "link.item.label.Youtube": {
+    "message": "Youtube",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Youtube, der auf https://www.youtube.com/user/dhtmlx verweist"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Facebook, der auf https://www.facebook.com/dhtmlx verweist"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Twitter, der auf https://twitter.com/dhtmlx verweist"
+  },
+  "link.item.label.Linkedin": {
+    "message": "Linkedin",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Linkedin, der auf https://www.linkedin.com/groups/3345009/ verweist"
+  },
+  "link.item.label.About us": {
+    "message": "Über uns",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Über uns, der auf https://dhtmlx.com/docs/company.shtml verweist"
+  },
+  "link.item.label.Contact us": {
+    "message": "Kontaktieren Sie uns",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Kontaktieren Sie uns, der auf https://dhtmlx.com/docs/contact.shtml verweist"
+  },
+  "link.item.label.Licensing": {
+    "message": "Lizenzierung",
+    "description": "Die Bezeichnung des Fußzeilen-Links mit der Bezeichnung=Lizenzierung, der auf https://dhtmlx.com/docs/products/dhtmlxRichText/#editions-licenses verweist"
+  }
+}
