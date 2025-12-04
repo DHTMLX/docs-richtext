@@ -7,70 +7,70 @@ description: You can learn about the integration with Vue in the documentation o
 # Integration with Vue
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) before reading this documentation. To refresh your knowledge, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started).
+It's helpful to have a basic understanding of [**Vue**](https://vuejs.org/) before diving into this documentation. If you need a refresher, check out the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started).
 :::
 
-DHTMLX RichText is compatible with **Vue**. We have prepared code examples on how to use DHTMLX RichText with **Vue 3**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/vue-richtext-demo).
+DHTMLX RichText works well with **Vue**. There are code samples available that show how to use DHTMLX RichText with **Vue 3**. For more details, take a look at the [**Example on GitHub**](https://github.com/DHTMLX/vue-richtext-demo).
 
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Node.js**](https://nodejs.org/en/).
+Before starting a new project, make sure [**Node.js**](https://nodejs.org/en/) is installed.
 :::
 
-To create a **Vue** project, run the following command:
+To set up a **Vue** project, use this command:
 
 ~~~json
 npm create vue@latest
 ~~~
 
-This command installs and executes `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+This runs `create-vue`, the official tool for scaffolding **Vue** projects. More info is available in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
-Let's name the project as **my-vue-richtext-app**.
+For this guide, the project will be called **my-vue-richtext-app**.
 
 ### Installation of dependencies
 
-Go to the app directory:
+Switch into the app directory:
 
 ~~~json
 cd my-vue-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Install dependencies and start the development server using your preferred package manager:
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+- For [**yarn**](https://yarnpkg.com/):
 
 ~~~jsx
 yarn
 yarn start // or yarn dev
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+- For [**npm**](https://www.npmjs.com/):
 
 ~~~json
 npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app should be available on your localhost (for example, `http://localhost:3000`).
 
 ## Creating RichText
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+Next, you'll need the DHTMLX RichText source code. Stop the app for now and install the RichText package.
 
 ### Step 1. Package installation
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
+Download the [**trial RichText package**](how_to_start.md#installing-richtext-via-npm-or-yarn) and follow the instructions in the README file. The trial version is available for 30 days.
 
 ### Step 2. Component creation
 
-Now you need to create a Vue component, to add RichText into the application. Create a new file in the ***src/components/*** directory and name it ***Richtext.vue***.
+Create a Vue component to add RichText to your app. Make a new file in the ***src/components/*** directory and name it ***Richtext.vue***.
 
 #### Import source files
 
-Open the ***Richtext.vue*** file and import RichText source files. Note that:
+Open ***Richtext.vue*** and import the RichText source files. Keep in mind:
 
-- if you use PRO version and install the RichText package from a local folder, the import paths look like this:
+- If you're using the PRO version and installed RichText from a local folder, your imports should look like this:
 
 ~~~html title="Richtext.vue"
 <script>
@@ -79,7 +79,7 @@ import 'dhx-richtext-package/dist/richtext.css';
 </script>
 ~~~
 
-- if you use the trial version of RichText, specify the following paths:
+- For the trial version, the imports are:
 
 ~~~html title="Richtext.vue"
 <script>
@@ -88,11 +88,11 @@ import '@dhx/trial-richtext/dist/richtext.css';
 </script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+This tutorial shows how to set up the **trial** version of RichText.
 
 #### Setting containers and adding Richtext
 
-To display Richtext on the page, you need to create a container for RichText and initialize the component using the corresponding constructor:
+To show RichText on the page, set up a container and initialize the component with its constructor:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -120,7 +120,7 @@ export default {
 
 #### Adding styles
 
-To display RichText correctly, you need to specify important styles for RichText and its container in the main css file of the project:
+To make sure RichText displays properly, add some key styles for RichText and its container in your main CSS file:
 
 ~~~css title="main.css"
 /* specify styles for initial page */
@@ -146,7 +146,7 @@ body,
 
 #### Loading data
 
-To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To load data into RichText, create a data set. You can add a ***data.js*** file in the ***src/*** directory with something like:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -158,7 +158,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<RichText/>` component as **props**:
+Then, in ***App.vue***, import the data and initialize it with the `data()` method. Pass the data to the `<RichText/>` component as **props**:
 
 ~~~html {} title="App.vue"
 <script>
@@ -179,7 +179,7 @@ export default {
 </template>
 ~~~
 
-Go to the ***Richtext.vue*** file and apply the passed **props** to the RichText configuration object:
+Now, go back to ***Richtext.vue*** and use the **props** in the RichText configuration:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -209,7 +209,7 @@ export default {
 </template>
 ~~~
 
-You can also use the [`setValue()`](api/methods/set-value.md) method inside the `mounted()` method of Vue to load data into RichText:
+Alternatively, you can use the [`setValue()`](api/methods/set-value.md) method inside the `mounted()` hook to load data into RichText:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -240,13 +240,13 @@ export default {
 </template>
 ~~~
 
-Now the RichText component is ready to use. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+At this point, the RichText component is set up and ready. When it's added to the page, it will initialize RichText with your data. You can adjust the configuration as needed. The full list of available properties is in the [RichText API docs](api/overview/main_overview.md).
 
 #### Handling events
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+When actions happen in RichText, events are triggered. These are useful for running custom code in response. The [full list of events](api/overview/events_overview.md) has more details.
 
-Open ***Richtext.vue*** and complete the `mounted()` method:
+In ***Richtext.vue***, you can update the `mounted()` method to handle events:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -270,10 +270,14 @@ export default {
 // ...
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+Now, start the app and you'll see RichText with your data on the page.
 
-<div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
-</div>
+import trial_richtext from '@site/static/img/trial_richtext.png';
 
-Now you know how to integrate DHTMLX RichText with Vue. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/vue-richtext-demo).
+<img
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
+/>
+
+That's how DHTMLX RichText can be integrated with Vue. Feel free to tweak the code to fit your needs. For a more advanced example, check out [**GitHub**](https://github.com/DHTMLX/vue-richtext-demo).

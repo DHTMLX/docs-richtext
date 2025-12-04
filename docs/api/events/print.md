@@ -1,14 +1,14 @@
 ---
 sidebar_label: print
 title: print Event
-description: You can learn about the print event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the print event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code examples and live demos, and get a free 30-day trial of DHTMLX RichText.
 ---
 
 # print
 
 ### Description
 
-@short: Fires when printing document
+@short: Triggered when the document starts printing
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the print event in the documentation of the DHT
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -27,10 +27,10 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
 // configuration properties
 });
-// subscribe to the "print" event
+// listen for the "print" event
 editor.api.on("print", () => {
     console.log("The document is printing");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

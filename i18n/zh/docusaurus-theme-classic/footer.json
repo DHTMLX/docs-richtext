@@ -1,0 +1,62 @@
+{
+  "link.title.Development center": {
+    "message": "开发中心",
+    "description": "页脚中标题为“开发中心”的链接列标题"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "页脚中标题为“社区”的链接列标题"
+  },
+  "link.title.Company": {
+    "message": "公司",
+    "description": "页脚中标题为“公司”的链接列标题"
+  },
+  "link.item.label.Download RichText": {
+    "message": "下载 RichText",
+    "description": "页脚链接标签为“下载 RichText”，链接至 https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml"
+  },
+  "link.item.label.Examples": {
+    "message": "示例",
+    "description": "页脚链接标签为“示例”，链接至 https://snippet.dhtmlx.com/t55alxiy?tag=richtext"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "页脚链接标签为“博客”，链接至 https://dhtmlx.com/blog/tag/richtext/"
+  },
+  "link.item.label.Forum": {
+    "message": "论坛",
+    "description": "页脚链接标签为“论坛”，链接至 https://forum.dhtmlx.com/c/richtext/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "页脚链接标签为“GitHub”，链接至 https://github.com/DHTMLX"
+  },
+  "link.item.label.Youtube": {
+    "message": "YouTube",
+    "description": "页脚链接标签为“YouTube”，链接至 https://www.youtube.com/user/dhtmlx"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "页脚链接标签为“Facebook”，链接至 https://www.facebook.com/dhtmlx"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "页脚链接标签为“Twitter”，链接至 https://twitter.com/dhtmlx"
+  },
+  "link.item.label.Linkedin": {
+    "message": "领英",
+    "description": "页脚链接标签为“领英”，链接至 https://www.linkedin.com/groups/3345009/"
+  },
+  "link.item.label.About us": {
+    "message": "关于我们",
+    "description": "页脚链接标签为“关于我们”，链接至 https://dhtmlx.com/docs/company.shtml"
+  },
+  "link.item.label.Contact us": {
+    "message": "联系我们",
+    "description": "页脚链接标签为“联系我们”，链接至 https://dhtmlx.com/docs/contact.shtml"
+  },
+  "link.item.label.Licensing": {
+    "message": "许可",
+    "description": "页脚链接标签为“许可”，链接至 https://dhtmlx.com/docs/products/dhtmlxRichText/#editions-licenses"
+  }
+}

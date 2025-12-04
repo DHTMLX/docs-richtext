@@ -1,14 +1,14 @@
 ---
 sidebar_label: insert-link
 title: insert-link Event
-description: You can learn about the insert-link event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the insert-link event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try sample code and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # insert-link
 
 ### Description
 
-@short: Fires when inserting link
+@short: Triggered when a link is inserted
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the insert-link event in the documentation of t
 
 ### Parameters
 
-The callback of the **update-link** event can take an object with the following parameter:
+The callback for the **update-link** event receives an object with this parameter:
 
-- `url` - the url to be inserted
+- `url` - the URL being inserted
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,11 +33,11 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "insert-link" event
+// listen for the "insert-link" event
 editor.api.on("insert-link", (obj) => {
     console.log(obj)
     console.log("The following link was inserted: " + obj.url);
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

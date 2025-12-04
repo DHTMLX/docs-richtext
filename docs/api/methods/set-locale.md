@@ -8,7 +8,7 @@ description: You can learn about the setLocale method in the documentation of th
 
 ### Description
 
-@short: Applies a new locale to RichText
+@short: Updates the locale settings for RichText
 
 ### Usage
 
@@ -18,11 +18,11 @@ setLocale(null | locale?: object): void;
 
 ### Parameters
 
-- `null` - (optional) resets to the default locale (*English*)
-- `locale` - (optional) the object of data of the new locale to be applied
+- `null` - (optional) switches back to the default locale (*English*)
+- `locale` - (optional) an object containing the new locale data to apply
 
 :::info
-Use the `setLocale()` method to apply a new locale to RichText. To reset RichText to the default locale, call the `setLocale()` method without arguments (or with a *null* value).
+The `setLocale()` method updates the locale used by RichText. Calling it without any arguments (or passing *null*) will revert the locale to the default setting.
 :::
 
 ### Example
@@ -32,10 +32,10 @@ const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
 
-// apply the "de" locale to RichText
+// set the locale of RichText to "de"
 editor.setLocale(de);
 ~~~
 
-**Change log:** The method was added in v2.0
+**Change log:** The method was introduced in v2.0
 
 **Related articles:** [Localization](guides/localization.md)

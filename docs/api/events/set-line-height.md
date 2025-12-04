@@ -8,7 +8,7 @@ description: You can learn about the set-line-height event in the documentation 
 
 ### Description
 
-@short: Fires when setting a line height
+@short: Triggered whenever the line height is set
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the set-line-height event in the documentation 
 
 ### Parameters
 
-The callback of the **set-line-height** event can take an object with the following parameter:
+The callback for the **set-line-height** event receives an object containing this parameter:
 
-- `lineHeight` - a line height
+- `lineHeight` - the value of the line height being set
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,15 +33,15 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "set-line-height" event
+// listen for the "set-line-height" event
 editor.api.on("set-line-height", (obj) => {
     console.log(obj);
     console.log("The line height was changed");
 });
-// apply a new line height
+// set a new line height
 editor.api.exec("set-line-height", {
    lineHeight: "15px"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** The event was introduced in v2.0

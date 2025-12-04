@@ -8,7 +8,7 @@ description: You can learn about the getValue method in the documentation of the
 
 ### Description
 
-@short: Returns the RichText value
+@short: Retrieves the current value of the RichText editor
 
 ### Usage
 
@@ -18,9 +18,9 @@ getValue(encoder?: any): string;
 
 ### Parameters
 
-- `encoder` - (optional) a parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
+- `encoder` - (optional) a parser that converts the RichText content into a specific format. Available options include `html` (default) and `text`
 
-You can get the required encoder in the following way:
+To obtain the desired encoder, use the following:
 
 ```jsx
 const toTextEncoder = richtext.text.toText; // text encoder

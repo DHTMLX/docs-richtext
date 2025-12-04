@@ -1,14 +1,14 @@
 ---
 sidebar_label: create-new
 title: create-new Event
-description: You can learn about the create-new event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Discover how the create-new event works in the DHTMLX JavaScript RichText library. Explore developer guides, API references, try out code samples and live demos, and get a free 30-day trial of DHTMLX RichText.
 ---
 
 # create-new
 
 ### Description
 
-@short: Fires when pressing the "New" option within the menubar or via Event Bus methods
+@short: This event triggers when selecting the "New" option from the menubar or by using Event Bus methods.
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the create-new event in the documentation of th
 
 ### Parameters
 
-The callback of the **create-new** event can take an object with the following parameter:
+The callback for the **create-new** event accepts an object with the following property:
 
-- `reset` - resets the history when creating a new file
+- `reset` - indicates whether the history should be reset when a new file is created.
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can utilize the [**Event Bus methods**](api/overview/event_bus_methods_overview.md).
 :::
 
 ### Example
@@ -41,4 +41,4 @@ editor.api.on("create-new", ({ reset }) => {
 editor.api.exec("create-new", { reset: true });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

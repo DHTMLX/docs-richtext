@@ -7,74 +7,74 @@ description: You can learn about the integration with Svelte in the documentatio
 # Integration with Svelte
 
 :::tip
-You should be familiar with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, please refer to the [**Svelte documentation**](https://svelte.dev/).
+It's helpful to already know the basics of **Svelte** for this guide. If you need a quick refresher, check out the [**Svelte documentation**](https://svelte.dev/).
 :::
 
-DHTMLX RichText is compatible with **Svelte**. We have prepared code examples on how to use DHTMLX RichText with **Svelte**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).
+DHTMLX RichText works well with **Svelte**. There are some handy code examples showing how to use DHTMLX RichText in Svelte apps. More details and examples are available in the [**Example on GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).
 
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before starting a new project, make sure you have [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/) installed.
 :::
 
-There are several ways of creating a **Svelte** project:
+There are a couple of ways to set up a **Svelte** project:
 
-- you can use the [**SvelteKit**](https://kit.svelte.dev/)
+- Use [**SvelteKit**](https://kit.svelte.dev/)
 
 or
 
-- you can also use **Svelte with Vite** (but without SvelteKit):
+- Go with **Svelte and Vite** (without SvelteKit):
 
 ~~~json
 npm create vite@latest
 ~~~
 
-Check the details in the [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
+You can find more details in this [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
 
 ### Installation of dependencies
 
-Let's name the project as **my-svelte-richtext-app** and go to the app directory:
+Let's call the project **my-svelte-richtext-app** and move into its directory:
 
 ~~~json
 cd my-svelte-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Next, install the dependencies and start the development server using your package manager of choice:
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+- For [**yarn**](https://yarnpkg.com/):
 
 ~~~json
 yarn
 yarn start
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+- For [**npm**](https://www.npmjs.com/):
 
 ~~~json
 npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app should now be running locally (for example, at `http://localhost:3000`).
 
 ## Creating RichText
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+You'll need the DHTMLX RichText source code. Before going further, stop the app and install the RichText package.
 
 ### Step 1. Package installation
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
+Download the [**trial RichText package**](how_to_start.md#installing-richtext-via-npm-or-yarn) and follow the steps in the README file. The trial version works for 30 days.
 
 ### Step 2. Component creation
 
-Now you need to create a Svelte component, to add a RichText into the application. Let's create a new file in the ***src/*** directory and name it ***Richtext.svelte***.
+Now it's time to make a Svelte component for RichText. In the ***src/*** directory, create a new file called ***Richtext.svelte***.
 
 #### Importing source files
 
-Open the ***Richtext.svelte*** file and import RichText source files. Note that:
+In ***Richtext.svelte***, import the RichText source files. Here's how the imports look depending on your version:
 
-- if you use PRO version and install the RichText package from a local folder, the import paths look like this:
+- For the PRO version installed locally, use these paths:
 
 ~~~html title="Richtext.svelte"
 <script>
@@ -83,7 +83,7 @@ import 'dhx-richtext-package/dist/richtext.css';
 </script>
 ~~~
 
-- if you use the trial version of RichText, specify the following paths:
+- For the trial version, use these imports:
 
 ~~~html title="Richtext.svelte"
 <script>
@@ -92,11 +92,11 @@ import '@dhx/trial-richtext/dist/richtext.css';
 <script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+This guide uses the **trial** version as an example.
 
 #### Setting containers and adding RichText
 
-To display RichText on the page, you need to create container for RichText, and initialize the component using the corresponding constructor:
+To show RichText in your app, set up a container and initialize the component with its constructor:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -104,7 +104,7 @@ import { onMount, onDestroy } from "svelte";
 import { Richtext} from "@dhx/trial-richtext";
 import "@dhx/trial-richtext/dist/richtext.css";
 
-let richtext_container; // initialize container for RichText
+let richtext_container; // container for RichText
 let editor;
 
 onMount(() => {
@@ -113,7 +113,7 @@ onMount(() => {
 });
 
 onDestroy(() => {
-    editor?.destructor(); // destruct RichText
+    editor?.destructor(); // clean up RichText
 });
 </script>
 
@@ -124,7 +124,7 @@ onDestroy(() => {
 
 #### Loading data
 
-To add data into the RichText, we need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To load data into RichText, you'll need a data set. Create a ***data.js*** file in the ***src/*** directory and add some sample data:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -136,7 +136,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the new created `<RichText/>` components as **props**:
+Then, in ***App.svelte***, import the data and pass it as a prop to your `<RichText/>` component:
 
 ~~~html {} title="App.svelte"
 <script>
@@ -149,7 +149,7 @@ const { value } = getData();
 <RichText value={value} />
 ~~~
 
-Go to the ***Richtext.svelte*** file and apply the passed **props** to the RichText configuration object:
+Now, update ***Richtext.svelte*** to use the passed **props** in the RichText configuration:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -179,7 +179,7 @@ onDestroy(() => {
 </div>
 ~~~
 
-You can also use the [`setValue()`](/api/methods/set-value.md) method inside the `onMount()` method of Svelte to load data into RichText:
+Alternatively, you can use the [`setValue()`](api/methods/set-value.md) method within Svelte's `onMount()` to load the data:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -210,13 +210,13 @@ onDestroy(() => {
 </div>
 ~~~
 
-Now the RichText component is ready to use. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+At this point, the RichText component is set up and will load with your data when added to the page. You can tweak the configuration as needed. For more options, check out the [RichText API docs](api/overview/main_overview.md).
 
 #### Handling events
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+RichText emits events when actions happen, and you can listen to these to run your own code. The [full list of events](api/overview/events_overview.md) is available for reference.
 
-Open ***Richtext.svelte*** and complete the `onMount()` method in the following way:
+To handle events, update ***Richtext.svelte*** like this in the `onMount()` method:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -241,7 +241,7 @@ onDestroy(() => {
 
 ### Step 3. Adding RichText into the app
 
-To add the component into the app, open the **App.svelte** file and replace the default code with the following one:
+To use the component in your app, open **App.svelte** and replace the default content with:
 
 ~~~html title="App.svelte"
 <script>
@@ -254,10 +254,14 @@ To add the component into the app, open the **App.svelte** file and replace the 
 <RichText value={value}  />
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+Now, start up the app and you'll see RichText loaded with your data on the page.
 
-<div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
-</div>
+import trial_richtext from '@site/static/img/trial_richtext.png';
 
-Now you know how to integrate DHTMLX RichText with Svelte. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).
+<img
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
+/>
+
+That's all there is to integrating DHTMLX RichText with Svelte. Feel free to adjust the code to fit your needs. If you want to check out a more advanced example, it's available on [**GitHub**](https://github.com/DHTMLX/svelte-richtext-demo).

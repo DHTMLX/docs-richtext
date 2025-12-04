@@ -7,79 +7,79 @@ description: You can learn about the integration with Angular in the documentati
 # Integration with Angular
 
 :::tip
-You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://v17.angular.io/docs).
+It's helpful to be familiar with the main ideas and patterns of **Angular** before jumping in here. For a quick refresher, check out the [**Angular documentation**](https://v17.angular.io/docs).
 :::
 
-DHTMLX RichText is compatible with **Angular**. We have prepared code examples on how to use DHTMLX RichText with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
+DHTMLX RichText works well with **Angular**. There are code samples available showing how to use DHTMLX RichText in an **Angular** project. For more details, take a look at the [**Example on GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
 
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Angular CLI**](https://v17.angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+Before starting a new project, make sure [**Angular CLI**](https://v17.angular.io/cli) and [**Node.js**](https://nodejs.org/en/) are installed.
 :::
 
-Create a new **my-angular-richtext-app** project using Angular CLI. Run the following command for this purpose:
+To set up a new **my-angular-richtext-app** project using Angular CLI, just run:
 
 ~~~json
 ng new my-angular-richtext-app
 ~~~
 
 :::note
-If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
+To keep things simple while following this guide, turn off Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating your Angular app!
 :::
 
-The command above installs all the necessary tools, so you don't need to run any additional commands.
+This command sets up everything needed, so there's no need for any extra installation steps.
 
 ### Installation of dependencies
 
-Go to the new created app directory:
+Move into your new app's directory:
 
 ~~~json
 cd my-angular-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use the [**yarn**](https://yarnpkg.com/) package manager:
+Install the dependencies and start the development server with [**yarn**](https://yarnpkg.com/):
 
 ~~~json
 yarn
 yarn start
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app will be up and running locally (for example, at `http://localhost:3000`).
 
 ## Creating RichText
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+Next, grab the DHTMLX RichText source code. Stop the app for a moment and install the RichText package.
 
 ### Step 1. Package installation
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
-  
+Download the [**trial RichText package**](how_to_start.md#installing-richtext-via-npm-or-yarn) and follow the steps in the README file. Just a heads-up: the trial version is good for 30 days.
+
 ### Step 2. Component creation
 
-Now you need to create an Angular component, to add Richtext into the application. Create the **richtext** folder in the **src/app/** directory, add a new file into it and name it **richtext.component.ts**.
+To add RichText to your app, create a new Angular component. Make a **richtext** folder in **src/app/**, then add a new file called **richtext.component.ts**.
 
 #### Import source files
 
-Open the **richtext.component.ts** file and import RichText source files. Note that:
+Open **richtext.component.ts** and bring in the RichText source files. Here's how the import path should look:
 
-- if you use PRO version and install the RichText package from a local folder, the imported path looks like this:
+- For the PRO version installed from a local folder:
 
 ~~~jsx
 import { Richtext} from 'dhx-richtext-package';
 ~~~
 
-- if you use the trial version of RichText, specify the following path:
+- For the trial version:
 
 ~~~jsx
 import { Richtext} from '@dhx/trial-richtext';
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+This guide shows how to set up the **trial** version.
 
 #### Set containers and initialize the Richtext
 
-To display RichText on the page, you need to set a container for RichText, and initialize the component using the corresponding constructor:
+To show RichText on the page, set up a container and initialize the component with its constructor:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
@@ -113,7 +113,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 #### Adding styles
 
-To display RichText correctly, you need to provide the corresponding styles. For this purpose, you can create the **richtext.component.css** file in the **src/app/richtext/** directory and specify important styles for RichText and its container:
+To make sure RichText looks right, add the needed styles. Create a **richtext.component.css** file in **src/app/richtext/** and include these styles for RichText and its container:
 
 ~~~css title="richtext.component.css"
 /* import RichText styles */
@@ -141,7 +141,7 @@ body{
 
 #### Loading data
 
-To add data into RichText, you need to provide a data set. You can create the **data.ts** file in the **src/app/richtext/** directory and add some data into it:
+To load data into RichText, just provide a data set. Make a **data.ts** file in **src/app/richtext/** and add some sample data:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -153,7 +153,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***richtext.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of RichText within the `ngOnInit()` method, as shown below:
+Next, open ***richtext.component.ts***. Import the data file and set the data properties in the RichText configuration inside the `ngOnInit()` method, like this:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
@@ -188,7 +188,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-You can also use the [`setValue()`](api/methods/set-value.md) method inside the `ngOnInit()` method of Angular to load data into RichText.
+Alternatively, you can use the [`setValue()`](api/methods/set-value.md) method in `ngOnInit()` to load data into RichText.
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
@@ -225,13 +225,13 @@ export class RichTextComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the RichText component is ready to use. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+At this point, the RichText component is set up and ready. When it's added to the page, RichText will initialize with the provided data. You can also add any configuration options you need. For the full list of properties, check out the [RichText API docs](api/overview/main_overview.md).
 
 #### Handling events
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+Whenever something happens in RichText, it fires an event. You can listen for these events to trigger your own code. The [full list of events](api/overview/events_overview.md) is available.
 
-Open the **richtext.component.ts** file and complete the `ngOnInit()` method in the following way:
+Edit the **richtext.component.ts** file and update the `ngOnInit()` method like this:
 
 ~~~jsx {} title="richtext.component.ts"
 // ...
@@ -250,7 +250,7 @@ ngOnDestroy(): void {
 
 ### Step 3. Adding RichText into the app
 
-To add the ***RichTextComponent*** component into your app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
+To use the ***RichTextComponent*** in your app, open ***src/app/app.component.ts*** and replace the default code with:
 
 ~~~jsx {} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -264,7 +264,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the ***app.module.ts*** file in the ***src/app/*** directory and specify the *RichTextComponent* as shown below:
+Now, create ***app.module.ts*** in ***src/app/*** and add *RichTextComponent* as shown below:
 
 ~~~jsx {} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -281,7 +281,7 @@ import { RichTextComponent } from "./richtext/richtext.component";
 export class AppModule {}
 ~~~
 
-The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
+The last thing to do is update ***src/main.ts*** with the following code:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -291,10 +291,14 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+Now you can start the app and see RichText loaded with data on the page.
 
-<div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
-</div>
+import trial_richtext from '@site/static/img/trial_richtext.png';
 
-Now you know how to integrate DHTMLX RichText with Angular. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
+<img
+  src={trial_richtext}
+  alt="Trial richtext"
+  className="img_border"
+/>
+
+That's all it takes to get DHTMLX RichText working with Angular. Feel free to tailor the code to your own needs. A complete example can be found on [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo).

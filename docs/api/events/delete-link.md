@@ -8,7 +8,7 @@ description: You can learn about the delete-link event in the documentation of t
 
 ### Description
 
-@short: Fires when deleting a link
+@short: Triggered whenever a link is deleted
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the delete-link event in the documentation of t
 ~~~
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,4 +33,4 @@ editor.api.on("delete-link", () => {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0

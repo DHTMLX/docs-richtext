@@ -8,7 +8,7 @@ description: You can learn about the on method in the documentation of the DHTML
 
 ### Description
 
-@short: Allows removing/detaching event handlers
+@short: Enables the removal or detachment of event handlers
 
 ### Usage
 
@@ -18,12 +18,12 @@ api.detach( tag: string ): void;
 
 ### Parameters
 
-- `tag` - (required) the name of the action tag
+- `tag` - (required) specifies the name of the action tag
 
 ### Events
 
 :::info
-The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
+A complete list of RichText internal events is available [**here**](api/overview/events_overview.md)
 :::
 
 ### Example

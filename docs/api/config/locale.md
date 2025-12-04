@@ -1,17 +1,17 @@
 ---
 sidebar_label: locale
 title: locale Config
-description: You can learn about the locale config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the locale config in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # locale
 
 ### Description
 
-@short: Optional. An object that includes localization labels of RichText
+@short: Optional. An object containing localization labels for RichText
 
 :::info
-The **locale** object needs to include all labels of RichText with the corresponding translations.
+The **locale** object should have all the RichText labels along with their respective translations.
 :::
 
 ### Usage
@@ -22,10 +22,10 @@ locale?: object;
 
 ### Default config
 
-By default, RichText uses the **English** locale. You can set it to the custom locale as well.
+By default, RichText comes with the **English** locale. You also have the option to set a custom locale.
 
 :::tip
-To change the current locale dynamically, you can use the [**setLocale()**](api/methods/set-locale.md) method of RichText
+To switch the locale on the fly, use the [**setLocale()**](api/methods/set-locale.md) method of RichText
 :::
 
 ### Example
@@ -33,14 +33,14 @@ To change the current locale dynamically, you can use the [**setLocale()**](api/
 ~~~jsx {3}
 // initialize RichText
 const editor = new richtext.RichText("#root", {
-    locale: richtext.locales.cn // the Chineese locale will be set initially
-    // locale: richtext.locales.en // the English locale will be set initially
-    // locale: richtext.locales.de // the Germany locale will be set initially
+    locale: richtext.locales.cn // the Chinese locale is set initially
+    // locale: richtext.locales.en // the English locale is set initially
+    // locale: richtext.locales.de // the German locale is set initially
     // other configuration properties
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**Change log:** This property was introduced in v2.0
 
 **Related articles:** [Localization](guides/localization.md)
 

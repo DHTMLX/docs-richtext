@@ -1,20 +1,20 @@
 ---
 sidebar_label: defaultStyles
 title: defaultStyles Config
-description: You can learn about the defaultStyles config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the defaultStyles configuration in the DHTMLX JavaScript RichText library documentation. Find developer guides, API references, try code samples and live demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # defaultStyles
 
 ### Description
 
-@short: Optional. Specifies default style values for specific block types
+@short: Optional. Defines default style settings for specific block types.
 
 ### Usage
 
 ~~~jsx {}
 defaultStyles?: {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+    "*"?: { // applies to all blocks, letting you set common properties for all of them
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;
@@ -72,7 +72,7 @@ defaultStyles?: {
 ~~~
 
 :::important
-The `defaultStyles` property DOES NOT set the actual CSS to the affected blocks. CSS styles have to be applied separately:
+The `defaultStyles` property doesn't actually apply CSS styles to the blocks. To see the styles take effect, you need to add the corresponding CSS separately:
 
 ```jsx title="index.js"
 new richtext.Richtext("#root", {
@@ -98,7 +98,7 @@ new richtext.Richtext("#root", {
 </style>
 ```
 
-In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles assigned to `h2` blocks as well.
+In this example, every `h2` block is set to use the `"Roboto"` font-family with a font size of 28px, along with changes to the text and background colors. The CSS styles for `h2` blocks are also applied accordingly.
 :::
 
 ### Default config
@@ -137,7 +137,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was updated in v2.0
+**Change log:** This property was updated in version 2.0
 
 **Related articles:** [Configuration](guides/configuration.md)
 

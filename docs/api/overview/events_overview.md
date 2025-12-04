@@ -1,13 +1,13 @@
 ---
 sidebar_label: Events overview
 title: Events Overview
-description: You can have an Events overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Find a complete overview of events in the DHTMLX JavaScript RichText editor documentation. Explore developer guides, API references, try code samples and live demos, and get a free 30-day evaluation of DHTMLX RichText.
 ---
 
 # Events overview
 
-This page lists all events emitted by the DHTMLX RichText editor.  
-You can use these events to extend functionality, track user interaction, or trigger custom behavior.
+Here you'll find a list of all the events triggered by the DHTMLX RichText editor. 
+These events allow you to enhance functionality, monitor user actions, or initiate custom responses.
 
 | Name                                                   | Description                                   |
 | ------------------------------------------------------ | --------------------------------------------- |

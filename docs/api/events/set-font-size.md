@@ -1,14 +1,14 @@
 ---
 sidebar_label: set-font-size
 title: set-font-size Event
-description: You can learn about the set-font-size event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: Explore the set-font-size event in the DHTMLX JavaScript RichText library documentation. Check out developer guides, API references, try demos, and download a free 30-day trial of DHTMLX RichText.
 ---
 
 # set-font-size
 
 ### Description
 
-@short: Fires when setting a font size
+@short: Triggered when the font size is set
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the set-font-size event in the documentation of
 
 ### Parameters
 
-The callback of the **set-font-size** event can take an object with the following parameter:
+The callback for the **set-font-size** event receives an object with this parameter:
 
-- `fontSize` - a font size to be applied
+- `fontSize` - the font size to apply
 
 :::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+To manage internal events, you can refer to [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### Example
@@ -33,15 +33,15 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 const editor = new richtext.Richtext("#root", {
     // configuration properties
 });
-// subscribe to the "set-font-size" event
+// listen for the "set-font-size" event
 editor.api.on("set-font-size", (obj) => {
     console.log(obj.fontSize);
     console.log("The font size was changed");
 });
-// apply new font size
+// set a new font size
 editor.api.exec("set-font-size", {
     fontSize: "11px"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**Change log:** This event was introduced in v2.0
