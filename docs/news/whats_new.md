@@ -4,6 +4,30 @@ title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
+## Version 2.0.5 
+
+Released on March 6, 2026
+
+### Fixes
+
+- IME input is not processed correctly
+- Composition-based input (e.g., Chinese, Japanese, Korean on desktop) is not processed correctly
+- `margin-left` and `line-height` properties are ignored when parsing HTML
+- Inline elements inherit properties from block-level parents
+- Unable to copy text between two editor instances
+- Selection is incorrectly handled with two (or more) editor instances active
+- Cursor is incorrectly positioned when only content in paragraph is an image
+- Indefinite wrapping of subscript and superscript elements
+- Pasting images inlines them instead of uploading them first
+- Empty inline blocks cannot be removed at specific positions (first or last line)
+- Editor does not scroll to cursor when typing
+- Input on Android is not processed correctly
+- Incorrect selection handling for HR elements
+- Incorrect render with empty initial values
+- Copying content may fail if it contains self-closing blocks
+- Chrome: cannot insert emojis from context menu
+- Firefox: select all (CTRL+A) is not handled correctly
+
 ## Version 2.0.4
 
 Released on October 15, 2025
