@@ -1,0 +1,40 @@
+---
+sidebar_label: api.setNext()
+title: setNext Method
+description: You can learn about the setNext method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+---
+
+# api.setNext()
+
+### Description
+
+@short: Allows adding some action into the Event Bus order
+
+### Usage
+
+~~~jsx {}
+api.setNext(next: any): void;
+~~~
+
+### Parameters
+
+- `next` - (required) the action to be included into the **Event Bus** order  
+
+### Example
+
+~~~jsx {10-11}
+const server = "https://some-backend-url";
+// Assume that you have a custom server service class named someServerService
+const someServerService = new ServerDataService(server);
+
+fetch(server + "/data").then((res) => res.json()).then((data) => {
+    const editor = new richtext.Richtext("#root", {
+        value: data
+    });
+
+    // Integrate someServerService into the Event Bus order of widget
+    editor.api.setNext(someServerService);
+});
+~~~
+
+**Change log:** The method was added in v2.0
