@@ -1,41 +1,41 @@
 ---
 sidebar_label: layoutMode
-title: layoutMode Config
-description: You can learn about the layoutMode config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация layoutMode
+description: Документация по свойству layoutMode библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # layoutMode
 
-### Description
+### Описание {#description}
 
-@short: Optional. Specifies the layout mode for the main editor area
+@short: Необязательный. Задаёт режим отображения основной области редактора
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 layoutMode: "classic" | "document";
 ~~~
 
-The `"classic"` mode represents the edit area that fits the entire page. The `"document"` mode closely represent the real document sizes (sizes used: A4, A5, A6, A7).
+Режим `"classic"` — область редактирования занимает всю страницу. Режим `"document"` имитирует реальные размеры документа (форматы A4, A5, A6, A7).
 
-### Default config
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 layoutMode: "classic";
 ~~~
 
-### Example
+### Пример {#example}
 
 ~~~jsx {3}
-// initialize RichText
+// инициализация RichText
 new richtext.Richtext("#root", {
-    layoutMode: "document"  // initializes RichText with "document" mode by default
-    // other configuration properties
+    layoutMode: "document"  // инициализирует RichText в режиме "document" по умолчанию
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was added in v2.0 instead of the removed `mode` property
+**История изменений:** Свойство добавлено в v2.0 на замену удалённому свойству `mode`
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Связанные статьи:** [Конфигурация](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)
+**Связанный пример:** [RichText. Инициализация](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

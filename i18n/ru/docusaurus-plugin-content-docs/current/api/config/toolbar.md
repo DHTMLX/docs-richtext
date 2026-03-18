@@ -1,58 +1,58 @@
 ---
 sidebar_label: toolbar
-title: toolbar Config
-description: You can learn about the toolbar config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация toolbar
+description: Документация по свойству toolbar библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # toolbar
 
-### Description
+### Описание {#description}
 
-@short: Optional. Enables toolbar and allows users to specify/configure buttons displayed within toolbar
+@short: Необязательный. Включает панель инструментов и позволяет настроить отображаемые кнопки
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 toolbar?: boolean | Array<string | { id: string, type: string, label?: string, tooltip?: string, css?: string, handler?: () => any }>;
 ~~~
 
-#### Available buttons within Toolbar
+#### Доступные кнопки панели инструментов {#available-buttons-within-toolbar}
 
-You can specify the following buttons in the RichText toolbar:
+В панели инструментов RichText доступны следующие кнопки:
 
-| Button              | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| `undo`              | Reverts the most recent user action.                                        |
-| `redo`              | Reapplies the previously undone action.                                     |
-| `style`             | Allows selection of text styles (e.g., headings, paragraph, etc.).          |
-| `font-family`       | Changes the font of the selected text.                                      |
-| `font-size`         | Adjusts the size of the selected text.                                      |
-| `bold`              | Applies bold formatting to the selected text.                               |
-| `italic`            | Applies italic formatting to the selected text.                             |
-| `underline`         | Underlines the selected text.                                               |
-| `strike`            | Applies strikethrough formatting.                                           |
-| `subscript`         | Formats the text as subscript.                                              |
-| `superscript`       | Formats the text as superscript.                                            |
-| `text-color`        | Changes the text color.                                                     |
-| `background-color`  | Changes the background (highlight) color of the text.                       |
-| `align`             | Sets text alignment (left, center, right, justified).                       |
-| `indent`            | Increases text block indentation.                                           |
-| `outdent`           | Decreases paragraph indentation.                                            |
-| `line-height`       | Adjusts the line spacing (line height).                                     |
-| `quote`             | Formats the text as a blockquote.                                           |
-| `bulleted-list`     | Creates a bulleted list.                                                    |
-| `numbered-list`     | Creates a numbered list.                                                    |
-| `link`              | Inserts a hyperlink.                                                        |
-| `image`             | Inserts an image.                                                           |
-| `line`              | Inserts a horizontal line.                                                  |
-| `clear`             | Removes all formatting from the selected text.                              |
-| `print`             | Opens the print dialog.                                                     |
-| `fullscreen`        | Toggles fullscreen mode.                                                    |
-| `mode`              | switches between [layout modes](api/config/layout-mode.md) (classic/document)|
-| `shortcuts`         | Displays a list of available keyboard shortcuts.                            |
-| `separator`         | Adds a visual separator between toolbar groups.                             |
+| Кнопка              | Описание                                                                     |
+|---------------------|------------------------------------------------------------------------------|
+| `undo`              | Отменяет последнее действие пользователя.                                    |
+| `redo`              | Повторяет отменённое действие.                                               |
+| `style`             | Позволяет выбрать стиль текста (заголовки, абзац и т.д.).                   |
+| `font-family`       | Изменяет шрифт выделенного текста.                                           |
+| `font-size`         | Изменяет размер выделенного текста.                                          |
+| `bold`              | Применяет жирное начертание.                                                 |
+| `italic`            | Применяет курсивное начертание.                                              |
+| `underline`         | Подчёркивает выделенный текст.                                               |
+| `strike`            | Применяет зачёркивание.                                                      |
+| `subscript`         | Форматирует текст как нижний индекс.                                         |
+| `superscript`       | Форматирует текст как верхний индекс.                                        |
+| `text-color`        | Изменяет цвет текста.                                                        |
+| `background-color`  | Изменяет цвет фона (выделения) текста.                                       |
+| `align`             | Задаёт выравнивание текста (по левому краю, по центру, по правому краю, по ширине). |
+| `indent`            | Увеличивает отступ текстового блока.                                         |
+| `outdent`           | Уменьшает отступ абзаца.                                                     |
+| `line-height`       | Регулирует межстрочный интервал.                                             |
+| `quote`             | Форматирует текст как цитату.                                                |
+| `bulleted-list`     | Создаёт маркированный список.                                                |
+| `numbered-list`     | Создаёт нумерованный список.                                                 |
+| `link`              | Вставляет гиперссылку.                                                       |
+| `image`             | Вставляет изображение.                                                       |
+| `line`              | Вставляет горизонтальную линию.                                              |
+| `clear`             | Удаляет всё форматирование с выделенного текста.                             |
+| `print`             | Открывает диалог печати.                                                     |
+| `fullscreen`        | Переключает полноэкранный режим.                                             |
+| `mode`              | Переключает между [режимами отображения](api/config/layout-mode.md) (classic/document). |
+| `shortcuts`         | Отображает список доступных горячих клавиш.                                  |
+| `separator`         | Добавляет визуальный разделитель между группами кнопок.                      |
 
-You can use these strings to configure toolbar buttons as follows:
+Эти строки можно использовать для настройки кнопок панели инструментов:
 
 ~~~jsx {2-7}
 new richtext.Richtext("#root", {
@@ -60,47 +60,47 @@ new richtext.Richtext("#root", {
         "bold",
         "italic",
         "separator",
-        // other buttons
+        // другие кнопки
     ],
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-#### Custom buttons within Toolbar
+#### Пользовательские кнопки панели инструментов {#custom-buttons-within-toolbar}
 
-You can specify custom buttons as objects with the following parameters:
+Пользовательские кнопки задаются как объекты со следующими параметрами:
 
-- `type` - (required) specifies a custom control type. The following types are available: `"button"`, `"richselect"`, `"colorpicker"`
-- `id` - (optional) a custom control ID (cannot overlap with existing control ID)
-- `label` - (optional) a button label (combines with icon)
-- `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
-- `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-- `handler` - (optional) a callback function that executes when the button is clicked
+- `type` — (обязательный) тип пользовательского элемента управления. Доступные типы: `"button"`, `"richselect"`, `"colorpicker"`
+- `id` — (необязательный) идентификатор элемента управления (не должен совпадать с существующими)
+- `label` — (необязательный) метка кнопки (отображается вместе с иконкой)
+- `tooltip` — (необязательный) подсказка при наведении (если не задана, используется значение `label`)
+- `css` — (необязательный) CSS-класс элемента управления (поддерживаемые классы по умолчанию: wx-primary, wx-secondary)
+- `handler` — (необязательный) колбэк, вызываемый при нажатии кнопки
 
 ~~~jsx {6-32}
 new richtext.Richtext("#root", {
     toolbar: [
-        // buttons (strings represent buttons only)
+        // кнопки (строки представляют только кнопки)
         "bold",
         "italic",
-        // predefined buttons (user cannot define any other options for these (no labels, tooltips, options, etc.), so only ({ type: "button", id: string })
+        // стандартные кнопки (нельзя задать метки, подсказки и другие параметры, только { type: "button", id: string })
         {
             type: "button",
             id: "fullscreen",
         },
-        // user must specify the correct type if they want to use a predefined control (e.g. richselect/colorpicker)
-        // non-matching types will be ignored (not added to the toolbar)
+        // для стандартных элементов нужно указать правильный тип (например, richselect/colorpicker)
+        // неверный тип будет проигнорирован (кнопка не добавится в панель)
         {
-            type: "richselect", // type: "button" - incorrect, will be ignored
+            type: "richselect", // type: "button" - неверно, будет проигнорировано
             id: "mode",
         },
-        // custom buttons (supported options are below)
-        // user can only define custom buttons (no richselect/colorpicker support atm)
+        // пользовательские кнопки (доступные параметры ниже)
+        // можно задавать только пользовательские кнопки (richselect/colorpicker пока не поддерживаются)
         {
             type: "button",
             id: "some",
             label: "Some",
-            handler: () => {/* custom logic */}
+            handler: () => {/* пользовательская логика */}
         },
         {
             type: "button",
@@ -108,25 +108,25 @@ new richtext.Richtext("#root", {
             icon: "wxo-help",
             label: "Other",
             tooltip: "Some tooltip",
-            handler: () => {/* custom logic */}
+            handler: () => {/* пользовательская логика */}
         }
     ],
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-#### Hide Toolbar
+#### Скрыть панель инструментов {#hide-toolbar}
 
-If you need to hide toolbar, set the `toolbar` property to `false` as follows:
+Чтобы скрыть панель инструментов, установите свойство `toolbar` в `false`:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
     toolbar: false
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-### Default config
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 const defaultToolbarButtons = {
@@ -165,55 +165,55 @@ const defaultToolbarButtons = {
 };
 ~~~
 
-:::tip
-Default toolbar controls are exported by the RichText widget and can be accessed via `richtext.defaultToolbarButtons`.
+:::tip[Совет]
+Кнопки панели инструментов по умолчанию экспортируются виджетом RichText и доступны через `richtext.defaultToolbarButtons`.
 
 ```jsx{4}
-// initialize RichText
+// инициализация RichText
 new richtext.Richtext("#root", {
     toolbar: [
         ...richtext.defaultToolbarButtons,
         {
             type: "button",
-            id: "btn1", // button id (cannot overlap with existing button ids if you want to apply custom logic)
-            icon: "wxo-help", // button icon (combines with label)
-            css: "rounded", // css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-            label: "Custom button", // button label (combines with icon)
-            tooltip: "Some tooltip", // tooltip displayed on hover (if not specified, uses the value from "label")
+            id: "btn1", // id кнопки (не должен совпадать с существующими, если нужна своя логика)
+            icon: "wxo-help", // иконка кнопки (отображается вместе с меткой)
+            css: "rounded", // CSS-класс элемента управления (поддерживаемые: wx-primary, wx-secondary)
+            label: "Custom button", // метка кнопки (отображается вместе с иконкой)
+            tooltip: "Some tooltip", // подсказка при наведении (если не задана, используется значение label)
         }
     ]
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ```
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {3-18}
-// initialize RichText
+// инициализация RichText
 new richtext.Richtext("#root", {
     toolbar: [
         "bold",
         "italic",
         "separator",
-        // custom buttons (all supported options are used below)
-        // user can only define custom buttons (no richselect/colorpicker support at the moment)
+        // пользовательские кнопки (используются все доступные параметры)
+        // можно задавать только пользовательские кнопки (richselect/colorpicker пока не поддерживаются)
         {
             type: "button",
-            id: "btn1", // button id (cannot overlap with existing button ids if you want to apply custom logic)
-            icon: "wxo-help", // button icon (combines with label)
-            css: "rounded", // css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-            label: "Custom button", // button label (combines with icon)
-            tooltip: "Some tooltip", // tooltip displayed on hover (if not specified, uses the value from "label")
-            handler: () => ..., // custom logic attached to this button
+            id: "btn1", // id кнопки (не должен совпадать с существующими, если нужна своя логика)
+            icon: "wxo-help", // иконка кнопки (отображается вместе с меткой)
+            css: "rounded", // CSS-класс элемента управления (поддерживаемые: wx-primary, wx-secondary)
+            label: "Custom button", // метка кнопки (отображается вместе с иконкой)
+            tooltip: "Some tooltip", // подсказка при наведении (если не задана, используется значение label)
+            handler: () => ..., // пользовательская логика для этой кнопки
         }
     ]
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**История изменений:** Свойство добавлено в v2.0
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Связанные статьи:** [Конфигурация](guides/configuration.md)
 
-**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**Связанный пример:** [RichText. Пользовательский элемент управления и упрощённая панель инструментов](https://snippet.dhtmlx.com/wda202ih?tag=richtext)

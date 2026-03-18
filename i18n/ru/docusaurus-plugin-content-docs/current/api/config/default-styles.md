@@ -1,20 +1,20 @@
 ---
 sidebar_label: defaultStyles
-title: defaultStyles Config
-description: You can learn about the defaultStyles config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация defaultStyles
+description: Документация по свойству defaultStyles библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # defaultStyles
 
-### Description
+### Описание {#description}
 
-@short: Optional. Specifies default style values for specific block types
+@short: Необязательный. Задаёт значения стилей по умолчанию для определённых типов блоков
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 defaultStyles?: {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+    "*"?: { // применяется ко всем блокам, позволяя задать общие свойства для них
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;
@@ -71,13 +71,13 @@ defaultStyles?: {
 };
 ~~~
 
-:::important
-The `defaultStyles` property DOES NOT set the actual CSS to the affected blocks. CSS styles have to be applied separately:
+:::important[Важно]
+Свойство `defaultStyles` НЕ применяет CSS напрямую к блокам. CSS-стили нужно задавать отдельно:
 
 ```jsx title="index.js"
 new richtext.Richtext("#root", {
     defaultStyles: {
-        h2: { 
+        h2: {
             "font-family": "Roboto",
             "font-size": "28px",
             color: "purple",
@@ -98,10 +98,10 @@ new richtext.Richtext("#root", {
 </style>
 ```
 
-In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles assigned to `h2` blocks as well.
+В этом примере всем блокам `h2` задаётся шрифт `"Roboto"` размером 28px, а также изменяются цвет текста и фона. CSS-стили также применяются к блокам `h2`.
 :::
 
-### Default config
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 const defaultStyles = {
@@ -117,10 +117,10 @@ const defaultStyles = {
 };
 ~~~
 
-### Example
+### Пример {#example}
 
 ~~~jsx {3-13}
-// initialize RichText
+// инициализация RichText
 new richtext.Richtext("#root", {
     defaultStyles: {
         h4: {
@@ -133,12 +133,12 @@ new richtext.Richtext("#root", {
             "font-family": "Roboto"
         }
     },
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was updated in v2.0
+**История изменений:** Свойство обновлено в v2.0
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Связанные статьи:** [Конфигурация](guides/configuration.md)
 
-**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)
+**Связанный пример:** [RichText. Изменение значений типографики по умолчанию (шрифт, размер шрифта и т.д.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)

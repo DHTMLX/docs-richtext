@@ -1,47 +1,47 @@
 ---
 sidebar_label: locale
-title: locale Config
-description: You can learn about the locale config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация locale
+description: Документация по свойству locale библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # locale
 
-### Description
+### Описание {#description}
 
-@short: Optional. An object that includes localization labels of RichText
+@short: Необязательный. Объект с метками локализации RichText
 
-:::info
-The **locale** object needs to include all labels of RichText with the corresponding translations.
+:::info[Информация]
+Объект **locale** должен содержать все метки RichText с соответствующими переводами.
 :::
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 locale?: object;
 ~~~
 
-### Default config
+### Конфигурация по умолчанию {#default-config}
 
-By default, RichText uses the **English** locale. You can set it to the custom locale as well.
+По умолчанию RichText использует **английскую** локаль. Вы можете задать любую другую.
 
-:::tip
-To change the current locale dynamically, you can use the [**setLocale()**](api/methods/set-locale.md) method of RichText
+:::tip[Совет]
+Для динамической смены локали используйте метод [**setLocale()**](api/methods/set-locale.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {3}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.RichText("#root", {
-    locale: richtext.locales.cn // the Chineese locale will be set initially
-    // locale: richtext.locales.en // the English locale will be set initially
-    // locale: richtext.locales.de // the Germany locale will be set initially
-    // other configuration properties
+    locale: richtext.locales.cn // устанавливается китайская локаль
+    // locale: richtext.locales.en // устанавливается английская локаль
+    // locale: richtext.locales.de // устанавливается немецкая локаль
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**История изменений:** Свойство добавлено в v2.0
 
-**Related articles:** [Localization](guides/localization.md)
+**Связанные статьи:** [Локализация](guides/localization.md)
 
-**Related sample:** [RichText. Localization](https://snippet.dhtmlx.com/zxjrin3i?tag=richtext)
+**Связанный пример:** [RichText. Локализация](https://snippet.dhtmlx.com/zxjrin3i?tag=richtext)

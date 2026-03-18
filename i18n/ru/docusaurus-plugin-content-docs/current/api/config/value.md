@@ -1,36 +1,36 @@
 ---
 sidebar_label: value
-title: value Config
-description: You can learn about the value config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация value
+description: Документация по свойству value библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # value
 
-### Description
+### Описание {#description}
 
-@short: Optional. Specifies the initial value (content) displayed within the editor area of RichText
+@short: Необязательный. Задаёт начальное значение (содержимое), отображаемое в области редактора RichText
 
-:::tip
-If you want to set the value (content) using custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
+:::tip[Совет]
+Чтобы задать значение (содержимое) в пользовательском формате, используйте встроенный метод [`setValue()`](api/methods/set-value.md).
 :::
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
-value?: string; 
+value?: string;
 ~~~
 
-### Example
+### Пример {#example}
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
-    value: "<h1>some value</h1>" // sets the default value (HTML format)
-    // other configuration properties
+    value: "<h1>some value</h1>" // задаёт значение по умолчанию (формат HTML)
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**История изменений:** Свойство добавлено в v2.0
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Связанные статьи:** [Конфигурация](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)
+**Связанный пример:** [RichText. Инициализация](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

@@ -1,39 +1,39 @@
 ---
 sidebar_label: fullscreenMode
-title: fullscreenMode Config
-description: You can learn about the fullscreenMode config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Конфигурация fullscreenMode
+description: Документация по свойству fullscreenMode библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # fullscreenMode
 
-### Description
+### Описание {#description}
 
-@short: Optional. Enables the RichText fullscreen mode
+@short: Необязательный. Включает полноэкранный режим RichText
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
-fullscreenMode?: boolean; 
+fullscreenMode?: boolean;
 ~~~
 
-### Default config
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 fullscreenMode: false;
 ~~~
 
-### Example
+### Пример {#example}
 
 ~~~jsx {3}
-// initialize RichText
+// инициализация RichText
 new richtext.Richtext("#root", {
     fullscreenMode: true
-    // other configuration properties
+    // другие свойства конфигурации
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**История изменений:** Свойство добавлено в v2.0
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Связанные статьи:** [Конфигурация](guides/configuration.md)
 
-**Related sample:** [RichText. Full toolbar](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
+**Связанный пример:** [RichText. Полная панель инструментов](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
