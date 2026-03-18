@@ -1,16 +1,16 @@
 ---
 sidebar_label: show-popup
-title: show-popup Event
-description: You can learn about the show-popup event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие show-popup
+description: Документация по событию show-popup библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # show-popup
 
-### Description
+### Описание {#description}
 
-@short: Fires when a popup is shown/hidden
+@short: Срабатывает при показе или скрытии всплывающего окна
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "show-popup": (IPopupConfig) => boolean | void;
@@ -21,33 +21,33 @@ interface IPopupConfig {
 }
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **show-popup** event can take an object with the following parameters:
+Колбэк события **show-popup** принимает объект со следующими параметрами:
 
-- `type` - a type of the popup
-- `image` - provides access to additional context (is the current cursor pointing at an image or not)
+- `type` — тип всплывающего окна
+- `image` — дополнительный контекст: указывает ли курсор на изображение
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-13}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "show-popup" event
+// подписка на событие "show-popup"
 editor.api.on("show-popup", (obj) => {
     console.log(obj);
     console.log("The popup was shown/hidden");
 });
-// show-popup the text to the left
+// показать всплывающее окно ссылки
 editor.api.exec("show-popup", {
     type: "link"
-}); 
+});
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

@@ -1,38 +1,38 @@
 ---
 sidebar_label: subscript
-title: subscript Event
-description: You can learn about the subscript event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие subscript
+description: Документация по событию subscript библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # subscript
 
-### Description
+### Описание {#description}
 
-@short: Fires when pressing the "Subscript" button in the menubar/toolbar or via Event Bus methods
+@short: Срабатывает при нажатии кнопки «Subscript» в menubar/toolbar или через методы Event Bus
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "subscript": () => boolean | void;
 ~~~
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-10}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "subscript" event
+// подписка на событие "subscript"
 editor.api.on("subscript", () => {
     console.log("Subscript was applied");
 });
-// trigger the "subscript" event
+// вызвать событие "subscript"
 editor.api.exec("subscript", {});
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

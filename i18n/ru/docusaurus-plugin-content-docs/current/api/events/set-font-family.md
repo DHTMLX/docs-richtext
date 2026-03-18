@@ -1,47 +1,47 @@
 ---
 sidebar_label: set-font-family
-title: set-font-family Event
-description: You can learn about the set-font-family event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие set-font-family
+description: Документация по событию set-font-family библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # set-font-family
 
-### Description
+### Описание {#description}
 
-@short: Fires when setting a font family
+@short: Срабатывает при смене шрифта
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "set-font-family": ({ fontFamily: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **set-font-family** event can take an object with the following parameter:
+Колбэк события **set-font-family** принимает объект со следующим параметром:
 
-- `fontFamily` - a font family to be applied. The following fonts are available: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
+- `fontFamily` — применяемый шрифт. Доступные шрифты: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-13}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "set-font-family" event
+// подписка на событие "set-font-family"
 editor.api.on("set-font-family", (obj) => {
     console.log(obj.fontFamily);
     console.log("The font family was changed");
 });
-// apply new font family
+// применить новый шрифт
 editor.api.exec("set-font-family", {
     fontFamily: "Roboto"
-}); 
+});
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

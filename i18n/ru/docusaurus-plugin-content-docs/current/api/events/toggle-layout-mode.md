@@ -1,45 +1,45 @@
 ---
 sidebar_label: toggle-layout-mode
-title: toggle-layout-mode Event
-description: You can learn about the toggle-layout-mode event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие toggle-layout-mode
+description: Документация по событию toggle-layout-mode библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # toggle-layout-mode
 
-### Description
+### Описание {#description}
 
-@short: Fires when toggling the layout mode
+@short: Срабатывает при переключении режима отображения
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "toggle-layout-mode": ({ mode?: "classic" | "document" }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **toggle-layout-mode** event can take an object with the following parameters:
+Колбэк события **toggle-layout-mode** принимает объект со следующим параметром:
 
-- `mode` - the layout mode. The following modes are available: `"classic" | "document"`
+- `mode` — режим отображения. Доступные значения: `"classic" | "document"`
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-11}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "toggle-layout-mode" event
+// подписка на событие "toggle-layout-mode"
 editor.api.on("toggle-layout-mode", (obj) => {
     console.log(obj);
     console.log("The layout mode was changed");
 });
-// set the "document" layout mode
+// установить режим отображения "document"
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

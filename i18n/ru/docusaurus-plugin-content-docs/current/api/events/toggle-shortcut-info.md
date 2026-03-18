@@ -1,45 +1,45 @@
 ---
 sidebar_label: toggle-shortcut-info
-title: toggle-shortcut-info Event
-description: You can learn about the toggle-shortcut-info event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие toggle-shortcut-info
+description: Документация по событию toggle-shortcut-info библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # toggle-shortcut-info
 
-### Description
+### Описание {#description}
 
-@short: Fires when toggling the shortcut info
+@short: Срабатывает при переключении подсказок с сочетаниями клавиш
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "toggle-shortcut-info": ({ mode?: boolean }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
+Колбэк события **toggle-shortcut-info** принимает объект со следующим параметром:
 
-- `mode` - enables a shortcut info; `true` to show shortcut info popup, `false` to hide shortcut info popup
+- `mode` — управляет отображением подсказок: `true` — показать, `false` — скрыть
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "toggle-shortcut-info" event
+// подписка на событие "toggle-shortcut-info"
 editor.api.on("toggle-shortcut-info", (obj) => {
     console.log(obj);
     console.log("The shortcut info was shown");
 });
-// enable the shortcut info
+// включить подсказки с сочетаниями клавиш
 editor.api.exec("toggle-shortcut-info", { mode: true });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

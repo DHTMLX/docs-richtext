@@ -1,16 +1,16 @@
 ---
 sidebar_label: export
-title: export Event
-description: You can learn about the export event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие export
+description: Документация по событию export библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # export
 
-### Description
+### Описание {#description}
 
-@short: Fires after pressing the "Export" option in the menubar or via Event Bus methods
+@short: Срабатывает после нажатия пункта "Export" в menubar или через методы Event Bus
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "export": ({ options: IExportOptions; result?: any }) => boolean | void;
@@ -23,32 +23,32 @@ interface IExportOptions {
 }
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of **export** event can take an object with the following parameters:
+Колбэк события **export** принимает объект со следующими параметрами:
 
-- `format` - a file format
-- `url` - a base URL for file export
-- `download` - allows a user to specify if he wants to download the file after receiving the response back from the server. If the property is set to "false", the file will not download, but the user will instead be able to get blob data from the event object (see the `result` prop in the event definition)
-- `fileName` - a file name to be exported
+- `format` — формат файла
+- `url` — базовый URL для экспорта файла
+- `download` — определяет, нужно ли скачать файл после получения ответа от сервера. Если `false`, файл не скачивается, но можно получить blob-данные из объекта события (см. свойство `result` в определении события)
+- `fileName` — имя экспортируемого файла
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-15}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "export" event
+// подписка на событие "export"
 editor.api.on("export", (obj) => {
     console.log(obj);
     console.log("The file was exported");
 });
-// export value as pdf file
+// экспорт в PDF
 editor.api.exec("export", {
     format: "pdf",
     download: false,
@@ -56,4 +56,4 @@ editor.api.exec("export", {
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

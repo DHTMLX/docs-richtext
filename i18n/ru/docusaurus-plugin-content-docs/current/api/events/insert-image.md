@@ -1,16 +1,16 @@
 ---
 sidebar_label: insert-image
-title: insert-image Event
-description: You can learn about the insert-image event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие insert-image
+description: Документация по событию insert-image библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # insert-image
 
-### Description
+### Описание {#description}
 
-@short: Fires when inserting image
+@short: Срабатывает при вставке изображения
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "insert-image": (IImageContext) => boolean | void;
@@ -20,7 +20,7 @@ interface IImageContext {
     value: string;
     width: number;
     height: number;
-    // extra props from uploader ctx, not required for the actual action
+    // дополнительные свойства из контекста загрузчика, не нужны для выполнения действия
     name?: string;
     file?: File;
     status?: string;
@@ -29,22 +29,22 @@ interface IImageContext {
 }
 ~~~
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "insert-image" event
+// подписка на событие "insert-image"
 editor.api.on("insert-image", (obj) => {
     console.log(obj);
     console.log("The image was inserted");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

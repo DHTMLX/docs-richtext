@@ -1,44 +1,44 @@
 ---
 sidebar_label: update-link
-title: update-link Event
-description: You can learn about the update-link event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие update-link
+description: Документация по событию update-link библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # update-link
 
-### Description
+### Описание {#description}
 
-@short: Fires when updating link
+@short: Срабатывает при обновлении ссылки
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "update-link": ({ id: number, url: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **update-link** event can take an object with the following parameters:
+Колбэк события **update-link** принимает объект со следующими параметрами:
 
-- `id` - the link ID
-- `url` - the modified url
+- `id` — идентификатор ссылки
+- `url` — изменённый URL
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "update-link" event
+// подписка на событие "update-link"
 editor.api.on("update-link", (obj) => {
     console.log(obj);
     console.log("The following link was updated:" + obj.url);
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

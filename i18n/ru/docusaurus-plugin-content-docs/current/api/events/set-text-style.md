@@ -1,16 +1,16 @@
 ---
 sidebar_label: set-text-style
-title: set-text-style Event
-description: You can learn about the set-text-style event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие set-text-style
+description: Документация по событию set-text-style библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # set-text-style
 
-### Description
+### Описание {#description}
 
-@short: Fires when setting a text style
+@short: Срабатывает при смене стиля текста
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "set-text-style": ({ tag: TBlockType }) => boolean | void;
@@ -18,32 +18,32 @@ description: You can learn about the set-text-style event in the documentation o
 type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **set-text-style** event can take an object with the following parameters:
+Колбэк события **set-text-style** принимает объект со следующим параметром:
 
-- `tag` - a text style
+- `tag` — стиль текста
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-13}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "set-text-style" event
+// подписка на событие "set-text-style"
 editor.api.on("set-text-style", (obj) => {
     console.log(obj.tag);
     console.log("The text style was changed");
 });
-// apply new text style
+// применить новый стиль текста
 editor.api.exec("set-text-style", {
     tag: "blockquote"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

@@ -1,47 +1,47 @@
 ---
 sidebar_label: set-line-height
-title: set-line-height Event
-description: You can learn about the set-line-height event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие set-line-height
+description: Документация по событию set-line-height библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # set-line-height
 
-### Description
+### Описание {#description}
 
-@short: Fires when setting a line height
+@short: Срабатывает при смене межстрочного интервала
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "set-line-height": ({ lineHeight: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **set-line-height** event can take an object with the following parameter:
+Колбэк события **set-line-height** принимает объект со следующим параметром:
 
-- `lineHeight` - a line height
+- `lineHeight` — межстрочный интервал
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-13}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "set-line-height" event
+// подписка на событие "set-line-height"
 editor.api.on("set-line-height", (obj) => {
     console.log(obj);
     console.log("The line height was changed");
 });
-// apply a new line height
+// применить новый межстрочный интервал
 editor.api.exec("set-line-height", {
    lineHeight: "15px"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

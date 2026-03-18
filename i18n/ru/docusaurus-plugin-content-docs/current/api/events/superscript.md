@@ -1,38 +1,38 @@
 ---
 sidebar_label: superscript
-title: superscript Event
-description: You can learn about the superscript event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие superscript
+description: Документация по событию superscript библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # superscript
 
-### Description
+### Описание {#description}
 
-@short: Fires when pressing the "Superscript" button in the menubar/toolbar or via Event Bus methods
+@short: Срабатывает при нажатии кнопки «Superscript» в menubar/toolbar или через методы Event Bus
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "superscript": () => boolean | void;
 ~~~
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "superscript" event
+// подписка на событие "superscript"
 editor.api.on("superscript", () => {
     console.log("Superscript was applied");
 });
-// trigger the "superscript" event
+// вызвать событие "superscript"
 editor.api.exec("superscript", {});
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

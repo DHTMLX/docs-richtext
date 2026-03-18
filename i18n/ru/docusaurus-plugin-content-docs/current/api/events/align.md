@@ -1,48 +1,48 @@
 ---
 sidebar_label: align
-title: align Event
-description: You can learn about the align event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие align
+description: Документация по событию align библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # align
 
-### Description
+### Описание {#description}
 
-@short: Fires when text alignment is changed via the menubar/toolbar or Event Bus methods
+@short: Срабатывает при изменении выравнивания текста через menubar/toolbar или методы Event Bus
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
-"align": ({ 
+"align": ({
     align: "left" | "center" | "right" | "justify"
 }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **align** event can take an object with the following parameter:
+Колбэк события **align** принимает объект со следующим параметром:
 
-- `align` - a text alignment. You can specify one of the following values: `"left" | "center" | "right" | "justify"`
+- `align` — выравнивание текста. Возможные значения: `"left" | "center" | "right" | "justify"`
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-12}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "align" event
+// подписка на событие "align"
 editor.api.on("align", (obj) => {
     console.log(`Align to: ${obj.align}`);
 });
-// align the text to the left
+// выравнивание текста по левому краю
 editor.api.exec("align", {
     align: "left"
-}); 
+});
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

@@ -1,16 +1,16 @@
 ---
 sidebar_label: set-text-format
-title: set-text-format Event
-description: You can learn about the set-text-format event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие set-text-format
+description: Документация по событию set-text-format библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # set-text-format
 
-### Description
+### Описание {#description}
 
-@short: Fires when setting a text format
+@short: Срабатывает при смене форматирования текста
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "set-text-format": (ITextFormat) => boolean | void;
@@ -23,36 +23,36 @@ interface ITextFormat {
 }
 ~~~
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **set-text-format** event can take an object with the following parameters:
+Колбэк события **set-text-format** принимает объект со следующими параметрами:
 
-- `bold` - a bold text format
-- `italic` - an italic text format
-- `strike` - a strike text format
-- `underline` - an underline text format
+- `bold` — жирное начертание
+- `italic` — курсивное начертание
+- `strike` — зачёркнутый текст
+- `underline` — подчёркнутый текст
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-14}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "set-text-format" event
+// подписка на событие "set-text-format"
 editor.api.on("set-text-format", (obj) => {
     console.log(obj);
     console.log("The text format was changed");
 });
-// apply the "italic" and bold text format
+// применить курсив и жирное начертание
 editor.api.exec("set-text-format", {
-    italic: true, 
+    italic: true,
     bold: true
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

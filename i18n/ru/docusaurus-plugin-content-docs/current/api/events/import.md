@@ -1,47 +1,47 @@
 ---
 sidebar_label: import
-title: import Event
-description: You can learn about the import event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие import
+description: Документация по событию import библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # import
 
-### Description
+### Описание {#description}
 
-@short: Fires after pressing the "Import" option in the menubar or via Event Bus methods
+@short: Срабатывает после нажатия пункта "Import" в menubar или через методы Event Bus
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "import": ({ html?: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of **import** event can take an object with the following parameter:
+Колбэк события **import** принимает объект со следующим параметром:
 
-- `html` - a text value in the html format
+- `html` — значение текста в формате HTML
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-13}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "import" event
+// подписка на событие "import"
 editor.api.on("import", (obj) => {
     console.log(obj.html);
     console.log("The new value was imported");
 });
-// import new value
+// импорт нового значения
 editor.api.exec("import", {
-    html: "<h2>some value</h2>" // simply calls setValue
+    html: "<h2>some value</h2>" // вызывает setValue
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

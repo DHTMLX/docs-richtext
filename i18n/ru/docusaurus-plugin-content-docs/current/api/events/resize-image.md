@@ -1,45 +1,45 @@
 ---
 sidebar_label: resize-image
-title: resize-image Event
-description: You can learn about the resize-image event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие resize-image
+description: Документация по событию resize-image библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # resize-image
 
-### Description
+### Описание {#description}
 
-@short: Fires when resizing image
+@short: Срабатывает при изменении размера изображения
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "resize-image": ({ id: number, width: number, height: number }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **resize-image** event can take an object with the following parameters:
+Колбэк события **resize-image** принимает объект со следующими параметрами:
 
-- `id` - the image ID
-- `width` - the image width
-- `height` - the image height
+- `id` — идентификатор изображения
+- `width` — ширина изображения
+- `height` — высота изображения
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-// configuration properties
+// свойства конфигурации
 });
-// subscribe to the "resize-image" event
+// подписка на событие "resize-image"
 editor.api.on("resize-image", (obj) => {
     console.log(obj);
     console.log("The image was resized")
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

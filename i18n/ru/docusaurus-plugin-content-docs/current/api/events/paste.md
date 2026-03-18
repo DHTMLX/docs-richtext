@@ -1,36 +1,36 @@
 ---
 sidebar_label: paste
-title: paste Event
-description: You can learn about the paste event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие paste
+description: Документация по событию paste библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # paste
 
-### Description
+### Описание {#description}
 
-@short: Fires when pasting content
+@short: Срабатывает при вставке содержимого
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "paste": () => boolean | void;
 ~~~
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-8}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "paste" event
+// подписка на событие "paste"
 editor.api.on("paste", () => {
     console.log("Content was pasted");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

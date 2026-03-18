@@ -1,43 +1,43 @@
 ---
 sidebar_label: indent
-title: indent Event
-description: You can learn about the indent event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие indent
+description: Документация по событию indent библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # indent
 
-### Description
+### Описание {#description}
 
-@short: Fires when increasing block indention
+@short: Срабатывает при увеличении отступа блока
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "indent": ({ step: number }) => boolean | void;
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **indent** event can take an object with the following parameters:
+Колбэк события **indent** принимает объект со следующим параметром:
 
-- `step` - the step by which indentation was increased
+- `step` — шаг, на который увеличен отступ
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "indent" event
+// подписка на событие "indent"
 editor.api.on("indent", (obj) => {
     console.log(obj);
     console.log("The indention was increased");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0

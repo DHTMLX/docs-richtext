@@ -1,16 +1,16 @@
 ---
 sidebar_label: set-text-color
-title: set-text-color Event
-description: You can learn about the set-text-color event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: Событие set-text-color
+description: Документация по событию set-text-color библиотеки DHTMLX RichText. Руководства, справочник API, примеры кода и демо, а также бесплатная 30-дневная пробная версия.
 ---
 
 # set-text-color
 
-### Description
+### Описание {#description}
 
-@short: Fires when setting a text color and/or a background text color
+@short: Срабатывает при смене цвета текста и/или цвета фона текста
 
-### Usage
+### Использование {#usage}
 
 ~~~jsx {}
 "set-text-color": (ITextColor) => boolean | void;
@@ -21,34 +21,34 @@ interface ITextColor {
 }
 ~~~
 
-### Parameters
+### Параметры {#parameters}
 
-The callback of the **set-text-color** event can take an object with the following parameters:
+Колбэк события **set-text-color** принимает объект со следующими параметрами:
 
-- `color` - a text color
-- `background` - a text background color
+- `color` — цвет текста
+- `background` — цвет фона текста
 
-:::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[Информация]
+Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Пример {#example}
 
 ~~~jsx {5-14}
-// initialize RichText
+// инициализация RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
-// subscribe to the "set-text-color" event
+// подписка на событие "set-text-color"
 editor.api.on("set-text-color", (obj) => {
     console.log(obj);
     console.log("The text color and/or background text color were changed");
 });
-// apply text color and background
+// применить цвет текста и фона
 editor.api.exec("set-text-color", {
    color: "red",
    background: "blue"
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**История изменений:** Событие добавлено в v2.0
