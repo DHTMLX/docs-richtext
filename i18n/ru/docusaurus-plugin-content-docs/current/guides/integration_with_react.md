@@ -6,7 +6,7 @@ description: Узнайте, как использовать DHTMLX RichText с 
 
 # Интеграция с React
 
-:::tip
+:::tip[Совет]
 Предполагается, что вы знаете основы [**React**](https://react.dev). Если нужно вспомнить — загляните в [**документацию React**](https://react.dev/learn).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с **React**. Готовые примеры —
 
 ## Создание проекта {#creating-a-project}
 
-:::info
+:::info[Информация]
 Сначала установите [**Vite**](https://vite.dev/) (опционально) и [**Node.js**](https://nodejs.org/en/).
 :::
 

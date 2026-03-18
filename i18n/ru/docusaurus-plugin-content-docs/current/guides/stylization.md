@@ -55,7 +55,7 @@ You can override RichText's default styles by redefining CSS variables on the `#
 </style>
 ```
 
-:::note
+:::note[Примечание]
 These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
 :::
 

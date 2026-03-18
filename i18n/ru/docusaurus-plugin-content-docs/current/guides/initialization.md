@@ -52,7 +52,7 @@ const editor = new richtext.Richtext("#root", {
 
 ### Configuration properties
 
-:::note
+:::note[Примечание]
 The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
 :::
 

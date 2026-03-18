@@ -157,7 +157,7 @@ const en = {
 };
 ~~~
 
-:::info
+:::info[Информация]
 Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
 :::
 
