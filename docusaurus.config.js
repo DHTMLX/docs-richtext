@@ -133,7 +133,7 @@ const config = {
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/richtext/',
+    baseUrl: '/test-richtext/',
     onBrokenLinks: 'warn',
     // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
