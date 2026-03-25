@@ -11,5 +11,5 @@ These methods are useful for debugging, integrating with reactive systems, or im
 
 | Name                                                        | Description                                      |
 | ----------------------------------------------------------- | ------------------------------------------------ |
-| [](../internal/get-reactive-state.md)                       | @getshort(../internal/get-reactive-state.md)     |
-| [](../internal/get-state.md)                                | @getshort(../internal/get-state.md)              |
+| [](api/internal/get-reactive-state.md)                       | @getshort(api/internal/get-reactive-state.md)     |
+| [](api/internal/get-state.md)                                | @getshort(api/internal/get-state.md)              |
