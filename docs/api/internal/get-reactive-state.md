@@ -25,7 +25,7 @@ The method returns an object with the following parameters:
     cursorState: { subscribe: any },
     defaultStyles {...},
     document {...},
-    fullscreen {...},
+    fullscreenMode {...},
     history {...},
     layoutMode {...},
     popup {...},

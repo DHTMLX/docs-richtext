@@ -22,7 +22,7 @@ api.exec(
 ### Parameters
 
 - `event` - (required) an event to be fired
-- `config` - (required) the config object with parameters (see the event to be fired)
+- `config` - (optional) the config object with parameters (see the event to be fired); omit for parameterless actions (e.g. `"undo"`, `"redo"`, `"print"`)
 
 ### Events
 

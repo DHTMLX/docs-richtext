@@ -15,7 +15,8 @@ description: You can learn about the on method in the documentation of the DHTML
 ~~~jsx {}
 api.on(
     event: string,
-    handler: function
+    handler: function,
+    options?: { tag?: string }
 ): void;
 ~~~
 
@@ -23,6 +24,8 @@ api.on(
 
 - `event` - (required) an event to be fired
 - `handler` - (required) a handler to be attached (the handler arguments will depend on the event to be fired)
+- `options` - (optional) an object with the following property:
+  - `tag` - (optional) a string label used to group handlers; pass the same tag to [`api.detach()`](api/internal/detach.md) to remove all handlers with that tag at once
 
 ### Events
 
@@ -43,4 +46,4 @@ editor.api.on("set-font-size", (obj) => {
 });
 ~~~
 
-**Change log:** The method was updated in v2.0. The `context` parameter were removed
+**Change log:** The method was updated in v2.0. The `context` parameter was removed

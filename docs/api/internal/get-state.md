@@ -25,7 +25,7 @@ The method returns an object with the following parameters:
     cursorState: {},
     defaultStyles: {},
     document: {},
-    fullscreen: boolean,
+    fullscreenMode: boolean,
     history: []
     layoutMode: string,
     popup: any,
