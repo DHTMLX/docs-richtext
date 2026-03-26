@@ -13,7 +13,7 @@ description: You can learn about the setValue method in the documentation of the
 ### Usage
 
 ~~~jsx {}
-setValue: (value: string, encoder?: any): void;
+setValue(value: string, encoder?: any): void;
 ~~~
 
 ### Parameters

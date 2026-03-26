@@ -13,7 +13,7 @@ description: You can learn about the setLocale method in the documentation of th
 ### Usage
 
 ~~~jsx {}
-setLocale(null | locale?: object): void;
+setLocale(locale?: Record<string, any> | null): void;
 ~~~
 
 ### Parameters

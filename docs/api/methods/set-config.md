@@ -13,7 +13,7 @@ description: You can learn about the setConfig method in the documentation of th
 ### Usage
 
 ~~~jsx {}
-setConfig(config: { [key:any]: any }): void;
+setConfig(config: Partial<IRichtextConfig>): void;
 ~~~
 
 ### Parameters
