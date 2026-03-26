@@ -29,6 +29,20 @@ interface IImageContext {
 }
 ~~~
 
+### Parameters
+
+The callback of the **insert-image** event receives an `IImageContext` object with the following parameters:
+
+- `id` - the unique identifier of the image
+- `value` - the image URL (src)
+- `width` - the image width in pixels
+- `height` - the image height in pixels
+- `name` - (optional) the original file name
+- `file` - (optional) the `File` object from the uploader
+- `status` - (optional) the upload status string
+- `selected` - a callback invoked when the image is selected; receives the `IImageContext` object
+- `uploaded` - a callback invoked when the image upload completes; receives the `IImageContext` object
+
 :::info
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::

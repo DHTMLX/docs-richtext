@@ -27,10 +27,12 @@ interface IExportOptions {
 
 The callback of **export** event can take an object with the following parameters:
 
-- `format` - a file format
-- `url` - a base URL for file export
-- `download` - allows a user to specify if he wants to download the file after receiving the response back from the server. If the property is set to "false", the file will not download, but the user will instead be able to get blob data from the event object (see the `result` prop in the event definition)
-- `fileName` - a file name to be exported
+- `options` - an object with export options:
+  - `format` - (optional) a file format: `"docx"` or `"pdf"`
+  - `url` - (optional) a base URL for file export
+  - `download` - (optional) allows a user to specify if he wants to download the file after receiving the response back from the server. If the property is set to `false`, the file will not download, but the user will instead be able to get blob data from the event object (see the `result` parameter)
+  - `fileName` - (optional) a file name to be exported
+- `result` - (optional) the blob data returned from the server when `download` is set to `false`
 
 :::info
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
