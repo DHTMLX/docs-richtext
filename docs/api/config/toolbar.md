@@ -13,7 +13,7 @@ description: You can learn about the toolbar config in the documentation of the 
 ### Usage
 
 ~~~jsx {}
-toolbar?: boolean | Array<string | { id: string, type: string, label?: string, tooltip?: string, css?: string, handler?: () => any }>;
+toolbar?: boolean | Array<string | { type: "button"; id?: string; icon?: string; label?: string; tooltip?: string; css?: string; handler?: () => void }>;
 ~~~
 
 #### Available buttons within Toolbar
@@ -129,7 +129,7 @@ new richtext.Richtext("#root", {
 ### Default config
 
 ~~~jsx
-const defaultToolbarButtons = {
+const defaultToolbarButtons = [
     "undo",
     "redo",
     "separator",
@@ -162,7 +162,7 @@ const defaultToolbarButtons = {
     "separator",
     "fullscreen",
     "mode"
-};
+];
 ~~~
 
 :::tip

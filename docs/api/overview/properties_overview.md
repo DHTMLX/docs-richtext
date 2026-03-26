@@ -17,5 +17,6 @@ They help you control layout, toolbar, value, localization, and other aspects of
 | [](api/config/layout-mode.md)                            | @getshort(api/config/layout-mode.md)          |
 | [](api/config/locale.md)                                 | @getshort(api/config/locale.md)               |
 | [](api/config/menubar.md)                                | @getshort(api/config/menubar.md)              |
+| [](api/config/theme.md)                                  | @getshort(api/config/theme.md)                |
 | [](api/config/toolbar.md)                                | @getshort(api/config/toolbar.md)              |
 | [](api/config/value.md)                                  | @getshort(api/config/value.md)                |

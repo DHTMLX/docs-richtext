@@ -161,6 +161,7 @@ module.exports = {
                         "api/config/layout-mode",
                         "api/config/locale",
                         "api/config/menubar",
+                        "api/config/theme",
                         "api/config/toolbar",
                         "api/config/value"  
                     ]

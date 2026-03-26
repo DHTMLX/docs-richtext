@@ -13,7 +13,13 @@ description: You can learn about the menubar config in the documentation of the 
 ### Usage
 
 ~~~jsx {}
-menubar?: boolean; 
+menubar?: boolean;
+~~~
+
+### Default config
+
+~~~jsx
+menubar: false;
 ~~~
 
 ### Example
