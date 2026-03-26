@@ -23,75 +23,75 @@ new richtext.RichText("#root", {
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
-| [](../methods/get-value.md)                   | @getshort(../methods/get-value.md)        |
-| [](../methods/set-value.md)                   | @getshort(../methods/set-value.md)        |
-| [](../methods/set-config.md)                  | @getshort(../methods/set-config.md)       |
-| [](../methods/set-locale.md)                  | @getshort(../methods/set-locale.md)       |
-| [](../methods/destructor.md)                  | @getshort(../methods/destructor.md)       |
+| [](api/methods/get-value.md)                   | @getshort(api/methods/get-value.md)        |
+| [](api/methods/set-value.md)                   | @getshort(api/methods/set-value.md)        |
+| [](api/methods/set-config.md)                  | @getshort(api/methods/set-config.md)       |
+| [](api/methods/set-locale.md)                  | @getshort(api/methods/set-locale.md)       |
+| [](api/methods/destructor.md)                  | @getshort(api/methods/destructor.md)       |
 
 ## Event Bus methods
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
-| [](../internal/exec.md)                       | @getshort(../internal/exec.md)            |
-| [](../internal/intercept.md)                  | @getshort(../internal/intercept.md)       |
-| [](../internal/on.md)                         | @getshort(../internal/on.md)              |
-| [](../internal/detach.md)                     | @getshort(../internal/detach.md)          |
-| [](../internal/set-next.md)                   | @getshort(../internal/set-next.md)        |
+| [](api/internal/exec.md)                       | @getshort(api/internal/exec.md)            |
+| [](api/internal/intercept.md)                  | @getshort(api/internal/intercept.md)       |
+| [](api/internal/on.md)                         | @getshort(api/internal/on.md)              |
+| [](api/internal/detach.md)                     | @getshort(api/internal/detach.md)          |
+| [](api/internal/set-next.md)                   | @getshort(api/internal/set-next.md)        |
 
 ## State methods
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
-| [](../internal/get-state.md)                  | @getshort(../internal/get-state.md)       |
-| [](../internal/get-reactive-state.md)         | @getshort(../internal/get-reactive-state.md) |
+| [](api/internal/get-state.md)                  | @getshort(api/internal/get-state.md)       |
+| [](api/internal/get-reactive-state.md)         | @getshort(api/internal/get-reactive-state.md) |
 
 ## Events
 
 | Name                                           | Description                               |
 | ----------------------------------------------|-------------------------------------------|
-| [](../events/align.md)                        | @getshort(../events/align.md)             |
-| [](../events/clear-text-format.md)            | @getshort(../events/clear-text-format.md) |
-| [](../events/copy.md)                         | @getshort(../events/copy.md)              |
-| [](../events/create-new.md)                   | @getshort(../events/create-new.md)        |
-| [](../events/cut.md)                          | @getshort(../events/cut.md)               |
-| [](../events/delete-link.md)                  | @getshort(../events/delete-link.md)       |
-| [](../events/export.md)                       | @getshort(../events/export.md)            |
-| [](../events/import.md)                       | @getshort(../events/import.md)            |
-| [](../events/indent.md)                       | @getshort(../events/indent.md)            |
-| [](../events/insert-image.md)                 | @getshort(../events/insert-image.md)      |
-| [](../events/insert-line.md)                  | @getshort(../events/insert-line.md)       |
-| [](../events/insert-link.md)                  | @getshort(../events/insert-link.md)       |
-| [](../events/insert-list.md)                  | @getshort(../events/insert-list.md)       |
-| [](../events/outdent.md)                      | @getshort(../events/outdent.md)           |
-| [](../events/paste.md)                        | @getshort(../events/paste.md)             |
-| [](../events/print.md)                        | @getshort(../events/print.md)             |
-| [](../events/redo.md)                         | @getshort(../events/redo.md)              |
-| [](../events/resize-image.md)                 | @getshort(../events/resize-image.md)      |
-| [](../events/set-font-family.md)              | @getshort(../events/set-font-family.md)   |
-| [](../events/set-font-size.md)                | @getshort(../events/set-font-size.md)     |
-| [](../events/set-line-height.md)              | @getshort(../events/set-line-height.md)   |
-| [](../events/set-text-color.md)               | @getshort(../events/set-text-color.md)    |
-| [](../events/set-text-format.md)              | @getshort(../events/set-text-format.md)   |
-| [](../events/set-text-style.md)               | @getshort(../events/set-text-style.md)    |
-| [](../events/show-popup.md)                   | @getshort(../events/show-popup.md)        |
-| [](../events/subscript.md)                    | @getshort(../events/subscript.md)         |
-| [](../events/superscript.md)                  | @getshort(../events/superscript.md)       |
-| [](../events/toggle-fullscreen-mode.md)       | @getshort(../events/toggle-fullscreen-mode.md) |
-| [](../events/toggle-layout-mode.md)           | @getshort(../events/toggle-layout-mode.md) |
-| [](../events/toggle-shortcut-info.md)         | @getshort(../events/toggle-shortcut-info.md) |
-| [](../events/undo.md)                         | @getshort(../events/undo.md)              |
-| [](../events/update-link.md)                  | @getshort(../events/update-link.md)       |
+| [](api/events/align.md)                        | @getshort(api/events/align.md)             |
+| [](api/events/clear-text-format.md)            | @getshort(api/events/clear-text-format.md) |
+| [](api/events/copy.md)                         | @getshort(api/events/copy.md)              |
+| [](api/events/create-new.md)                   | @getshort(api/events/create-new.md)        |
+| [](api/events/cut.md)                          | @getshort(api/events/cut.md)               |
+| [](api/events/delete-link.md)                  | @getshort(api/events/delete-link.md)       |
+| [](api/events/export.md)                       | @getshort(api/events/export.md)            |
+| [](api/events/import.md)                       | @getshort(api/events/import.md)            |
+| [](api/events/indent.md)                       | @getshort(api/events/indent.md)            |
+| [](api/events/insert-image.md)                 | @getshort(api/events/insert-image.md)      |
+| [](api/events/insert-line.md)                  | @getshort(api/events/insert-line.md)       |
+| [](api/events/insert-link.md)                  | @getshort(api/events/insert-link.md)       |
+| [](api/events/insert-list.md)                  | @getshort(api/events/insert-list.md)       |
+| [](api/events/outdent.md)                      | @getshort(api/events/outdent.md)           |
+| [](api/events/paste.md)                        | @getshort(api/events/paste.md)             |
+| [](api/events/print.md)                        | @getshort(api/events/print.md)             |
+| [](api/events/redo.md)                         | @getshort(api/events/redo.md)              |
+| [](api/events/resize-image.md)                 | @getshort(api/events/resize-image.md)      |
+| [](api/events/set-font-family.md)              | @getshort(api/events/set-font-family.md)   |
+| [](api/events/set-font-size.md)                | @getshort(api/events/set-font-size.md)     |
+| [](api/events/set-line-height.md)              | @getshort(api/events/set-line-height.md)   |
+| [](api/events/set-text-color.md)               | @getshort(api/events/set-text-color.md)    |
+| [](api/events/set-text-format.md)              | @getshort(api/events/set-text-format.md)   |
+| [](api/events/set-text-style.md)               | @getshort(api/events/set-text-style.md)    |
+| [](api/events/show-popup.md)                   | @getshort(api/events/show-popup.md)        |
+| [](api/events/subscript.md)                    | @getshort(api/events/subscript.md)         |
+| [](api/events/superscript.md)                  | @getshort(api/events/superscript.md)       |
+| [](api/events/toggle-fullscreen-mode.md)       | @getshort(api/events/toggle-fullscreen-mode.md) |
+| [](api/events/toggle-layout-mode.md)           | @getshort(api/events/toggle-layout-mode.md) |
+| [](api/events/toggle-shortcut-info.md)         | @getshort(api/events/toggle-shortcut-info.md) |
+| [](api/events/undo.md)                         | @getshort(api/events/undo.md)              |
+| [](api/events/update-link.md)                  | @getshort(api/events/update-link.md)       |
 
 ## Properties
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
-| [](../config/default-styles.md)               | @getshort(../config/default-styles.md)    |
-| [](../config/fullscreen-mode.md)              | @getshort(../config/fullscreen-mode.md)   |
-| [](../config/image-upload-url.md)             | @getshort(../config/image-upload-url.md)  |
-| [](../config/layout-mode.md)                  | @getshort(../config/layout-mode.md)       |
-| [](../config/locale.md)                       | @getshort(../config/locale.md)            |
-| [](../config/menubar.md)                      | @getshort(../config/menubar.md)           |
-| [](../config/toolbar.md)                      | @getshort(../config/toolbar.md)           |
-| [](../config/value.md)                        | @getshort(../config/value.md)             |
+| [](api/config/default-styles.md)               | @getshort(api/config/default-styles.md)    |
+| [](api/config/fullscreen-mode.md)              | @getshort(api/config/fullscreen-mode.md)   |
+| [](api/config/image-upload-url.md)             | @getshort(api/config/image-upload-url.md)  |
+| [](api/config/layout-mode.md)                  | @getshort(api/config/layout-mode.md)       |
+| [](api/config/locale.md)                       | @getshort(api/config/locale.md)            |
+| [](api/config/menubar.md)                      | @getshort(api/config/menubar.md)           |
+| [](api/config/toolbar.md)                      | @getshort(api/config/toolbar.md)           |
+| [](api/config/value.md)                        | @getshort(api/config/value.md)             |

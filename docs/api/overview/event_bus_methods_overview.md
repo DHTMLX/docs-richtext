@@ -11,8 +11,8 @@ These methods are designed for advanced integrations and custom behavior based o
 
 | Name                                              | Description                                  |
 | ------------------------------------------------- | -------------------------------------------- |
-| [](../internal/detach.md)                         | @getshort(../internal/detach.md)             |
-| [](../internal/exec.md)                           | @getshort(../internal/exec.md)               |
-| [](../internal/intercept.md)                      | @getshort(../internal/intercept.md)          |
-| [](../internal/on.md)                             | @getshort(../internal/on.md)                 |
-| [](../internal/set-next.md)                       | @getshort(../internal/set-next.md)           |
+| [](api/internal/detach.md)                         | @getshort(api/internal/detach.md)             |
+| [](api/internal/exec.md)                           | @getshort(api/internal/exec.md)               |
+| [](api/internal/intercept.md)                      | @getshort(api/internal/intercept.md)          |
+| [](api/internal/on.md)                             | @getshort(api/internal/on.md)                 |
+| [](api/internal/set-next.md)                       | @getshort(api/internal/set-next.md)           |
