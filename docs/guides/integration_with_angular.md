@@ -172,7 +172,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 export class RichTextComponent implements OnInit, OnDestroy {
     @ViewChild("richtext_container", { static: true }) richtext_container!: ElementRef;
 
-    private _editor!: RichText;
+    private _editor!: Richtext;
 
     ngOnInit() {
         const { value } = getData(); // initialize data property
@@ -207,7 +207,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 export class RichTextComponent implements OnInit, OnDestroy {
     @ViewChild("richtext_container", { static: true }) richtext_container!: ElementRef;
 
-    private _editor!: RichText;
+    private _editor!: Richtext;
 
     ngOnInit() {
         const { value } = getData(); // initialize data property
@@ -216,7 +216,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
         });
 
         // apply the data via the setValue() method
-        this._editor.setValue({ value }); 
+        this._editor.setValue(value);
     }
 
     ngOnDestroy(): void {

@@ -89,7 +89,7 @@ import 'dhx-richtext-package/dist/richtext.css';
 <script>
 import { Richtext} from '@dhx/trial-richtext';
 import '@dhx/trial-richtext/dist/richtext.css';
-<script>
+</script>
 ~~~
 
 In this tutorial you can see how to configure the **trial** version of RichText.
@@ -126,7 +126,7 @@ onDestroy(() => {
 
 To add data into the RichText, we need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx {} title="data.ts"
+~~~jsx {} title="data.js"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
@@ -179,7 +179,7 @@ onDestroy(() => {
 </div>
 ~~~
 
-You can also use the [`setValue()`](/api/methods/set-value.md) method inside the `onMount()` method of Svelte to load data into RichText:
+You can also use the [`setValue()`](api/methods/set-value.md) method inside the `onMount()` method of Svelte to load data into RichText:
 
 ~~~html {} title="Richtext.svelte"
 <script>

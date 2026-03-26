@@ -148,7 +148,7 @@ body,
 
 To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~jsx {} title="data.ts"
+~~~jsx {} title="data.js"
 export function getData() {
   const value = `
     <h2>RichText 2.0</h2>
