@@ -15,6 +15,8 @@ You can configure RichText appearance and functionality via the corresponding AP
 - Specify **initial value** using the [`value`](api/config/value.md) property
 - Specify **initial locale** using the [`locale`](api/config/locale.md) property
 - Apply **initial styles** using the [`defaultStyles`](api/config/default-styles.md) property
+- Set the **image upload URL** using the [`imageUploadUrl`](api/config/image-upload-url.md) property
+- Apply a visual **theme** using the [`theme`](api/config/theme.md) property
 
 ## Layout modes
 
@@ -44,7 +46,7 @@ const editor = new richtext.Richtext("#root", {
 
 The RichText toolbar consists of several blocks of controls that can be changed according to your needs.
 
-### Default toolbar controls
+### Available toolbar controls
 
 You can specify the following buttons and controls in the RichText toolbar:
 
@@ -127,14 +129,19 @@ new richtext.Richtext("#root", {
 
 ### Custom toolbar controls
 
-You can also specify custom controls as objects in the [`toolbar`](api/config/toolbar.md) property with the following parameters:
+You can also specify custom controls as objects in the [`toolbar`](api/config/toolbar.md) property. Custom buttons must use `type: "button"` and support the following parameters:
 
-- `type` - (required) specifies a custom control type. The following types are available: `"button"`, `"richselect"`, `"colorpicker"`
-- `id` - (optional) a custom control ID (cannot overlap with existing control ID)
+- `type` - (required) must be `"button"` for custom controls
+- `id` - (optional) a custom control ID (cannot overlap with existing control IDs)
+- `icon` - (optional) a CSS class name for the button icon (e.g., `"wxo-help"`)
 - `label` - (optional) a button label (combines with icon)
-- `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
-- `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
+- `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from `label`)
+- `css` - (optional) a CSS class name assigned to the control (default supported classes: `wx-primary`, `wx-secondary`)
 - `handler` - (optional) a callback function that executes when the button is clicked
+
+:::note
+`"richselect"` and `"colorpicker"` are internal types used only for **predefined** controls (e.g., `mode`, `style`). They cannot be used for custom controls.
+:::
 
 ~~~jsx {6-32}
 new richtext.Richtext("#root", {

@@ -40,10 +40,10 @@ Add a container for RichText and give it an ID, for example *"root"*:
 
 Initialize RichText with the `richtext.Richtext` constructor. The constructor takes two parameters:
 
-- an HTML container (the ID of the HTML container)
+- an HTML container — either a string with the ID of the HTML container or an `HTMLElement` object
 - an object with configuration properties. [See the full list here](#configuration-properties)
 
-~~~jsx title="index.html"
+~~~jsx title="index.js"
 // create RichText
 const editor = new richtext.Richtext("#root", {
     // configuration properties  

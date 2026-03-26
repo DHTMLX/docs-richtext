@@ -158,7 +158,16 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones. You can apply them directly without copying the locale object:
+
+~~~jsx
+// npm
+import { locales } from '@dhx/richtext';
+editor.setLocale(locales.de);
+
+// CDN
+editor.setLocale(richtext.locales.de);
+~~~
 :::
 
 <details>
@@ -463,7 +472,7 @@ const cn = {
 
 To apply a custom locale you need to:
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+- create a custom locale (or modify the default one) and provide translations for the text labels you need (missing keys will fall back to English)
 
 - apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
 

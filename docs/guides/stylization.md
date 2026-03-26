@@ -8,7 +8,19 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
 
-This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
+## Applying a built-in theme
+
+The quickest way to change the visual appearance is to use the [`theme`](api/config/theme.md) configuration property, which applies a ready-made theme:
+
+```js
+new richtext.Richtext("#root", {
+    theme: { name: "dark", fonts: true }
+});
+```
+
+The `fonts` option controls whether the fonts bundled with the theme are loaded automatically.
+
+This guide also shows how to go further and use CSS variables and class names to style the editor’s menubar, toolbar, popup, and content area.
 
 ## Default structure and class names
 
@@ -86,4 +98,4 @@ In this snippet you can see how to apply a custom style to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Related articles:** [Customization](guides/configuration.md)
+**Related articles:** [Configuration](guides/configuration.md)
