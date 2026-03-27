@@ -12,7 +12,7 @@ This clear and comprehensive tutorial will guide your through the steps you need
 ![DHTMLX RichText Classic Mode](./assets/richtext/classic_mode.png)
 </div>
 
-## Step 1. Including source files
+## Step 1. Including source files {#step-1-including-source-files}
 
 Start from creating an HTML file and call it *index.html*. Then proceed to include RichText source files into the created file.
 
@@ -37,23 +37,23 @@ There are two necessary files:
 </html>
 ~~~
 
-### Installing RichText via npm or yarn
+### Installing RichText via npm or yarn {#installing-richtext-via-npm-or-yarn}
 
 You can import JavaScript RichText into your project using **yarn** or **npm** package manager.
 
-#### Installing trial RichText via npm or yarn
+#### Installing trial RichText via npm or yarn {#installing-trial-richtext-via-npm-or-yarn}
 
 :::info
 If you want to use trial version of RichText, download the [**trial RichText package**](https://dhtmlx.com/docs/products/dhtmlxRichtext/download.shtml) and follow steps mentioned in the *README* file. Note that trial RichText is available 30 days only.
 :::
 
-#### Installing PRO RichText via npm or yarn
+#### Installing PRO RichText via npm or yarn {#installing-pro-richtext-via-npm-or-yarn}
 
 :::info
 You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary RichText license is active.
 :::
 
-## Step 2. Creating RichText
+## Step 2. Creating RichText {#step-2-creating-richtext}
 
 Now you are ready to add RichText to the page. First, let's create the `<div>` container for RichText. So, take the following steps:
 
@@ -82,7 +82,7 @@ As parameters, the constructor takes any valid CSS selector of HTML container wh
 </html>
 ~~~
 
-## Step 3. Configuring RichText
+## Step 3. Configuring RichText {#step-3-configuring-richtext}
 
 Next you can specify configuration properties you want the RichText component to have when initialized.
 
@@ -104,6 +104,6 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
-## What's next
+## What's next {#whats-next}
 
 That's all. Just three simple steps and you have a handy tool for editing content. Now you can start working with your content or keep exploring the inner world of JavaScript RichText.

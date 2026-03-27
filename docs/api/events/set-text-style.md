@@ -6,11 +6,11 @@ description: You can learn about the set-text-style event in the documentation o
 
 # set-text-style
 
-### Description
+### Description {#description}
 
 @short: Fires when setting a text style
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "set-text-style": ({ tag: TBlockType }) => boolean | void;
@@ -18,7 +18,7 @@ description: You can learn about the set-text-style event in the documentation o
 type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **set-text-style** event can take an object with the following parameters:
 
@@ -28,7 +28,7 @@ The callback of the **set-text-style** event can take an object with the followi
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-13}
 // initialize RichText

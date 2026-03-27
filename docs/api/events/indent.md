@@ -6,17 +6,17 @@ description: You can learn about the indent event in the documentation of the DH
 
 # indent
 
-### Description
+### Description {#description}
 
 @short: Fires when increasing block indention
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "indent": ({ step: number }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **indent** event can take an object with the following parameters:
 
@@ -26,7 +26,7 @@ The callback of the **indent** event can take an object with the following param
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

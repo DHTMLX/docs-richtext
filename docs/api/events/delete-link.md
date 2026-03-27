@@ -6,11 +6,11 @@ description: You can learn about the delete-link event in the documentation of t
 
 # delete-link
 
-### Description
+### Description {#description}
 
 @short: Fires when deleting a link
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "delete-link": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the delete-link event in the documentation of t
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

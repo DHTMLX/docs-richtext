@@ -6,11 +6,11 @@ description: You can learn about the superscript event in the documentation of t
 
 # superscript
 
-### Description
+### Description {#description}
 
 @short: Fires when pressing the "Superscript" button in the menubar/toolbar or via Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "superscript": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the superscript event in the documentation of t
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

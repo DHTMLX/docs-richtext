@@ -6,17 +6,17 @@ description: You can learn about the menubar config in the documentation of the 
 
 # menubar
 
-### Description
+### Description {#description}
 
 @short: Optional. Enables the top menubar of RichText
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 menubar?: boolean; 
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {3}
 // initialize RichText

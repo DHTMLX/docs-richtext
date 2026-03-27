@@ -6,11 +6,11 @@ description: You can learn about the set-text-format event in the documentation 
 
 # set-text-format
 
-### Description
+### Description {#description}
 
 @short: Fires when setting a text format
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "set-text-format": (ITextFormat) => boolean | void;
@@ -27,7 +27,7 @@ interface ITextFormat {
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **set-text-format** event can take an object with the following parameters:
 
@@ -36,7 +36,7 @@ The callback of the **set-text-format** event can take an object with the follow
 - `strike` - a strike text format
 - `underline` - an underline text format
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-14}
 // initialize RichText

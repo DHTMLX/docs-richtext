@@ -6,11 +6,11 @@ description: You can learn about the on method in the documentation of the DHTML
 
 # api.on()
 
-### Description
+### Description {#description}
 
 @short: Allows attaching a handler to the inner events
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.on(
@@ -19,18 +19,18 @@ api.on(
 ): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `event` - (required) an event to be fired
 - `handler` - (required) a handler to be attached (the handler arguments will depend on the event to be fired)
 
-### Events
+### Events {#events}
 
 :::info
 The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

@@ -6,11 +6,11 @@ description: You can learn about the insert-line event in the documentation of t
 
 # insert-line
 
-### Description
+### Description {#description}
 
 @short: Fires when inserting horizontal line
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "insert-line": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the insert-line event in the documentation of t
 For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

@@ -6,17 +6,17 @@ description: You can learn about the set-font-size event in the documentation of
 
 # set-font-size
 
-### Description
+### Description {#description}
 
 @short: Fires when setting a font size
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "set-font-size": ({ fontSize: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **set-font-size** event can take an object with the following parameter:
 
@@ -26,7 +26,7 @@ The callback of the **set-font-size** event can take an object with the followin
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-13}
 // initialize RichText

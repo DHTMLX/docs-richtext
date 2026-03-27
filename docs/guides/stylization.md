@@ -10,7 +10,7 @@ You can fully customize the appearance of DHTMLX RichText by overriding CSS vari
 
 This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
 
-## Default structure and class names
+## Default structure and class names {#default-structure-and-class-names}
 
 RichText uses the following core classes to structure its UI:
 
@@ -24,7 +24,7 @@ RichText uses the following core classes to structure its UI:
 
 You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
 
-## Overriding default styles
+## Overriding default styles {#overriding-default-styles}
 
 You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
 
@@ -59,7 +59,7 @@ You can override RichText's default styles by redefining CSS variables on the `#
 These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
 :::
 
-## List of supported CSS variables
+## List of supported CSS variables {#list-of-supported-css-variables}
 
 | Variable name                | Description                          |
 | ---------------------------- | ------------------------------------ |
@@ -75,12 +75,12 @@ These styles will apply a dark background, adjust button and icon colors, and im
 | `--wx-icon-color`            | Color for toolbar arrow icons used for dropdown          |
 | `--wx-popup-border`          | Border for popup elements            |
 
-## Best practices
+## Best practices {#best-practices}
 
 * Use `color-scheme: dark` to improve native input styling in dark mode
 * Avoid changing layout-related properties (like `display`, `position`) unless necessary
 
-## Live demo
+## Live demo {#live-demo}
 
 In this snippet you can see how to apply a custom style to RichText:
 

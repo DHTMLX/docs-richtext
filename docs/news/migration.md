@@ -6,9 +6,9 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-## 1.2 -> 2.0
+## 1.2 -> 2.0 {#12---20}
 
-### Properties migration
+### Properties migration {#properties-migration}
 
 | Legacy property | Replaced by               | Notes                                     |
 | --------------- | ------------------------- | ----------------------------------------- |
@@ -17,7 +17,7 @@ description: You can learn about the Migration to Newer Versions in the document
 | `defaultStyles` | `defaultStyles` (updated) | Structure is now per-block and CSS-based  |
 | `mode`          | `layoutMode`              | Replaced with stricter enum-based setting |
 
-### - `customStats`
+### - `customStats` {#--customstats}
 
 The `customStats` property has been removed. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
 
@@ -28,7 +28,7 @@ const content = editor.getValue();
 const wordCount = content.split(/\s+/).length;
 ```
 
-### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md)
+### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md) {#--toolbarblocks--toolbar}
 
 Before **2.0**, users were able to specify only blocks with controls
 ```jsx{2} title="Before 2.0"
@@ -47,7 +47,7 @@ new richtext.Richtext("#root", {
 });
 ```
 
-### - [`defaultStyles`](api/config/default-styles.md)
+### - [`defaultStyles`](api/config/default-styles.md) {#--defaultstyles}
 
 Before **2.0**, users were able to define default values for toolbar selection controls
 ```jsx title="Before 2.0"
@@ -75,7 +75,7 @@ defaultStyles: {
 Use `*` to define base defaults for all blocks, then override specific elements (p, h1, blockquote, etc.).
 :::
 
-### - `mode` → [`layoutMode`](api/config/layout-mode.md)
+### - `mode` → [`layoutMode`](api/config/layout-mode.md) {#--mode--layoutmode}
 
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
@@ -91,7 +91,7 @@ new Richtext("#root", {
 
 The new [`layoutMode`](api/config/layout-mode.md) strictly supports `"classic"` and `"document"` values.
 
-### Methods migration
+### Methods migration {#methods-migration}
 
 | Legacy method           | New equivalent                       | Notes                                                 |
 | ----------------------- | ------------------------------------ | ----------------------------------------------------- |
@@ -112,7 +112,7 @@ The new [`layoutMode`](api/config/layout-mode.md) strictly supports `"classic"` 
 | `intercept()`           | ✅ New                               | Intercept internal actions                            |
 | `exec()`                | ✅ New                               | Execute internal actions                              |
 
-### - [`setValue()`](api/methods/set-value.md) / [`getValue()`](api/methods/get-value.md)
+### - [`setValue()`](api/methods/set-value.md) / [`getValue()`](api/methods/get-value.md) {#--setvalue--getvalue}
 
 ```jsx title="Before 2.0"
 ...
@@ -135,7 +135,7 @@ editor.getValue(toTextEncoder);
 You can still call `getValue()` and `setValue()` without an encoder — HTML is used by default
 :::
 
-### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md)
+### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md) {#--on--detach}
 
 ```jsx title="Before 2.0"
 editor.events.on("Change", function(action, canUndo, canRedo){
@@ -153,7 +153,7 @@ editor.api.on("set-font-size", (obj) => {
 editor.api.detach("track");
 ```
 
-### - `fire()` → Use [`exec()`](api/internal/exec.md) and [`intercept()`](api/internal/intercept.md)
+### - `fire()` → Use [`exec()`](api/internal/exec.md) and [`intercept()`](api/internal/intercept.md) {#--fire--use-exec-and-intercept}
 
 ```jsx title="Before 2.0"
 editor.events.fire("some-event", [data]);

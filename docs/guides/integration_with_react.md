@@ -12,7 +12,7 @@ You should be familiar with the basic concepts and patterns of [**React**](https
 
 DHTMLX RichText is compatible with **React**. We have prepared code examples on how to use DHTMLX RichText with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-richtext-demo).
 
-## Creating a project
+## Creating a project {#creating-a-project}
 
 :::info
 Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
@@ -24,7 +24,7 @@ You can create a basic **React** project or use **React with Vite**. Let's name 
 npx create-react-app my-react-richtext-app
 ~~~
 
-### Installation of dependencies
+### Installation of dependencies {#installation-of-dependencies}
 
 Go to the new created app directory:
 
@@ -50,19 +50,19 @@ npm run dev
 
 The app should run on a localhost (for instance `http://localhost:3000`).
 
-## Creating RichText
+## Creating RichText {#creating-richtext}
 
 Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
 
-### Step 1. Package installation
+### Step 1. Package installation {#step-1-package-installation}
 
 Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
 
-### Step 2. Component creation
+### Step 2. Component creation {#step-2-component-creation}
 
 Now you need to create a React component, to add a RichText into the application. Create a new file in the ***src/*** directory and name it ***Richtext.jsx***.
 
-#### Importing source files
+#### Importing source files {#importing-source-files}
 
 Open the ***Richtext.jsx*** file and import RichText source files. Note that:
 
@@ -82,7 +82,7 @@ import "@dhx/trial-richtext/dist/richtext.css";
 
 In this tutorial you can see how to configure the **trial** version of RichText.
 
-#### Setting containers and adding Richtext
+#### Setting containers and adding Richtext {#setting-containers-and-adding-richtext}
 
 To display RichText on the page, you need to create container for RichText and initialize the component using the corresponding constructors:
 
@@ -109,7 +109,7 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-#### Adding styles
+#### Adding styles {#adding-styles}
 
 To display RichText correctly, you need to specify important styles for RichText and its container in the main css file of the project:
 
@@ -135,7 +135,7 @@ body,
 }
 ~~~
 
-#### Loading data
+#### Loading data {#loading-data}
 
 To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
@@ -222,7 +222,7 @@ export default function RichTextComponent(props) {
 
 Now the RichText component is ready. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
 
-#### Handling events
+#### Handling events {#handling-events}
 
 When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
 

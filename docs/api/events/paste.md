@@ -6,11 +6,11 @@ description: You can learn about the paste event in the documentation of the DHT
 
 # paste
 
-### Description
+### Description {#description}
 
 @short: Fires when pasting content
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "paste": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the paste event in the documentation of the DHT
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

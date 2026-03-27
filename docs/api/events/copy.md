@@ -6,11 +6,11 @@ description: You can learn about the copy event in the documentation of the DHTM
 
 # copy
 
-### Description
+### Description {#description}
 
 @short: Fires when copying selected text
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "copy": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the copy event in the documentation of the DHTM
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

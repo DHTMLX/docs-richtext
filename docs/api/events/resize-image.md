@@ -6,17 +6,17 @@ description: You can learn about the resize-image event in the documentation of 
 
 # resize-image
 
-### Description
+### Description {#description}
 
 @short: Fires when resizing image
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "resize-image": ({ id: number, width: number, height: number }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **resize-image** event can take an object with the following parameters:
 
@@ -28,7 +28,7 @@ The callback of the **resize-image** event can take an object with the following
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

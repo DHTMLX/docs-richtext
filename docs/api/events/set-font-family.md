@@ -6,17 +6,17 @@ description: You can learn about the set-font-family event in the documentation 
 
 # set-font-family
 
-### Description
+### Description {#description}
 
 @short: Fires when setting a font family
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "set-font-family": ({ fontFamily: string }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **set-font-family** event can take an object with the following parameter:
 
@@ -26,7 +26,7 @@ The callback of the **set-font-family** event can take an object with the follow
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-13}
 // initialize RichText

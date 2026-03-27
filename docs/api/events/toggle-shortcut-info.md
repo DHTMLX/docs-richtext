@@ -6,17 +6,17 @@ description: You can learn about the toggle-shortcut-info event in the documenta
 
 # toggle-shortcut-info
 
-### Description
+### Description {#description}
 
 @short: Fires when toggling the shortcut info
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "toggle-shortcut-info": ({ mode?: boolean }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
 
@@ -26,7 +26,7 @@ The callback of the **toggle-shortcut-info** event can take an object with the f
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

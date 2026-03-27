@@ -6,23 +6,23 @@ description: You can learn about the fullscreenMode config in the documentation 
 
 # fullscreenMode
 
-### Description
+### Description {#description}
 
 @short: Optional. Enables the RichText fullscreen mode
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 fullscreenMode?: boolean; 
 ~~~
 
-### Default config
+### Default config {#default-config}
 
 ~~~jsx
 fullscreenMode: false;
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {3}
 // initialize RichText

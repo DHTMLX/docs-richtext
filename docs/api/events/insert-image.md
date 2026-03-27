@@ -6,11 +6,11 @@ description: You can learn about the insert-image event in the documentation of 
 
 # insert-image
 
-### Description
+### Description {#description}
 
 @short: Fires when inserting image
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "insert-image": (IImageContext) => boolean | void;
@@ -33,7 +33,7 @@ interface IImageContext {
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

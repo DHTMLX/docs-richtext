@@ -6,17 +6,17 @@ description: You can learn about the getValue method in the documentation of the
 
 # getValue()
 
-### Description
+### Description {#description}
 
 @short: Returns the RichText value
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 getValue(encoder?: any): string;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `encoder` - (optional) a parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
 
@@ -27,7 +27,7 @@ const toTextEncoder = richtext.text.toText; // text encoder
 const toHTMLEncoder = richtext.html.toHTML; // html encoder
 ```
 
-### Example
+### Example {#example}
 
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {

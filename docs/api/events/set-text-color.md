@@ -6,11 +6,11 @@ description: You can learn about the set-text-color event in the documentation o
 
 # set-text-color
 
-### Description
+### Description {#description}
 
 @short: Fires when setting a text color and/or a background text color
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "set-text-color": (ITextColor) => boolean | void;
@@ -21,7 +21,7 @@ interface ITextColor {
 }
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **set-text-color** event can take an object with the following parameters:
 
@@ -32,7 +32,7 @@ The callback of the **set-text-color** event can take an object with the followi
 For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-14}
 // initialize RichText

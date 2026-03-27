@@ -6,21 +6,21 @@ description: You can learn about the setNext method in the documentation of the 
 
 # api.setNext()
 
-### Description
+### Description {#description}
 
 @short: Allows adding some action into the Event Bus order
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.setNext(next: any): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `next` - (required) the action to be included into the **Event Bus** order  
 
-### Example
+### Example {#example}
 
 ~~~jsx {10-11}
 const server = "https://some-backend-url";

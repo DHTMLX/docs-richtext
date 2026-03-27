@@ -6,7 +6,7 @@ description: You can learn about the value config in the documentation of the DH
 
 # value
 
-### Description
+### Description {#description}
 
 @short: Optional. Specifies the initial value (content) displayed within the editor area of RichText
 
@@ -14,13 +14,13 @@ description: You can learn about the value config in the documentation of the DH
 If you want to set the value (content) using custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
 :::
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 value?: string; 
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {

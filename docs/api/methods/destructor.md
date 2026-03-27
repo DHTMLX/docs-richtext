@@ -6,17 +6,17 @@ description: You can learn about the destructor method in the documentation of t
 
 # destructor()
 
-### Description
+### Description {#description}
 
 @short: Removes all HTML elements of RichText, and detaches all related events
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 destructor(): void;
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {

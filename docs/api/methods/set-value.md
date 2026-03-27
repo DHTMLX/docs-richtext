@@ -6,17 +6,17 @@ description: You can learn about the setValue method in the documentation of the
 
 # setValue()
 
-### Description
+### Description {#description}
 
 @short: Applies a new value to RichText
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 setValue: (value: string, encoder?: any): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `value` - (required) a value to be inserted into the RichText
 - `encoder` - (optional) a custom parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
@@ -28,7 +28,7 @@ const fromTextEncoder = richtext.text.fromText; // text encoder
 const fromHTMLEncoder = richtext.html.fromHTML; // html encoder
 ```
 
-### Example
+### Example {#example}
 
 ~~~jsx {7-8}
 const editor = new richtext.Richtext("#root", {

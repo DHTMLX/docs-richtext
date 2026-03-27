@@ -6,17 +6,17 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 # imageUploadUrl
 
-### Description
+### Description {#description}
 
 @short: Optional. Specifies the URL which will be used for image upload
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 imageUploadUrl?: string;
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {3}
 // initialize RichText

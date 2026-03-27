@@ -6,11 +6,11 @@ description: You can learn about the export event in the documentation of the DH
 
 # export
 
-### Description
+### Description {#description}
 
 @short: Fires after pressing the "Export" option in the menubar or via Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "export": ({ options: IExportOptions; result?: any }) => boolean | void;
@@ -23,7 +23,7 @@ interface IExportOptions {
 }
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of **export** event can take an object with the following parameters:
 
@@ -36,7 +36,7 @@ The callback of **export** event can take an object with the following parameter
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-15}
 // initialize RichText

@@ -12,7 +12,7 @@ This guide will give you detailed instructions on how to create RichText on a pa
 2. [Create a container for RichText](#creating-container).
 3. [Initialize RichText with the object constructor](#initializing-richtext).
 
-## Including source files
+## Including source files {#including-source-files}
 
 [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it into a folder of your project.
 
@@ -28,7 +28,7 @@ Make sure that you set correct relative paths to the source files:
 <link rel="stylesheet" href="./codebase/richtext.css">
 ~~~
 
-## Creating container
+## Creating container {#creating-container}
 
 Add a container for RichText and give it an ID, for example *"root"*:
 
@@ -36,7 +36,7 @@ Add a container for RichText and give it an ID, for example *"root"*:
 <div id="root"></div>
 ~~~
 
-## Initializing RichText
+## Initializing RichText {#initializing-richtext}
 
 Initialize RichText with the `richtext.Richtext` constructor. The constructor takes two parameters:
 
@@ -50,13 +50,13 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
-### Configuration properties
+### Configuration properties {#configuration-properties}
 
 :::note
 The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
 :::
 
-## Example
+## Example {#example}
 
 In this snippet you can see how to initialize **RichText** with the initial data:
 

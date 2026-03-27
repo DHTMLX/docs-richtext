@@ -6,7 +6,7 @@ description: You can have an API overview of JavaScript RichText in the document
 
 # API overview
 
-## RichText constructor
+## RichText constructor {#richtext-constructor}
 
 ~~~js
 new richtext.RichText("#root", {
@@ -19,7 +19,7 @@ new richtext.RichText("#root", {
 - an HTML container (e.g., CSS selector or DOM element)
 - a configuration object ([see properties](api/overview/properties_overview.md))
 
-## RichText methods
+## RichText methods {#richtext-methods}
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
@@ -29,7 +29,7 @@ new richtext.RichText("#root", {
 | [](api/methods/set-locale.md)                  | @getshort(api/methods/set-locale.md)       |
 | [](api/methods/destructor.md)                  | @getshort(api/methods/destructor.md)       |
 
-## Event Bus methods
+## Event Bus methods {#event-bus-methods}
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
@@ -39,14 +39,14 @@ new richtext.RichText("#root", {
 | [](api/internal/detach.md)                     | @getshort(api/internal/detach.md)          |
 | [](api/internal/set-next.md)                   | @getshort(api/internal/set-next.md)        |
 
-## State methods
+## State methods {#state-methods}
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/internal/get-state.md)                  | @getshort(api/internal/get-state.md)       |
 | [](api/internal/get-reactive-state.md)         | @getshort(api/internal/get-reactive-state.md) |
 
-## Events
+## Events {#events}
 
 | Name                                           | Description                               |
 | ----------------------------------------------|-------------------------------------------|
@@ -83,7 +83,7 @@ new richtext.RichText("#root", {
 | [](api/events/undo.md)                         | @getshort(api/events/undo.md)              |
 | [](api/events/update-link.md)                  | @getshort(api/events/update-link.md)       |
 
-## Properties
+## Properties {#properties}
 
 | Name                                          | Description                               |
 | ----------------------------------------------|-------------------------------------------|

@@ -6,7 +6,7 @@ description: You can learn about the locale config in the documentation of the D
 
 # locale
 
-### Description
+### Description {#description}
 
 @short: Optional. An object that includes localization labels of RichText
 
@@ -14,13 +14,13 @@ description: You can learn about the locale config in the documentation of the D
 The **locale** object needs to include all labels of RichText with the corresponding translations.
 :::
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 locale?: object;
 ~~~
 
-### Default config
+### Default config {#default-config}
 
 By default, RichText uses the **English** locale. You can set it to the custom locale as well.
 
@@ -28,7 +28,7 @@ By default, RichText uses the **English** locale. You can set it to the custom l
 To change the current locale dynamically, you can use the [**setLocale()**](api/methods/set-locale.md) method of RichText
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {3}
 // initialize RichText

@@ -6,11 +6,11 @@ description: You can learn about the exec method in the documentation of the DHT
 
 # api.exec()
 
-### Description
+### Description {#description}
 
 @short: Allows triggering inner events
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.exec(
@@ -19,18 +19,18 @@ api.exec(
 ): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `event` - (required) an event to be fired
 - `config` - (required) the config object with parameters (see the event to be fired)
 
-### Events
+### Events {#events}
 
 :::info
 The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

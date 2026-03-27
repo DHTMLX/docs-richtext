@@ -6,11 +6,11 @@ description: You can learn about the show-popup event in the documentation of th
 
 # show-popup
 
-### Description
+### Description {#description}
 
 @short: Fires when a popup is shown/hidden
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "show-popup": (IPopupConfig) => boolean | void;
@@ -21,7 +21,7 @@ interface IPopupConfig {
 }
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **show-popup** event can take an object with the following parameters:
 
@@ -32,7 +32,7 @@ The callback of the **show-popup** event can take an object with the following p
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-13}
 // initialize RichText

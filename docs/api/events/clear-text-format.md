@@ -6,11 +6,11 @@ description: You can learn about the clear-text-format event in the documentatio
 
 # clear-text-format
 
-### Description
+### Description {#description}
 
 @short: Fires when a text format is cleared via the menubar/toolbar or Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "clear-text-format": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the clear-text-format event in the documentatio
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-10}
 // initialize RichText

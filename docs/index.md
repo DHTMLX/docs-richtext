@@ -27,9 +27,9 @@ RichText is framework-agnostic and can be easily integrated with [React](guides/
 
 This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](api/overview/main_overview.md), and best practices for embedding RichText into your application.
 
-## RichText structure
+## RichText structure {#richtext-structure}
 
-### Menubar
+### Menubar {#menubar}
 
 The RichText menubar provides access to editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
 
@@ -39,7 +39,7 @@ Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. Wh
 ![Menubar](./assets/richtext/menubar.png)
 </div>
 
-### Toolbar
+### Toolbar {#toolbar}
 
 The RichText toolbar provides quick access to text formatting and structural editing features. By default, the [toolbar](api/config/toolbar.md#default-config) is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, list formatting, and more.
 
@@ -49,11 +49,11 @@ The [`toolbar`](api/config/toolbar.md) property allows you to fully customize th
 ![Toolbar](./assets/richtext/toolbar.png)
 </div>
 
-### Editor
+### Editor {#editor}
 
 The RichText editor is the central area where users create and format content. You can control the editor’s appearance and behavior through configuration options such as [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), and [`defaultStyles`](api/config/default-styles.md). RichText also supports custom styling, image embedding, and responsive layout adjustments to match the needs of your application.
 
-#### Two working modes
+#### Two working modes {#two-working-modes}
 
 DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
 
@@ -69,27 +69,27 @@ DHTMLX RichText can work with content in "classic" and "document" modes. You can
 ![Document mode](./assets/richtext/document_mode.png)
 </div>
 
-## Supported formats
+## Supported formats {#supported-formats}
 
 The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and plain text formats.
 
-#### HTML format
+#### HTML format {#html-format}
 
 <div className="img_border">
 ![HTML format](./assets/richtext/html_format.png)
 </div>
 
-#### Text format
+#### Text format {#text-format}
 
 <div className="img_border">
 ![Text format](./assets/richtext/text_format.png)
 </div>
 
-## Keyboard shortcuts
+## Keyboard shortcuts {#keyboard-shortcuts}
 
 The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
 
-### Text formatting
+### Text formatting {#text-formatting}
 
 | Action          | Windows/Linux   | macOS         |
 |-----------------|-----------------|---------------|
@@ -98,7 +98,7 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 | Underline       | `Ctrl+U`        | `⌘U`          |
 | Strikethrough   | `Ctrl+Shift+X`  | `⌘⇧X`         |
 
-### Editing
+### Editing {#editing}
 
 | Action   | Windows/Linux            | macOS         |
 |----------|--------------------------|---------------|
@@ -108,7 +108,7 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 | Copy     | `Ctrl+C`                 | `⌘C`          |
 | Paste    | `Ctrl+V`                 | `⌘V`          |
 
-### Special actions
+### Special actions {#special-actions}
 
 | Action       | Windows/Linux | macOS |
 |--------------|---------------|-------|

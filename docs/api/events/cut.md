@@ -6,11 +6,11 @@ description: You can learn about the cut event in the documentation of the DHTML
 
 # cut
 
-### Description
+### Description {#description}
 
 @short: Fires when cutting selected text
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "cut": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the cut event in the documentation of the DHTML
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

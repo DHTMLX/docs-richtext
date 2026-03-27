@@ -12,7 +12,7 @@ You should be familiar with basic concepts and patterns of **Angular** before re
 
 DHTMLX RichText is compatible with **Angular**. We have prepared code examples on how to use DHTMLX RichText with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
 
-## Creating a project
+## Creating a project {#creating-a-project}
 
 :::info
 Before you start to create a new project, install [**Angular CLI**](https://v17.angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
@@ -30,7 +30,7 @@ If you want to follow this guide, disable Server-Side Rendering (SSR) and Static
 
 The command above installs all the necessary tools, so you don't need to run any additional commands.
 
-### Installation of dependencies
+### Installation of dependencies {#installation-of-dependencies}
 
 Go to the new created app directory:
 
@@ -47,19 +47,19 @@ yarn start
 
 The app should run on a localhost (for instance `http://localhost:3000`).
 
-## Creating RichText
+## Creating RichText {#creating-richtext}
 
 Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
 
-### Step 1. Package installation
+### Step 1. Package installation {#step-1-package-installation}
 
 Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
   
-### Step 2. Component creation
+### Step 2. Component creation {#step-2-component-creation}
 
 Now you need to create an Angular component, to add Richtext into the application. Create the **richtext** folder in the **src/app/** directory, add a new file into it and name it **richtext.component.ts**.
 
-#### Import source files
+#### Import source files {#import-source-files}
 
 Open the **richtext.component.ts** file and import RichText source files. Note that:
 
@@ -77,7 +77,7 @@ import { Richtext} from '@dhx/trial-richtext';
 
 In this tutorial you can see how to configure the **trial** version of RichText.
 
-#### Set containers and initialize the Richtext
+#### Set containers and initialize the Richtext {#set-containers-and-initialize-the-richtext}
 
 To display RichText on the page, you need to set a container for RichText, and initialize the component using the corresponding constructor:
 
@@ -111,7 +111,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-#### Adding styles
+#### Adding styles {#adding-styles}
 
 To display RichText correctly, you need to provide the corresponding styles. For this purpose, you can create the **richtext.component.css** file in the **src/app/richtext/** directory and specify important styles for RichText and its container:
 
@@ -139,7 +139,7 @@ body{
 }
 ~~~
 
-#### Loading data
+#### Loading data {#loading-data}
 
 To add data into RichText, you need to provide a data set. You can create the **data.ts** file in the **src/app/richtext/** directory and add some data into it:
 
@@ -227,7 +227,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 Now the RichText component is ready to use. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
 
-#### Handling events
+#### Handling events {#handling-events}
 
 When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
 
@@ -248,7 +248,7 @@ ngOnDestroy(): void {
 }
 ~~~
 
-### Step 3. Adding RichText into the app
+### Step 3. Adding RichText into the app {#step-3-adding-richtext-into-the-app}
 
 To add the ***RichTextComponent*** component into your app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
 

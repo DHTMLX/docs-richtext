@@ -6,17 +6,17 @@ description: You can learn about the toolbar config in the documentation of the 
 
 # toolbar
 
-### Description
+### Description {#description}
 
 @short: Optional. Enables toolbar and allows users to specify/configure buttons displayed within toolbar
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 toolbar?: boolean | Array<string | { id: string, type: string, label?: string, tooltip?: string, css?: string, handler?: () => any }>;
 ~~~
 
-#### Available buttons within Toolbar
+#### Available buttons within Toolbar {#available-buttons-within-toolbar}
 
 You can specify the following buttons in the RichText toolbar:
 
@@ -66,7 +66,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-#### Custom buttons within Toolbar
+#### Custom buttons within Toolbar {#custom-buttons-within-toolbar}
 
 You can specify custom buttons as objects with the following parameters:
 
@@ -115,7 +115,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-#### Hide Toolbar
+#### Hide Toolbar {#hide-toolbar}
 
 If you need to hide toolbar, set the `toolbar` property to `false` as follows:
 
@@ -126,7 +126,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-### Default config
+### Default config {#default-config}
 
 ~~~jsx
 const defaultToolbarButtons = {
@@ -187,7 +187,7 @@ new richtext.Richtext("#root", {
 ```
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {3-18}
 // initialize RichText

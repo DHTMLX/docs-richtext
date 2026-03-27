@@ -6,11 +6,11 @@ description: You can learn about the align event in the documentation of the DHT
 
 # align
 
-### Description
+### Description {#description}
 
 @short: Fires when text alignment is changed via the menubar/toolbar or Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "align": ({ 
@@ -18,7 +18,7 @@ description: You can learn about the align event in the documentation of the DHT
 }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **align** event can take an object with the following parameter:
 
@@ -28,7 +28,7 @@ The callback of the **align** event can take an object with the following parame
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-12}
 // initialize RichText

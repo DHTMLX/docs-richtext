@@ -6,11 +6,11 @@ description: You can learn about the insert-list event in the documentation of t
 
 # insert-list
 
-### Description
+### Description {#description}
 
 @short: Fires when inserting list
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "insert-list": ({ type: TListType }) => boolean | void;
@@ -18,7 +18,7 @@ description: You can learn about the insert-list event in the documentation of t
 type TListType = "bulleted" | "numbered";
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **insert-list** event can take an object with the following parameter:
 
@@ -30,7 +30,7 @@ The callback of the **insert-list** event can take an object with the following 
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

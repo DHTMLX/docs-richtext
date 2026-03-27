@@ -6,11 +6,11 @@ description: You can learn about the undo event in the documentation of the DHTM
 
 # undo
 
-### Description
+### Description {#description}
 
 @short: Fires when pressing the "Undo" button in the menubar/toolbar or via Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "undo": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the undo event in the documentation of the DHTM
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

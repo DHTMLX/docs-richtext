@@ -16,7 +16,7 @@ You can configure RichText appearance and functionality via the corresponding AP
 - Specify **initial locale** using the [`locale`](api/config/locale.md) property
 - Apply **initial styles** using the [`defaultStyles`](api/config/default-styles.md) property
 
-## Layout modes
+## Layout modes {#layout-modes}
 
 There are two layout modes of RichText editor between which you can select to get the best working place for creating your perfect content:
 
@@ -40,11 +40,11 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
-## Toolbar
+## Toolbar {#toolbar}
 
 The RichText toolbar consists of several blocks of controls that can be changed according to your needs.
 
-### Default toolbar controls
+### Default toolbar controls {#default-toolbar-controls}
 
 You can specify the following buttons and controls in the RichText toolbar:
 
@@ -125,7 +125,7 @@ new richtext.Richtext("#root", {
 
 **Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
-### Custom toolbar controls
+### Custom toolbar controls {#custom-toolbar-controls}
 
 You can also specify custom controls as objects in the [`toolbar`](api/config/toolbar.md) property with the following parameters:
 
@@ -176,7 +176,7 @@ new richtext.Richtext("#root", {
 
 **Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
-### Hide Toolbar
+### Hide Toolbar {#hide-toolbar}
 
 If you need to hide toolbar, set the [`toolbar`](api/config/toolbar.md) property to `false` as follows:
 
@@ -187,7 +187,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-## Default styles
+## Default styles {#default-styles}
 
 You can apply default style values for specific block types in the editor using the [`defaultStyles`](api/config/default-styles.md) property.
 

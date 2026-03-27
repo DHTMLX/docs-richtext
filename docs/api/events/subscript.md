@@ -6,11 +6,11 @@ description: You can learn about the subscript event in the documentation of the
 
 # subscript
 
-### Description
+### Description {#description}
 
 @short: Fires when pressing the "Subscript" button in the menubar/toolbar or via Event Bus methods
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "subscript": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the subscript event in the documentation of the
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-10}
 // initialize RichText

@@ -6,17 +6,17 @@ description: You can learn about the setConfig method in the documentation of th
 
 # setConfig()
 
-### Description
+### Description {#description}
 
 @short: Applies new configuration parameters to RichText
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 setConfig(config: { [key:any]: any }): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `config` - (required) the object of RichText configuration parameters. See the full list of properties [here](api/overview/properties_overview.md)
 
@@ -24,7 +24,7 @@ setConfig(config: { [key:any]: any }): void;
 The `setConfig()` method preserves all the previously set parameters that are not explicitly provided in the `setConfig()` method call.
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {

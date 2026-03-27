@@ -6,11 +6,11 @@ description: You can learn about the print event in the documentation of the DHT
 
 # print
 
-### Description
+### Description {#description}
 
 @short: Fires when printing document
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "print": () => boolean | void;
@@ -20,7 +20,7 @@ description: You can learn about the print event in the documentation of the DHT
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-8}
 // initialize RichText

@@ -6,27 +6,27 @@ description: You can learn about the on method in the documentation of the DHTML
 
 # api.detach()
 
-### Description
+### Description {#description}
 
 @short: Allows removing/detaching event handlers
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.detach( tag: string ): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `tag` - (required) the name of the action tag
 
-### Events
+### Events {#events}
 
 :::info
 The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {6-8,10}
 // initialize RichText

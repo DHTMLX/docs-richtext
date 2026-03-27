@@ -6,17 +6,17 @@ description: You can learn about the toggle-layout-mode event in the documentati
 
 # toggle-layout-mode
 
-### Description
+### Description {#description}
 
 @short: Fires when toggling the layout mode
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "toggle-layout-mode": ({ mode?: "classic" | "document" }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **toggle-layout-mode** event can take an object with the following parameters:
 
@@ -26,7 +26,7 @@ The callback of the **toggle-layout-mode** event can take an object with the fol
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-11}
 // initialize RichText

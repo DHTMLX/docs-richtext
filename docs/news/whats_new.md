@@ -4,11 +4,11 @@ title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
-## Version 2.0.5 
+## Version 2.0.5 {#version-205}
 
 Released on March 6, 2026
 
-### Fixes
+### Fixes {#fixes}
 
 - IME input is not processed correctly
 - Composition-based input (e.g., Chinese, Japanese, Korean on desktop) is not processed correctly
@@ -28,21 +28,21 @@ Released on March 6, 2026
 - Chrome: cannot insert emojis from context menu
 - Firefox: select all (CTRL+A) is not handled correctly
 
-## Version 2.0.4
+## Version 2.0.4 {#version-204}
 
 Released on October 15, 2025
 
-### Fixes
+### Fixes {#fixes-1}
 
 - Incorrect range selection for paragraphs
 - Link popups are not displayed when adjacent to linked images
 - Initial toolbar values are not accurate relative to actual content
 
-## Version 2.0.3
+## Version 2.0.3 {#version-203}
 
 Released on August 27, 2025
 
-### Fixes
+### Fixes {#fixes-2}
 
 - Clicking on a horizontal line causes a script error
 - The default line height is incorrect
@@ -51,23 +51,23 @@ Released on August 27, 2025
 - The parser ignores escaped font names in HTML
 - The parser ignores `margin-left` and `line-height` properties in HTML
 
-## Version 2.0.2
+## Version 2.0.2 {#version-202}
 
 Released on August 4, 2025
 
-### Fixes
+### Fixes {#fixes-3}
 
 - Updated package content
 
-## Version 2.0.1
+## Version 2.0.1 {#version-201}
 
 Released on July 30, 2025
 
-### Fixes
+### Fixes {#fixes-4}
 
 - Update type definitions for the `defaultStyles` property
 
-## Version 2.0
+## Version 2.0 {#version-20}
 
 Released on July 30, 2025
 
@@ -75,7 +75,7 @@ Released on July 30, 2025
 API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
 :::
 
-### New Functionality
+### New Functionality {#new-functionality}
 
 - **Next-gen text rendering**  
   Experience smoother, faster, and more accurate text rendering with our new engine
@@ -116,9 +116,9 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 - **Keyboard shortcuts**  
   Expanded support for common formatting and editing shortcuts
 
-###  New API
+###  New API {#new-api}
 
-#### New properties
+#### New properties {#new-properties}
 
 - [`fullscreenMode`](api/config/fullscreen-mode.md)  
 - [`imageUploadUrl`](api/config/image-upload-url.md)  
@@ -128,51 +128,51 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 - [`toolbar`](api/config/toolbar.md)  
 - [`value`](api/config/value.md)
 
-####  New methods
+####  New methods {#new-methods}
 
 - [`setConfig()`](api/methods/set-config.md) — Dynamically update configuration  
 - [`setLocale()`](api/methods/set-locale.md) — Change locale on the fly
 
-#### New internal methods
+#### New internal methods {#new-internal-methods}
 
 - [`api.exec()`](api/internal/exec.md)  
 - [`api.intercept()`](api/internal/intercept.md)  
 - [`api.getReactiveState()`](api/internal/get-reactive-state.md)  
 - [`api.getState()`](api/internal/get-state.md)
 
-#### New events
+#### New events {#new-events}
 
 A full list of new events is available [here](api/overview/events_overview.md)
 
-### Updated API
+### Updated API {#updated-api}
 
-#### Updated properties
+#### Updated properties {#updated-properties}
 
 - [`defaultStyles`](api/config/default-styles.md)
 
-#### Updated methods
+#### Updated methods {#updated-methods}
 
 - [`setValue()`](api/methods/set-value.md)  
 - [`getValue()`](api/methods/get-value.md)
 
-#### Updated internal methods
+#### Updated internal methods {#updated-internal-methods}
 
 - [`api.detach()`](api/internal/detach.md)  
 - [`api.on()`](api/internal/on.md)
 
-## Removed API
+## Removed API {#removed-api}
 
 :::warning
 Do not use the removed API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
 :::
 
-### [Removed properties](news/migration.md#properties-migration)
+### [Removed properties](news/migration.md#properties-migration) {#removed-properties}
 
 - [`customStats`](news/migration.md#--customstats)  
 - [`mode`](news/migration.md#--mode--layoutmode)  
 - [`toolbarBlocks`](news/migration.md#--toolbarblocks--toolbar)
 
-### [Removed methods](news/migration.md#methods-migration)
+### [Removed methods](news/migration.md#methods-migration) {#removed-methods}
 
 - `exitFullScreen()`  
 - `fullScreen()`  
@@ -180,11 +180,11 @@ Do not use the removed API in your projects! <br/> Refer to the [Migration](news
 - `getStats()`  
 - `paint()`
 
-### Removed internal methods
+### Removed internal methods {#removed-internal-methods}
 
 - [`events.fire()`](news/migration.md#--fire--use-exec-and-intercept)
 
-### Removed events
+### Removed events {#removed-events}
 
 - `Action`  
 - `Change`  

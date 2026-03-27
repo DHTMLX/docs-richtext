@@ -6,11 +6,11 @@ description: You can learn about the defaultStyles config in the documentation o
 
 # defaultStyles
 
-### Description
+### Description {#description}
 
 @short: Optional. Specifies default style values for specific block types
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 defaultStyles?: {
@@ -101,7 +101,7 @@ new richtext.Richtext("#root", {
 In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles assigned to `h2` blocks as well.
 :::
 
-### Default config
+### Default config {#default-config}
 
 ~~~jsx
 const defaultStyles = {
@@ -117,7 +117,7 @@ const defaultStyles = {
 };
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {3-13}
 // initialize RichText

@@ -6,11 +6,11 @@ description: You can learn about the layoutMode config in the documentation of t
 
 # layoutMode
 
-### Description
+### Description {#description}
 
 @short: Optional. Specifies the layout mode for the main editor area
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 layoutMode: "classic" | "document";
@@ -18,13 +18,13 @@ layoutMode: "classic" | "document";
 
 The `"classic"` mode represents the edit area that fits the entire page. The `"document"` mode closely represent the real document sizes (sizes used: A4, A5, A6, A7).
 
-### Default config
+### Default config {#default-config}
 
 ~~~jsx
 layoutMode: "classic";
 ~~~
 
-### Example
+### Example {#example}
 
 ~~~jsx {3}
 // initialize RichText

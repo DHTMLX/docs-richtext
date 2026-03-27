@@ -8,7 +8,7 @@ description: You can learn about the localization in the documentation of the DH
 
 You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
 
-## Default locale
+## Default locale {#default-locale}
 
 The **English** locale is used by default:
 
@@ -459,7 +459,7 @@ const cn = {
 ~~~
 </details>
 
-## Custom locale
+## Custom locale {#custom-locale}
 
 To apply a custom locale you need to:
 
@@ -467,7 +467,7 @@ To apply a custom locale you need to:
 
 - apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
 
-## Example
+## Example {#example}
 
 In this snippet you can see how to switch through several locales:
 

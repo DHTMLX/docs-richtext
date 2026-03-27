@@ -6,17 +6,17 @@ description: You can learn about the setLocale method in the documentation of th
 
 # setLocale()
 
-### Description
+### Description {#description}
 
 @short: Applies a new locale to RichText
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 setLocale(null | locale?: object): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `null` - (optional) resets to the default locale (*English*)
 - `locale` - (optional) the object of data of the new locale to be applied
@@ -25,7 +25,7 @@ setLocale(null | locale?: object): void;
 Use the `setLocale()` method to apply a new locale to RichText. To reset RichText to the default locale, call the `setLocale()` method without arguments (or with a *null* value).
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {

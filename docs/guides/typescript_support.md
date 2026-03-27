@@ -12,7 +12,7 @@ Starting from v2.0, the library of DHTMLX RichText provides an ability to use Ty
 You can try out the functionality right in our <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext"  target="_blank">Snippet Tool</a>.
 :::
 
-## Advantages of using TypeScript
+## Advantages of using TypeScript {#advantages-of-using-typescript}
 
 Why do you need to use DHTMLX RichText with TypeScript?
 

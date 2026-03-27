@@ -6,17 +6,17 @@ description: You can learn about the getReactiveState method in the documentatio
 
 # api.getReactiveState()
 
-### Description
+### Description {#description}
 
 @short: Returns an object with the reactive properties of RichText
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.getReactiveState(): object;
 ~~~
 
-### Returns
+### Returns {#returns}
 
 The method returns an object with the following parameters:
 
@@ -33,7 +33,7 @@ The method returns an object with the following parameters:
 }
 ~~~  
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-7}
 // initialize RichText

@@ -6,17 +6,17 @@ description: You can learn about the toggle-fullscreen-mode event in the documen
 
 # toggle-fullscreen-mode
 
-### Description
+### Description {#description}
 
 @short: Fires when toggling the full screen mode
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 "toggle-fullscreen-mode": ({ mode?: boolean }) => boolean | void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 The callback of the **toggle-fullscreen-mode** event can take an object with the following parameter:
 
@@ -26,7 +26,7 @@ The callback of the **toggle-fullscreen-mode** event can take an object with the
 For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-9}
 // initialize RichText

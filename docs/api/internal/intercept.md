@@ -6,11 +6,11 @@ description: You can learn about the intercept method in the documentation of th
 
 # api.intercept()
 
-### Description
+### Description {#description}
 
 @short: Allows intercepting and preventing the inner events
 
-### Usage
+### Usage {#usage}
 
 ~~~jsx {}
 api.intercept(
@@ -19,18 +19,18 @@ api.intercept(
 ): void;
 ~~~
 
-### Parameters
+### Parameters {#parameters}
 
 - `event` - (required) an event to be fired
 - `callback` - (required) a callback to be performed (the callback arguments will depend on the event to be fired)
 
-### Events
+### Events {#events}
 
 :::info
 The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
 :::
 
-### Example
+### Example {#example}
 
 ~~~jsx {5-10}
 // create RichText
