@@ -1,0 +1,45 @@
+---
+sidebar_label: toggle-shortcut-info
+title: toggle-shortcut-info Event
+description: You can learn about the toggle-shortcut-info event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+---
+
+# toggle-shortcut-info
+
+### Description {#description}
+
+@short: Fires when toggling the shortcut info
+
+### Usage {#usage}
+
+~~~jsx {}
+"toggle-shortcut-info": ({ mode?: boolean }) => boolean | void;
+~~~
+
+### Parameters {#parameters}
+
+The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
+
+- `mode` - enables a shortcut info; `true` to show shortcut info popup, `false` to hide shortcut info popup
+
+:::info
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::
+
+### Example {#example}
+
+~~~jsx {5-9}
+// initialize RichText
+const editor = new richtext.Richtext("#root", {
+    // configuration properties
+});
+// subscribe to the "toggle-shortcut-info" event
+editor.api.on("toggle-shortcut-info", (obj) => {
+    console.log(obj);
+    console.log("The shortcut info was shown");
+});
+// enable the shortcut info
+editor.api.exec("toggle-shortcut-info", { mode: true });
+~~~
+
+**Change log:** The event was added in v2.0

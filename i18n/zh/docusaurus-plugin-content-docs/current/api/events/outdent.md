@@ -1,0 +1,43 @@
+---
+sidebar_label: outdent
+title: outdent Event
+description: You can learn about the outdent event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+---
+
+# outdent
+
+### Description {#description}
+
+@short: Fires when decreasing block indention
+
+### Usage {#usage}
+
+~~~jsx {}
+"outdent": ({ step: number }) => boolean | void;
+~~~
+
+### Parameters {#parameters}
+
+The callback of the **outdent** event can take an object with the following parameters:
+
+- `step` - the step by which indentation was decreased
+
+:::info
+For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::
+
+### Example {#example}
+
+~~~jsx {5-9}
+// initialize RichText
+const editor = new richtext.Richtext("#root", {
+    // configuration properties
+});
+// subscribe to the "outdent" event
+editor.api.on("outdent", (obj) => {
+    console.log(obj);
+    console.log("The indention was decreased");
+});
+~~~
+
+**Change log:** The event was added in v2.0
