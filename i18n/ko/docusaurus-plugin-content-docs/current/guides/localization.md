@@ -1,21 +1,21 @@
 ---
-sidebar_label: Localization
-title: Localization
-description: You can learn about the localization in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: 로컬라이제이션
+title: 로컬라이제이션
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 로컬라이제이션 방법을 확인하실 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText의 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
-# Localization
+# 로컬라이제이션
 
-You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
+JavaScript RichText 인터페이스의 모든 레이블을 로컬라이즈할 수 있습니다. 이를 위해 새 로케일을 생성하거나 기본 제공 로케일을 수정한 후 RichText에 적용합니다.
 
-## Default locale {#default-locale}
+## 기본 로케일 {#default-locale}
 
-The **English** locale is used by default:
+기본값으로 **영어** 로케일이 사용됩니다:
 
 ~~~jsx
 const en = {
     richtext: {
-        // buttons/actions
+        // 버튼/동작
         Undo: "Undo",
         Redo: "Redo",
         Style: "Style",
@@ -46,7 +46,7 @@ const en = {
         "Classic mode": "Classic mode",
         "Document mode": "Document mode",
 
-        // menubar exclusive options
+        // menubar 전용 옵션
         File: "File",
         Import: "Import",
         Export: "Export",
@@ -76,11 +76,11 @@ const en = {
         Justified: "Justified",
         "Keyboard shortcuts": "Keyboard shortcuts",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "Operation failed. Please check your browser's clipboard permissions.",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "Heading",
         Quote: "Quote",
         Paragraph: "Paragraph",
@@ -90,21 +90,21 @@ const en = {
         normal: "normal",
         default: "default",
 
-        // lists
+        // 목록
         "Bulleted list": "Bulleted list",
         "Numbered list": "Numbered list",
 
-        // links
+        // 링크
         "Enter text to display": "Enter text to display",
         "Paste link": "Paste link",
         "Link copied to clipboard": "Link copied to clipboard",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "Text formatting",
         Editing: "Editing",
         "Special actions": "Special actions",
 
-        // colors
+        // 색상
         Black: "Black",
         Gray: "Gray",
         White: "White",
@@ -119,7 +119,7 @@ const en = {
         Indigo: "Indigo",
         Magenta: "Magenta",
 
-        // shades
+        // 음영
         "Light gray": "Light gray",
         "Medium gray": "Medium gray",
         "Dark gray": "Dark gray",
@@ -157,17 +157,17 @@ const en = {
 };
 ~~~
 
-:::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+:::info[정보]
+기본 ***en*** 로케일(*영어*) 외에도 RichText에는 내장된 ***de*** (*독일어*)와 ***cn*** (*중국어*) 로케일도 포함되어 있습니다.
 :::
 
 <details>
-<summary><b>de</b> locale</summary>
+<summary><b>de</b> 로케일</summary>
 
 ~~~jsx
 const de = {
     richtext: {
-        // buttons/actions
+        // 버튼/동작
         Undo: "Rückgängig",
         Redo: "Wiederholen",
         Style: "Stil",
@@ -198,7 +198,7 @@ const de = {
         "Classic mode": "Klassischer Modus",
         "Document mode": "Dokumentenmodus",
 
-        // menubar exclusive options
+        // menubar 전용 옵션
         File: "Datei",
         Import: "Importieren",
         Export: "Exportieren",
@@ -228,11 +228,11 @@ const de = {
         Justified: "Blocksatz",
         "Keyboard shortcuts": "Tastenkürzel",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "Operation fehlgeschlagen. Bitte überprüfen Sie die Berechtigungen für die Zwischenablage Ihres Browsers.",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "Überschrift",
         Quote: "Zitat",
         Paragraph: "Absatz",
@@ -242,21 +242,21 @@ const de = {
         normal: "normal",
         default: "standard",
 
-        // lists
+        // 목록
         "Bulleted list": "Liste mit Aufzählungszeichen",
         "Numbered list": "Nummerierte Liste",
 
-        // links
+        // 링크
         "Enter text to display": "Text zum Anzeigen eingeben",
         "Paste link": "Link einfügen",
         "Link copied to clipboard": "Link in die Zwischenablage kopiert",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "Textformatierung",
         Editing: "Bearbeitung",
         "Special actions": "Spezielle Aktionen",
 
-        // colors
+        // 색상
         Black: "Schwarz",
         Gray: "Grau",
         White: "Weiß",
@@ -271,7 +271,7 @@ const de = {
         Indigo: "Indigo",
         Magenta: "Magenta",
 
-        // shades
+        // 음영
         "Light gray": "Hellgrau",
         "Medium gray": "Mittelgrau",
         "Dark gray": "Dunkelgrau",
@@ -311,12 +311,12 @@ const de = {
 </details>
 
 <details>
-<summary><b>cn</b> locale</summary>
+<summary><b>cn</b> 로케일</summary>
 
 ~~~jsx
 const cn = {
     richtext: {
-        // buttons/actions,
+        // 버튼/동작
         Undo: "撤销",
         Redo: "重做",
         Style: "样式",
@@ -347,7 +347,7 @@ const cn = {
         "Classic mode": "经典模式",
         "Document mode": "文档模式",
 
-        // menubar exclusive options
+        // menubar 전용 옵션
         File: "文件",
         Import: "导入",
         Export: "导出",
@@ -377,11 +377,11 @@ const cn = {
         Justified: "两端对齐",
         "Keyboard shortcuts": "键盘快捷键",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "操作失败。请检查浏览器的剪贴板权限。",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "标题",
         Quote: "引用",
         Paragraph: "段落",
@@ -391,21 +391,21 @@ const cn = {
         normal: "普通的",
         default: "默认",
 
-        // lists
+        // 목록
         "Bulleted list": "项目符号列表",
         "Numbered list": "编号列表",
 
-        // links
+        // 링크
         "Enter text to display": "输入要显示的文本",
         "Paste link": "粘贴链接",
         "Link copied to clipboard": "链接已复制到剪贴板",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "文本格式化",
         Editing: "编辑",
         "Special actions": "特殊操作",
 
-        // colors
+        // 색상
         Black: "黑色",
         Gray: "灰色",
         White: "白色",
@@ -420,7 +420,7 @@ const cn = {
         Indigo: "靛蓝色",
         Magenta: "洋红色",
 
-        // shades
+        // 음영
         "Light gray": "浅灰色",
         "Medium gray": "中灰色",
         "Dark gray": "深灰色",
@@ -459,16 +459,16 @@ const cn = {
 ~~~
 </details>
 
-## Custom locale {#custom-locale}
+## 사용자 정의 로케일 {#custom-locale}
 
-To apply a custom locale you need to:
+사용자 정의 로케일을 적용하려면 다음을 수행합니다:
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+- 사용자 정의 로케일을 생성하거나 기본 로케일을 수정하고, 모든 텍스트 레이블에 대한 번역을 제공합니다 (원하는 언어를 사용할 수 있습니다)
 
-- apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
+- [`locale`](api/config/locale.md) 속성을 통해 새 로케일을 **RichText**에 적용하거나, [`setLocale()`](api/methods/set-locale.md) 메서드를 사용합니다
 
-## Example {#example}
+## 예제 {#example}
 
-In this snippet you can see how to switch through several locales:
+이 스니펫에서 여러 로케일 간에 전환하는 방법을 확인할 수 있습니다:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

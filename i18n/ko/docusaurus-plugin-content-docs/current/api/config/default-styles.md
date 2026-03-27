@@ -1,20 +1,20 @@
 ---
 sidebar_label: defaultStyles
-title: defaultStyles Config
-description: You can learn about the defaultStyles config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: defaultStyles 설정
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 defaultStyles 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험하며, DHTMLX RichText 30일 무료 평가판을 다운로드하세요.
 ---
 
 # defaultStyles
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Optional. Specifies default style values for specific block types
+@short: 선택 사항. 특정 블록 유형에 대한 기본 스타일 값을 지정합니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 defaultStyles?: {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+    "*"?: { // 모든 블록에 영향을 주며, 공통 속성을 설정할 수 있습니다
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;
@@ -71,13 +71,13 @@ defaultStyles?: {
 };
 ~~~
 
-:::important
-The `defaultStyles` property DOES NOT set the actual CSS to the affected blocks. CSS styles have to be applied separately:
+:::important[중요]
+`defaultStyles` 속성은 영향을 받는 블록에 실제 CSS를 적용하지 **않습니다**. CSS 스타일은 별도로 적용해야 합니다:
 
 ```jsx title="index.js"
 new richtext.Richtext("#root", {
     defaultStyles: {
-        h2: { 
+        h2: {
             "font-family": "Roboto",
             "font-size": "28px",
             color: "purple",
@@ -98,10 +98,10 @@ new richtext.Richtext("#root", {
 </style>
 ```
 
-In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles assigned to `h2` blocks as well.
+이 예제에서는 모든 `h2` 블록에 `"Roboto"` 폰트 패밀리, 28px 폰트 크기, 그리고 전경색과 배경색이 함께 적용됩니다. CSS 스타일도 `h2` 블록에 함께 적용됩니다.
 :::
 
-### Default config {#default-config}
+### 기본 설정 {#default-config}
 
 ~~~jsx
 const defaultStyles = {
@@ -117,10 +117,10 @@ const defaultStyles = {
 };
 ~~~
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {3-13}
-// initialize RichText
+// RichText 초기화
 new richtext.Richtext("#root", {
     defaultStyles: {
         h4: {
@@ -133,12 +133,12 @@ new richtext.Richtext("#root", {
             "font-family": "Roboto"
         }
     },
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 
-**Change log:** The property was updated in v2.0
+**변경 이력:** 이 속성은 v2.0에서 업데이트되었습니다
 
-**Related articles:** [Configuration](guides/configuration.md)
+**관련 문서:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)
+**관련 예제:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)

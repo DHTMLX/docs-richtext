@@ -1,126 +1,126 @@
 ---
-sidebar_label: RichText overview
-title: RichText overview
+sidebar_label: RichText 개요
+title: RichText 개요
 slug: /
-description: You can have an overview of DHTMLX JavaScript RichText library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 전체 개요를 확인하실 수 있습니다. 개발자 가이드 및 API 참조를 살펴보고, 코드 예제와 라이브 데모를 체험하며, DHTMLX RichText의 무료 30일 평가판을 다운로드하십시오.
 ---
 
-# RichText overview
+# RichText 개요
 
-**DHTMLX RichText** is a flexible and lightweight WYSIWYG editor built with JavaScript. Designed to provide a seamless editing experience in modern web applications, RichText offers a clean UI, rich formatting capabilities, and full control over content rendering. Whether you're building a CMS, an internal admin tool, or an embedded document editor, RichText can be easily integrated and customized to match your needs.
+**DHTMLX RichText**는 JavaScript로 구축된 유연하고 경량의 WYSIWYG 에디터입니다. 현대 웹 애플리케이션에서 원활한 편집 경험을 제공하도록 설계된 RichText는 깔끔한 UI, 풍부한 서식 기능, 그리고 콘텐츠 렌더링에 대한 완전한 제어를 제공합니다. CMS, 내부 관리 도구, 또는 임베디드 문서 에디터를 구축하는 경우 모두, RichText는 필요에 맞게 쉽게 통합하고 커스터마이징할 수 있습니다.
 
-**DHTMLX RichText** component includes the following features:
+**DHTMLX RichText** 컴포넌트에는 다음 기능이 포함됩니다:
 
-- Two [**layout modes**](api/config/layout-mode.md)
+- 두 가지 [**레이아웃 모드**](api/config/layout-mode.md)
 
-- Content serialization to both plain text and HTML
+- 일반 텍스트 및 HTML 형식의 콘텐츠 직렬화
 
-- Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
+- 기본 제공 버튼 및 커스텀 버튼을 포함한 구성 가능한 [**툴바**](api/config/toolbar.md)
 
-- Static [**menubar**](api/config/menubar.md) that can be shown or hidden
+- 표시하거나 숨길 수 있는 정적 [**메뉴바**](api/config/menubar.md)
 
-- Image uploading, rich formatting, custom styling, and full screen mode
+- 이미지 업로드, 풍부한 서식, 커스텀 스타일, 전체 화면 모드
 
-- [Full API access](api/overview/main_overview.md) for [event handling](api/overview/event_bus_methods_overview.md), [content manipulation](api/overview/methods_overview.md), and [reactive state management](api/overview/state_methods_overview.md)
+- [이벤트 처리](api/overview/event_bus_methods_overview.md), [콘텐츠 조작](api/overview/methods_overview.md), [반응형 상태 관리](api/overview/state_methods_overview.md)를 위한 [전체 API 접근](api/overview/main_overview.md)
 
-RichText is framework-agnostic and can be easily integrated with [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), and [Svelte](guides/integration_with_svelte.md) frameworks, making it suitable for a wide range of front-end ecosystems.
+RichText는 프레임워크에 구애받지 않으며 [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md), [Svelte](guides/integration_with_svelte.md) 프레임워크와 쉽게 통합할 수 있어 다양한 프론트엔드 생태계에 적합합니다.
 
-This documentation provides detailed guidance on installation, configuration, usage, and customization. You'll find examples for common scenarios, [full API references](api/overview/main_overview.md), and best practices for embedding RichText into your application.
+이 문서는 설치, 구성, 사용 및 커스터마이징에 대한 상세한 안내를 제공합니다. 일반적인 시나리오에 대한 예제, [전체 API 참조](api/overview/main_overview.md), 그리고 RichText를 애플리케이션에 임베드하기 위한 모범 사례를 찾아보실 수 있습니다.
 
-## RichText structure {#richtext-structure}
+## RichText 구조 {#richtext-structure}
 
-### Menubar {#menubar}
+### 메뉴바 {#menubar}
 
-The RichText menubar provides access to editing actions such as creating a new document, printing, importing/exporting content, and more. It is hidden by default.
+RichText 메뉴바는 새 문서 작성, 인쇄, 콘텐츠 가져오기/내보내기 등의 편집 작업에 접근할 수 있게 합니다. 기본적으로 숨겨져 있습니다.
 
-Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
-
-<div className="img_border">
-![Menubar](./assets/richtext/menubar.png)
-</div>
-
-### Toolbar {#toolbar}
-
-The RichText toolbar provides quick access to text formatting and structural editing features. By default, the [toolbar](api/config/toolbar.md#default-config) is enabled and displays a predefined set of commonly used controls such as bold, italic, font settings, list formatting, and more.
-
-The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
+[`menubar`](api/config/menubar.md) 속성을 사용하여 표시 여부를 전환하십시오. 메뉴바는 활성화 또는 비활성화할 수 있지만, 현재 시점에서 내용은 구성할 수 없습니다.
 
 <div className="img_border">
-![Toolbar](./assets/richtext/toolbar.png)
+![메뉴바](./assets/richtext/menubar.png)
 </div>
 
-### Editor {#editor}
+### 툴바 {#toolbar}
 
-The RichText editor is the central area where users create and format content. You can control the editor’s appearance and behavior through configuration options such as [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), and [`defaultStyles`](api/config/default-styles.md). RichText also supports custom styling, image embedding, and responsive layout adjustments to match the needs of your application.
+RichText 툴바는 텍스트 서식 및 구조적 편집 기능에 빠르게 접근할 수 있게 합니다. 기본적으로 [툴바](api/config/toolbar.md#default-config)가 활성화되어 있으며 굵게, 기울임꼴, 글꼴 설정, 목록 서식 등 일반적으로 사용되는 컨트롤의 사전 정의된 세트가 표시됩니다.
 
-#### Two working modes {#two-working-modes}
+[`toolbar`](api/config/toolbar.md) 속성을 통해 툴바의 내용과 레이아웃을 완전히 커스터마이징할 수 있습니다. 툴바를 활성화 또는 비활성화하거나, 기본 컨트롤을 재배열하거나, 사전 정의된 버튼 식별자 배열과 커스텀 버튼 객체를 사용하여 완전히 커스텀 툴바를 정의할 수 있습니다.
 
-DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
+<div className="img_border">
+![툴바](./assets/richtext/toolbar.png)
+</div>
+
+### 에디터 {#editor}
+
+RichText 에디터는 사용자가 콘텐츠를 작성하고 서식을 지정하는 중앙 영역입니다. [`value`](api/config/value.md), [`layoutMode`](api/config/layout-mode.md), [`defaultStyles`](api/config/default-styles.md)와 같은 구성 옵션을 통해 에디터의 외관과 동작을 제어할 수 있습니다. RichText는 또한 커스텀 스타일링, 이미지 임베딩, 그리고 애플리케이션 요구에 맞는 반응형 레이아웃 조정을 지원합니다.
+
+#### 두 가지 작동 모드 {#two-working-modes}
+
+DHTMLX RichText는 "classic" 및 "document" 모드로 콘텐츠를 다룰 수 있습니다. 텍스트를 편집할 때 가장 편안한 모드를 선택할 수 있습니다. [`layoutMode`](api/config/layout-mode.md) 속성을 사용하여 프로그래밍 방식으로 모드를 전환하십시오.
 
 - **"classic"**
 
 <div className="img_border">
-![Classic mode](./assets/richtext/classic_mode.png)
+![클래식 모드](./assets/richtext/classic_mode.png)
 </div>
 
 - **"document"**
 
 <div className="img_border">
-![Document mode](./assets/richtext/document_mode.png)
+![문서 모드](./assets/richtext/document_mode.png)
 </div>
 
-## Supported formats {#supported-formats}
+## 지원 형식 {#supported-formats}
 
-The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and plain text formats.
+RichText 에디터는 **HTML** 및 일반 텍스트 형식의 콘텐츠 [파싱](api/methods/set-value.md)과 [직렬화](api/methods/get-value.md)를 지원합니다.
 
-#### HTML format {#html-format}
+#### HTML 형식 {#html-format}
 
 <div className="img_border">
-![HTML format](./assets/richtext/html_format.png)
+![HTML 형식](./assets/richtext/html_format.png)
 </div>
 
-#### Text format {#text-format}
+#### 텍스트 형식 {#text-format}
 
 <div className="img_border">
-![Text format](./assets/richtext/text_format.png)
+![텍스트 형식](./assets/richtext/text_format.png)
 </div>
 
-## Keyboard shortcuts {#keyboard-shortcuts}
+## 키보드 단축키 {#keyboard-shortcuts}
 
-The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
+RichText 에디터는 빠른 서식 지정 및 편집을 위한 일반적인 키보드 단축키 세트를 지원합니다. 단축키는 플랫폼 규약을 따르며 **Windows/Linux** (`Ctrl`)와 **macOS** (`⌘`) 모두에서 사용할 수 있습니다.
 
-### Text formatting {#text-formatting}
+### 텍스트 서식 {#text-formatting}
 
-| Action          | Windows/Linux   | macOS         |
+| 작업            | Windows/Linux   | macOS         |
 |-----------------|-----------------|---------------|
-| Bold*           | `Ctrl+B`        | `⌘B`          |
-| Italic          | `Ctrl+I`        | `⌘I`          |
-| Underline       | `Ctrl+U`        | `⌘U`          |
-| Strikethrough   | `Ctrl+Shift+X`  | `⌘⇧X`         |
+| 굵게*           | `Ctrl+B`        | `⌘B`          |
+| 기울임꼴        | `Ctrl+I`        | `⌘I`          |
+| 밑줄            | `Ctrl+U`        | `⌘U`          |
+| 취소선          | `Ctrl+Shift+X`  | `⌘⇧X`         |
 
-### Editing {#editing}
+### 편집 {#editing}
 
-| Action   | Windows/Linux            | macOS         |
+| 작업     | Windows/Linux            | macOS         |
 |----------|--------------------------|---------------|
-| Undo     | `Ctrl+Z`                 | `⌘Z`          |
-| Redo     | `Ctrl+Y` / `Ctrl+Shift+Z`| `⌘Y` / `⌘⇧Z`  |
-| Cut      | `Ctrl+X`                 | `⌘X`          |
-| Copy     | `Ctrl+C`                 | `⌘C`          |
-| Paste    | `Ctrl+V`                 | `⌘V`          |
+| 실행 취소 | `Ctrl+Z`                | `⌘Z`          |
+| 다시 실행 | `Ctrl+Y` / `Ctrl+Shift+Z`| `⌘Y` / `⌘⇧Z`  |
+| 잘라내기  | `Ctrl+X`                | `⌘X`          |
+| 복사      | `Ctrl+C`                | `⌘C`          |
+| 붙여넣기  | `Ctrl+V`                | `⌘V`          |
 
-### Special actions {#special-actions}
+### 특수 작업 {#special-actions}
 
-| Action       | Windows/Linux | macOS |
+| 작업         | Windows/Linux | macOS |
 |--------------|---------------|-------|
-| Insert link  | `Ctrl+K`      | `⌘K`  |
-| Print        | `Ctrl+P`      | `⌘P`  |
+| 링크 삽입    | `Ctrl+K`      | `⌘K`  |
+| 인쇄         | `Ctrl+P`      | `⌘P`  |
 
-:::info
-More shortcuts may be introduced in future updates.
+:::info[정보]
+향후 업데이트에서 더 많은 단축키가 추가될 수 있습니다.
 :::
 
-To get actual reference related to RichText keyboard shortcuts, press **Help** and select the **Keyboard shortcuts** option:
+RichText 키보드 단축키에 대한 최신 참조를 확인하려면 **도움말**을 누르고 **키보드 단축키** 옵션을 선택하십시오:
 
 <div className="img_border">
-![Keyboard shortcuts](./assets/richtext/shortcut_reference.png)
+![키보드 단축키](./assets/richtext/shortcut_reference.png)
 </div>

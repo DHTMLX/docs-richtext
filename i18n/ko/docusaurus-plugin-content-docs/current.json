@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.docs.category.What's new and migration": {
-    "message": "What's new and migration",
+    "message": "새 소식 및 마이그레이션",
     "description": "The label for category 'What's new and migration' in sidebar 'docs'"
   },
   "sidebar.docs.category.What's new and migration.link.generated-index.title": {
-    "message": "What's new and migration",
+    "message": "새 소식 및 마이그레이션",
     "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
   },
   "sidebar.docs.category.API": {
@@ -16,47 +16,47 @@
     "description": "The label for category 'API' in sidebar 'docs'"
   },
   "sidebar.docs.category.RichText methods": {
-    "message": "RichText methods",
+    "message": "RichText 메서드",
     "description": "The label for category 'RichText methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.RichText internal API": {
-    "message": "RichText internal API",
+    "message": "RichText 내부 API",
     "description": "The label for category 'RichText internal API' in sidebar 'docs'"
   },
   "sidebar.docs.category.RichText internal API.link.generated-index.title": {
-    "message": "Internal API overview",
+    "message": "내부 API 개요",
     "description": "The generated-index page title for category 'RichText internal API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Event Bus methods": {
-    "message": "Event Bus methods",
+    "message": "Event Bus 메서드",
     "description": "The label for category 'Event Bus methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.State methods": {
-    "message": "State methods",
+    "message": "상태 메서드",
     "description": "The label for category 'State methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.RichText events": {
-    "message": "RichText events",
+    "message": "RichText 이벤트",
     "description": "The label for category 'RichText events' in sidebar 'docs'"
   },
   "sidebar.docs.category.RichText properties": {
-    "message": "RichText properties",
+    "message": "RichText 속성",
     "description": "The label for category 'RichText properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Integration with frameworks": {
-    "message": "Integration with frameworks",
+    "message": "프레임워크 통합",
     "description": "The label for category 'Integration with frameworks' in sidebar 'docs'"
   },
   "sidebar.docs.category.Integration with frameworks.link.generated-index.title": {
-    "message": "Integration with frameworks",
+    "message": "프레임워크 통합",
     "description": "The generated-index page title for category 'Integration with frameworks' in sidebar 'docs'"
   },
   "sidebar.docs.category.Guides": {
-    "message": "Guides",
+    "message": "가이드",
     "description": "The label for category 'Guides' in sidebar 'docs'"
   },
   "sidebar.docs.category.Guides.link.generated-index.title": {
-    "message": "Guides",
+    "message": "가이드",
     "description": "The generated-index page title for category 'Guides' in sidebar 'docs'"
   }
 }

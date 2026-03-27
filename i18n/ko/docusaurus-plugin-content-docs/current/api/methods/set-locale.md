@@ -1,41 +1,41 @@
 ---
 sidebar_label: setLocale()
-title: setLocale Method
-description: You can learn about the setLocale method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: setLocale 메서드
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 setLocale 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
 # setLocale()
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Applies a new locale to RichText
+@short: RichText에 새로운 로케일을 적용합니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 setLocale(null | locale?: object): void;
 ~~~
 
-### Parameters {#parameters}
+### 매개변수 {#parameters}
 
-- `null` - (optional) resets to the default locale (*English*)
-- `locale` - (optional) the object of data of the new locale to be applied
+- `null` - (선택) 기본 로케일(*영어*)로 초기화합니다
+- `locale` - (선택) 적용할 새 로케일의 데이터 객체
 
-:::info
-Use the `setLocale()` method to apply a new locale to RichText. To reset RichText to the default locale, call the `setLocale()` method without arguments (or with a *null* value).
+:::info[정보]
+`setLocale()` 메서드를 사용하여 RichText에 새로운 로케일을 적용하세요. RichText를 기본 로케일로 초기화하려면, 인수 없이(또는 *null* 값으로) `setLocale()` 메서드를 호출하세요.
 :::
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 구성 속성
 });
 
-// apply the "de" locale to RichText
+// RichText에 "de" 로케일 적용
 editor.setLocale(de);
 ~~~
 
-**Change log:** The method was added in v2.0
+**변경 이력:** 이 메서드는 v2.0에서 추가되었습니다
 
-**Related articles:** [Localization](guides/localization.md)
+**관련 문서:** [Localization](guides/localization.md)

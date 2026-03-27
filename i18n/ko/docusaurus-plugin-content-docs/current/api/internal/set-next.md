@@ -1,30 +1,30 @@
 ---
 sidebar_label: api.setNext()
-title: setNext Method
-description: You can learn about the setNext method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: setNext 메서드
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 setNext 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
 # api.setNext()
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Allows adding some action into the Event Bus order
+@short: 이벤트 버스 순서에 특정 액션을 추가할 수 있습니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 api.setNext(next: any): void;
 ~~~
 
-### Parameters {#parameters}
+### 매개변수 {#parameters}
 
-- `next` - (required) the action to be included into the **Event Bus** order  
+- `next` - (필수) **이벤트 버스** 순서에 포함시킬 액션
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {10-11}
 const server = "https://some-backend-url";
-// Assume that you have a custom server service class named someServerService
+// someServerService라는 이름의 커스텀 서버 서비스 클래스가 있다고 가정합니다
 const someServerService = new ServerDataService(server);
 
 fetch(server + "/data").then((res) => res.json()).then((data) => {
@@ -32,9 +32,9 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
         value: data
     });
 
-    // Integrate someServerService into the Event Bus order of widget
+    // someServerService를 위젯의 이벤트 버스 순서에 통합
     editor.api.setNext(someServerService);
 });
 ~~~
 
-**Change log:** The method was added in v2.0
+**변경 이력:** 이 메서드는 v2.0에서 추가되었습니다

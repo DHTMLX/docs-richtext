@@ -1,105 +1,105 @@
 ---
-sidebar_label: Integration with React
-title: Integration with React
-description: You can learn about the integration with React in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: React와의 통합
+title: React와의 통합
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 React와의 통합 방법을 확인하실 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText의 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
-# Integration with React
+# React와의 통합
 
-:::tip
-You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://react.dev/learn).
+:::tip[팁]
+이 문서를 읽기 전에 [**React**](https://react.dev)의 기본 개념과 패턴에 익숙해지시기 바랍니다. 지식을 복습하려면 [**React 문서**](https://react.dev/learn)를 참조하십시오.
 :::
 
-DHTMLX RichText is compatible with **React**. We have prepared code examples on how to use DHTMLX RichText with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-richtext-demo).
+DHTMLX RichText는 **React**와 호환됩니다. DHTMLX RichText를 **React**와 함께 사용하는 방법에 대한 코드 예제를 준비했습니다. 자세한 내용은 해당 [**GitHub 예제**](https://github.com/DHTMLX/react-richtext-demo)를 참조하십시오.
 
-## Creating a project {#creating-a-project}
+## 프로젝트 생성하기 {#creating-a-project}
 
-:::info
-Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+:::info[정보]
+새 프로젝트를 시작하기 전에 [**Vite**](https://vite.dev/) (선택 사항)와 [**Node.js**](https://nodejs.org/en/)를 설치하십시오.
 :::
 
-You can create a basic **React** project or use **React with Vite**. Let's name the project as **my-react-richtext-app**:
+기본 **React** 프로젝트를 생성하거나 **React with Vite**를 사용할 수 있습니다. 프로젝트 이름을 **my-react-richtext-app**으로 지정합니다:
 
 ~~~json
 npx create-react-app my-react-richtext-app
 ~~~
 
-### Installation of dependencies {#installation-of-dependencies}
+### 의존성 설치 {#installation-of-dependencies}
 
-Go to the new created app directory:
+새로 생성된 앱 폴더로 이동합니다:
 
 ~~~json
 cd my-react-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+의존성을 설치하고 dev server를 시작합니다. 패키지 매니저를 사용합니다:
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+- [**yarn**](https://yarnpkg.com/)을 사용하는 경우 다음 명령어를 실행합니다:
 
 ~~~json
 yarn
 yarn start
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+- [**npm**](https://www.npmjs.com/)을 사용하는 경우 다음 명령어를 실행합니다:
 
 ~~~json
 npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+앱은 localhost에서 실행됩니다 (예: `http://localhost:3000`).
 
-## Creating RichText {#creating-richtext}
+## RichText 생성하기 {#creating-richtext}
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+이제 DHTMLX RichText 소스 코드를 가져와야 합니다. 먼저 앱을 중지하고 RichText 패키지 설치를 진행합니다.
 
-### Step 1. Package installation {#step-1-package-installation}
+### 1단계: 패키지 설치 {#step-1-package-installation}
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
+[**trial RichText 패키지**](/how_to_start/#installing-richtext-via-npm-or-yarn)를 다운로드하고 README 파일에 설명된 단계를 따르십시오. trial RichText는 30일 동안만 사용 가능합니다.
 
-### Step 2. Component creation {#step-2-component-creation}
+### 2단계: 컴포넌트 생성 {#step-2-component-creation}
 
-Now you need to create a React component, to add a RichText into the application. Create a new file in the ***src/*** directory and name it ***Richtext.jsx***.
+이제 애플리케이션에 RichText를 추가하기 위한 React 컴포넌트를 생성해야 합니다. ***src/*** 폴더에 새 파일을 생성하고 ***Richtext.jsx***로 이름을 지정합니다.
 
-#### Importing source files {#importing-source-files}
+#### 소스 파일 가져오기 {#importing-source-files}
 
-Open the ***Richtext.jsx*** file and import RichText source files. Note that:
+***Richtext.jsx*** 파일을 열고 RichText 소스 파일을 가져옵니다. 참고 사항:
 
-- if you use PRO version and install the RichText package from a local folder, the import paths look like this:
+- PRO 버전을 사용하고 로컬 폴더에서 RichText 패키지를 설치한 경우, 가져오기 경로는 다음과 같습니다:
 
 ~~~jsx title="Richtext.jsx"
 import { Richtext} from 'dhx-richtext-package';
 import 'dhx-richtext-package/dist/richtext.css';
 ~~~
 
-- if you use the trial version of RichText, specify the following paths:
+- trial 버전의 RichText를 사용하는 경우, 다음 경로를 지정하십시오:
 
 ~~~jsx title="Richtext.jsx"
 import { Richtext} from '@dhx/trial-richtext';
 import "@dhx/trial-richtext/dist/richtext.css";
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+이 튜토리얼에서는 RichText의 **trial** 버전을 구성하는 방법을 확인할 수 있습니다.
 
-#### Setting containers and adding Richtext {#setting-containers-and-adding-richtext}
+#### 컨테이너 설정 및 RichText 추가 {#setting-containers-and-adding-richtext}
 
-To display RichText on the page, you need to create container for RichText and initialize the component using the corresponding constructors:
+페이지에 RichText를 표시하려면 RichText용 컨테이너를 생성하고 해당 생성자를 사용하여 컴포넌트를 초기화해야 합니다:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext} from '@dhx/trial-richtext';
-import '@dhx/trial-richtext/dist/richtext.css'; // include RichText styles
+import '@dhx/trial-richtext/dist/richtext.css'; // RichText 스타일 포함
 
 export default function RichTextComponent(props) {
-    let richtext_container = useRef(); // initialize container for RichText
+    let richtext_container = useRef(); // RichText용 컨테이너 초기화
 
     useEffect(() => {
-        // initialize the RichText component
+        // RichText 컴포넌트 초기화
         const editor = new Richtext(richtext_container.current, {});
 
         return () => {
-            editor.destructor(); // destruct RichText
+            editor.destructor(); // RichText 소멸
         };
     }, []);
 
@@ -109,12 +109,12 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-#### Adding styles {#adding-styles}
+#### 스타일 추가 {#adding-styles}
 
-To display RichText correctly, you need to specify important styles for RichText and its container in the main css file of the project:
+RichText를 올바르게 표시하려면 프로젝트의 메인 CSS 파일에 RichText 및 컨테이너에 대한 중요한 스타일을 지정해야 합니다:
 
 ~~~css title="index.css"
-/* specify styles for initial page */
+/* 초기 페이지 스타일 지정 */
 html,
 body,
 #root {
@@ -123,21 +123,21 @@ body,
     margin: 0;
 }
 
-/* specify styles for RichText container */
+/* RichText 컨테이너 스타일 지정 */
 .component_container {
-    height: 100%; 
+    height: 100%;
     margin: 0 auto;
 }
 
-/* specify styles for RichText widget */
+/* RichText 위젯 스타일 지정 */
 .widget {
     height: calc(100% - 56px);
 }
 ~~~
 
-#### Loading data {#loading-data}
+#### 데이터 로드하기 {#loading-data}
 
-To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+RichText에 데이터를 추가하려면 데이터 세트를 제공해야 합니다. ***src/*** 폴더에 ***data.js*** 파일을 생성하고 데이터를 추가합니다:
 
 ~~~jsx {} title="data.js"
 export function getData() {
@@ -149,7 +149,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<RichText/>` components as **props**:
+그런 다음 ***App.js*** 파일을 열고 데이터를 가져옵니다. 이후 새로 생성된 `<RichText/>` 컴포넌트에 데이터를 **props**로 전달할 수 있습니다:
 
 ~~~jsx {2,5-6} title="App.js"
 import RichText from "./Richtext";
@@ -163,7 +163,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***Richtext.jsx*** file and apply the passed **props** to the RichText configuration object:
+***Richtext.jsx*** 파일로 이동하여 전달된 **props**를 RichText 구성 객체에 적용합니다:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -175,8 +175,8 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            value: props.value, // apply value
-            // other configuration properties
+            value: props.value, // 값 적용
+            // 다른 구성 속성들
         });
 
         return () => {
@@ -190,7 +190,7 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-You can also use the [`setValue()`](api/methods/set-value.md) method inside the `useEffect()` method of React to load data into RichText:
+React의 `useEffect()` 메서드 내에서 [`setValue()`](api/methods/set-value.md) 메서드를 사용하여 RichText에 데이터를 로드할 수도 있습니다:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -204,9 +204,9 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            // configuration properties
+            // 구성 속성들
         });
-    
+
         editor.setValue(value);
 
         return () => {
@@ -220,13 +220,13 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-Now the RichText component is ready. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+이제 RichText 컴포넌트가 준비되었습니다. 요소가 페이지에 추가되면 데이터와 함께 RichText가 초기화됩니다. 필요한 구성 설정도 제공할 수 있습니다. [RichText API 문서](api/overview/main_overview.md)를 방문하여 사용 가능한 전체 속성 목록을 확인하십시오.
 
-#### Handling events {#handling-events}
+#### 이벤트 처리 {#handling-events}
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+사용자가 RichText에서 어떤 동작을 수행하면 이벤트가 발생합니다. 이러한 이벤트를 사용하여 동작을 감지하고 원하는 코드를 실행할 수 있습니다. [전체 이벤트 목록](api/overview/events_overview.md)을 참조하십시오.
 
-Open ***Richtext.jsx*** and complete the `useEffect()` method in the following way:
+***Richtext.jsx***를 열고 `useEffect()` 메서드를 다음과 같이 완성합니다:
 
 ~~~jsx {} title="Richtext.jsx"
 // ...
@@ -236,7 +236,7 @@ useEffect(() => {
     editor.api.on("print", () => {
         console.log("The document is printing");
     });
-    
+
     return () => {
         editor.destructor();
     };
@@ -244,10 +244,10 @@ useEffect(() => {
 // ...
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+이후 앱을 시작하면 페이지에 데이터가 로드된 RichText를 확인할 수 있습니다.
 
 <div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
+![RichText 초기화](../assets/trial_richtext.png)
 </div>
 
-Now you know how to integrate DHTMLX RichText with React. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/react-richtext-demo).
+이제 DHTMLX RichText를 React와 통합하는 방법을 알게 되었습니다. 요구 사항에 맞게 코드를 커스터마이즈할 수 있습니다. 최종 고급 예제는 [**GitHub**](https://github.com/DHTMLX/react-richtext-demo)에서 확인할 수 있습니다.

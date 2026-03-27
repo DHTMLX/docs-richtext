@@ -1,16 +1,16 @@
 ---
 sidebar_label: api.intercept()
-title: intercept Method
-description: You can learn about the intercept method in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: intercept 메서드
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 intercept 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
 # api.intercept()
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Allows intercepting and preventing the inner events
+@short: 내부 이벤트를 가로채거나 차단할 수 있습니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 api.intercept(
@@ -19,25 +19,25 @@ api.intercept(
 ): void;
 ~~~
 
-### Parameters {#parameters}
+### 매개변수 {#parameters}
 
-- `event` - (required) an event to be fired
-- `callback` - (required) a callback to be performed (the callback arguments will depend on the event to be fired)
+- `event` - (필수) 발생시킬 이벤트
+- `callback` - (필수) 실행할 콜백 (콜백 인수는 발생시킬 이벤트에 따라 달라집니다)
 
-### Events {#events}
+### 이벤트 {#events}
 
-:::info
-The full list of RichText internal events can be found [**here**](api/overview/events_overview.md)
+:::info[정보]
+RichText 내부 이벤트의 전체 목록은 [**여기**](api/overview/events_overview.md)에서 확인할 수 있습니다
 :::
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {5-10}
-// create RichText
+// RichText 생성
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 구성 속성
 });
-// forbid changing the font size
+// 폰트 크기 변경 차단
 editor.api.intercept("set-font-size", (obj) => {
     if(obj.fontSize !== "36px" ){
         return false;
@@ -45,4 +45,4 @@ editor.api.intercept("set-font-size", (obj) => {
 });
 ~~~
 
-**Change log:** The method was added in v2.0
+**변경 이력:** 이 메서드는 v2.0에서 추가되었습니다

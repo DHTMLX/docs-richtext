@@ -1,27 +1,27 @@
 ---
-sidebar_label: Migration to newer versions
-title: Migration to Newer Versions
-description: You can learn about the Migration to Newer Versions in the documentation of the DHTMLX JavaScript RichTExt library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichTExt.
+sidebar_label: 최신 버전으로 마이그레이션
+title: 최신 버전으로 마이그레이션
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 최신 버전으로의 마이그레이션에 대해 확인하실 수 있습니다. 개발자 가이드 및 API 참조를 살펴보고, 코드 예제와 라이브 데모를 체험하며, DHTMLX RichText의 무료 30일 평가판을 다운로드하십시오.
 ---
 
-# Migration to newer versions
+# 최신 버전으로 마이그레이션
 
 ## 1.2 -> 2.0 {#12---20}
 
-### Properties migration {#properties-migration}
+### 속성 마이그레이션 {#properties-migration}
 
-| Legacy property | Replaced by               | Notes                                     |
-| --------------- | ------------------------- | ----------------------------------------- |
-| `customStats`   | *(Removed)*               | Not available in the new version 2.0      |
-| `toolbarBlocks` | `toolbar`                 | Now supports detailed toolbar structure   |
-| `defaultStyles` | `defaultStyles` (updated) | Structure is now per-block and CSS-based  |
-| `mode`          | `layoutMode`              | Replaced with stricter enum-based setting |
+| 기존 속성       | 대체 항목                 | 비고                                          |
+| --------------- | ------------------------- | --------------------------------------------- |
+| `customStats`   | *(제거됨)*                | 새 버전 2.0에서 사용 불가                     |
+| `toolbarBlocks` | `toolbar`                 | 이제 상세한 툴바 구조를 지원합니다            |
+| `defaultStyles` | `defaultStyles` (업데이트) | 구조가 이제 블록별 및 CSS 기반으로 변경되었습니다 |
+| `mode`          | `layoutMode`              | 더 엄격한 열거형 기반 설정으로 대체되었습니다 |
 
 ### - `customStats` {#--customstats}
 
-The `customStats` property has been removed. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
+`customStats` 속성이 제거되었습니다. 현재 버전의 RichText는 더 이상 사용자 정의 통계(예: 문자 수, 단어 수, 문장 수) 표시를 지원하지 않습니다.
 
-If you still need to calculate text metrics, you can do so externally by accessing the editor content and processing it manually:
+텍스트 지표를 계산해야 하는 경우, 에디터 콘텐츠에 접근하여 수동으로 처리함으로써 외부에서 수행할 수 있습니다:
 
 ```jsx
 const content = editor.getValue();
@@ -30,14 +30,14 @@ const wordCount = content.split(/\s+/).length;
 
 ### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md) {#--toolbarblocks--toolbar}
 
-Before **2.0**, users were able to specify only blocks with controls
+**2.0** 이전에는 컨트롤이 포함된 블록만 지정할 수 있었습니다
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
   toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ```
 
-Starting from **2.0**, users can spefify separate controls
+**2.0**부터는 개별 컨트롤을 지정할 수 있습니다
 ```jsx{2-4} title="From 2.0"
 new richtext.Richtext("#root", {
     toolbar: [
@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 
 ### - [`defaultStyles`](api/config/default-styles.md) {#--defaultstyles}
 
-Before **2.0**, users were able to define default values for toolbar selection controls
+**2.0** 이전에는 툴바 선택 컨트롤의 기본값을 정의할 수 있었습니다
 ```jsx title="Before 2.0"
 defaultStyles: {
     "font-family": "Tahoma",
@@ -57,7 +57,7 @@ defaultStyles: {
 }
 ```
 
-Starting from **2.0**, users can specifies default style values for specific block types
+**2.0**부터는 특정 블록 유형에 대한 기본 스타일 값을 지정할 수 있습니다
 ```jsx title="From 2.0"
 defaultStyles: {
   "*": {
@@ -71,8 +71,8 @@ defaultStyles: {
 }
 ```
 
-:::note
-Use `*` to define base defaults for all blocks, then override specific elements (p, h1, blockquote, etc.).
+:::note[참고]
+`*`를 사용하여 모든 블록의 기본값을 정의한 다음, 특정 요소(p, h1, blockquote 등)를 재정의하십시오.
 :::
 
 ### - `mode` → [`layoutMode`](api/config/layout-mode.md) {#--mode--layoutmode}
@@ -85,32 +85,32 @@ new dhx.RichText("#root", {
 
 ```jsx{2} title="From 2.0"
 new Richtext("#root", {
-    layoutMode: "document" // or "classic"
+    layoutMode: "document" // 또는 "classic"
 });
 ```
 
-The new [`layoutMode`](api/config/layout-mode.md) strictly supports `"classic"` and `"document"` values.
+새 [`layoutMode`](api/config/layout-mode.md)는 `"classic"` 및 `"document"` 값만 엄격히 지원합니다.
 
-### Methods migration {#methods-migration}
+### 메서드 마이그레이션 {#methods-migration}
 
-| Legacy method           | New equivalent                       | Notes                                                 |
-| ----------------------- | ------------------------------------ | ----------------------------------------------------- |
-| `getValue(mode)`        | `getValue(encoder)`                  | Encoders replace string modes; separate import needed for encoders |
-| `setValue(value, mode)` | `setValue(value, encoder)`           | Encoders replace string modes; separate import needed for encoders |
-| `getStats()`            | *Removed*                            | No replacement; manual logic required                 |
-| `getEditorAPI()`        | *Removed*                            | Internal; use public API instead                      |
-| `fire()`                | *Removed*                            | Replaced by `exec()` and `intercept()`                |
-| `on()`, `detach()`      | ✅ Preserved (`api.on`, `api.detach`)| Now accessed via `richtext.api`                       |
-| `fullScreen()`          | *Removed*                            | Use `fullscreenMode` config property                  |
-| `exitFullScreen()`      | *Removed*                            | Use `fullscreenMode` config property                  |
-| `paint()`               | *Removed*                            | No longer needed                                      |
-| `destructor()`          | ✅ Still available                   | Unchanged                                             |
-| `setConfig()`           | ✅ New                               | Enables live config updates                           |
-| `setLocale()`           | ✅ New                               | Allows dynamic locale switching                       |
-| `getReactiveState()`    | ✅ New                               | Enables reactive state tracking                       |
-| `getState()`            | ✅ New                               | Provides current static config state                  |
-| `intercept()`           | ✅ New                               | Intercept internal actions                            |
-| `exec()`                | ✅ New                               | Execute internal actions                              |
+| 기존 메서드             | 새 동등 항목                         | 비고                                                              |
+| ----------------------- | ------------------------------------ | ----------------------------------------------------------------- |
+| `getValue(mode)`        | `getValue(encoder)`                  | 인코더가 문자열 모드를 대체하며, 인코더에는 별도의 가져오기가 필요합니다 |
+| `setValue(value, mode)` | `setValue(value, encoder)`           | 인코더가 문자열 모드를 대체하며, 인코더에는 별도의 가져오기가 필요합니다 |
+| `getStats()`            | *제거됨*                             | 대체 항목 없음; 수동 로직 필요                                    |
+| `getEditorAPI()`        | *제거됨*                             | 내부용; 대신 공개 API 사용                                        |
+| `fire()`                | *제거됨*                             | `exec()` 및 `intercept()`로 대체됨                                |
+| `on()`, `detach()`      | ✅ 유지됨 (`api.on`, `api.detach`)   | 이제 `richtext.api`를 통해 접근                                   |
+| `fullScreen()`          | *제거됨*                             | `fullscreenMode` 구성 속성 사용                                   |
+| `exitFullScreen()`      | *제거됨*                             | `fullscreenMode` 구성 속성 사용                                   |
+| `paint()`               | *제거됨*                             | 더 이상 필요하지 않음                                             |
+| `destructor()`          | ✅ 여전히 사용 가능                  | 변경 없음                                                         |
+| `setConfig()`           | ✅ 신규                              | 실시간 구성 업데이트 가능                                         |
+| `setLocale()`           | ✅ 신규                              | 동적 로케일 전환 허용                                             |
+| `getReactiveState()`    | ✅ 신규                              | 반응형 상태 추적 가능                                             |
+| `getState()`            | ✅ 신규                              | 현재 정적 구성 상태 제공                                          |
+| `intercept()`           | ✅ 신규                              | 내부 작업 인터셉트                                                |
+| `exec()`                | ✅ 신규                              | 내부 작업 실행                                                    |
 
 ### - [`setValue()`](api/methods/set-value.md) / [`getValue()`](api/methods/get-value.md) {#--setvalue--getvalue}
 
@@ -121,27 +121,27 @@ editor.getValue("text");
 ```
 
 ```jsx title="From 2.0"
-const fromTextEncoder = richtext.text.fromText; 
-const fromHTMLEncoder = richtext.html.fromHTML; 
+const fromTextEncoder = richtext.text.fromText;
+const fromHTMLEncoder = richtext.html.fromHTML;
 
-const toTextEncoder = richtext.text.toText; 
-const toHTMLEncoder = richtext.html.toHTML; 
+const toTextEncoder = richtext.text.toText;
+const toHTMLEncoder = richtext.html.toHTML;
 ...
 editor.setValue("<p>Hello</p>", fromHTMLEncoder);
 editor.getValue(toTextEncoder);
 ```
 
-:::note
-You can still call `getValue()` and `setValue()` without an encoder — HTML is used by default
+:::note[참고]
+인코더 없이 `getValue()` 및 `setValue()`를 호출할 수도 있습니다 — 기본적으로 HTML이 사용됩니다
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md) {#--on--detach}
 
 ```jsx title="Before 2.0"
 editor.events.on("Change", function(action, canUndo, canRedo){
-  // your code here
+  // 여기에 코드를 작성하십시오
 });
- 
+
 editor.events.detach("Change");
 ```
 
@@ -153,7 +153,7 @@ editor.api.on("set-font-size", (obj) => {
 editor.api.detach("track");
 ```
 
-### - `fire()` → Use [`exec()`](api/internal/exec.md) and [`intercept()`](api/internal/intercept.md) {#--fire--use-exec-and-intercept}
+### - `fire()` → [`exec()`](api/internal/exec.md) 및 [`intercept()`](api/internal/intercept.md) 사용 {#--fire--use-exec-and-intercept}
 
 ```jsx title="Before 2.0"
 editor.events.fire("some-event", [data]);
@@ -162,6 +162,6 @@ editor.events.fire("some-event", [data]);
 ```jsx title="From 2.0"
 editor.api.exec("some-event", obj);
 
-// Preventing execution
+// 실행 방지
 editor.api.intercept("some-event", (obj) => false);
 ```

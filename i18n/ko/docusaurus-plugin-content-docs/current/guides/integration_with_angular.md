@@ -1,85 +1,85 @@
 ---
-sidebar_label: Integration with Angular
-title: Integration with Angular
-description: You can learn about the integration with Angular in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: Angular와의 통합
+title: Angular와의 통합
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 Angular와의 통합 방법을 확인하실 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText의 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
-# Integration with Angular
+# Angular와의 통합
 
-:::tip
-You should be familiar with basic concepts and patterns of **Angular** before reading this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://v17.angular.io/docs).
+:::tip[팁]
+이 문서를 읽기 전에 **Angular**의 기본 개념과 패턴에 익숙해지시기 바랍니다. 지식을 복습하려면 [**Angular 문서**](https://v17.angular.io/docs)를 참조하십시오.
 :::
 
-DHTMLX RichText is compatible with **Angular**. We have prepared code examples on how to use DHTMLX RichText with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
+DHTMLX RichText는 **Angular**와 호환됩니다. DHTMLX RichText를 **Angular**와 함께 사용하는 방법에 대한 코드 예제를 준비했습니다. 자세한 내용은 해당 [**GitHub 예제**](https://github.com/DHTMLX/angular-richtext-demo)를 참조하십시오.
 
-## Creating a project {#creating-a-project}
+## 프로젝트 생성하기 {#creating-a-project}
 
-:::info
-Before you start to create a new project, install [**Angular CLI**](https://v17.angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+:::info[정보]
+새 프로젝트를 시작하기 전에 [**Angular CLI**](https://v17.angular.io/cli)와 [**Node.js**](https://nodejs.org/en/)를 설치하십시오.
 :::
 
-Create a new **my-angular-richtext-app** project using Angular CLI. Run the following command for this purpose:
+Angular CLI를 사용하여 새 **my-angular-richtext-app** 프로젝트를 생성합니다. 다음 명령어를 실행하십시오:
 
 ~~~json
 ng new my-angular-richtext-app
 ~~~
 
-:::note
-If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
+:::note[참고]
+이 가이드를 따르려면 새 Angular 앱을 생성할 때 Server-Side Rendering (SSR)과 Static Site Generation (SSG/Prerendering)을 비활성화하십시오!
 :::
 
-The command above installs all the necessary tools, so you don't need to run any additional commands.
+위 명령어는 필요한 모든 도구를 설치하므로 추가 명령어를 실행할 필요가 없습니다.
 
-### Installation of dependencies {#installation-of-dependencies}
+### 의존성 설치 {#installation-of-dependencies}
 
-Go to the new created app directory:
+새로 생성된 앱 폴더로 이동합니다:
 
 ~~~json
 cd my-angular-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use the [**yarn**](https://yarnpkg.com/) package manager:
+의존성을 설치하고 dev server를 시작합니다. 이를 위해 [**yarn**](https://yarnpkg.com/) 패키지 매니저를 사용합니다:
 
 ~~~json
 yarn
 yarn start
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+앱은 localhost에서 실행됩니다 (예: `http://localhost:3000`).
 
-## Creating RichText {#creating-richtext}
+## RichText 생성하기 {#creating-richtext}
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+이제 DHTMLX RichText 소스 코드를 가져와야 합니다. 먼저 앱을 중지하고 RichText 패키지 설치를 진행합니다.
 
-### Step 1. Package installation {#step-1-package-installation}
+### 1단계: 패키지 설치 {#step-1-package-installation}
 
-Download the [**trial RichText package**](/how_to_start/#installing-richtext-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial RichText is available 30 days only.
-  
-### Step 2. Component creation {#step-2-component-creation}
+[**trial RichText 패키지**](/how_to_start/#installing-richtext-via-npm-or-yarn)를 다운로드하고 README 파일에 설명된 단계를 따르십시오. trial RichText는 30일 동안만 사용 가능합니다.
 
-Now you need to create an Angular component, to add Richtext into the application. Create the **richtext** folder in the **src/app/** directory, add a new file into it and name it **richtext.component.ts**.
+### 2단계: 컴포넌트 생성 {#step-2-component-creation}
 
-#### Import source files {#import-source-files}
+이제 애플리케이션에 RichText를 추가하기 위한 Angular 컴포넌트를 생성해야 합니다. **src/app/** 폴더에 **richtext** 폴더를 생성하고, 그 안에 새 파일을 추가하여 **richtext.component.ts**로 이름을 지정합니다.
 
-Open the **richtext.component.ts** file and import RichText source files. Note that:
+#### 소스 파일 가져오기 {#import-source-files}
 
-- if you use PRO version and install the RichText package from a local folder, the imported path looks like this:
+**richtext.component.ts** 파일을 열고 RichText 소스 파일을 가져옵니다. 참고 사항:
+
+- PRO 버전을 사용하고 로컬 폴더에서 RichText 패키지를 설치한 경우, 가져오기 경로는 다음과 같습니다:
 
 ~~~jsx
 import { Richtext} from 'dhx-richtext-package';
 ~~~
 
-- if you use the trial version of RichText, specify the following path:
+- trial 버전의 RichText를 사용하는 경우, 다음 경로를 지정하십시오:
 
 ~~~jsx
 import { Richtext} from '@dhx/trial-richtext';
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+이 튜토리얼에서는 RichText의 **trial** 버전을 구성하는 방법을 확인할 수 있습니다.
 
-#### Set containers and initialize the Richtext {#set-containers-and-initialize-the-richtext}
+#### 컨테이너 설정 및 RichText 초기화 {#set-containers-and-initialize-the-richtext}
 
-To display RichText on the page, you need to set a container for RichText, and initialize the component using the corresponding constructor:
+페이지에 RichText를 표시하려면 RichText용 컨테이너를 설정하고 해당 생성자를 사용하여 컴포넌트를 초기화해야 합니다:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
@@ -87,39 +87,39 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation}
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "richtext", // a template name used in the "app.component.ts" file as <richtext />
-    styleUrls: ["./richtext.component.css"], // include the css file
+    selector: "richtext", // "app.component.ts" 파일에서 <richtext />로 사용되는 템플릿 이름
+    styleUrls: ["./richtext.component.css"], // css 파일 포함
     template:  `<div class = "component_container">
                     <div #richtext_container class = "widget"></div>
                 </div>`
 })
 
 export class RichTextComponent implements OnInit, OnDestroy {
-    // initialize container for RichText
+    // RichText용 컨테이너 초기화
     @ViewChild("richtext_container", { static: true }) richtext_container!: ElementRef;
 
     private _editor!: Richtext;
 
     ngOnInit() {
-        // initialize the RichText component
+        // RichText 컴포넌트 초기화
         this._editor = new Richtext(this.richtext_container.nativeElement, {});
     }
 
     ngOnDestroy(): void {
-        this._editor.destructor(); // destruct RichText
+        this._editor.destructor(); // RichText 소멸
     }
 }
 ~~~
 
-#### Adding styles {#adding-styles}
+#### 스타일 추가 {#adding-styles}
 
-To display RichText correctly, you need to provide the corresponding styles. For this purpose, you can create the **richtext.component.css** file in the **src/app/richtext/** directory and specify important styles for RichText and its container:
+RichText를 올바르게 표시하려면 해당 스타일을 제공해야 합니다. 이를 위해 **src/app/richtext/** 폴더에 **richtext.component.css** 파일을 생성하고 RichText 및 컨테이너에 대한 중요한 스타일을 지정합니다:
 
 ~~~css title="richtext.component.css"
-/* import RichText styles */
+/* RichText 스타일 가져오기 */
 @import "@dhx/trial-richtext/dist/richtext.css";
 
-/* specify styles for initial page */
+/* 초기 페이지 스타일 지정 */
 html,
 body{
     height: 100%;
@@ -127,21 +127,21 @@ body{
     margin: 0;
 }
 
-/* specify styles for RichText container */
+/* RichText 컨테이너 스타일 지정 */
 .component_container {
-    height: 100%; 
+    height: 100%;
     margin: 0 auto;
 }
 
-/* specify styles for RichText widget */
+/* RichText 위젯 스타일 지정 */
 .widget {
     height: calc(100% - 56px);
 }
 ~~~
 
-#### Loading data {#loading-data}
+#### 데이터 로드하기 {#loading-data}
 
-To add data into RichText, you need to provide a data set. You can create the **data.ts** file in the **src/app/richtext/** directory and add some data into it:
+RichText에 데이터를 추가하려면 데이터 세트를 제공해야 합니다. **src/app/richtext/** 폴더에 **data.ts** 파일을 생성하고 데이터를 추가합니다:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -153,16 +153,16 @@ export function getData() {
 }
 ~~~
 
-Then open the ***richtext.component.ts*** file. Import the file with data and specify the corresponding data properties to the configuration object of RichText within the `ngOnInit()` method, as shown below:
+그런 다음 ***richtext.component.ts*** 파일을 엽니다. 데이터가 있는 파일을 가져오고, 아래와 같이 `ngOnInit()` 메서드 내에서 RichText의 구성 객체에 해당 데이터 속성을 지정합니다:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // 데이터 가져오기
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "richtext", 
+    selector: "richtext",
     styleUrls: ["./richtext.component.css"],
     template:  `<div class = "component_container">
                     <div #richtext_container class = "widget"></div>
@@ -175,29 +175,29 @@ export class RichTextComponent implements OnInit, OnDestroy {
     private _editor!: RichText;
 
     ngOnInit() {
-        const { value } = getData(); // initialize data property
+        const { value } = getData(); // 데이터 속성 초기화
         this._editor = new Richtext(this.richtext_container.nativeElement, {
             value
-            // other configuration properties 
+            // 다른 구성 속성들
         });
     }
 
     ngOnDestroy(): void {
-        this._editor.destructor(); 
+        this._editor.destructor();
     }
 }
 ~~~
 
-You can also use the [`setValue()`](api/methods/set-value.md) method inside the `ngOnInit()` method of Angular to load data into RichText.
+Angular의 `ngOnInit()` 메서드 내에서 [`setValue()`](api/methods/set-value.md) 메서드를 사용하여 RichText에 데이터를 로드할 수도 있습니다.
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // 데이터 가져오기
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation} from '@angular/core';
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "richtext", 
+    selector: "richtext",
     styleUrls: ["./richtext.component.css"],
     template:  `<div class = "component_container">
                     <div #richtext_container class = "widget"></div>
@@ -210,28 +210,28 @@ export class RichTextComponent implements OnInit, OnDestroy {
     private _editor!: RichText;
 
     ngOnInit() {
-        const { value } = getData(); // initialize data property
+        const { value } = getData(); // 데이터 속성 초기화
         this._editor = new Richtext(this.richtext_container.nativeElement, {
-            // other configuration properties 
+            // 다른 구성 속성들
         });
 
-        // apply the data via the setValue() method
-        this._editor.setValue({ value }); 
+        // setValue() 메서드를 통해 데이터 적용
+        this._editor.setValue({ value });
     }
 
     ngOnDestroy(): void {
-        this._editor.destructor(); 
+        this._editor.destructor();
     }
 }
 ~~~
 
-Now the RichText component is ready to use. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+이제 RichText 컴포넌트를 사용할 준비가 되었습니다. 요소가 페이지에 추가되면 데이터와 함께 RichText가 초기화됩니다. 필요한 구성 설정도 제공할 수 있습니다. [RichText API 문서](api/overview/main_overview.md)를 방문하여 사용 가능한 전체 속성 목록을 확인하십시오.
 
-#### Handling events {#handling-events}
+#### 이벤트 처리 {#handling-events}
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+사용자가 RichText에서 어떤 동작을 수행하면 이벤트가 발생합니다. 이러한 이벤트를 사용하여 동작을 감지하고 원하는 코드를 실행할 수 있습니다. [전체 이벤트 목록](api/overview/events_overview.md)을 참조하십시오.
 
-Open the **richtext.component.ts** file and complete the `ngOnInit()` method in the following way:
+**richtext.component.ts** 파일을 열고 `ngOnInit()` 메서드를 다음과 같이 완성합니다:
 
 ~~~jsx {} title="richtext.component.ts"
 // ...
@@ -244,13 +244,13 @@ ngOnInit() {
 }
 
 ngOnDestroy(): void {
-    this._editor.destructor(); 
+    this._editor.destructor();
 }
 ~~~
 
-### Step 3. Adding RichText into the app {#step-3-adding-richtext-into-the-app}
+### 3단계: 앱에 RichText 추가하기 {#step-3-adding-richtext-into-the-app}
 
-To add the ***RichTextComponent*** component into your app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
+***RichTextComponent*** 컴포넌트를 앱에 추가하려면 ***src/app/app.component.ts*** 파일을 열고 기본 코드를 다음으로 교체합니다:
 
 ~~~jsx {} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -264,7 +264,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the ***app.module.ts*** file in the ***src/app/*** directory and specify the *RichTextComponent* as shown below:
+그런 다음 ***src/app/*** 폴더에 ***app.module.ts*** 파일을 생성하고 아래와 같이 *RichTextComponent*를 지정합니다:
 
 ~~~jsx {} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -281,7 +281,7 @@ import { RichTextComponent } from "./richtext/richtext.component";
 export class AppModule {}
 ~~~
 
-The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
+마지막으로 ***src/main.ts*** 파일을 열고 기존 코드를 다음으로 교체합니다:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -291,10 +291,10 @@ platformBrowserDynamic()
     .catch((err) => console.error(err));
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+이후 앱을 시작하면 페이지에 데이터가 로드된 RichText를 확인할 수 있습니다.
 
 <div className="img_border">
-![RichText initialization](../assets/trial_richtext.png)
+![RichText 초기화](../assets/trial_richtext.png)
 </div>
 
-Now you know how to integrate DHTMLX RichText with Angular. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo).
+이제 DHTMLX RichText를 Angular와 통합하는 방법을 알게 되었습니다. 요구 사항에 맞게 코드를 커스터마이즈할 수 있습니다. 최종 고급 예제는 [**GitHub**](https://github.com/DHTMLX/angular-richtext-demo)에서 확인할 수 있습니다.

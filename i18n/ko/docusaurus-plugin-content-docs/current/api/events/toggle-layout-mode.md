@@ -1,45 +1,45 @@
 ---
 sidebar_label: toggle-layout-mode
-title: toggle-layout-mode Event
-description: You can learn about the toggle-layout-mode event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: toggle-layout-mode 이벤트
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-layout-mode 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 참고하고, 코드 예제와 라이브 데모를 살펴보세요.
 ---
 
 # toggle-layout-mode
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Fires when toggling the layout mode
+@short: 레이아웃 모드를 전환할 때 발생합니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 "toggle-layout-mode": ({ mode?: "classic" | "document" }) => boolean | void;
 ~~~
 
-### Parameters {#parameters}
+### 매개변수 {#parameters}
 
-The callback of the **toggle-layout-mode** event can take an object with the following parameters:
+**toggle-layout-mode** 이벤트의 콜백은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
-- `mode` - the layout mode. The following modes are available: `"classic" | "document"`
+- `mode` - 레이아웃 모드. 사용 가능한 모드: `"classic" | "document"`
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[정보]
+내부 이벤트를 처리하려면 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용할 수 있습니다
 :::
 
-### Example {#example}
+### 예시 {#example}
 
 ~~~jsx {5-11}
-// initialize RichText
+// RichText 초기화
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 구성 속성
 });
-// subscribe to the "toggle-layout-mode" event
+// "toggle-layout-mode" 이벤트 구독
 editor.api.on("toggle-layout-mode", (obj) => {
     console.log(obj);
     console.log("The layout mode was changed");
 });
-// set the "document" layout mode
+// "document" 레이아웃 모드 설정
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**Change log:** The event was added in v2.0
+**변경 이력:** 이 이벤트는 v2.0에서 추가되었습니다

@@ -1,12 +1,12 @@
 ---
-sidebar_label: API overview
-title: API Overview
-description: You can have an API overview of JavaScript RichText in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: API 개요
+title: API 개요
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 JavaScript RichText의 API 개요를 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText의 30일 무료 평가판도 다운로드할 수 있습니다.
 ---
 
-# API overview
+# API 개요 {#api-overview}
 
-## RichText constructor {#richtext-constructor}
+## RichText 생성자 {#richtext-constructor}
 
 ~~~js
 new richtext.RichText("#root", {
@@ -14,14 +14,14 @@ new richtext.RichText("#root", {
 });
 ~~~
 
-**Parameters**:
+**매개변수**:
 
-- an HTML container (e.g., CSS selector or DOM element)
-- a configuration object ([see properties](api/overview/properties_overview.md))
+- HTML 컨테이너 (예: CSS 선택자 또는 DOM 요소)
+- 구성 객체 ([속성 보기](api/overview/properties_overview.md))
 
-## RichText methods {#richtext-methods}
+## RichText 메서드 {#richtext-methods}
 
-| Name                                          | Description                               |
+| 이름                                          | 설명                                      |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/methods/get-value.md)                   | @getshort(api/methods/get-value.md)        |
 | [](api/methods/set-value.md)                   | @getshort(api/methods/set-value.md)        |
@@ -29,9 +29,9 @@ new richtext.RichText("#root", {
 | [](api/methods/set-locale.md)                  | @getshort(api/methods/set-locale.md)       |
 | [](api/methods/destructor.md)                  | @getshort(api/methods/destructor.md)       |
 
-## Event Bus methods {#event-bus-methods}
+## Event Bus 메서드 {#event-bus-methods}
 
-| Name                                          | Description                               |
+| 이름                                          | 설명                                      |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/internal/exec.md)                       | @getshort(api/internal/exec.md)            |
 | [](api/internal/intercept.md)                  | @getshort(api/internal/intercept.md)       |
@@ -39,16 +39,16 @@ new richtext.RichText("#root", {
 | [](api/internal/detach.md)                     | @getshort(api/internal/detach.md)          |
 | [](api/internal/set-next.md)                   | @getshort(api/internal/set-next.md)        |
 
-## State methods {#state-methods}
+## 상태 메서드 {#state-methods}
 
-| Name                                          | Description                               |
+| 이름                                          | 설명                                      |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/internal/get-state.md)                  | @getshort(api/internal/get-state.md)       |
 | [](api/internal/get-reactive-state.md)         | @getshort(api/internal/get-reactive-state.md) |
 
-## Events {#events}
+## 이벤트 {#events}
 
-| Name                                           | Description                               |
+| 이름                                           | 설명                                      |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/events/align.md)                        | @getshort(api/events/align.md)             |
 | [](api/events/clear-text-format.md)            | @getshort(api/events/clear-text-format.md) |
@@ -83,9 +83,9 @@ new richtext.RichText("#root", {
 | [](api/events/undo.md)                         | @getshort(api/events/undo.md)              |
 | [](api/events/update-link.md)                  | @getshort(api/events/update-link.md)       |
 
-## Properties {#properties}
+## 속성 {#properties}
 
-| Name                                          | Description                               |
+| 이름                                          | 설명                                      |
 | ----------------------------------------------|-------------------------------------------|
 | [](api/config/default-styles.md)               | @getshort(api/config/default-styles.md)    |
 | [](api/config/fullscreen-mode.md)              | @getshort(api/config/fullscreen-mode.md)   |

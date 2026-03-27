@@ -1,36 +1,36 @@
 ---
 sidebar_label: value
-title: value Config
-description: You can learn about the value config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: value 설정
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 value 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험하며, DHTMLX RichText 30일 무료 평가판을 다운로드하세요.
 ---
 
 # value
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Optional. Specifies the initial value (content) displayed within the editor area of RichText
+@short: 선택 사항. RichText 에디터 영역에 표시될 초기 값(콘텐츠)을 지정합니다
 
-:::tip
-If you want to set the value (content) using custom format, use the built-in [`setValue()`](api/methods/set-value.md) method.
+:::tip[팁]
+사용자 정의 형식을 사용하여 값(콘텐츠)을 설정하려면 내장 [`setValue()`](api/methods/set-value.md) 메서드를 사용하세요.
 :::
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
-value?: string; 
+value?: string;
 ~~~
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
-    value: "<h1>some value</h1>" // sets the default value (HTML format)
-    // other configuration properties
+    value: "<h1>some value</h1>" // 기본값을 설정합니다(HTML 형식)
+    // 기타 설정 속성
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**변경 이력:** 이 속성은 v2.0에서 추가되었습니다
 
-**Related articles:** [Configuration](guides/configuration.md)
+**관련 문서:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)
+**관련 예제:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

@@ -1,33 +1,33 @@
 ---
 sidebar_label: menubar
-title: menubar Config
-description: You can learn about the menubar config in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: menubar 설정
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 menubar 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험하며, DHTMLX RichText 30일 무료 평가판을 다운로드하세요.
 ---
 
 # menubar
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Optional. Enables the top menubar of RichText
+@short: 선택 사항. RichText 상단 메뉴바를 활성화합니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
-menubar?: boolean; 
+menubar?: boolean;
 ~~~
 
-### Example {#example}
+### 예제 {#example}
 
 ~~~jsx {3}
-// initialize RichText
+// RichText 초기화
 new richtext.Richtext("#root", {
     menubar: true
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 
-**Change log:** The property was added in v2.0
+**변경 이력:** 이 속성은 v2.0에서 추가되었습니다
 
-**Related articles:** [Configuration](guides/configuration.md)
+**관련 문서:** [Configuration](guides/configuration.md)
 
-**Related sample:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+**관련 예제:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)

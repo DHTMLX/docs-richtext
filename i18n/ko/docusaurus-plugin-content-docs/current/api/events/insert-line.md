@@ -1,36 +1,36 @@
 ---
 sidebar_label: insert-line
-title: insert-line Event
-description: You can learn about the insert-line event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: insert-line 이벤트
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 insert-line 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
 # insert-line
 
-### Description {#description}
+### 설명 {#description}
 
-@short: Fires when inserting horizontal line
+@short: 수평선을 삽입할 때 발생합니다
 
-### Usage {#usage}
+### 사용법 {#usage}
 
 ~~~jsx {}
 "insert-line": () => boolean | void;
 ~~~
 
-:::info
-For handling the inner events you can use the [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[정보]
+내부 이벤트 처리에는 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용할 수 있습니다.
 :::
 
-### Example {#example}
+### 예시 {#example}
 
 ~~~jsx {5-8}
-// initialize RichText
+// RichText 초기화
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 구성 속성
 });
-// subscribe to the "insert-line" event
+// "insert-line" 이벤트 구독
 editor.api.on("insert-line", () => {
     console.log("The horizontal line was inserted");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**변경 이력:** 이 이벤트는 v2.0에서 추가되었습니다.

@@ -1,32 +1,32 @@
 ---
-title: Styling
-sidebar_label: Styling
-description: You can learn about the styling in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: 스타일링
+sidebar_label: 스타일링
+description: DHTMLX JavaScript RichText 라이브러리 문서에서 스타일링 방법을 확인하실 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX RichText의 무료 30일 평가판도 다운로드할 수 있습니다.
 ---
 
-# Styling
+# 스타일링
 
-You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
+CSS 변수를 재정의하고 위젯의 특정 부분에 사용자 정의 스타일을 적용하여 DHTMLX RichText의 외관을 완전히 커스터마이즈할 수 있습니다.
 
-This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
+이 가이드에서는 **다크 테마**를 적용하는 방법과, 편집기의 menubar, toolbar, 팝업, 콘텐츠 영역을 스타일링하는 데 사용할 수 있는 클래스 이름을 설명합니다.
 
-## Default structure and class names {#default-structure-and-class-names}
+## 기본 구조와 클래스 이름 {#default-structure-and-class-names}
 
-RichText uses the following core classes to structure its UI:
+RichText는 다음과 같은 핵심 클래스를 사용하여 UI를 구성합니다:
 
-| Class name             | Description                                 |
+| 클래스 이름             | 설명                                        |
 |------------------------|---------------------------------------------|
-| `.wx-richtext`         | Root container of the RichText widget       |
-| `.wx-richtext-menubar` | Container for menubar                       |
-| `.wx-richtext-menu`    | Container for menubar dropdown  menu        |
-| `.wx-richtext-toolbar` | Container for toolbar                       |
-| `.wx-editor-area`      | Container for main editable content area    |
+| `.wx-richtext`         | RichText 위젯의 루트 컨테이너               |
+| `.wx-richtext-menubar` | menubar 컨테이너                            |
+| `.wx-richtext-menu`    | menubar 드롭다운 메뉴 컨테이너              |
+| `.wx-richtext-toolbar` | toolbar 컨테이너                            |
+| `.wx-editor-area`      | 메인 편집 가능 콘텐츠 영역 컨테이너         |
 
-You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
+이러한 클래스를 사용자 정의 CSS 선택자에 사용하여 RichText 편집기의 외관을 재정의할 수 있습니다.
 
-## Overriding default styles {#overriding-default-styles}
+## 기본 스타일 재정의 {#overriding-default-styles}
 
-You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
+`#root` 컨테이너 또는 특정 하위 요소에서 CSS 변수를 재정의하여 RichText의 기본 스타일을 재정의할 수 있습니다:
 
 ```html
 <div id="root" style="width: 100%; height: 100%;"></div>
@@ -55,35 +55,35 @@ You can override RichText's default styles by redefining CSS variables on the `#
 </style>
 ```
 
-:::note
-These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
+:::note[참고]
+이 스타일을 적용하면 어두운 배경이 설정되고, 버튼 및 아이콘 색상이 조정되며, 다크 UI 테마에서의 가시성이 개선됩니다.
 :::
 
-## List of supported CSS variables {#list-of-supported-css-variables}
+## 지원되는 CSS 변수 목록 {#list-of-supported-css-variables}
 
-| Variable name                | Description                          |
-| ---------------------------- | ------------------------------------ |
-| `--wx-background`            | Background color of editor and popup |
-| `--wx-background-alt`        | Alternate background for menubar     |
-| `--wx-color-primary`         | Accent color for links, blockquotes, and borders of resizing pictures |
-| `--wx-color-font`            | Main font color (for editor, menubar, and toolbar)|
-| `--wx-color-font-alt`        | Alternate font color                 |
-| `--wx-color-font-disabled`   | Disabled text color (for menubar and toolbar elements)|
-| `--wx-border`                | Border style used across the editor  |
-| `--wx-color-secondary-hover` | Hover state background for buttons within menubar and toolbar  |
-| `--wx-button-active`         | Active state background for buttons within menubar and toolbar |
-| `--wx-icon-color`            | Color for toolbar arrow icons used for dropdown          |
-| `--wx-popup-border`          | Border for popup elements            |
+| 변수 이름                    | 설명                                         |
+| ---------------------------- | -------------------------------------------- |
+| `--wx-background`            | 편집기 및 팝업의 배경색                       |
+| `--wx-background-alt`        | menubar의 대체 배경색                         |
+| `--wx-color-primary`         | 링크, 인용구, 이미지 크기 조정 테두리의 강조색 |
+| `--wx-color-font`            | 주요 글꼴 색상 (편집기, menubar, toolbar)     |
+| `--wx-color-font-alt`        | 대체 글꼴 색상                                |
+| `--wx-color-font-disabled`   | 비활성화된 텍스트 색상 (menubar 및 toolbar 요소) |
+| `--wx-border`                | 편집기 전반에 사용되는 테두리 스타일          |
+| `--wx-color-secondary-hover` | menubar 및 toolbar 내 버튼의 hover 상태 배경  |
+| `--wx-button-active`         | menubar 및 toolbar 내 버튼의 활성 상태 배경   |
+| `--wx-icon-color`            | 드롭다운에 사용되는 toolbar 화살표 아이콘 색상 |
+| `--wx-popup-border`          | 팝업 요소의 테두리                            |
 
-## Best practices {#best-practices}
+## 모범 사례 {#best-practices}
 
-* Use `color-scheme: dark` to improve native input styling in dark mode
-* Avoid changing layout-related properties (like `display`, `position`) unless necessary
+* 다크 모드에서 네이티브 입력 스타일링을 개선하려면 `color-scheme: dark`를 사용하십시오
+* 꼭 필요한 경우가 아니라면 레이아웃 관련 속성 (`display`, `position` 등)의 변경을 피하십시오
 
-## Live demo {#live-demo}
+## 라이브 데모 {#live-demo}
 
-In this snippet you can see how to apply a custom style to RichText:
+이 스니펫에서 RichText에 사용자 정의 스타일을 적용하는 방법을 확인할 수 있습니다:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Related articles:** [Customization](guides/configuration.md)
+**관련 문서:** [Customization](guides/configuration.md)
