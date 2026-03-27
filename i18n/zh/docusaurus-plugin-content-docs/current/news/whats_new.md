@@ -1,192 +1,192 @@
 ---
-sidebar_label: What's new
-title: What's new
-description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+sidebar_label: 新功能
+title: 新功能
+description: 您可以在 DHTMLX JavaScript UI 库的文档中探索 DHTMLX RichText 的新功能及其发布历史。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX RichText 的 30 天免费评估版本。
 ---
 
-## Version 2.0.5 {#version-205}
+## 版本 2.0.5 {#version-205}
 
-Released on March 6, 2026
+发布于 2026 年 3 月 6 日
 
-### Fixes {#fixes}
+### 修复 {#fixes}
 
-- IME input is not processed correctly
-- Composition-based input (e.g., Chinese, Japanese, Korean on desktop) is not processed correctly
-- `margin-left` and `line-height` properties are ignored when parsing HTML
-- Inline elements inherit properties from block-level parents
-- Unable to copy text between two editor instances
-- Selection is incorrectly handled with two (or more) editor instances active
-- Cursor is incorrectly positioned when only content in paragraph is an image
-- Indefinite wrapping of subscript and superscript elements
-- Pasting images inlines them instead of uploading them first
-- Empty inline blocks cannot be removed at specific positions (first or last line)
-- Editor does not scroll to cursor when typing
-- Input on Android is not processed correctly
-- Incorrect selection handling for HR elements
-- Incorrect render with empty initial values
-- Copying content may fail if it contains self-closing blocks
-- Chrome: cannot insert emojis from context menu
-- Firefox: select all (CTRL+A) is not handled correctly
+- IME 输入未被正确处理
+- 基于组合输入法的输入（例如，桌面端中文、日文、韩文）未被正确处理
+- 解析 HTML 时忽略了`margin-left`和`line-height`属性
+- 内联元素从块级父元素继承属性
+- 无法在两个编辑器实例之间复制文本
+- 当两个（或更多）编辑器实例处于活动状态时，选区处理不正确
+- 当段落中唯一内容为图片时，光标定位不正确
+- 下标和上标元素无限嵌套
+- 粘贴图片时将其内联，而非先上传
+- 在特定位置（首行或末行）无法移除空的内联块
+- 编辑器在输入时不会滚动到光标位置
+- Android 上的输入未被正确处理
+- HR 元素的选区处理不正确
+- 初始值为空时渲染不正确
+- 复制内容时，若包含自闭合块则可能失败
+- Chrome：无法从上下文菜单插入 emoji
+- Firefox：全选（CTRL+A）未被正确处理
 
-## Version 2.0.4 {#version-204}
+## 版本 2.0.4 {#version-204}
 
-Released on October 15, 2025
+发布于 2025 年 10 月 15 日
 
-### Fixes {#fixes-1}
+### 修复 {#fixes-1}
 
-- Incorrect range selection for paragraphs
-- Link popups are not displayed when adjacent to linked images
-- Initial toolbar values are not accurate relative to actual content
+- 段落的范围选区不正确
+- 链接弹出框在紧邻已链接图片时不显示
+- 工具栏初始值与实际内容不匹配
 
-## Version 2.0.3 {#version-203}
+## 版本 2.0.3 {#version-203}
 
-Released on August 27, 2025
+发布于 2025 年 8 月 27 日
 
-### Fixes {#fixes-2}
+### 修复 {#fixes-2}
 
-- Clicking on a horizontal line causes a script error
-- The default line height is incorrect
-- Content styles include duplicate selectors
-- Plain text blocks ignore style changes when parsing HTML
-- The parser ignores escaped font names in HTML
-- The parser ignores `margin-left` and `line-height` properties in HTML
+- 点击水平线导致脚本错误
+- 默认行高不正确
+- 内容样式包含重复选择器
+- 解析 HTML 时纯文本块忽略样式变更
+- 解析器忽略 HTML 中转义的字体名称
+- 解析器忽略 HTML 中的`margin-left`和`line-height`属性
 
-## Version 2.0.2 {#version-202}
+## 版本 2.0.2 {#version-202}
 
-Released on August 4, 2025
+发布于 2025 年 8 月 4 日
 
-### Fixes {#fixes-3}
+### 修复 {#fixes-3}
 
-- Updated package content
+- 更新了包内容
 
-## Version 2.0.1 {#version-201}
+## 版本 2.0.1 {#version-201}
 
-Released on July 30, 2025
+发布于 2025 年 7 月 30 日
 
-### Fixes {#fixes-4}
+### 修复 {#fixes-4}
 
-- Update type definitions for the `defaultStyles` property
+- 更新`defaultStyles`属性的类型定义
 
-## Version 2.0 {#version-20}
+## 版本 2.0 {#version-20}
 
-Released on July 30, 2025
+发布于 2025 年 7 月 30 日
 
-:::note
-API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news/migration.md) for additional information.
+:::note[注意]
+v1.2 的 API 与 v2.0 不兼容。请参阅[**迁移指南**](news/migration.md)获取更多信息。
 :::
 
-### New Functionality {#new-functionality}
+### 新功能 {#new-functionality}
 
-- **Next-gen text rendering**  
-  Experience smoother, faster, and more accurate text rendering with our new engine
+- **新一代文本渲染**
+  通过我们全新的引擎，体验更流畅、更快速、更精准的文本渲染
 
-- **Granular toolbar configuration**  
-  Take full control of the toolbar:  
-  - Define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
-  - Add [custom controls](guides/configuration.md/#custom-toolbar-controls)
+- **精细化工具栏配置**
+  完全掌控工具栏：
+  - 定义[各个工具栏控件](guides/configuration.md/#default-toolbar-controls)及其顺序
+  - 添加[自定义控件](guides/configuration.md/#custom-toolbar-controls)
 
-- **Optional [menubar](api/config/menubar.md)**  
-  Enable a classic menu-style interface on the top of the editor
+- **可选的 [menubar（菜单栏）](api/config/menubar.md)**
+  在编辑器顶部启用经典菜单样式界面
 
-- **Enhanced [document mode](guides/configuration.md/#layout-modes)**  
-  Added support for different document sizes
+- **增强的[文档模式](guides/configuration.md/#layout-modes)**
+  新增对不同文档尺寸的支持
 
-- **Image support**  
-  - Insert images with [upload capabilities](api/config/image-upload-url.md).  
-  - [Resize images](api/events/resize-image.md) interactively  
+- **图片支持**
+  - 插入图片并支持[上传功能](api/config/image-upload-url.md)
+  - 以交互方式[调整图片大小](api/events/resize-image.md)
 
-- **Improved link experience**  
-  Redesigned [popup interactions](api/events/show-popup.md) for better usability
+- **改进的链接体验**
+  重新设计的[弹出交互](api/events/show-popup.md)，提升易用性
 
-- **New formatting tools**  
-  - Text alignment: **justify**  
-  - Insert [horizontal lines](api/events/insert-line.md)  
-  - [Indent](api/events/indent.md) / [Outdent](api/events/outdent.md)  
-  - Set [line height](api/events/set-line-height.md)  
-  - Apply [subscript](api/events/subscript.md) / [superscript](api/events/superscript.md)
+- **新格式化工具**
+  - 文本对齐：**两端对齐**
+  - 插入[水平线](api/events/insert-line.md)
+  - [增加缩进](api/events/indent.md) / [减少缩进](api/events/outdent.md)
+  - 设置[行高](api/events/set-line-height.md)
+  - 应用[下标](api/events/subscript.md) / [上标](api/events/superscript.md)
 
-- **List management**  
-  Easily [insert and manage lists](api/events/insert-list.md) in your content
+- **列表管理**
+  在内容中轻松[插入和管理列表](api/events/insert-list.md)
 
-- **Import/Export & Print**  
-  - [Import DOCX](api/events/import.md) files
-  - [Export](api/events/export.md) content to DOCX or PDF
-  - [Print](api/events/print.md) documents directly from the editor
+- **导入/导出与打印**
+  - [导入 DOCX](api/events/import.md) 文件
+  - 将内容[导出](api/events/export.md)为 DOCX 或 PDF
+  - 直接从编辑器[打印](api/events/print.md)文档
 
-- **Keyboard shortcuts**  
-  Expanded support for common formatting and editing shortcuts
+- **键盘快捷键**
+  扩展了对常用格式化和编辑快捷键的支持
 
-###  New API {#new-api}
+### 新增 API {#new-api}
 
-#### New properties {#new-properties}
+#### 新增属性 {#new-properties}
 
-- [`fullscreenMode`](api/config/fullscreen-mode.md)  
-- [`imageUploadUrl`](api/config/image-upload-url.md)  
-- [`layoutMode`](api/config/layout-mode.md)  
-- [`locale`](api/config/locale.md)  
-- [`menubar`](api/config/menubar.md)  
-- [`toolbar`](api/config/toolbar.md)  
+- [`fullscreenMode`](api/config/fullscreen-mode.md)
+- [`imageUploadUrl`](api/config/image-upload-url.md)
+- [`layoutMode`](api/config/layout-mode.md)
+- [`locale`](api/config/locale.md)
+- [`menubar`](api/config/menubar.md)
+- [`toolbar`](api/config/toolbar.md)
 - [`value`](api/config/value.md)
 
-####  New methods {#new-methods}
+#### 新增方法 {#new-methods}
 
-- [`setConfig()`](api/methods/set-config.md) — Dynamically update configuration  
-- [`setLocale()`](api/methods/set-locale.md) — Change locale on the fly
+- [`setConfig()`](api/methods/set-config.md) — 动态更新配置
+- [`setLocale()`](api/methods/set-locale.md) — 动态切换语言区域
 
-#### New internal methods {#new-internal-methods}
+#### 新增内部方法 {#new-internal-methods}
 
-- [`api.exec()`](api/internal/exec.md)  
-- [`api.intercept()`](api/internal/intercept.md)  
-- [`api.getReactiveState()`](api/internal/get-reactive-state.md)  
+- [`api.exec()`](api/internal/exec.md)
+- [`api.intercept()`](api/internal/intercept.md)
+- [`api.getReactiveState()`](api/internal/get-reactive-state.md)
 - [`api.getState()`](api/internal/get-state.md)
 
-#### New events {#new-events}
+#### 新增事件 {#new-events}
 
-A full list of new events is available [here](api/overview/events_overview.md)
+新增事件的完整列表请参见[此处](api/overview/events_overview.md)
 
-### Updated API {#updated-api}
+### 更新 API {#updated-api}
 
-#### Updated properties {#updated-properties}
+#### 更新属性 {#updated-properties}
 
 - [`defaultStyles`](api/config/default-styles.md)
 
-#### Updated methods {#updated-methods}
+#### 更新方法 {#updated-methods}
 
-- [`setValue()`](api/methods/set-value.md)  
+- [`setValue()`](api/methods/set-value.md)
 - [`getValue()`](api/methods/get-value.md)
 
-#### Updated internal methods {#updated-internal-methods}
+#### 更新内部方法 {#updated-internal-methods}
 
-- [`api.detach()`](api/internal/detach.md)  
+- [`api.detach()`](api/internal/detach.md)
 - [`api.on()`](api/internal/on.md)
 
-## Removed API {#removed-api}
+## 已移除的 API {#removed-api}
 
-:::warning
-Do not use the removed API in your projects! <br/> Refer to the [Migration](news/migration.md) topic for more information.
+:::warning[警告]
+请勿在您的项目中使用已移除的 API！<br/> 请参阅[迁移](news/migration.md)主题获取更多信息。
 :::
 
-### [Removed properties](news/migration.md#properties-migration) {#removed-properties}
+### [已移除的属性](news/migration.md#properties-migration) {#removed-properties}
 
-- [`customStats`](news/migration.md#--customstats)  
-- [`mode`](news/migration.md#--mode--layoutmode)  
+- [`customStats`](news/migration.md#--customstats)
+- [`mode`](news/migration.md#--mode--layoutmode)
 - [`toolbarBlocks`](news/migration.md#--toolbarblocks--toolbar)
 
-### [Removed methods](news/migration.md#methods-migration) {#removed-methods}
+### [已移除的方法](news/migration.md#methods-migration) {#removed-methods}
 
-- `exitFullScreen()`  
-- `fullScreen()`  
-- `getEditorAPI()`  
-- `getStats()`  
+- `exitFullScreen()`
+- `fullScreen()`
+- `getEditorAPI()`
+- `getStats()`
 - `paint()`
 
-### Removed internal methods {#removed-internal-methods}
+### 已移除的内部方法 {#removed-internal-methods}
 
 - [`events.fire()`](news/migration.md#--fire--use-exec-and-intercept)
 
-### Removed events {#removed-events}
+### 已移除的事件 {#removed-events}
 
-- `Action`  
-- `Change`  
-- `selectionChange`  
+- `Action`
+- `Change`
+- `selectionChange`
 - `selectionRefresh`

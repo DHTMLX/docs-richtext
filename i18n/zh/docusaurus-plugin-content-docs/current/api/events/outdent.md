@@ -1,43 +1,43 @@
 ---
 sidebar_label: outdent
-title: outdent Event
-description: You can learn about the outdent event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: outdent 事件
+description: 您可以在DHTMLX JavaScript RichText库的文档中了解outdent事件。浏览开发者指南和API参考，查看代码示例和在线演示，并下载DHTMLX RichText的免费30天试用版本。
 ---
 
 # outdent
 
-### Description {#description}
+### 描述 {#description}
 
-@short: Fires when decreasing block indention
+@short: 当减少块缩进时触发
 
-### Usage {#usage}
+### 用法 {#usage}
 
 ~~~jsx {}
 "outdent": ({ step: number }) => boolean | void;
 ~~~
 
-### Parameters {#parameters}
+### 参数 {#parameters}
 
-The callback of the **outdent** event can take an object with the following parameters:
+**outdent** 事件的回调函数可以接收一个包含以下参数的对象：
 
-- `step` - the step by which indentation was decreased
+- `step` - 缩进减少的步长
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[信息]
+如需处理内部事件，您可以使用[**Event Bus 方法**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example {#example}
+### 示例 {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// 初始化 RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 配置属性
 });
-// subscribe to the "outdent" event
+// 订阅 "outdent" 事件
 editor.api.on("outdent", (obj) => {
     console.log(obj);
     console.log("The indention was decreased");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**更新日志：** 该事件在v2.0版本中新增

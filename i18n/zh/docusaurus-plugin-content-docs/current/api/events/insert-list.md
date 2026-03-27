@@ -1,16 +1,16 @@
 ---
 sidebar_label: insert-list
-title: insert-list Event
-description: You can learn about the insert-list event in the documentation of the DHTMLX JavaScript RichText library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
+title: insert-list 事件
+description: 您可以在DHTMLX JavaScript RichText库的文档中了解insert-list事件。浏览开发者指南和API参考，查看代码示例和在线演示，并下载DHTMLX RichText的免费30天试用版本。
 ---
 
 # insert-list
 
-### Description {#description}
+### 描述 {#description}
 
-@short: Fires when inserting list
+@short: 当插入列表时触发
 
-### Usage {#usage}
+### 用法 {#usage}
 
 ~~~jsx {}
 "insert-list": ({ type: TListType }) => boolean | void;
@@ -18,30 +18,30 @@ description: You can learn about the insert-list event in the documentation of t
 type TListType = "bulleted" | "numbered";
 ~~~
 
-### Parameters {#parameters}
+### 参数 {#parameters}
 
-The callback of the **insert-list** event can take an object with the following parameter:
+**insert-list** 事件的回调函数可以接收一个包含以下参数的对象：
 
-- `type` - the type of the inserted list. You can specify the following values:
-    - `"bulleted"` - bulleted list
-    - `"numbered"` - numbered list
+- `type` - 插入列表的类型。可以指定以下值：
+    - `"bulleted"` - 无序列表
+    - `"numbered"` - 有序列表
 
-:::info
-For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
+:::info[信息]
+如需处理内部事件，您可以使用[**Event Bus 方法**](api/overview/event_bus_methods_overview.md)
 :::
 
-### Example {#example}
+### 示例 {#example}
 
 ~~~jsx {5-9}
-// initialize RichText
+// 初始化 RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 配置属性
 });
-// subscribe to the "insert-list" event
+// 订阅 "insert-list" 事件
 editor.api.on("insert-list", (obj) => {
     console.log(obj.type);
     console.log("The list was inserted");
 });
 ~~~
 
-**Change log:** The event was added in v2.0
+**更新日志：** 该事件在v2.0版本中新增

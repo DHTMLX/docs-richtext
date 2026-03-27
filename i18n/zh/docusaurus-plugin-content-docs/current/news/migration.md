@@ -1,27 +1,27 @@
 ---
-sidebar_label: Migration to newer versions
-title: Migration to Newer Versions
-description: You can learn about the Migration to Newer Versions in the documentation of the DHTMLX JavaScript RichTExt library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichTExt.
+sidebar_label: 迁移至新版本
+title: 迁移至新版本
+description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解迁移至新版本的相关信息。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX RichText 的 30 天免费评估版本。
 ---
 
-# Migration to newer versions
+# 迁移至新版本
 
 ## 1.2 -> 2.0 {#12---20}
 
-### Properties migration {#properties-migration}
+### 属性迁移 {#properties-migration}
 
-| Legacy property | Replaced by               | Notes                                     |
-| --------------- | ------------------------- | ----------------------------------------- |
-| `customStats`   | *(Removed)*               | Not available in the new version 2.0      |
-| `toolbarBlocks` | `toolbar`                 | Now supports detailed toolbar structure   |
-| `defaultStyles` | `defaultStyles` (updated) | Structure is now per-block and CSS-based  |
-| `mode`          | `layoutMode`              | Replaced with stricter enum-based setting |
+| 旧版属性        | 替代方案                      | 说明                                      |
+| --------------- | ----------------------------- | ----------------------------------------- |
+| `customStats`   | *(已移除)*                    | 新版本 2.0 中不再可用                     |
+| `toolbarBlocks` | `toolbar`                     | 现在支持详细的工具栏结构                  |
+| `defaultStyles` | `defaultStyles`（已更新）     | 结构现在按块类型划分并基于 CSS            |
+| `mode`          | `layoutMode`                  | 替换为更严格的枚举设置                    |
 
 ### - `customStats` {#--customstats}
 
-The `customStats` property has been removed. The current version of RichText no longer supports displaying user-defined statistics (e.g., character count, word count, sentence count).
+`customStats`属性已被移除。当前版本的 RichText 不再支持显示用户自定义统计信息（例如字符数、单词数、句子数）。
 
-If you still need to calculate text metrics, you can do so externally by accessing the editor content and processing it manually:
+如果您仍需计算文本指标，可以通过访问编辑器内容并手动处理来在外部实现：
 
 ```jsx
 const content = editor.getValue();
@@ -30,14 +30,14 @@ const wordCount = content.split(/\s+/).length;
 
 ### - `toolbarBlocks` → [`toolbar`](api/config/toolbar.md) {#--toolbarblocks--toolbar}
 
-Before **2.0**, users were able to specify only blocks with controls
+在 **2.0** 之前，用户只能指定带有控件的块
 ```jsx{2} title="Before 2.0"
 new dhx.RichText("#root", {
   toolbarBlocks: ["undo", "style", "decoration", "colors", "align", "link"]
 });
 ```
 
-Starting from **2.0**, users can spefify separate controls
+从 **2.0** 开始，用户可以指定独立的控件
 ```jsx{2-4} title="From 2.0"
 new richtext.Richtext("#root", {
     toolbar: [
@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 
 ### - [`defaultStyles`](api/config/default-styles.md) {#--defaultstyles}
 
-Before **2.0**, users were able to define default values for toolbar selection controls
+在 **2.0** 之前，用户可以为工具栏选择控件定义默认值
 ```jsx title="Before 2.0"
 defaultStyles: {
     "font-family": "Tahoma",
@@ -57,7 +57,7 @@ defaultStyles: {
 }
 ```
 
-Starting from **2.0**, users can specifies default style values for specific block types
+从 **2.0** 开始，用户可以为特定块类型指定默认样式值
 ```jsx title="From 2.0"
 defaultStyles: {
   "*": {
@@ -71,8 +71,8 @@ defaultStyles: {
 }
 ```
 
-:::note
-Use `*` to define base defaults for all blocks, then override specific elements (p, h1, blockquote, etc.).
+:::note[注意]
+使用`*`为所有块定义基础默认值，然后覆盖特定元素（p、h1、blockquote 等）。
 :::
 
 ### - `mode` → [`layoutMode`](api/config/layout-mode.md) {#--mode--layoutmode}
@@ -89,28 +89,28 @@ new Richtext("#root", {
 });
 ```
 
-The new [`layoutMode`](api/config/layout-mode.md) strictly supports `"classic"` and `"document"` values.
+新的[`layoutMode`](api/config/layout-mode.md)严格支持`"classic"`和`"document"`值。
 
-### Methods migration {#methods-migration}
+### 方法迁移 {#methods-migration}
 
-| Legacy method           | New equivalent                       | Notes                                                 |
-| ----------------------- | ------------------------------------ | ----------------------------------------------------- |
-| `getValue(mode)`        | `getValue(encoder)`                  | Encoders replace string modes; separate import needed for encoders |
-| `setValue(value, mode)` | `setValue(value, encoder)`           | Encoders replace string modes; separate import needed for encoders |
-| `getStats()`            | *Removed*                            | No replacement; manual logic required                 |
-| `getEditorAPI()`        | *Removed*                            | Internal; use public API instead                      |
-| `fire()`                | *Removed*                            | Replaced by `exec()` and `intercept()`                |
-| `on()`, `detach()`      | ✅ Preserved (`api.on`, `api.detach`)| Now accessed via `richtext.api`                       |
-| `fullScreen()`          | *Removed*                            | Use `fullscreenMode` config property                  |
-| `exitFullScreen()`      | *Removed*                            | Use `fullscreenMode` config property                  |
-| `paint()`               | *Removed*                            | No longer needed                                      |
-| `destructor()`          | ✅ Still available                   | Unchanged                                             |
-| `setConfig()`           | ✅ New                               | Enables live config updates                           |
-| `setLocale()`           | ✅ New                               | Allows dynamic locale switching                       |
-| `getReactiveState()`    | ✅ New                               | Enables reactive state tracking                       |
-| `getState()`            | ✅ New                               | Provides current static config state                  |
-| `intercept()`           | ✅ New                               | Intercept internal actions                            |
-| `exec()`                | ✅ New                               | Execute internal actions                              |
+| 旧版方法                | 新版等价方法                         | 说明                                                          |
+| ----------------------- | ------------------------------------ | ------------------------------------------------------------- |
+| `getValue(mode)`        | `getValue(encoder)`                  | 编码器替代字符串模式；编码器需单独导入                        |
+| `setValue(value, mode)` | `setValue(value, encoder)`           | 编码器替代字符串模式；编码器需单独导入                        |
+| `getStats()`            | *已移除*                             | 无替代方案；需手动实现逻辑                                    |
+| `getEditorAPI()`        | *已移除*                             | 内部方法；请改用公共 API                                      |
+| `fire()`                | *已移除*                             | 由`exec()`和`intercept()`替代                                 |
+| `on()`、`detach()`      | ✅ 已保留（`api.on`、`api.detach`）  | 现通过`richtext.api`访问                                      |
+| `fullScreen()`          | *已移除*                             | 使用`fullscreenMode`配置属性                                  |
+| `exitFullScreen()`      | *已移除*                             | 使用`fullscreenMode`配置属性                                  |
+| `paint()`               | *已移除*                             | 不再需要                                                      |
+| `destructor()`          | ✅ 仍可用                            | 未变更                                                        |
+| `setConfig()`           | ✅ 新增                              | 支持实时配置更新                                              |
+| `setLocale()`           | ✅ 新增                              | 支持动态切换语言区域                                          |
+| `getReactiveState()`    | ✅ 新增                              | 支持响应式状态追踪                                            |
+| `getState()`            | ✅ 新增                              | 提供当前静态配置状态                                          |
+| `intercept()`           | ✅ 新增                              | 拦截内部操作                                                  |
+| `exec()`                | ✅ 新增                              | 执行内部操作                                                  |
 
 ### - [`setValue()`](api/methods/set-value.md) / [`getValue()`](api/methods/get-value.md) {#--setvalue--getvalue}
 
@@ -121,18 +121,18 @@ editor.getValue("text");
 ```
 
 ```jsx title="From 2.0"
-const fromTextEncoder = richtext.text.fromText; 
-const fromHTMLEncoder = richtext.html.fromHTML; 
+const fromTextEncoder = richtext.text.fromText;
+const fromHTMLEncoder = richtext.html.fromHTML;
 
-const toTextEncoder = richtext.text.toText; 
-const toHTMLEncoder = richtext.html.toHTML; 
+const toTextEncoder = richtext.text.toText;
+const toHTMLEncoder = richtext.html.toHTML;
 ...
 editor.setValue("<p>Hello</p>", fromHTMLEncoder);
 editor.getValue(toTextEncoder);
 ```
 
-:::note
-You can still call `getValue()` and `setValue()` without an encoder — HTML is used by default
+:::note[注意]
+您仍然可以在不传入编码器的情况下调用`getValue()`和`setValue()`——默认使用 HTML
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md) {#--on--detach}
@@ -141,7 +141,7 @@ You can still call `getValue()` and `setValue()` without an encoder — HTML is 
 editor.events.on("Change", function(action, canUndo, canRedo){
   // your code here
 });
- 
+
 editor.events.detach("Change");
 ```
 
@@ -153,7 +153,7 @@ editor.api.on("set-font-size", (obj) => {
 editor.api.detach("track");
 ```
 
-### - `fire()` → Use [`exec()`](api/internal/exec.md) and [`intercept()`](api/internal/intercept.md) {#--fire--use-exec-and-intercept}
+### - `fire()` → 使用 [`exec()`](api/internal/exec.md) 和 [`intercept()`](api/internal/intercept.md) {#--fire--use-exec-and-intercept}
 
 ```jsx title="Before 2.0"
 editor.events.fire("some-event", [data]);
