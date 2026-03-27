@@ -201,6 +201,36 @@ const config = {
     organizationName: 'DHTMLX',
     projectName: 'docs-richtext',
     trailingSlash: true,
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'de', 'es', 'ru', 'zh', 'ko'],
+        localeConfigs: {
+            en: {
+                label: 'English',
+                direction: 'ltr',
+            },
+            de: {
+                label: 'Deutsch',
+                direction: 'ltr',
+            },
+            es: {
+                label: 'Español',
+                direction: 'ltr',
+            },
+            ru: {
+                label: 'Русский',
+                direction: 'ltr',
+            },
+            zh: {
+                label: '中文（简体）',
+                direction: 'ltr',
+            },
+            ko: {
+                label: '한국어',
+                direction: 'ltr',
+            },
+        },
+    },
     markdown: {
 		hooks: {
 			onBrokenMarkdownLinks: 'warn',
@@ -305,6 +335,10 @@ const config = {
                 {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
+                    position: 'right'
+                },
+                {
+                    type: 'localeDropdown',
                     position: 'right'
                 }
             ]
