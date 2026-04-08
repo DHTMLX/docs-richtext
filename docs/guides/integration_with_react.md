@@ -10,7 +10,7 @@ description: You can learn about the integration with React in the documentation
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) before reading this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://react.dev/learn).
 :::
 
-DHTMLX RichText is compatible with **React**. We have prepared code examples on how to use DHTMLX RichText with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-richtext-demo).
+DHTMLX RichText is compatible with **React**. You can find code examples for using DHTMLX RichText with React in the [**Example on GitHub**](https://github.com/DHTMLX/react-richtext-demo).
 
 ## Creating a project
 
@@ -18,21 +18,21 @@ DHTMLX RichText is compatible with **React**. We have prepared code examples on 
 Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-You can create a basic **React** project or use **React with Vite**. Let's name the project as **my-react-richtext-app**:
+Create a basic **React** project or use **React with Vite**. The following command creates a project named **my-react-richtext-app**:
 
 ~~~json
 npx create-react-app my-react-richtext-app
 ~~~
 
-### Installation of dependencies
+### Install dependencies
 
-Go to the new created app directory:
+Go to the newly created app directory:
 
 ~~~json
 cd my-react-richtext-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Use a package manager to install dependencies and start the dev server:
 
 - if you use [**yarn**](https://yarnpkg.com/), run the following commands:
 
@@ -48,11 +48,11 @@ npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app runs on a localhost port, for example `http://localhost:3000`.
 
 ## Creating RichText
 
-Now you should get the DHTMLX RichText source code. First of all, stop the app and proceed with installing the RichText package.
+Get the DHTMLX RichText source code. Stop the app and install the RichText package.
 
 ### Step 1. Package installation
 
@@ -60,9 +60,9 @@ Download the [**trial RichText package**](/how_to_start/#installing-richtext-via
 
 ### Step 2. Component creation
 
-Now you need to create a React component, to add a RichText into the application. Create a new file in the ***src/*** directory and name it ***Richtext.jsx***.
+Create a React component to add RichText to the application. Create a new file in **src/** and name it **Richtext.jsx**.
 
-#### Importing source files
+#### Import source files
 
 Open the ***Richtext.jsx*** file and import RichText source files. Note that:
 
@@ -80,11 +80,11 @@ import { Richtext} from '@dhx/trial-richtext';
 import "@dhx/trial-richtext/dist/richtext.css";
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of RichText.
+This tutorial uses the **trial** version of RichText.
 
-#### Setting containers and adding Richtext
+#### Set containers and add RichText
 
-To display RichText on the page, you need to create container for RichText and initialize the component using the corresponding constructors:
+Create a container for RichText and initialize the component:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -109,9 +109,9 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-#### Adding styles
+#### Add styles
 
-To display RichText correctly, you need to specify important styles for RichText and its container in the main css file of the project:
+Specify styles for RichText and its container in the main CSS file of the project:
 
 ~~~css title="index.css"
 /* specify styles for initial page */
@@ -135,9 +135,9 @@ body,
 }
 ~~~
 
-#### Loading data
+#### Load data
 
-To add data into the RichText, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data to RichText, create a data set. Create the **data.js** file in **src/** and add the initial content:
 
 ~~~jsx {} title="data.js"
 export function getData() {
@@ -149,7 +149,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<RichText/>` components as **props**:
+Open **App.js**, import data, and pass it to the `<RichText/>` component as props:
 
 ~~~jsx {2,5-6} title="App.js"
 import RichText from "./Richtext";
@@ -163,7 +163,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***Richtext.jsx*** file and apply the passed **props** to the RichText configuration object:
+Open **Richtext.jsx** and apply the props to the RichText configuration object:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -190,7 +190,7 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-You can also use the [`setValue()`](api/methods/set-value.md) method inside the `useEffect()` method of React to load data into RichText:
+You can also use the [`setValue()`](api/methods/set-value.md) method inside `useEffect()` to load data into RichText:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -220,13 +220,13 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-Now the RichText component is ready. When the element will be added to the page, it will initialize the RichText with data. You can provide necessary configuration settings as well. Visit our [RichText API docs](api/overview/main_overview.md) to check the full list of available properties.
+The RichText component is ready. When the element is added to the page, it initializes RichText with data. You can also provide configuration settings — see the [RichText API docs](api/overview/main_overview.md) for the full list of available properties.
 
-#### Handling events
+#### Handle events
 
-When a user makes some action in the RichText, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+When a user performs an action in RichText, it fires an event. Use these events to detect the action and run the desired code. See the [full list of events](api/overview/events_overview.md).
 
-Open ***Richtext.jsx*** and complete the `useEffect()` method in the following way:
+Open **Richtext.jsx** and update `useEffect()`:
 
 ~~~jsx {} title="Richtext.jsx"
 // ...
@@ -244,10 +244,10 @@ useEffect(() => {
 // ...
 ~~~
 
-After that, you can start the app to see RichText loaded with data on a page.
+Start the app to see RichText loaded with data on a page.
 
 <div className="img_border">
 ![RichText initialization](../assets/trial_richtext.png)
 </div>
 
-Now you know how to integrate DHTMLX RichText with React. You can customize the code according to your specific requirements. The final advanced example you can find on [**GitHub**](https://github.com/DHTMLX/react-richtext-demo).
+You know how to integrate DHTMLX RichText with React. Customize the code according to your requirements. Find the final advanced example on [**GitHub**](https://github.com/DHTMLX/react-richtext-demo).
