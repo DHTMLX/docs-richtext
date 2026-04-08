@@ -24,7 +24,7 @@ RichText uses the following core classes to structure its UI:
 
 You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
 
-## Overriding default styles
+## Override default styles
 
 You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
 
@@ -56,10 +56,10 @@ You can override RichText's default styles by redefining CSS variables on the `#
 ```
 
 :::note
-These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
+These styles apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
 :::
 
-## List of supported CSS variables
+## Supported CSS variables
 
 | Variable name                | Description                          |
 | ---------------------------- | ------------------------------------ |
@@ -78,11 +78,11 @@ These styles will apply a dark background, adjust button and icon colors, and im
 ## Best practices
 
 * Use `color-scheme: dark` to improve native input styling in dark mode
-* Avoid changing layout-related properties (like `display`, `position`) unless necessary
+* Avoid changing layout-related properties (like `display`, `position`) if you do not need to
 
-## Live demo
+## View the live demo
 
-In this snippet you can see how to apply a custom style to RichText:
+The example below demonstrates applying a custom dark theme to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
