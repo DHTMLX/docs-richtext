@@ -6,11 +6,11 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
+Localize all labels in the RichText interface by creating a new locale or modifying a built-in one.
 
-## Default locale
+## Use the default locale
 
-The **English** locale is used by default:
+RichText uses the English locale by default:
 
 ~~~jsx
 const en = {
@@ -158,7 +158,7 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+Besides the default `en` locale (English), RichText includes the built-in `de` (German) and `cn` (Chinese) locales.
 :::
 
 <details>
@@ -459,16 +459,36 @@ const cn = {
 ~~~
 </details>
 
-## Custom locale
+## Apply a custom locale
 
-To apply a custom locale you need to:
+Apply a custom locale with these steps:
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+- create a custom locale (or modify a built-in one) and provide translations for all text labels
+- apply the locale to RichText via the [`locale`](api/config/locale.md) config property or the [`setLocale()`](api/methods/set-locale.md) method
 
-- apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
+The following code snippet applies the German locale on initialization and switches to Chinese dynamically:
 
-## Example
+~~~jsx
+const editor = new richtext.Richtext("#root", {
+    locale: richtext.locales.de
+    // other configuration properties
+});
 
-In this snippet you can see how to switch through several locales:
+// switch to Chinese locale
+editor.setLocale(richtext.locales.cn);
+~~~
+
+:::tip[Совет]
+To reset RichText to the default English locale, call `setLocale()` without arguments or pass `null`:
+
+~~~jsx
+editor.setLocale(null);
+~~~
+
+:::
+
+## View the example
+
+The example below demonstrates switching between locales:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
