@@ -64,11 +64,11 @@ Download the [**trial RichText package**](/how_to_start/#installing-richtext-via
 
 ### Step 2. Component creation
 
-Create a Vue component to add RichText to the application. Create a new file in **src/components/** and name it **Richtext.vue**.
+Create a Vue component to add RichText to the application. Create a new file in *src/components/* and name it *Richtext.vue*.
 
 #### Import source files
 
-Open the ***Richtext.vue*** file and import RichText source files. Note that:
+Open *Richtext.vue* and import RichText source files. Note that:
 
 - if you use PRO version and install the RichText package from a local folder, the import paths look like this:
 
@@ -146,7 +146,7 @@ body,
 
 #### Load data
 
-To add data to RichText, create a data set. Create the **data.js** file in **src/** and add the initial content:
+To add data to RichText, create a data set. Create *data.js* in *src/* and add the initial content:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -158,7 +158,7 @@ export function getData() {
 }
 ~~~
 
-Open **App.vue**, import data, and pass it to the `<RichText/>` component as props:
+Open *App.vue*, import data, and pass it to the `<RichText/>` component as props:
 
 ~~~html {} title="App.vue"
 <script>
@@ -179,7 +179,7 @@ export default {
 </template>
 ~~~
 
-Open **Richtext.vue** and apply the props to the RichText configuration object:
+Open *Richtext.vue* and apply the props to the RichText configuration object:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -246,7 +246,7 @@ The RichText component is ready to use. When the element is added to the page, i
 
 When a user performs an action in RichText, it fires an event. Use these events to detect the action and run the desired code. See the [full list of events](api/overview/events_overview.md).
 
-Open **Richtext.vue** and update `mounted()`:
+Open *Richtext.vue* and update `mounted()`:
 
 ~~~html {} title="Richtext.vue"
 <script>

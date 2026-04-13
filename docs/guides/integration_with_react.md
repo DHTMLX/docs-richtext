@@ -60,11 +60,11 @@ Download the [**trial RichText package**](/how_to_start/#installing-richtext-via
 
 ### Step 2. Component creation
 
-Create a React component to add RichText to the application. Create a new file in **src/** and name it **Richtext.jsx**.
+Create a React component to add RichText to the application. Create a new file in *src/* and name it *Richtext.jsx*.
 
 #### Import source files
 
-Open the ***Richtext.jsx*** file and import RichText source files. Note that:
+Open *Richtext.jsx* and import RichText source files. Note that:
 
 - if you use PRO version and install the RichText package from a local folder, the import paths look like this:
 
@@ -137,7 +137,7 @@ body,
 
 #### Load data
 
-To add data to RichText, create a data set. Create the **data.js** file in **src/** and add the initial content:
+To add data to RichText, create a data set. Create *data.js* in *src/* and add the initial content:
 
 ~~~jsx {} title="data.js"
 export function getData() {
@@ -149,7 +149,7 @@ export function getData() {
 }
 ~~~
 
-Open **App.js**, import data, and pass it to the `<RichText/>` component as props:
+Open *App.js*, import data, and pass it to the `<RichText/>` component as props:
 
 ~~~jsx {2,5-6} title="App.js"
 import RichText from "./Richtext";
@@ -163,7 +163,7 @@ function App() {
 export default App;
 ~~~
 
-Open **Richtext.jsx** and apply the props to the RichText configuration object:
+Open *Richtext.jsx* and apply the props to the RichText configuration object:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -226,7 +226,7 @@ The RichText component is ready. When the element is added to the page, it initi
 
 When a user performs an action in RichText, it fires an event. Use these events to detect the action and run the desired code. See the [full list of events](api/overview/events_overview.md).
 
-Open **Richtext.jsx** and update `useEffect()`:
+Open *Richtext.jsx* and update `useEffect()`:
 
 ~~~jsx {} title="Richtext.jsx"
 // ...

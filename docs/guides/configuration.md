@@ -79,13 +79,13 @@ new richtext.Richtext("#root", {
 
 RichText provides two layout modes for the editor:
 
-- **"classic"**
+- `"classic"`
 
 <div className="img_border">
 ![Classic mode](./../assets/richtext/classic_mode.png)
 </div>
 
-- **"document"**
+- `"document"`
 
 <div className="img_border">
 ![Document mode](./../assets/richtext/document_mode.png)

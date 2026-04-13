@@ -22,7 +22,7 @@ RichText uses the following core classes to structure its UI:
 | `.wx-richtext-toolbar` | Container for toolbar                       |
 | `.wx-editor-area`      | Container for main editable content area    |
 
-You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
+Use these classes in your custom CSS selectors to override the appearance of the RichText editor.
 
 ## Override default styles
 

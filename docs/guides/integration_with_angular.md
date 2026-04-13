@@ -28,7 +28,7 @@ ng new my-angular-richtext-app
 If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
 :::
 
-The command installs all the necessary tools — no additional commands are required.
+The command installs all the necessary tools. No additional commands are required.
 
 ### Install dependencies
 
@@ -57,11 +57,11 @@ Download the [**trial RichText package**](/how_to_start/#installing-richtext-via
   
 ### Step 2. Component creation
 
-Create an Angular component to add RichText to the application. Create the **richtext** folder in the **src/app/** directory, add a new file, and name it **richtext.component.ts**.
+Create an Angular component to add RichText to the application. In the *src/app/* directory, add a *richtext* folder with a new file named *richtext.component.ts*.
 
 #### Import source files
 
-Open the **richtext.component.ts** file and import RichText source files. Note that:
+Open *richtext.component.ts* and import RichText source files. Note that:
 
 - if you use PRO version and install the RichText package from a local folder, the imported path looks like this:
 
@@ -113,7 +113,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 #### Add styles
 
-Provide the necessary styles to display RichText correctly. Create the **richtext.component.css** file in the **src/app/richtext/** directory and specify styles for RichText and its container:
+Provide the necessary styles to display RichText correctly. Create *richtext.component.css* in the *src/app/richtext/* directory and specify styles for RichText and its container:
 
 ~~~css title="richtext.component.css"
 /* import RichText styles */
@@ -141,7 +141,7 @@ body{
 
 #### Load data
 
-To add data to RichText, create a data set. Create the **data.ts** file in the **src/app/richtext/** directory and add the initial content:
+To add data to RichText, create a data set. Create *data.ts* in the *src/app/richtext/* directory and add the initial content:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -153,7 +153,7 @@ export function getData() {
 }
 ~~~
 
-Open **richtext.component.ts**, import the data file, and pass the data properties to the RichText configuration object in `ngOnInit()`:
+Open *richtext.component.ts*, import the data file, and pass the data properties to the RichText configuration object in `ngOnInit()`:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext} from '@dhx/trial-richtext';
@@ -231,7 +231,7 @@ The RichText component is ready to use. When the element is added to the page, i
 
 When a user performs an action in RichText, it fires an event. Use these events to detect the action and run the desired code. See the [full list of events](api/overview/events_overview.md).
 
-Open **richtext.component.ts** and update `ngOnInit()`:
+Open *richtext.component.ts* and update `ngOnInit()`:
 
 ~~~jsx {} title="richtext.component.ts"
 // ...
@@ -250,7 +250,7 @@ ngOnDestroy(): void {
 
 ### Step 3. Adding RichText into the app
 
-To add **RichTextComponent** to your app, open **src/app/app.component.ts** and replace the default code:
+To add `RichTextComponent` to your app, open *src/app/app.component.ts* and replace the default code:
 
 ~~~jsx {} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -264,7 +264,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create **app.module.ts** in **src/app/** and specify **RichTextComponent**:
+Then create *app.module.ts* in *src/app/* and specify `RichTextComponent`:
 
 ~~~jsx {} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -281,7 +281,7 @@ import { RichTextComponent } from "./richtext/richtext.component";
 export class AppModule {}
 ~~~
 
-Finally, open **src/main.ts** and replace the existing code:
+Finally, open *src/main.ts* and replace the existing code:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";

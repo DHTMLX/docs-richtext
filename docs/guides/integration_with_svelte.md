@@ -68,11 +68,11 @@ Download the [**trial RichText package**](/how_to_start/#installing-richtext-via
 
 ### Step 2. Component creation
 
-Create a Svelte component to add RichText to the application. Create a new file in **src/** and name it **Richtext.svelte**.
+Create a Svelte component to add RichText to the application. Create a new file in *src/* and name it *Richtext.svelte*.
 
 #### Import source files
 
-Open the ***Richtext.svelte*** file and import RichText source files. Note that:
+Open *Richtext.svelte* and import RichText source files. Note that:
 
 - if you use PRO version and install the RichText package from a local folder, the import paths look like this:
 
@@ -124,7 +124,7 @@ onDestroy(() => {
 
 #### Load data
 
-To add data to RichText, create a data set. Create the **data.js** file in **src/** and add the initial content:
+To add data to RichText, create a data set. Create *data.js* in *src/* and add the initial content:
 
 ~~~jsx {} title="data.ts"
 export function getData() {
@@ -136,7 +136,7 @@ export function getData() {
 }
 ~~~
 
-Open **App.svelte**, import data, and pass it to the `<RichText/>` component as props:
+Open *App.svelte*, import data, and pass it to the `<RichText/>` component as props:
 
 ~~~html {} title="App.svelte"
 <script>
@@ -149,7 +149,7 @@ const { value } = getData();
 <RichText value={value} />
 ~~~
 
-Open **Richtext.svelte** and apply the props to the RichText configuration object:
+Open *Richtext.svelte* and apply the props to the RichText configuration object:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -216,7 +216,7 @@ The RichText component is ready to use. When the element is added to the page, i
 
 When a user performs an action in RichText, it fires an event. Use these events to detect the action and run the desired code. See the [full list of events](api/overview/events_overview.md).
 
-Open **Richtext.svelte** and update `onMount()`:
+Open *Richtext.svelte* and update `onMount()`:
 
 ~~~html {} title="Richtext.svelte"
 <script>

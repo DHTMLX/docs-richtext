@@ -18,8 +18,8 @@ This guide covers how to create RichText and add it to your application. Follow 
 
 Include 2 source files on your page:
 
-- `richtext.js`
-- `richtext.css`
+- *richtext.js*
+- *richtext.css*
 
 Set the correct relative paths to the source files in your HTML page:
 
