@@ -6,11 +6,9 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 # Styling
 
-You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
+Override CSS variables and apply custom styles to specific parts of the widget to fully customize DHTMLX RichText's appearance. This page covers a dark theme example and lists the available class names and CSS variables.
 
-This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
-
-## Default structure and class names
+## Default CSS classes
 
 RichText uses the following core classes to structure its UI:
 
@@ -18,17 +16,17 @@ RichText uses the following core classes to structure its UI:
 |------------------------|---------------------------------------------|
 | `.wx-richtext`         | Root container of the RichText widget       |
 | `.wx-richtext-menubar` | Container for menubar                       |
-| `.wx-richtext-menu`    | Container for menubar dropdown  menu        |
+| `.wx-richtext-menu`    | Container for menubar dropdown menu         |
 | `.wx-richtext-toolbar` | Container for toolbar                       |
 | `.wx-editor-area`      | Container for main editable content area    |
 
-You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
+Use these classes in your CSS selectors to override the RichText editor appearance.
 
-## Overriding default styles
+## Override default styles
 
-You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
+Override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
 
-```html
+~~~html
 <div id="root" style="width: 100%; height: 100%;"></div>
 
 <style>
@@ -53,13 +51,13 @@ You can override RichText's default styles by redefining CSS variables on the `#
     border: var(--wx-border);
   }
 </style>
-```
+~~~
 
 :::note
-These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
+These styles apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
 :::
 
-## List of supported CSS variables
+## Supported CSS variables
 
 | Variable name                | Description                          |
 | ---------------------------- | ------------------------------------ |
@@ -82,7 +80,7 @@ These styles will apply a dark background, adjust button and icon colors, and im
 
 ## Live demo
 
-In this snippet you can see how to apply a custom style to RichText:
+The snippet below applies a custom dark theme to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

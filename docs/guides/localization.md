@@ -6,11 +6,11 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
+Create a custom locale or modify a built-in one. Apply the locale to RichText to localize all interface labels.
 
 ## Default locale
 
-The **English** locale is used by default:
+RichText uses the **English** locale by default:
 
 ~~~jsx
 const en = {
@@ -158,7 +158,7 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+In addition to the default `en` locale (English), RichText includes built-in `de` (German) and `cn` (Chinese) locales.
 :::
 
 <details>
@@ -459,16 +459,24 @@ const cn = {
 ~~~
 </details>
 
-## Custom locale
+## Apply a custom locale
 
-To apply a custom locale you need to:
+RichText ships with three built-in locales you can reference directly: `richtext.locales.en` (English), `richtext.locales.de` (German), and `richtext.locales.cn` (Chinese). Pass one of these to the [`locale`](api/config/locale.md) property or to [`setLocale()`](api/methods/set-locale.md):
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+~~~jsx
+const editor = new richtext.Richtext("#root", {
+    locale: richtext.locales.de
+    // other configuration properties
+});
 
-- apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
+// change locale dynamically
+editor.setLocale(richtext.locales.cn);
+~~~
+
+To apply a fully custom locale, create a locale object with translations for all labels and pass it to [`locale`](api/config/locale.md) or [`setLocale()`](api/methods/set-locale.md).
 
 ## Example
 
-In this snippet you can see how to switch through several locales:
+The snippet below demonstrates switching between locales:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
