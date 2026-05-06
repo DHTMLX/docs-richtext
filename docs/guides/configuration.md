@@ -6,19 +6,19 @@ description: You can learn about the configuration in the documentation of the D
 
 # Configuration
 
-You can configure RichText appearance and functionality via the corresponding API. The available parameters will allow you to:
+You can configure the appearance and functionality of RichText through its API. The available parameters let you:
 
-- Show/hide **menubar** using the [`menubar`](api/config/menubar.md) property
-- Configure **toolbar** using the [`toolbar`](api/config/toolbar.md) property
-- Enable the **fullscreen mode** using the [`fullscreenMode`](api/config/fullscreen-mode.md) property
-- Toggle the **layout** between "classic" and "document" modes using the [`layoutMode`](api/config/layout-mode.md) property
-- Specify **initial value** using the [`value`](api/config/value.md) property
-- Specify **initial locale** using the [`locale`](api/config/locale.md) property
-- Apply **initial styles** using the [`defaultStyles`](api/config/default-styles.md) property
+- Show or hide the **menubar** with the [`menubar`](api/config/menubar.md) property
+- Configure the **toolbar** with the [`toolbar`](api/config/toolbar.md) property
+- Enable **fullscreen mode** with the [`fullscreenMode`](api/config/fullscreen-mode.md) property
+- Toggle the **layout** between "classic" and "document" modes with the [`layoutMode`](api/config/layout-mode.md) property
+- Set the **initial value** with the [`value`](api/config/value.md) property
+- Set the **initial locale** with the [`locale`](api/config/locale.md) property
+- Apply **initial styles** with the [`defaultStyles`](api/config/default-styles.md) property
 
 ## Layout modes
 
-There are two layout modes of RichText editor between which you can select to get the best working place for creating your perfect content:
+The RichText editor provides two layout modes:
 
 - **"classic"**
 
@@ -32,7 +32,7 @@ There are two layout modes of RichText editor between which you can select to ge
 ![Document mode](./../assets/richtext/document_mode.png)
 </div>
 
-To specify the desired mode, you need to define it in the [`layoutMode`](api/config/layout-mode.md) property of the RichText configuration object during initialization of the component:
+To set the mode, define the [`layoutMode`](api/config/layout-mode.md) property of the RichText configuration object when initializing the component:
 
 ~~~jsx
 const editor = new richtext.Richtext("#root", {
@@ -42,7 +42,7 @@ const editor = new richtext.Richtext("#root", {
 
 ## Toolbar
 
-The RichText toolbar consists of several blocks of controls that can be changed according to your needs.
+The RichText toolbar consists of several blocks of controls that you can customize.
 
 ### Default toolbar controls
 

@@ -6,9 +6,9 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 # Styling
 
-You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
+You can customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
 
-This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
+This guide shows how to apply a **dark theme** and use the built-in class names to style the editor’s menubar, toolbar, popup, and content area.
 
 ## Default structure and class names
 
@@ -18,7 +18,7 @@ RichText uses the following core classes to structure its UI:
 |------------------------|---------------------------------------------|
 | `.wx-richtext`         | Root container of the RichText widget       |
 | `.wx-richtext-menubar` | Container for menubar                       |
-| `.wx-richtext-menu`    | Container for menubar dropdown  menu        |
+| `.wx-richtext-menu`    | Container for menubar dropdown menu         |
 | `.wx-richtext-toolbar` | Container for toolbar                       |
 | `.wx-editor-area`      | Container for main editable content area    |
 
@@ -56,7 +56,7 @@ You can override RichText's default styles by redefining CSS variables on the `#
 ```
 
 :::note
-These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
+These styles apply a dark background and adjust button, icon, and text colors for dark UI themes.
 :::
 
 ## List of supported CSS variables
@@ -82,7 +82,7 @@ These styles will apply a dark background, adjust button and icon colors, and im
 
 ## Live demo
 
-In this snippet you can see how to apply a custom style to RichText:
+The snippet below shows how to apply a custom style to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

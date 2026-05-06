@@ -6,7 +6,7 @@ description: You can learn about the initialization in the documentation of the 
 
 # Initialization
 
-This guide will give you detailed instructions on how to create RichText on a page to enrich your application with features of the RichText editor. Take the following steps to get a ready-to-use component:
+To add the RichText editor to a page, follow these steps:
 
 1. [Include the RichText source files on a page](#including-source-files).
 2. [Create a container for RichText](#creating-container).
@@ -16,12 +16,12 @@ This guide will give you detailed instructions on how to create RichText on a pa
 
 [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it into a folder of your project.
 
-To create RichText, you need to include 2 source files on your page:
+To create RichText, include two source files on your page:
 
 - *richtext.js*
 - *richtext.css*
 
-Make sure that you set correct relative paths to the source files:
+Use correct relative paths to the source files:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./codebase/richtext.js"></script>  
@@ -53,11 +53,11 @@ const editor = new richtext.Richtext("#root", {
 ### Configuration properties
 
 :::note
-The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
+See the [full list of **RichText** properties](api/overview/properties_overview.md).
 :::
 
 ## Example
 
-In this snippet you can see how to initialize **RichText** with the initial data:
+The snippet below shows how to initialize **RichText** with initial data:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
