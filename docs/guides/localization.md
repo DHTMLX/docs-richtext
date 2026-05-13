@@ -6,11 +6,11 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-You can localize all labels in the interface of JavaScript RichText. For this you need to create a new locale or modify a built-in one and apply it to RichText.
+RichText supports localization of all interface labels. Create a new locale or modify a built-in one, then apply the locale to the editor.
 
 ## Default locale
 
-The **English** locale is used by default:
+By default, RichText applies the English locale:
 
 ~~~jsx
 const en = {
@@ -158,11 +158,11 @@ const en = {
 ~~~
 
 :::info
-Besides the default ***en*** locale (*English*), RichText also includes the built-in ***de*** (*German*) and ***cn*** (*Chinese*) ones.
+RichText also ships with the built-in German (`de`) and Chinese (`cn`) locales. Access any built-in locale through the `richtext.locales` namespace: `richtext.locales.en`, `richtext.locales.de`, `richtext.locales.cn`.
 :::
 
 <details>
-<summary><b>de</b> locale</summary>
+<summary><code>de</code> locale</summary>
 
 ~~~jsx
 const de = {
@@ -311,12 +311,12 @@ const de = {
 </details>
 
 <details>
-<summary><b>cn</b> locale</summary>
+<summary><code>cn</code> locale</summary>
 
 ~~~jsx
 const cn = {
     richtext: {
-        // buttons/actions,
+        // buttons/actions
         Undo: "撤销",
         Redo: "重做",
         Style: "样式",
@@ -459,16 +459,40 @@ const cn = {
 ~~~
 </details>
 
-## Custom locale
+## Apply a custom locale
 
-To apply a custom locale you need to:
+To apply a custom locale, follow these steps:
 
-- create a custom locale (or modify the default one) and provide translations for all text labels (it can be any language you need)
+- Create a locale object (or modify a built-in one) with translations for all interface labels.
+- Apply the locale through the [`locale`](api/config/locale.md) property at initialization or through the [`setLocale()`](api/methods/set-locale.md) method at runtime.
 
-- apply the new locale to **RichText** via its [`locale`](api/config/locale.md) property or use the [`setLocale()`](api/methods/set-locale.md) method
+### Apply the locale at initialization
+
+Pass the locale to the [`locale`](api/config/locale.md) property in the constructor configuration:
+
+~~~jsx
+const editor = new richtext.Richtext("#root", {
+    locale: richtext.locales.de
+    // other configuration properties
+});
+~~~
+
+### Switch the locale at runtime
+
+Call the [`setLocale()`](api/methods/set-locale.md) method to change the locale after initialization:
+
+~~~jsx
+editor.setLocale(richtext.locales.cn);
+~~~
+
+To restore the default English locale, call [`setLocale()`](api/methods/set-locale.md) without arguments or with `null`:
+
+~~~jsx
+editor.setLocale();
+~~~
 
 ## Example
 
-In this snippet you can see how to switch through several locales:
+The example below switches RichText through several locales:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
