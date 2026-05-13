@@ -6,33 +6,34 @@ description: You can learn about the configuration in the documentation of the D
 
 # Configuration
 
-You can configure RichText appearance and functionality via the corresponding API. The available parameters will allow you to:
+You can configure the RichText appearance and behavior with the following properties:
 
-- Show/hide **menubar** using the [`menubar`](api/config/menubar.md) property
-- Configure **toolbar** using the [`toolbar`](api/config/toolbar.md) property
-- Enable the **fullscreen mode** using the [`fullscreenMode`](api/config/fullscreen-mode.md) property
-- Toggle the **layout** between "classic" and "document" modes using the [`layoutMode`](api/config/layout-mode.md) property
-- Specify **initial value** using the [`value`](api/config/value.md) property
-- Specify **initial locale** using the [`locale`](api/config/locale.md) property
-- Apply **initial styles** using the [`defaultStyles`](api/config/default-styles.md) property
+- [`menubar`](api/config/menubar.md) — show or hide the top menubar
+- [`toolbar`](api/config/toolbar.md) — configure toolbar visibility and buttons
+- [`fullscreenMode`](api/config/fullscreen-mode.md) — start the editor in fullscreen
+- [`layoutMode`](api/config/layout-mode.md) — switch between the `"classic"` and `"document"` layouts
+- [`value`](api/config/value.md) — set the initial HTML content
+- [`locale`](api/config/locale.md) — apply a localization object on initialization
+- [`defaultStyles`](api/config/default-styles.md) — set default styles for specific block types
+- [`imageUploadUrl`](api/config/image-upload-url.md) — set the endpoint for image uploads
 
 ## Layout modes
 
-There are two layout modes of RichText editor between which you can select to get the best working place for creating your perfect content:
+RichText supports two layout modes for the editing area:
 
-- **"classic"**
+- **"classic"** — the edit area fills the entire page
 
 <div className="img_border">
 ![Classic mode](./../assets/richtext/classic_mode.png)
 </div>
 
-- **"document"**
+- **"document"** — the edit area mimics real document sizes (A4, A5, A6, A7)
 
 <div className="img_border">
 ![Document mode](./../assets/richtext/document_mode.png)
 </div>
 
-To specify the desired mode, you need to define it in the [`layoutMode`](api/config/layout-mode.md) property of the RichText configuration object during initialization of the component:
+Set the [`layoutMode`](api/config/layout-mode.md) property during initialization to choose the mode:
 
 ~~~jsx
 const editor = new richtext.Richtext("#root", {
@@ -42,11 +43,11 @@ const editor = new richtext.Richtext("#root", {
 
 ## Toolbar
 
-The RichText toolbar consists of several blocks of controls that can be changed according to your needs.
+The RichText toolbar groups controls into several blocks that you can customize.
 
 ### Default toolbar controls
 
-You can specify the following buttons and controls in the RichText toolbar:
+You can include the following buttons and controls in the RichText toolbar:
 
 | Button              | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
@@ -76,11 +77,11 @@ You can specify the following buttons and controls in the RichText toolbar:
 | `clear`             | Removes all formatting from the selected text                               |
 | `print`             | Opens the print dialog                                                      |
 | `fullscreen`        | Toggles fullscreen mode                                                     |
-| `mode`              | Switches between 2 view modes: Classic/ Document                            |
+| `mode`              | Switches between two layout modes: classic and document                     |
 | `shortcuts`         | Displays a list of available keyboard shortcuts                             |
 | `separator`         | Adds a visual separator between controls                                    |
 
-The toolbar structure is defined using the [`toolbar`](api/config/toolbar.md) property, which is an array with strings presenting the names of controls.
+Use the [`toolbar`](api/config/toolbar.md) property to define the toolbar as an array of control name strings:
 
 ~~~jsx {2-36}
 new richtext.Richtext("#root", {
@@ -125,36 +126,38 @@ new richtext.Richtext("#root", {
 
 **Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
-### Custom toolbar controls
+### Add custom toolbar controls
 
-You can also specify custom controls as objects in the [`toolbar`](api/config/toolbar.md) property with the following parameters:
+Pass objects in the [`toolbar`](api/config/toolbar.md) array to add custom controls. The following parameters are available:
 
-- `type` - (required) specifies a custom control type. The following types are available: `"button"`, `"richselect"`, `"colorpicker"`
-- `id` - (optional) a custom control ID (cannot overlap with existing control ID)
-- `label` - (optional) a button label (combines with icon)
-- `tooltip` - (optional) a tooltip displayed on hover (if not specified, uses the value from "label")
-- `css` - (optional) a css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-- `handler` - (optional) a callback function that executes when the button is clicked
+- `type: string` — required. Control type: `"button"`, `"richselect"`, or `"colorpicker"`
+- `id: string` — optional. Custom control ID; cannot overlap with existing control IDs
+- `icon: string` — optional. Icon class name; combines with the label
+- `label: string` — optional. Button label; combines with the icon
+- `tooltip: string` — optional. Tooltip shown on hover; defaults to `label` if not set
+- `css: string` — optional. CSS class assigned to the control. Default supported classes: `wx-primary`, `wx-secondary`
+- `handler: () => void` — optional. Callback invoked on click
+
+The example below combines built-in buttons, a predefined control with the `richselect` type, and two custom buttons:
 
 ~~~jsx {6-32}
 new richtext.Richtext("#root", {
     toolbar: [
-        // buttons (strings represent buttons only)
+        // string entries represent built-in buttons
         "bold",
         "italic",
-        // predefined buttons (user cannot define any other options for these (no labels, tooltips, options, etc.), so only ({ type: "button", id: string })
+        // predefined buttons accept only { type: "button", id: string }
         {
             type: "button",
             id: "fullscreen",
         },
-        // user must specify the correct type if they want to use a predefined control (e.g. richselect/colorpicker)
-        // non-matching types will be ignored (not added to the toolbar)
+        // for predefined richselect/colorpicker controls, set the matching type
+        // entries with a non-matching type are ignored
         {
-            type: "richselect", // type: "button" - incorrect, will be ignored
+            type: "richselect", // type: "button" would be ignored here
             id: "mode",
         },
-        // custom buttons (supported options are below)
-        // user can only define custom buttons (no richselect/colorpicker support atm)
+        // custom buttons (richselect/colorpicker are not supported for custom controls)
         {
             type: "button",
             id: "some",
@@ -176,9 +179,9 @@ new richtext.Richtext("#root", {
 
 **Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
 
-### Hide Toolbar
+### Hide the toolbar
 
-If you need to hide toolbar, set the [`toolbar`](api/config/toolbar.md) property to `false` as follows:
+Set the [`toolbar`](api/config/toolbar.md) property to `false` to hide the toolbar:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -187,13 +190,74 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+## Show the menubar
+
+Use the [`menubar`](api/config/menubar.md) property to show the top menubar above the toolbar. The default value is `false`.
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    menubar: true
+    // other configuration properties
+});
+~~~
+
+## Set the initial content
+
+Use the [`value`](api/config/value.md) property to pass initial HTML content into the editor on initialization:
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    value: "<h1>some value</h1>"
+    // other configuration properties
+});
+~~~
+
+To replace the content later in a custom format, call the [`setValue()`](api/methods/set-value.md) method.
+
+## Set the initial locale
+
+Use the [`locale`](api/config/locale.md) property to apply a localization object on initialization:
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    locale: richtext.locales.cn
+    // other configuration properties
+});
+~~~
+
+For details and dynamic locale switching with [`setLocale()`](api/methods/set-locale.md), see the [Localization](guides/localization.md) guide.
+
+## Start in fullscreen mode
+
+Use the [`fullscreenMode`](api/config/fullscreen-mode.md) property to open the editor in fullscreen on initialization. The default value is `false`.
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    fullscreenMode: true
+    // other configuration properties
+});
+~~~
+
+## Configure the image upload URL
+
+Use the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint that handles image uploads triggered from the toolbar:
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    imageUploadUrl: "https://example.com/upload"
+    // other configuration properties
+});
+~~~
+
 ## Default styles
 
-You can apply default style values for specific block types in the editor using the [`defaultStyles`](api/config/default-styles.md) property.
+Use the [`defaultStyles`](api/config/default-styles.md) property to set default style values for specific block types in the editor.
+
+The following code snippet shows the type signature of the [`defaultStyles`](api/config/default-styles.md) property:
 
 ~~~jsx {}
-defaultStyles?: boolean | {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+defaultStyles?: {
+    "*"?: { // applies to all blocks; sets common properties for every block
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;
@@ -250,7 +314,7 @@ defaultStyles?: boolean | {
 };
 ~~~
 
-The `defaultStyles` property DOES NOT set the actual CSS to the affected blocks. CSS styles have to be applied separately:
+The [`defaultStyles`](api/config/default-styles.md) property does not apply CSS to the affected blocks. Apply matching CSS styles separately:
 
 ```html title="index.html"
 <div id="root"></div>
@@ -278,6 +342,6 @@ const editor = new richtext.Richtext("#root", {
 }
 ```
 
-In this example, all `h2` blocks are assigned to the `"Roboto"` font-family with a font-size of 28px with both the foreground and the background colors changed as well. Css styles are assigned to `h2` blocks as well.
+In this example, all `h2` blocks use the `"Roboto"` font family at 28px with purple text on a pink background. The matching CSS rule applies the same values to the rendered `h2` elements.
 
 **Related sample:** [RichText. Changing the default value for typography (font, font size, etc.)](https://snippet.dhtmlx.com/6u3ti01s?tag=richtext)
