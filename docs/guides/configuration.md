@@ -53,7 +53,7 @@ You can include the following buttons and controls in the RichText toolbar:
 |---------------------|-----------------------------------------------------------------------------|
 | `undo`              | Reverts the most recent user action                                         |
 | `redo`              | Reapplies the previously undone action                                      |
-| `style`             | Allows selection of text styles (e.g., headings, paragraph, etc.)           |
+| `style`             | Selects a text style (e.g., heading, paragraph, blockquote)                 |
 | `font-family`       | Changes the font of the selected text                                       |
 | `font-size`         | Adjusts the size of the selected text                                       |
 | `bold`              | Applies bold formatting to the selected text                                |
@@ -128,15 +128,15 @@ new richtext.Richtext("#root", {
 
 ### Add custom toolbar controls
 
-Pass objects in the [`toolbar`](api/config/toolbar.md) array to add custom controls. The following parameters are available:
+Pass an object to the [`toolbar`](api/config/toolbar.md) array with one of these fields:
 
 - `type: string` — required. Control type: `"button"`, `"richselect"`, or `"colorpicker"`
 - `id: string` — optional. Custom control ID; cannot overlap with existing control IDs
 - `icon: string` — optional. Icon class name; combines with the label
 - `label: string` — optional. Button label; combines with the icon
-- `tooltip: string` — optional. Tooltip shown on hover; defaults to `label` if not set
-- `css: string` — optional. CSS class assigned to the control. Default supported classes: `wx-primary`, `wx-secondary`
-- `handler: () => void` — optional. Callback invoked on click
+- `tooltip: string` — optional. Tooltip that appears on hover; defaults to `label` if not set
+- `css: string` — optional. CSS class for the control. Built-in classes: `wx-primary`, `wx-secondary`
+- `handler: () => void` — optional. Callback that runs on click
 
 The example below combines built-in buttons, a predefined control with the `richselect` type, and two custom buttons:
 
@@ -192,7 +192,7 @@ new richtext.Richtext("#root", {
 
 ## Show the menubar
 
-Use the [`menubar`](api/config/menubar.md) property to show the top menubar above the toolbar. The default value is `false`.
+Enable the [`menubar`](api/config/menubar.md) property to render the top menubar above the toolbar. The default value is `false`.
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -212,7 +212,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-To replace the content later in a custom format, call the [`setValue()`](api/methods/set-value.md) method.
+To replace the content after initialization, or to load it in a non-HTML format with a custom encoder, call the [`setValue()`](api/methods/set-value.md) method.
 
 ## Set the initial locale
 
@@ -229,7 +229,7 @@ For details and dynamic locale switching with [`setLocale()`](api/methods/set-lo
 
 ## Start in fullscreen mode
 
-Use the [`fullscreenMode`](api/config/fullscreen-mode.md) property to open the editor in fullscreen on initialization. The default value is `false`.
+Set the [`fullscreenMode`](api/config/fullscreen-mode.md) property to `true` to open the editor in fullscreen on initialization. The default value is `false`.
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -240,7 +240,7 @@ new richtext.Richtext("#root", {
 
 ## Configure the image upload URL
 
-Use the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint that handles image uploads triggered from the toolbar:
+Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint for toolbar image uploads:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -249,11 +249,11 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-## Default styles
+## Configure default styles
 
-Use the [`defaultStyles`](api/config/default-styles.md) property to set default style values for specific block types in the editor.
+Use the [`defaultStyles`](api/config/default-styles.md) property to set default styles per block type.
 
-The following code snippet shows the type signature of the [`defaultStyles`](api/config/default-styles.md) property:
+The [`defaultStyles`](api/config/default-styles.md) property has the following type signature:
 
 ~~~jsx {}
 defaultStyles?: {
