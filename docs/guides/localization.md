@@ -6,7 +6,7 @@ description: You can learn about the localization in the documentation of the DH
 
 # Localization
 
-RichText supports localization of all interface labels. Create a new locale or modify a built-in one, then apply the locale to the editor.
+RichText supports localization of all interface labels. Create a new locale or modify a built-in one, and apply the result through the editor configuration.
 
 ## Default locale
 
@@ -461,10 +461,7 @@ const cn = {
 
 ## Apply a custom locale
 
-To apply a custom locale, follow these steps:
-
-- Create a locale object (or modify a built-in one) with translations for all interface labels.
-- Apply the locale through the [`locale`](api/config/locale.md) property at initialization or through the [`setLocale()`](api/methods/set-locale.md) method at runtime.
+Create a locale object (or modify a built-in one) with translations for all interface labels. Apply the locale at initialization or switch it at runtime, as shown below.
 
 ### Apply the locale at initialization
 
@@ -493,6 +490,6 @@ editor.setLocale();
 
 ## Example
 
-The example below switches RichText through several locales:
+The example below cycles through several RichText locales:
 
 <iframe src="https://snippet.dhtmlx.com/zxjrin3i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
