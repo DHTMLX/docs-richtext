@@ -25,7 +25,7 @@ ng new my-angular-richtext-app
 ~~~
 
 :::note
-Disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when the Angular CLI prompts during project creation.
+Disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when the Angular CLI prompts you during project creation.
 :::
 
 The command installs all the necessary tools. No additional commands are required.
@@ -79,7 +79,7 @@ This tutorial uses the trial version of RichText.
 
 #### Set the container and initialize RichText
 
-Set a container element for RichText and initialize the component with the `Richtext` constructor inside `ngOnInit()`. Call the [`destructor()`](api/methods/destructor.md) method inside `ngOnDestroy()` to clean up when Angular destroys the component:
+Set a container element for RichText and initialize the component with the `Richtext` constructor inside `ngOnInit()`. Call the [`destructor()`](api/methods/destructor.md) method inside `ngOnDestroy()` to clean up:
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext } from '@dhx/trial-richtext';
@@ -113,7 +113,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 #### Add styles
 
-Provide the required styles for RichText. Create the *richtext.component.css* file in the *src/app/richtext/* directory with the styles for RichText and its container:
+Create the *richtext.component.css* file in the *src/app/richtext/* directory with the styles for RichText and its container:
 
 ~~~css title="richtext.component.css"
 /* import RichText styles */
@@ -281,7 +281,7 @@ import { RichTextComponent } from "./richtext/richtext.component";
 export class AppModule {}
 ~~~
 
-Finally, open *src/main.ts* and replace the contents with the following:
+Open *src/main.ts* and replace the contents with the bootstrap code:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -297,4 +297,4 @@ Start the app to see RichText render with data on the page.
 ![RichText initialization](../assets/trial_richtext.png)
 </div>
 
-You now have a working RichText integration in Angular. Customize the code to fit your needs. A full advanced example is available on [GitHub](https://github.com/DHTMLX/angular-richtext-demo).
+You now have a working RichText integration in Angular. Customize the code to fit your needs. A complete example is available on [GitHub](https://github.com/DHTMLX/angular-richtext-demo).
