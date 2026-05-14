@@ -24,9 +24,7 @@ Create a Vue project with the official scaffolding tool:
 npm create vue@latest
 ~~~
 
-The command installs and runs `create-vue`. For details, see the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
-
-Name the project *my-vue-richtext-app*.
+The command installs and runs `create-vue`. When the scaffolder prompts for a project name, use *my-vue-richtext-app*. For details, see the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
 ### Install dependencies
 
@@ -92,7 +90,7 @@ This tutorial uses the trial version of RichText.
 
 #### Set the container and initialize RichText
 
-Set a container element for RichText and initialize the component with the `Richtext` constructor inside `mounted()`. Call the [`destructor()`](api/methods/destructor.md) method inside `unmounted()` to remove RichText when Vue unmounts the component:
+Set a container element for RichText and initialize the component with the `Richtext` constructor inside `mounted()`. Call the [`destructor()`](api/methods/destructor.md) method inside `unmounted()` to remove RichText:
 
 ~~~html {} title="Richtext.vue"
 <script>
@@ -120,7 +118,7 @@ export default {
 
 #### Add styles
 
-Provide the required styles for RichText. Add the styles to the main CSS file of the project:
+Add the styles for RichText and its container to the main CSS file of the project:
 
 ~~~css title="main.css"
 /* base page styles */
@@ -276,4 +274,4 @@ Start the app to see RichText render with data on the page.
 ![RichText initialization](../assets/trial_richtext.png)
 </div>
 
-You now have a working RichText integration in Vue. Customize the code to fit your needs. A full advanced example is available on [GitHub](https://github.com/DHTMLX/vue-richtext-demo).
+You now have a working RichText integration in Vue. Customize the code to fit your needs. A complete example is available on [GitHub](https://github.com/DHTMLX/vue-richtext-demo).
