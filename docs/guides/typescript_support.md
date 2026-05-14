@@ -6,7 +6,7 @@ description: You can learn about using typescript with the DHTMLX JavaScript Ric
 
 # TypeScript support
 
-Since v2.0, DHTMLX RichText ships with built-in TypeScript definitions. The definitions work out of the box and require no extra setup.
+Since v2.0, DHTMLX RichText ships with built-in TypeScript definitions that require no extra setup.
 
 :::note
 Try out the editor in the <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a>.
@@ -22,7 +22,7 @@ TypeScript with DHTMLX RichText gives you:
 
 ## Initialize RichText in TypeScript
 
-The example below initializes RichText in a TypeScript file. With the bundled type definitions, the compiler offers autocompletion for the constructor arguments and configuration options:
+The example below initializes RichText in TypeScript with autocompletion from the bundled type definitions:
 
 ~~~ts
 import { Richtext } from "@dhx/richtext";
@@ -35,4 +35,4 @@ const editor = new Richtext("#root", {
 
 ## Reference API types
 
-The configuration object follows the type annotations documented on each property page in the [Properties overview](api/overview/properties_overview.md). Method signatures appear on the corresponding pages in the [Methods overview](api/overview/methods_overview.md).
+For TypeScript signatures of every configuration property, see the [Properties overview](api/overview/properties_overview.md). For method signatures, see the [Methods overview](api/overview/methods_overview.md).
