@@ -10,18 +10,18 @@ This guide explains how to add RichText to a page. Follow these steps to get a r
 
 1. [Include the source files on a page](#include-the-source-files).
 2. [Create a container for RichText](#create-a-container).
-3. [Initialize RichText with the object constructor](#initialize-richtext).
+3. [Initialize RichText](#initialize-richtext).
 
 ## Include the source files
 
-Add the RichText JavaScript and CSS files to your project to use the editor on a page. [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack the contents into a folder of your project.
+Add the RichText JavaScript and CSS files to your project. [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack the contents into your project folder.
 
 To create RichText, include two source files on your page:
 
 - *richtext.js*
 - *richtext.css*
 
-Reference the files in your HTML with correct relative paths:
+Reference the files in your HTML. Adjust the relative paths to match your folder layout:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./codebase/richtext.js"></script>  
@@ -43,10 +43,9 @@ Initialize RichText with the `richtext.Richtext` constructor. The constructor ta
 - a container — a CSS selector or a DOM element
 - a configuration object with the editor properties. See the [full list of properties](#configuration-properties) below
 
-The following code snippet creates a RichText instance inside a container with the ID `"root"`:
+The example below initializes RichText in the `#root` container:
 
 ~~~jsx title="index.html"
-// create RichText
 const editor = new richtext.Richtext("#root", {
     // configuration properties  
 });
@@ -54,7 +53,7 @@ const editor = new richtext.Richtext("#root", {
 
 ### Configuration properties
 
-Pass any configuration option as a key of the second constructor argument.
+Add configuration options as keys of the configuration object.
 
 :::note
 For the full list of configuration properties, see the [Properties overview](api/overview/properties_overview.md).
