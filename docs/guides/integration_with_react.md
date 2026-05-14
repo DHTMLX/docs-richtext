@@ -18,7 +18,7 @@ DHTMLX RichText works with React. For a complete code example, see the [GitHub d
 Install [Node.js](https://nodejs.org/en/) and (optionally) [Vite](https://vite.dev/) before creating a new project.
 :::
 
-Create a basic React project (or use React with Vite) and name it *my-react-richtext-app*:
+Create a new *my-react-richtext-app* project with Create React App:
 
 ~~~bash
 npx create-react-app my-react-richtext-app
@@ -45,7 +45,7 @@ For [npm](https://www.npmjs.com/), run:
 
 ~~~bash
 npm install
-npm run dev
+npm start
 ~~~
 
 The app runs on localhost (for example, `http://localhost:3000`).
@@ -84,7 +84,7 @@ This tutorial uses the trial version of RichText.
 
 #### Set the container and initialize RichText
 
-Set a container element for RichText and initialize the component with the `Richtext` constructor inside `useEffect()`. Call the [`destructor()`](api/methods/destructor.md) method in the cleanup function to remove RichText when React unmounts the component:
+Set a container element for RichText and initialize the component with the `Richtext` constructor inside `useEffect()`. Call the [`destructor()`](api/methods/destructor.md) method in the cleanup function to remove RichText:
 
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
@@ -111,7 +111,7 @@ export default function RichTextComponent(props) {
 
 #### Add styles
 
-Provide the required styles for RichText. Add the styles to the main CSS file of the project:
+Add the styles for RichText and its container to the main CSS file of the project:
 
 ~~~css title="index.css"
 /* base page styles */
@@ -250,4 +250,4 @@ Start the app to see RichText render with data on the page.
 ![RichText initialization](../assets/trial_richtext.png)
 </div>
 
-You now have a working RichText integration in React. Customize the code to fit your needs. A full advanced example is available on [GitHub](https://github.com/DHTMLX/react-richtext-demo).
+You now have a working RichText integration in React. Customize the code to fit your needs. A complete example is available on [GitHub](https://github.com/DHTMLX/react-richtext-demo).
