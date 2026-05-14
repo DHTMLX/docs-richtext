@@ -6,9 +6,9 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 # Styling
 
-You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
+Customize the appearance of DHTMLX RichText by overriding CSS variables on the editor's container and sub-elements.
 
-This guide shows how to apply a **dark theme** and use the CSS class names to style the editor's menubar, toolbar, popup, and content area.
+This guide shows how to apply a **dark theme** and target the menubar, toolbar, popup, and content area with CSS class selectors.
 
 ## Default structure and class names
 
@@ -65,14 +65,14 @@ These styles apply a dark background, adjust button and icon colors, and improve
 | ---------------------------- | ------------------------------------ |
 | `--wx-background`            | Background color of editor and popup |
 | `--wx-background-alt`        | Alternate background for menubar     |
-| `--wx-color-primary`         | Accent color for links, blockquotes, and borders of resizing pictures |
+| `--wx-color-primary`         | Accent color for links, blockquotes, and image resize handles |
 | `--wx-color-font`            | Main font color (for editor, menubar, and toolbar)|
 | `--wx-color-font-alt`        | Alternate font color                 |
 | `--wx-color-font-disabled`   | Disabled text color (for menubar and toolbar elements)|
 | `--wx-border`                | Border style used across the editor  |
 | `--wx-color-secondary-hover` | Hover state background for buttons within menubar and toolbar  |
 | `--wx-button-active`         | Active state background for buttons within menubar and toolbar |
-| `--wx-icon-color`            | Color for toolbar arrow icons used for dropdown          |
+| `--wx-icon-color`            | Color of the toolbar dropdown arrow icons                |
 | `--wx-popup-border`          | Border for popup elements            |
 
 ## Best practices
@@ -81,7 +81,7 @@ These styles apply a dark background, adjust button and icon colors, and improve
 * Avoid changing layout-related properties (like `display`, `position`) without a strong reason
 
 :::tip
-For per-tag typography (font family, size, foreground and background per `h1`/`p`/`blockquote`/etc.), use the [`defaultStyles`](api/config/default-styles.md) configuration property together with matching CSS rules. See the [Configuration guide](guides/configuration.md#default-styles) for the full pattern.
+For per-tag typography (font family, font size, color, background on `h1`, `p`, `blockquote`, and other block tags), use the [`defaultStyles`](api/config/default-styles.md) configuration property with matching CSS rules. See the [Configuration guide](guides/configuration.md#configure-default-styles) for the full pattern.
 :::
 
 ## Live demo
