@@ -7,7 +7,7 @@ description: You can learn about the integration with Svelte in the documentatio
 # Integration with Svelte
 
 :::tip
-Make sure you are familiar with basic [Svelte](https://svelte.dev/) concepts and patterns. For a refresher, see the [Svelte documentation](https://svelte.dev/).
+Make sure you are familiar with basic [Svelte](https://svelte.dev/) concepts and patterns. For a refresher, see the [Svelte documentation](https://svelte.dev/docs).
 :::
 
 DHTMLX RichText works with Svelte. For a complete code example, see the [GitHub demo](https://github.com/DHTMLX/svelte-richtext-demo).
@@ -18,12 +18,9 @@ DHTMLX RichText works with Svelte. For a complete code example, see the [GitHub 
 Install [Node.js](https://nodejs.org/en/) and (optionally) [Vite](https://vite.dev/) before creating a new project.
 :::
 
-Create a Svelte project with one of the supported scaffolders:
+This tutorial uses a Vite-based Svelte project. For SvelteKit and other options, see the [Svelte project guide](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
 
-- [SvelteKit](https://kit.svelte.dev/) — full framework setup
-- [Vite](https://vite.dev/) — minimal Svelte + Vite
-
-For details on both options, see the [Svelte project guide](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit). To start a Vite-based project, run:
+Start a new Vite project:
 
 ~~~bash
 npm create vite@latest
@@ -31,7 +28,7 @@ npm create vite@latest
 
 ### Install dependencies
 
-Name the project *my-svelte-richtext-app* and switch to the app directory:
+When the scaffolder prompts for a project name, use *my-svelte-richtext-app*. Then switch to the new directory:
 
 ~~~bash
 cd my-svelte-richtext-app
@@ -93,7 +90,7 @@ This tutorial uses the trial version of RichText.
 
 #### Set the container and initialize RichText
 
-Set a container element for RichText and initialize the component inside `onMount()`. Call the [`destructor()`](api/methods/destructor.md) method inside `onDestroy()` to remove RichText when Svelte unmounts the component:
+Set a container element for RichText and initialize the component inside `onMount()`. Call the [`destructor()`](api/methods/destructor.md) method inside `onDestroy()` to remove RichText:
 
 ~~~html {} title="Richtext.svelte"
 <script>
@@ -121,7 +118,7 @@ onDestroy(() => {
 
 #### Add styles
 
-Provide the required styles for RichText. Add the styles to the main CSS file of the project (for example, *src/app.css*):
+Add the styles for RichText and its container to the main CSS file of the project (for example, *src/app.css*):
 
 ~~~css title="app.css"
 /* base page styles */
@@ -267,4 +264,4 @@ Start the app to see RichText render with data on the page.
 ![RichText initialization](../assets/trial_richtext.png)
 </div>
 
-You now have a working RichText integration in Svelte. Customize the code to fit your needs. A full advanced example is available on [GitHub](https://github.com/DHTMLX/svelte-richtext-demo).
+You now have a working RichText integration in Svelte. Customize the code to fit your needs. A complete example is available on [GitHub](https://github.com/DHTMLX/svelte-richtext-demo).
