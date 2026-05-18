@@ -6,16 +6,33 @@ description: You can learn about using typescript with the DHTMLX JavaScript Ric
 
 # TypeScript support
 
-Starting from v2.0, the library of DHTMLX RichText provides an ability to use TypeScript definitions. The built-in support of TypeScript works out of the box.
+Since v2.0, DHTMLX RichText ships with built-in TypeScript definitions that require no extra setup.
 
 :::note
-You can try out the functionality right in our <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext"  target="_blank">Snippet Tool</a>.
+Try out the editor in the <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a>.
 :::
 
-## Advantages of using TypeScript
+## Advantages of TypeScript
 
-Why do you need to use DHTMLX RichText with TypeScript?
+TypeScript with DHTMLX RichText gives you:
 
-The main benefit of TypeScript is that it allows you to significantly increase the efficiency of the development process.
+- type safety — the compiler catches misuse of configuration properties and method arguments at build time
+- autocompletion — your IDE suggests valid property names, method signatures, and value types as you type
+- self-documenting API — type annotations on the configuration object and methods double as inline documentation
 
-The way of building an application becomes more robust as checking the types together with autocompletion allow you to avoid potential mistakes. Besides, TypeScript provides you with information about types of data you should use while working with the API of the DHTMLX RichText library.
+## Initialize RichText in TypeScript
+
+The example below initializes RichText in TypeScript with autocompletion from the bundled type definitions:
+
+~~~ts
+import { Richtext } from "@dhx/richtext";
+
+const editor = new Richtext("#root", {
+    menubar: true,
+    layoutMode: "document"
+});
+~~~
+
+## Reference API types
+
+For TypeScript signatures of every configuration property, see the [Properties overview](api/overview/properties_overview.md). For method signatures, see the [Methods overview](api/overview/methods_overview.md).

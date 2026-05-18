@@ -6,45 +6,46 @@ description: You can learn about the initialization in the documentation of the 
 
 # Initialization
 
-This guide will give you detailed instructions on how to create RichText on a page to enrich your application with features of the RichText editor. Take the following steps to get a ready-to-use component:
+This guide explains how to add RichText to a page. Follow these steps to get a ready-to-use editor:
 
-1. [Include the RichText source files on a page](#including-source-files).
-2. [Create a container for RichText](#creating-container).
-3. [Initialize RichText with the object constructor](#initializing-richtext).
+1. [Include the source files on a page](#include-the-source-files).
+2. [Create a container for RichText](#create-a-container).
+3. [Initialize RichText](#initialize-richtext).
 
-## Including source files
+## Include the source files
 
-[Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack it into a folder of your project.
+Add the RichText JavaScript and CSS files to your project. [Download the package](https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml) and unpack the contents into your project folder.
 
-To create RichText, you need to include 2 source files on your page:
+To create RichText, include two source files on your page:
 
 - *richtext.js*
 - *richtext.css*
 
-Make sure that you set correct relative paths to the source files:
+Reference the files in your HTML. Adjust the relative paths to match your folder layout:
 
 ~~~html title="index.html"
 <script type="text/javascript" src="./codebase/richtext.js"></script>  
 <link rel="stylesheet" href="./codebase/richtext.css">
 ~~~
 
-## Creating container
+## Create a container
 
-Add a container for RichText and give it an ID, for example *"root"*:
+Add a container for RichText with an ID such as *"root"*:
 
 ~~~jsx title="index.html"
 <div id="root"></div>
 ~~~
 
-## Initializing RichText
+## Initialize RichText
 
 Initialize RichText with the `richtext.Richtext` constructor. The constructor takes two parameters:
 
-- an HTML container (the ID of the HTML container)
-- an object with configuration properties. [See the full list here](#configuration-properties)
+- a container — a CSS selector or a DOM element
+- a configuration object with the editor properties. See the [full list of properties](#configuration-properties) below
+
+The example below initializes RichText in the `#root` container:
 
 ~~~jsx title="index.html"
-// create RichText
 const editor = new richtext.Richtext("#root", {
     // configuration properties  
 });
@@ -52,12 +53,26 @@ const editor = new richtext.Richtext("#root", {
 
 ### Configuration properties
 
+Add configuration options as keys of the configuration object.
+
 :::note
-The full list of properties to configure **RichText** can be found [**here**](api/overview/properties_overview.md).
+For the full list of configuration properties, see the [Properties overview](api/overview/properties_overview.md).
 :::
+
+## Destroy the RichText instance
+
+Call the [`destructor()`](api/methods/destructor.md) method to remove the RichText HTML and detach all related events:
+
+~~~jsx
+const editor = new richtext.Richtext("#root", {
+    // configuration properties
+});
+
+editor.destructor();
+~~~
 
 ## Example
 
-In this snippet you can see how to initialize **RichText** with the initial data:
+The example below initializes RichText with the menubar enabled:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
