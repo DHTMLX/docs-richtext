@@ -6,27 +6,27 @@ description: You can learn about the styling in the documentation of the DHTMLX 
 
 # Styling
 
-You can fully customize the appearance of DHTMLX RichText by overriding CSS variables and applying custom styles to specific parts of the widget.
+Customize the appearance of DHTMLX RichText by overriding CSS variables on the editor's container and sub-elements.
 
-This guide shows how to apply a **dark theme** and use available class names to style the editor’s menubar, toolbar, popup, and content area.
+This guide shows how to apply a **dark theme** and target the menubar, toolbar, popup, and content area with CSS class selectors.
 
 ## Default structure and class names
 
-RichText uses the following core classes to structure its UI:
+RichText uses the following core classes to structure the UI:
 
 | Class name             | Description                                 |
 |------------------------|---------------------------------------------|
 | `.wx-richtext`         | Root container of the RichText widget       |
 | `.wx-richtext-menubar` | Container for menubar                       |
-| `.wx-richtext-menu`    | Container for menubar dropdown  menu        |
+| `.wx-richtext-menu`    | Container for the menubar dropdown menu     |
 | `.wx-richtext-toolbar` | Container for toolbar                       |
 | `.wx-editor-area`      | Container for main editable content area    |
 
-You can use these classes in your custom CSS selectors to override the appearance of the RichText editor.
+Use these classes in custom CSS selectors to override the editor's appearance.
 
-## Overriding default styles
+## Override default styles
 
-You can override RichText's default styles by redefining CSS variables on the `#root` container or on specific sub-elements:
+To override the default styles, redefine CSS variables on the `#root` container or on specific sub-elements:
 
 ```html
 <div id="root" style="width: 100%; height: 100%;"></div>
@@ -56,34 +56,38 @@ You can override RichText's default styles by redefining CSS variables on the `#
 ```
 
 :::note
-These styles will apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
+These styles apply a dark background, adjust button and icon colors, and improve visibility for dark UI themes.
 :::
 
-## List of supported CSS variables
+## Supported CSS variables
 
 | Variable name                | Description                          |
 | ---------------------------- | ------------------------------------ |
 | `--wx-background`            | Background color of editor and popup |
 | `--wx-background-alt`        | Alternate background for menubar     |
-| `--wx-color-primary`         | Accent color for links, blockquotes, and borders of resizing pictures |
+| `--wx-color-primary`         | Accent color for links, blockquotes, and image resize handles |
 | `--wx-color-font`            | Main font color (for editor, menubar, and toolbar)|
 | `--wx-color-font-alt`        | Alternate font color                 |
 | `--wx-color-font-disabled`   | Disabled text color (for menubar and toolbar elements)|
 | `--wx-border`                | Border style used across the editor  |
 | `--wx-color-secondary-hover` | Hover state background for buttons within menubar and toolbar  |
 | `--wx-button-active`         | Active state background for buttons within menubar and toolbar |
-| `--wx-icon-color`            | Color for toolbar arrow icons used for dropdown          |
+| `--wx-icon-color`            | Color of the toolbar dropdown arrow icons                |
 | `--wx-popup-border`          | Border for popup elements            |
 
 ## Best practices
 
 * Use `color-scheme: dark` to improve native input styling in dark mode
-* Avoid changing layout-related properties (like `display`, `position`) unless necessary
+* Avoid changing layout-related properties (like `display`, `position`) without a strong reason
+
+:::tip
+For per-tag typography (font family, font size, color, background on `h1`, `p`, `blockquote`, and other block tags), use the [`defaultStyles`](api/config/default-styles.md) configuration property with matching CSS rules. See the [Configuration guide](guides/configuration.md#configure-default-styles) for the full pattern.
+:::
 
 ## Live demo
 
-In this snippet you can see how to apply a custom style to RichText:
+The example below applies a custom style to RichText:
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Related articles:** [Customization](guides/configuration.md)
+**Related articles:** [Configuration](guides/configuration.md)
