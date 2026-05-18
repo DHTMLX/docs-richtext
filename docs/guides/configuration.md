@@ -77,7 +77,7 @@ You can include the following buttons and controls in the RichText toolbar:
 | `clear`             | Removes all formatting from the selected text                               |
 | `print`             | Opens the print dialog                                                      |
 | `fullscreen`        | Toggles fullscreen mode                                                     |
-| `mode`              | Switches between two layout modes: classic and document                     |
+| `mode`              | Switches between two layout modes: `classic` and `document`                     |
 | `shortcuts`         | Displays a list of available keyboard shortcuts                             |
 | `separator`         | Adds a visual separator between controls                                    |
 
