@@ -256,7 +256,7 @@ Use the [`defaultStyles`](api/config/default-styles.md) property to set default 
 The [`defaultStyles`](api/config/default-styles.md) property has the following type signature:
 
 ~~~jsx {}
-defaultStyles?: {
+defaultStyles?: boolean | {
     "*"?: { // applies to all blocks; sets common properties for every block
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
