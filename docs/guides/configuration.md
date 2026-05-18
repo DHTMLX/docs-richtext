@@ -27,7 +27,7 @@ RichText supports two layout modes for the editing area:
 ![Classic mode](./../assets/richtext/classic_mode.png)
 </div>
 
-- **"document"** — the edit area mimics real document sizes (A4, A5, A6, A7)
+- **"document"** — the edit area mimics a document page
 
 <div className="img_border">
 ![Document mode](./../assets/richtext/document_mode.png)

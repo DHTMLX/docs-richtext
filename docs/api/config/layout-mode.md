@@ -16,7 +16,7 @@ description: You can learn about the layoutMode config in the documentation of t
 layoutMode: "classic" | "document";
 ~~~
 
-The `"classic"` mode represents the edit area that fits the entire page. The `"document"` mode closely represent the real document sizes (sizes used: A4, A5, A6, A7).
+The `"classic"` mode fills the entire edit area. The `"document"` mode displays the edit area as a document page.
 
 ### Default config
 
