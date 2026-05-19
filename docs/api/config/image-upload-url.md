@@ -28,6 +28,6 @@ new richtext.Richtext("#root", {
 
 **Change log:** The property was added in v2.0
 
-**Related articles:** [Configuration](guides/configuration.md)
+**Related articles:** [Configuration](guides/configuration.md), [Working with the server](guides/working_with_server.md)
 
 **Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

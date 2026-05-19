@@ -249,6 +249,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+See [Working with the server](guides/working_with_server.md) for the request/response contract the upload endpoint must implement and notes on what happens when no URL is configured.
+
 ## Configure default styles
 
 Use the [`defaultStyles`](api/config/default-styles.md) property to set default styles per block type.
