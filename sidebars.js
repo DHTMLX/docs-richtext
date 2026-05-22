@@ -49,6 +49,7 @@ module.exports = {
                         "api/methods/destructor",
                         "api/methods/get-value",
                         "api/methods/set-value",
+                        "api/methods/insert-value",
                         "api/methods/set-config",
                         "api/methods/set-locale"
                     ]
