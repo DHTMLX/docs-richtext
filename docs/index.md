@@ -85,6 +85,25 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 ![Text format](./assets/richtext/text_format.png)
 </div>
 
+## Copy and paste
+
+The RichText editor supports clipboard operations through standard system shortcuts (`Ctrl+C` / `Ctrl+X` / `Ctrl+V` on Windows/Linux, `⌘C` / `⌘X` / `⌘V` on macOS), the corresponding [toolbar](api/config/toolbar.md) buttons, and the [menubar](api/config/menubar.md) entries.
+
+When content is copied or cut, RichText writes two representations to the system clipboard:
+
+- a **plain text** version for compatibility with simple targets (terminals, code editors, plain inputs)
+- an **HTML** version that carries all inline and block formatting (bold, italic, underline, strikethrough, font family, font size, text and background color, headings, blockquotes, lists, alignment, indentation, line height, links, and images)
+
+On paste, the editor reads the HTML version when it is available and falls back to plain text otherwise. This means that:
+
+- Copying between two RichText instances (in the same document or on different pages) preserves the original formatting.
+- Pasting from external sources that publish HTML to the clipboard (most browsers, word processors, and editors) also preserves the recognized formatting. Styles that have no direct counterpart in RichText are dropped during normalization.
+- Pasting from a plain-text source produces a plain paragraph, as expected.
+
+:::note
+The toolbar **Paste** button uses the asynchronous Clipboard API, which exposes plain text only. To paste formatted content, use the `Ctrl+V` / `⌘V` shortcut, which receives the full HTML payload directly from the browser's clipboard event.
+:::
+
 ## Keyboard shortcuts
 
 The RichText editor supports a set of common keyboard shortcuts for faster formatting and editing. The shortcuts follow platform conventions and are available on both **Windows/Linux** (`Ctrl`) and **macOS** (`⌘`).
