@@ -240,7 +240,7 @@ new richtext.Richtext("#root", {
 
 ## Configure the image upload URL
 
-Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint for toolbar image uploads:
+Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint for image uploads triggered from the toolbar, menubar, clipboard paste, or drag-and-drop:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
