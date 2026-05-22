@@ -271,6 +271,14 @@ const config = {
     themeConfig:
 	/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 	({
+        image: 'img/og-default-richtext.png',
+        metadata: [
+            { property: 'og:type', content: 'website' },
+            { property: 'og:site_name', content: 'DHTMLX RichText Docs' },
+            { property: 'og:locale', content: 'en_US' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: '@dhtmlx' }
+        ],
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
