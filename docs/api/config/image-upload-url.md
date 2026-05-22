@@ -8,7 +8,7 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 ### Description
 
-@short: Optional. Specifies the URL which will be used for image upload
+@short: Optional. Specifies the URL which will be used for image upload (from the toolbar, menubar, clipboard paste, or drag-and-drop)
 
 ### Usage
 
