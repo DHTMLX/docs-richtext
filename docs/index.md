@@ -103,6 +103,8 @@ const md = editor.getValue(richtext.markdown.toMarkdown);
 
 :::note
 Markdown support covers a limited subset of the syntax — common block and inline elements such as headings, paragraphs, line breaks, emphasis, blockquotes, lists, and links. Formatting that has no Markdown equivalent (font family, font size, colors, alignment, line height) is dropped on serialization.
+
+Nested inline structures are not supported, with the only exception of **bold inside italic**. Combinations such as bold inside a link, italic inside a list item, or multi-level (nested) lists will not render correctly.
 :::
 
 ## Keyboard shortcuts
