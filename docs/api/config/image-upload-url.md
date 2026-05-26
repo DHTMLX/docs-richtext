@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Change log:** The property was added in v2.0. Starting with v2.1, the property is fully optional: when omitted, images are inserted inline as base64 data URLs.
+**Change log:** The property was added in v2.0. Starting with v2.1, the property is optional: when omitted, images are inserted inline as base64 data URLs.
 
 **Related articles:** [Configuration](guides/configuration.md)
 
