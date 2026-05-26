@@ -8,7 +8,7 @@ description: You can learn about the insertValue method in the documentation of 
 
 ### Description
 
-@short: Inserts a value at the current cursor position or replaces the selected text
+@short: Inserts text, Markdown, or HTML content at the current cursor position or replaces the selected text
 
 ### Usage
 
@@ -19,7 +19,7 @@ insertValue: (value: string, encoder?: any): void;
 ### Parameters
 
 - `value` - (required) a value to be inserted into the RichText at the current cursor position. If a selection is active, the selection is replaced with the new value
-- `encoder` - (optional) a parser used to decode the inserted value from a custom format. The following formats are available: `html` (default), `text`, and `markdown`
+- `encoder` - (optional) a parser used to decode the inserted value. The following formats are available: `html` (default), `text`, and `markdown`
 
 You can get the required encoder in the following way:
 
