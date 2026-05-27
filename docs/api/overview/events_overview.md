@@ -18,12 +18,14 @@ You can use these events to extend functionality, track user interaction, or tri
 | [](api/events/cut.md)                                   | @getshort(api/events/cut.md)                   |
 | [](api/events/delete-link.md)                           | @getshort(api/events/delete-link.md)           |
 | [](api/events/export.md)                                | @getshort(api/events/export.md)                |
+| [](api/events/hide-suggest.md)                          | @getshort(api/events/hide-suggest.md)          |
 | [](api/events/import.md)                                | @getshort(api/events/import.md)                |
 | [](api/events/indent.md)                                | @getshort(api/events/indent.md)                |
 | [](api/events/insert-image.md)                          | @getshort(api/events/insert-image.md)          |
 | [](api/events/insert-line.md)                           | @getshort(api/events/insert-line.md)           |
 | [](api/events/insert-link.md)                           | @getshort(api/events/insert-link.md)           |
 | [](api/events/insert-list.md)                           | @getshort(api/events/insert-list.md)           |
+| [](api/events/insert-token.md)                          | @getshort(api/events/insert-token.md)          |
 | [](api/events/outdent.md)                               | @getshort(api/events/outdent.md)               |
 | [](api/events/paste.md)                                 | @getshort(api/events/paste.md)                 |
 | [](api/events/print.md)                                 | @getshort(api/events/print.md)                 |
@@ -36,6 +38,7 @@ You can use these events to extend functionality, track user interaction, or tri
 | [](api/events/set-text-format.md)                       | @getshort(api/events/set-text-format.md)       |
 | [](api/events/set-text-style.md)                        | @getshort(api/events/set-text-style.md)        |
 | [](api/events/show-popup.md)                            | @getshort(api/events/show-popup.md)            |
+| [](api/events/show-suggest.md)                          | @getshort(api/events/show-suggest.md)          |
 | [](api/events/subscript.md)                             | @getshort(api/events/subscript.md)             |
 | [](api/events/superscript.md)                           | @getshort(api/events/superscript.md)           |
 | [](api/events/toggle-fullscreen-mode.md)                | @getshort(api/events/toggle-fullscreen-mode.md)|

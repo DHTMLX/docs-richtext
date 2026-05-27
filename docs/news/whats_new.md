@@ -83,7 +83,7 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 - **Granular toolbar configuration**  
   Take full control of the toolbar:  
   - Define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
-  - Add [custom controls](guides/configuration.md/#custom-toolbar-controls)
+  - Add [custom controls](guides/configuration.md/#add-custom-toolbar-controls)
 
 - **Optional [menubar](api/config/menubar.md)**  
   Enable a classic menu-style interface on the top of the editor

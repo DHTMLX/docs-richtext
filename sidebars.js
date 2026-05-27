@@ -117,12 +117,14 @@ module.exports = {
                         "api/events/cut",
                         "api/events/delete-link",
                         "api/events/export",
+                        "api/events/hide-suggest",
                         "api/events/import",
                         "api/events/indent",
                         "api/events/insert-image",
                         "api/events/insert-line",
                         "api/events/insert-link",
                         "api/events/insert-list",
+                        "api/events/insert-token",
                         "api/events/outdent",
                         "api/events/paste",
                         "api/events/print",
@@ -135,6 +137,7 @@ module.exports = {
                         "api/events/set-text-format",
                         "api/events/set-text-style",
                         "api/events/show-popup",
+                        "api/events/show-suggest",
                         "api/events/subscript",
                         "api/events/superscript",
                         "api/events/toggle-fullscreen-mode",
@@ -162,7 +165,9 @@ module.exports = {
                         "api/config/locale",
                         "api/config/menubar",
                         "api/config/toolbar",
-                        "api/config/value"  
+                        "api/config/trigger-template",
+                        "api/config/triggers",
+                        "api/config/value"
                     ]
                 }
             ]
@@ -198,6 +203,7 @@ module.exports = {
             items: [
                 "guides/initialization",
                 "guides/configuration",
+                "guides/mentions_and_tags",
                 "guides/localization",
                 "guides/stylization",
                 "guides/typescript_support"
