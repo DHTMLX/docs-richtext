@@ -40,8 +40,8 @@ You can specify the following buttons in the RichText toolbar:
 | `outdent`           | Decreases paragraph indentation.                                            |
 | `line-height`       | Adjusts the line spacing (line height).                                     |
 | `quote`             | Formats the text as a blockquote.                                           |
-| `bulleted-list`     | Creates a bulleted list.                                                    |
-| `numbered-list`     | Creates a numbered list.                                                    |
+| `bulleted-list`     | Toggles a bulleted list for the selected blocks (wrap/unwrap/convert).      |
+| `numbered-list`     | Toggles a numbered list for the selected blocks (wrap/unwrap/convert).      |
 | `link`              | Inserts a hyperlink.                                                        |
 | `image`             | Inserts an image.                                                           |
 | `line`              | Inserts a horizontal line.                                                  |
