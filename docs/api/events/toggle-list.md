@@ -8,7 +8,7 @@ description: You can learn about the toggle-list event in the documentation of t
 
 ### Description
 
-@short: Fires when toggling a list on the selected blocks
+@short: Fires when the user toggles a list on the selected blocks
 
 The `toggle-list` event powers the context-aware bulleted/numbered list buttons. Instead of inserting a new list, the event inspects the current selection and picks one of four behaviors automatically:
 
@@ -16,7 +16,7 @@ The `toggle-list` event powers the context-aware bulleted/numbered list buttons.
 | ----------- | --------------------------------------------------------------- | ------------------------------------------------------------------- |
 | **Wrap**    | The selection covers only paragraphs                            | Each paragraph becomes a list item inside one new list container    |
 | **Unwrap**  | Every covered item is in a list of the clicked type             | The items revert to paragraphs; the list container is removed       |
-| **Convert** | Every covered item is in a list, but a parent list is the other type | The list flips its type (bulleted ↔ numbered) in place         |
+| **Convert** | Every covered item is in a list, but at least one of the lists is of the other type | The list flips its type (bulleted ↔ numbered) in place         |
 | **Mixed**   | The selection mixes paragraphs and list items                   | Paragraphs become items and everything joins one list of the type   |
 
 ### Usage
