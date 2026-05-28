@@ -10,22 +10,22 @@ RichText runs entirely in the browser and does not need a backend for editing or
 
 This guide explains:
 
-- what happens by default when no upload server is configured,
-- the exact HTTP contract the server has to implement,
-- how the URL returned by the server is used afterwards,
-- how to try the feature against the demo backend.
+- what happens by default when no upload server is configured
+- the exact HTTP contract the server has to implement
+- how RichText uses the URL returned by the server
+- how to try the feature against the demo backend
 
 ## Default behavior: inline images
 
-If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, the file is read in the browser, downscaled to fit a 1024×800 box, encoded as a `data:image/...;base64,...` URL, and written directly into the editor content as the `src` of the `<img>` element.
+If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, downscales it to fit a 1024×800 box, encodes it as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element.
 
 This works without any backend and is handy for quick demos, but it has clear limitations:
 
-- the encoded image bytes live inside the document, so the saved HTML grows with every image;
-- the same image used in two documents is stored twice;
-- the image bytes live inside the document HTML rather than as a separate resource, so they can't be served from a CDN, deduplicated across documents, or post-processed (resized, re-encoded, scanned) on the server.
+- the encoded image bytes live inside the document, so the saved HTML grows with every image
+- the same image used in two documents is stored twice
+- the image bytes live inside the document HTML rather than as a separate resource, so they can't be served from a CDN, deduplicated across documents, or post-processed (resized, re-encoded, scanned) on the server
 
-## Writing your own server
+## Write your own server
 
 In production apps, point RichText at a server with [`imageUploadUrl`](api/config/image-upload-url.md):
 
@@ -42,13 +42,11 @@ A minimal upload endpoint needs to:
 2. Validate the file (allowed types, maximum size).
 3. Store the file somewhere the user's browser can fetch (a local disk served over HTTP, S3, a CDN, etc).
 4. Optionally resize or otherwise process the image.
-5. Respond with a JSON object containing `status: "server"`, `value` set to the public URL of the stored file, and the image's `width` and `height` in pixels.
-
-Anything beyond that is up to you and invisible to RichText.
+5. Respond with a JSON object that contains `status: "server"`, `value` set to the public URL of the stored file, and the image's `width` and `height` in pixels.
 
 ### What the client sends
 
-When [`imageUploadUrl`](api/config/image-upload-url.md) is set, RichText posts the selected file directly to that URL, it does not append `/images` or any other path, so the URL you pass is the full POST target.
+When [`imageUploadUrl`](api/config/image-upload-url.md) is set, RichText posts the selected file directly to that URL (it does not append `/images` or any other path), so the URL you pass is the full POST target.
 
 The request uses standard HTML form upload:
 
@@ -67,7 +65,9 @@ The server must reply with a JSON object. RichText reads the following fields:
 | `width`  | integer | Width used to size the inserted image, in pixels.                       |
 | `height` | integer | Height used to size the inserted image, in pixels.                      |
 
-A successful response:
+#### Successful response
+
+A successful upload returns the stored image URL and its dimensions:
 
 ~~~json
 {
@@ -78,7 +78,9 @@ A successful response:
 }
 ~~~
 
-A failed upload:
+#### Failed upload
+
+A failed upload returns any status other than `"server"`:
 
 ~~~json
 {
@@ -86,22 +88,22 @@ A failed upload:
 }
 ~~~
 
-### Serving the uploaded image
+### Serve the uploaded image
 
-The `value` URL is the only thing that connects the upload step to everything that happens later. RichText puts it straight into the document, so any client that later opens the saved content - the editor itself, an export, a published page - will fetch the image from that URL with a plain `GET`.
+The `value` URL is the only thing that connects the upload step to everything that happens later. RichText puts the URL straight into the document, so any client that later opens the saved content (the editor itself, an export, a published page) fetches the image from that URL with a plain `GET`.
 
 That means:
 
-- the URL must be reachable from the user's browser, which usually means it has to be **absolute**;
-- the host can be different from the upload endpoint - for example, you can accept uploads on your own server and return a CDN or object-storage URL;
-- if the image host is on a different origin, make sure it allows the page to load the image (CORS or simply public read access);
-- the server must keep that URL working for as long as documents reference it; RichText does not cache or copy the bytes.
+- the URL must be reachable from the user's browser, which usually means it has to be **absolute**
+- the host can be different from the upload endpoint (for example, you can accept uploads on your own server and return a CDN or object-storage URL)
+- if the image host is on a different origin, make sure it allows the page to load the image (CORS or simply public read access)
+- the server must keep that URL working for as long as documents reference it; RichText does not cache or copy the bytes
 
-The URL layout itself is **not** part of the contract. As long as the browser can `GET` the URL and receive image bytes, the path, the query string, or even the scheme are entirely up to the backend.
+The URL layout itself is **not** part of the contract. As long as the browser can `GET` the URL and receive image bytes, the path, the query string, and even the scheme are entirely up to the backend.
 
 ### Try it against the demo server
 
-A working backend that implements this contract is available for trying out the feature:
+A working backend that implements this contract is available to test the feature:
 
 ~~~jsx
 new richtext.Richtext("#root", {
