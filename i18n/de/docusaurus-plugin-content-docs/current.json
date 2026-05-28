@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "Neuerungen und Migration",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "Neuerungen und Migration",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RichText methods": {
+    "message": "RichText-Methoden",
+    "description": "The label for category 'RichText methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RichText internal API": {
+    "message": "Interne RichText-API",
+    "description": "The label for category 'RichText internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RichText internal API.link.generated-index.title": {
+    "message": "Übersicht der internen API",
+    "description": "The generated-index page title for category 'RichText internal API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Event Bus methods": {
+    "message": "Event-Bus-Methoden",
+    "description": "The label for category 'Event Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.State methods": {
+    "message": "State-Methoden",
+    "description": "The label for category 'State methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RichText events": {
+    "message": "RichText-Ereignisse",
+    "description": "The label for category 'RichText events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.RichText properties": {
+    "message": "RichText-Eigenschaften",
+    "description": "The label for category 'RichText properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration with frameworks": {
+    "message": "Integration mit Frameworks",
+    "description": "The label for category 'Integration with frameworks' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration with frameworks.link.generated-index.title": {
+    "message": "Integration mit Frameworks",
+    "description": "The generated-index page title for category 'Integration with frameworks' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Anleitungen",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides.link.generated-index.title": {
+    "message": "Anleitungen",
+    "description": "The generated-index page title for category 'Guides' in sidebar 'docs'"
+  }
+}
