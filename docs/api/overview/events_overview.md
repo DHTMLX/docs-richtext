@@ -40,6 +40,7 @@ You can use these events to extend functionality, track user interaction, or tri
 | [](api/events/superscript.md)                           | @getshort(api/events/superscript.md)           |
 | [](api/events/toggle-fullscreen-mode.md)                | @getshort(api/events/toggle-fullscreen-mode.md)|
 | [](api/events/toggle-layout-mode.md)                    | @getshort(api/events/toggle-layout-mode.md)    |
+| [](api/events/toggle-list.md)                           | @getshort(api/events/toggle-list.md)           |
 | [](api/events/toggle-shortcut-info.md)                  | @getshort(api/events/toggle-shortcut-info.md)  |
 | [](api/events/undo.md)                                  | @getshort(api/events/undo.md)                  |
 | [](api/events/update-link.md)                           | @getshort(api/events/update-link.md)           |
