@@ -3,8 +3,33 @@ sidebar_label: What's new
 title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
+## Version 2.0.6
 
-## Version 2.0.5 
+Released on May 28, 2026
+
+### New functionality
+
+- Context-aware OL/UL toolbar buttons that toggle or convert lists based on the selection
+- Changing list nesting level with the **Indent** and **Outdent** buttons
+- Exiting a list or reducing its nesting by pressing Enter in an empty list item
+- Distinct color for visited links
+
+###  New API
+
+#### New events
+
+- [`toggle-list`](api/events/toggle-list.md) — Fires when toggling a list on the selected blocks
+
+### Fixes
+
+- Incorrect horizontal alignment of list markers
+- Inconsistent padding between numbered and bulleted lists
+- Clear formatting does not clear block-level properties
+- Incorrect styling of headings and blockquotes inside list items
+- Stray input element visible inside horizontal lines
+- Editor freezes when inserting a horizontal line in the middle or at the end of a list
+
+## Version 2.0.5
 
 Released on March 6, 2026
 
