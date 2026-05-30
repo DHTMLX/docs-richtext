@@ -18,7 +18,7 @@ Released on May 28, 2026
 
 #### New events
 
-- [`toggle-list`](api/events/toggle-list.md) — Fires when toggling a list on the selected blocks
+- [`toggle-list`](api/events/toggle-list.md) — Fires when a user toggles a list on the selected blocks
 
 ### Fixes
 

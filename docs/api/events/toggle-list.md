@@ -8,7 +8,7 @@ description: You can learn about the toggle-list event in the documentation of t
 
 ### Description
 
-@short: Fires when the user toggles a list on the selected blocks
+@short: Fires when a user toggles a list on the selected blocks
 
 The `toggle-list` event powers the context-aware bulleted/numbered list buttons. Instead of inserting a new list, the event inspects the current selection and picks one of four behaviors automatically:
 
