@@ -194,6 +194,17 @@ const config = {
     tagline: 'DHTMLX RichText Documentation',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/richtext/',
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'ru', 'de', 'zh', 'ko'],
+        localeConfigs: {
+            en: { label: 'English', htmlLang: 'en-US' },
+            ru: { label: 'Русский', htmlLang: 'ru' },
+            de: { label: 'Deutsch', htmlLang: 'de' },
+            zh: { label: '简体中文', htmlLang: 'zh-Hans' },
+            ko: { label: '한국어', htmlLang: 'ko' },
+        }
+    },
     onBrokenLinks: 'warn',
     // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
@@ -313,6 +324,10 @@ const config = {
                 {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
+                    position: 'right'
+                },
+                {
+                    type: 'localeDropdown',
                     position: 'right'
                 }
             ]
