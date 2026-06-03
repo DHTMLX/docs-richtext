@@ -28,22 +28,27 @@ The callback function takes an object with the following parameters:
 - `trigger` - the trigger character that opened the dropdown (`"@"`, `"#"`, etc.)
 
 :::tip
-The dropdown anchor has a fixed default width of `160px`. To make room for a wider template, override the width from a parent stylesheet (`!important` is needed because the widget sets the default via its own scoped CSS):
+The dropdown default width is `160px`. If you need more space for your template, add the `.wx-editor` parent in front of the selector:
 
 ~~~css {}
-.wx-suggest-anchor {
-    width: 220px !important;
+.wx-editor .wx-suggest-anchor {
+    width: 220px;
 }
 ~~~
 :::
 
 ### Example
 
-~~~jsx {1,4-9}
-const { template } = richtext;
+The following code snippet configures two triggers: `@` for mentions and `#` for tags. Use `triggerTemplate` to expand the `trigger` value to render each dropdown differently. For the `@` dropdown the template returns a custom HTML row with an avatar (`data.image`), a nickname (`data.label`), and a full name (`data.name`). For the `#` trigger the template use the `label`:
 
-new richtext.Richtext("#root", {
-    triggers: [{ trigger: "@", data: people }],
+~~~jsx {5-6,8-15}
+const { template, Richtext } = richtext;
+
+new Richtext("#root", {
+    triggers: [
+        { trigger: "@", data: people },
+        { trigger: "#", data: tags }
+    ],
     triggerTemplate: template(obj => {
         if (obj.trigger === "@") {
             return `<div class="user">
@@ -52,6 +57,7 @@ new richtext.Richtext("#root", {
                 <div class="user-name">${obj.data.name}</div>
             </div>`;
         }
+        // other triggers (for example, "#") use the plain label
         return obj.data.label;
     })
 });

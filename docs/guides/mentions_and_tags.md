@@ -148,10 +148,22 @@ By default, picking an item inserts it into the document as a token. To run your
 
 A `:` trigger can insert an emoji, where each item includes a custom `code` field. Pair `action` with [`triggerTemplate`](api/config/trigger-template.md) so the dropdown shows the emoji instead of just its label:
 
-~~~jsx {8,12}
-const { template } = richtext;
+~~~jsx {18-20,24}
+const { template, Richtext } = richtext;
 
-const editor = new richtext.Richtext("#root", {
+const emoji = [
+    {
+        id: "apple", label: "apple", code: "1F34E"
+    },
+    {
+        id: "blue_car", label: "blue_car", code: "1F699"
+    },
+    {
+        id: "computer", label: "computer", code: "1F4BB"
+    }
+];
+
+const editor = new Richtext("#root", {
     triggers: [
         {
             trigger: ":",
@@ -166,29 +178,55 @@ const editor = new richtext.Richtext("#root", {
 function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
+~~~
 
+### Group emoji by categories
+
+When the `data` parameter is a function, you are not limited to the built-in `label` matching. You can run your own filtering and keep category headers in the dropdown. Add header items that include a `label` field and do not include `code`. The `data` function first finds the emoji that match the query, then returns emoji together with the headers of the categories that still have matches:
+
+~~~jsx {17-26,31-33}
+const { template, Richtext } = richtext;
+
+// header items carry no `code` field; emoji items include one
 const emoji = [
-    {
-        id: "apple",
-        label: "apple",
-        code: "1F34E",
-    },
-    {
-        id: "blue_car",
-        label: "blue_car",
-        code: "1F699",
-    },
-    {
-        id: "computer",
-        label: "computer",
-        code: "1F4BB",
-    },
-    {
-        id: "dvd",
-        label: "dvd",
-        code: "1F4C0",
-    },
+    { id: "$smileys", label: "Smileys",                 category: 1 }, // category
+    { id: "grinning", label: "grinning", code: "1F600", category: 1 },
+    { id: "smile",    label: "smile",    code: "1F604", category: 1 },
+    { id: "$animals", label: "Animals",                 category: 2 }, // category
+    { id: "dog",      label: "dog",      code: "1F436", category: 2 },
+    { id: "cat",      label: "cat",      code: "1F431", category: 2 }
 ];
+
+const editor = new Richtext("#root", {
+    triggers: [
+        {
+            trigger: ":",
+            data: query => {
+                const matched = emoji.filter(item =>
+                    item.code &&
+                    item.label.toLowerCase().startsWith(query.toLowerCase().trim())
+                );
+                const categories = new Set(matched.map(item => item.category));
+                // keep matching emoji plus the headers of categories that still match
+                return emoji.filter(item =>
+                    item.code ? matched.includes(item) : categories.has(item.category)
+                );
+            },
+            action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
+        }
+    ],
+    // render emoji rows normally and category headers in bold
+    triggerTemplate: template(({ data }) =>
+        data.code ? `${emojiFromCode(data.code)} ${data.label}` : `<b>${data.label}</b>`
+    )
+});
+
+function emojiFromCode(code) {
+    return String.fromCodePoint(parseInt(code, 16));
+}
+
+// headers have no `code` — ignore picks on them so they are never inserted
+editor.api.intercept("insert-token", ({ data }) => !!data.code);
 ~~~
 
 ### Add slash-style command menu

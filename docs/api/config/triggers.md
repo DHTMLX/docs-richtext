@@ -81,11 +81,11 @@ new richtext.Richtext("#root", {
 
 ### Suggestion item fields
 
-Each item in the `data` object (or each item returned by a function) has the following fields:
+Each item in `data` (or each item returned by a function) has the following fields:
 
 - `id` - (optional) unique identifier saved on the inserted token. If omitted, RichText generates an ID automatically
-- `label` - (required) the text shown in the dropdown and inserted into the document
-- `url` - (optional) URL associated with the item. RichText stores the inserted token URL as the `href` attribute.
+- `label` - (optional) the text shown in the dropdown and inserted into the document. Required only for the default rendering; with a custom [`triggerTemplate`](api/config/trigger-template.md) you can render items from other fields (for example, `template(({ data }) => data.id)`) and omit `label`
+- `url` - (optional) URL associated with the item. RichText stores the URL as the inserted token's `href` attribute. `Ctrl+Click` on the token opens the link
 
 An item may also include any number of custom fields beyond `id`, `label`, and `url` (for example, `code` for an emoji, or `image` and `name` for an avatar). These extra fields are passed through to the [`triggerTemplate`](api/config/trigger-template.md) callback and to the `action` callback.
 
@@ -96,6 +96,11 @@ When a user selects an item in the dropdown, RichText inserts a non-editable tok
 ~~~html {}
 <a data-token="@" data-token-id="alice" href="mailto:alice@example.com">@Alice</a>
 ~~~
+
+- `@` (in `data-token="@"`) - the item's `trigger`
+- `alice` (in `data-token-id="alice"`) - the item's `id`
+- `mailto:alice@example.com` (in `href="mailto:alice@example.com"`) - the item's `url`
+- `@Alice` - the combination of `trigger` and `label`; with `showTrigger: false` it would be just `Alice`
 
 Use the `data-token` and `data-token-id` attributes to target tokens with CSS, for example, to highlight all mentions of a user:
 
@@ -108,16 +113,16 @@ Use the `data-token` and `data-token-id` attributes to target tokens with CSS, f
 
 ### Custom action
 
-By default, when a user picks an item, RichText inserts it into the document as a token. Set the `action` parameter to run your own code instead: RichText removes the typed trigger string (the trigger character and the query) and calls the `action(item)` callback with the picked item. No token is inserted, so you can decide what to add to the document. The `action` parameter takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
+By default, when a user picks an item, RichText inserts the item into the document as a token. Set the `action` parameter to run your code instead: RichText removes the typed trigger string (the trigger character and the query) and calls the `action(item)` callback with the picked item. No token is inserted, so you can decide what to add to the document (or run your custom code). The `action` parameter takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
 
 #### Add emoji
 
 A common use case is inserting an emoji from a `:` trigger, where each item contains a custom `code` field. Pair `action` with [`triggerTemplate`](api/config/trigger-template.md) so the dropdown shows the emoji itself instead of just its label:
 
 ~~~jsx {8,12}
-const { template } = richtext;
+const { template, Richtext } = richtext;
 
-const editor = new richtext.Richtext("#root", {
+const editor = new Richtext("#root", {
     triggers: [
         {
             trigger: ":",
@@ -132,6 +137,55 @@ const editor = new richtext.Richtext("#root", {
 function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
+~~~
+
+#### Group emoji by categories
+
+When the `data` parameter is a function, you are not limited to the built-in `label` matching. You can run your own filtering and keep category headers in the dropdown. Add header items that include a `label` field and do not include `code`. The `data` function first finds the emoji that match the query, then returns emoji together with the headers of the categories that still have matches:
+
+~~~jsx {18-26,31-33,41}
+const { template, Richtext } = richtext;
+
+// header items carry no `code` field; emoji items include one
+const emoji = [
+    { id: "$smileys", label: "Smileys",                 category: 1 }, // category
+    { id: "grinning", label: "grinning", code: "1F600", category: 1 },
+    { id: "smile",    label: "smile",    code: "1F604", category: 1 },
+    { id: "$animals", label: "Animals",                 category: 2 }, // category
+    { id: "dog",      label: "dog",      code: "1F436", category: 2 },
+    { id: "cat",      label: "cat",      code: "1F431", category: 2 }
+];
+
+const editor = new Richtext("#root", {
+    triggers: [
+        {
+            trigger: ":",
+            data: query => {
+                const matched = emoji.filter(item =>
+                    item.code &&
+                    item.label.toLowerCase().startsWith(query.toLowerCase().trim())
+                );
+                const categories = new Set(matched.map(item => item.category));
+                // keep matching emoji plus the headers of categories that still match
+                return emoji.filter(item =>
+                    item.code ? matched.includes(item) : categories.has(item.category)
+                );
+            },
+            action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
+        }
+    ],
+    // render emoji rows normally and category headers in bold
+    triggerTemplate: template(({ data }) =>
+        data.code ? `${emojiFromCode(data.code)} ${data.label}` : `<b>${data.label}</b>`
+    )
+});
+
+function emojiFromCode(code) {
+    return String.fromCodePoint(parseInt(code, 16));
+}
+
+// headers have no `code` — ignore picks on them so they are never inserted
+editor.api.intercept("insert-token", ({ data }) => !!data.code);
 ~~~
 
 #### Add slash-style command menu
