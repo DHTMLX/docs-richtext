@@ -10,7 +10,7 @@ description: You can learn about the triggers config in the documentation of the
 
 @short: Optional. Defines dropdown triggers for inserting mentions, tags, and other tokens
 
-When the user types a configured character (for example, `@` or `#`), RichText opens a suggestion dropdown. When the user selects an item, RichText inserts it into the document as a non-editable token (`<a data-token="..." data-token-id="...">`).
+When a user types a configured character (for example, `@` or `#`), RichText opens a dropdown with predefined items. When the user selects an item, RichText inserts it into the document as a non-editable token (`<a data-token="..." data-token-id="...">`).
 
 ### Usage
 
@@ -21,7 +21,8 @@ triggers?: Array<{
         | ((query: string) =>
             Array<{ id?: string; label?: string; url?: string }>
             | Promise<Array<{ id?: string; label?: string; url?: string }>>),
-    showTrigger?: boolean
+    showTrigger?: boolean,
+    action?: (item) => void
 }>;
 ~~~
 
@@ -31,11 +32,12 @@ Each entry of the `triggers` array accepts the following fields:
 
 - `trigger` - (required) the character that opens the suggestion dropdown (for example, `"@"`, `"#"`, `"/"`, `"$"`)
 - `data` - (required) the data source for the dropdown; can be an array, a sync function, or an async function. See [Data source forms](#data-source-forms)
-- `showTrigger` - (optional) when `true` (default), RichText keeps the trigger character in the inserted token (`@Alice`); when `false`, RichText inserts only `label` (`Alice`)
+- `showTrigger` - (optional) when `true` (default), RichText keeps the trigger character in the inserted token (for example, `@Alice`); when `false`, RichText inserts only `label` (for example, `Alice`)
+- `action` - (optional) a custom callback called when a user selects an item. When set, RichText removes the typed trigger text (the trigger character plus the query) and calls `action(item)` **instead of** inserting a token. The callback receives the picked item and can insert any content instead of selected one. The `action` parameter takes priority over `showTrigger`, which has no effect when `action` is set. See [Custom action](#custom-action)
 
 ### Data source forms
 
-**Static array** — RichText filters the array automatically by matching the query against `label` (case-insensitive, `startsWith`):
+* **Static array** — RichText filters the array automatically by matching the query against `label` (case-insensitive, `startsWith`):
 
 ~~~jsx {3-7}
 new richtext.Richtext("#root", {
@@ -49,7 +51,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Sync function** — RichText calls your function with the current `query` string; you do the filtering and return the matching array:
+* **Sync function** — RichText calls your function with the current `query` string; you do the filtering and return the matching array:
 
 ~~~jsx {3-6}
 new richtext.Richtext("#root", {
@@ -62,7 +64,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Async function** — RichText calls your function with the current `query` string; return a `Promise` that resolves to the matching array. Useful for server-side search:
+* **Async function** — RichText calls your function with the current `query` string; return a `Promise` that resolves to the matching array. Useful for server-side search:
 
 ~~~jsx {3-8}
 new richtext.Richtext("#root", {
@@ -79,15 +81,17 @@ new richtext.Richtext("#root", {
 
 ### Suggestion item fields
 
-Each item in `data` (or each item returned by a function) has the following fields:
+Each item in the `data` object (or each item returned by a function) has the following fields:
 
-- `id` - (optional) unique identifier saved on the inserted token. If omitted, RichText generates an ID automatically.
+- `id` - (optional) unique identifier saved on the inserted token. If omitted, RichText generates an ID automatically
 - `label` - (required) the text shown in the dropdown and inserted into the document
-- `url` - (optional) URL associated with the item. RichText stores it on the inserted token as the `href` attribute.
+- `url` - (optional) URL associated with the item. RichText stores the inserted token URL as the `href` attribute.
+
+An item may also include any number of custom fields beyond `id`, `label`, and `url` (for example, `code` for an emoji, or `image` and `name` for an avatar). These extra fields are passed through to the [`triggerTemplate`](api/config/trigger-template.md) callback and to the `action` callback.
 
 ### Rendered token
 
-When a user selects an item, RichText inserts a non-editable token element into the document:
+When a user selects an item in the dropdown, RichText inserts a non-editable token element into the document:
 
 ~~~html {}
 <a data-token="@" data-token-id="alice" href="mailto:alice@example.com">@Alice</a>
@@ -102,9 +106,62 @@ Use the `data-token` and `data-token-id` attributes to target tokens with CSS, f
 }
 ~~~
 
+### Custom action
+
+By default, when a user picks an item, RichText inserts it into the document as a token. Set the `action` parameter to run your own code instead: RichText removes the typed trigger string (the trigger character and the query) and calls the `action(item)` callback with the picked item. No token is inserted, so you can decide what to add to the document. The `action` parameter takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
+
+#### Add emoji
+
+A common use case is inserting an emoji from a `:` trigger, where each item contains a custom `code` field. Pair `action` with [`triggerTemplate`](api/config/trigger-template.md) so the dropdown shows the emoji itself instead of just its label:
+
+~~~jsx {8,12}
+const { template } = richtext;
+
+const editor = new richtext.Richtext("#root", {
+    triggers: [
+        {
+            trigger: ":",
+            data: emoji, // [{ id: "apple", label: "apple", code: "1F34E" }, ...]
+            action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
+        }
+    ],
+    // render the emoji itself (not just its label) in the dropdown
+    triggerTemplate: template(({ data }) => `${emojiFromCode(data.code)} ${data.label}`)
+});
+
+function emojiFromCode(code) {
+    return String.fromCodePoint(parseInt(code, 16));
+}
+~~~
+
+#### Add slash-style command menu
+
+You can use `action` to build a slash-style command menu (like `/` in Notion or Slack). Store a command name in each item's `id`, its options in a custom `config` field, and let the callback run it with [`api.exec`](api/internal/exec.md):
+
+~~~jsx {13}
+// each item stores an api.exec action name in `id` and its parameters in `config`
+const commands = [
+    { id: "set-text-style", label: "Heading 1",     config: { tag: "h1" } },
+    { id: "insert-list",    label: "Bulleted list", config: { type: "bulleted" } },
+    { id: "insert-line",    label: "Divider" } // no config → `|| {}` applies
+];
+
+const editor = new richtext.Richtext("#root", {
+    triggers: [
+        {
+            trigger: "/",
+            data: commands,
+            action: item => editor.api.exec(item.id, item.config || {})
+        }
+    ]
+});
+~~~
+
 ### Example
 
-~~~jsx {2-13}
+The following example sets up two triggers: `@` for mentions (each item carries a `url` that becomes the token's `href`) and `#` for tags (label only):
+
+~~~jsx {4,11}
 new richtext.Richtext("#root", {
     triggers: [
         {

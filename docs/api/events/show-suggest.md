@@ -10,7 +10,7 @@ description: You can learn about the show-suggest event in the documentation of 
 
 @short: Fires when the suggestion dropdown opens for a configured trigger
 
-The event fires after RichText resolves a non-empty list of items for the current trigger, just before the dropdown opens. Intercept the event to adjust the items, move the dropdown, or cancel it.
+The `show-suggest` event fires after RichText resolves a non-empty list of items for the current trigger, just before the dropdown opens. Intercept the event to adjust the items, move the dropdown, or cancel it.
 
 ### Usage
 
@@ -18,7 +18,12 @@ The event fires after RichText resolves a non-empty list of items for the curren
 "show-suggest": ({
     trigger: string,
     query: string,
-    items: Array<{ id: string, label: string, url: string }>,
+    items: Array<{
+        id?: string | number,
+        label?: string,
+        url?: string,
+        // ...any custom fields from the trigger's data source
+    }>,
     pos: DOMRect
 }) => boolean | void;
 ~~~
@@ -29,7 +34,7 @@ The callback of the `show-suggest` event receives an object with the following f
 
 - `trigger` - the trigger character that opened the dropdown
 - `query` - the text typed after the trigger character (used to filter `items`)
-- `items` - the resolved (and already filtered) list of suggestion items
+- `items` - the resolved (and already filtered) list of suggestion items. Each item follows the [suggestion item shape](api/config/triggers.md#suggestion-item-fields): optional `id`, `label`, and `url`, plus any custom fields (such as `image` or `name`) used by [`triggerTemplate`](api/config/trigger-template.md)
 - `pos` - a `DOMRect` describing the cursor position; used to place the dropdown on screen
 
 :::info
@@ -38,10 +43,11 @@ To handle internal events, use [**Event Bus methods**](api/overview/event_bus_me
 
 ### Example
 
-~~~jsx {5-10}
+~~~jsx {6-11}
 // initialize RichText
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    triggers: [{ trigger: "@", data: people }]
+    // other configuration properties
 });
 // override the suggestion list before the dropdown opens
 editor.api.intercept("show-suggest", (state) => {
@@ -52,3 +58,5 @@ editor.api.intercept("show-suggest", (state) => {
 ~~~
 
 **Change log:** The event was added in v2.1
+
+**Related articles:** [Mentions and tags](guides/mentions_and_tags.md)

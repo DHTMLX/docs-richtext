@@ -6,18 +6,19 @@ description: 'Learn how to configure @mentions, #tags, and custom dropdown trigg
 
 # Mentions and tags
 
-RichText supports user-defined trigger characters that open a suggestion dropdown inside the editor. When the user picks an item, RichText inserts a non-editable token into the document. Typical use cases:
+RichText supports user-defined trigger characters that open a suggestion dropdown inside the document. When the user picks an item, RichText inserts a non-editable token into the document. Typical use cases:
 
 - `@` — mention a person
 - `#` — apply a tag
 - `/` — insert a command or template
 - `$` — insert a financial ticker or variable
+- `:` - insert an emoji
 
-Configure the behavior through the [`triggers`](api/config/triggers.md) array. Each entry binds one character to a data source.
+Configure the behavior through the [`triggers`](api/config/triggers.md) property. Each entry binds one character to a data source.
 
 ## Configure triggers
 
-Each trigger is an object `{ trigger, data, showTrigger? }` within the [`triggers`](api/config/triggers.md) array. The [`data`](api/config/triggers.md/#data-source-forms) field can take three forms:
+Each trigger is an object `{ trigger, data, showTrigger?, action? }` within the [`triggers`](api/config/triggers.md) array. The [`data`](api/config/triggers.md#data-source-forms) field can take three forms:
 
 - A static array — RichText filters it automatically by `label` (case-insensitive, `startsWith`):
 
@@ -55,7 +56,7 @@ Each trigger is an object `{ trigger, data, showTrigger? }` within the [`trigger
 
 ## Token rendering
 
-When the user picks an item, RichText inserts it as an `<a>` element with two data attributes:
+When the user picks an item from the dropdown, RichText inserts it as an `<a>` element with two data attributes:
 
 ~~~html {2-3}
 <a 
@@ -110,14 +111,14 @@ const editor = new richtext.Richtext("#root", {
     triggers: [{ trigger: "@", data: people }]
 });
 
-editor.api.on("insert-token", ({ trigger, label, id }) => {
-    console.log(`Inserted ${trigger}${label} (id: ${id})`);
+editor.api.on("insert-token", ({ trigger, data }) => {
+    console.log(`Inserted ${trigger}${data.label} (id: ${data.id})`);
 });
 ~~~
 
 ## Customize the dropdown item
 
-By default the dropdown shows the `label` of each item. To render custom suggestions (for example, an avatar plus a name and an email) pass a template via the [`triggerTemplate`](api/config/trigger-template.md) property.
+By default the dropdown shows the `label` of each item. To render custom suggestions (for example, avatar, name and email) pass a template via the [`triggerTemplate`](api/config/trigger-template.md) property.
 
 ### Example
 
@@ -132,6 +133,84 @@ new richtext.Richtext("#root", {
             <div class="user-url">${data.url || ""}</div>
         </div>
     `)
+});
+~~~
+
+## Custom action on select
+
+By default, picking an item inserts it into the document as a token. To run your own code instead, add an `action` callback to the trigger. RichText removes the typed trigger text and calls `action(item)` with the picked item — no token is inserted, so you can decide what to add.
+
+:::note
+ `action` takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
+:::
+
+### Add emoji
+
+A `:` trigger can insert an emoji, where each item includes a custom `code` field. Pair `action` with [`triggerTemplate`](api/config/trigger-template.md) so the dropdown shows the emoji instead of just its label:
+
+~~~jsx {8,12}
+const { template } = richtext;
+
+const editor = new richtext.Richtext("#root", {
+    triggers: [
+        {
+            trigger: ":",
+            data: emoji, // [{ id: "apple", label: "apple", code: "1F34E" }, ...]
+            action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
+        }
+    ],
+    // render the emoji itself (not just its label) in the dropdown
+    triggerTemplate: template(({ data }) => `${emojiFromCode(data.code)} ${data.label}`)
+});
+
+function emojiFromCode(code) {
+    return String.fromCodePoint(parseInt(code, 16));
+}
+
+const emoji = [
+    {
+        id: "apple",
+        label: "apple",
+        code: "1F34E",
+    },
+    {
+        id: "blue_car",
+        label: "blue_car",
+        code: "1F699",
+    },
+    {
+        id: "computer",
+        label: "computer",
+        code: "1F4BB",
+    },
+    {
+        id: "dvd",
+        label: "dvd",
+        code: "1F4C0",
+    },
+];
+~~~
+
+### Add slash-style command menu
+
+You can use `action` to build a slash-style command menu (like `/` in Notion or Slack). Store a command name in each item's `id`, its options in a custom `config` field, and let the callback run it with [`api.exec`](api/internal/exec.md):
+
+~~~jsx {13}
+// each item stores an api.exec action name in `id` and its parameters in `config`
+const commands = [
+    { id: "set-text-style", label: "Heading 1",     config: { tag: "h1" } },
+    { id: "insert-list",    label: "Bulleted list", config: { type: "bulleted" } },
+    { id: "insert-line",    label: "Divider" } // no config → `|| {}` applies
+];
+
+const editor = new richtext.Richtext("#root", {
+    triggers: [
+        {
+            trigger: "/",
+            data: commands,
+            action: item => editor.api.exec(item.id, item.config || {})
+        }
+    ]
 });
 ~~~
 
