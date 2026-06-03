@@ -111,7 +111,7 @@ const editor = new richtext.Richtext("#root", {
     triggers: [{ trigger: "@", data: people }]
 });
 
-editor.api.on("insert-token", ({ trigger, data }) => {
+editor.api.on("insert-token", ({ data, trigger, showTrigger }) => {
     console.log(`Inserted ${trigger}${data.label} (id: ${data.id})`);
 });
 ~~~
