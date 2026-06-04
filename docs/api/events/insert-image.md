@@ -8,7 +8,7 @@ description: You can learn about the insert-image event in the documentation of 
 
 ### Description
 
-@short: Fires when inserting image
+@short: Fires when inserting an image (via the toolbar, menubar, clipboard paste, or drag-and-drop)
 
 ### Usage
 
