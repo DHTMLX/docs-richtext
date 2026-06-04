@@ -238,9 +238,13 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-## Configure the image upload URL
+## Configure image insertion
 
-Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint for image uploads triggered from the toolbar, menubar, clipboard paste, or drag-and-drop:
+RichText supports two modes for inserting images via the toolbar, menubar, paste, or drag-and-drop. The mode is selected automatically based on the [`imageUploadUrl`](api/config/image-upload-url.md) property.
+
+### Upload images to a server
+
+Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to upload each inserted image to your endpoint. RichText sends the file as `multipart/form-data` (field name `upload`) and inserts the URL returned by the server:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -248,6 +252,23 @@ new richtext.Richtext("#root", {
     // other configuration properties
 });
 ~~~
+
+### Insert images inline as base64
+
+Omit [`imageUploadUrl`](api/config/image-upload-url.md) (or set it to an empty string) to embed images directly into the document content as base64 data URLs. No server is required:
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    // imageUploadUrl is not set, images are inserted inline
+    // other configuration properties
+});
+~~~
+
+Inline images larger than 1024×800 are proportionally downscaled to fit within these limits.
+
+:::note
+Inline (base64) images are not preserved by the built-in DOCX / PDF [export](api/events/export.md). If you rely on export, supply an `imageUploadUrl` so that images reference an external location.
+:::
 
 ## Configure default styles
 

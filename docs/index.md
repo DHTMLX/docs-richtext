@@ -19,7 +19,7 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 - Static [**menubar**](api/config/menubar.md) that can be shown or hidden
 
-- Image uploading, rich formatting, custom styling, and full screen mode
+- Image uploading with optional server [upload](api/config/image-upload-url.md) or inline base64 embedding, rich formatting, custom styling, and full screen mode
 
 - [Full API access](api/overview/main_overview.md) for [event handling](api/overview/event_bus_methods_overview.md), [content manipulation](api/overview/methods_overview.md), and [reactive state management](api/overview/state_methods_overview.md)
 
