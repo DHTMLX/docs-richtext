@@ -13,7 +13,7 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 - Two [**layout modes**](api/config/layout-mode.md)
 
-- Content serialization to both plain text and HTML
+- Content serialization to HTML, plain text, and Markdown
 
 - Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
 
@@ -71,7 +71,7 @@ DHTMLX RichText can work with content in "classic" and "document" modes. You can
 
 ## Supported formats
 
-The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML** and plain text formats.
+The RichText editor supports [parsing](api/methods/set-value.md) and [serialization](api/methods/get-value.md) of content in the **HTML**, **plain text**, and **Markdown** formats.
 
 #### HTML format
 
@@ -84,6 +84,29 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 <div className="img_border">
 ![Text format](./assets/richtext/text_format.png)
 </div>
+
+#### Markdown format
+
+Pass the built-in `markdown` encoders to [`setValue()`](api/methods/set-value.md) / [`getValue()`](api/methods/get-value.md) to load or serialize content as Markdown:
+
+~~~jsx
+const editor = new richtext.Richtext("#root", {
+    value: "Hello world"
+    // other configuration properties
+});
+
+// load Markdown into the editor
+editor.setValue("# Title\n\nParagraph", richtext.markdown.fromMarkdown);
+
+// read editor content as Markdown
+const md = editor.getValue(richtext.markdown.toMarkdown);
+~~~
+
+:::note
+Markdown support covers a limited subset of the syntax — common block and inline elements such as headings, paragraphs, line breaks, emphasis, blockquotes, lists, and links. Formatting that has no Markdown equivalent (font family, font size, colors, alignment, line height) is dropped on serialization.
+
+Nested inline structures are not supported, with the only exception of **bold inside italic**. Combinations such as bold inside a link, italic inside a list item, or multi-level (nested) lists will not render correctly.
+:::
 
 ## Copy and paste
 
