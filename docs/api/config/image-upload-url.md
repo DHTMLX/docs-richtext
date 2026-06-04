@@ -8,9 +8,9 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 ### Description
 
-@short: Optional. Specifies the URL which will be used for image upload
+@short: Optional. Specifies the URL which will be used for image upload (from the toolbar, menubar, clipboard paste, or drag-and-drop)
 
-When the property is set, RichText uploads each inserted image to the given endpoint (via toolbar, menubar, paste, or drag-and-drop) and inserts the URL returned by the server.
+When the property is set, RichText uploads each inserted image to the given endpoint and inserts the URL returned by the server.
 
 When the property is omitted or set to a falsy value (`""`, `null`, `undefined`), RichText switches to **inline mode**: the image file is read on the client and embedded directly into the content as a base64 data URL — no server is required. Inline images larger than 1024×800 are proportionally downscaled to fit within these limits.
 
