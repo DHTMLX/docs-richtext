@@ -8,7 +8,7 @@ description: You can learn about the insert-image event in the documentation of 
 
 ### Description
 
-@short: Fires when inserting image
+@short: Fires when inserting an image (via the toolbar, menubar, clipboard paste, or drag-and-drop)
 
 ### Usage
 
@@ -17,7 +17,7 @@ description: You can learn about the insert-image event in the documentation of 
 
 interface IImageContext {
     id: TID;
-    value: string;
+    value: string;  // image source: server URL when imageUploadUrl is set, or a base64 data URL when the image is inlined
     width: number;
     height: number;
     // extra props from uploader ctx, not required for the actual action
@@ -28,6 +28,10 @@ interface IImageContext {
     uploaded: (ctx: IImageContext) => void;
 }
 ~~~
+
+:::note
+The `value` field holds either an external URL (when [`imageUploadUrl`](api/config/image-upload-url.md) is configured and the upload succeeds) or a base64 data URL (when `imageUploadUrl` is omitted and the image is inlined on the client). Handlers that process the source — for example, to rewrite the URL or validate the host — must account for both formats.
+:::
 
 :::info
 For handling inner events you can use [**Event Bus methods**](api/overview/event_bus_methods_overview.md)
