@@ -39,7 +39,7 @@ The dropdown default width is `160px`. If you need more space for your template,
 
 ### Example
 
-The following code snippet configures two triggers: `@` for mentions and `#` for tags. Use `triggerTemplate` to expand the `trigger` value to render each dropdown differently. For the `@` dropdown the template returns a custom HTML row with an avatar (`data.image`), a nickname (`data.label`), and a full name (`data.name`). For the `#` trigger the template use the `label`:
+The following code snippet configures two triggers: `@` for mentions and `#` for tags. Use `triggerTemplate` to expand the `trigger` value to render each dropdown differently. For the `@` dropdown the template returns a custom HTML row with an avatar (`data.image`), a nickname (`data.label`), and a full name (`data.name`). For the `#` trigger the template uses the `label`:
 
 ~~~jsx {5-6,8-15}
 const { template, Richtext } = richtext;

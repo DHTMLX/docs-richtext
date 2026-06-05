@@ -12,7 +12,7 @@ RichText supports user-defined trigger characters that open a suggestion dropdow
 - `#` — apply a tag
 - `/` — insert a command or template
 - `$` — insert a financial ticker or variable
-- `:` - insert an emoji
+- `:` — insert an emoji
 
 Configure the behavior through the [`triggers`](api/config/triggers.md) property. Each entry binds one character to a data source.
 
@@ -141,7 +141,7 @@ new richtext.Richtext("#root", {
 By default, picking an item inserts it into the document as a token. To run your own code instead, add an `action` callback to the trigger. RichText removes the typed trigger text and calls `action(item)` with the picked item — no token is inserted, so you can decide what to add.
 
 :::note
- `action` takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
+`action` takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.
 :::
 
 ### Add emoji

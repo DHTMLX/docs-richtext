@@ -33,7 +33,7 @@ Each entry of the `triggers` array accepts the following fields:
 - `trigger` - (required) the character that opens the suggestion dropdown (for example, `"@"`, `"#"`, `"/"`, `"$"`)
 - `data` - (required) the data source for the dropdown; can be an array, a sync function, or an async function. See [Data source forms](#data-source-forms)
 - `showTrigger` - (optional) when `true` (default), RichText keeps the trigger character in the inserted token (for example, `@Alice`); when `false`, RichText inserts only `label` (for example, `Alice`)
-- `action` - (optional) a custom callback called when a user selects an item. When set, RichText removes the typed trigger text (the trigger character plus the query) and calls `action(item)` **instead of** inserting a token. The callback receives the picked item and can insert any content instead of selected one. The `action` parameter takes priority over `showTrigger`, which has no effect when `action` is set. See [Custom action](#custom-action)
+- `action` - (optional) a custom callback called when a user selects an item. When set, RichText removes the typed trigger text (the trigger character plus the query) and calls `action(item)` **instead of** inserting a token. The callback receives the picked item and can insert any content instead of the selected one. The `action` parameter takes priority over `showTrigger`, which has no effect when `action` is set. See [Custom action](#custom-action)
 
 ### Data source forms
 
