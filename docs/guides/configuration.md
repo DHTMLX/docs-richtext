@@ -16,6 +16,7 @@ You can configure the RichText appearance and behavior with the following proper
 - [`locale`](api/config/locale.md) — apply a localization object on initialization
 - [`defaultStyles`](api/config/default-styles.md) — set default styles for specific block types
 - [`imageUploadUrl`](api/config/image-upload-url.md) — set the endpoint for image uploads
+- [`triggers`](api/config/triggers.md) — enable @mentions, #tags, and custom dropdown triggers (see the [Mentions and tags](guides/mentions_and_tags.md) guide)
 
 ## Layout modes
 
