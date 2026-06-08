@@ -17,7 +17,7 @@ This guide explains:
 
 ## Default behavior: inline images
 
-If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, downscales it to fit a 1024×800 box, encodes it as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element.
+If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, encodes the original file as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element. The displayed size is constrained to fit within a 1024×800 box through the `width`/`height` attributes, but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
 
 This works without any backend and is handy for quick demos, but it has clear limitations:
 
@@ -60,7 +60,7 @@ The server must reply with a JSON object. RichText reads the following fields:
 
 | Field    | Type    | Meaning                                                                 |
 | -------- | ------- | ----------------------------------------------------------------------- |
-| `status` | string  | Result marker. Use `"server"` for success. Any other value (for example `"error"`) is treated as failure and the image is not inserted. |
+| `status` | string  | Result marker. A successful upload must return `"server"`; the success contract relies on this value. Any other value (for example `"error"`) signals a failed upload on the server side. |
 | `value`  | string  | URL of the stored image. RichText writes this string verbatim into the document as the `src` of the inserted `<img>`. |
 | `width`  | integer | Width used to size the inserted image, in pixels.                       |
 | `height` | integer | Height used to size the inserted image, in pixels.                      |
