@@ -17,13 +17,13 @@ This guide explains:
 
 ## Default behavior: inline images
 
-If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, encodes the original file as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element. The displayed size is constrained to fit within a 1024×800 box through the `width`/`height` attributes, but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
+If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, encodes the original file as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element. RichText constrains the displayed size to fit within a 1024×800 box through the `width`/`height` attributes, but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
 
 This works without any backend and is handy for quick demos, but it has clear limitations:
 
-- the encoded image bytes live inside the document, so the saved HTML grows with every image
-- the same image used in two documents is stored twice
-- the image bytes live inside the document HTML rather than as a separate resource, so they can't be served from a CDN, deduplicated across documents, or post-processed (resized, re-encoded, scanned) on the server
+- the encoded bytes live inside the document, so the saved HTML grows with every image
+- the same image in two documents is stored twice — there is no shared resource to deduplicate
+- because the bytes are not a separate resource, the server cannot serve them from a CDN or post-process them (resize, re-encode, scan)
 
 ## Write your own server
 
@@ -40,7 +40,7 @@ A minimal upload endpoint needs to:
 
 1. Accept a `multipart/form-data` POST with a file field named `upload`.
 2. Validate the file (allowed types, maximum size).
-3. Store the file somewhere the user's browser can fetch (a local disk served over HTTP, S3, a CDN, etc).
+3. Store the file somewhere the user's browser can fetch (a local disk served over HTTP, S3, a CDN, etc.).
 4. Optionally resize or otherwise process the image.
 5. Respond with a JSON object that contains `status: "server"`, `value` set to the public URL of the stored file, and the image's `width` and `height` in pixels.
 
@@ -60,7 +60,7 @@ The server must reply with a JSON object. RichText reads the following fields:
 
 | Field    | Type    | Meaning                                                                 |
 | -------- | ------- | ----------------------------------------------------------------------- |
-| `status` | string  | Result marker. A successful upload must return `"server"`; the success contract relies on this value. Any other value (for example `"error"`) signals a failed upload on the server side. |
+| `status` | string  | Result marker. A successful upload must return `"server"`. Any other value (for example `"error"`) is treated as a failed upload, and the image is not inserted. |
 | `value`  | string  | URL of the stored image. RichText writes this string verbatim into the document as the `src` of the inserted `<img>`. |
 | `width`  | integer | Width used to size the inserted image, in pixels.                       |
 | `height` | integer | Height used to size the inserted image, in pixels.                      |
@@ -90,7 +90,7 @@ A failed upload returns any status other than `"server"`:
 
 ### Serve the uploaded image
 
-The `value` URL is the only thing that connects the upload step to everything that happens later. RichText puts the URL straight into the document, so any client that later opens the saved content (the editor itself, an export, a published page) fetches the image from that URL with a plain `GET`.
+The `value` URL is the only link between the upload and every later read of the document. RichText puts the URL straight into the document, so any client that opens the saved content (the editor itself, an export, a published page) fetches the image from that URL with a plain `GET`.
 
 That means:
 
