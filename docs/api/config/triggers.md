@@ -17,10 +17,10 @@ When a user types a configured character (for example, `@` or `#`), RichText ope
 ~~~jsx {}
 triggers?: Array<{
     trigger: string,
-    data: Array<{ id?: string; label?: string; url?: string }>
+    data: Array<{ id?: string | number; label?: string; url?: string }>
         | ((query: string) =>
-            Array<{ id?: string; label?: string; url?: string }>
-            | Promise<Array<{ id?: string; label?: string; url?: string }>>),
+            Array<{ id?: string | number; label?: string; url?: string }>
+            | Promise<Array<{ id?: string | number; label?: string; url?: string }>>),
     showTrigger?: boolean,
     action?: (item) => void
 }>;

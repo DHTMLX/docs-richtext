@@ -148,6 +148,15 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 | Cut      | `Ctrl+X`                 | `⌘X`          |
 | Copy     | `Ctrl+C`                 | `⌘C`          |
 | Paste    | `Ctrl+V`                 | `⌘V`          |
+| Delete word | `Ctrl+Backspace` / `Ctrl+Delete` | `⌥⌫` / `⌥⌦` |
+| Delete line | —                     | `⌘⌫` / `⌘⌦`   |
+
+### Indentation
+
+| Action               | Windows/Linux | macOS |
+|----------------------|---------------|-------|
+| Indent / nest list   | `Tab`         | `⇥`   |
+| Outdent / lift list  | `Shift+Tab`   | `⇧⇥`  |
 
 ### Special actions
 

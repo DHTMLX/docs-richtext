@@ -11,10 +11,13 @@ Released on June X, 2026
 ### New functionality
 
 - The [`imageUploadUrl`](api/config/image-upload-url.md) is optional: when omitted, images are inserted inline as base64 data URLs with no server required
+- Drag-and-drop image insertion: drop an image file directly into the editor area
 - Markdown support: parse and serialize editor content as Markdown via the `markdown` encoder in [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md), and [`insertValue()`](api/methods/insert-value.md) methods
 - Mentions, tags, and custom dropdown triggers via the [`triggers`](api/config/triggers.md) property: type a character such as `@`, `#`, `/`, or `:` to open a suggestion dropdown and insert the selected item as a non-editable token (see the [Mentions and tags](guides/mentions_and_tags.md) guide)
 - Custom rendering for suggestion items through the [`triggerTemplate`](api/config/trigger-template.md) property (for example, an avatar with a name and an email)
 - Custom action when a user selects a trigger: run your own code (insert an emoji, trigger a slash-style command, and more) instead of inserting a token
+- Clipboard support (copy, cut, and paste) that preserves formatting between RichText instances and inserts external content as plain text
+- Word- and line-scope deletion shortcuts: delete the previous/next word with `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) or `Opt+Backspace` / `Opt+Delete` (macOS); delete the previous/next visual line with `Cmd+Backspace` / `Cmd+Delete` (macOS only)
 
 ###  New API
 
@@ -35,7 +38,8 @@ Released on June X, 2026
 
 ### Fixes
 
-- Clipboard actions (copy, cut, and paste) preserves formatting between RichText instances and inserts external content as plain text
+- Issues with pasting inline content (including content placed inside or near inline elements such as mentions and images)
+- Dropping an image onto itself throws an error
 
 ## Version 2.0.6
 
