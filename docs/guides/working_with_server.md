@@ -24,6 +24,7 @@ This works without any backend and is handy for quick demos, but it has clear li
 - the encoded bytes live inside the document, so the saved HTML grows with every image
 - the same image in two documents is stored twice — there is no shared resource to deduplicate
 - because the bytes are not a separate resource, the server cannot serve them from a CDN or post-process them (resize, re-encode, scan)
+- inline images are not preserved by the built-in DOCX / PDF [export](api/events/export.md) — if you rely on export, configure an upload server so images reference an external URL
 
 ## Write your own server
 
@@ -60,7 +61,7 @@ The server must reply with a JSON object. RichText reads the following fields:
 
 | Field    | Type    | Meaning                                                                 |
 | -------- | ------- | ----------------------------------------------------------------------- |
-| `status` | string  | Result marker. A successful upload must return `"server"`. Any other value (for example `"error"`) is treated as a failed upload, and the image is not inserted. |
+| `status` | string  | Success marker — return `"server"` for a successful upload. The uploader uses this field to tell a completed upload from a failed one; any other value (for example `"error"`) marks the upload as failed. The inserted image itself is built from `value`, `width`, and `height`. |
 | `value`  | string  | URL of the stored image. RichText writes this string verbatim into the document as the `src` of the inserted `<img>`. |
 | `width`  | integer | Width used to size the inserted image, in pixels.                       |
 | `height` | integer | Height used to size the inserted image, in pixels.                      |
