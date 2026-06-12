@@ -3,6 +3,44 @@ sidebar_label: What's new
 title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
+
+## Version 2.1
+
+Released on June X, 2026
+
+### New functionality
+
+- The [`imageUploadUrl`](api/config/image-upload-url.md) is optional: when omitted, images are inserted inline as base64 data URLs with no server required
+- Drag-and-drop image insertion: drop an image file directly into the editor area
+- Markdown support: parse and serialize editor content as Markdown via the `markdown` encoder in [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md), and [`insertValue()`](api/methods/insert-value.md) methods
+- Mentions, tags, and custom dropdown triggers via the [`triggers`](api/config/triggers.md) property: type a character such as `@`, `#`, `/`, or `:` to open a suggestion dropdown and insert the selected item as a non-editable token (see the [Mentions and tags](guides/mentions_and_tags.md) guide)
+- Custom rendering for suggestion items through the [`triggerTemplate`](api/config/trigger-template.md) property (for example, an avatar with a name and an email)
+- Custom action when a user selects a trigger: run your own code (insert an emoji, trigger a slash-style command, and more) instead of inserting a token
+- Clipboard support (copy, cut, and paste) that preserves formatting between RichText instances and inserts external content as plain text
+- Word- and line-scope deletion shortcuts: delete the previous/next word with `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) or `Opt+Backspace` / `Opt+Delete` (macOS); delete the previous/next visual line with `Cmd+Backspace` / `Cmd+Delete` (macOS only)
+
+###  New API
+
+#### New properties
+
+- [`triggers`](api/config/triggers.md) — Defines dropdown triggers for inserting mentions, tags, and other tokens
+- [`triggerTemplate`](api/config/trigger-template.md) — Customizes how RichText renders items in the suggestion dropdown
+
+#### New methods
+
+- [`insertValue()`](api/methods/insert-value.md) — Inserts text, Markdown, or HTML content at the cursor position or replaces the selected text
+
+#### New events
+
+- [`show-suggest`](api/events/show-suggest.md) — Fires when the suggestion dropdown opens for a configured trigger
+- [`insert-token`](api/events/insert-token.md) — Fires after the user picks a suggestion item in the dropdown and RichText inserts it as a token
+- [`hide-suggest`](api/events/hide-suggest.md) — Fires when the suggestion dropdown closes
+
+### Fixes
+
+- Issues with pasting inline content (including content placed inside or near inline elements such as mentions and images)
+- Dropping an image onto itself throws an error
+
 ## Version 2.0.6
 
 Released on May 28, 2026
@@ -108,7 +146,7 @@ API of v1.2 is not compatible with v2.0. Refer to the [**migration guide**](news
 - **Granular toolbar configuration**  
   Take full control of the toolbar:  
   - Define [individual toolbar controls](guides/configuration.md/#default-toolbar-controls) and their order
-  - Add [custom controls](guides/configuration.md/#custom-toolbar-controls)
+  - Add [custom controls](guides/configuration.md/#add-custom-toolbar-controls)
 
 - **Optional [menubar](api/config/menubar.md)**  
   Enable a classic menu-style interface on the top of the editor

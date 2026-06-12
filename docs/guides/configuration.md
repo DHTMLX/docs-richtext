@@ -16,6 +16,7 @@ You can configure the RichText appearance and behavior with the following proper
 - [`locale`](api/config/locale.md) — apply a localization object on initialization
 - [`defaultStyles`](api/config/default-styles.md) — set default styles for specific block types
 - [`imageUploadUrl`](api/config/image-upload-url.md) — set the endpoint for image uploads
+- [`triggers`](api/config/triggers.md) — enable @mentions, #tags, and custom dropdown triggers (see the [Mentions and tags](guides/mentions_and_tags.md) guide)
 
 ## Layout modes
 
@@ -238,9 +239,13 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-## Configure the image upload URL
+## Configure image insertion
 
-Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to set the server endpoint for toolbar image uploads:
+RichText supports two modes for inserting images via the toolbar, menubar, paste, or drag-and-drop. The mode is selected automatically based on the [`imageUploadUrl`](api/config/image-upload-url.md) property.
+
+### Upload images to a server
+
+Pass a URL to the [`imageUploadUrl`](api/config/image-upload-url.md) property to upload each inserted image to your endpoint. RichText sends the file as `multipart/form-data` (field name `upload`) and inserts the URL returned by the server:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
@@ -248,6 +253,25 @@ new richtext.Richtext("#root", {
     // other configuration properties
 });
 ~~~
+
+### Insert images inline as base64
+
+Omit [`imageUploadUrl`](api/config/image-upload-url.md) (or set it to an empty string) to embed images directly into the document content as base64 data URLs. No server is required:
+
+~~~jsx {2}
+new richtext.Richtext("#root", {
+    // imageUploadUrl is not set, images are inserted inline
+    // other configuration properties
+});
+~~~
+
+Inline images larger than 1024×800 are displayed at a reduced size (the `width`/`height` attributes are capped to fit within these limits), but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
+
+:::note
+Inline (base64) images are not preserved by the built-in DOCX / PDF [export](api/events/export.md). If you rely on export, supply an `imageUploadUrl` so that images reference an external location.
+:::
+
+See [Working with the server](guides/working_with_server.md) for the full request/response contract the upload endpoint must implement and a closer look at the inline-image fallback.
 
 ## Configure default styles
 

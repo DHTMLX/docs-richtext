@@ -18,4 +18,6 @@ They help you control layout, toolbar, value, localization, and other aspects of
 | [](api/config/locale.md)                                 | @getshort(api/config/locale.md)               |
 | [](api/config/menubar.md)                                | @getshort(api/config/menubar.md)              |
 | [](api/config/toolbar.md)                                | @getshort(api/config/toolbar.md)              |
+| [](api/config/trigger-template.md)                       | @getshort(api/config/trigger-template.md)     |
+| [](api/config/triggers.md)                               | @getshort(api/config/triggers.md)             |
 | [](api/config/value.md)                                  | @getshort(api/config/value.md)                |
