@@ -204,6 +204,7 @@ module.exports = {
             items: [
                 "guides/initialization",
                 "guides/configuration",
+                "guides/working_with_server",
                 "guides/mentions_and_tags",
                 "guides/localization",
                 "guides/stylization",

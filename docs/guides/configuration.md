@@ -265,11 +265,13 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-Inline images larger than 1024×800 are proportionally downscaled to fit within these limits.
+Inline images larger than 1024×800 are displayed at a reduced size (the `width`/`height` attributes are capped to fit within these limits), but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
 
 :::note
 Inline (base64) images are not preserved by the built-in DOCX / PDF [export](api/events/export.md). If you rely on export, supply an `imageUploadUrl` so that images reference an external location.
 :::
+
+See [Working with the server](guides/working_with_server.md) for the full request/response contract the upload endpoint must implement and a closer look at the inline-image fallback.
 
 ## Configure default styles
 
