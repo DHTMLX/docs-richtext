@@ -9,7 +9,7 @@ description: Erfahren Sie, wie Sie mit DHTMLX RichText arbeiten – in der Dokum
 Dieses klare und umfassende Tutorial führt Sie durch die Schritte, die erforderlich sind, um einen voll funktionsfähigen RichText auf einer Seite einzurichten.
 
 <div className="img_border">
-![DHTMLX RichText Klassischer Modus](./assets/richtext/classic_mode.png)
+![DHTMLX RichText Klassischer Modus](/img/richtext/classic_mode.png)
 </div>
 
 ## Schritt 1. Quelldateien einbinden {#step-1-including-source-files}

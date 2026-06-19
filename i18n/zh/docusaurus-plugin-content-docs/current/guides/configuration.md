@@ -25,13 +25,13 @@ RichText 支持两种编辑区域的布局模式：
 - **"classic"** — 编辑区域填满整个页面
 
 <div className="img_border">
-![经典模式](./../assets/richtext/classic_mode.png)
+![经典模式](/img/richtext/classic_mode.png)
 </div>
 
 - **"document"** — 编辑区域模拟文档页面
 
 <div className="img_border">
-![文档模式](./../assets/richtext/document_mode.png)
+![文档模式](/img/richtext/document_mode.png)
 </div>
 
 在初始化时设置 [`layoutMode`](api/config/layout-mode.md) 属性以选择模式：

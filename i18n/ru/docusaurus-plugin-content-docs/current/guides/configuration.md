@@ -25,13 +25,13 @@ RichText поддерживает два режима макета для обл
 - **"classic"** — область редактирования занимает всю страницу
 
 <div className="img_border">
-![Классический режим](./../assets/richtext/classic_mode.png)
+![Классический режим](/img/richtext/classic_mode.png)
 </div>
 
 - **"document"** — область редактирования имитирует страницу документа
 
 <div className="img_border">
-![Режим документа](./../assets/richtext/document_mode.png)
+![Режим документа](/img/richtext/document_mode.png)
 </div>
 
 Задайте свойство [`layoutMode`](api/config/layout-mode.md) при инициализации, чтобы выбрать режим:

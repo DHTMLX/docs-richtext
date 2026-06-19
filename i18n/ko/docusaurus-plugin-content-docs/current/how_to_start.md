@@ -9,7 +9,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 DHTMLX Rich
 이 명확하고 포괄적인 튜토리얼은 페이지에서 완전히 작동하는 RichText를 구성하기 위해 필요한 단계를 안내합니다.
 
 <div className="img_border">
-![DHTMLX RichText 클래식 모드](./assets/richtext/classic_mode.png)
+![DHTMLX RichText 클래식 모드](/img/richtext/classic_mode.png)
 </div>
 
 ## 1단계. 소스 파일 포함하기 {#step-1-including-source-files}

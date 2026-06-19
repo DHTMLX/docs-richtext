@@ -9,7 +9,7 @@ description: Узнайте, как начать работу с DHTMLX RichText
 Это понятное и исчерпывающее руководство проведёт вас через шаги, необходимые для того, чтобы получить полностью рабочий RichText на странице.
 
 <div className="img_border">
-![DHTMLX RichText Classic Mode](./assets/richtext/classic_mode.png)
+![DHTMLX RichText Classic Mode](/img/richtext/classic_mode.png)
 </div>
 
 ## Шаг 1. Подключение исходных файлов {#step-1-including-source-files}

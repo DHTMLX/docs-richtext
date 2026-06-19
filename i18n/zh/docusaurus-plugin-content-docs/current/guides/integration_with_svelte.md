@@ -261,7 +261,7 @@ onDestroy(() => {
 启动应用，查看 RichText 在页面上渲染数据的效果。
 
 <div className="img_border">
-![RichText 初始化](../assets/trial_richtext.png)
+![RichText 初始化](/img/trial_richtext.png)
 </div>
 
 现在您已在 Svelte 中实现了一个可正常运行的 RichText 集成。请根据需求自定义代码。完整示例可在 [GitHub](https://github.com/DHTMLX/svelte-richtext-demo) 上获取。

@@ -261,7 +261,7 @@ onDestroy(() => {
 Starten Sie die Anwendung, um zu sehen, wie RichText mit Daten auf der Seite gerendert wird.
 
 <div className="img_border">
-![RichText-Initialisierung](../assets/trial_richtext.png)
+![RichText-Initialisierung](/img/trial_richtext.png)
 </div>
 
 Sie haben jetzt eine funktionierende RichText-Integration in Svelte. Passen Sie den Code an Ihre Anforderungen an. Ein vollständiges Beispiel ist auf [GitHub](https://github.com/DHTMLX/svelte-richtext-demo) verfügbar.

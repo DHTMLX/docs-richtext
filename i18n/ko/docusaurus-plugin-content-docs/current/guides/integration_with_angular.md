@@ -294,7 +294,7 @@ platformBrowserDynamic()
 앱을 시작하여 페이지에 데이터와 함께 RichText가 렌더링되는지 확인합니다.
 
 <div className="img_border">
-![RichText 초기화](../assets/trial_richtext.png)
+![RichText 초기화](/img/trial_richtext.png)
 </div>
 
 이제 Angular에서 RichText 통합이 완성되었습니다. 필요에 맞게 코드를 커스터마이즈하세요. 전체 예제는 [GitHub](https://github.com/DHTMLX/angular-richtext-demo)에서 확인할 수 있습니다.
