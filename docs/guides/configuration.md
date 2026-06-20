@@ -25,13 +25,13 @@ RichText supports two layout modes for the editing area:
 - `"classic"` — the edit area fills the entire page
 
 <div className="img_border">
-![Classic mode](/img/richtext/classic_mode.png)
+![DHTMLX RichText editor in classic layout mode](/img/richtext/classic_mode.png)
 </div>
 
 - `"document"` — the edit area mimics a document page
 
 <div className="img_border">
-![Document mode](/img/richtext/document_mode.png)
+![DHTMLX RichText editor in document layout mode](/img/richtext/document_mode.png)
 </div>
 
 Set the [`layoutMode`](api/config/layout-mode.md) property during initialization to choose the mode:

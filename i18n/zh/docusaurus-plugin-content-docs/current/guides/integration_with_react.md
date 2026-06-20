@@ -247,7 +247,7 @@ useEffect(() => {
 启动应用，即可看到 RichText 在页面上渲染并显示数据。
 
 <div className="img_border">
-![RichText 初始化](/img/trial_richtext.png)
+![在 React 应用程序中渲染的 DHTMLX RichText（含示例内容）](/img/trial_richtext.png)
 </div>
 
 现在您已在 React 中完成了 RichText 的集成。请根据需要自定义代码。完整示例可在 [GitHub](https://github.com/DHTMLX/react-richtext-demo) 上获取。

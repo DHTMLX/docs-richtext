@@ -36,7 +36,7 @@ Die RichText-Menüleiste bietet Zugriff auf Bearbeitungsaktionen wie das Erstell
 Verwenden Sie die Eigenschaft [`menubar`](api/config/menubar.md), um die Sichtbarkeit umzuschalten. Die Menüleiste kann zwar aktiviert oder deaktiviert werden, ihr Inhalt ist jedoch derzeit nicht konfigurierbar.
 
 <div className="img_border">
-![Menüleiste](/img/richtext/menubar.png)
+![DHTMLX RichText-Menüleiste mit Dokument- und Dateiaktionen](/img/richtext/menubar.png)
 </div>
 
 ### Toolbar {#toolbar}
@@ -46,7 +46,7 @@ Die RichText-Toolbar bietet schnellen Zugriff auf Textformatierungs- und Struktu
 Die Eigenschaft [`toolbar`](api/config/toolbar.md) ermöglicht es Ihnen, den Inhalt und das Layout der Toolbar vollständig anzupassen. Sie können die Toolbar aktivieren oder deaktivieren, Standard-Steuerelemente neu anordnen oder eine vollständig benutzerdefinierte Toolbar mit einem Array aus vordefinierten Schaltflächen-IDs und benutzerdefinierten Schaltflächen-Objekten definieren.
 
 <div className="img_border">
-![Toolbar](/img/richtext/toolbar.png)
+![DHTMLX RichText-Symbolleiste mit Steuerelementen zur Textformatierung](/img/richtext/toolbar.png)
 </div>
 
 ### Editor {#editor}
@@ -60,13 +60,13 @@ DHTMLX RichText kann mit Inhalten im „Klassisch"- und „Dokument"-Modus arbei
 - **„classic"**
 
 <div className="img_border">
-![Klassischer Modus](/img/richtext/classic_mode.png)
+![DHTMLX RichText-Editor im klassischen Layout-Modus](/img/richtext/classic_mode.png)
 </div>
 
 - **„document"**
 
 <div className="img_border">
-![Dokumentmodus](/img/richtext/document_mode.png)
+![DHTMLX RichText-Editor im Dokumentmodus](/img/richtext/document_mode.png)
 </div>
 
 ## Unterstützte Formate {#supported-formats}
@@ -76,13 +76,13 @@ Der RichText-Editor unterstützt das [Einlesen](api/methods/set-value.md) und di
 #### HTML-Format {#html-format}
 
 <div className="img_border">
-![HTML-Format](/img/richtext/html_format.png)
+![DHTMLX RichText-Inhalt serialisiert im HTML-Format](/img/richtext/html_format.png)
 </div>
 
 #### Textformat {#text-format}
 
 <div className="img_border">
-![Textformat](/img/richtext/text_format.png)
+![DHTMLX RichText-Inhalt serialisiert als reiner Text](/img/richtext/text_format.png)
 </div>
 
 #### Markdown-Format {#markdown-format}
@@ -172,5 +172,5 @@ In zukünftigen Updates können weitere Tastaturkürzel hinzugefügt werden.
 Um die aktuelle Referenz zu den RichText-Tastaturkürzeln zu erhalten, drücken Sie **Hilfe** und wählen Sie die Option **Tastaturkürzel**:
 
 <div className="img_border">
-![Tastaturkürzel](/img/richtext/shortcut_reference.png)
+![DHTMLX RichText-Fenster mit der Referenz der Tastaturkürzel](/img/richtext/shortcut_reference.png)
 </div>

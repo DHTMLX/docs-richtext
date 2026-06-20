@@ -247,7 +247,7 @@ useEffect(() => {
 앱을 시작하면 페이지에 데이터와 함께 RichText가 렌더링되는 것을 확인할 수 있습니다.
 
 <div className="img_border">
-![RichText 초기화](/img/trial_richtext.png)
+![샘플 콘텐츠와 함께 React 애플리케이션에 렌더링된 DHTMLX RichText](/img/trial_richtext.png)
 </div>
 
 이제 React에서 RichText 통합이 완료되었습니다. 필요에 맞게 코드를 커스터마이즈하십시오. 전체 예제는 [GitHub](https://github.com/DHTMLX/react-richtext-demo)에서 확인할 수 있습니다.

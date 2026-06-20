@@ -25,13 +25,13 @@ RichText unterstützt zwei Layout-Modi für den Bearbeitungsbereich:
 - `"classic"` — der Bearbeitungsbereich füllt die gesamte Seite aus
 
 <div className="img_border">
-![Klassischer Modus](/img/richtext/classic_mode.png)
+![DHTMLX RichText-Editor im klassischen Layout-Modus](/img/richtext/classic_mode.png)
 </div>
 
 - `"document"` — der Bearbeitungsbereich imitiert eine Dokumentseite
 
 <div className="img_border">
-![Dokumentmodus](/img/richtext/document_mode.png)
+![DHTMLX RichText-Editor im Dokumentmodus](/img/richtext/document_mode.png)
 </div>
 
 Legen Sie die Eigenschaft [`layoutMode`](api/config/layout-mode.md) bei der Initialisierung fest, um den Modus auszuwählen:

@@ -294,7 +294,7 @@ platformBrowserDynamic()
 启动应用，查看 RichText 在页面上渲染并显示数据。
 
 <div className="img_border">
-![RichText 初始化](/img/trial_richtext.png)
+![在 Angular 应用程序中渲染的 DHTMLX RichText（含示例内容）](/img/trial_richtext.png)
 </div>
 
 您现在已在 Angular 中完成了 RichText 的集成。请根据您的需求自定义代码。完整示例可在 [GitHub](https://github.com/DHTMLX/angular-richtext-demo) 上获取。

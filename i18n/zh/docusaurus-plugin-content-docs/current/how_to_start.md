@@ -9,7 +9,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解如何
 本清晰全面的教程将引导您完成在页面上创建一个功能齐全的 RichText 所需的步骤。
 
 <div className="img_border">
-![DHTMLX RichText 经典模式](/img/richtext/classic_mode.png)
+![在网页上运行的 DHTMLX RichText 所见即所得编辑器](/img/richtext/classic_mode.png)
 </div>
 
 ## 第一步：引入源文件 {#step-1-including-source-files}

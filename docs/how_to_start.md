@@ -9,7 +9,7 @@ description: You can explore how to start working with DHTMLX RichText in the do
 This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a fully functional RichText on a page.
 
 <div className="img_border">
-![DHTMLX RichText Classic Mode](/img/richtext/classic_mode.png)
+![DHTMLX RichText WYSIWYG editor running on a web page](/img/richtext/classic_mode.png)
 </div>
 
 ## Step 1. Including source files

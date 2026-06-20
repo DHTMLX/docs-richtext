@@ -261,7 +261,7 @@ onDestroy(() => {
 Запустите приложение, чтобы увидеть RichText с данными на странице.
 
 <div className="img_border">
-![Инициализация RichText](/img/trial_richtext.png)
+![DHTMLX RichText, отрендеренный в приложении Svelte с демонстрационным содержимым](/img/trial_richtext.png)
 </div>
 
 Интеграция RichText со Svelte готова. Настройте код под свои нужды. Полный пример доступен на [GitHub](https://github.com/DHTMLX/svelte-richtext-demo).

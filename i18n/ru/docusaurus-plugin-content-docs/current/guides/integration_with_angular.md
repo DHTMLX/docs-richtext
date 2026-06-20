@@ -294,7 +294,7 @@ platformBrowserDynamic()
 Запустите приложение, чтобы увидеть RichText с данными на странице.
 
 <div className="img_border">
-![Инициализация RichText](/img/trial_richtext.png)
+![DHTMLX RichText, отрендеренный в приложении Angular с демонстрационным содержимым](/img/trial_richtext.png)
 </div>
 
 Теперь у вас есть работающая интеграция RichText с Angular. Настройте код под свои нужды. Полный пример доступен на [GitHub](https://github.com/DHTMLX/angular-richtext-demo).

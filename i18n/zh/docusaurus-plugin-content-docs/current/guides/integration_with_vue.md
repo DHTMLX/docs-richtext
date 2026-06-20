@@ -271,7 +271,7 @@ export default {
 启动应用，查看 RichText 在页面上渲染数据的效果。
 
 <div className="img_border">
-![RichText 初始化](/img/trial_richtext.png)
+![在 Vue 应用程序中渲染的 DHTMLX RichText（含示例内容）](/img/trial_richtext.png)
 </div>
 
 您现在已在 Vue 中完成 RichText 的集成。可根据需要自定义代码。完整示例可在 [GitHub](https://github.com/DHTMLX/vue-richtext-demo) 上获取。

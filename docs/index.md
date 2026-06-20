@@ -36,7 +36,7 @@ The RichText menubar provides access to editing actions such as creating a new d
 Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
 
 <div className="img_border">
-![Menubar](/img/richtext/menubar.png)
+![DHTMLX RichText menubar with document and file actions](/img/richtext/menubar.png)
 </div>
 
 ### Toolbar
@@ -46,7 +46,7 @@ The RichText toolbar provides quick access to text formatting and structural edi
 The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
 
 <div className="img_border">
-![Toolbar](/img/richtext/toolbar.png)
+![DHTMLX RichText toolbar with text formatting controls](/img/richtext/toolbar.png)
 </div>
 
 ### Editor
@@ -60,13 +60,13 @@ DHTMLX RichText can work with content in "classic" and "document" modes. You can
 - `"classic"`
 
 <div className="img_border">
-![Classic mode](/img/richtext/classic_mode.png)
+![DHTMLX RichText editor in classic layout mode](/img/richtext/classic_mode.png)
 </div>
 
 - `"document"`
 
 <div className="img_border">
-![Document mode](/img/richtext/document_mode.png)
+![DHTMLX RichText editor in document layout mode](/img/richtext/document_mode.png)
 </div>
 
 ## Supported formats
@@ -76,13 +76,13 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 #### HTML format
 
 <div className="img_border">
-![HTML format](/img/richtext/html_format.png)
+![DHTMLX RichText content serialized to HTML format](/img/richtext/html_format.png)
 </div>
 
 #### Text format
 
 <div className="img_border">
-![Text format](/img/richtext/text_format.png)
+![DHTMLX RichText content serialized to plain text format](/img/richtext/text_format.png)
 </div>
 
 #### Markdown format
@@ -172,5 +172,5 @@ More shortcuts may be introduced in future updates.
 To get actual reference related to RichText keyboard shortcuts, press **Help** and select the **Keyboard shortcuts** option:
 
 <div className="img_border">
-![Keyboard shortcuts](/img/richtext/shortcut_reference.png)
+![DHTMLX RichText keyboard shortcuts reference window](/img/richtext/shortcut_reference.png)
 </div>

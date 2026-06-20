@@ -271,7 +271,7 @@ export default {
 Starten Sie die App, um zu sehen, wie RichText mit Daten auf der Seite gerendert wird.
 
 <div className="img_border">
-![RichText-Initialisierung](/img/trial_richtext.png)
+![In einer Vue-Anwendung gerendertes DHTMLX RichText mit Beispielinhalt](/img/trial_richtext.png)
 </div>
 
 Sie verfügen nun über eine funktionierende RichText-Integration in Vue. Passen Sie den Code an Ihre Bedürfnisse an. Ein vollständiges Beispiel ist auf [GitHub](https://github.com/DHTMLX/vue-richtext-demo) verfügbar.
