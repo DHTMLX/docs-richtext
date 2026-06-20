@@ -18,7 +18,7 @@ description: You can learn about the toggle-shortcut-info event in the documenta
 
 ### Parameters
 
-The callback of the **toggle-shortcut-info** event can take an object with the following parameter:
+The callback of the `toggle-shortcut-info` event can take an object with the following parameter:
 
 - `mode` - enables a shortcut info; `true` to show shortcut info popup, `false` to hide shortcut info popup
 

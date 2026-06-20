@@ -15,9 +15,9 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 - Content serialization to HTML, plain text, and Markdown
 
-- Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
+- Configurable [`toolbar`](api/config/toolbar.md) with built-in and custom buttons
 
-- Static [**menubar**](api/config/menubar.md) that can be shown or hidden
+- Static [`menubar`](api/config/menubar.md) that can be shown or hidden
 
 - Image uploading with optional server [upload](api/config/image-upload-url.md) or inline base64 embedding, rich formatting, custom styling, and full screen mode
 
@@ -36,7 +36,7 @@ The RichText menubar provides access to editing actions such as creating a new d
 Use the [`menubar`](api/config/menubar.md) property to toggle its visibility. While the menubar can be enabled or disabled, its contents are not configurable at this time.
 
 <div className="img_border">
-![Menubar](./assets/richtext/menubar.png)
+![DHTMLX RichText menubar with document and file actions](/img/richtext/menubar.png)
 </div>
 
 ### Toolbar
@@ -46,7 +46,7 @@ The RichText toolbar provides quick access to text formatting and structural edi
 The [`toolbar`](api/config/toolbar.md) property allows you to fully customize the toolbar’s content and layout. You can enable or disable toolbar, rearrange default controls, or define a fully custom toolbar using an array of predefined button identifiers and custom button objects.
 
 <div className="img_border">
-![Toolbar](./assets/richtext/toolbar.png)
+![DHTMLX RichText toolbar with text formatting controls](/img/richtext/toolbar.png)
 </div>
 
 ### Editor
@@ -57,16 +57,16 @@ The RichText editor is the central area where users create and format content. Y
 
 DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
 
-- **"classic"**
+- `"classic"`
 
 <div className="img_border">
-![Classic mode](./assets/richtext/classic_mode.png)
+![DHTMLX RichText editor in classic layout mode](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"**
+- `"document"`
 
 <div className="img_border">
-![Document mode](./assets/richtext/document_mode.png)
+![DHTMLX RichText editor in document layout mode](/img/richtext/document_mode.png)
 </div>
 
 ## Supported formats
@@ -76,13 +76,13 @@ The RichText editor supports [parsing](api/methods/set-value.md) and [serializat
 #### HTML format
 
 <div className="img_border">
-![HTML format](./assets/richtext/html_format.png)
+![DHTMLX RichText content serialized to HTML format](/img/richtext/html_format.png)
 </div>
 
 #### Text format
 
 <div className="img_border">
-![Text format](./assets/richtext/text_format.png)
+![DHTMLX RichText content serialized to plain text format](/img/richtext/text_format.png)
 </div>
 
 #### Markdown format
@@ -172,5 +172,5 @@ More shortcuts may be introduced in future updates.
 To get actual reference related to RichText keyboard shortcuts, press **Help** and select the **Keyboard shortcuts** option:
 
 <div className="img_border">
-![Keyboard shortcuts](./assets/richtext/shortcut_reference.png)
+![DHTMLX RichText keyboard shortcuts reference window](/img/richtext/shortcut_reference.png)
 </div>

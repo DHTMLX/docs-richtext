@@ -18,7 +18,7 @@ description: You can learn about the resize-image event in the documentation of 
 
 ### Parameters
 
-The callback of the **resize-image** event can take an object with the following parameters:
+The callback of the `resize-image` event can take an object with the following parameters:
 
 - `id` - the image ID
 - `width` - the image width

@@ -18,7 +18,7 @@ description: You can learn about the outdent event in the documentation of the D
 
 ### Parameters
 
-The callback of the **outdent** event can take an object with the following parameters:
+The callback of the `outdent` event can take an object with the following parameter:
 
 - `step` - the step by which indentation was decreased
 

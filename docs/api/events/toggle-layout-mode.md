@@ -18,7 +18,7 @@ description: You can learn about the toggle-layout-mode event in the documentati
 
 ### Parameters
 
-The callback of the **toggle-layout-mode** event can take an object with the following parameters:
+The callback of the `toggle-layout-mode` event can take an object with the following parameters:
 
 - `mode` - the layout mode. The following modes are available: `"classic" | "document"`
 

@@ -9,7 +9,7 @@ description: You can explore how to start working with DHTMLX RichText in the do
 This clear and comprehensive tutorial will guide your through the steps you need to take in order to get a fully functional RichText on a page.
 
 <div className="img_border">
-![DHTMLX RichText Classic Mode](./assets/richtext/classic_mode.png)
+![DHTMLX RichText WYSIWYG editor running on a web page](/img/richtext/classic_mode.png)
 </div>
 
 ## Step 1. Including source files
@@ -86,7 +86,7 @@ As parameters, the constructor takes any valid CSS selector of HTML container wh
 
 Next you can specify configuration properties you want the RichText component to have when initialized.
 
-To start working with RichText, first you need to provide the initial data for editor via the [`value`](api/config/value.md) property. Beside this, you can enable [**menubar**](api/config/menubar.md), customize [**toolbar**](api/config/toolbar.md), specify [**fullscreen**](api/config/fullscreen-mode.md) and [**layout**](api/config/layout-mode.md) modes, apply new [**locale**](api/config/locale.md) as well as [**default styles**](api/config/default-styles.md).
+To start working with RichText, first you need to provide the initial data for editor via the [`value`](api/config/value.md) property. Beside this, you can enable [`menubar`](api/config/menubar.md), customize [`toolbar`](api/config/toolbar.md), specify [**fullscreen**](api/config/fullscreen-mode.md) and [**layout**](api/config/layout-mode.md) modes, apply new [`locale`](api/config/locale.md) as well as [**default styles**](api/config/default-styles.md).
 
 ~~~jsx {2-12}
 const editor = new richtext.Richtext("#root", {

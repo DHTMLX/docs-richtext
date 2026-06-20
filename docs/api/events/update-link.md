@@ -18,7 +18,7 @@ description: You can learn about the update-link event in the documentation of t
 
 ### Parameters
 
-The callback of the **update-link** event can take an object with the following parameters:
+The callback of the `update-link` event can take an object with the following parameters:
 
 - `id` - the link ID
 - `url` - the modified url

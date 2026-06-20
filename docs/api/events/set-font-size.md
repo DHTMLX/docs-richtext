@@ -18,7 +18,7 @@ description: You can learn about the set-font-size event in the documentation of
 
 ### Parameters
 
-The callback of the **set-font-size** event can take an object with the following parameter:
+The callback of the `set-font-size` event can take an object with the following parameter:
 
 - `fontSize` - a font size to be applied
 

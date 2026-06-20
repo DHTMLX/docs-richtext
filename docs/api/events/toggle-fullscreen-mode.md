@@ -18,7 +18,7 @@ description: You can learn about the toggle-fullscreen-mode event in the documen
 
 ### Parameters
 
-The callback of the **toggle-fullscreen-mode** event can take an object with the following parameter:
+The callback of the `toggle-fullscreen-mode` event can take an object with the following parameter:
 
 - `mode` - enables a fullscreen mode
 
