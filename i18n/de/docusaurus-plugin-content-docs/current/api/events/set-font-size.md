@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **set-font-size**-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
+Der Callback des `set-font-size`-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
 
 - `fontSize` - eine anzuwendende Schriftgröße
 

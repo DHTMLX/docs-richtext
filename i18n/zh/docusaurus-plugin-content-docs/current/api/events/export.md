@@ -25,7 +25,7 @@ interface IExportOptions {
 
 ### 参数 {#parameters}
 
-**export** 事件的回调函数可接收一个包含以下参数的对象：
+`export` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `format` - 文件格式
 - `url` - 文件导出的基础 URL

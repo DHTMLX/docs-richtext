@@ -20,7 +20,7 @@ type TListType = "bulleted" | "numbered";
 
 ### Parameters
 
-The callback of the **insert-list** event can take an object with the following parameter:
+The callback of the `insert-list` event can take an object with the following parameter:
 
 - `type` - the type of the inserted list. You can specify the following values:
     - `"bulleted"` - bulleted list

@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **create-new**-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
+Der Callback des `create-new`-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
 
 - `reset` - setzt den Verlauf zurück, wenn eine neue Datei erstellt wird
 

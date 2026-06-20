@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 set-f
 
 ### 参数 {#parameters}
 
-**set-font-family** 事件的回调函数可接收一个包含以下参数的对象：
+`set-font-family` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `fontFamily` - 要应用的字体系列。可用字体如下：`"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 

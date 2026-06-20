@@ -20,7 +20,7 @@ type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 ### Parameters
 
-The callback of the **set-text-style** event can take an object with the following parameters:
+The callback of the `set-text-style` event can take an object with the following parameters:
 
 - `tag` - a text style
 

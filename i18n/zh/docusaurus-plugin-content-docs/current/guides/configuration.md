@@ -22,13 +22,13 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解有关
 
 RichText 支持两种编辑区域的布局模式：
 
-- **"classic"** — 编辑区域填满整个页面
+- `"classic"` — 编辑区域填满整个页面
 
 <div className="img_border">
 ![经典模式](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"** — 编辑区域模拟文档页面
+- `"document"` — 编辑区域模拟文档页面
 
 <div className="img_border">
 ![文档模式](/img/richtext/document_mode.png)

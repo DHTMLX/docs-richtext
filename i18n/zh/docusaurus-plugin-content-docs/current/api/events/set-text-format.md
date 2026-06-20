@@ -29,7 +29,7 @@ interface ITextFormat {
 
 ### 参数 {#parameters}
 
-**set-text-format** 事件的回调函数可接收一个包含以下参数的对象：
+`set-text-format` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `bold` - 粗体文本格式
 - `italic` - 斜体文本格式

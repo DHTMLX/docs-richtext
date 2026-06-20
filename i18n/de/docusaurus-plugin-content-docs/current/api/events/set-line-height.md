@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **set-line-height**-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
+Der Callback des `set-line-height`-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
 
 - `lineHeight` - eine Zeilenhöhe
 

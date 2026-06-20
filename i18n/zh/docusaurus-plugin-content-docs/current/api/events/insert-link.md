@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 inser
 
 ### 参数 {#parameters}
 
-**update-link** 事件的回调函数可以接收一个包含以下参数的对象：
+`insert-link` 事件的回调函数可以接收一个包含以下参数的对象：
 
 - `url` - 要插入的 URL
 

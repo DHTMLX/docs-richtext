@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 updat
 
 ### 参数 {#parameters}
 
-**update-link** 事件的回调函数可以接收一个包含以下参数的对象：
+`update-link` 事件的回调函数可以接收一个包含以下参数的对象：
 
 - `id` - 链接 ID
 - `url` - 修改后的 url

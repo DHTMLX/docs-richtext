@@ -20,7 +20,7 @@ type TListType = "bulleted" | "numbered";
 
 ### 参数 {#parameters}
 
-**insert-list** 事件的回调函数可接收一个包含以下参数的对象：
+`insert-list` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `type` - 插入列表的类型。可指定以下值：
     - `"bulleted"` - 无序列表

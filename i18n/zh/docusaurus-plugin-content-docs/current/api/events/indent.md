@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 inden
 
 ### 参数 {#parameters}
 
-**indent** 事件的回调函数可以接收一个包含以下参数的对象：
+`indent` 事件的回调函数可以接收一个包含以下参数的对象：
 
 - `step` - 缩进增加的步长
 

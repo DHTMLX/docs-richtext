@@ -20,7 +20,7 @@ type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 ### 매개변수 {#parameters}
 
-**set-text-style** 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
+`set-text-style` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
 - `tag` - 텍스트 스타일
 

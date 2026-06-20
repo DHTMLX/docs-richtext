@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 toggle-shortcut-info 
 
 ### 매개변수 {#parameters}
 
-**toggle-shortcut-info** 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
+`toggle-shortcut-info` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
 - `mode` - 단축키 정보를 활성화합니다. `true`이면 단축키 정보 팝업을 표시하고, `false`이면 단축키 정보 팝업을 숨깁니다
 

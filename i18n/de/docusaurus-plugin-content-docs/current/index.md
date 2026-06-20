@@ -15,9 +15,9 @@ Die **DHTMLX RichText**-Komponente bietet folgende Funktionen:
 
 - Inhaltsserialisierung in HTML, Klartext und Markdown
 
-- Konfigurierbare [**Toolbar**](api/config/toolbar.md) mit integrierten und benutzerdefinierten Schaltflächen
+- Konfigurierbare [`toolbar`](api/config/toolbar.md) mit integrierten und benutzerdefinierten Schaltflächen
 
-- Statische [**Menüleiste**](api/config/menubar.md), die ein- oder ausgeblendet werden kann
+- Statische [`menubar`](api/config/menubar.md), die ein- oder ausgeblendet werden kann
 
 - Bild-Upload mit optionalem Server-[Upload](api/config/image-upload-url.md) oder eingebetteter Base64-Kodierung, umfangreiche Formatierung, benutzerdefinierte Gestaltung und Vollbildmodus
 

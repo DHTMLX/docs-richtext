@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **resize-image**-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
+Der Callback des `resize-image`-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
 
 - `id` - die Bild-ID
 - `width` - die Breite des Bildes

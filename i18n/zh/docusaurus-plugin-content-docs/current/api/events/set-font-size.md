@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 set-f
 
 ### 参数 {#parameters}
 
-**set-font-size** 事件的回调函数可以接受一个包含以下参数的对象：
+`set-font-size` 事件的回调函数可以接受一个包含以下参数的对象：
 
 - `fontSize` - 要应用的字体大小
 

@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **toggle-shortcut-info**-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
+Der Callback des `toggle-shortcut-info`-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
 
 - `mode` - aktiviert eine Shortcut-Info; `true`, um das Shortcut-Info-Popup anzuzeigen, `false`, um es auszublenden
 

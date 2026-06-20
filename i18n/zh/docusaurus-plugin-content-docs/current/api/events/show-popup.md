@@ -23,7 +23,7 @@ interface IPopupConfig {
 
 ### 参数 {#parameters}
 
-**show-popup** 事件的回调函数可接收一个包含以下参数的对象：
+`show-popup` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `type` - 弹出框的类型
 - `image` - 提供对附加上下文的访问（当前光标是否指向图片）

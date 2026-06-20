@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 resiz
 
 ### 参数 {#parameters}
 
-**resize-image** 事件的回调函数可接受一个包含以下参数的对象：
+`resize-image` 事件的回调函数可接受一个包含以下参数的对象：
 
 - `id` - 图片 ID
 - `width` - 图片宽度

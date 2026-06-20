@@ -20,7 +20,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 align
 
 ### 参数 {#parameters}
 
-**align** 事件的回调函数可接收一个包含以下参数的对象：
+`align` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `align` - 文本对齐方式。可指定以下值之一：`"left" | "center" | "right" | "justify"`
 

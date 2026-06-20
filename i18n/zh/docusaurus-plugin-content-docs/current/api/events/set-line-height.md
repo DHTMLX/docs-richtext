@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 set-l
 
 ### 参数 {#parameters}
 
-**set-line-height** 事件的回调函数可接收一个包含以下参数的对象：
+`set-line-height` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `lineHeight` - 行高值
 

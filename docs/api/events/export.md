@@ -25,7 +25,7 @@ interface IExportOptions {
 
 ### Parameters
 
-The callback of **export** event can take an object with the following parameters:
+The callback of `export` event can take an object with the following parameters:
 
 - `format` - a file format
 - `url` - a base URL for file export

@@ -15,9 +15,9 @@ description: You can have an overview of DHTMLX JavaScript RichText library in t
 
 - Content serialization to HTML, plain text, and Markdown
 
-- Configurable [**toolbar**](api/config/toolbar.md) with built-in and custom buttons
+- Configurable [`toolbar`](api/config/toolbar.md) with built-in and custom buttons
 
-- Static [**menubar**](api/config/menubar.md) that can be shown or hidden
+- Static [`menubar`](api/config/menubar.md) that can be shown or hidden
 
 - Image uploading with optional server [upload](api/config/image-upload-url.md) or inline base64 embedding, rich formatting, custom styling, and full screen mode
 
@@ -57,13 +57,13 @@ The RichText editor is the central area where users create and format content. Y
 
 DHTMLX RichText can work with content in "classic" and "document" modes. You can choose the most suitable mode to feel comfortable while editing text. Use the [`layoutMode`](api/config/layout-mode.md) property to switch modes programatically.
 
-- **"classic"**
+- `"classic"`
 
 <div className="img_border">
 ![Classic mode](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"**
+- `"document"`
 
 <div className="img_border">
 ![Document mode](/img/richtext/document_mode.png)

@@ -86,7 +86,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解如何
 
 接下来，您可以指定 RichText 组件在初始化时所需的配置属性。
 
-要开始使用 RichText，首先需要通过 [`value`](api/config/value.md) 属性为编辑器提供初始数据。此外，您还可以启用 [**menubar**](api/config/menubar.md)，自定义 [**toolbar**](api/config/toolbar.md)，指定 [**fullscreen**](api/config/fullscreen-mode.md) 和 [**layout**](api/config/layout-mode.md) 模式，应用新的 [**locale**](api/config/locale.md) 以及 [**默认样式**](api/config/default-styles.md)。
+要开始使用 RichText，首先需要通过 [`value`](api/config/value.md) 属性为编辑器提供初始数据。此外，您还可以启用 [`menubar`](api/config/menubar.md)，自定义 [`toolbar`](api/config/toolbar.md)，指定 [**fullscreen**](api/config/fullscreen-mode.md) 和 [**layout**](api/config/layout-mode.md) 模式，应用新的 [`locale`](api/config/locale.md) 以及 [**默认样式**](api/config/default-styles.md)。
 
 ~~~jsx {2-12}
 const editor = new richtext.Richtext("#root", {

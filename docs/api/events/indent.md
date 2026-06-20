@@ -18,7 +18,7 @@ description: You can learn about the indent event in the documentation of the DH
 
 ### Parameters
 
-The callback of the **indent** event can take an object with the following parameters:
+The callback of the `indent` event can take an object with the following parameters:
 
 - `step` - the step by which indentation was increased
 

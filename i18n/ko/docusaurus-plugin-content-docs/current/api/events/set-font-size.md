@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 set-font-si
 
 ### 파라미터 {#parameters}
 
-**set-font-size** 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
+`set-font-size` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 
 - `fontSize` - 적용할 글꼴 크기
 

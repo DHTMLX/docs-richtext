@@ -23,7 +23,7 @@ interface ITextColor {
 
 ### 参数 {#parameters}
 
-**set-text-color** 事件的回调函数可接收一个包含以下参数的对象：
+`set-text-color` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `color` - 文本颜色
 - `background` - 文本背景颜色

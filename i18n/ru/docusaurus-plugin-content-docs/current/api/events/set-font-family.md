@@ -18,7 +18,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 
 ### Параметры {#parameters}
 
-Колбэк события **set-font-family** может принимать объект со следующим параметром:
+Колбэк события `set-font-family` может принимать объект со следующим параметром:
 
 - `fontFamily` - семейство шрифтов для применения. Доступны следующие шрифты: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 

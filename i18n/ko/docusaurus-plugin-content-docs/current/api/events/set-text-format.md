@@ -29,7 +29,7 @@ interface ITextFormat {
 
 ### 파라미터 {#parameters}
 
-**set-text-format** 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
+`set-text-format` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 
 - `bold` - 굵게 텍스트 형식
 - `italic` - 기울임꼴 텍스트 형식

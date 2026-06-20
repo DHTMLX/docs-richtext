@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 create-new 
 
 ### 파라미터 {#parameters}
 
-**create-new** 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
+`create-new` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 
 - `reset` - 새 파일을 생성할 때 기록(history)을 초기화합니다
 

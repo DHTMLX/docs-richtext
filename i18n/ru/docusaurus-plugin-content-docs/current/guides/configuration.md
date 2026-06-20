@@ -22,13 +22,13 @@ description: В документации библиотеки DHTMLX JavaScript 
 
 RichText поддерживает два режима макета для области редактирования:
 
-- **"classic"** — область редактирования занимает всю страницу
+- `"classic"` — область редактирования занимает всю страницу
 
 <div className="img_border">
 ![Классический режим](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"** — область редактирования имитирует страницу документа
+- `"document"` — область редактирования имитирует страницу документа
 
 <div className="img_border">
 ![Режим документа](/img/richtext/document_mode.png)

@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **set-font-family**-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
+Der Callback des `set-font-family`-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
 
 - `fontFamily` - eine anzuwendende Schriftfamilie. Folgende Schriftarten stehen zur Verfügung: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 

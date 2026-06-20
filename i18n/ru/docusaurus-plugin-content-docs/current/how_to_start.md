@@ -86,7 +86,7 @@ description: Узнайте, как начать работу с DHTMLX RichText
 
 Далее вы можете указать свойства конфигурации, которые должен иметь компонент RichText при инициализации.
 
-Чтобы начать работу с RichText, сначала нужно передать начальные данные в редактор через свойство [`value`](api/config/value.md). Кроме того, вы можете включить [**menubar**](api/config/menubar.md), настроить [**toolbar**](api/config/toolbar.md), указать режимы [**fullscreen**](api/config/fullscreen-mode.md) и [**layout**](api/config/layout-mode.md), применить новую [**локаль**](api/config/locale.md), а также [**стили по умолчанию**](api/config/default-styles.md).
+Чтобы начать работу с RichText, сначала нужно передать начальные данные в редактор через свойство [`value`](api/config/value.md). Кроме того, вы можете включить [`menubar`](api/config/menubar.md), настроить [`toolbar`](api/config/toolbar.md), указать режимы [**fullscreen**](api/config/fullscreen-mode.md) и [**layout**](api/config/layout-mode.md), применить новую [`locale`](api/config/locale.md), а также [**стили по умолчанию**](api/config/default-styles.md).
 
 ~~~jsx {2-12}
 const editor = new richtext.Richtext("#root", {

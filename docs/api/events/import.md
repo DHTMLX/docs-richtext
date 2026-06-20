@@ -18,7 +18,7 @@ description: You can learn about the import event in the documentation of the DH
 
 ### Parameters
 
-The callback of **import** event can take an object with the following parameter:
+The callback of `import` event can take an object with the following parameter:
 
 - `html` - a text value in the html format
 

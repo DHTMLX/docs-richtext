@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **toggle-layout-mode**-Events kann ein Objekt mit folgenden Parametern entgegennehmen:
+Der Callback des `toggle-layout-mode`-Events kann ein Objekt mit folgenden Parametern entgegennehmen:
 
 - `mode` - der Layout-Modus. Folgende Modi sind verfügbar: `"classic" | "document"`
 

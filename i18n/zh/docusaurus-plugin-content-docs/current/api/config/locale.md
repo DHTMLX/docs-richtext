@@ -11,7 +11,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 local
 @short: 可选。一个包含 RichText 本地化标签的对象
 
 :::info[信息]
-**locale** 对象需要包含 RichText 的所有标签及对应的翻译内容。
+`locale` 对象需要包含 RichText 的所有标签及对应的翻译内容。
 :::
 
 ### 用法 {#usage}
@@ -25,7 +25,7 @@ locale?: object;
 默认情况下，RichText 使用**英语**语言包。您也可以将其设置为自定义语言包。
 
 :::tip[提示]
-如需动态切换当前语言包，可以使用 RichText 的 [**setLocale()**](api/methods/set-locale.md) 方法
+如需动态切换当前语言包，可以使用 RichText 的 [`setLocale()`](api/methods/set-locale.md) 方法
 :::
 
 ### 示例 {#example}

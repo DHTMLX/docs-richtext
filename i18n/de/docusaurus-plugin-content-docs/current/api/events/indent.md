@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **indent**-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
+Der Callback des `indent`-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
 
 - `step` - der Schritt, um den der Einzug erhöht wurde
 

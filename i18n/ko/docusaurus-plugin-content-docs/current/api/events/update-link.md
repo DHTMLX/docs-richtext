@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 update-link 이벤트
 
 ### 파라미터 {#parameters}
 
-**update-link** 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
+`update-link` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 
 - `id` - 링크 ID
 - `url` - 수정된 url

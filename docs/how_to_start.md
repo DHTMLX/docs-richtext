@@ -86,7 +86,7 @@ As parameters, the constructor takes any valid CSS selector of HTML container wh
 
 Next you can specify configuration properties you want the RichText component to have when initialized.
 
-To start working with RichText, first you need to provide the initial data for editor via the [`value`](api/config/value.md) property. Beside this, you can enable [**menubar**](api/config/menubar.md), customize [**toolbar**](api/config/toolbar.md), specify [**fullscreen**](api/config/fullscreen-mode.md) and [**layout**](api/config/layout-mode.md) modes, apply new [**locale**](api/config/locale.md) as well as [**default styles**](api/config/default-styles.md).
+To start working with RichText, first you need to provide the initial data for editor via the [`value`](api/config/value.md) property. Beside this, you can enable [`menubar`](api/config/menubar.md), customize [`toolbar`](api/config/toolbar.md), specify [**fullscreen**](api/config/fullscreen-mode.md) and [**layout**](api/config/layout-mode.md) modes, apply new [`locale`](api/config/locale.md) as well as [**default styles**](api/config/default-styles.md).
 
 ~~~jsx {2-12}
 const editor = new richtext.Richtext("#root", {

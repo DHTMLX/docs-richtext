@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 creat
 
 ### 参数 {#parameters}
 
-**create-new** 事件的回调可接受一个包含以下参数的对象：
+`create-new` 事件的回调可接受一个包含以下参数的对象：
 
 - `reset` - 创建新文件时重置历史记录
 

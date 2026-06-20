@@ -11,7 +11,7 @@ description: Sie können mehr über die locale-Konfiguration in der Dokumentatio
 @short: Optional. Ein Objekt, das Lokalisierungsbeschriftungen von RichText enthält
 
 :::info[Info]
-Das **locale**-Objekt muss alle Beschriftungen von RichText mit den entsprechenden Übersetzungen enthalten.
+Das `locale`-Objekt muss alle Beschriftungen von RichText mit den entsprechenden Übersetzungen enthalten.
 :::
 
 ### Verwendung {#usage}
@@ -25,7 +25,7 @@ locale?: object;
 Standardmäßig verwendet RichText die **englische** Locale. Sie können auch eine benutzerdefinierte Locale festlegen.
 
 :::tip[Tipp]
-Um die aktuelle Locale dynamisch zu ändern, können Sie die Methode [**setLocale()**](api/methods/set-locale.md) von RichText verwenden
+Um die aktuelle Locale dynamisch zu ändern, können Sie die Methode [`setLocale()`](api/methods/set-locale.md) von RichText verwenden
 :::
 
 ### Beispiel {#example}

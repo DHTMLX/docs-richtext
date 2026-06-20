@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **update-link**-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
+Der Callback des `update-link`-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
 
 - `id` - die Link-ID
 - `url` - die geänderte URL

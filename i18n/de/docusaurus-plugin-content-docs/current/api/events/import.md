@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **import**-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
+Der Callback des `import`-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
 
 - `html` - ein Textwert im HTML-Format
 

@@ -25,7 +25,7 @@ interface IExportOptions {
 
 ### 매개변수 {#parameters}
 
-**export** 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
+`export` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
 - `format` - 파일 형식
 - `url` - 파일 내보내기에 사용할 기본 URL

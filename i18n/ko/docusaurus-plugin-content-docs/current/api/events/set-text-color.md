@@ -23,7 +23,7 @@ interface ITextColor {
 
 ### 매개변수 {#parameters}
 
-**set-text-color** 이벤트의 callback은 다음 매개변수를 포함한 객체를 받을 수 있습니다:
+`set-text-color` 이벤트의 callback은 다음 매개변수를 포함한 객체를 받을 수 있습니다:
 
 - `color` - 텍스트 색상
 - `background` - 텍스트 배경 색상

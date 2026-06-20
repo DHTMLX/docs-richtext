@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 toggl
 
 ### 参数 {#parameters}
 
-**toggle-fullscreen-mode** 事件的回调函数可以接受一个包含以下参数的对象：
+`toggle-fullscreen-mode` 事件的回调函数可以接受一个包含以下参数的对象：
 
 - `mode` - 启用全屏模式
 

@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-full
 
 ### 매개변수 {#parameters}
 
-**toggle-fullscreen-mode** 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
+`toggle-fullscreen-mode` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
 - `mode` - 전체 화면 모드를 활성화합니다
 

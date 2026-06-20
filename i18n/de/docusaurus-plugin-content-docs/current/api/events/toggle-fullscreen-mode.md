@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **toggle-fullscreen-mode**-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
+Der Callback des `toggle-fullscreen-mode`-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
 
 - `mode` - aktiviert den Vollbildmodus
 

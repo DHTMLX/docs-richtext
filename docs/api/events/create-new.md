@@ -18,7 +18,7 @@ description: You can learn about the create-new event in the documentation of th
 
 ### Parameters
 
-The callback of the **create-new** event can take an object with the following parameter:
+The callback of the `create-new` event can take an object with the following parameter:
 
 - `reset` - resets the history when creating a new file
 

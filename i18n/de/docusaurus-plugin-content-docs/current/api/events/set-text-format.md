@@ -29,7 +29,7 @@ Zur Verarbeitung interner Events können Sie die [**Event-Bus-Methoden**](api/ov
 
 ### Parameter {#parameters}
 
-Der Callback des **set-text-format**-Events kann ein Objekt mit folgenden Parametern entgegennehmen:
+Der Callback des `set-text-format`-Events kann ein Objekt mit folgenden Parametern entgegennehmen:
 
 - `bold` - ein Fettdruck-Textformat
 - `italic` - ein kursives Textformat

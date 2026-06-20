@@ -20,7 +20,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **align**-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
+Der Callback des `align`-Events kann ein Objekt mit dem folgenden Parameter entgegennehmen:
 
 - `align` - eine Textausrichtung. Sie können einen der folgenden Werte angeben: `"left" | "center" | "right" | "justify"`
 

@@ -18,7 +18,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ### Parameter {#parameters}
 
-Der Callback des **update-link**-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
+Der Callback des `insert-link`-Events kann ein Objekt mit folgendem Parameter entgegennehmen:
 
 - `url` - die einzufügende URL
 

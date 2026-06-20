@@ -22,13 +22,13 @@ Sie können das Erscheinungsbild und das Verhalten von RichText mit den folgende
 
 RichText unterstützt zwei Layout-Modi für den Bearbeitungsbereich:
 
-- **"classic"** — der Bearbeitungsbereich füllt die gesamte Seite aus
+- `"classic"` — der Bearbeitungsbereich füllt die gesamte Seite aus
 
 <div className="img_border">
 ![Klassischer Modus](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"** — der Bearbeitungsbereich imitiert eine Dokumentseite
+- `"document"` — der Bearbeitungsbereich imitiert eine Dokumentseite
 
 <div className="img_border">
 ![Dokumentmodus](/img/richtext/document_mode.png)

@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 outde
 
 ### 参数 {#parameters}
 
-**outdent** 事件的回调函数可接收一个包含以下参数的对象：
+`outdent` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `step` - 缩进减少的步长
 

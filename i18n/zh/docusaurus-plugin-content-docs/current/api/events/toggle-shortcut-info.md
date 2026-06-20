@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 toggl
 
 ### 参数 {#parameters}
 
-**toggle-shortcut-info** 事件的回调函数可接收一个包含以下参数的对象：
+`toggle-shortcut-info` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `mode` - 启用快捷键信息；`true` 表示显示快捷键信息弹窗，`false` 表示隐藏快捷键信息弹窗
 

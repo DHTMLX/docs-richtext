@@ -86,7 +86,7 @@ Der Konstruktor nimmt als Parameter einen gültigen CSS-Selektor des HTML-Contai
 
 Als Nächstes können Sie Konfigurationseigenschaften festlegen, die die RichText-Komponente bei der Initialisierung haben soll.
 
-Um mit RichText arbeiten zu können, müssen Sie zunächst die initialen Daten für den Editor über die Eigenschaft [`value`](api/config/value.md) bereitstellen. Darüber hinaus können Sie die [**Menüleiste**](api/config/menubar.md) aktivieren, die [**Toolbar**](api/config/toolbar.md) anpassen, den [**Vollbildmodus**](api/config/fullscreen-mode.md) und den [**Layout-Modus**](api/config/layout-mode.md) festlegen, eine neue [**Locale**](api/config/locale.md) sowie [**Standardstile**](api/config/default-styles.md) anwenden.
+Um mit RichText arbeiten zu können, müssen Sie zunächst die initialen Daten für den Editor über die Eigenschaft [`value`](api/config/value.md) bereitstellen. Darüber hinaus können Sie die [`menubar`](api/config/menubar.md) aktivieren, die [`toolbar`](api/config/toolbar.md) anpassen, den [**Vollbildmodus**](api/config/fullscreen-mode.md) und den [**Layout-Modus**](api/config/layout-mode.md) festlegen, eine neue [`locale`](api/config/locale.md) sowie [**Standardstile**](api/config/default-styles.md) anwenden.
 
 ~~~jsx {2-12}
 const editor = new richtext.Richtext("#root", {

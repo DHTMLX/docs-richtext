@@ -22,13 +22,13 @@ You can configure the RichText appearance and behavior with the following proper
 
 RichText supports two layout modes for the editing area:
 
-- **"classic"** — the edit area fills the entire page
+- `"classic"` — the edit area fills the entire page
 
 <div className="img_border">
 ![Classic mode](/img/richtext/classic_mode.png)
 </div>
 
-- **"document"** — the edit area mimics a document page
+- `"document"` — the edit area mimics a document page
 
 <div className="img_border">
 ![Document mode](/img/richtext/document_mode.png)

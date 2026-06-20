@@ -18,7 +18,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 impor
 
 ### 参数 {#parameters}
 
-**import** 事件的回调函数可接受一个包含以下参数的对象：
+`import` 事件的回调函数可接受一个包含以下参数的对象：
 
 - `html` - HTML 格式的文本值
 

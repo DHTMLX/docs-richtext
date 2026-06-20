@@ -20,7 +20,7 @@ type TListType = "bulleted" | "numbered";
 
 ### 매개변수 {#parameters}
 
-**insert-list** 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
+`insert-list` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
 - `type` - 삽입된 목록의 유형입니다. 다음 값을 지정할 수 있습니다:
     - `"bulleted"` - 글머리 기호 목록

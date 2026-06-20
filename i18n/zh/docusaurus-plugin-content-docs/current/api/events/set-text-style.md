@@ -20,7 +20,7 @@ type TBlockType = "p" | "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 ### 参数 {#parameters}
 
-**set-text-style** 事件的回调函数可接收一个包含以下参数的对象：
+`set-text-style` 事件的回调函数可接收一个包含以下参数的对象：
 
 - `tag` - 文本样式
 

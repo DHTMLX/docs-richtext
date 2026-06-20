@@ -23,7 +23,7 @@ interface IPopupConfig {
 
 ### Parameter {#parameters}
 
-Der Callback des **show-popup**-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
+Der Callback des `show-popup`-Events kann ein Objekt mit den folgenden Parametern entgegennehmen:
 
 - `type` - der Typ des Popups
 - `image` - gibt Zugriff auf zusätzlichen Kontext (zeigt, ob der aktuelle Cursor auf ein Bild zeigt oder nicht)
