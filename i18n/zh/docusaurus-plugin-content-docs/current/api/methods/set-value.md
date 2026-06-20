@@ -24,9 +24,9 @@ setValue: (value: string, encoder?: any): void;
 您可以通过以下方式获取所需的 encoder：
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText;             // 文本 encoder
-const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
-const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
+const fromTextEncoder = richtext.text.fromText;             // 文本编码器
+const fromHTMLEncoder = richtext.html.fromHTML;             // html 编码器
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown 编码器
 ```
 
 ### 示例 {#example}

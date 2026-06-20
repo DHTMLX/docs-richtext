@@ -40,7 +40,7 @@ editor.api.on("import", (obj) => {
 });
 // импорт нового значения
 editor.api.exec("import", {
-    html: "<h2>some value</h2>" // simply calls setValue
+    html: "<h2>some value</h2>" // просто вызывает setValue
 });
 ~~~
 

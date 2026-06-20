@@ -14,7 +14,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 defau
 
 ~~~jsx {}
 defaultStyles?: {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+    "*"?: { // 影响所有块，允许你为所有这些块设置通用属性
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;

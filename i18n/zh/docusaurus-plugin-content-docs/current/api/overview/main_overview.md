@@ -10,7 +10,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中查看 JavaS
 
 ~~~js
 new richtext.RichText("#root", {
-    // configuration parameters
+    // 配置参数
 });
 ~~~
 

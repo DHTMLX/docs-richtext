@@ -60,9 +60,9 @@ new richtext.Richtext("#root", {
         "bold",
         "italic",
         "separator",
-        // other buttons
+        // 기타 버튼
     ],
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 
@@ -80,27 +80,27 @@ new richtext.Richtext("#root", {
 ~~~jsx {6-32}
 new richtext.Richtext("#root", {
     toolbar: [
-        // buttons (strings represent buttons only)
+        // 버튼 (문자열은 버튼만 나타냄)
         "bold",
         "italic",
-        // predefined buttons (user cannot define any other options for these (no labels, tooltips, options, etc.), so only ({ type: "button", id: string })
+        // 사전 정의된 버튼 (이러한 버튼에는 다른 옵션을 정의할 수 없으므로(레이블, 툴팁, 옵션 등 없음), ({ type: "button", id: string })만 사용)
         {
             type: "button",
             id: "fullscreen",
         },
-        // user must specify the correct type if they want to use a predefined control (e.g. richselect/colorpicker)
-        // non-matching types will be ignored (not added to the toolbar)
+        // 사전 정의된 컨트롤을 사용하려면 올바른 type을 지정해야 합니다(예: richselect/colorpicker)
+        // 일치하지 않는 type은 무시됩니다(툴바에 추가되지 않음)
         {
-            type: "richselect", // type: "button" - incorrect, will be ignored
+            type: "richselect", // type: "button" - 올바르지 않으며 무시됩니다
             id: "mode",
         },
-        // custom buttons (supported options are below)
-        // user can only define custom buttons (no richselect/colorpicker support atm)
+        // 커스텀 버튼 (지원되는 옵션은 아래와 같습니다)
+        // 사용자는 커스텀 버튼만 정의할 수 있습니다(현재 richselect/colorpicker는 지원되지 않음)
         {
             type: "button",
             id: "some",
             label: "Some",
-            handler: () => {/* custom logic */}
+            handler: () => {/* 커스텀 로직 */}
         },
         {
             type: "button",
@@ -108,10 +108,10 @@ new richtext.Richtext("#root", {
             icon: "wxo-help",
             label: "Other",
             tooltip: "Some tooltip",
-            handler: () => {/* custom logic */}
+            handler: () => {/* 커스텀 로직 */}
         }
     ],
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 
@@ -122,7 +122,7 @@ new richtext.Richtext("#root", {
 ~~~jsx {2}
 new richtext.Richtext("#root", {
     toolbar: false
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 
@@ -169,20 +169,20 @@ const defaultToolbarButtons = {
 기본 툴바 컨트롤은 RichText 위젯에서 export되며 `richtext.defaultToolbarButtons`를 통해 접근할 수 있습니다.
 
 ```jsx{4}
-// initialize RichText
+// RichText 초기화
 new richtext.Richtext("#root", {
     toolbar: [
         ...richtext.defaultToolbarButtons,
         {
             type: "button",
-            id: "btn1", // button id (cannot overlap with existing button ids if you want to apply custom logic)
-            icon: "wxo-help", // button icon (combines with label)
-            css: "rounded", // css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-            label: "Custom button", // button label (combines with icon)
-            tooltip: "Some tooltip", // tooltip displayed on hover (if not specified, uses the value from "label")
+            id: "btn1", // 버튼 id (커스텀 로직을 적용하려면 기존 버튼 id와 겹치면 안 됩니다)
+            icon: "wxo-help", // 버튼 아이콘 (레이블과 함께 표시됨)
+            css: "rounded", // 컨트롤에 할당된 css 클래스 이름 (기본 지원 클래스: wx-primary, wx-secondary)
+            label: "Custom button", // 버튼 레이블 (아이콘과 함께 표시됨)
+            tooltip: "Some tooltip", // 마우스를 올렸을 때 표시되는 툴팁 (지정하지 않으면 "label"의 값을 사용)
         }
     ]
-    // other configuration properties
+    // 기타 설정 속성
 });
 ```
 :::
@@ -190,25 +190,25 @@ new richtext.Richtext("#root", {
 ### 예제 {#example}
 
 ~~~jsx {3-18}
-// initialize RichText
+// RichText 초기화
 new richtext.Richtext("#root", {
     toolbar: [
         "bold",
         "italic",
         "separator",
-        // custom buttons (all supported options are used below)
-        // user can only define custom buttons (no richselect/colorpicker support at the moment)
+        // 커스텀 버튼 (아래에서 지원되는 모든 옵션을 사용합니다)
+        // 사용자는 커스텀 버튼만 정의할 수 있습니다(현재 richselect/colorpicker는 지원되지 않음)
         {
             type: "button",
-            id: "btn1", // button id (cannot overlap with existing button ids if you want to apply custom logic)
-            icon: "wxo-help", // button icon (combines with label)
-            css: "rounded", // css class name assigned to the control (default supported classes: wx-primary, wx-secondary)
-            label: "Custom button", // button label (combines with icon)
-            tooltip: "Some tooltip", // tooltip displayed on hover (if not specified, uses the value from "label")
-            handler: () => ..., // custom logic attached to this button
+            id: "btn1", // 버튼 id (커스텀 로직을 적용하려면 기존 버튼 id와 겹치면 안 됩니다)
+            icon: "wxo-help", // 버튼 아이콘 (레이블과 함께 표시됨)
+            css: "rounded", // 컨트롤에 할당된 css 클래스 이름 (기본 지원 클래스: wx-primary, wx-secondary)
+            label: "Custom button", // 버튼 레이블 (아이콘과 함께 표시됨)
+            tooltip: "Some tooltip", // 마우스를 올렸을 때 표시되는 툴팁 (지정하지 않으면 "label"의 값을 사용)
+            handler: () => ..., // 이 버튼에 연결된 커스텀 로직
         }
     ]
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 

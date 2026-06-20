@@ -100,7 +100,7 @@ new richtext.Richtext("#root", {
             type: "button",
             id: "some",
             label: "Some",
-            handler: () => {/* custom logic */}
+            handler: () => {/* 自定义逻辑 */}
         },
         {
             type: "button",
@@ -108,7 +108,7 @@ new richtext.Richtext("#root", {
             icon: "wxo-help",
             label: "Other",
             tooltip: "Some tooltip",
-            handler: () => {/* custom logic */}
+            handler: () => {/* 自定义逻辑 */}
         }
     ],
     // 其他配置属性

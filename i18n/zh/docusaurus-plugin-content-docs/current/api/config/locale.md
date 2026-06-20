@@ -31,12 +31,12 @@ locale?: object;
 ### 示例 {#example}
 
 ~~~jsx {3}
-// initialize RichText
+// 初始化 RichText
 const editor = new richtext.RichText("#root", {
-    locale: richtext.locales.cn // the Chineese locale will be set initially
-    // locale: richtext.locales.en // the English locale will be set initially
-    // locale: richtext.locales.de // the Germany locale will be set initially
-    // other configuration properties
+    locale: richtext.locales.cn // 初始将设置为中文语言包
+    // locale: richtext.locales.en // 初始将设置为英语语言包
+    // locale: richtext.locales.de // 初始将设置为德语语言包
+    // 其他配置属性
 });
 ~~~
 

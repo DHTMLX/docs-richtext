@@ -24,7 +24,7 @@ api.setNext(next: any): void;
 
 ~~~jsx {10-11}
 const server = "https://some-backend-url";
-// Assume that you have a custom server service class named someServerService
+// someServerService라는 이름의 커스텀 서버 서비스 클래스가 있다고 가정합니다
 const someServerService = new ServerDataService(server);
 
 fetch(server + "/data").then((res) => res.json()).then((data) => {
@@ -32,7 +32,7 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
         value: data
     });
 
-    // Integrate someServerService into the Event Bus order of widget
+    // someServerService를 위젯의 Event Bus 순서에 통합
     editor.api.setNext(someServerService);
 });
 ~~~

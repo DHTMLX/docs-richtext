@@ -24,16 +24,16 @@ setValue: (value: string, encoder?: any): void;
 필요한 encoder는 다음과 같이 가져올 수 있습니다:
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText;             // text encoder
-const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
-const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
+const fromTextEncoder = richtext.text.fromText;             // 텍스트 encoder
+const fromHTMLEncoder = richtext.html.fromHTML;             // HTML encoder
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // 마크다운 encoder
 ```
 
 ### 예제 {#example}
 
 ~~~jsx {7-8}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 설정 속성
 });
 
 const editor_value = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."

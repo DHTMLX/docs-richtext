@@ -23,16 +23,16 @@ getValue(encoder?: any): string;
 Получить нужный энкодер можно следующим образом:
 
 ```jsx
-const toTextEncoder = richtext.text.toText;             // text encoder
-const toHTMLEncoder = richtext.html.toHTML;             // html encoder
-const toMarkdownEncoder = richtext.markdown.toMarkdown; // markdown encoder
+const toTextEncoder = richtext.text.toText;             // текстовый энкодер
+const toHTMLEncoder = richtext.html.toHTML;             // HTML-энкодер
+const toMarkdownEncoder = richtext.markdown.toMarkdown; // Markdown-энкодер
 ```
 
 ### Пример {#example}
 
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {
-    value: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." // sets the default value (HTML format)
+    value: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos." // задаёт значение по умолчанию (формат HTML)
     // другие свойства конфигурации
 });
 

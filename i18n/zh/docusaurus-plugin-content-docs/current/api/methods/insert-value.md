@@ -24,19 +24,19 @@ insertValue: (value: string, encoder?: any): void;
 可通过以下方式获取所需的 encoder：
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText;             // text encoder
-const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
-const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
+const fromTextEncoder = richtext.text.fromText;             // 文本编码器
+const fromHTMLEncoder = richtext.html.fromHTML;             // html 编码器
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown 编码器
 ```
 
 ### 示例 {#example}
 
 ~~~jsx {6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 配置属性
 });
 
-// inserts an HTML link with custom attributes at the cursor position
+// 在光标位置插入带有自定义属性的 HTML 链接
 editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>");
 ~~~
 

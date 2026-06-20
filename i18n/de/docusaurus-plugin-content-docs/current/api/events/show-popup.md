@@ -44,7 +44,7 @@ editor.api.on("show-popup", (obj) => {
     console.log(obj);
     console.log("The popup was shown/hidden");
 });
-// show-popup the text to the left
+// show-popup den Text links anzeigen
 editor.api.exec("show-popup", {
     type: "link"
 }); 

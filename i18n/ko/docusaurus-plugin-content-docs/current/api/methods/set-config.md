@@ -29,7 +29,7 @@ setConfig(config: { [key:any]: any }): void;
 ~~~jsx {6-8}
 const editor = new richtext.Richtext("#root", {
     value: "<h1>Some text</h1>",
-    // other configuration properties
+    // 기타 설정 속성
 });
 
 editor.setConfig({

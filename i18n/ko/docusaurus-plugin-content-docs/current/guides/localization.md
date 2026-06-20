@@ -15,7 +15,7 @@ RichText는 모든 인터페이스 레이블의 로컬라이제이션을 지원�
 ~~~jsx
 const en = {
     richtext: {
-        // buttons/actions
+        // 버튼/작업
         Undo: "Undo",
         Redo: "Redo",
         Style: "Style",
@@ -46,7 +46,7 @@ const en = {
         "Classic mode": "Classic mode",
         "Document mode": "Document mode",
 
-        // menubar exclusive options
+        // 메뉴바 전용 옵션
         File: "File",
         Import: "Import",
         Export: "Export",
@@ -76,11 +76,11 @@ const en = {
         Justified: "Justified",
         "Keyboard shortcuts": "Keyboard shortcuts",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "Operation failed. Please check your browser's clipboard permissions.",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "Heading",
         Quote: "Quote",
         Paragraph: "Paragraph",
@@ -90,21 +90,21 @@ const en = {
         normal: "normal",
         default: "default",
 
-        // lists
+        // 목록
         "Bulleted list": "Bulleted list",
         "Numbered list": "Numbered list",
 
-        // links
+        // 링크
         "Enter text to display": "Enter text to display",
         "Paste link": "Paste link",
         "Link copied to clipboard": "Link copied to clipboard",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "Text formatting",
         Editing: "Editing",
         "Special actions": "Special actions",
 
-        // colors
+        // 색상
         Black: "Black",
         Gray: "Gray",
         White: "White",
@@ -119,7 +119,7 @@ const en = {
         Indigo: "Indigo",
         Magenta: "Magenta",
 
-        // shades
+        // 음영
         "Light gray": "Light gray",
         "Medium gray": "Medium gray",
         "Dark gray": "Dark gray",
@@ -167,7 +167,7 @@ RichText에는 내장 독일어(`de`) 및 중국어(`cn`) 로케일도 포함되
 ~~~jsx
 const de = {
     richtext: {
-        // buttons/actions
+        // 버튼/작업
         Undo: "Rückgängig",
         Redo: "Wiederholen",
         Style: "Stil",
@@ -198,7 +198,7 @@ const de = {
         "Classic mode": "Klassischer Modus",
         "Document mode": "Dokumentenmodus",
 
-        // menubar exclusive options
+        // 메뉴바 전용 옵션
         File: "Datei",
         Import: "Importieren",
         Export: "Exportieren",
@@ -228,11 +228,11 @@ const de = {
         Justified: "Blocksatz",
         "Keyboard shortcuts": "Tastenkürzel",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "Operation fehlgeschlagen. Bitte überprüfen Sie die Berechtigungen für die Zwischenablage Ihres Browsers.",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "Überschrift",
         Quote: "Zitat",
         Paragraph: "Absatz",
@@ -242,21 +242,21 @@ const de = {
         normal: "normal",
         default: "standard",
 
-        // lists
+        // 목록
         "Bulleted list": "Liste mit Aufzählungszeichen",
         "Numbered list": "Nummerierte Liste",
 
-        // links
+        // 링크
         "Enter text to display": "Text zum Anzeigen eingeben",
         "Paste link": "Link einfügen",
         "Link copied to clipboard": "Link in die Zwischenablage kopiert",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "Textformatierung",
         Editing: "Bearbeitung",
         "Special actions": "Spezielle Aktionen",
 
-        // colors
+        // 색상
         Black: "Schwarz",
         Gray: "Grau",
         White: "Weiß",
@@ -271,7 +271,7 @@ const de = {
         Indigo: "Indigo",
         Magenta: "Magenta",
 
-        // shades
+        // 음영
         "Light gray": "Hellgrau",
         "Medium gray": "Mittelgrau",
         "Dark gray": "Dunkelgrau",
@@ -316,7 +316,7 @@ const de = {
 ~~~jsx
 const cn = {
     richtext: {
-        // buttons/actions
+        // 버튼/작업
         Undo: "撤销",
         Redo: "重做",
         Style: "样式",
@@ -347,7 +347,7 @@ const cn = {
         "Classic mode": "经典模式",
         "Document mode": "文档模式",
 
-        // menubar exclusive options
+        // 메뉴바 전용 옵션
         File: "文件",
         Import: "导入",
         Export: "导出",
@@ -377,11 +377,11 @@ const cn = {
         Justified: "两端对齐",
         "Keyboard shortcuts": "键盘快捷键",
 
-        // clipboard
+        // 클립보드
         "Operation failed. Please check your browser's clipboard permissions.":
             "操作失败。请检查浏览器的剪贴板权限。",
 
-        // block style dropdown
+        // 블록 스타일 드롭다운
         Heading: "标题",
         Quote: "引用",
         Paragraph: "段落",
@@ -391,21 +391,21 @@ const cn = {
         normal: "普通的",
         default: "默认",
 
-        // lists
+        // 목록
         "Bulleted list": "项目符号列表",
         "Numbered list": "编号列表",
 
-        // links
+        // 링크
         "Enter text to display": "输入要显示的文本",
         "Paste link": "粘贴链接",
         "Link copied to clipboard": "链接已复制到剪贴板",
 
-        // shortcut groups
+        // 단축키 그룹
         "Text formatting": "文本格式化",
         Editing: "编辑",
         "Special actions": "特殊操作",
 
-        // colors
+        // 색상
         Black: "黑色",
         Gray: "灰色",
         White: "白色",
@@ -420,7 +420,7 @@ const cn = {
         Indigo: "靛蓝色",
         Magenta: "洋红色",
 
-        // shades
+        // 음영
         "Light gray": "浅灰色",
         "Medium gray": "中灰色",
         "Dark gray": "深灰色",
@@ -470,7 +470,7 @@ const cn = {
 ~~~jsx
 const editor = new richtext.Richtext("#root", {
     locale: richtext.locales.de
-    // other configuration properties
+    // 기타 설정 속성
 });
 ~~~
 

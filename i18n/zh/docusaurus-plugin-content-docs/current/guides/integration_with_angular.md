@@ -87,26 +87,26 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation 
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: "richtext", // use the "richtext" selector in app.component.ts as <richtext />
-    styleUrls: ["./richtext.component.css"], // include the css file
+    selector: "richtext", // 在 app.component.ts 中以 <richtext /> 的形式使用 "richtext" 选择器
+    styleUrls: ["./richtext.component.css"], // 引入 css 文件
     template:  `<div class = "component_container">
                     <div #richtext_container class = "widget"></div>
                 </div>`
 })
 
 export class RichTextComponent implements OnInit, OnDestroy {
-    // container for RichText
+    // RichText 的容器
     @ViewChild("richtext_container", { static: true }) richtext_container!: ElementRef;
 
     private _editor!: Richtext;
 
     ngOnInit() {
-        // initialize the RichText component
+        // 初始化 RichText 组件
         this._editor = new Richtext(this.richtext_container.nativeElement, {});
     }
 
     ngOnDestroy(): void {
-        this._editor.destructor(); // destroy RichText
+        this._editor.destructor(); // 销毁 RichText
     }
 }
 ~~~
@@ -116,10 +116,10 @@ export class RichTextComponent implements OnInit, OnDestroy {
 在 *src/app/richtext/* 目录下创建 *richtext.component.css* 文件，为 RichText 及其容器添加样式：
 
 ~~~css title="richtext.component.css"
-/* import RichText styles */
+/* 导入 RichText 样式 */
 @import "@dhx/trial-richtext/dist/richtext.css";
 
-/* base page styles */
+/* 页面基础样式 */
 html,
 body{
     height: 100%;
@@ -127,13 +127,13 @@ body{
     margin: 0;
 }
 
-/* RichText container */
+/* RichText 容器 */
 .component_container {
     height: 100%; 
     margin: 0 auto;
 }
 
-/* RichText widget */
+/* RichText 控件 */
 .widget {
     height: calc(100% - 56px);
 }
@@ -157,7 +157,7 @@ export function getData() {
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext } from '@dhx/trial-richtext';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // 导入数据
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -175,10 +175,10 @@ export class RichTextComponent implements OnInit, OnDestroy {
     private _editor!: Richtext;
 
     ngOnInit() {
-        const { value } = getData(); // extract the value from the data module
+        const { value } = getData(); // 从 data 模块中提取值
         this._editor = new Richtext(this.richtext_container.nativeElement, {
             value
-            // other configuration properties 
+            // 其他配置属性 
         });
     }
 
@@ -192,7 +192,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 
 ~~~jsx {} title="richtext.component.ts"
 import { Richtext } from '@dhx/trial-richtext';
-import { getData } from "./data"; // import data
+import { getData } from "./data"; // 导入数据
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -210,12 +210,12 @@ export class RichTextComponent implements OnInit, OnDestroy {
     private _editor!: Richtext;
 
     ngOnInit() {
-        const { value } = getData(); // extract the value from the data module
+        const { value } = getData(); // 从 data 模块中提取值
         this._editor = new Richtext(this.richtext_container.nativeElement, {
-            // other configuration properties 
+            // 其他配置属性 
         });
 
-        // apply the data via the setValue() method
+        // 通过 setValue() 方法应用数据
         this._editor.setValue(value); 
     }
 

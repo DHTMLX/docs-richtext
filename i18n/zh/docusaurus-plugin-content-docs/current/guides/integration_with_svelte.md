@@ -135,7 +135,7 @@ body {
     margin: 0 auto;
 }
 
-/* RichText widget */
+/* RichText 控件 */
 .widget {
     height: calc(100% - 56px);
 }

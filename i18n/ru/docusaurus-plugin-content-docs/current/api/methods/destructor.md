@@ -20,9 +20,9 @@ destructor(): void;
 
 ~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
 
-// remove RichText
+// удаление RichText
 editor.destructor();
 ~~~

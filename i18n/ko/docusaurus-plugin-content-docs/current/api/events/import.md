@@ -40,7 +40,7 @@ editor.api.on("import", (obj) => {
 });
 // 새 값 가져오기
 editor.api.exec("import", {
-    html: "<h2>some value</h2>" // simply calls setValue
+    html: "<h2>some value</h2>" // 단순히 setValue를 호출합니다
 });
 ~~~
 

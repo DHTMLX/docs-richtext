@@ -57,7 +57,7 @@ new Richtext("#root", {
                 <div class="user-name">${obj.data.name}</div>
             </div>`;
         }
-        // other triggers (for example, "#") use the plain label
+        // 다른 트리거(예: "#")는 일반 레이블을 사용합니다
         return obj.data.label;
     })
 });

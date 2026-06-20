@@ -14,7 +14,7 @@ description: In der Dokumentation der DHTMLX JavaScript RichText-Bibliothek erfa
 
 ~~~jsx {}
 defaultStyles?: {
-    "*"?: { // affects all blocks, allowing you to set common properties for all of these blocks
+    "*"?: { // betrifft alle Blöcke und ermöglicht es, gemeinsame Eigenschaften für all diese Blöcke festzulegen
         "font-family"?: string; // "Roboto"| "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"
         "font-size"?: string; // "12px" | "14px" | "16px" | "18px" | "20px" | "24px" | "28px" | "32px" | "36px"
         color?: string;

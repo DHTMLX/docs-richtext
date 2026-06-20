@@ -130,7 +130,7 @@ const editor = new Richtext("#root", {
             action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
         }
     ],
-    // render the emoji itself (not just its label) in the dropdown
+    // 드롭다운에 (레이블만이 아니라) 이모지 자체를 렌더링
     triggerTemplate: template(({ data }) => `${emojiFromCode(data.code)} ${data.label}`)
 });
 
@@ -146,12 +146,12 @@ function emojiFromCode(code) {
 ~~~jsx {18-26,31-33,41}
 const { template, Richtext } = richtext;
 
-// header items carry no `code` field; emoji items include one
+// 헤더 항목에는 `code` 필드가 없습니다. 이모지 항목에는 있습니다
 const emoji = [
-    { id: "$smileys", label: "Smileys",                 category: 1 }, // category
+    { id: "$smileys", label: "Smileys",                 category: 1 }, // 카테고리
     { id: "grinning", label: "grinning", code: "1F600", category: 1 },
     { id: "smile",    label: "smile",    code: "1F604", category: 1 },
-    { id: "$animals", label: "Animals",                 category: 2 }, // category
+    { id: "$animals", label: "Animals",                 category: 2 }, // 카테고리
     { id: "dog",      label: "dog",      code: "1F436", category: 2 },
     { id: "cat",      label: "cat",      code: "1F431", category: 2 }
 ];
@@ -166,7 +166,7 @@ const editor = new Richtext("#root", {
                     item.label.toLowerCase().startsWith(query.toLowerCase().trim())
                 );
                 const categories = new Set(matched.map(item => item.category));
-                // keep matching emoji plus the headers of categories that still match
+                // 일치하는 이모지와 여전히 일치하는 카테고리의 헤더를 유지
                 return emoji.filter(item =>
                     item.code ? matched.includes(item) : categories.has(item.category)
                 );
@@ -174,7 +174,7 @@ const editor = new Richtext("#root", {
             action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
         }
     ],
-    // render emoji rows normally and category headers in bold
+    // 이모지 행은 일반적으로, 카테고리 헤더는 굵게 렌더링
     triggerTemplate: template(({ data }) =>
         data.code ? `${emojiFromCode(data.code)} ${data.label}` : `<b>${data.label}</b>`
     )
@@ -184,7 +184,7 @@ function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
 
-// headers have no `code` — ignore picks on them so they are never inserted
+// 헤더에는 `code`가 없습니다 — 헤더 선택은 무시하여 절대 삽입되지 않도록 합니다
 editor.api.intercept("insert-token", ({ data }) => !!data.code);
 ~~~
 
@@ -193,11 +193,11 @@ editor.api.intercept("insert-token", ({ data }) => !!data.code);
 `action`을 사용하면 슬래시 스타일 명령 메뉴(Notion이나 Slack의 `/`와 유사)를 구성할 수 있습니다. 각 항목의 `id`에 명령 이름을 저장하고, 커스텀 `config` 필드에 옵션을 저장한 후, callback에서 [`api.exec`](api/internal/exec.md)으로 실행합니다:
 
 ~~~jsx {13}
-// each item stores an api.exec action name in `id` and its parameters in `config`
+// 각 항목은 api.exec 액션 이름을 `id`에, 해당 매개변수를 `config`에 저장합니다
 const commands = [
     { id: "set-text-style", label: "Heading 1",     config: { tag: "h1" } },
     { id: "insert-list",    label: "Bulleted list", config: { type: "bulleted" } },
-    { id: "insert-line",    label: "Divider" } // no config → `|| {}` applies
+    { id: "insert-line",    label: "Divider" } // 설정 없음 → `|| {}` 적용됨
 ];
 
 const editor = new richtext.Richtext("#root", {

@@ -92,13 +92,13 @@ RichText 에디터는 **HTML**, **일반 텍스트**, **Markdown** 형식으로 
 ~~~jsx
 const editor = new richtext.Richtext("#root", {
     value: "Hello world"
-    // other configuration properties
+    // 기타 설정 속성
 });
 
-// load Markdown into the editor
+// 에디터에 Markdown 불러오기
 editor.setValue("# Title\n\nParagraph", richtext.markdown.fromMarkdown);
 
-// read editor content as Markdown
+// 에디터 콘텐츠를 Markdown으로 읽기
 const md = editor.getValue(richtext.markdown.toMarkdown);
 ~~~
 

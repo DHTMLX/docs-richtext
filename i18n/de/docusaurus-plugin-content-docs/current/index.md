@@ -92,13 +92,13 @@ Der RichText-Editor unterstützt das [Einlesen](api/methods/set-value.md) und di
 ~~~jsx
 const editor = new richtext.Richtext("#root", {
     value: "Hello world"
-    // other configuration properties
+    // weitere Konfigurationseigenschaften
 });
 
-// load Markdown into the editor
+// Markdown in den Editor laden
 editor.setValue("# Title\n\nParagraph", richtext.markdown.fromMarkdown);
 
-// read editor content as Markdown
+// Editor-Inhalt als Markdown lesen
 const md = editor.getValue(richtext.markdown.toMarkdown);
 ~~~
 

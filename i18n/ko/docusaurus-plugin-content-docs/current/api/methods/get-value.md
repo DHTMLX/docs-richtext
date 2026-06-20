@@ -23,9 +23,9 @@ getValue(encoder?: any): string;
 필요한 encoder는 다음과 같이 가져올 수 있습니다:
 
 ```jsx
-const toTextEncoder = richtext.text.toText;             // text encoder
-const toHTMLEncoder = richtext.html.toHTML;             // html encoder
-const toMarkdownEncoder = richtext.markdown.toMarkdown; // markdown encoder
+const toTextEncoder = richtext.text.toText;             // 텍스트 encoder
+const toHTMLEncoder = richtext.html.toHTML;             // HTML encoder
+const toMarkdownEncoder = richtext.markdown.toMarkdown; // 마크다운 encoder
 ```
 
 ### 예제 {#example}

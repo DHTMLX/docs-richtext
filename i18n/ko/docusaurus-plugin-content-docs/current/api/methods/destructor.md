@@ -20,9 +20,9 @@ destructor(): void;
 
 ~~~jsx {5-6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 설정 속성
 });
 
-// remove RichText
+// RichText 제거
 editor.destructor();
 ~~~

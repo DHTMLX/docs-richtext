@@ -85,7 +85,7 @@ new dhx.RichText("#root", {
 
 ```jsx{2} title="From 2.0"
 new Richtext("#root", {
-    layoutMode: "document" // or "classic"
+    layoutMode: "document" // 或 "classic"
 });
 ```
 
@@ -139,7 +139,7 @@ editor.getValue(toTextEncoder);
 
 ```jsx title="Before 2.0"
 editor.events.on("Change", function(action, canUndo, canRedo){
-  // your code here
+  // 你的代码
 });
  
 editor.events.detach("Change");
@@ -162,6 +162,6 @@ editor.events.fire("some-event", [data]);
 ```jsx title="From 2.0"
 editor.api.exec("some-event", obj);
 
-// Preventing execution
+// 阻止执行
 editor.api.intercept("some-event", (obj) => false);
 ```

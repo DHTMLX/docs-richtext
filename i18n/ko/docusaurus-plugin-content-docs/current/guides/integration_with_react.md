@@ -89,17 +89,17 @@ RichText용 컨테이너 요소를 설정하고 `useEffect()` 내에서 `Richtex
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext } from '@dhx/trial-richtext';
-import '@dhx/trial-richtext/dist/richtext.css'; // include RichText styles
+import '@dhx/trial-richtext/dist/richtext.css'; // RichText 스타일 포함
 
 export default function RichTextComponent(props) {
-    let richtext_container = useRef(); // container for RichText
+    let richtext_container = useRef(); // RichText용 컨테이너
 
     useEffect(() => {
-        // initialize the RichText component
+        // RichText 컴포넌트 초기화
         const editor = new Richtext(richtext_container.current, {});
 
         return () => {
-            editor.destructor(); // destroy RichText
+            editor.destructor(); // RichText 제거
         };
     }, []);
 
@@ -114,7 +114,7 @@ export default function RichTextComponent(props) {
 프로젝트의 메인 CSS 파일에 RichText와 컨테이너의 스타일을 추가합니다:
 
 ~~~css title="index.css"
-/* base page styles */
+/* 기본 페이지 스타일 */
 html,
 body,
 #root {
@@ -123,13 +123,13 @@ body,
     margin: 0;
 }
 
-/* RichText container */
+/* RichText 컨테이너 */
 .component_container {
     height: 100%; 
     margin: 0 auto;
 }
 
-/* RichText widget */
+/* RichText 위젯 */
 .widget {
     height: calc(100% - 56px);
 }
@@ -175,8 +175,8 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            value: props.value, // apply value
-            // other configuration properties
+            value: props.value, // 값 적용
+            // 기타 설정 속성
         });
 
         return () => {
@@ -204,7 +204,7 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            // configuration properties
+            // 설정 속성
         });
     
         editor.setValue(value);

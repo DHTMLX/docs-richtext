@@ -24,19 +24,19 @@ insertValue: (value: string, encoder?: any): void;
 필요한 encoder는 다음과 같이 가져올 수 있습니다:
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText;             // text encoder
-const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
-const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
+const fromTextEncoder = richtext.text.fromText;             // 텍스트 encoder
+const fromHTMLEncoder = richtext.html.fromHTML;             // HTML encoder
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // 마크다운 encoder
 ```
 
 ### 예제 {#example}
 
 ~~~jsx {6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // 설정 속성
 });
 
-// inserts an HTML link with custom attributes at the cursor position
+// 커서 위치에 커스텀 속성이 있는 HTML 링크를 삽입합니다
 editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>");
 ~~~
 

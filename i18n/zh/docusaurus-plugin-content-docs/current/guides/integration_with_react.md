@@ -89,17 +89,17 @@ import "@dhx/trial-richtext/dist/richtext.css";
 ~~~jsx {} title="Richtext.jsx"
 import { useEffect, useRef } from "react";
 import { Richtext } from '@dhx/trial-richtext';
-import '@dhx/trial-richtext/dist/richtext.css'; // include RichText styles
+import '@dhx/trial-richtext/dist/richtext.css'; // 引入 RichText 样式
 
 export default function RichTextComponent(props) {
-    let richtext_container = useRef(); // container for RichText
+    let richtext_container = useRef(); // RichText 的容器
 
     useEffect(() => {
-        // initialize the RichText component
+        // 初始化 RichText 组件
         const editor = new Richtext(richtext_container.current, {});
 
         return () => {
-            editor.destructor(); // destroy RichText
+            editor.destructor(); // 销毁 RichText
         };
     }, []);
 
@@ -114,7 +114,7 @@ export default function RichTextComponent(props) {
 将 RichText 及其容器的样式添加到项目的主 CSS 文件中：
 
 ~~~css title="index.css"
-/* base page styles */
+/* 页面基础样式 */
 html,
 body,
 #root {
@@ -123,13 +123,13 @@ body,
     margin: 0;
 }
 
-/* RichText container */
+/* RichText 容器 */
 .component_container {
     height: 100%; 
     margin: 0 auto;
 }
 
-/* RichText widget */
+/* RichText 控件 */
 .widget {
     height: calc(100% - 56px);
 }
@@ -175,8 +175,8 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            value: props.value, // apply value
-            // other configuration properties
+            value: props.value, // 应用值
+            // 其他配置属性
         });
 
         return () => {
@@ -204,7 +204,7 @@ export default function RichTextComponent(props) {
 
     useEffect(() => {
         const editor = new Richtext(richtext_container.current, {
-            // configuration properties
+            // 配置属性
         });
     
         editor.setValue(value);

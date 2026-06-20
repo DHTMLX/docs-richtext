@@ -171,7 +171,7 @@ const editor = new Richtext("#root", {
             action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
         }
     ],
-    // render the emoji itself (not just its label) in the dropdown
+    // отображение самого эмодзи (а не только его названия) в выпадающем списке
     triggerTemplate: template(({ data }) => `${emojiFromCode(data.code)} ${data.label}`)
 });
 
@@ -187,12 +187,12 @@ function emojiFromCode(code) {
 ~~~jsx {17-26,31-33}
 const { template, Richtext } = richtext;
 
-// header items carry no `code` field; emoji items include one
+// элементы-заголовки не содержат поля `code`; элементы-эмодзи его содержат
 const emoji = [
-    { id: "$smileys", label: "Smileys",                 category: 1 }, // category
+    { id: "$smileys", label: "Smileys",                 category: 1 }, // категория
     { id: "grinning", label: "grinning", code: "1F600", category: 1 },
     { id: "smile",    label: "smile",    code: "1F604", category: 1 },
-    { id: "$animals", label: "Animals",                 category: 2 }, // category
+    { id: "$animals", label: "Animals",                 category: 2 }, // категория
     { id: "dog",      label: "dog",      code: "1F436", category: 2 },
     { id: "cat",      label: "cat",      code: "1F431", category: 2 }
 ];
@@ -207,7 +207,7 @@ const editor = new Richtext("#root", {
                     item.label.toLowerCase().startsWith(query.toLowerCase().trim())
                 );
                 const categories = new Set(matched.map(item => item.category));
-                // keep matching emoji plus the headers of categories that still match
+                // сохраняем подходящие эмодзи вместе с заголовками категорий, в которых остались совпадения
                 return emoji.filter(item =>
                     item.code ? matched.includes(item) : categories.has(item.category)
                 );
@@ -215,7 +215,7 @@ const editor = new Richtext("#root", {
             action: item => editor.insertValue(`<span>${emojiFromCode(item.code)} </span>`)
         }
     ],
-    // render emoji rows normally and category headers in bold
+    // отображение строк с эмодзи обычным шрифтом, а заголовков категорий — жирным
     triggerTemplate: template(({ data }) =>
         data.code ? `${emojiFromCode(data.code)} ${data.label}` : `<b>${data.label}</b>`
     )
@@ -225,7 +225,7 @@ function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
 
-// headers have no `code` — ignore picks on them so they are never inserted
+// заголовки не имеют поля `code` — игнорируем их выбор, чтобы они никогда не вставлялись
 editor.api.intercept("insert-token", ({ data }) => !!data.code);
 ~~~
 
@@ -234,11 +234,11 @@ editor.api.intercept("insert-token", ({ data }) => !!data.code);
 С помощью `action` можно создать командное меню в стиле slash (как `/` в Notion или Slack). Храните название команды в поле `id` каждого элемента, её параметры — в пользовательском поле `config`, и позвольте колбэку выполнять её через [`api.exec`](api/internal/exec.md):
 
 ~~~jsx {13}
-// each item stores an api.exec action name in `id` and its parameters in `config`
+// каждый элемент хранит название действия api.exec в `id`, а его параметры — в `config`
 const commands = [
     { id: "set-text-style", label: "Heading 1",     config: { tag: "h1" } },
     { id: "insert-list",    label: "Bulleted list", config: { type: "bulleted" } },
-    { id: "insert-line",    label: "Divider" } // no config → `|| {}` applies
+    { id: "insert-line",    label: "Divider" } // конфигурация отсутствует → применяется `|| {}`
 ];
 
 const editor = new richtext.Richtext("#root", {

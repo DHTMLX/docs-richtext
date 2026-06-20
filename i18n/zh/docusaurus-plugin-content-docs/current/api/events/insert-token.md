@@ -20,7 +20,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 inser
         id?: string | number,
         label?: string,
         url?: string,
-        // ...any custom fields from the trigger's data source
+        // ...来自触发器数据源的任意自定义字段
     },
     trigger: string,
     showTrigger?: boolean,

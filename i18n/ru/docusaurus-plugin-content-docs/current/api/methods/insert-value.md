@@ -24,19 +24,19 @@ insertValue: (value: string, encoder?: any): void;
 Получить нужный энкодер можно следующим образом:
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText;             // text encoder
-const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
-const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
+const fromTextEncoder = richtext.text.fromText;             // текстовый энкодер
+const fromHTMLEncoder = richtext.html.fromHTML;             // HTML-энкодер
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // Markdown-энкодер
 ```
 
 ### Пример {#example}
 
 ~~~jsx {6}
 const editor = new richtext.Richtext("#root", {
-    // configuration properties
+    // свойства конфигурации
 });
 
-// inserts an HTML link with custom attributes at the cursor position
+// вставляет HTML-ссылку с пользовательскими атрибутами в позицию курсора
 editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>");
 ~~~
 
