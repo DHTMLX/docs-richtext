@@ -43,3 +43,8 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 The inserted content is added as a single history entry and can be reverted with one **Undo** step.
 
 **Change log:** The method was added in v2.1
+
+**Related samples:**
+
+- [RichText. Insert content at cursor](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext)
+- [RichText. Working with different formats (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

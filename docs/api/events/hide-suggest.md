@@ -45,3 +45,7 @@ editor.api.on("hide-suggest", () => {
 ~~~
 
 **Change log:** The event was added in v2.1
+
+**Related sample:** [RichText. Mentions, tags, and async lookup](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+
+**Related articles:** [Mentions and tags](guides/mentions_and_tags.md)

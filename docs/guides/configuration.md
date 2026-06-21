@@ -42,6 +42,8 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
+**Related sample:** [RichText. Document and classic modes](https://snippet.dhtmlx.com/jz8q432l?tag=richtext)
+
 ## Toolbar
 
 The RichText toolbar groups controls into several blocks that you can customize.
@@ -125,7 +127,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Related sample:** [RichText. Custom control and simplified toolbar](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**Related sample:** [RichText. Full toolbar](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
 
 ### Add custom toolbar controls
 
@@ -202,6 +204,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**Related sample:** [RichText. Initialization with menubar](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+
 ## Set the initial content
 
 Use the [`value`](api/config/value.md) property to pass initial HTML content into the editor on initialization:
@@ -214,6 +218,8 @@ new richtext.Richtext("#root", {
 ~~~
 
 To replace the content after initialization, or to load it in a non-HTML format with a custom encoder, call the [`setValue()`](api/methods/set-value.md) method.
+
+**Related sample:** [RichText. Working with different formats (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
 
 ## Set the initial locale
 

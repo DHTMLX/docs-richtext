@@ -54,6 +54,8 @@ Each trigger is an object `{ trigger, data, showTrigger?, action? }` within the 
 }
 ~~~
 
+**Related sample:** [RichText. Mentions, tags, and async lookup](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+
 ## Token rendering
 
 When the user picks an item from the dropdown, RichText inserts it as an `<a>` element with two data attributes:
@@ -77,6 +79,11 @@ You can style tokens with the `data-token` selector:
     padding: 0 2px;
 }
 ~~~
+
+**Related samples:**
+
+- [RichText. Find and highlight mentions](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. Highlight all mentions](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
 
 ## Hide the trigger character
 
@@ -136,6 +143,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**Related sample:** [RichText. Custom dropdown template per trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+
 ## Custom action on select
 
 By default, picking an item inserts it into the document as a token. To run your own code instead, add an `action` callback to the trigger. RichText removes the typed trigger text and calls `action(item)` with the picked item — no token is inserted, so you can decide what to add.
@@ -179,6 +188,8 @@ function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
 ~~~
+
+**Related sample:** [RichText. Emoji autocomplete](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
 
 ### Group emoji by categories
 
@@ -251,6 +262,8 @@ const editor = new richtext.Richtext("#root", {
     ]
 });
 ~~~
+
+**Related sample:** [RichText. Slash commands](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
 
 ## Related API
 

@@ -65,4 +65,9 @@ new Richtext("#root", {
 
 **Change log:** The property was added in v2.1
 
+**Related samples:**
+
+- [RichText. Custom dropdown template per trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Emoji autocomplete](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+
 **Related articles:** [Mentions and tags](guides/mentions_and_tags.md)
