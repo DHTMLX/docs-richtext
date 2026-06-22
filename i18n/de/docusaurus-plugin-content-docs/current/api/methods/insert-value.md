@@ -43,3 +43,8 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 Der eingefügte Inhalt wird als einzelner Verlaufseintrag hinzugefügt und kann mit einem einzigen **Rückgängig**-Schritt wiederhergestellt werden.
 
 **Änderungsprotokoll:** Die Methode wurde in v2.1 hinzugefügt
+
+**Verwandte Beispiele:**
+
+- [RichText. Inhalt an Cursorposition einfügen](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext)
+- [RichText. Arbeiten mit verschiedenen Formaten (Markdown, HTML, Text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

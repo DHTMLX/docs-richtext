@@ -43,3 +43,8 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 插入的内容作为单条历史记录添加，可通过一次**撤销**操作还原。
 
 **变更日志：** 该方法于 v2.1 版本中新增
+
+**相关示例：**
+
+- [RichText. 在光标处插入内容](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext)
+- [RichText. 使用不同格式（Markdown、HTML、text）](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

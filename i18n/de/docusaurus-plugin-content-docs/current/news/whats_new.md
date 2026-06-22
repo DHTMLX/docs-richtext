@@ -12,10 +12,10 @@ Veröffentlicht am X. Juni 2026
 
 - Die [`imageUploadUrl`](api/config/image-upload-url.md) ist optional: Wird sie weggelassen, werden Bilder inline als Base64-Daten-URLs eingefügt, ohne dass ein Server erforderlich ist
 - Drag-and-Drop-Bildeinfügung: Ziehen Sie eine Bilddatei direkt in den Editor-Bereich
-- Markdown-Unterstützung: Inhalte des Editors als Markdown über den `markdown`-Encoder in den Methoden [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md) und [`insertValue()`](api/methods/insert-value.md) einlesen und ausgeben
-- Erwähnungen, Tags und benutzerdefinierte Dropdown-Trigger über die Eigenschaft [`triggers`](api/config/triggers.md): Geben Sie ein Zeichen wie `@`, `#`, `/` oder `:` ein, um ein Vorschlags-Dropdown zu öffnen und das ausgewählte Element als nicht bearbeitbares Token einzufügen (siehe Anleitung [Erwähnungen und Tags](guides/mentions_and_tags.md))
-- Benutzerdefinierte Darstellung von Vorschlagselementen über die Eigenschaft [`triggerTemplate`](api/config/trigger-template.md) (zum Beispiel ein Avatar mit Name und E-Mail-Adresse)
-- Benutzerdefinierte Aktion bei der Auswahl eines Triggers: Führen Sie eigenen Code aus (ein Emoji einfügen, einen Slash-Befehl ausführen und mehr), anstatt ein Token einzufügen
+- Markdown-Unterstützung: Inhalte des Editors als Markdown über den `markdown`-Encoder in den Methoden [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md) und [`insertValue()`](api/methods/insert-value.md) einlesen und ausgeben (siehe das Beispiel [RichText. Arbeiten mit verschiedenen Formaten (Markdown, HTML, Text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext))
+- Erwähnungen, Tags und benutzerdefinierte Dropdown-Trigger über die Eigenschaft [`triggers`](api/config/triggers.md): Geben Sie ein Zeichen wie `@`, `#`, `/` oder `:` ein, um ein Vorschlags-Dropdown zu öffnen und das ausgewählte Element als nicht bearbeitbares Token einzufügen (siehe Anleitung [Erwähnungen und Tags](guides/mentions_and_tags.md) und das Beispiel [RichText. Erwähnungen, Tags und asynchrone Suche](https://snippet.dhtmlx.com/nfvvfize?tag=richtext))
+- Benutzerdefinierte Darstellung von Vorschlagselementen über die Eigenschaft [`triggerTemplate`](api/config/trigger-template.md) (zum Beispiel ein Avatar mit Name und E-Mail-Adresse) (siehe das Beispiel [RichText. Benutzerdefinierte Dropdown-Vorlage pro Trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext))
+- Benutzerdefinierte Aktion bei der Auswahl eines Triggers: Führen Sie eigenen Code aus (ein Emoji einfügen, einen Slash-Befehl ausführen und mehr), anstatt ein Token einzufügen (siehe die Beispiele [RichText. Emoji-Autovervollständigung](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) und [RichText. Slash-Befehle](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext))
 - Zwischenablagen-Unterstützung (Kopieren, Ausschneiden und Einfügen), die die Formatierung zwischen RichText-Instanzen beibehält und externen Inhalt als Klartext einfügt
 - Tastenkürzel zum Löschen auf Wort- und Zeilenebene: vorheriges/nächstes Wort löschen mit `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) oder `Opt+Backspace` / `Opt+Delete` (macOS); vorherige/nächste visuelle Zeile löschen mit `Cmd+Backspace` / `Cmd+Delete` (nur macOS)
 
@@ -28,7 +28,7 @@ Veröffentlicht am X. Juni 2026
 
 #### Neue Methoden {#new-methods}
 
-- [`insertValue()`](api/methods/insert-value.md) — Fügt Text-, Markdown- oder HTML-Inhalt an der Cursorposition ein oder ersetzt den ausgewählten Text
+- [`insertValue()`](api/methods/insert-value.md) — Fügt Text-, Markdown- oder HTML-Inhalt an der Cursorposition ein oder ersetzt den ausgewählten Text (siehe das Beispiel [RichText. Inhalt an Cursorposition einfügen](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext))
 
 #### Neue Events {#new-events}
 

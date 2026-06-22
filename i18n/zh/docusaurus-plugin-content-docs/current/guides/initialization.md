@@ -76,3 +76,5 @@ editor.destructor();
 以下示例初始化 RichText 并启用菜单栏：
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+**相关示例：** [RichText. 初始化](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

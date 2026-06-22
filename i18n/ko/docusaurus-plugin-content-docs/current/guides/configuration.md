@@ -42,6 +42,8 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
+**관련 샘플:** [RichText. 문서 및 클래식 모드](https://snippet.dhtmlx.com/jz8q432l?tag=richtext)
+
 ## 툴바 {#toolbar}
 
 RichText 툴바는 컨트롤을 여러 블록으로 그룹화하며 커스터마이즈할 수 있습니다.
@@ -125,7 +127,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**관련 샘플:** [RichText. 커스텀 컨트롤 및 간소화된 툴바](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**관련 샘플:** [RichText. 전체 툴바](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
 
 ### 커스텀 툴바 컨트롤 추가 {#add-custom-toolbar-controls}
 
@@ -202,6 +204,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**관련 샘플:** [RichText. 메뉴바로 초기화](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+
 ## 초기 콘텐츠 설정 {#set-the-initial-content}
 
 [`value`](api/config/value.md) 속성을 사용하여 초기화 시 편집기에 초기 HTML 콘텐츠를 전달합니다:
@@ -214,6 +218,8 @@ new richtext.Richtext("#root", {
 ~~~
 
 초기화 후 콘텐츠를 교체하거나, 커스텀 인코더를 사용하여 비-HTML 형식으로 로드하려면 [`setValue()`](api/methods/set-value.md) 메서드를 호출합니다.
+
+**관련 샘플:** [RichText. 다양한 형식으로 작업 (Markdown, HTML, 텍스트)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
 
 ## 초기 로케일 설정 {#set-the-initial-locale}
 

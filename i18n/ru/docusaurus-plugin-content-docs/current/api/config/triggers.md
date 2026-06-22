@@ -238,4 +238,13 @@ new richtext.Richtext("#root", {
 
 **История изменений:** Свойство добавлено в v2.1
 
+**Связанные примеры:**
+
+- [RichText. Упоминания, теги и асинхронный поиск](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+- [RichText. Пользовательский шаблон выпадающего списка для каждого триггера](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Автодополнение эмодзи](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+- [RichText. Slash-команды](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
+- [RichText. Поиск и выделение упоминаний](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. Выделение всех упоминаний](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
+
 **Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

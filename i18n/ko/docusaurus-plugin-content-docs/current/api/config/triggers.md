@@ -238,4 +238,13 @@ new richtext.Richtext("#root", {
 
 **변경 이력:** 이 속성은 v2.1에서 추가되었습니다
 
+**관련 샘플:**
+
+- [RichText. 멘션, 태그 및 비동기 조회](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+- [RichText. 트리거별 커스텀 드롭다운 템플릿](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. 이모지 자동 완성](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+- [RichText. 슬래시 명령](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
+- [RichText. 멘션 찾기 및 강조 표시](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. 모든 멘션 강조 표시](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
+
 **관련 문서:** [멘션과 태그](guides/mentions_and_tags.md)

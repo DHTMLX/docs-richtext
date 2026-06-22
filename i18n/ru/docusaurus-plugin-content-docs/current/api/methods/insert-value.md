@@ -43,3 +43,8 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 Вставленное содержимое добавляется как единая запись в историю и может быть отменено одним шагом **Undo**.
 
 **Журнал изменений:** Метод добавлен в v2.1
+
+**Связанные примеры:**
+
+- [RichText. Вставка контента в позицию курсора](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext)
+- [RichText. Работа с различными форматами (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

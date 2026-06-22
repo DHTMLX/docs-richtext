@@ -43,3 +43,5 @@ editor.setValue(editor_value, fromTextEncoder);
 ~~~
 
 **变更日志：** 该方法在 v2.0 中进行了更新。`mode` 参数已被移除，新增了 `encoder` 参数
+
+**相关示例：** [RichText. 使用不同格式（Markdown、HTML、text）](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

@@ -238,4 +238,13 @@ new richtext.Richtext("#root", {
 
 **变更日志：** 该属性在 v2.1 中添加
 
+**相关示例：**
+
+- [RichText. 提及、标签与异步查询](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+- [RichText. 每个触发器的自定义下拉模板](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Emoji 自动补全](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+- [RichText. 斜杠命令](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
+- [RichText. 查找并高亮提及](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. 高亮所有提及](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
+
 **相关文章：** [提及与标签](guides/mentions_and_tags.md)

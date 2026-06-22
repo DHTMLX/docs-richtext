@@ -54,6 +54,8 @@ Jeder Trigger ist ein Objekt `{ trigger, data, showTrigger?, action? }` innerhal
 }
 ~~~
 
+**Verwandtes Beispiel:** [RichText. Erwähnungen, Tags und asynchrone Suche](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+
 ## Token-Darstellung {#token-rendering}
 
 Wenn der Benutzer ein Element aus dem Dropdown auswählt, fügt RichText es als `<a>`-Element mit zwei Datenattributen ein:
@@ -77,6 +79,11 @@ Sie können Tokens mit dem Selektor `data-token` gestalten:
     padding: 0 2px;
 }
 ~~~
+
+**Verwandte Beispiele:**
+
+- [RichText. Erwähnungen suchen und hervorheben](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. Alle Erwähnungen hervorheben](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
 
 ## Trigger-Zeichen ausblenden {#hide-the-trigger-character}
 
@@ -136,6 +143,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**Verwandtes Beispiel:** [RichText. Benutzerdefinierte Dropdown-Vorlage pro Trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+
 ## Benutzerdefinierte Aktion bei Auswahl {#custom-action-on-select}
 
 Standardmäßig wird ein ausgewähltes Element als Token in das Dokument eingefügt. Um stattdessen eigenen Code auszuführen, fügen Sie dem Trigger einen `action`-Callback hinzu. RichText entfernt den eingegebenen Trigger-Text und ruft `action(item)` mit dem ausgewählten Element auf — es wird kein Token eingefügt, sodass Sie selbst entscheiden können, was hinzugefügt wird.
@@ -179,6 +188,8 @@ function emojiFromCode(code) {
     return String.fromCodePoint(parseInt(code, 16));
 }
 ~~~
+
+**Verwandtes Beispiel:** [RichText. Emoji-Autovervollständigung](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
 
 ### Emoji nach Kategorien gruppieren {#group-emoji-by-categories}
 
@@ -251,6 +262,8 @@ const editor = new richtext.Richtext("#root", {
     ]
 });
 ~~~
+
+**Verwandtes Beispiel:** [RichText. Slash-Befehle](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
 
 ## Verwandte API {#related-api}
 

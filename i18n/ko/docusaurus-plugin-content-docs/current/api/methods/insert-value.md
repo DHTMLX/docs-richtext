@@ -43,3 +43,8 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 삽입된 콘텐츠는 단일 히스토리 항목으로 추가되며, **실행 취소(Undo)** 한 번으로 되돌릴 수 있습니다.
 
 **변경 이력:** 이 메서드는 v2.1에서 추가되었습니다
+
+**관련 샘플:**
+
+- [RichText. 커서 위치에 콘텐츠 삽입](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext)
+- [RichText. 다양한 형식으로 작업하기 (Markdown, HTML, 텍스트)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

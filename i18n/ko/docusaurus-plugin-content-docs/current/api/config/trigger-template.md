@@ -65,4 +65,9 @@ new Richtext("#root", {
 
 **변경 이력:** 이 속성은 v2.1에서 추가되었습니다.
 
+**관련 샘플:**
+
+- [RichText. 트리거별 커스텀 드롭다운 템플릿](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. 이모지 자동 완성](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+
 **관련 문서:** [멘션과 태그](guides/mentions_and_tags.md)

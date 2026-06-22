@@ -12,10 +12,10 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 
 - [`imageUploadUrl`](api/config/image-upload-url.md) 现为可选项：省略时，图片将以 base64 数据 URL 的形式内联插入，无需服务器支持
 - 拖放图片插入：将图片文件直接拖入编辑器区域即可插入
-- Markdown 支持：通过 [`setValue()`](api/methods/set-value.md)、[`getValue()`](api/methods/get-value.md) 和 [`insertValue()`](api/methods/insert-value.md) 方法中的 `markdown` 编码器，解析和序列化编辑器内容为 Markdown 格式
-- 通过 [`triggers`](api/config/triggers.md) 属性支持提及、标签和自定义下拉触发器：输入 `@`、`#`、`/` 或 `:` 等字符可打开建议下拉框，并将所选项作为不可编辑的 token 插入（参见[提及与标签](guides/mentions_and_tags.md)指南）
-- 通过 [`triggerTemplate`](api/config/trigger-template.md) 属性自定义建议项的渲染方式（例如，显示头像、姓名和邮箱）
-- 用户选择触发器时的自定义操作：执行自定义代码（插入 emoji、触发斜杠命令等），而非插入 token
+- Markdown 支持：通过 [`setValue()`](api/methods/set-value.md)、[`getValue()`](api/methods/get-value.md) 和 [`insertValue()`](api/methods/insert-value.md) 方法中的 `markdown` 编码器，解析和序列化编辑器内容为 Markdown 格式（参见 [RichText. 使用不同格式（Markdown、HTML、纯文本）](https://snippet.dhtmlx.com/cne4kujn?tag=richtext) 示例）
+- 通过 [`triggers`](api/config/triggers.md) 属性支持提及、标签和自定义下拉触发器：输入 `@`、`#`、`/` 或 `:` 等字符可打开建议下拉框，并将所选项作为不可编辑的 token 插入（参见[提及与标签](guides/mentions_and_tags.md)指南和 [RichText. 提及、标签与异步查询](https://snippet.dhtmlx.com/nfvvfize?tag=richtext) 示例）
+- 通过 [`triggerTemplate`](api/config/trigger-template.md) 属性自定义建议项的渲染方式（例如，显示头像、姓名和邮箱）（参见 [RichText. 每个触发器的自定义下拉模板](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext) 示例）
+- 用户选择触发器时的自定义操作：执行自定义代码（插入 emoji、触发斜杠命令等），而非插入 token（参见 [RichText. Emoji 自动补全](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) 和 [RichText. 斜杠命令](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext) 示例）
 - 剪贴板支持（复制、剪切和粘贴）：在 RichText 实例之间保留格式，将外部内容以纯文本形式插入
 - 按词和按行删除快捷键：使用 `Ctrl+Backspace` / `Ctrl+Delete`（Windows/Linux）或 `Opt+Backspace` / `Opt+Delete`（macOS）删除前一个/后一个单词；使用 `Cmd+Backspace` / `Cmd+Delete`（仅 macOS）删除前一个/后一个可视行
 
@@ -28,7 +28,7 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 
 #### 新增方法 {#new-methods}
 
-- [`insertValue()`](api/methods/insert-value.md) — 在光标位置插入文本、Markdown 或 HTML 内容，或替换选中的文本
+- [`insertValue()`](api/methods/insert-value.md) — 在光标位置插入文本、Markdown 或 HTML 内容，或替换选中的文本（参见 [RichText. 在光标处插入内容](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext) 示例）
 
 #### 新增事件 {#new-events}
 

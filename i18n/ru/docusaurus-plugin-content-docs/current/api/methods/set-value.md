@@ -43,3 +43,5 @@ editor.setValue(editor_value, fromTextEncoder);
 ~~~
 
 **История изменений:** Метод был обновлён в v2.0. Параметр `mode` удалён. Добавлен параметр `encoder`
+
+**Связанный пример:** [RichText. Работа с различными форматами (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

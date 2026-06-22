@@ -45,3 +45,7 @@ editor.api.on("hide-suggest", () => {
 ~~~
 
 **변경 이력:** 이 이벤트는 v2.1에서 추가되었습니다
+
+**관련 샘플:** [RichText. 멘션, 태그 및 비동기 조회](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+
+**관련 문서:** [멘션 및 태그](guides/mentions_and_tags.md)

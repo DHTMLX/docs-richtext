@@ -57,13 +57,13 @@ Der RichText-Editor ist der zentrale Bereich, in dem Benutzer Inhalte erstellen 
 
 DHTMLX RichText kann mit Inhalten im „Klassisch"- und „Dokument"-Modus arbeiten. Sie können den am besten geeigneten Modus wählen, um beim Bearbeiten von Text komfortabel zu arbeiten. Verwenden Sie die Eigenschaft [`layoutMode`](api/config/layout-mode.md), um den Modus programmatisch zu wechseln.
 
-- **„classic"**
+- `"classic"`
 
 <div className="img_border">
 ![DHTMLX RichText-Editor im klassischen Layout-Modus](/img/richtext/classic_mode.png)
 </div>
 
-- **„document"**
+- `"document"`
 
 <div className="img_border">
 ![DHTMLX RichText-Editor im Dokumentmodus](/img/richtext/document_mode.png)

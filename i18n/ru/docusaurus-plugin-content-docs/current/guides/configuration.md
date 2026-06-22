@@ -42,6 +42,8 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
+**Связанный пример:** [RichText. Режимы документа и классический](https://snippet.dhtmlx.com/jz8q432l?tag=richtext)
+
 ## Панель инструментов {#toolbar}
 
 Панель инструментов RichText группирует элементы управления в несколько блоков, которые можно настраивать.
@@ -125,7 +127,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Связанный пример:** [RichText. Пользовательский элемент управления и упрощённая панель инструментов](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**Связанный пример:** [RichText. Полная панель инструментов](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
 
 ### Добавление пользовательских элементов управления панели инструментов {#add-custom-toolbar-controls}
 
@@ -202,6 +204,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**Связанный пример:** [RichText. Инициализация со строкой меню](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+
 ## Задание начального содержимого {#set-the-initial-content}
 
 Используйте свойство [`value`](api/config/value.md), чтобы передать начальное HTML-содержимое в редактор при инициализации:
@@ -214,6 +218,8 @@ new richtext.Richtext("#root", {
 ~~~
 
 Чтобы заменить содержимое после инициализации или загрузить его в формате, отличном от HTML, с использованием пользовательского энкодера, вызовите метод [`setValue()`](api/methods/set-value.md).
+
+**Связанный пример:** [RichText. Работа с различными форматами (Markdown, HTML, текст)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
 
 ## Задание начальной локали {#set-the-initial-locale}
 

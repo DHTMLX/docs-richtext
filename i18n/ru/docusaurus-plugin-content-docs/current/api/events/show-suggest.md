@@ -59,4 +59,6 @@ editor.api.intercept("show-suggest", (state) => {
 
 **Журнал изменений:** Событие добавлено в v2.1
 
+**Связанный пример:** [RichText. Упоминания, теги и асинхронный поиск](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+
 **Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

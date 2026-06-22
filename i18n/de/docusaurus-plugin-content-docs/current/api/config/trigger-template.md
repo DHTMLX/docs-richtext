@@ -65,4 +65,9 @@ new Richtext("#root", {
 
 **Änderungsprotokoll:** Die Eigenschaft wurde in v2.1 hinzugefügt
 
+**Verwandte Beispiele:**
+
+- [RichText. Benutzerdefiniertes Dropdown-Template pro Trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Emoji-Autovervollständigung](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+
 **Verwandte Artikel:** [Erwähnungen und Tags](guides/mentions_and_tags.md)

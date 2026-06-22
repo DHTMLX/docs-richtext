@@ -42,6 +42,8 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
+**Verwandtes Beispiel:** [RichText. Dokument- und klassischer Modus](https://snippet.dhtmlx.com/jz8q432l?tag=richtext)
+
 ## Symbolleiste {#toolbar}
 
 Die RichText-Symbolleiste gruppiert Steuerelemente in mehrere Blöcke, die Sie anpassen können.
@@ -125,7 +127,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Verwandtes Beispiel:** [RichText. Benutzerdefiniertes Steuerelement und vereinfachte Symbolleiste](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**Verwandtes Beispiel:** [RichText. Vollständige Symbolleiste](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
 
 ### Benutzerdefinierte Symbolleistensteuerelemente hinzufügen {#add-custom-toolbar-controls}
 
@@ -202,6 +204,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**Verwandtes Beispiel:** [RichText. Initialisierung mit Menüleiste](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+
 ## Anfänglichen Inhalt festlegen {#set-the-initial-content}
 
 Verwenden Sie die Eigenschaft [`value`](api/config/value.md), um bei der Initialisierung anfänglichen HTML-Inhalt in den Editor zu übergeben:
@@ -214,6 +218,8 @@ new richtext.Richtext("#root", {
 ~~~
 
 Um den Inhalt nach der Initialisierung zu ersetzen oder ihn in einem Nicht-HTML-Format mit einem benutzerdefinierten Encoder zu laden, rufen Sie die Methode [`setValue()`](api/methods/set-value.md) auf.
+
+**Verwandtes Beispiel:** [RichText. Arbeiten mit verschiedenen Formaten (Markdown, HTML, Text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
 
 ## Anfängliche Sprache festlegen {#set-the-initial-locale}
 

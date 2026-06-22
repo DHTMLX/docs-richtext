@@ -65,4 +65,9 @@ new Richtext("#root", {
 
 **История изменений:** Свойство добавлено в v2.1
 
+**Связанные примеры:**
+
+- [RichText. Пользовательский шаблон выпадающего списка для каждого триггера](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Автодополнение эмодзи](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+
 **Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

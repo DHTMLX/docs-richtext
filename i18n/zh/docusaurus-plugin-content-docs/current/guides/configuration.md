@@ -42,6 +42,8 @@ const editor = new richtext.Richtext("#root", {
 });
 ~~~
 
+**相关示例：** [RichText. 文档模式与经典模式](https://snippet.dhtmlx.com/jz8q432l?tag=richtext)
+
 ## 工具栏 {#toolbar}
 
 RichText 工具栏将控件分组到多个区块中，您可以对其进行自定义。
@@ -125,7 +127,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**相关示例：** [RichText. 自定义控件与简化工具栏](https://snippet.dhtmlx.com/wda202ih?tag=richtext)
+**相关示例：** [RichText. 完整工具栏](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)
 
 ### 添加自定义工具栏控件 {#add-custom-toolbar-controls}
 
@@ -202,6 +204,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
+**相关示例：** [RichText. 初始化时启用菜单栏](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)
+
 ## 设置初始内容 {#set-the-initial-content}
 
 使用 [`value`](api/config/value.md) 属性在初始化时向编辑器传入初始 HTML 内容：
@@ -214,6 +218,8 @@ new richtext.Richtext("#root", {
 ~~~
 
 若要在初始化后替换内容，或以非 HTML 格式通过自定义编码器加载内容，请调用 [`setValue()`](api/methods/set-value.md) 方法。
+
+**相关示例：** [RichText. 使用不同格式（Markdown、HTML、纯文本）](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
 
 ## 设置初始语言 {#set-the-initial-locale}
 

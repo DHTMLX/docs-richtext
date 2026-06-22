@@ -238,4 +238,13 @@ new richtext.Richtext("#root", {
 
 **Änderungsprotokoll:** Die Eigenschaft wurde in v2.1 hinzugefügt
 
+**Verwandte Beispiele:**
+
+- [RichText. Erwähnungen, Tags und asynchrone Suche](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
+- [RichText. Benutzerdefinierte Dropdown-Vorlage pro Trigger](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. Emoji-Autovervollständigung](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+- [RichText. Slash-Befehle](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext)
+- [RichText. Erwähnungen suchen und hervorheben](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
+- [RichText. Alle Erwähnungen hervorheben](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
+
 **Verwandte Artikel:** [Erwähnungen und Tags](guides/mentions_and_tags.md)

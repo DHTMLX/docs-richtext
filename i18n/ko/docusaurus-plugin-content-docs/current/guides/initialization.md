@@ -76,3 +76,5 @@ editor.destructor();
 아래 예제는 메뉴바를 활성화한 상태로 RichText를 초기화합니다:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+**관련 샘플:** [RichText. 초기화](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

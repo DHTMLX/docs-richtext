@@ -76,3 +76,5 @@ editor.destructor();
 В примере ниже RichText инициализируется с включённой панелью меню:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+**Связанный пример:** [RichText. Инициализация](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

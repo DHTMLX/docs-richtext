@@ -65,4 +65,9 @@ new Richtext("#root", {
 
 **更新日志：** 该属性在 v2.1 中新增
 
+**相关示例：**
+
+- [RichText. 自定义每个触发器的下拉模板](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)
+- [RichText. 表情符号自动补全](https://snippet.dhtmlx.com/g5z1d868?tag=richtext)
+
 **相关文章：** [提及与标签](guides/mentions_and_tags.md)

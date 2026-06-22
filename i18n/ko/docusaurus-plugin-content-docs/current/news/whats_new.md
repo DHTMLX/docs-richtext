@@ -12,10 +12,10 @@ description: DHTMLX RichText의 새로운 기능과 릴리스 히스토리를 DH
 
 - [`imageUploadUrl`](api/config/image-upload-url.md)는 선택 사항입니다. 생략할 경우, 이미지는 서버 없이 base64 데이터 URL 형태로 인라인 삽입됩니다
 - 드래그 앤 드롭 이미지 삽입: 이미지 파일을 에디터 영역에 직접 드롭할 수 있습니다
-- Markdown 지원: [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md), [`insertValue()`](api/methods/insert-value.md) 메서드의 `markdown` 인코더를 통해 에디터 콘텐츠를 Markdown으로 파싱하고 직렬화할 수 있습니다
-- [`triggers`](api/config/triggers.md) 속성을 통한 멘션, 태그, 커스텀 드롭다운 트리거: `@`, `#`, `/`, `:` 등의 문자를 입력하면 제안 드롭다운이 열리고, 선택한 항목이 편집 불가능한 토큰으로 삽입됩니다([멘션과 태그](guides/mentions_and_tags.md) 가이드 참조)
-- [`triggerTemplate`](api/config/trigger-template.md) 속성을 통한 제안 항목의 커스텀 렌더링(예: 이름과 이메일이 포함된 아바타)
-- 사용자가 트리거를 선택했을 때의 커스텀 동작: 토큰을 삽입하는 대신 자체 코드를 실행할 수 있습니다(이모지 삽입, 슬래시 스타일 명령 실행 등)
+- Markdown 지원: [`setValue()`](api/methods/set-value.md), [`getValue()`](api/methods/get-value.md), [`insertValue()`](api/methods/insert-value.md) 메서드의 `markdown` 인코더를 통해 에디터 콘텐츠를 Markdown으로 파싱하고 직렬화할 수 있습니다([RichText. 다양한 형식으로 작업 (Markdown, HTML, 텍스트)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext) 샘플 참조)
+- [`triggers`](api/config/triggers.md) 속성을 통한 멘션, 태그, 커스텀 드롭다운 트리거: `@`, `#`, `/`, `:` 등의 문자를 입력하면 제안 드롭다운이 열리고, 선택한 항목이 편집 불가능한 토큰으로 삽입됩니다([멘션과 태그](guides/mentions_and_tags.md) 가이드 및 [RichText. 멘션, 태그 및 비동기 조회](https://snippet.dhtmlx.com/nfvvfize?tag=richtext) 샘플 참조)
+- [`triggerTemplate`](api/config/trigger-template.md) 속성을 통한 제안 항목의 커스텀 렌더링(예: 이름과 이메일이 포함된 아바타)([RichText. 트리거별 커스텀 드롭다운 템플릿](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext) 샘플 참조)
+- 사용자가 트리거를 선택했을 때의 커스텀 동작: 토큰을 삽입하는 대신 자체 코드를 실행할 수 있습니다(이모지 삽입, 슬래시 스타일 명령 실행 등)([RichText. 이모지 자동 완성](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) 및 [RichText. 슬래시 명령](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext) 샘플 참조)
 - RichText 인스턴스 간 서식을 유지하는 클립보드 지원(복사, 잘라내기, 붙여넣기) 및 외부 콘텐츠를 일반 텍스트로 삽입
 - 단어 및 줄 범위 삭제 단축키: `Ctrl+Backspace` / `Ctrl+Delete`(Windows/Linux) 또는 `Opt+Backspace` / `Opt+Delete`(macOS)로 이전/다음 단어 삭제; `Cmd+Backspace` / `Cmd+Delete`(macOS 전용)로 이전/다음 시각적 줄 삭제
 
@@ -28,7 +28,7 @@ description: DHTMLX RichText의 새로운 기능과 릴리스 히스토리를 DH
 
 #### 새로운 메서드 {#new-methods}
 
-- [`insertValue()`](api/methods/insert-value.md) — 커서 위치에 텍스트, Markdown 또는 HTML 콘텐츠를 삽입하거나 선택된 텍스트를 대체합니다
+- [`insertValue()`](api/methods/insert-value.md) — 커서 위치에 텍스트, Markdown 또는 HTML 콘텐츠를 삽입하거나 선택된 텍스트를 대체합니다([RichText. 커서 위치에 콘텐츠 삽입](https://snippet.dhtmlx.com/pew2g1ku?tag=richtext) 샘플 참조)
 
 #### 새로운 이벤트 {#new-events}
 
