@@ -14,5 +14,6 @@ Use this reference to quickly navigate to detailed descriptions of each method, 
 | [](api/methods/destructor.md)                           | @getshort(api/methods/destructor.md)       |
 | [](api/methods/get-value.md)                            | @getshort(api/methods/get-value.md)        |
 | [](api/methods/set-value.md)                            | @getshort(api/methods/set-value.md)        |
+| [](api/methods/insert-value.md)                         | @getshort(api/methods/insert-value.md)     |
 | [](api/methods/set-config.md)                           | @getshort(api/methods/set-config.md)       |
 | [](api/methods/set-locale.md)                           | @getshort(api/methods/set-locale.md)       |

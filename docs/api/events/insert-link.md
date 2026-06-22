@@ -18,7 +18,7 @@ description: You can learn about the insert-link event in the documentation of t
 
 ### Parameters
 
-The callback of the **update-link** event can take an object with the following parameter:
+The callback of the `insert-link` event can take an object with the following parameter:
 
 - `url` - the url to be inserted
 

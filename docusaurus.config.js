@@ -189,6 +189,17 @@ const onAfterDataTransformation = (data) => {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'ru', 'de', 'zh', 'ko'],
+        localeConfigs: {
+            en: { label: 'English', htmlLang: 'en-US' },
+            ru: { label: 'Русский', htmlLang: 'ru' },
+            de: { label: 'Deutsch', htmlLang: 'de' },
+            zh: { label: '简体中文', htmlLang: 'zh-CN' },
+            ko: { label: '한국어', htmlLang: 'ko' },
+        },
+    },
     noIndex: false,
     title: 'DHTMLX RichText Documentation',
     tagline: 'DHTMLX RichText Documentation',
@@ -214,7 +225,7 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
+                    //editUrl: 'https://github.com/DHTMLX/docs-richtext/edit/master/',
                     routeBasePath: '/',
                 },
                 theme: {
@@ -315,7 +326,12 @@ const config = {
                     href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml',
                     position: 'right'
                 }
-            ]
+            ,
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ]
         },
         footer: {
             "style": "dark",

@@ -23,7 +23,7 @@ interface ITextColor {
 
 ### Parameters
 
-The callback of the **set-text-color** event can take an object with the following parameters:
+The callback of the `set-text-color` event can take an object with the following parameters:
 
 - `color` - a text color
 - `background` - a text background color

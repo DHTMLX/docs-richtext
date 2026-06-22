@@ -76,3 +76,5 @@ editor.destructor();
 The example below initializes RichText with the menubar enabled:
 
 <iframe src="https://snippet.dhtmlx.com/tjryzka7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+**Related sample:** [RichText. Initialization](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

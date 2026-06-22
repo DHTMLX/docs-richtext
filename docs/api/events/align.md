@@ -20,7 +20,7 @@ description: You can learn about the align event in the documentation of the DHT
 
 ### Parameters
 
-The callback of the **align** event can take an object with the following parameter:
+The callback of the `align` event can take an object with the following parameter:
 
 - `align` - a text alignment. You can specify one of the following values: `"left" | "center" | "right" | "justify"`
 

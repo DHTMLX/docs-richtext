@@ -18,7 +18,7 @@ description: You can learn about the set-line-height event in the documentation 
 
 ### Parameters
 
-The callback of the **set-line-height** event can take an object with the following parameter:
+The callback of the `set-line-height` event can take an object with the following parameter:
 
 - `lineHeight` - a line height
 

@@ -18,13 +18,14 @@ getValue(encoder?: any): string;
 
 ### Parameters
 
-- `encoder` - (optional) a parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
+- `encoder` - (optional) a parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default), `text`, and `markdown`
 
 You can get the required encoder in the following way:
 
 ```jsx
-const toTextEncoder = richtext.text.toText; // text encoder
-const toHTMLEncoder = richtext.html.toHTML; // html encoder
+const toTextEncoder = richtext.text.toText;             // text encoder
+const toHTMLEncoder = richtext.html.toHTML;             // html encoder
+const toMarkdownEncoder = richtext.markdown.toMarkdown; // markdown encoder
 ```
 
 ### Example

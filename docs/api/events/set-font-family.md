@@ -18,7 +18,7 @@ description: You can learn about the set-font-family event in the documentation 
 
 ### Parameters
 
-The callback of the **set-font-family** event can take an object with the following parameter:
+The callback of the `set-font-family` event can take an object with the following parameter:
 
 - `fontFamily` - a font family to be applied. The following fonts are available: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 

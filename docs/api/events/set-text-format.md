@@ -29,7 +29,7 @@ For handling inner events you can use [**Event Bus methods**](api/overview/event
 
 ### Parameters
 
-The callback of the **set-text-format** event can take an object with the following parameters:
+The callback of the `set-text-format` event can take an object with the following parameters:
 
 - `bold` - a bold text format
 - `italic` - an italic text format

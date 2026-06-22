@@ -19,13 +19,14 @@ setValue: (value: string, encoder?: any): void;
 ### Parameters
 
 - `value` - (required) a value to be inserted into the RichText
-- `encoder` - (optional) a custom parser used to encode the RichText's content into a custom format. The following formats are available: `html` (default) and `text`
+- `encoder` - (optional) a custom parser used to decode the value from a custom format. The following formats are available: `html` (default), `text`, and `markdown`
 
 You can get the required encoder in the following way:
 
 ```jsx
-const fromTextEncoder = richtext.text.fromText; // text encoder
-const fromHTMLEncoder = richtext.html.fromHTML; // html encoder
+const fromTextEncoder = richtext.text.fromText;             // text encoder
+const fromHTMLEncoder = richtext.html.fromHTML;             // html encoder
+const fromMarkdownEncoder = richtext.markdown.fromMarkdown; // markdown encoder
 ```
 
 ### Example
@@ -42,3 +43,5 @@ editor.setValue(editor_value, fromTextEncoder);
 ~~~
 
 **Change log:** The method was updated in v2.0. The `mode` parameter was removed. The `encoder` parameter was added
+
+**Related sample:** [RichText. Working with different formats (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)
