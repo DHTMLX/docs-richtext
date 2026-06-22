@@ -6,7 +6,7 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 
 ## 版本 2.1 {#version-21}
 
-发布于 2026 年 6 月 X 日
+发布于 2026 年 6 月 22 日
 
 ### 新功能 {#new-functionality}
 
@@ -18,6 +18,7 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 - 用户选择触发器时的自定义操作：执行自定义代码（插入 emoji、触发斜杠命令等），而非插入 token（参见 [RichText. Emoji 自动补全](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) 和 [RichText. 斜杠命令](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext) 示例）
 - 剪贴板支持（复制、剪切和粘贴）：在 RichText 实例之间保留格式，将外部内容以纯文本形式插入
 - 按词和按行删除快捷键：使用 `Ctrl+Backspace` / `Ctrl+Delete`（Windows/Linux）或 `Opt+Backspace` / `Opt+Delete`（macOS）删除前一个/后一个单词；使用 `Cmd+Backspace` / `Cmd+Delete`（仅 macOS）删除前一个/后一个可视行
+- 用于更改块缩进的新快捷键：使用 `Tab` 增加块的缩进，使用 `Shift+Tab` 减少缩进；在列表中，相同的按键可嵌套或提升列表项（在子列表中最为明显）
 
 ### 新增 API {#new-api}
 

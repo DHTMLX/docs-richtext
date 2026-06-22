@@ -6,7 +6,7 @@ description: Entdecken Sie die Neuigkeiten in DHTMLX RichText und die Versionshi
 
 ## Version 2.1 {#version-21}
 
-Veröffentlicht am X. Juni 2026
+Veröffentlicht am 22. Juni 2026
 
 ### Neue Funktionalität {#new-functionality}
 
@@ -18,6 +18,7 @@ Veröffentlicht am X. Juni 2026
 - Benutzerdefinierte Aktion bei der Auswahl eines Triggers: Führen Sie eigenen Code aus (ein Emoji einfügen, einen Slash-Befehl ausführen und mehr), anstatt ein Token einzufügen (siehe die Beispiele [RichText. Emoji-Autovervollständigung](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) und [RichText. Slash-Befehle](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext))
 - Zwischenablagen-Unterstützung (Kopieren, Ausschneiden und Einfügen), die die Formatierung zwischen RichText-Instanzen beibehält und externen Inhalt als Klartext einfügt
 - Tastenkürzel zum Löschen auf Wort- und Zeilenebene: vorheriges/nächstes Wort löschen mit `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) oder `Opt+Backspace` / `Opt+Delete` (macOS); vorherige/nächste visuelle Zeile löschen mit `Cmd+Backspace` / `Cmd+Delete` (nur macOS)
+- Neue Tastenkürzel zum Ändern der Blockeinrückung: die Einrückung eines Blocks mit `Tab` vergrößern und mit `Shift+Tab` verringern; in Listen verschachteln dieselben Tasten Elemente oder heben sie an
 
 ###  Neue API {#new-api}
 

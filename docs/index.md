@@ -155,8 +155,8 @@ The RichText editor supports a set of common keyboard shortcuts for faster forma
 
 | Action               | Windows/Linux | macOS |
 |----------------------|---------------|-------|
-| Indent / nest list   | `Tab`         | `⇥`   |
-| Outdent / lift list  | `Shift+Tab`   | `⇧⇥`  |
+| Indent block / nest list   | `Tab`         | `⇥`   |
+| Outdent block / lift list  | `Shift+Tab`   | `⇧⇥`  |
 
 ### Special actions
 

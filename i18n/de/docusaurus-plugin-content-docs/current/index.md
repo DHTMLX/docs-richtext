@@ -155,8 +155,8 @@ Der RichText-Editor unterstützt eine Reihe gängiger Tastaturkürzel für schne
 
 | Aktion                        | Windows/Linux | macOS |
 |-------------------------------|---------------|-------|
-| Einrücken / Liste verschachteln | `Tab`       | `⇥`   |
-| Ausrücken / Liste anheben     | `Shift+Tab`   | `⇧⇥`  |
+| Block einrücken / Liste verschachteln | `Tab`       | `⇥`   |
+| Block ausrücken / Liste anheben     | `Shift+Tab`   | `⇧⇥`  |
 
 ### Sonderaktionen {#special-actions}
 

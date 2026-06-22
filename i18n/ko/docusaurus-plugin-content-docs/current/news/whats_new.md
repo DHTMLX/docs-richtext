@@ -6,7 +6,7 @@ description: DHTMLX RichText의 새로운 기능과 릴리스 히스토리를 DH
 
 ## 버전 2.1 {#version-21}
 
-2026년 6월 X일 출시
+2026년 6월 22일 출시
 
 ### 새로운 기능 {#new-functionality}
 
@@ -18,6 +18,7 @@ description: DHTMLX RichText의 새로운 기능과 릴리스 히스토리를 DH
 - 사용자가 트리거를 선택했을 때의 커스텀 동작: 토큰을 삽입하는 대신 자체 코드를 실행할 수 있습니다(이모지 삽입, 슬래시 스타일 명령 실행 등)([RichText. 이모지 자동 완성](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) 및 [RichText. 슬래시 명령](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext) 샘플 참조)
 - RichText 인스턴스 간 서식을 유지하는 클립보드 지원(복사, 잘라내기, 붙여넣기) 및 외부 콘텐츠를 일반 텍스트로 삽입
 - 단어 및 줄 범위 삭제 단축키: `Ctrl+Backspace` / `Ctrl+Delete`(Windows/Linux) 또는 `Opt+Backspace` / `Opt+Delete`(macOS)로 이전/다음 단어 삭제; `Cmd+Backspace` / `Cmd+Delete`(macOS 전용)로 이전/다음 시각적 줄 삭제
+- 블록 들여쓰기를 변경하는 새 단축키: `Tab`으로 블록의 들여쓰기를 늘리고 `Shift+Tab`으로 줄입니다; 목록 안에서는 같은 키로 항목을 중첩하거나 해제합니다(하위 목록에서 가장 잘 보임)
 
 ### 새로운 API {#new-api}
 

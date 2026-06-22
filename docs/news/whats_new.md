@@ -6,7 +6,7 @@ description: You can explore what's new in DHTMLX RichText and its release histo
 
 ## Version 2.1
 
-Released on June X, 2026
+Released on June 22, 2026
 
 ### New functionality
 
@@ -18,6 +18,7 @@ Released on June X, 2026
 - Custom action when a user selects a trigger: run your own code (insert an emoji, trigger a slash-style command, and more) instead of inserting a token (see the [RichText. Emoji autocomplete](https://snippet.dhtmlx.com/g5z1d868?tag=richtext) and [RichText. Slash commands](https://snippet.dhtmlx.com/e0mrmyam?tag=richtext) samples)
 - Clipboard support (copy, cut, and paste) that preserves formatting between RichText instances and inserts external content as plain text
 - Word- and line-scope deletion shortcuts: delete the previous/next word with `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) or `Opt+Backspace` / `Opt+Delete` (macOS); delete the previous/next visual line with `Cmd+Backspace` / `Cmd+Delete` (macOS only)
+- New hotkeys for changing block indentation: increase a block's indentation with `Tab` and decrease it with `Shift+Tab`; inside lists, the same keys nest and lift items
 
 ###  New API
 
