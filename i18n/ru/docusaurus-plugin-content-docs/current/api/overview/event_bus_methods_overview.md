@@ -1,7 +1,7 @@
 ---
 sidebar_label: Методы Event Bus
 title: Методы Event Bus
-description: Вы можете ознакомиться с обзором методов внутреннего Event Bus JavaScript RichText в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете ознакомиться с обзором методов внутреннего Event Bus JavaScript RichText в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # Методы Event Bus {#event-bus-methods}

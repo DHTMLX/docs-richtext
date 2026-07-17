@@ -1,7 +1,7 @@
 ---
 sidebar_label: update-link
 title: update-link Event
-description: Вы можете узнать о событии update-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии update-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # update-link

@@ -27,7 +27,7 @@ type TListType = "bulleted" | "numbered";
     - `"numbered"` - 有序列表
 
 :::info[信息]
-如需处理内部事件，可使用 [**事件总线方法**](api/overview/event_bus_methods_overview.md)
+如需处理内部事件，可使用 [**Event Bus 方法**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### 示例 {#example}

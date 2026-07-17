@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-font-family
 title: Событие set-font-family
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-font-family. Изучайте руководства для разработчиков и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-font-family. Изучайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-font-family

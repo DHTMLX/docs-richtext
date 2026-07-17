@@ -20,7 +20,7 @@ function triggerTemplate({ data, trigger }) {
 };
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 callback 함수는 다음 매개변수를 가진 객체를 받습니다:
 

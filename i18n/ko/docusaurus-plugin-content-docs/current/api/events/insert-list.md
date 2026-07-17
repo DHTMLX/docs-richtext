@@ -18,7 +18,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 insert-list
 type TListType = "bulleted" | "numbered";
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 `insert-list` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 

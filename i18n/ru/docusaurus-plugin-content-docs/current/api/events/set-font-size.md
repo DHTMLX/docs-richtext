@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-font-size
 title: Событие set-font-size
-description: Вы можете узнать о событии set-font-size в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии set-font-size в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-font-size

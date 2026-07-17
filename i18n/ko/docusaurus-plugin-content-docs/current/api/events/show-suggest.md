@@ -28,7 +28,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 show-sugges
 }) => boolean | void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 `show-suggest` 이벤트의 callback은 다음 필드를 포함하는 객체를 수신합니다.
 

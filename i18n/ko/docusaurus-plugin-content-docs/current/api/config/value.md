@@ -33,4 +33,4 @@ new richtext.Richtext("#root", {
 
 **관련 문서:** [구성](guides/configuration.md)
 
-**관련 예제:** [RichText. 초기화](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)
+**관련 샘플:** [RichText. 초기화](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

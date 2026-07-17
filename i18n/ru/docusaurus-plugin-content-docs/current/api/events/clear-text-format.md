@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear-text-format
 title: Событие clear-text-format
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии clear-text-format. Изучайте руководства для разработчиков и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии clear-text-format. Изучайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # clear-text-format

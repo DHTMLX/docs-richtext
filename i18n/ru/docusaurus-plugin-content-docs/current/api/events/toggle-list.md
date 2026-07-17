@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-list
 title: Событие toggle-list
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-list. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-list. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toggle-list

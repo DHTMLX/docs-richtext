@@ -1,7 +1,7 @@
 ---
 sidebar_label: resize-image
 title: resize-image Event
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии resize-image. Изучите руководства разработчика и справочник АПИ, просмотрите примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии resize-image. Изучите руководства разработчика и справочник API, просмотрите примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # resize-image

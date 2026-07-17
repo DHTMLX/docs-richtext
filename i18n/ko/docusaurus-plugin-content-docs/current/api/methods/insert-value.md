@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 insertValue
 insertValue: (value: string, encoder?: any): void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 - `value` - (필수) 현재 커서 위치의 RichText에 삽입할 값입니다. 선택 영역이 활성화된 경우, 선택 영역이 새 값으로 대체됩니다
 - `encoder` - (선택) 삽입된 값을 디코딩하는 데 사용되는 파서입니다. 사용 가능한 형식은 `html`(기본값), `text`, `markdown`입니다

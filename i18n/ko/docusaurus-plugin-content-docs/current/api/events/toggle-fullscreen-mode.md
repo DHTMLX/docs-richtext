@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-full
 "toggle-fullscreen-mode": ({ mode?: boolean }) => boolean | void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 `toggle-fullscreen-mode` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
@@ -26,7 +26,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-full
 내부 이벤트를 처리하려면 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용할 수 있습니다
 :::
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~jsx {5-9}
 // RichText 초기화

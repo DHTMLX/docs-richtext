@@ -2,7 +2,7 @@
 sidebar_label: Обзор RichText
 title: Обзор RichText
 slug: /
-description: Документация по DHTMLX JavaScript RichText — обзор библиотеки, руководства разработчика и справочник АПИ, примеры кода и живые демо, а также бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
+description: Документация по DHTMLX JavaScript RichText — обзор библиотеки, руководства разработчика и справочник API, примеры кода и живые демо, а также бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
 ---
 
 # Обзор RichText {#richtext-overview}
@@ -21,11 +21,11 @@ description: Документация по DHTMLX JavaScript RichText — обз
 
 - Загрузка изображений с поддержкой серверной [загрузки](api/config/image-upload-url.md) или встраивания в формате base64, богатое форматирование, кастомные стили и полноэкранный режим
 
-- [Полный доступ к АПИ](api/overview/main_overview.md) для [обработки событий](api/overview/event_bus_methods_overview.md), [управления контентом](api/overview/methods_overview.md) и [реактивного управления состоянием](api/overview/state_methods_overview.md)
+- [Полный доступ к API](api/overview/main_overview.md) для [обработки событий](api/overview/event_bus_methods_overview.md), [управления контентом](api/overview/methods_overview.md) и [реактивного управления состоянием](api/overview/state_methods_overview.md)
 
 RichText не зависит от фреймворка и легко интегрируется с [React](guides/integration_with_react.md), [Angular](guides/integration_with_angular.md), [Vue](guides/integration_with_vue.md) и [Svelte](guides/integration_with_svelte.md), что делает его подходящим для широкого спектра фронтенд-экосистем.
 
-Данная документация содержит подробные сведения об установке, настройке, использовании и кастомизации. Здесь вы найдёте примеры для типовых сценариев, [полный справочник АПИ](api/overview/main_overview.md) и лучшие практики встраивания RichText в ваше приложение.
+Данная документация содержит подробные сведения об установке, настройке, использовании и кастомизации. Здесь вы найдёте примеры для типовых сценариев, [полный справочник API](api/overview/main_overview.md) и лучшие практики встраивания RichText в ваше приложение.
 
 ## Структура RichText {#richtext-structure}
 

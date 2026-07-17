@@ -1,7 +1,7 @@
 ---
 sidebar_label: delete-link
 title: delete-link Event
-description: Вы можете узнать о событии delete-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии delete-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # delete-link

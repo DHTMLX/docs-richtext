@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-text-format
 title: События set-text-format
-description: Вы можете узнать о событии set-text-format в документации библиотеки DHTMLX JavaScript RichText. Ознакомьтесь с руководствами разработчика и справочником АПИ, изучите примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии set-text-format в документации библиотеки DHTMLX JavaScript RichText. Ознакомьтесь с руководствами разработчика и справочником API, изучите примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-text-format

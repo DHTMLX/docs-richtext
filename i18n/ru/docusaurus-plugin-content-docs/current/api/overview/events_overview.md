@@ -1,7 +1,7 @@
 ---
 sidebar_label: Обзор событий
 title: Обзор событий
-description: Обзор событий JavaScript RichText в документации библиотеки DHTMLX JavaScript RichText. Руководства разработчика и справочник АПИ, примеры кода и живые демо, бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
+description: Обзор событий JavaScript RichText в документации библиотеки DHTMLX JavaScript RichText. Руководства разработчика и справочник API, примеры кода и живые демо, бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
 ---
 
 # Обзор событий {#events-overview}

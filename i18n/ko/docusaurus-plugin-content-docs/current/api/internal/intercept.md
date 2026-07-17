@@ -19,7 +19,7 @@ api.intercept(
 ): void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 - `event` - (필수) 발생시킬 이벤트
 - `callback` - (필수) 실행할 callback (callback 인수는 발생하는 이벤트에 따라 달라집니다)

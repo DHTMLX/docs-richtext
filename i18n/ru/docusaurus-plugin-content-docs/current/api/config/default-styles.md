@@ -1,7 +1,7 @@
 ---
 sidebar_label: defaultStyles
 title: Конфиг defaultStyles
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о конфиге defaultStyles. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о конфиге defaultStyles. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # defaultStyles
@@ -101,7 +101,7 @@ new richtext.Richtext("#root", {
 В этом примере всем блокам `h2` назначается шрифт `"Roboto"` с размером 28px, а также изменяются цвет текста и цвет фона. CSS-стили также применяются к блокам `h2`.
 :::
 
-### Конфиг по умолчанию {#default-config}
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 const defaultStyles = {

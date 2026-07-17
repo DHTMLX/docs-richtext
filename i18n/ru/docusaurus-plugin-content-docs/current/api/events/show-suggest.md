@@ -1,7 +1,7 @@
 ---
 sidebar_label: show-suggest
 title: Событие show-suggest
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии show-suggest. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии show-suggest. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # show-suggest

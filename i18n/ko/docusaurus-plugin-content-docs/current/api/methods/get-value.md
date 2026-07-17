@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 getValue 메서드에
 getValue(encoder?: any): string;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 - `encoder` - (선택 사항) RichText의 콘텐츠를 사용자 정의 형식으로 인코딩하는 데 사용되는 파서입니다. 사용 가능한 형식은 `html`(기본값), `text`, `markdown`입니다.
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-shortcut-info
 title: Событие toggle-shortcut-info
-description: Вы можете узнать о событии toggle-shortcut-info в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии toggle-shortcut-info в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toggle-shortcut-info

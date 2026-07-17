@@ -1,7 +1,7 @@
 ---
 sidebar_label: fullscreenMode
 title: Конфиг fullscreenMode
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о конфиге fullscreenMode. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о конфиге fullscreenMode. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # fullscreenMode
@@ -16,7 +16,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 fullscreenMode?: boolean; 
 ~~~
 
-### Конфиг по умолчанию {#default-config}
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 fullscreenMode: false;

@@ -14,7 +14,7 @@ new richtext.RichText("#root", {
 });
 ~~~
 
-**매개변수**:
+**파라미터**:
 
 - HTML 컨테이너 (예: CSS 선택자 또는 DOM 요소)
 - 구성 객체 ([속성 보기](api/overview/properties_overview.md))

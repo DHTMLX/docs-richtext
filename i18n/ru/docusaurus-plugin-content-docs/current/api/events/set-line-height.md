@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-line-height
 title: set-line-height Event
-description: Вы можете узнать о событии set-line-height в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии set-line-height в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-line-height

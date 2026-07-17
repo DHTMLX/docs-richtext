@@ -1,7 +1,7 @@
 ---
 sidebar_label: layoutMode
 title: Конфиг layoutMode
-description: В документации DHTMLX JavaScript RichText вы можете узнать о конфиге layoutMode. Изучайте руководства разработчика и справочник АПИ, просматривайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации DHTMLX JavaScript RichText вы можете узнать о конфиге layoutMode. Изучайте руководства разработчика и справочник API, просматривайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # layoutMode
@@ -18,7 +18,7 @@ layoutMode: "classic" | "document";
 
 Режим `"classic"` заполняет всю область редактирования. Режим `"document"` отображает область редактирования в виде страницы документа.
 
-### Конфиг по умолчанию {#default-config}
+### Конфигурация по умолчанию {#default-config}
 
 ~~~jsx
 layoutMode: "classic";

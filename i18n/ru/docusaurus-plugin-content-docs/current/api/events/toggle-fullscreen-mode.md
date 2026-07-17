@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-fullscreen-mode
 title: Событие toggle-fullscreen-mode
-description: Вы можете узнать о событии toggle-fullscreen-mode в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник АПИ, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии toggle-fullscreen-mode в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник API, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toggle-fullscreen-mode

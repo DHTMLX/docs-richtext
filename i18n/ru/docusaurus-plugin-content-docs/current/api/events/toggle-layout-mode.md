@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-layout-mode
 title: Событие toggle-layout-mode
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-layout-mode. Руководства разработчика и справочник по АПИ, примеры кода и живые демо, а также бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-layout-mode. Руководства разработчика и справочник по API, примеры кода и живые демо, а также бесплатная 30-дневная ознакомительная версия DHTMLX RichText.
 ---
 
 # toggle-layout-mode

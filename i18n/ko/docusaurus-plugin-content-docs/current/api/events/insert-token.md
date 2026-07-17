@@ -28,7 +28,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 insert-toke
 }) => boolean | void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 `insert-token` 이벤트의 callback은 다음 필드를 포함하는 객체를 받습니다.
 

@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 indent 이�
 "indent": ({ step: number }) => boolean | void;
 ~~~
 
-### 매개변수 {#parameters}
+### 파라미터 {#parameters}
 
 `indent` 이벤트의 callback은 다음 매개변수를 포함한 객체를 받을 수 있습니다:
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: imageUploadUrl
 title: Конфигурация imageUploadUrl
-description: В документации DHTMLX JavaScript RichText вы можете узнать о конфигурационном свойстве imageUploadUrl. Ознакомьтесь с руководствами разработчика и справочником АПИ, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации DHTMLX JavaScript RichText вы можете узнать о конфигурационном свойстве imageUploadUrl. Ознакомьтесь с руководствами разработчика и справочником API, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # imageUploadUrl

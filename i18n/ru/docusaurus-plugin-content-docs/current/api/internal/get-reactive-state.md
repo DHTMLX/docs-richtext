@@ -1,7 +1,7 @@
 ---
 sidebar_label: api.getReactiveState()
 title: Метод getReactiveState
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе getReactiveState. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе getReactiveState. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # api.getReactiveState()
