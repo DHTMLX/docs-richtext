@@ -165,7 +165,7 @@ const defaultToolbarButtons = {
 };
 ~~~
 
-:::tip[Совет]
+:::tip[Подсказка]
 Элементы управления панели инструментов по умолчанию экспортируются виджетом RichText и доступны через `richtext.defaultToolbarButtons`.
 
 ```jsx{4}
@@ -214,6 +214,6 @@ new richtext.Richtext("#root", {
 
 **Журнал изменений:** Свойство добавлено в v2.0
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)
 
 **Связанный пример:** [RichText. Пользовательский элемент управления и упрощённая панель инструментов](https://snippet.dhtmlx.com/wda202ih?tag=richtext)

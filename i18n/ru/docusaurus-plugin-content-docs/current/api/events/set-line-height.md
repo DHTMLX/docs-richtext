@@ -22,7 +22,7 @@ description: Вы можете узнать о событии set-line-height в
 
 - `lineHeight` - межстрочный интервал
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

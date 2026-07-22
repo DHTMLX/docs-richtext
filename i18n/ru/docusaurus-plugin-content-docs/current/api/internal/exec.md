@@ -26,7 +26,7 @@ api.exec(
 
 ### События {#events}
 
-:::info[Информация]
+:::info[К сведению]
 Полный список внутренних событий RichText можно найти [**здесь**](api/overview/events_overview.md)
 :::
 

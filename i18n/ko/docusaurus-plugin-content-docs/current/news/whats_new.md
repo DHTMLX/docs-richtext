@@ -135,7 +135,7 @@ description: DHTMLX RichText의 새로운 기능과 릴리스 히스토리를 DH
 
 2025년 7월 30일 출시
 
-:::note[참고]
+:::note[노트]
 v1.2의 API는 v2.0과 호환되지 않습니다. 자세한 내용은 [**마이그레이션 가이드**](news/migration.md)를 참조하세요.
 :::
 

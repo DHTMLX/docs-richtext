@@ -22,7 +22,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 
 - `fontFamily` - семейство шрифтов для применения. Доступны следующие шрифты: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

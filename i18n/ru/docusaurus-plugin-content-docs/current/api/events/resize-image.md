@@ -24,7 +24,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 - `width` - ширина изображения
 - `height` - высота изображения
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

@@ -42,4 +42,4 @@ editor.api.on("toggle-shortcut-info", (obj) => {
 editor.api.exec("toggle-shortcut-info", { mode: true });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

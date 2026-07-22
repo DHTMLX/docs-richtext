@@ -36,6 +36,6 @@ new richtext.Richtext("#root", {
 
 **Журнал изменений:** Свойство добавлено в v2.0 вместо удалённого свойства `mode`
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)
 
 **Связанный пример:** [RichText. Инициализация](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

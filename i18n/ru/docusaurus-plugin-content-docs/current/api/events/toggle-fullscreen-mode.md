@@ -22,7 +22,7 @@ description: Вы можете узнать о событии toggle-fullscreen-
 
 - `mode` - включает полноэкранный режим
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -42,4 +42,4 @@ editor.api.on("toggle-fullscreen-mode", (obj) => {
 editor.api.exec("toggle-fullscreen-mode", { mode: true });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

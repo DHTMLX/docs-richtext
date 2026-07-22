@@ -37,7 +37,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 - `items` - сформированный (и уже отфильтрованный) список элементов подсказок. Каждый элемент соответствует [форме элемента подсказки](api/config/triggers.md#suggestion-item-fields): необязательные поля `id`, `label` и `url`, а также любые пользовательские поля (например, `image` или `name`), используемые [`triggerTemplate`](api/config/trigger-template.md)
 - `pos` - объект `DOMRect`, описывающий положение курсора; используется для размещения выпадающего списка на экране
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md).
 :::
 
@@ -61,4 +61,4 @@ editor.api.intercept("show-suggest", (state) => {
 
 **Связанный пример:** [RichText. Упоминания, теги и асинхронный поиск](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 
-**Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)
+**Полезные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

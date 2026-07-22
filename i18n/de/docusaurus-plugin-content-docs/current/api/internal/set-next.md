@@ -37,4 +37,4 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 hinzugefügt
+**Changelog:** Die Methode wurde in v2.0 hinzugefügt

@@ -37,4 +37,4 @@ editor.setConfig({
 });
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 hinzugefügt
+**Changelog:** Die Methode wurde in v2.0 hinzugefügt

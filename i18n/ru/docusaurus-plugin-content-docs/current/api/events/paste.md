@@ -16,7 +16,7 @@ description: Вы можете узнать о событии paste в доку�
 "paste": () => boolean | void;
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

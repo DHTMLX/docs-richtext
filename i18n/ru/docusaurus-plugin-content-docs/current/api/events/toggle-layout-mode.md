@@ -22,7 +22,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 
 - `mode` - режим разметки. Доступны следующие режимы: `"classic" | "document"`
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -42,4 +42,4 @@ editor.api.on("toggle-layout-mode", (obj) => {
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

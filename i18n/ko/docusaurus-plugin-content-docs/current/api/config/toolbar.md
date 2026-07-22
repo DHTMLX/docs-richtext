@@ -212,7 +212,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**변경 사항:** v2.0에서 속성이 추가되었습니다.
+**변경 로그:** v2.0에서 속성이 추가되었습니다.
 
 **관련 문서:** [설정](guides/configuration.md)
 

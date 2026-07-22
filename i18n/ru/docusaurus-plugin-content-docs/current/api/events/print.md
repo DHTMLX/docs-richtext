@@ -16,7 +16,7 @@ description: В документации DHTMLX JavaScript RichText вы мож�
 "print": () => boolean | void;
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -33,4 +33,4 @@ editor.api.on("print", () => {
 });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

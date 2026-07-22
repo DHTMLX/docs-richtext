@@ -35,7 +35,7 @@ type TListType = "bulleted" | "numbered";
     - `"bulleted"` - маркированный (неупорядоченный) список
     - `"numbered"` - нумерованный (упорядоченный) список
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

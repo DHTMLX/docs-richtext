@@ -8,7 +8,7 @@ description: DHTMLX JavaScript RichText 라이브러리에서 TypeScript를 사�
 
 v2.0부터 DHTMLX RichText에는 별도의 설정 없이 바로 사용할 수 있는 TypeScript 정의가 내장되어 있습니다.
 
-:::note[참고]
+:::note[노트]
 <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a>에서 에디터를 직접 체험해 보세요.
 :::
 

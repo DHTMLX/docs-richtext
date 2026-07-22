@@ -26,7 +26,7 @@ triggers?: Array<{
 }>;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `triggers` 배열의 각 항목에는 다음 필드를 사용할 수 있습니다:
 
@@ -236,9 +236,9 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**변경 이력:** 이 속성은 v2.1에서 추가되었습니다
+**변경 로그:** 이 속성은 v2.1에서 추가되었습니다
 
-**관련 샘플:**
+**관련 예제:**
 
 - [RichText. 멘션, 태그 및 비동기 조회](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 - [RichText. 트리거별 커스텀 드롭다운 템플릿](https://snippet.dhtmlx.com/0p3bbnhz?tag=richtext)

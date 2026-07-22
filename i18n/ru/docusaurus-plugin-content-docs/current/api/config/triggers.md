@@ -236,7 +236,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**История изменений:** Свойство добавлено в v2.1
+**Журнал изменений:** Свойство добавлено в v2.1
 
 **Связанные примеры:**
 
@@ -247,4 +247,4 @@ new richtext.Richtext("#root", {
 - [RichText. Поиск и выделение упоминаний](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
 - [RichText. Выделение всех упоминаний](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
 
-**Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)
+**Полезные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

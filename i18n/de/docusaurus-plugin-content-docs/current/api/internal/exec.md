@@ -43,4 +43,4 @@ editor.api.exec("set-font-size", {
 }); 
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 hinzugefügt
+**Changelog:** Die Methode wurde in v2.0 hinzugefügt

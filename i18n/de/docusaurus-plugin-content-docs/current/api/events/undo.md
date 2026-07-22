@@ -33,4 +33,4 @@ editor.api.on("undo", () => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

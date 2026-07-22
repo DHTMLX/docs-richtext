@@ -45,4 +45,4 @@ editor.api.intercept("set-font-size", (obj) => {
 });
 ~~~
 
-**变更日志：** 该方法在 v2.0 中新增
+**更新日志：** 该方法在 v2.0 中新增

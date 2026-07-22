@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-layo
 "toggle-layout-mode": ({ mode?: "classic" | "document" }) => boolean | void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `toggle-layout-mode` 이벤트의 callback은 다음 매개변수를 포함하는 객체를 받을 수 있습니다:
 
@@ -42,4 +42,4 @@ editor.api.on("toggle-layout-mode", (obj) => {
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**변경 이력:** 이 이벤트는 v2.0에서 추가되었습니다
+**변경 로그:** 이 이벤트는 v2.0에서 추가되었습니다

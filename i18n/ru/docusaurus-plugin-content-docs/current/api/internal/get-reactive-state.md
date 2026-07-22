@@ -16,7 +16,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 api.getReactiveState(): object;
 ~~~
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает объект со следующими параметрами:
 
@@ -45,4 +45,4 @@ const reactive_state = editor.api.getReactiveState();
 console.log(reactive_state)
 ~~~
 
-**История изменений:** Метод добавлен в v2.0
+**Журнал изменений:** Метод добавлен в v2.0

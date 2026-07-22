@@ -32,8 +32,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**История изменений:** Свойство добавлено в v2.0
+**Журнал изменений:** Свойство добавлено в v2.0
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)
 
 **Связанный пример:** [RichText. Полная панель инструментов](https://snippet.dhtmlx.com/ziynafp7?tag=richtext)

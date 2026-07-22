@@ -20,7 +20,7 @@ setConfig(config: { [key:any]: any }): void;
 
 - `config` - （必填）RichText 配置参数对象。完整属性列表请参见[此处](api/overview/properties_overview.md)
 
-:::note[注意]
+:::note[备注]
 `setConfig()` 方法会保留所有之前设置的、未在本次 `setConfig()` 调用中显式提供的参数。
 :::
 
@@ -37,4 +37,4 @@ editor.setConfig({
 });
 ~~~
 
-**变更日志：** 该方法在 v2.0 中新增
+**更新日志：** 该方法在 v2.0 中新增

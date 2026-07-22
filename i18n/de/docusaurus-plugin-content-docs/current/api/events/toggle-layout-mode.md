@@ -42,4 +42,4 @@ editor.api.on("toggle-layout-mode", (obj) => {
 editor.api.exec("toggle-layout-mode", { mode: "document" });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

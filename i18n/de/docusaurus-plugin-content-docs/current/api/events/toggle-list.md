@@ -53,4 +53,4 @@ editor.api.on("toggle-list", (obj) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0.6 hinzugefügt
+**Changelog:** Das Event wurde in v2.0.6 hinzugefügt

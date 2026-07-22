@@ -22,7 +22,7 @@ description: Вы можете узнать о событии toggle-shortcut-in
 
 - `mode` - включает информацию о горячих клавишах; `true` — показать всплывающее окно с горячими клавишами, `false` — скрыть его
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -42,4 +42,4 @@ editor.api.on("toggle-shortcut-info", (obj) => {
 editor.api.exec("toggle-shortcut-info", { mode: true });
 ~~~
 
-**Список изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

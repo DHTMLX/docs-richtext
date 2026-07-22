@@ -6,7 +6,7 @@ description: Узнайте об интеграции с React в докумен
 
 # Интеграция с React {#integration-with-react}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с базовыми концепциями и паттернами [React](https://react.dev). Для повторения см. [документацию React](https://react.dev/learn).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с React. Полный пример кода с
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Node.js](https://nodejs.org/en/) и (опционально) [Vite](https://vite.dev/).
 :::
 

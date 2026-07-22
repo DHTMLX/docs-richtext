@@ -6,7 +6,7 @@ description: Вы можете узнать об интеграции со Svelt
 
 # Интеграция со Svelte {#integration-with-svelte}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с основными концепциями и паттернами [Svelte](https://svelte.dev/). Для повторения материала обратитесь к [документации Svelte](https://svelte.dev/docs).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает со Svelte. Полный пример кода
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Node.js](https://nodejs.org/en/) и (опционально) [Vite](https://vite.dev/).
 :::
 

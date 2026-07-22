@@ -6,7 +6,7 @@ description: Вы можете узнать об интеграции с Vue в 
 
 # Интеграция с Vue {#integration-with-vue}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с основными концепциями и паттернами [Vue](https://vuejs.org/). Для освежения знаний обратитесь к [документации Vue 3](https://vuejs.org/guide/introduction.html#getting-started).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с Vue. Полный пример кода до
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Node.js](https://nodejs.org/en/).
 :::
 

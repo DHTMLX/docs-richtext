@@ -14,7 +14,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 imageUpload
 
 이 속성이 생략되거나 거짓 값(`""`, `null`, `undefined`)으로 설정된 경우, RichText는 **인라인 모드**로 전환됩니다. 이 경우 이미지 파일은 클라이언트에서 읽혀 base64 데이터 URL로 콘텐츠에 직접 임베드되며, 서버가 필요하지 않습니다. 1024×800보다 큰 인라인 이미지는 해당 크기에 맞게 비율을 유지하며 축소됩니다.
 
-:::note[참고]
+:::note[노트]
 인라인(base64) 이미지는 내장된 DOCX / PDF [내보내기](api/events/export.md)에서 보존되지 않습니다. 내보내기 기능을 사용하는 경우 `imageUploadUrl`을 설정하여 이미지가 외부 위치를 참조하도록 하십시오.
 :::
 

@@ -44,7 +44,7 @@ editor.api.on("hide-suggest", () => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.1 hinzugefügt
+**Changelog:** Das Event wurde in v2.1 hinzugefügt
 
 **Verwandtes Beispiel:** [RichText. Erwähnungen, Tags und asynchrone Suche](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 

@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 setValue �
 setValue: (value: string, encoder?: any): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `value` - (필수) RichText에 삽입할 값
 - `encoder` - (선택) 커스텀 형식에서 값을 디코딩하는 데 사용하는 커스텀 파서. 사용 가능한 형식은 `html`(기본값), `text`, `markdown`입니다

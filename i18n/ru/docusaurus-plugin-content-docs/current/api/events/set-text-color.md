@@ -28,7 +28,7 @@ interface ITextColor {
 - `color` - цвет текста
 - `background` - цвет фона текста
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

@@ -28,6 +28,6 @@ new richtext.Richtext("#root", {
 
 **Журнал изменений:** Свойство добавлено в v2.0
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)
 
 **Связанный пример:** [RichText. Инициализация с меню-баром](https://snippet.dhtmlx.com/tjryzka7?tag=richtext)

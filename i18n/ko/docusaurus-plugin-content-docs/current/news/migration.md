@@ -71,7 +71,7 @@ defaultStyles: {
 }
 ```
 
-:::note[참고]
+:::note[노트]
 `*`를 사용하여 모든 블록의 기본값을 정의한 후, 특정 요소(p, h1, blockquote 등)를 재정의할 수 있습니다.
 :::
 
@@ -131,7 +131,7 @@ editor.setValue("<p>Hello</p>", fromHTMLEncoder);
 editor.getValue(toTextEncoder);
 ```
 
-:::note[참고]
+:::note[노트]
 인코더 없이 `getValue()`와 `setValue()`를 호출할 수 있습니다. 기본값은 HTML입니다.
 :::
 

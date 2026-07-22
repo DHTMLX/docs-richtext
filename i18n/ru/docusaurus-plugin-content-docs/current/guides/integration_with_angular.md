@@ -6,7 +6,7 @@ description: Вы можете узнать об интеграции с Angular
 
 # Интеграция с Angular {#integration-with-angular}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с основными концепциями и паттернами Angular. Для повторения см. [документацию Angular](https://v17.angular.io/docs).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с Angular. Полный пример кода 
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Angular CLI](https://v17.angular.io/cli) и [Node.js](https://nodejs.org/en/).
 :::
 

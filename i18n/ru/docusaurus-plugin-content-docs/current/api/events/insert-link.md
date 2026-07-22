@@ -22,7 +22,7 @@ description: Вы можете узнать о событии insert-link в д�
 
 - `url` - вставляемый URL
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

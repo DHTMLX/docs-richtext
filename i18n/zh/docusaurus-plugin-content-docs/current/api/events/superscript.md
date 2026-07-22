@@ -35,4 +35,4 @@ editor.api.on("superscript", () => {
 editor.api.exec("superscript", {});
 ~~~
 
-**变更日志：** 该事件于 v2.0 版本中添加
+**更新日志：** 该事件于 v2.0 版本中添加

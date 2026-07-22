@@ -34,7 +34,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**变更日志：** 该属性在 v2.0 中新增，用于替代已移除的 `mode` 属性
+**更新日志：** 该属性在 v2.0 中新增，用于替代已移除的 `mode` 属性
 
 **相关文章：** [配置](guides/configuration.md)
 

@@ -157,7 +157,7 @@ const en = {
 };
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 RichText также поставляется со встроенными немецкой (`de`) и китайской (`cn`) локалями. Получить доступ к любой встроенной локали можно через пространство имён `richtext.locales`: `richtext.locales.en`, `richtext.locales.de`, `richtext.locales.cn`.
 :::
 

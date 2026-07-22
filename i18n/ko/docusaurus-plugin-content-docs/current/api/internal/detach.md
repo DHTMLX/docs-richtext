@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 on 메서드에 대�
 api.detach( tag: string ): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `tag` - (필수) 액션 태그의 이름
 

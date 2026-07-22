@@ -16,7 +16,7 @@ description: Вы можете узнать о событии subscript в до�
 "subscript": () => boolean | void;
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -35,4 +35,4 @@ editor.api.on("subscript", () => {
 editor.api.exec("subscript", {});
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

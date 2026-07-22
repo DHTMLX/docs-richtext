@@ -27,7 +27,7 @@ interface ITextFormat {
 내부 이벤트를 처리하려면 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용할 수 있습니다
 :::
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `set-text-format` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 

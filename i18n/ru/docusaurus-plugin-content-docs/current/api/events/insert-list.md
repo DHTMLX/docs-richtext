@@ -26,7 +26,7 @@ type TListType = "bulleted" | "numbered";
     - `"bulleted"` - маркированный список
     - `"numbered"` - нумерованный список
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -44,4 +44,4 @@ editor.api.on("insert-list", (obj) => {
 });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0
