@@ -80,7 +80,7 @@ RichText는 사용자가 정의한 트리거 문자를 지원하며, 해당 문�
 }
 ~~~
 
-**관련 샘플:**
+**관련 예제:**
 
 - [RichText. 멘션 찾기 및 강조 표시](https://snippet.dhtmlx.com/8y6zvzh2?tag=richtext)
 - [RichText. 모든 멘션 강조 표시](https://snippet.dhtmlx.com/2rbo12jx?tag=richtext)
@@ -149,7 +149,7 @@ new richtext.Richtext("#root", {
 
 기본적으로 항목을 선택하면 문서에 토큰으로 삽입됩니다. 대신 직접 작성한 코드를 실행하려면 트리거에 `action` callback을 추가하세요. RichText는 입력된 트리거 텍스트를 제거하고 선택한 항목과 함께 `action(item)`을 호출합니다. 토큰은 삽입되지 않으므로 무엇을 추가할지 직접 결정할 수 있습니다.
 
-:::note[참고]
+:::note[노트]
 `action`은 `showTrigger`보다 우선합니다. `action`이 설정된 경우 `showTrigger`는 무시됩니다.
 :::
 

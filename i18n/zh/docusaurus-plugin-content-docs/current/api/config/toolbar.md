@@ -212,7 +212,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**变更日志：** 该属性在 v2.0 中新增
+**更新日志：** 该属性在 v2.0 中新增
 
 **相关文章：** [配置](guides/configuration.md)
 

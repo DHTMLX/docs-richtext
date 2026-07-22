@@ -41,4 +41,4 @@ const editor_value = editor.getValue(toTextEncoder);
 console.log(editor_value);
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 aktualisiert. Der Parameter `mode` wurde entfernt. Der Parameter `encoder` wurde hinzugefügt
+**Changelog:** Die Methode wurde in v2.0 aktualisiert. Der Parameter `mode` wurde entfernt. Der Parameter `encoder` wurde hinzugefügt

@@ -26,7 +26,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.0 hinzugefügt
+**Changelog:** Die Eigenschaft wurde in v2.0 hinzugefügt
 
 **Verwandte Artikel:** [Konfiguration](guides/configuration.md)
 

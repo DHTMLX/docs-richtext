@@ -1,7 +1,7 @@
 ---
 sidebar_label: api.getReactiveState()
 title: Метод getReactiveState
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе getReactiveState. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе getReactiveState. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # api.getReactiveState()
@@ -16,7 +16,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 api.getReactiveState(): object;
 ~~~
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает объект со следующими параметрами:
 
@@ -45,4 +45,4 @@ const reactive_state = editor.api.getReactiveState();
 console.log(reactive_state)
 ~~~
 
-**История изменений:** Метод добавлен в v2.0
+**Журнал изменений:** Метод добавлен в v2.0

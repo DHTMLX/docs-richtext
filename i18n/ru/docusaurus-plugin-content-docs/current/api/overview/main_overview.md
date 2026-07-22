@@ -1,10 +1,10 @@
 ---
-sidebar_label: Обзор АПИ
-title: Обзор АПИ
-description: Обзор АПИ JavaScript RichText представлен в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+sidebar_label: Обзор API
+title: Обзор API
+description: Обзор API JavaScript RichText представлен в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
-# Обзор АПИ {#api-overview}
+# Обзор API {#api-overview}
 
 ## Конструктор RichText {#richtextconstructor}
 

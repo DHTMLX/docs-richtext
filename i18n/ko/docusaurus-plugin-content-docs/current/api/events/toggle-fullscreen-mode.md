@@ -26,7 +26,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-full
 내부 이벤트를 처리하려면 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용할 수 있습니다
 :::
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~jsx {5-9}
 // RichText 초기화

@@ -8,7 +8,7 @@ description: 您可以在文档中了解如何将 TypeScript 与 DHTMLX JavaScri
 
 从 v2.0 起，DHTMLX RichText 内置了 TypeScript 类型定义，无需额外配置。
 
-:::note[注意]
+:::note[备注]
 在 <a href="https://snippet.dhtmlx.com/ziynafp7?tag=richtext" target="_blank">Snippet Tool</a> 中体验编辑器。
 :::
 

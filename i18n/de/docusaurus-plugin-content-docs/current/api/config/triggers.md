@@ -236,7 +236,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.1 hinzugefügt
+**Changelog:** Die Eigenschaft wurde in v2.1 hinzugefügt
 
 **Verwandte Beispiele:**
 

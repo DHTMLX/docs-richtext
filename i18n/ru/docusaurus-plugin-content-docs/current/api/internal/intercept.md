@@ -1,7 +1,7 @@
 ---
 sidebar_label: api.intercept()
 title: Метод intercept
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе intercept. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе intercept. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # api.intercept()
@@ -26,7 +26,7 @@ api.intercept(
 
 ### События {#events}
 
-:::info[Информация]
+:::info[К сведению]
 Полный список внутренних событий RichText можно найти [**здесь**](api/overview/events_overview.md)
 :::
 

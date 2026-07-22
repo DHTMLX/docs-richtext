@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-text-color
 title: set-text-color Event
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-text-color. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-text-color. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-text-color
@@ -28,7 +28,7 @@ interface ITextColor {
 - `color` - цвет текста
 - `background` - цвет фона текста
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

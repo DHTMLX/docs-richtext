@@ -54,7 +54,7 @@ editor.api.on("insert-token", ({ data, trigger, showTrigger }) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.1 hinzugefügt
+**Changelog:** Das Event wurde in v2.1 hinzugefügt
 
 **Verwandtes Beispiel:** [RichText. Erwähnungen, Tags und asynchrone Suche](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 

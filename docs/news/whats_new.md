@@ -4,6 +4,19 @@ title: What's new
 description: You can explore what's new in DHTMLX RichText and its release history in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX RichText.
 ---
 
+## Version 2.1.1
+
+Released on July 21, 2026
+
+### Fixes
+
+- Toolbar tooltips, dropdowns, and fullscreen mode may appear behind other elements due to incorrect z-index handling
+- Incorrect parsing of nested, mixed-content, and empty lists from HTML
+- Invalid HTML list structure when exporting or copying nested lists
+- List indentation and styles are not correctly preserved when parsing and generating HTML
+- Missing paragraph wrappers when parsing inline content and generic block elements from HTML
+- Image dimensions defined through HTML `width` and `height` attributes are ignored
+
 ## Version 2.1
 
 Released on June 22, 2026

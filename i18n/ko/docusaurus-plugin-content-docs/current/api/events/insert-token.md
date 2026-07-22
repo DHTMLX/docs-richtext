@@ -54,7 +54,7 @@ editor.api.on("insert-token", ({ data, trigger, showTrigger }) => {
 });
 ~~~
 
-**변경 이력:** 이 이벤트는 v2.1에서 추가되었습니다
+**변경 로그:** 이 이벤트는 v2.1에서 추가되었습니다
 
 **관련 샘플:** [RichText. 멘션, 태그 및 비동기 조회](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 

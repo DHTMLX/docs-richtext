@@ -24,7 +24,7 @@ Angular CLI를 사용하여 *my-angular-richtext-app* 프로젝트를 생성합�
 ng new my-angular-richtext-app
 ~~~
 
-:::note[참고]
+:::note[노트]
 프로젝트 생성 중 Angular CLI가 묻는 경우, 서버 사이드 렌더링(SSR)과 정적 사이트 생성(SSG/Prerendering)을 비활성화하세요.
 :::
 

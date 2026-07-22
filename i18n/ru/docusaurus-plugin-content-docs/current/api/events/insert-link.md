@@ -1,7 +1,7 @@
 ---
 sidebar_label: insert-link
 title: Событие insert-link
-description: Вы можете узнать о событии insert-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии insert-link в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # insert-link
@@ -22,7 +22,7 @@ description: Вы можете узнать о событии insert-link в д�
 
 - `url` - вставляемый URL
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

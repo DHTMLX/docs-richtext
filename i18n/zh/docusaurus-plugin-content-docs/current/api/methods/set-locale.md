@@ -36,6 +36,6 @@ const editor = new richtext.Richtext("#root", {
 editor.setLocale(de);
 ~~~
 
-**变更日志：** 该方法在 v2.0 中新增
+**更新日志：** 该方法在 v2.0 中新增
 
 **相关文章：** [本地化](guides/localization.md)

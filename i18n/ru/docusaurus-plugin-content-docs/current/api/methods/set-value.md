@@ -1,7 +1,7 @@
 ---
 sidebar_label: setValue()
 title: Метод setValue
-description: Вы можете узнать о методе setValue в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о методе setValue в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # setValue()
@@ -42,6 +42,6 @@ const fromTextEncoder = richtext.text.fromText;
 editor.setValue(editor_value, fromTextEncoder);
 ~~~
 
-**История изменений:** Метод был обновлён в v2.0. Параметр `mode` удалён. Добавлен параметр `encoder`
+**Журнал изменений:** Метод был обновлён в v2.0. Параметр `mode` удалён. Добавлен параметр `encoder`
 
 **Связанный пример:** [RichText. Работа с различными форматами (Markdown, HTML, text)](https://snippet.dhtmlx.com/cne4kujn?tag=richtext)

@@ -35,4 +35,4 @@ editor.api.on("superscript", () => {
 editor.api.exec("superscript", {});
 ~~~
 
-**변경 이력:** 이 이벤트는 v2.0에서 추가되었습니다
+**변경 로그:** 이 이벤트는 v2.0에서 추가되었습니다

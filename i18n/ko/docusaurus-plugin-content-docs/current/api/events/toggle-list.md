@@ -27,7 +27,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 toggle-list
 type TListType = "bulleted" | "numbered";
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `toggle-list` 이벤트의 callback은 다음 파라미터를 포함한 객체를 받을 수 있습니다:
 

@@ -41,4 +41,4 @@ const editor_value = editor.getValue(toTextEncoder);
 console.log(editor_value);
 ~~~
 
-**变更日志：** 该方法在 v2.0 中进行了更新。`mode` 参数已被移除，新增了 `encoder` 参数
+**更新日志：** 该方法在 v2.0 中进行了更新。`mode` 参数已被移除，新增了 `encoder` 参数

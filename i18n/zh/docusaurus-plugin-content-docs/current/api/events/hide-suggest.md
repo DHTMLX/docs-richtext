@@ -44,7 +44,7 @@ editor.api.on("hide-suggest", () => {
 });
 ~~~
 
-**变更日志：** 该事件已在 v2.1 中新增
+**更新日志：** 该事件已在 v2.1 中新增
 
 **相关示例：** [RichText. 提及、标签与异步查询](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 

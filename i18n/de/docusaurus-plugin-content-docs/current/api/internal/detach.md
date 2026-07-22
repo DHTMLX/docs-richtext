@@ -41,4 +41,4 @@ editor.api.on("set-font-size", (obj) => {
 editor.api.detach("track");
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 aktualisiert. Die Parameter `name` und `context` wurden entfernt
+**Changelog:** Die Methode wurde in v2.0 aktualisiert. Die Parameter `name` und `context` wurden entfernt

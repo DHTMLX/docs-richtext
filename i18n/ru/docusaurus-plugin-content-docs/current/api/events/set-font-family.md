@@ -1,7 +1,7 @@
 ---
 sidebar_label: set-font-family
 title: Событие set-font-family
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-font-family. Изучайте руководства для разработчиков и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии set-font-family. Изучайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # set-font-family
@@ -22,7 +22,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 
 - `fontFamily` - семейство шрифтов для применения. Доступны следующие шрифты: `"Roboto" | "Arial" | "Georgia" | "Tahoma" | "Times New Roman" | "Verdana"`
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

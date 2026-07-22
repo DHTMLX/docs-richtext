@@ -137,7 +137,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.0 aktualisiert
+**Changelog:** Die Eigenschaft wurde in v2.0 aktualisiert
 
 **Verwandte Artikel:** [Konfiguration](guides/configuration.md)
 

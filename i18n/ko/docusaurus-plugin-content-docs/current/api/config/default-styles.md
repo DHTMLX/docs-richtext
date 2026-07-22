@@ -137,7 +137,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**변경 이력:** 이 속성은 v2.0에서 업데이트되었습니다.
+**변경 로그:** 이 속성은 v2.0에서 업데이트되었습니다.
 
 **관련 문서:** [설정](guides/configuration.md)
 

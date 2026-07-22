@@ -273,7 +273,7 @@ new richtext.Richtext("#root", {
 
 大于 1024×800 的内联图片将以缩小尺寸显示（`width`/`height` 属性会被限制在此范围内），但嵌入的字节数据仍为原始全分辨率文件——客户端不会对其进行降采样或重新编码。
 
-:::note[注意]
+:::note[备注]
 内联（base64）图片不会被内置的 DOCX / PDF [导出](api/events/export.md) 功能保留。如果您依赖导出功能，请提供 `imageUploadUrl`，以便图片引用外部位置。
 :::
 

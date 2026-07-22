@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 outdent 이벤트에 
 "outdent": ({ step: number }) => boolean | void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 `outdent` 이벤트의 callback은 다음 파라미터를 포함하는 객체를 받을 수 있습니다:
 
@@ -26,7 +26,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 outdent 이벤트에 
 내부 이벤트를 처리하려면 [**Event Bus 메서드**](api/overview/event_bus_methods_overview.md)를 사용하십시오.
 :::
 
-### 예시 {#example}
+### 예제 {#example}
 
 ~~~jsx {5-9}
 // RichText 초기화

@@ -29,7 +29,7 @@ interface IImageContext {
 }
 ~~~
 
-:::note[注意]
+:::note[备注]
 `value` 字段保存的是外部 URL（当配置了 [`imageUploadUrl`](api/config/image-upload-url.md) 且上传成功时）或 base64 数据 URL（当省略 `imageUploadUrl` 且图片在客户端内联时）。处理图片来源的 handler（例如，用于重写 URL 或验证主机）必须同时兼容这两种格式。
 :::
 
@@ -51,4 +51,4 @@ editor.api.on("insert-image", (obj) => {
 });
 ~~~
 
-**变更日志：** 该事件在 v2.0 中新增
+**更新日志：** 该事件在 v2.0 中新增

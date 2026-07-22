@@ -49,7 +49,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.0 hinzugefügt. Ab v2.1 ist die Eigenschaft optional: Wenn sie weggelassen wird, werden Bilder inline als Base64-Daten-URLs eingefügt.
+**Changelog:** Die Eigenschaft wurde in v2.0 hinzugefügt. Ab v2.1 ist die Eigenschaft optional: Wenn sie weggelassen wird, werden Bilder inline als Base64-Daten-URLs eingefügt.
 
 **Verwandte Artikel:** [Konfiguration](guides/configuration.md), [Arbeiten mit dem Server](guides/working_with_server.md)
 

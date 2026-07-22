@@ -41,4 +41,4 @@ editor.api.on("update-link", (obj) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

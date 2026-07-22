@@ -4,6 +4,19 @@ title: 最新动态
 description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichText 的最新功能及版本历史。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX RichText 的 30 天免费评估版本。
 ---
 
+## 版本 2.1.1 {#version-211}
+
+发布于 2026 年 7 月 21 日
+
+### 修复 {#fixes-211}
+
+- 由于 z-index 处理不正确，工具栏提示、下拉框和全屏模式可能显示在其他元素下方
+- 从 HTML 解析嵌套列表、含混合内容的列表以及空列表时结果不正确
+- 导出或复制嵌套列表时生成的 HTML 列表结构无效
+- 解析和生成 HTML 时，列表的缩进和样式未能正确保留
+- 从 HTML 解析内联内容和通用块级元素时，缺少段落包装元素
+- 通过 HTML `width` 和 `height` 属性定义的图片尺寸被忽略
+
 ## 版本 2.1 {#version-21}
 
 发布于 2026 年 6 月 22 日
@@ -135,7 +148,7 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 
 发布于 2025 年 7 月 30 日
 
-:::note[注意]
+:::note[备注]
 v1.2 的 API 与 v2.0 不兼容。请参阅[**迁移指南**](news/migration.md)获取更多信息。
 :::
 

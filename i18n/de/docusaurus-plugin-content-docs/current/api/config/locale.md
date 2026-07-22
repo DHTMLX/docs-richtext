@@ -40,7 +40,7 @@ const editor = new richtext.RichText("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.0 hinzugefügt
+**Changelog:** Die Eigenschaft wurde in v2.0 hinzugefügt
 
 **Verwandte Artikel:** [Lokalisierung](guides/localization.md)
 

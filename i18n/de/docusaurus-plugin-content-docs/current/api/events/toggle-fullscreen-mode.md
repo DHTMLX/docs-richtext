@@ -42,4 +42,4 @@ editor.api.on("toggle-fullscreen-mode", (obj) => {
 editor.api.exec("toggle-fullscreen-mode", { mode: true });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

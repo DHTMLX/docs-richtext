@@ -4,6 +4,19 @@ title: Was ist neu
 description: Entdecken Sie die Neuigkeiten in DHTMLX RichText und die Versionshistorie in der Dokumentation der DHTMLX JavaScript-UI-Bibliothek. Lesen Sie Entwickleranleitungen und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX RichText herunter.
 ---
 
+## Version 2.1.1 {#version-211}
+
+Veröffentlicht am 21. Juli 2026
+
+### Fehlerbehebungen {#fixes-211}
+
+- Tooltips, Dropdowns und der Vollbildmodus der Symbolleiste werden aufgrund einer fehlerhaften z-index-Verarbeitung möglicherweise hinter anderen Elementen angezeigt
+- Fehlerhaftes Parsing von verschachtelten Listen, Listen mit gemischtem Inhalt und leeren Listen aus HTML
+- Ungültige HTML-Listenstruktur beim Exportieren oder Kopieren verschachtelter Listen
+- Listeneinrückungen und -stile werden beim Parsing und Generieren von HTML nicht korrekt beibehalten
+- Fehlende Absatz-Wrapper beim Parsing von Inline-Inhalten und generischen Blockelementen aus HTML
+- Über die HTML-Attribute `width` und `height` festgelegte Bildabmessungen werden ignoriert
+
 ## Version 2.1 {#version-21}
 
 Veröffentlicht am 22. Juni 2026
@@ -20,7 +33,7 @@ Veröffentlicht am 22. Juni 2026
 - Tastenkürzel zum Löschen auf Wort- und Zeilenebene: vorheriges/nächstes Wort löschen mit `Ctrl+Backspace` / `Ctrl+Delete` (Windows/Linux) oder `Opt+Backspace` / `Opt+Delete` (macOS); vorherige/nächste visuelle Zeile löschen mit `Cmd+Backspace` / `Cmd+Delete` (nur macOS)
 - Neue Tastenkürzel zum Ändern der Blockeinrückung: die Einrückung eines Blocks mit `Tab` vergrößern und mit `Shift+Tab` verringern; in Listen verschachteln dieselben Tasten Elemente oder heben sie an
 
-###  Neue API {#new-api}
+### Neue API {#new-api}
 
 #### Neue Eigenschaften {#new-properties}
 
@@ -53,7 +66,7 @@ Veröffentlicht am 28. Mai 2026
 - Beenden einer Liste oder Verringern der Verschachtelung durch Drücken von Enter in einem leeren Listenelement
 - Eigene Farbe für besuchte Links
 
-###  Neue API {#new-api-206}
+### Neue API {#new-api-206}
 
 #### Neue Events {#new-events-206}
 
@@ -180,7 +193,7 @@ Die API von v1.2 ist nicht kompatibel mit v2.0. Weitere Informationen finden Sie
 - **Tastaturkürzel**  
   Erweiterte Unterstützung für gängige Formatierungs- und Bearbeitungskürzel
 
-###  Neue API {#new-api-20}
+### Neue API {#new-api-20}
 
 #### Neue Eigenschaften {#new-properties-20}
 

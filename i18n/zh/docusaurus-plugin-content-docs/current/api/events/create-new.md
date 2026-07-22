@@ -41,4 +41,4 @@ editor.api.on("create-new", ({ reset }) => {
 editor.api.exec("create-new", { reset: true });
 ~~~
 
-**变更日志：** 该事件已在 v2.0 中新增
+**更新日志：** 该事件已在 v2.0 中新增

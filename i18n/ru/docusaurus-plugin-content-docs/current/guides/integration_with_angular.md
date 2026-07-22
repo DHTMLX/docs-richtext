@@ -1,12 +1,12 @@
 ---
 sidebar_label: Интеграция с Angular
 title: Интеграция с Angular
-description: Вы можете узнать об интеграции с Angular в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, запускайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать об интеграции с Angular в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, запускайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # Интеграция с Angular {#integration-with-angular}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с основными концепциями и паттернами Angular. Для повторения см. [документацию Angular](https://v17.angular.io/docs).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с Angular. Полный пример кода 
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Angular CLI](https://v17.angular.io/cli) и [Node.js](https://nodejs.org/en/).
 :::
 
@@ -225,7 +225,7 @@ export class RichTextComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Компонент RichText готов к использованию. Angular отображает редактор с данными при монтировании элемента `<richtext/>`. Полный список параметров конфигурации см. в [обзоре АПИ RichText](api/overview/main_overview.md).
+Компонент RichText готов к использованию. Angular отображает редактор с данными при монтировании элемента `<richtext/>`. Полный список параметров конфигурации см. в [обзоре API RichText](api/overview/main_overview.md).
 
 #### Обработка событий {#handle-events}
 
