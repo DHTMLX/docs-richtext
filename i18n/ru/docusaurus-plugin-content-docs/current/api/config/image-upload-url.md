@@ -1,7 +1,7 @@
 ---
 sidebar_label: imageUploadUrl
 title: Конфигурация imageUploadUrl
-description: В документации DHTMLX JavaScript RichText вы можете узнать о конфигурационном свойстве imageUploadUrl. Ознакомьтесь с руководствами разработчика и справочником АПИ, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации DHTMLX JavaScript RichText вы можете узнать о конфигурационном свойстве imageUploadUrl. Ознакомьтесь с руководствами разработчика и справочником API, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # imageUploadUrl
@@ -49,8 +49,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**История изменений:** Свойство добавлено в v2.0. Начиная с v2.1 свойство является необязательным: если оно не указано, изображения вставляются inline в виде base64 data URL.
+**Журнал изменений:** Свойство добавлено в v2.0. Начиная с v2.1 свойство является необязательным: если оно не указано, изображения вставляются inline в виде base64 data URL.
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md), [Работа с сервером](guides/working_with_server.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md), [Работа с сервером](guides/working_with_server.md)
 
 **Связанный пример:** [RichText. Инициализация](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbar
 title: Конфиг toolbar
-description: Вы можете узнать о конфиге toolbar в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о конфиге toolbar в документации библиотеки DHTMLX JavaScript RichText. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toolbar
@@ -165,7 +165,7 @@ const defaultToolbarButtons = {
 };
 ~~~
 
-:::tip[Совет]
+:::tip[Подсказка]
 Элементы управления панели инструментов по умолчанию экспортируются виджетом RichText и доступны через `richtext.defaultToolbarButtons`.
 
 ```jsx{4}
@@ -214,6 +214,6 @@ new richtext.Richtext("#root", {
 
 **Журнал изменений:** Свойство добавлено в v2.0
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)
 
 **Связанный пример:** [RichText. Пользовательский элемент управления и упрощённая панель инструментов](https://snippet.dhtmlx.com/wda202ih?tag=richtext)

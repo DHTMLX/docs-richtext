@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리의 setNext 메서드에 
 api.setNext(next: any): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `next` - (필수) **Event Bus** 순서에 포함할 액션
 
@@ -37,4 +37,4 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
 });
 ~~~
 
-**변경 이력:** 이 메서드는 v2.0에서 추가되었습니다
+**변경 로그:** 이 메서드는 v2.0에서 추가되었습니다

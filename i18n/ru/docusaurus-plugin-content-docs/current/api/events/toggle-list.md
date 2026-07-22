@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-list
 title: Событие toggle-list
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-list. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии toggle-list. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toggle-list
@@ -35,7 +35,7 @@ type TListType = "bulleted" | "numbered";
     - `"bulleted"` - маркированный (неупорядоченный) список
     - `"numbered"` - нумерованный (упорядоченный) список
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

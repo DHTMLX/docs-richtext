@@ -55,7 +55,7 @@ const editor = new richtext.Richtext("#root", {
 
 구성 객체의 키로 구성 옵션을 추가합니다.
 
-:::note[참고]
+:::note[노트]
 전체 구성 속성 목록은 [속성 개요](api/overview/properties_overview.md)를 참조하세요.
 :::
 

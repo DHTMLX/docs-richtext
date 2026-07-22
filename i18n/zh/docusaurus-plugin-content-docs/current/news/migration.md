@@ -71,7 +71,7 @@ defaultStyles: {
 }
 ```
 
-:::note[注意]
+:::note[备注]
 使用 `*` 为所有块定义基础默认值，然后为特定元素（p、h1、blockquote 等）进行覆盖。
 :::
 
@@ -131,7 +131,7 @@ editor.setValue("<p>Hello</p>", fromHTMLEncoder);
 editor.getValue(toTextEncoder);
 ```
 
-:::note[注意]
+:::note[备注]
 您仍然可以不带编码器调用 `getValue()` 和 `setValue()`——默认使用 HTML 格式
 :::
 

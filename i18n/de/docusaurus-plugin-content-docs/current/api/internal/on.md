@@ -43,4 +43,4 @@ editor.api.on("set-font-size", (obj) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 aktualisiert. Der Parameter `context` wurde entfernt
+**Changelog:** Die Methode wurde in v2.0 aktualisiert. Der Parameter `context` wurde entfernt

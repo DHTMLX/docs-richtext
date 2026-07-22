@@ -42,7 +42,7 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 
 插入的内容作为单条历史记录添加，可通过一次**撤销**操作还原。
 
-**变更日志：** 该方法于 v2.1 版本中新增
+**更新日志：** 该方法于 v2.1 版本中新增
 
 **相关示例：**
 

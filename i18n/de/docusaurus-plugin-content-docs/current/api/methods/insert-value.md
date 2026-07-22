@@ -42,7 +42,7 @@ editor.insertValue("<a href=\"https://example.com\" title=\"Example\">link</a>")
 
 Der eingefügte Inhalt wird als einzelner Verlaufseintrag hinzugefügt und kann mit einem einzigen **Rückgängig**-Schritt wiederhergestellt werden.
 
-**Änderungsprotokoll:** Die Methode wurde in v2.1 hinzugefügt
+**Changelog:** Die Methode wurde in v2.1 hinzugefügt
 
 **Verwandte Beispiele:**
 

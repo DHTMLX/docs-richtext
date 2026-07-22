@@ -55,7 +55,7 @@ const editor = new richtext.Richtext("#root", {
 
 将配置选项作为配置对象的键添加。
 
-:::note[注意]
+:::note[备注]
 有关完整的配置属性列表，请参阅[属性概览](api/overview/properties_overview.md)。
 :::
 

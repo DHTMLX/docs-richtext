@@ -16,7 +16,7 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 setLocale �
 setLocale(null | locale?: object): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `null` - (선택) 기본 로케일(*영어*)로 초기화합니다
 - `locale` - (선택) 적용할 새 로케일의 데이터 객체
@@ -36,6 +36,6 @@ const editor = new richtext.Richtext("#root", {
 editor.setLocale(de);
 ~~~
 
-**변경 이력:** 이 메서드는 v2.0에서 추가되었습니다
+**변경 로그:** 이 메서드는 v2.0에서 추가되었습니다
 
-**관련 아티클:** [현지화](guides/localization.md)
+**관련 문서:** [현지화](guides/localization.md)

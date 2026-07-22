@@ -35,4 +35,4 @@ editor.api.on("subscript", () => {
 editor.api.exec("subscript", {});
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

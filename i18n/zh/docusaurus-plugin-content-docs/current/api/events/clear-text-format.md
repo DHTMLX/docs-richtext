@@ -35,4 +35,4 @@ editor.api.on("clear-text-format", () => {
 editor.api.exec("clear-text-format", {});
 ~~~
 
-**变更日志：** 该事件在 v2.0 中添加
+**更新日志：** 该事件在 v2.0 中添加

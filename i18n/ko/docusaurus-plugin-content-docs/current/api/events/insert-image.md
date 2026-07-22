@@ -29,7 +29,7 @@ interface IImageContext {
 }
 ~~~
 
-:::note[참고]
+:::note[노트]
 `value` 필드는 외부 URL([ `imageUploadUrl`](api/config/image-upload-url.md)이 설정되고 업로드가 성공한 경우) 또는 base64 데이터 URL(`imageUploadUrl`이 생략되고 이미지가 클라이언트에서 인라인으로 처리되는 경우) 중 하나를 보유합니다. URL을 재작성하거나 호스트를 검증하는 등 소스를 처리하는 핸들러는 두 형식 모두를 고려해야 합니다.
 :::
 
@@ -51,4 +51,4 @@ editor.api.on("insert-image", (obj) => {
 });
 ~~~
 
-**변경 이력:** 이 이벤트는 v2.0에서 추가되었습니다
+**변경 로그:** 이 이벤트는 v2.0에서 추가되었습니다

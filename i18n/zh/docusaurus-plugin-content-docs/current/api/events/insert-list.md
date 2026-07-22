@@ -27,7 +27,7 @@ type TListType = "bulleted" | "numbered";
     - `"numbered"` - 有序列表
 
 :::info[信息]
-如需处理内部事件，可使用 [**事件总线方法**](api/overview/event_bus_methods_overview.md)
+如需处理内部事件，可使用 [**Event Bus 方法**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### 示例 {#example}
@@ -44,4 +44,4 @@ editor.api.on("insert-list", (obj) => {
 });
 ~~~
 
-**变更日志：** 该事件在 v2.0 中新增
+**更新日志：** 该事件在 v2.0 中新增

@@ -1,7 +1,7 @@
 ---
 sidebar_label: toggle-fullscreen-mode
 title: Событие toggle-fullscreen-mode
-description: Вы можете узнать о событии toggle-fullscreen-mode в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник АПИ, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии toggle-fullscreen-mode в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник API, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # toggle-fullscreen-mode
@@ -22,7 +22,7 @@ description: Вы можете узнать о событии toggle-fullscreen-
 
 - `mode` - включает полноэкранный режим
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -42,4 +42,4 @@ editor.api.on("toggle-fullscreen-mode", (obj) => {
 editor.api.exec("toggle-fullscreen-mode", { mode: true });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

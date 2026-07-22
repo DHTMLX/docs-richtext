@@ -1,7 +1,7 @@
 ---
 sidebar_label: insert-line
 title: Событие insert-line
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии insert-line. Изучайте руководства для разработчиков и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии insert-line. Изучайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # insert-line
@@ -16,7 +16,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 "insert-line": () => boolean | void;
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

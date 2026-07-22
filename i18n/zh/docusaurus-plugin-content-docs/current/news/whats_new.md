@@ -135,7 +135,7 @@ description: 您可以在 DHTMLX JavaScript UI 库文档中了解 DHTMLX RichTex
 
 发布于 2025 年 7 月 30 日
 
-:::note[注意]
+:::note[备注]
 v1.2 的 API 与 v2.0 不兼容。请参阅[**迁移指南**](news/migration.md)获取更多信息。
 :::
 

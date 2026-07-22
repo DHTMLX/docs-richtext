@@ -45,4 +45,4 @@ const reactive_state = editor.api.getReactiveState();
 console.log(reactive_state)
 ~~~
 
-**Änderungsprotokoll:** Die Methode wurde in v2.0 hinzugefügt
+**Changelog:** Die Methode wurde in v2.0 hinzugefügt

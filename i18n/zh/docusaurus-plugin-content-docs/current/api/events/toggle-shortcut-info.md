@@ -23,7 +23,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 toggl
 - `mode` - 启用快捷键信息；`true` 表示显示快捷键信息弹窗，`false` 表示隐藏快捷键信息弹窗
 
 :::info[信息]
-处理内部事件时，可使用 [**事件总线方法**](api/overview/event_bus_methods_overview.md)
+处理内部事件时，可使用 [**Event Bus 方法**](api/overview/event_bus_methods_overview.md)
 :::
 
 ### 示例 {#example}

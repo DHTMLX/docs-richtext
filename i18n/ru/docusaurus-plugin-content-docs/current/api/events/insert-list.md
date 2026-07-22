@@ -1,7 +1,7 @@
 ---
 sidebar_label: insert-list
 title: Событие insert-list
-description: В документации DHTMLX JavaScript RichText вы можете узнать о событии insert-list. Изучайте руководства разработчика и справочник АПИ, просматривайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации DHTMLX JavaScript RichText вы можете узнать о событии insert-list. Изучайте руководства разработчика и справочник API, просматривайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # insert-list
@@ -26,7 +26,7 @@ type TListType = "bulleted" | "numbered";
     - `"bulleted"` - маркированный список
     - `"numbered"` - нумерованный список
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 
@@ -44,4 +44,4 @@ editor.api.on("insert-list", (obj) => {
 });
 ~~~
 
-**История изменений:** Событие добавлено в v2.0
+**Журнал изменений:** Событие добавлено в v2.0

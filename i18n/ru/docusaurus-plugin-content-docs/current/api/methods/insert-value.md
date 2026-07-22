@@ -1,7 +1,7 @@
 ---
 sidebar_label: insertValue()
 title: Метод insertValue
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе insertValue. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе insertValue. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # insertValue()

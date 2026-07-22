@@ -80,7 +80,7 @@ RichText использует следующие основные классы �
 * Используйте `color-scheme: dark` для улучшения стилизации нативных элементов ввода в тёмном режиме
 * Избегайте изменения свойств, связанных с макетом (таких как `display`, `position`), без веской причины
 
-:::tip[Совет]
+:::tip[Подсказка]
 Для настройки типографики по тегам (семейство шрифтов, размер шрифта, цвет, фон для `h1`, `p`, `blockquote` и других блочных тегов) используйте свойство конфигурации [`defaultStyles`](api/config/default-styles.md) с соответствующими CSS-правилами. Полный шаблон смотрите в [руководстве по конфигурации](guides/configuration.md#configure-default-styles).
 :::
 
@@ -90,4 +90,4 @@ RichText использует следующие основные классы �
 
 <iframe src="https://snippet.dhtmlx.com/q8j4qqq9?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Связанные статьи:** [Конфигурация](guides/configuration.md)
+**Полезные статьи:** [Конфигурация](guides/configuration.md)

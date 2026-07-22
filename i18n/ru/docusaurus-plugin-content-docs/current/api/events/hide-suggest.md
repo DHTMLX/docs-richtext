@@ -1,7 +1,7 @@
 ---
 sidebar_label: hide-suggest
 title: hide-suggest Event
-description: Вы можете узнать о событии hide-suggest в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Вы можете узнать о событии hide-suggest в документации библиотеки DHTMLX JavaScript RichText. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # hide-suggest
@@ -27,7 +27,7 @@ description: Вы можете узнать о событии hide-suggest в д
 
 Калбэк события `hide-suggest` не принимает никаких параметров.
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий используйте [**методы Event Bus**](api/overview/event_bus_methods_overview.md).
 :::
 
@@ -48,4 +48,4 @@ editor.api.on("hide-suggest", () => {
 
 **Связанный пример:** [RichText. Упоминания, теги и асинхронный поиск](https://snippet.dhtmlx.com/nfvvfize?tag=richtext)
 
-**Связанные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)
+**Полезные статьи:** [Упоминания и теги](guides/mentions_and_tags.md)

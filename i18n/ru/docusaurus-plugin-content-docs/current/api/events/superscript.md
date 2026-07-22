@@ -1,7 +1,7 @@
 ---
 sidebar_label: superscript
 title: Событие superscript
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии superscript. Изучайте руководства разработчика и справочник АПИ, просматривайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о событии superscript. Изучайте руководства разработчика и справочник API, просматривайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # superscript
@@ -16,7 +16,7 @@ description: В документации библиотеки DHTMLX JavaScript 
 "superscript": () => boolean | void;
 ~~~
 
-:::info[Информация]
+:::info[К сведению]
 Для обработки внутренних событий можно использовать [**методы Event Bus**](api/overview/event_bus_methods_overview.md)
 :::
 

@@ -149,7 +149,7 @@ new richtext.Richtext("#root", {
 
 默认情况下，选择条目会将其作为 token 插入文档。若要改为执行自己的代码，可在触发器中添加 `action` callback。RichText 会删除已输入的触发文本并以所选条目调用 `action(item)`——不插入 token，由你决定添加什么内容。
 
-:::note[注意]
+:::note[备注]
 `action` 优先于 `showTrigger`。设置 `action` 后，`showTrigger` 将被忽略。
 :::
 

@@ -34,7 +34,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**Änderungsprotokoll:** Die Eigenschaft wurde in v2.0 anstelle der entfernten Eigenschaft `mode` hinzugefügt
+**Changelog:** Die Eigenschaft wurde in v2.0 anstelle der entfernten Eigenschaft `mode` hinzugefügt
 
 **Verwandte Artikel:** [Konfiguration](guides/configuration.md)
 

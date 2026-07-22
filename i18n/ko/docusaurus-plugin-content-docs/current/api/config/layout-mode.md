@@ -18,7 +18,7 @@ layoutMode: "classic" | "document";
 
 `"classic"` 모드는 전체 편집 영역을 채웁니다. `"document"` 모드는 편집 영역을 문서 페이지 형태로 표시합니다.
 
-### 기본 구성 {#default-config}
+### 기본 설정 {#default-config}
 
 ~~~jsx
 layoutMode: "classic";
@@ -34,8 +34,8 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**변경 이력:** 이 속성은 제거된 `mode` 속성 대신 v2.0에서 추가되었습니다
+**변경 로그:** 이 속성은 제거된 `mode` 속성 대신 v2.0에서 추가되었습니다
 
 **관련 문서:** [구성](guides/configuration.md)
 
-**관련 예제:** [RichText. 초기화](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)
+**관련 샘플:** [RichText. 초기화](https://snippet.dhtmlx.com/t55alxiy?tag=richtext)

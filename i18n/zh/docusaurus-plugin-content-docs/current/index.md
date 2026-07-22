@@ -102,7 +102,7 @@ editor.setValue("# Title\n\nParagraph", richtext.markdown.fromMarkdown);
 const md = editor.getValue(richtext.markdown.toMarkdown);
 ~~~
 
-:::note[注意]
+:::note[备注]
 Markdown 支持涵盖有限的语法子集——包括标题、段落、换行、强调、块引用、列表和链接等常见块级和内联元素。在序列化时，没有对应 Markdown 语法的格式（字体系列、字体大小、颜色、对齐方式、行高）将被丢弃。
 
 不支持嵌套内联结构，唯一的例外是 **斜体中的加粗**。加粗内嵌链接、列表项中的斜体或多级（嵌套）列表等组合将无法正确渲染。
@@ -122,7 +122,7 @@ RichText 编辑器通过标准系统快捷键支持剪贴板操作（Windows/Lin
 - 在两个 RichText 实例之间粘贴（在同一文档或不同页面中）将使用 HTML 表示形式并保留原始格式。
 - 从任何外部来源粘贴——包括浏览器、文字处理器和其他编辑器——将作为纯文本处理。插入的内容将以不带外部格式的文本形式添加。
 
-:::note[注意]
+:::note[备注]
 工具栏的 **粘贴** 按钮使用异步 Clipboard API，该 API 仅公开纯文本。若要粘贴从另一个 RichText 复制的内容并保留其格式，请使用 `Ctrl+V` / `⌘+V` 快捷键，该快捷键可直接从浏览器的剪贴板事件中接收完整的 HTML 内容。
 :::
 

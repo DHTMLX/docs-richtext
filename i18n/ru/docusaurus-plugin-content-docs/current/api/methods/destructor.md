@@ -1,7 +1,7 @@
 ---
 sidebar_label: destructor()
 title: Метод destructor
-description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе destructor. Изучайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: В документации библиотеки DHTMLX JavaScript RichText вы можете узнать о методе destructor. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # destructor()

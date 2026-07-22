@@ -16,11 +16,11 @@ description: DHTMLX JavaScript RichText 라이브러리 문서에서 setConfig �
 setConfig(config: { [key:any]: any }): void;
 ~~~
 
-### 파라미터 {#parameters}
+### 매개변수 {#parameters}
 
 - `config` - (필수) RichText 구성 파라미터 객체입니다. 전체 속성 목록은 [여기](api/overview/properties_overview.md)에서 확인하세요
 
-:::note[참고]
+:::note[노트]
 `setConfig()` 메서드는 `setConfig()` 호출 시 명시적으로 전달되지 않은 기존 파라미터를 모두 유지합니다.
 :::
 

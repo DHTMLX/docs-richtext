@@ -37,4 +37,4 @@ fetch(server + "/data").then((res) => res.json()).then((data) => {
 });
 ~~~
 
-**变更日志：** 该方法在 v2.0 中新增
+**更新日志：** 该方法在 v2.0 中新增

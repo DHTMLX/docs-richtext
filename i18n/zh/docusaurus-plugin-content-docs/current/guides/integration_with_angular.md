@@ -24,7 +24,7 @@ DHTMLX RichText 可与 Angular 配合使用。完整的代码示例请参见 [Gi
 ng new my-angular-richtext-app
 ~~~
 
-:::note[注意]
+:::note[备注]
 在项目创建过程中，当 Angular CLI 提示时，请禁用服务端渲染（SSR）和静态站点生成（SSG/Prerendering）。
 :::
 

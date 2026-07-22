@@ -1,12 +1,12 @@
 ---
 sidebar_label: Интеграция с React
 title: Интеграция с React
-description: Узнайте об интеграции с React в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник АПИ, попробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
+description: Узнайте об интеграции с React в документации библиотеки DHTMLX JavaScript RichText. Изучите руководства разработчика и справочник API, попробуйте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX RichText.
 ---
 
 # Интеграция с React {#integration-with-react}
 
-:::tip[Совет]
+:::tip[Подсказка]
 Убедитесь, что вы знакомы с базовыми концепциями и паттернами [React](https://react.dev). Для повторения см. [документацию React](https://react.dev/learn).
 :::
 
@@ -14,7 +14,7 @@ DHTMLX RichText работает с React. Полный пример кода с
 
 ## Создание проекта {#create-a-project}
 
-:::info[Информация]
+:::info[К сведению]
 Перед созданием нового проекта установите [Node.js](https://nodejs.org/en/) и (опционально) [Vite](https://vite.dev/).
 :::
 
@@ -220,7 +220,7 @@ export default function RichTextComponent(props) {
 }
 ~~~
 
-Компонент RichText готов к использованию. React отрисовывает редактор с данными при монтировании элемента `<RichText/>`. Полный список параметров конфигурации см. в [обзоре АПИ RichText](api/overview/main_overview.md).
+Компонент RichText готов к использованию. React отрисовывает редактор с данными при монтировании элемента `<RichText/>`. Полный список параметров конфигурации см. в [обзоре API RichText](api/overview/main_overview.md).
 
 #### Обработка событий {#handle-events}
 

@@ -40,4 +40,4 @@ editor.api.on("outdent", (obj) => {
 });
 ~~~
 
-**Änderungsprotokoll:** Das Event wurde in v2.0 hinzugefügt
+**Changelog:** Das Event wurde in v2.0 hinzugefügt

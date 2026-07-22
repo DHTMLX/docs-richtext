@@ -32,7 +32,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-**변경 이력:** 이 속성은 v2.0에서 추가되었습니다.
+**변경 로그:** 이 속성은 v2.0에서 추가되었습니다.
 
 **관련 문서:** [구성](guides/configuration.md)
 
