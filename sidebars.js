@@ -208,7 +208,8 @@ module.exports = {
                 "guides/mentions_and_tags",
                 "guides/localization",
                 "guides/stylization",
-                "guides/typescript_support"
+                "guides/typescript_support",
+                "guides/mcp-server"
             ]
         }
     ]
