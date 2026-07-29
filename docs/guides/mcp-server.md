@@ -48,7 +48,7 @@ Registering the MCP endpoint takes under a minute in any of these tools, whether
 https://docs.dhtmlx.com/mcp
 ~~~
 
-Below are setup instructions for commonly used tools.
+Setup steps for popular tools are covered one by one below.
 
 ### Claude Code
 
@@ -182,11 +182,11 @@ Check any other AI coding tool's settings for a label like "Model Context Protoc
 
 ## MCP server privacy basics
 
-The MCP server is a hosted service: nothing runs on your machine, no files from your environment are read, and no personal user data is stored.
+The MCP server runs remotely and only remotely: no local execution, no local file access, no stored personal information.
 
-Queries may be logged for debugging and service improvement purposes.
+Logged queries serve one purpose: debugging and improving the service.
 
-Teams that require stricter privacy guarantees can request a commercial deployment with query logging disabled. Contact us at `info@dhtmlx.com` for details.
+DHTMLX offers a commercial deployment with query logging turned off for stricter privacy needs. Get in touch at `info@dhtmlx.com`.
 
 ## Prompt ideas for building with RichText
 
