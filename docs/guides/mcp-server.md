@@ -1,7 +1,7 @@
 ---
 sidebar_label: DHTMLX MCP server
 title: DHTMLX RichText MCP server to skip the guesswork
-description: The MCP server provides AI assistants with verified, current documentation on DHTMLX RichText's defaultStyles, encoders, and trigger configuration.
+description: The MCP server provides AI assistants with verified, current documentation on DHTMLX RichText's style defaults, encoders, and trigger configuration.
 ---
 
 # DHTMLX RichText MCP server: flexible editing, configured right
@@ -42,7 +42,7 @@ Take *"Set up defaultStyles so all h2 blocks use a custom font and color, with t
 
 ## Attaching your AI tool to the MCP server
 
-Registering the MCP endpoint takes under a minute in any of these tools, whether that means a CLI command or a JSON config entry.
+Registering the MCP endpoint takes under a minute in any of these tools, whether that means a CLI command or a JSON config entry, and every one of them is aimed at the same address:
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -62,7 +62,7 @@ To register the server from the command line, run:
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
 ~~~
 
-For manual setup, add the following to your `mcp.json`:
+Rather wire it up yourself? Drop this into your `mcp.json`:
 
 ~~~jsx
 {
