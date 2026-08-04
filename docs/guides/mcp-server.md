@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: DHTMLX RichText MCP server to skip the guesswork
+title: DHTMLX RichText MCP integration for editing and content formats
 description: The MCP server provides AI assistants with verified, current documentation on DHTMLX RichText's style defaults, encoders, and trigger configuration.
 ---
 
-# DHTMLX RichText MCP server: flexible editing, configured right
+# DHTMLX RichText MCP server: formats, toolbar, and triggers
 
 DHTMLX RichText packs serious flexibility into a lightweight WYSIWYG editor: content moves fluidly between [HTML, plain text, and Markdown](index.md#supported-formats), [style defaults](guides/configuration.md#configure-default-styles) let you set typography per block type, and a fully customizable [toolbar](guides/configuration.md#toolbar) adapts to whatever controls an application needs. An AI assistant gets the most out of all that flexibility when it pairs each piece with its matching setup: current CSS for style defaults, the right encoder for a given format, and valid control types for custom toolbar buttons, instead of working from a memorized guess.
 
 The DHTMLX MCP server keeps an AI assistant fluent in all of it: the [mentions and trigger setup](guides/mentions_and_tags.md), the [image upload contract](guides/working_with_server.md), and the [DOCX/PDF export flow](api/events/export.md) all come back from current documentation, so generated code matches the editor as it actually behaves today.
 
-**MCP endpoint**
+### MCP endpoint
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -36,9 +36,16 @@ From toolbar buttons to trigger callbacks, the MCP server's index covers the who
 
 ## One RichText prompt, two MCP routes
 
-One prompt walks into the DHTMLX MCP server and comes out one of two ways: as a stack of reference pages from the *Search* workflow, or as a finished answer from *Inference*, the other workflow. One Model Context Protocol (MCP) endpoint runs both workflows off a single Retrieval-Augmented Generation (RAG) index of the RichText documentation.
+A RichText request to the DHTMLX MCP server travels through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP) before landing in one of two workflows: *Search*, which hands back matching reference pages, or *Inference*, which reads those pages and answers directly. Trace the prompt *"Set up defaultStyles so all h2 blocks use a custom font and color, with the CSS to match"* through it:
 
-Take *"Set up defaultStyles so all h2 blocks use a custom font and color, with the CSS to match"*: the request needs working code, so it goes to *Search*, which retrieves the configuration and styling documentation and lets the assistant write both the config object and the CSS rule it depends on. Ask instead *"Does insertValue() replace a selection, or does it just insert at the cursor?"* and the request goes to *Inference*, which reads the same reference pages and confirms directly that `insertValue()` replaces an active selection, skipping the trip through the method reference entirely.
+1. The assistant passes the query through MCP.
+2. The server ties it to the configuration and styling documentation.
+3. The request needs working code, so *Search* handles it (a narrower question, like whether `insertValue()` replaces a selection or inserts at the cursor, would go to *Inference* instead).
+4. *Search* retrieves the matching pages from a vector index built on the current RichText documentation.
+5. Those pages come back to the assistant as context.
+6. The assistant writes both the config object and the matching CSS rule from that context.
+
+RichText's formatting and toolbar suggestions stay aligned with how the editor behaves today because of that path.
 
 ## Attaching your AI tool to the MCP server
 
