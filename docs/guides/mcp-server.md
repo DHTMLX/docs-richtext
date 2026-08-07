@@ -34,16 +34,18 @@ From toolbar buttons to trigger callbacks, the MCP server's index covers the who
 - Handling [`export`](api/events/export.md) and [`import`](api/events/import.md) for DOCX/PDF output, and [localizing](guides/localization.md) the interface or [styling](guides/stylization.md) it with `--wx-color-primary` and other CSS variables.
 - Integrating RichText with [React](guides/integration_with_react.md), [Vue](guides/integration_with_vue.md), [Angular](guides/integration_with_angular.md), and [Svelte](guides/integration_with_svelte.md).
 
-## One RichText prompt, two MCP routes
+## How the MCP server handles a RichText prompt
 
-A RichText request to the DHTMLX MCP server travels through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP) before landing in one of two workflows: *Search*, which hands back matching reference pages, or *Inference*, which reads those pages and answers directly. Trace the prompt *"Set up defaultStyles so all h2 blocks use a custom font and color, with the CSS to match"* through it:
+A RichText request to the DHTMLX MCP server travels through a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP) before landing in one of two workflows: *Search*, which hands back matching reference pages, or *Inference*, which reads those pages and answers directly. A RichText request often has two sides for the assistant: one that needs current documentation, and one it already knows how to handle without help. It splits off the first before anything reaches MCP.
 
-1. The assistant passes the query through MCP.
-2. The server ties it to the configuration and styling documentation.
+Trace the prompt *"How do I set up DHTMLX RichText so that images get uploaded to my company's asset server before they're inserted into the document?"* through it:
+
+1. The assistant pulls out the documentation side of the request: the request and response contract RichText expects from an image upload endpoint.
+2. The server ties it to the working-with-server documentation.
 3. The request needs working code, so *Search* handles it (a narrower question, like whether `insertValue()` replaces a selection or inserts at the cursor, would go to *Inference* instead).
 4. *Search* retrieves the matching pages from a vector index built on the current RichText documentation.
 5. Those pages come back to the assistant as context.
-6. The assistant writes both the config object and the matching CSS rule from that context.
+6. The assistant wires up the upload handler to match that contract, then fills in the actual request to the company's asset server from its own knowledge.
 
 RichText's formatting and toolbar suggestions stay aligned with how the editor behaves today because of that path.
 
