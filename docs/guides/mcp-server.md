@@ -6,9 +6,9 @@ description: The MCP server provides AI assistants with verified, current docume
 
 # DHTMLX RichText MCP server: formats, toolbar, and triggers
 
-DHTMLX RichText packs serious flexibility into a lightweight WYSIWYG editor: content moves fluidly between [HTML, plain text, and Markdown](index.md#supported-formats), [style defaults](guides/configuration.md#configure-default-styles) let you set typography per block type, and a fully customizable [toolbar](guides/configuration.md#toolbar) adapts to whatever controls an application needs. An AI assistant gets the most out of all that flexibility when it pairs each piece with its matching setup: current CSS for style defaults, the right encoder for a given format, and valid control types for custom toolbar buttons, instead of working from a memorized guess.
+DHTMLX RichText is a lightweight WYSIWYG editor with a wide configuration surface. You can convert content between [HTML, plain text, and Markdown](index.md#supported-formats), set typography per block type through [style defaults](guides/configuration.md#configure-default-styles), and build a fully customizable [toolbar](guides/configuration.md#toolbar) that adapts to whatever controls an application needs. Getting full value from that requires matching each piece to its current setup: current CSS for style defaults, the right encoder for a given format, and valid control types for custom toolbar buttons, not a memorized guess.
 
-The DHTMLX MCP server keeps an AI assistant fluent in all of it: the [mentions and trigger setup](guides/mentions_and_tags.md), the [image upload contract](guides/working_with_server.md), and the [DOCX/PDF export flow](api/events/export.md) all come back from current documentation, so generated code matches the editor as it actually behaves today.
+The DHTMLX MCP server keeps an AI assistant current on all of it. The [mentions and trigger setup](guides/mentions_and_tags.md), the [image upload contract](guides/working_with_server.md), and the [DOCX/PDF export flow](api/events/export.md) all come back from current documentation, so generated code matches the editor as it actually behaves today.
 
 ### MCP endpoint
 
@@ -20,7 +20,7 @@ https://docs.dhtmlx.com/mcp
 The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX RichText. The same endpoint and configuration instructions work regardless of which DHTMLX component you are building with.
 :::
 
-## Everything the MCP server covers for RichText
+## RichText coverage in the MCP server
 
 From toolbar buttons to trigger callbacks, the MCP server's index covers the whole DHTMLX RichText surface. Common lookups:
 
@@ -51,7 +51,7 @@ RichText's formatting and toolbar suggestions stay aligned with how the editor b
 
 ## Attaching your AI tool to the MCP server
 
-Registering the MCP endpoint takes under a minute in any of these tools, whether that means a CLI command or a JSON config entry, and every one of them is aimed at the same address:
+Registering the MCP endpoint only needs doing once per tool, whether that means a CLI command or a JSON config entry, and every one of them is aimed at the same address:
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
