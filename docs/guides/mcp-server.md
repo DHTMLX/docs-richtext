@@ -199,6 +199,8 @@ DHTMLX offers a commercial deployment with query logging turned off for stricter
 
 ## Prompt ideas for building with RichText
 
+RichText prompts tend to fall into one of four areas: layout, content format, image handling, or mentions and triggers. The groups below are organized that way; pick one and adapt it to your setup.
+
 **Layout and toolbar**
 
 ~~~
