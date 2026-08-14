@@ -106,4 +106,4 @@ const editor = new richtext.Richtext("#root", {
 
 ## What's next
 
-That's all. Just three simple steps and you have a handy tool for editing content. Now you can start working with your content or keep exploring the inner world of JavaScript RichText.
+That's all. Just three simple steps and you have a handy tool for editing content. Now you can start working with your content or keep exploring the inner world of JavaScript RichText. If you build with an AI coding assistant, connect it to the live documentation through the [DHTMLX MCP server](guides/mcp-server.md).
