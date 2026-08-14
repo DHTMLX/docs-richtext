@@ -6,7 +6,7 @@ description: The MCP server provides AI assistants with verified, current docume
 
 # DHTMLX RichText MCP server: formats, toolbar, and triggers
 
-DHTMLX RichText is a lightweight WYSIWYG editor with a wide configuration surface. You can convert content between [HTML, plain text, and Markdown](index.md#supported-formats), set typography per block type through [style defaults](guides/configuration.md#configure-default-styles), and build a fully customizable [toolbar](guides/configuration.md#toolbar) that adapts to whatever controls an application needs. Getting full value from that requires matching each piece to its current setup: current CSS for style defaults, the right encoder for a given format, and valid control types for custom toolbar buttons, not a memorized guess.
+DHTMLX RichText is a lightweight WYSIWYG editor with a wide configuration surface. You can convert content between [HTML, plain text, and Markdown](/#supported-formats), set typography per block type through [style defaults](guides/configuration.md#configure-default-styles), and build a fully customizable [toolbar](guides/configuration.md#toolbar) that adapts to whatever controls an application needs. Getting full value from that requires matching each piece to its current setup: current CSS for style defaults, the right encoder for a given format, and valid control types for custom toolbar buttons, not a memorized guess.
 
 The DHTMLX MCP server keeps an AI assistant current on all of it. The [mentions and trigger setup](guides/mentions_and_tags.md), the [image upload contract](guides/working_with_server.md), and the [DOCX/PDF export flow](api/events/export.md) all come back from current documentation, so generated code matches the editor as it actually behaves today.
 
