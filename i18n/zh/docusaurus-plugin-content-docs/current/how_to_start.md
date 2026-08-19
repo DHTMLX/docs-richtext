@@ -106,4 +106,4 @@ const editor = new richtext.Richtext("#root", {
 
 ## 下一步 {#whats-next}
 
-就这些。只需三个简单的步骤，您就拥有了一个便捷的内容编辑工具。现在您可以开始处理内容，或继续探索 JavaScript RichText 的更多功能。
+就这些。只需三个简单的步骤，您就拥有了一个便捷的内容编辑工具。现在您可以开始处理内容，或继续探索 JavaScript RichText 的更多功能。如果您使用 AI 编程助手进行开发，可以通过 [DHTMLX MCP 服务器](guides/mcp-server.md) 将其连接到最新文档。
