@@ -106,4 +106,4 @@ const editor = new richtext.Richtext("#root", {
 
 ## 다음 단계 {#whats-next}
 
-이것으로 끝입니다. 단 세 가지 간단한 단계만으로 콘텐츠 편집에 유용한 도구를 갖추게 되었습니다. 이제 콘텐츠 작업을 시작하거나 JavaScript RichText의 세계를 계속 탐색하세요.
+이것으로 끝입니다. 단 세 가지 간단한 단계만으로 콘텐츠 편집에 유용한 도구를 갖추게 되었습니다. 이제 콘텐츠 작업을 시작하거나 JavaScript RichText의 세계를 계속 탐색하세요. AI 코딩 어시스턴트로 개발한다면 [DHTMLX MCP 서버](guides/mcp-server.md)를 통해 최신 문서에 연결하십시오.

@@ -106,4 +106,4 @@ const editor = new richtext.Richtext("#root", {
 
 ## Wie geht es weiter {#whats-next}
 
-Das war es schon. Nur drei einfache Schritte, und Sie verfügen über ein praktisches Werkzeug zur Bearbeitung von Inhalten. Jetzt können Sie mit Ihren Inhalten arbeiten oder die Welt von JavaScript RichText weiter erkunden.
+Das war es schon. Nur drei einfache Schritte, und Sie verfügen über ein praktisches Werkzeug zur Bearbeitung von Inhalten. Jetzt können Sie mit Ihren Inhalten arbeiten oder die Welt von JavaScript RichText weiter erkunden. Wenn Sie mit einem KI-Programmierassistenten entwickeln, verbinden Sie ihn über den [DHTMLX MCP-Server](guides/mcp-server.md) mit der aktuellen Dokumentation.
