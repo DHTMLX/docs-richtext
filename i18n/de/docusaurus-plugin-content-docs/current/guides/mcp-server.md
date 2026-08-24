@@ -6,7 +6,7 @@ description: Der MCP-Server versorgt KI-Assistenten mit verifizierter, aktueller
 
 # DHTMLX RichText MCP-Server: Formate, Symbolleiste und Trigger {#dhtmlx-richtext-mcp-server-formats-toolbar-and-triggers}
 
-DHTMLX RichText ist ein leichtgewichtiger WYSIWYG-Editor mit einer breiten Konfigurationsfläche. Sie können Inhalte zwischen [HTML, Klartext und Markdown](/#supported-formats) konvertieren, die Typografie pro Blocktyp über [Standardstile](guides/configuration.md#configure-default-styles) festlegen und eine vollständig anpassbare [Symbolleiste](guides/configuration.md#toolbar) erstellen, die sich an die Steuerelemente anpasst, die eine Anwendung benötigt. Um daraus den vollen Nutzen zu ziehen, müssen Sie jedes Element mit dem aktuellen Setup abgleichen: aktuelles CSS für Standardstile, den richtigen Encoder für ein bestimmtes Format und gültige Steuerelementtypen für benutzerdefinierte Symbolleisten-Schaltflächen — statt sich auf eine auswendig gelernte Vermutung zu verlassen.
+DHTMLX RichText ist ein leichtgewichtiger WYSIWYG-Editor mit einer breiten Konfigurationsfläche. Sie können Inhalte zwischen [HTML, Klartext und Markdown](/#supported-formats) konvertieren, die Typografie pro Blocktyp über [Standardstile](guides/configuration.md#configure-default-styles) festlegen und eine vollständig anpassbare [Symbolleiste](guides/configuration.md#toolbar) erstellen, die sich an die Steuerelemente anpasst, die eine Anwendung benötigt. Um daraus den vollen Nutzen zu ziehen, müssen Sie jedes Element mit dem aktuellen Setup abgleichen: aktuelles CSS für Standardstile, den richtigen Encoder für ein bestimmtes Format und gültige Steuerelementtypen für benutzerdefinierte Symbolleisten-Schaltflächen, statt sich auf eine auswendig gelernte Vermutung zu verlassen.
 
 Der DHTMLX MCP-Server hält einen KI-Assistenten in all diesen Punkten auf dem aktuellen Stand. Das [Setup für Erwähnungen und Trigger](guides/mentions_and_tags.md), der [Vertrag für den Bild-Upload](guides/working_with_server.md) und der [DOCX-/PDF-Exportablauf](api/events/export.md) stammen alle aus der aktuellen Dokumentation, sodass generierter Code dem tatsächlichen Verhalten des Editors von heute entspricht.
 
@@ -51,7 +51,7 @@ Dank dieses Ablaufs bleiben die Formatierungs- und Symbolleisten-Vorschläge fü
 
 ## KI-Tool mit dem MCP-Server verbinden {#attaching-your-ai-tool-to-the-mcp-server}
 
-Die Registrierung des MCP-Endpunkts muss pro Tool nur einmal erfolgen — egal ob per CLI-Befehl oder JSON-Konfigurationseintrag — und alle zielen auf dieselbe Adresse:
+Die Registrierung des MCP-Endpunkts muss pro Tool nur einmal erfolgen, egal ob per CLI-Befehl oder JSON-Konfigurationseintrag, und alle zielen auf dieselbe Adresse:
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp

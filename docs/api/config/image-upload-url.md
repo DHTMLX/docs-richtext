@@ -12,7 +12,7 @@ description: You can learn about the imageUploadUrl config in the documentation 
 
 When the property is set, RichText uploads each inserted image to the given endpoint and inserts the URL returned by the server.
 
-When the property is omitted or set to a falsy value (`""`, `null`, `undefined`), RichText switches to **inline mode**: the image file is read on the client and embedded directly into the content as a base64 data URL — no server is required. Inline images larger than 1024×800 are proportionally downscaled to fit within these limits.
+When the property is omitted or set to a falsy value (`""`, `null`, `undefined`), RichText switches to **inline mode**: the image file is read on the client and embedded directly into the content as a base64 data URL, so no server is required. Inline images larger than 1024×800 are proportionally downscaled to fit within these limits.
 
 :::note
 Inline (base64) images are not preserved by the built-in DOCX / PDF [export](api/events/export.md). If you rely on export, supply an `imageUploadUrl` so that images reference an external location.
@@ -40,7 +40,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-Insert images inline as base64 (no server required) — omit the property or pass an empty string:
+Insert images inline as base64 (no server required) by omitting the property or passing an empty string:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {

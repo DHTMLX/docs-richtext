@@ -10,7 +10,7 @@ description: You can learn about the triggerTemplate config in the documentation
 
 @short: Optional. Customizes how RichText renders items in the suggestion dropdown opened by a [`triggers`](api/config/triggers.md) entry
 
-By default, the dropdown shows each item's `label` as plain text. Use `triggerTemplate` to render richer rows — for example, an avatar plus a name and an email.
+By default, the dropdown shows each item's `label` as plain text. Use `triggerTemplate` to render richer rows, for example an avatar plus a name and an email.
 
 ### Usage
 

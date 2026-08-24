@@ -271,7 +271,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-Inline images larger than 1024×800 are displayed at a reduced size (the `width`/`height` attributes are capped to fit within these limits), but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
+Inline images larger than 1024×800 are displayed at a reduced size (the `width`/`height` attributes are capped to fit within these limits), but the embedded bytes are the original, full-resolution file. The client does not downscale or re-encode it.
 
 :::note
 Inline (base64) images are not preserved by the built-in DOCX / PDF [export](api/events/export.md). If you rely on export, supply an `imageUploadUrl` so that images reference an external location.

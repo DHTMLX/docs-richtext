@@ -132,7 +132,7 @@ editor.getValue(toTextEncoder);
 ```
 
 :::note[Hinweis]
-Sie können `getValue()` und `setValue()` weiterhin ohne Encoder aufrufen — HTML wird standardmäßig verwendet
+Sie können `getValue()` und `setValue()` weiterhin ohne Encoder aufrufen. HTML wird standardmäßig verwendet
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md) {#--on--detach}

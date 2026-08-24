@@ -103,7 +103,7 @@ const md = editor.getValue(richtext.markdown.toMarkdown);
 ~~~
 
 :::note
-Markdown support covers a limited subset of the syntax — common block and inline elements such as headings, paragraphs, line breaks, emphasis, blockquotes, lists, and links. Formatting that has no Markdown equivalent (font family, font size, colors, alignment, line height) is dropped on serialization.
+Markdown support covers a limited subset of the syntax: common block and inline elements such as headings, paragraphs, line breaks, emphasis, blockquotes, lists, and links. Formatting that has no Markdown equivalent (font family, font size, colors, alignment, line height) is dropped on serialization.
 
 Nested inline structures are not supported, with the only exception of **bold inside italic**. Combinations such as bold inside a link, italic inside a list item, or multi-level (nested) lists will not render correctly.
 :::
@@ -120,7 +120,7 @@ When content is copied or cut, RichText writes two representations to the system
 Paste behavior depends on the source of the clipboard payload:
 
 - Pasting between two RichText instances (in the same document or on different pages) uses the HTML representation and preserves the original formatting.
-- Pasting from any external source — including browsers, word processors, and other editors — is processed as plain text. The inserted content is added as text without external formatting.
+- Pasting from any external source (browsers, word processors, and other editors) is processed as plain text. The inserted content is added as text without external formatting.
 
 :::note
 The toolbar **Paste** button uses the asynchronous Clipboard API, which exposes plain text only. To paste content copied from another RichText with its formatting preserved, use the `Ctrl+V` / `⌘+V` shortcut, which receives the full HTML payload directly from the browser's clipboard event.
