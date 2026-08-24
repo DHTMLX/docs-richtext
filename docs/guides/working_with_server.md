@@ -17,14 +17,14 @@ This guide explains:
 
 ## Default behavior: inline images
 
-If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, encodes the original file as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element. RichText constrains the displayed size to fit within a 1024×800 box through the `width`/`height` attributes, but the embedded bytes are the original, full-resolution file — the client does not downscale or re-encode it.
+If you do not set the [`imageUploadUrl`](api/config/image-upload-url.md) property, RichText falls back to inline images. When the user inserts an image, RichText reads the file in the browser, encodes the original file as a `data:image/...;base64,...` URL, and writes it directly into the editor content as the `src` of the `<img>` element. RichText constrains the displayed size to fit within a 1024×800 box through the `width`/`height` attributes, but the embedded bytes are the original, full-resolution file. The client does not downscale or re-encode it.
 
 This works without any backend and is handy for quick demos, but it has clear limitations:
 
 - the encoded bytes live inside the document, so the saved HTML grows with every image
-- the same image in two documents is stored twice — there is no shared resource to deduplicate
+- the same image in two documents is stored twice, because there is no shared resource to deduplicate
 - because the bytes are not a separate resource, the server cannot serve them from a CDN or post-process them (resize, re-encode, scan)
-- inline images are not preserved by the built-in DOCX / PDF [export](api/events/export.md) — if you rely on export, configure an upload server so images reference an external URL
+- inline images are not preserved by the built-in DOCX / PDF [export](api/events/export.md), so if you rely on export, configure an upload server that lets images reference an external URL
 
 ## Write your own server
 

@@ -40,7 +40,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-이미지를 base64로 인라인 삽입 (서버 불필요) — 속성을 생략하거나 빈 문자열을 전달합니다:
+이미지를 base64로 인라인 삽입하려면(서버 불필요) 속성을 생략하거나 빈 문자열을 전달합니다:
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {

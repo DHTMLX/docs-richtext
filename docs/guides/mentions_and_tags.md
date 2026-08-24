@@ -147,7 +147,7 @@ new richtext.Richtext("#root", {
 
 ## Custom action on select
 
-By default, picking an item inserts it into the document as a token. To run your own code instead, add an `action` callback to the trigger. RichText removes the typed trigger text and calls `action(item)` with the picked item — no token is inserted, so you can decide what to add.
+By default, picking an item inserts it into the document as a token. To run your own code instead, add an `action` callback to the trigger. RichText removes the typed trigger text and calls `action(item)` with the picked item. No token is inserted, so you can decide what to add.
 
 :::note
 `action` takes priority over `showTrigger`. When `action` is set, `showTrigger` is ignored.

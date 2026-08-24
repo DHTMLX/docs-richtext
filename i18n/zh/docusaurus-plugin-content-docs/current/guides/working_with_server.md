@@ -17,14 +17,14 @@ RichText 完全在浏览器中运行，无需后端即可进行内容编辑或�
 
 ## 默认行为：内联图片 {#default-behavior-inline-images}
 
-如果未设置 [`imageUploadUrl`](api/config/image-upload-url.md) 属性，RichText 将回退到内联图片模式。当用户插入图片时，RichText 在浏览器中读取文件，将原始文件编码为 `data:image/...;base64,...` URL，并将其直接写入编辑器内容，作为 `<img>` 元素的 `src`。RichText 通过 `width`/`height` 属性将显示尺寸限制在 1024×800 的范围内，但嵌入的字节仍是原始的全分辨率文件——客户端不会对其进行缩放或重新编码。
+如果未设置 [`imageUploadUrl`](api/config/image-upload-url.md) 属性，RichText 将回退到内联图片模式。当用户插入图片时，RichText 在浏览器中读取文件，将原始文件编码为 `data:image/...;base64,...` URL，并将其直接写入编辑器内容，作为 `<img>` 元素的 `src`。RichText 通过 `width`/`height` 属性将显示尺寸限制在 1024×800 的范围内，但嵌入的字节仍是原始的全分辨率文件。客户端不会对其进行缩放或重新编码。
 
 此方式无需任何后端，适合快速演示，但存在明显的局限性：
 
 - 编码后的字节存储在文档内部，因此每插入一张图片，保存的 HTML 文件就会增大
 - 同一张图片在两份文档中各存储一份，没有共享资源可供去重
 - 由于字节不是独立资源，服务器无法通过 CDN 提供服务，也无法对其进行后处理（缩放、重新编码、扫描）
-- 内联图片不会被内置的 DOCX / PDF [导出](api/events/export.md) 功能保留——如果依赖导出功能，请配置上传服务器，使图片引用外部 URL
+- 内联图片不会被内置的 DOCX / PDF [导出](api/events/export.md) 功能保留，因此如果依赖导出功能，请配置上传服务器，使图片引用外部 URL
 
 ## 编写自己的服务器 {#write-your-own-server}
 

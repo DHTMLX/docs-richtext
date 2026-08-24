@@ -132,7 +132,7 @@ editor.getValue(toTextEncoder);
 ```
 
 :::note[备注]
-您仍然可以不带编码器调用 `getValue()` 和 `setValue()`——默认使用 HTML 格式
+您仍然可以不带编码器调用 `getValue()` 和 `setValue()`，此时默认使用 HTML 格式
 :::
 
 ### - [`on`](api/internal/on.md) / [`detach`](api/internal/detach.md) {#--on--detach}

@@ -271,7 +271,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-Inline-Bilder, die größer als 1024×800 sind, werden in reduzierter Größe angezeigt (die Attribute `width`/`height` werden auf diese Grenzen begrenzt), aber die eingebetteten Bytes sind die ursprüngliche Datei in voller Auflösung — der Client skaliert sie nicht herunter oder kodiert sie neu.
+Inline-Bilder, die größer als 1024×800 sind, werden in reduzierter Größe angezeigt (die Attribute `width`/`height` werden auf diese Grenzen begrenzt), aber die eingebetteten Bytes sind die ursprüngliche Datei in voller Auflösung. Der Client skaliert sie nicht herunter und kodiert sie nicht neu.
 
 :::note[Hinweis]
 Inline-Bilder (Base64) bleiben beim integrierten DOCX-/PDF-[Export](api/events/export.md) nicht erhalten. Wenn Sie auf den Export angewiesen sind, geben Sie eine `imageUploadUrl` an, damit Bilder auf einen externen Speicherort verweisen.

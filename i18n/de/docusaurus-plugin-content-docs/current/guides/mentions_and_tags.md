@@ -147,7 +147,7 @@ new richtext.Richtext("#root", {
 
 ## Benutzerdefinierte Aktion bei Auswahl {#custom-action-on-select}
 
-Standardmäßig wird ein ausgewähltes Element als Token in das Dokument eingefügt. Um stattdessen eigenen Code auszuführen, fügen Sie dem Trigger einen `action`-Callback hinzu. RichText entfernt den eingegebenen Trigger-Text und ruft `action(item)` mit dem ausgewählten Element auf — es wird kein Token eingefügt, sodass Sie selbst entscheiden können, was hinzugefügt wird.
+Standardmäßig wird ein ausgewähltes Element als Token in das Dokument eingefügt. Um stattdessen eigenen Code auszuführen, fügen Sie dem Trigger einen `action`-Callback hinzu. RichText entfernt den eingegebenen Trigger-Text und ruft `action(item)` mit dem ausgewählten Element auf. Es wird kein Token eingefügt, sodass Sie selbst entscheiden können, was hinzugefügt wird.
 
 :::note[Hinweis]
 `action` hat Vorrang vor `showTrigger`. Wenn `action` gesetzt ist, wird `showTrigger` ignoriert.
