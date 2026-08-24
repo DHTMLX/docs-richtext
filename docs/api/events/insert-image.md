@@ -30,7 +30,7 @@ interface IImageContext {
 ~~~
 
 :::note
-The `value` field holds either an external URL (when [`imageUploadUrl`](api/config/image-upload-url.md) is configured and the upload succeeds) or a base64 data URL (when `imageUploadUrl` is omitted and the image is inlined on the client). Handlers that process the source — for example, to rewrite the URL or validate the host — must account for both formats.
+The `value` field holds either an external URL (when [`imageUploadUrl`](api/config/image-upload-url.md) is configured and the upload succeeds) or a base64 data URL (when `imageUploadUrl` is omitted and the image is inlined on the client). Handlers that process the source, for example to rewrite the URL or validate the host, must account for both formats.
 :::
 
 :::info

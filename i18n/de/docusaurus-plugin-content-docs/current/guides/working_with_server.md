@@ -17,14 +17,14 @@ Dieser Guide erklärt:
 
 ## Standardverhalten: Inline-Bilder {#default-behavior-inline-images}
 
-Wenn Sie die Eigenschaft [`imageUploadUrl`](api/config/image-upload-url.md) nicht setzen, fällt RichText auf Inline-Bilder zurück. Wenn der Benutzer ein Bild einfügt, liest RichText die Datei im Browser, kodiert die Originaldatei als `data:image/...;base64,...`-URL und schreibt diese direkt als `src` des `<img>`-Elements in den Editor-Inhalt. RichText begrenzt die angezeigte Größe über die Attribute `width`/`height` auf einen 1024×800-Bereich, aber die eingebetteten Bytes sind die originale Datei in voller Auflösung — der Client skaliert oder kodiert sie nicht um.
+Wenn Sie die Eigenschaft [`imageUploadUrl`](api/config/image-upload-url.md) nicht setzen, fällt RichText auf Inline-Bilder zurück. Wenn der Benutzer ein Bild einfügt, liest RichText die Datei im Browser, kodiert die Originaldatei als `data:image/...;base64,...`-URL und schreibt diese direkt als `src` des `<img>`-Elements in den Editor-Inhalt. RichText begrenzt die angezeigte Größe über die Attribute `width`/`height` auf einen 1024×800-Bereich, aber die eingebetteten Bytes sind die originale Datei in voller Auflösung. Der Client skaliert sie nicht herunter und kodiert sie nicht um.
 
 Dies funktioniert ohne jedes Backend und ist praktisch für schnelle Demos, hat aber klare Einschränkungen:
 
 - die kodierten Bytes leben im Dokument, daher wächst das gespeicherte HTML mit jedem Bild
-- dasselbe Bild in zwei Dokumenten wird zweimal gespeichert — es gibt keine gemeinsame Ressource zur Deduplizierung
+- dasselbe Bild in zwei Dokumenten wird zweimal gespeichert, da es keine gemeinsame Ressource zur Deduplizierung gibt
 - da die Bytes keine separate Ressource sind, kann der Server sie weder über ein CDN ausliefern noch nachbearbeiten (skalieren, umkodieren, scannen)
-- Inline-Bilder werden durch den integrierten DOCX/PDF-[Export](api/events/export.md) nicht erhalten — wenn Sie auf den Export angewiesen sind, konfigurieren Sie einen Upload-Server, damit Bilder auf eine externe URL verweisen
+- Inline-Bilder werden durch den integrierten DOCX/PDF-[Export](api/events/export.md) nicht erhalten, sodass Sie bei Nutzung des Exports einen Upload-Server konfigurieren sollten, damit Bilder auf eine externe URL verweisen
 
 ## Eigenen Server schreiben {#write-your-own-server}
 

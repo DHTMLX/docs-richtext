@@ -6,7 +6,7 @@ description: MCP 服务器为 AI 助手提供关于 DHTMLX RichText 样式默认
 
 # DHTMLX RichText MCP 服务器：格式、工具栏与触发器 {#dhtmlx-richtext-mcp-server-formats-toolbar-and-triggers}
 
-DHTMLX RichText 是一款配置选项丰富的轻量级 WYSIWYG 编辑器。您可以在 [HTML、纯文本和 Markdown](/#supported-formats) 之间转换内容，通过 [样式默认值](guides/configuration.md#configure-default-styles) 为每种块类型设置排版样式，并构建完全可自定义的 [工具栏](guides/configuration.md#toolbar)，使其适应应用程序所需的任意控件。要充分发挥这些功能的价值，需要将每个部分与当前配置相匹配：为样式默认值匹配当前的 CSS，为特定格式匹配正确的编码器，为自定义工具栏按钮匹配有效的控件类型——而不是凭记忆猜测。
+DHTMLX RichText 是一款配置选项丰富的轻量级 WYSIWYG 编辑器。您可以在 [HTML、纯文本和 Markdown](/#supported-formats) 之间转换内容，通过 [样式默认值](guides/configuration.md#configure-default-styles) 为每种块类型设置排版样式，并构建完全可自定义的 [工具栏](guides/configuration.md#toolbar)，使其适应应用程序所需的任意控件。要充分发挥这些功能的价值，需要将每个部分与当前配置相匹配：为样式默认值匹配当前的 CSS，为特定格式匹配正确的编码器，为自定义工具栏按钮匹配有效的控件类型，而不是凭记忆猜测。
 
 DHTMLX MCP 服务器让 AI 助手始终掌握所有这些内容的最新情况。[Mentions 与触发器设置](guides/mentions_and_tags.md)、[图片上传契约](guides/working_with_server.md) 以及 [DOCX/PDF 导出流程](api/events/export.md) 均来自最新文档，因此生成的代码与编辑器当前的实际行为保持一致。
 

@@ -12,7 +12,7 @@ description: 您可以在 DHTMLX JavaScript RichText 库的文档中了解 image
 
 当该属性被设置时，RichText 会将每张插入的图片上传到指定端点，并插入服务器返回的 URL。
 
-当该属性被省略或设置为假值（`""`、`null`、`undefined`）时，RichText 切换到**内联模式**：图片文件在客户端读取，并以 base64 数据 URL 的形式直接嵌入到内容中——无需服务器。大于 1024×800 的内联图片将按比例缩小以适应此限制。
+当该属性被省略或设置为假值（`""`、`null`、`undefined`）时，RichText 切换到**内联模式**：图片文件在客户端读取，并以 base64 数据 URL 的形式直接嵌入到内容中，无需服务器。大于 1024×800 的内联图片将按比例缩小以适应此限制。
 
 :::note[备注]
 内联（base64）图片无法通过内置的 DOCX / PDF [导出](api/events/export.md)功能保留。如果您依赖导出功能，请提供 `imageUploadUrl`，使图片引用外部地址。
@@ -40,7 +40,7 @@ new richtext.Richtext("#root", {
 });
 ~~~
 
-以 base64 方式内联插入图片（无需服务器）——省略该属性或传入空字符串：
+要以 base64 方式内联插入图片（无需服务器），请省略该属性或传入空字符串：
 
 ~~~jsx {2}
 new richtext.Richtext("#root", {
