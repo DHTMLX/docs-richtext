@@ -345,6 +345,11 @@ const config = {
                             position: 'right'
                         },
                         {
+                            label: 'Product page',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxRichText/',
+                            position: 'right'
+                        },
+                        {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com/t55alxiy?tag=richtext',
                             position: 'right'

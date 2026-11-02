@@ -15,6 +15,10 @@
     "message": "Скачать RichText",
     "description": "The label of footer link with label=Download RichText linking to https://dhtmlx.com/docs/products/dhtmlxRichText/download.shtml"
   },
+  "link.item.label.Product page": {
+    "message": "Страница продукта",
+    "description": "The label of footer link with label=Product page linking to https://dhtmlx.com/docs/products/dhtmlxRichText/"
+  },
   "link.item.label.Examples": {
     "message": "Примеры",
     "description": "The label of footer link with label=Examples linking to https://snippet.dhtmlx.com/t55alxiy?tag=richtext"
